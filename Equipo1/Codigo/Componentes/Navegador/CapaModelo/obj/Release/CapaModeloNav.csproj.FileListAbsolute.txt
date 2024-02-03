@@ -1,0 +1,6 @@
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.AssemblyReference.cache

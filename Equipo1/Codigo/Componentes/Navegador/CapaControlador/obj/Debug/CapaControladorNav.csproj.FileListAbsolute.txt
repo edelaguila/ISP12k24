@@ -1,0 +1,13 @@
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaControladorNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaControladorNav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaModeloNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaVistaNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\Seguridad_Controlador.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\Modelo_Seguridad.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaModeloNav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\bin\Debug\CapaVistaNav.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.AssemblyReference.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.csproj.CopyComplete
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaControlador\obj\Debug\CapaControladorNav.pdb
