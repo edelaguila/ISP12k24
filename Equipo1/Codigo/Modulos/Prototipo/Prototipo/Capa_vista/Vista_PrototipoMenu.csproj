@@ -65,6 +65,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendario_citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario_citas.Designer.cs">
+      <DependentUpon>Calendario_citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmacion.Designer.cs">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +97,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Calendario_citas.resx">
+      <DependentUpon>Calendario_citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmacion.resx">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </EmbeddedResource>
