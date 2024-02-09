@@ -66,19 +66,14 @@
     <Compile Include="Crear_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Gen_Preguntas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gen_Preguntas.Designer.cs">
-      <DependentUpon>Gen_Preguntas.cs</DependentUpon>
-=======
     <Compile Include="Impre_Pas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Impre_Pas.Designer.cs">
       <DependentUpon>Impre_Pas.cs</DependentUpon>
->>>>>>> refs/remotes/origin/main
     </Compile>
     <Compile Include="Man_Boleta.cs">
       <SubType>Form</SubType>
@@ -93,7 +88,6 @@
     <Compile Include="Repro_Cita.Designer.cs">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cancelar_Cita.resx">
@@ -105,10 +99,10 @@
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
     <EmbeddedResource Include="Repro_Cita.resx">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
     </EmbeddedResource>
-=======
     <Compile Include="Vali_Pago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,7 +114,15 @@
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> refs/remotes/origin/main
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleta_CGC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRRLGT.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
