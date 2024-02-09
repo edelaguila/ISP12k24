@@ -30,7 +30,7 @@ namespace CapaVista_MG2
 
         public Agendar()
         {
-            InitializeComponent();
+            
         }
 
         private void InitializeComponent()

@@ -72,8 +72,8 @@ namespace MenuHCV
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            //Vista_PrototipoMenu.MenuInventarios form = new Vista_PrototipoMenu.MenuInventarios();
-            //form.Show();
+            CapaVista_MG2.Repro_Cita form = new CapaVista_MG2.Repro_Cita();
+            form.Show();
             //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             //b.Show();

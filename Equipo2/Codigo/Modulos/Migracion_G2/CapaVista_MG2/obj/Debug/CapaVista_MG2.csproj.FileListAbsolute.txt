@@ -7,17 +7,17 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migraci
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.pdb
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.CopyComplete
+<<<<<<< HEAD
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Cancelar_Cita.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.GenerateResource.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Citas.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.GP.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Repro_Cita.resources
+=======
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.AssemblyReference.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.GP.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.GenerateResource.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.CoreCompileInputs.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaVista_MG2.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaVista_MG2.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Agendar.resources
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Properties.Resources.resources
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.CopyComplete
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.frmDatosPersonales.resources
+>>>>>>> refs/remotes/origin/main
