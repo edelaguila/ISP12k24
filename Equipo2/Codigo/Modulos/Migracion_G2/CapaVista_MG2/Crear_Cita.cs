@@ -46,10 +46,10 @@ namespace CapaVista_MG2
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -156,7 +156,8 @@ namespace CapaVista_MG2
             // 
             // textBox1
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(48, 339);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -165,7 +166,8 @@ namespace CapaVista_MG2
             // 
             // textBox2
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Location = new System.Drawing.Point(48, 422);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -181,26 +183,6 @@ namespace CapaVista_MG2
             this.label6.Size = new System.Drawing.Size(170, 17);
             this.label6.TabIndex = 9;
             this.label6.Text = "NO. CORRELATIVO CGC.:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::CapaVista_MG2.Properties.Resources.boleta_CGC;
-            this.pictureBox2.Location = new System.Drawing.Point(457, 202);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(553, 252);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CapaVista_MG2.Properties.Resources.BRRLGT;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 231);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(58, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -225,6 +207,26 @@ namespace CapaVista_MG2
             this.label8.Size = new System.Drawing.Size(117, 17);
             this.label8.TabIndex = 13;
             this.label8.Text = "Boleta de banco";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::CapaVista_MG2.Properties.Resources.boleta_CGC;
+            this.pictureBox2.Location = new System.Drawing.Point(457, 202);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(553, 252);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 11;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaVista_MG2.Properties.Resources.BRRLGT;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 231);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(58, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Agendar
             // 
