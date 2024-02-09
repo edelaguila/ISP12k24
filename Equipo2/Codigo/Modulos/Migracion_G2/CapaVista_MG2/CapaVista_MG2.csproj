@@ -66,19 +66,20 @@
     <Compile Include="Crear_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
+    <Compile Include="frmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosPersonales.Designer.cs">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </Compile>
     <Compile Include="Gen_Preguntas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gen_Preguntas.Designer.cs">
-      <DependentUpon>Gen_Preguntas.cs</DependentUpon>
-=======
     <Compile Include="Impre_Pas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Impre_Pas.Designer.cs">
       <DependentUpon>Impre_Pas.cs</DependentUpon>
->>>>>>> refs/remotes/origin/main
     </Compile>
     <Compile Include="Man_Boleta.cs">
       <SubType>Form</SubType>
@@ -86,14 +87,23 @@
     <Compile Include="Man_Boleta.Designer.cs">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Man_Boleta1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Man_Boleta.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Repro_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Repro_Cita.Designer.cs">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cancelar_Cita.resx">
@@ -102,13 +112,19 @@
     <EmbeddedResource Include="Crear_Cita.resx">
       <DependentUpon>Crear_Cita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosPersonales.resx">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Repro_Cita.resx">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
     </EmbeddedResource>
-=======
     <Compile Include="Vali_Pago.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,8 +135,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Man_Boleta1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
->>>>>>> refs/remotes/origin/main
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleta_CGC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BRRLGT.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
