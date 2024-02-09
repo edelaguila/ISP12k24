@@ -1,0 +1,6 @@
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\bin\Debug\CapaModeloBanco.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\bin\Debug\CapaModeloBanco.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\obj\Debug\CapaModeloBanco.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\obj\Debug\CapaModeloBanco.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\obj\Debug\CapaModeloBanco.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaModeloBanco\obj\Debug\CapaModeloBanco.pdb

@@ -1,0 +1,9 @@
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\bin\Debug\CapaControladorBanco.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\bin\Debug\CapaControladorBanco.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\obj\Debug\CapaControladorBanco.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\obj\Debug\CapaControladorBanco.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\obj\Debug\CapaControladorBanco.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\obj\Debug\CapaControladorBanco.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\bin\Debug\CapaModeloBanco.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\bin\Debug\CapaModeloBanco.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Banco\CapaControladorBanco\obj\Debug\CapaControladorBanco.csproj.CopyComplete
