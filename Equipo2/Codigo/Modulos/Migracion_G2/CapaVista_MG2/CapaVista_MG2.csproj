@@ -115,6 +115,9 @@
     <EmbeddedResource Include="frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Impre_Pas.resx">
+      <DependentUpon>Impre_Pas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>
     </EmbeddedResource>
