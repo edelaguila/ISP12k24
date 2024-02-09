@@ -14,7 +14,7 @@ namespace CapaVista_MG2
     {
         public Citas()
         {
-            InitializeComponent();
+            
         }
     }
 }

@@ -7,3 +7,8 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migraci
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\bin\Debug\CapaControlador_MG2.pdb
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.CopyComplete
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Cancelar_Cita.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.GenerateResource.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Citas.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.GP.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.Repro_Cita.resources
