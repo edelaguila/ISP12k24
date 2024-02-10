@@ -21,3 +21,4 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.AssemblyReference.cache
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.pdb
+D:\Escritorio\Proyecto Migración 2\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaVista_MG2\obj\Debug\CapaVista_MG2.csproj.AssemblyReference.cache
