@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="generarboleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="generarboleta.Designer.cs">
+      <DependentUpon>generarboleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mantenimiento.Designer.cs">
+      <DependentUpon>mantenimiento.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIBanco.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +67,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="generarboleta.resx">
+      <DependentUpon>generarboleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mantenimiento.resx">
+      <DependentUpon>mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIBanco.resx">
       <DependentUpon>MDIBanco.cs</DependentUpon>
     </EmbeddedResource>
