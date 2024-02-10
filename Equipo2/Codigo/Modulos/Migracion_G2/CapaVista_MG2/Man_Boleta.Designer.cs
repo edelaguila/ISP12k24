@@ -36,16 +36,18 @@ namespace CapaVista_MG2
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lbl_noboleta = new System.Windows.Forms.Label();
+            this.txt_noboleta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_validacion)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_agregar
             // 
             this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar.Location = new System.Drawing.Point(63, 387);
+            this.btn_agregar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.Location = new System.Drawing.Point(46, 387);
             this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(84, 28);
+            this.btn_agregar.Size = new System.Drawing.Size(101, 34);
             this.btn_agregar.TabIndex = 0;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = false;
@@ -53,7 +55,7 @@ namespace CapaVista_MG2
             // dgv_validacion
             // 
             this.dgv_validacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_validacion.Location = new System.Drawing.Point(77, 129);
+            this.dgv_validacion.Location = new System.Drawing.Point(63, 134);
             this.dgv_validacion.Name = "dgv_validacion";
             this.dgv_validacion.RowHeadersWidth = 51;
             this.dgv_validacion.RowTemplate.Height = 24;
@@ -63,10 +65,10 @@ namespace CapaVista_MG2
             // btn_buscar
             // 
             this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_buscar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_buscar.Location = new System.Drawing.Point(180, 387);
+            this.btn_buscar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buscar.Location = new System.Drawing.Point(198, 387);
             this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(84, 28);
+            this.btn_buscar.Size = new System.Drawing.Size(91, 34);
             this.btn_buscar.TabIndex = 6;
             this.btn_buscar.Text = "Buscar";
             this.btn_buscar.UseVisualStyleBackColor = false;
@@ -74,10 +76,10 @@ namespace CapaVista_MG2
             // btn_eliminar
             // 
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Location = new System.Drawing.Point(301, 387);
+            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Location = new System.Drawing.Point(329, 387);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(84, 28);
+            this.btn_eliminar.Size = new System.Drawing.Size(96, 34);
             this.btn_eliminar.TabIndex = 7;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -85,10 +87,10 @@ namespace CapaVista_MG2
             // btn_modificar
             // 
             this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.Location = new System.Drawing.Point(417, 387);
+            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.Location = new System.Drawing.Point(464, 387);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(84, 28);
+            this.btn_modificar.Size = new System.Drawing.Size(114, 34);
             this.btn_modificar.TabIndex = 8;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = false;
@@ -96,10 +98,10 @@ namespace CapaVista_MG2
             // btn_salir
             // 
             this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.btn_salir.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(647, 387);
+            this.btn_salir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.Location = new System.Drawing.Point(633, 387);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(84, 28);
+            this.btn_salir.Size = new System.Drawing.Size(98, 34);
             this.btn_salir.TabIndex = 9;
             this.btn_salir.Text = "Salir";
             this.btn_salir.UseVisualStyleBackColor = false;
@@ -107,12 +109,31 @@ namespace CapaVista_MG2
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.textBox1.Location = new System.Drawing.Point(281, 43);
+            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(235, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(154, 22);
+            this.textBox1.Size = new System.Drawing.Size(277, 41);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "VALIDACION BOLETA";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lbl_noboleta
+            // 
+            this.lbl_noboleta.AutoSize = true;
+            this.lbl_noboleta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_noboleta.Location = new System.Drawing.Point(77, 87);
+            this.lbl_noboleta.Name = "lbl_noboleta";
+            this.lbl_noboleta.Size = new System.Drawing.Size(112, 23);
+            this.lbl_noboleta.TabIndex = 11;
+            this.lbl_noboleta.Text = "No. Boleta";
+            // 
+            // txt_noboleta
+            // 
+            this.txt_noboleta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_noboleta.Location = new System.Drawing.Point(235, 84);
+            this.txt_noboleta.Name = "txt_noboleta";
+            this.txt_noboleta.Size = new System.Drawing.Size(164, 32);
+            this.txt_noboleta.TabIndex = 12;
             // 
             // GP
             // 
@@ -120,6 +141,8 @@ namespace CapaVista_MG2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(212)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt_noboleta);
+            this.Controls.Add(this.lbl_noboleta);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.btn_modificar);
@@ -144,5 +167,7 @@ namespace CapaVista_MG2
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label lbl_noboleta;
+        private System.Windows.Forms.TextBox txt_noboleta;
     }
 }
