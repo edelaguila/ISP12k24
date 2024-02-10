@@ -81,6 +81,18 @@
     <Compile Include="Impre_Pas.Designer.cs">
       <DependentUpon>Impre_Pas.cs</DependentUpon>
     </Compile>
+    <Compile Include="InformacionPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacionPersonal.Designer.cs">
+      <DependentUpon>InformacionPersonal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacionSolicitudPasaporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacionSolicitudPasaporte.Designer.cs">
+      <DependentUpon>InformacionSolicitudPasaporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Man_Boleta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Impre_Pas.resx">
       <DependentUpon>Impre_Pas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacionPersonal.resx">
+      <DependentUpon>InformacionPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacionSolicitudPasaporte.resx">
+      <DependentUpon>InformacionSolicitudPasaporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Man_Boleta.resx">
       <DependentUpon>Man_Boleta.cs</DependentUpon>

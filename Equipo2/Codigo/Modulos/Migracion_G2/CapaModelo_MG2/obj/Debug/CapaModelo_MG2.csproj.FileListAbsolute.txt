@@ -10,3 +10,8 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.csproj.CoreCompileInputs.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\bin\Debug\CapaModelo_MG2.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\bin\Debug\CapaModelo_MG2.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.pdb
