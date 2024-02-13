@@ -13,7 +13,7 @@ namespace Ejecucion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vista_PrototipoMenu.frmRenovacion());
+            Application.Run(new Vista_PrototipoMenu.HorariosDispo());
             
         }   
     }
