@@ -18,3 +18,13 @@ C:\Users\Usuario\Documents\Ingenieria Software\ProyectoMigracion_G1\Equipo1\Codi
 C:\Users\Usuario\Documents\Ingenieria Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
 C:\Users\Usuario\Documents\Ingenieria Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
 C:\Users\Usuario\Documents\Ingenieria Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\eCryptography.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb
