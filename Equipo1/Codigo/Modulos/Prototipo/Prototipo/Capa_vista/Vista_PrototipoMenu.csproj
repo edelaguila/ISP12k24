@@ -83,6 +83,24 @@
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmGeneracionBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneracionBoleta.Designer.cs">
+      <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoPrecioB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoPrecioB.Designer.cs">
+      <DependentUpon>frmMantenimientoPrecioB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoRenapPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoRenapPersonas.Designer.cs">
+      <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </Compile>
     <Compile Include="HorariosDispo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +129,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneracionBoleta.resx">
+      <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoPrecioB.resx">
+      <DependentUpon>frmMantenimientoPrecioB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoRenapPersonas.resx">
+      <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
