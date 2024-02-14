@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calendar.NET">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Escritorio\Calendario\Calendar.NET.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -77,11 +80,29 @@
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidacionDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidacionDeDatos.Designer.cs">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosBoleta.Designer.cs">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosPersonales.Designer.cs">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGeneracionBoleta.cs">
       <SubType>Form</SubType>
@@ -100,6 +121,12 @@
     </Compile>
     <Compile Include="frmMantenimientoRenapPersonas.Designer.cs">
       <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReagendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReagendar.Designer.cs">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
     </Compile>
     <Compile Include="HorariosDispo.cs">
       <SubType>Form</SubType>
@@ -127,8 +154,17 @@
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ValidacionDeDatos.resx">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosBoleta.resx">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosPersonales.resx">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGeneracionBoleta.resx">
       <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
@@ -138,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantenimientoRenapPersonas.resx">
       <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReagendar.resx">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
