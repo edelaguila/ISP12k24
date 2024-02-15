@@ -16,3 +16,9 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Protot
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
