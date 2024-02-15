@@ -89,6 +89,12 @@
     <Compile Include="frmGeneracionBoleta.Designer.cs">
       <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMantenimientoPrecioB.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,12 @@
     </Compile>
     <Compile Include="frmMantenimientoRenapPersonas.Designer.cs">
       <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuRenap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuRenap.Designer.cs">
+      <DependentUpon>frmMenuRenap.cs</DependentUpon>
     </Compile>
     <Compile Include="HorariosDispo.cs">
       <SubType>Form</SubType>
@@ -133,11 +145,17 @@
     <EmbeddedResource Include="frmGeneracionBoleta.resx">
       <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantenimientoPrecioB.resx">
       <DependentUpon>frmMantenimientoPrecioB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMantenimientoRenapPersonas.resx">
       <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuRenap.resx">
+      <DependentUpon>frmMenuRenap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
@@ -231,6 +249,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap31.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
