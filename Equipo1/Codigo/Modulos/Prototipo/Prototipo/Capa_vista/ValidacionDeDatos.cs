@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Vista_PrototipoMenu
 {
-    public partial class ConfirmacionDatos : Form
+    public partial class ValidacionDeDatos : Form
     {
-        public ConfirmacionDatos()
+        public ValidacionDeDatos()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
