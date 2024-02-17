@@ -30,7 +30,6 @@ namespace Vista_PrototipoMenu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGeneracionBoleta));
-            this.button2 = new System.Windows.Forms.Button();
             this.txt_edad = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_genero = new System.Windows.Forms.TextBox();
@@ -56,17 +55,15 @@ namespace Vista_PrototipoMenu
             this.txt_pasaporteSeleccionado = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_identificadorDPI = new System.Windows.Forms.TextBox();
+            this.btn_generacion = new System.Windows.Forms.Button();
+            this.txt_NoBoleta = new System.Windows.Forms.TextBox();
+            this.txt_NoCGC = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.btn_BusquedaDPI = new System.Windows.Forms.Button();
+            this.txt_IDpasaport = new System.Windows.Forms.TextBox();
+            this.txt_DPIC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(269, 612);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 31);
-            this.button2.TabIndex = 67;
-            this.button2.Text = "Generar";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // txt_edad
             // 
@@ -302,6 +299,57 @@ namespace Vista_PrototipoMenu
             this.txt_identificadorDPI.Name = "txt_identificadorDPI";
             this.txt_identificadorDPI.Size = new System.Drawing.Size(91, 22);
             this.txt_identificadorDPI.TabIndex = 76;
+            this.txt_identificadorDPI.Visible = false;
+            // 
+            // btn_generacion
+            // 
+            this.btn_generacion.Location = new System.Drawing.Point(257, 622);
+            this.btn_generacion.Name = "btn_generacion";
+            this.btn_generacion.Size = new System.Drawing.Size(148, 31);
+            this.btn_generacion.TabIndex = 78;
+            this.btn_generacion.Text = "Generar";
+            this.btn_generacion.UseVisualStyleBackColor = true;
+            this.btn_generacion.Click += new System.EventHandler(this.btn_generacion_Click);
+            // 
+            // txt_NoBoleta
+            // 
+            this.txt_NoBoleta.Enabled = false;
+            this.txt_NoBoleta.Location = new System.Drawing.Point(71, 631);
+            this.txt_NoBoleta.Name = "txt_NoBoleta";
+            this.txt_NoBoleta.Size = new System.Drawing.Size(149, 22);
+            this.txt_NoBoleta.TabIndex = 79;
+            this.txt_NoBoleta.Visible = false;
+            // 
+            // txt_NoCGC
+            // 
+            this.txt_NoCGC.Enabled = false;
+            this.txt_NoCGC.Location = new System.Drawing.Point(443, 631);
+            this.txt_NoCGC.Name = "txt_NoCGC";
+            this.txt_NoCGC.Size = new System.Drawing.Size(149, 22);
+            this.txt_NoCGC.TabIndex = 80;
+            this.txt_NoCGC.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(69, 601);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 17);
+            this.label13.TabIndex = 81;
+            this.label13.Text = "No. Boleta";
+            this.label13.Visible = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(440, 601);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(70, 17);
+            this.label14.TabIndex = 82;
+            this.label14.Text = "No. CGC";
+            this.label14.Visible = false;
             // 
             // btn_BusquedaDPI
             // 
@@ -314,11 +362,39 @@ namespace Vista_PrototipoMenu
             this.btn_BusquedaDPI.UseVisualStyleBackColor = true;
             this.btn_BusquedaDPI.Click += new System.EventHandler(this.btn_BusquedaDPI_Click);
             // 
+            // txt_IDpasaport
+            // 
+            this.txt_IDpasaport.Enabled = false;
+            this.txt_IDpasaport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_IDpasaport.ForeColor = System.Drawing.Color.Black;
+            this.txt_IDpasaport.Location = new System.Drawing.Point(616, 405);
+            this.txt_IDpasaport.Name = "txt_IDpasaport";
+            this.txt_IDpasaport.Size = new System.Drawing.Size(19, 28);
+            this.txt_IDpasaport.TabIndex = 83;
+            this.txt_IDpasaport.Visible = false;
+            // 
+            // txt_DPIC
+            // 
+            this.txt_DPIC.Enabled = false;
+            this.txt_DPIC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DPIC.Location = new System.Drawing.Point(616, 458);
+            this.txt_DPIC.Name = "txt_DPIC";
+            this.txt_DPIC.Size = new System.Drawing.Size(19, 28);
+            this.txt_DPIC.TabIndex = 84;
+            this.txt_DPIC.Visible = false;
+            // 
             // frmGeneracionBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 686);
+            this.Controls.Add(this.txt_DPIC);
+            this.Controls.Add(this.txt_IDpasaport);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.txt_NoCGC);
+            this.Controls.Add(this.txt_NoBoleta);
+            this.Controls.Add(this.btn_generacion);
             this.Controls.Add(this.btn_BusquedaDPI);
             this.Controls.Add(this.txt_identificadorDPI);
             this.Controls.Add(this.txt_pasaporteSeleccionado);
@@ -328,7 +404,6 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.txt_tipoPago);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.txt_edad);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txt_genero);
@@ -354,8 +429,6 @@ namespace Vista_PrototipoMenu
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txt_edad;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_genero;
@@ -372,15 +445,22 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.TextBox txt_precioDolar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cb_pasaporte;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_tipoPago;
         private System.Windows.Forms.TextBox txt_concepto;
-        private System.Windows.Forms.ComboBox cb_dpi;
         private System.Windows.Forms.TextBox txt_pasaporteSeleccionado;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txt_identificadorDPI;
         private System.Windows.Forms.Button btn_BusquedaDPI;
+        private System.Windows.Forms.Button btn_generacion;
+        private System.Windows.Forms.TextBox txt_NoBoleta;
+        private System.Windows.Forms.TextBox txt_NoCGC;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.ComboBox cb_pasaporte;
+        public System.Windows.Forms.ComboBox cb_dpi;
+        private System.Windows.Forms.TextBox txt_IDpasaport;
+        private System.Windows.Forms.TextBox txt_DPIC;
     }
 }

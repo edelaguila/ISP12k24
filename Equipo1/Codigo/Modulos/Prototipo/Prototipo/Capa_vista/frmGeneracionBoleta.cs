@@ -54,6 +54,7 @@ namespace Vista_PrototipoMenu
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
+                txt_IDpasaport.Text = row["id_prepasaporte"].ToString();
                 txt_pasaporteSeleccionado.Text = row["prepasaporte_nombre"].ToString();
                 txt_tasaPromedio.Text = row["prepasaporte_tasa"].ToString();
                 txt_precioDolar.Text = row["prepasaporte_dolar"].ToString();
@@ -85,6 +86,7 @@ namespace Vista_PrototipoMenu
                 txt_nombre.Text = row["renap_nombre"].ToString();
                 txt_genero.Text = row["renap_genero"].ToString();
                 txt_edad.Text = row["renap_edad"].ToString();
+                txt_DPIC.Text = row["renap_dpi"].ToString();
 
             }
             else
@@ -104,6 +106,70 @@ namespace Vista_PrototipoMenu
         private void btn_BusquedaDPI_Click(object sender, EventArgs e)
         {
             BuscarDPI();
+        }
+
+        // Método para generar números aleatorios con la cantidad de cifras especificada
+        private string GenerarNumero8Cifras(int cifras)
+        {
+            Random random = new Random();
+            int min = (int)Math.Pow(10, cifras - 1);
+            int max = (int)Math.Pow(10, cifras) - 1;
+            return random.Next(min, max).ToString();
+        }
+
+        private string GenerarNumero7Cifras()
+        {
+            Random random = new Random();
+            return random.Next(1000000, 9999999).ToString();
+        }
+
+        private async void btn_generacion_Click(object sender, EventArgs e)
+        {
+
+            // Generar número de 8 cifras
+            string numero8Cifras = GenerarNumero8Cifras(8);
+            txt_NoBoleta.Text = numero8Cifras;
+
+            // Generar número de 7 cifras
+            string numero7Cifras = GenerarNumero7Cifras();
+            txt_NoCGC.Text = numero7Cifras;
+
+            string conceptos = txt_concepto.Text;
+            string tipoPago = txt_tipoPago.Text;
+            string IDPasaporte = txt_IDpasaport.Text;
+            string NombrePasaporte = txt_pasaporteSeleccionado.Text;
+            string tasa = txt_tasaPromedio.Text;
+            string Preciodolar = txt_precioDolar.Text;
+            string Precioquetzal = txt_precioQuetzal.Text;
+            string AñosDuracion = txt_añosDuracion.Text;
+            string DPI = txt_DPIC.Text;
+            string IDDPI = txt_identificadorDPI.Text;
+            string NombrePersona = txt_nombre.Text;
+            string numeroBoleta = txt_NoBoleta.Text;
+            string numeroCGC = txt_NoCGC.Text;
+
+
+            frmConfirmacionBoleta form2 = new frmConfirmacionBoleta();
+
+            
+            form2.txt_conceptoBoleta.Text = conceptos;
+            form2.txt_tipoBoleta.Text = tipoPago;
+            form2.txt_tipoBoleta.Text = tipoPago;
+            form2.txt_IDPasaporte.Text = IDPasaporte;
+            form2.txt_pasaporteSelec.Text = NombrePasaporte;
+            form2.txt_Precio3.Text = tasa;
+            form2.txt_Precio2.Text = Preciodolar;
+            form2.txt_Precio1.Text = Precioquetzal;
+            form2.txt_pagoAños.Text = AñosDuracion;
+            form2.txt_DPISelect.Text = DPI;
+            form2.txt_IDPersona.Text = IDDPI;
+            form2.txt_NombreAsignado.Text = NombrePersona;
+            form2.txt_NoBoletaSelet.Text = numeroBoleta;
+            form2.txt_NoCGCSelect.Text = numeroCGC;
+
+
+            await Task.Delay(2000);
+            form2.Show();
         }
     }
 }

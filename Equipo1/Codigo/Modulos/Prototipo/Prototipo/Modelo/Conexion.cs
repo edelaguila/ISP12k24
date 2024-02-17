@@ -12,7 +12,7 @@ namespace Modelo_PrototipoMenu
         
         public OdbcConnection connection()
         {
-            //OdbcConnection conn = new OdbcConnection("Dsn=Migracion");
+            //OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
             OdbcConnection conn = new OdbcConnection("Dsn=Migracion");
             try
             {
