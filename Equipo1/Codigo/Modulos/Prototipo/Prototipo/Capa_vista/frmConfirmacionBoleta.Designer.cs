@@ -347,6 +347,7 @@ namespace Vista_PrototipoMenu
             this.btn_guardar.TabIndex = 99;
             this.btn_guardar.Text = "Confirmar";
             this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // btn_cancelar
             // 

@@ -112,5 +112,10 @@ namespace Controlador_PrototipoMenu
             return sn.Buscar(tabla, columna, dato);
 
         }
+
+        public bool GuardarDatos(string tabla, Dictionary<string, object> valores)
+        {
+            return sn.Guardar(tabla, valores);
+        }
     }
 }
