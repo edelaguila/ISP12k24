@@ -97,5 +97,13 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
-     }
+
+        private void btn_renap_Click(object sender, EventArgs e)
+        {
+            frmMantenimientoRenapPersonas form = new frmMantenimientoRenapPersonas();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+    }
 }

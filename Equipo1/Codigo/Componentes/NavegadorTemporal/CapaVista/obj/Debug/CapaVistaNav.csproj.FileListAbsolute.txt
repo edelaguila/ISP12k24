@@ -1,0 +1,34 @@
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaVistaNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaControladorNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\Seguridad_Controlador.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\Modelo_Seguridad.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaControladorNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\bin\Debug\CapaModeloNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.Properties.Resources.resources
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.GenerateResource.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.CopyComplete
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaVista\obj\Debug\CapaVistaNav.pdb
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaVistaNav.pdb
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaControladorNav.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\Seguridad_Controlador.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaModeloNav.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\Modelo_Seguridad.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaControladorNav.pdb
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\bin\Debug\CapaModeloNav.pdb
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.AssemblyReference.cache
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVista.Login.resources
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVista.Navegador.resources
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.Properties.Resources.resources
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.GenerateResource.cache
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.CopyComplete
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.dll
+C:\Users\callo\Music\Diagramas y documentacion de bancos y renap\Navegador\CapaVista\obj\Debug\CapaVistaNav.pdb
