@@ -31,7 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
@@ -82,6 +81,12 @@
     </Compile>
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosPersonales.Designer.cs">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </Compile>
     <Compile Include="frmGeneracionBoleta.cs">
       <SubType>Form</SubType>
@@ -141,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosPersonales.resx">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmGeneracionBoleta.resx">
       <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>

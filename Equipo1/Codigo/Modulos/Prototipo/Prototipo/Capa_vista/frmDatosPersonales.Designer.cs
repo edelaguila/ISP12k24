@@ -163,6 +163,7 @@ namespace Vista_PrototipoMenu
             this.btn_aceptar.TabIndex = 95;
             this.btn_aceptar.Text = "Aceptar";
             this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
             // 
             // cmb_ocupacion
             // 
