@@ -77,5 +77,27 @@ namespace Controlador_PrototipoMenu
             return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, codigo, Capellido);
         }
 
+        //buscar cita existente a reagendar
+        public bool BuscarCita(int noBoleta, int noDocumento, int noCGC)
+        {
+            Cita cita = sn.BuscarCita(noBoleta, noDocumento, noCGC);
+            return cita != null;
+        }
+
+        public bool DatosValidos(int noBoleta, int noDocumento, int noCGC)
+        {
+
+            Sentencias sentencias = new Sentencias();
+
+
+            Cita cita = sentencias.BuscarCita(noBoleta, noDocumento, noCGC);
+
+
+            return cita != null && cita.tbl_boleta_Pk_No_Boleta == noBoleta &&
+                   cita.tbl_documento_Pk_num_dpi == noDocumento && cita.tbl_CGC_Pk_no_cgc == noCGC;
+        }
+        //Fin Existencia de la cita a reagendar
+
+
     }
 }

@@ -121,6 +121,12 @@
     <Compile Include="frmMenuRenap.Designer.cs">
       <DependentUpon>frmMenuRenap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReagendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReagendar.Designer.cs">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="HorariosDispo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuRenap.resx">
       <DependentUpon>frmMenuRenap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReagendar.resx">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>

@@ -8,6 +8,20 @@ using System.Threading.Tasks;
 
 namespace Modelo_PrototipoMenu
 {
+    //Para la reagendacion de citas
+    public class Cita
+    {
+        public int Pk_id_cita { get; set; }
+        public string cit_fecha { get; set; }
+        public string cit_hora { get; set; }
+        public string cit_dept { get; set; }
+        public string cit_ciudad { get; set; }
+        public int tbl_documento_Pk_num_dpi { get; set; }
+        public int tbl_boleta_Pk_No_Boleta { get; set; }
+        public int tbl_CGC_Pk_no_cgc { get; set; }
+    }
+
+
     public class Sentencias
     {
         Conexion con = new Conexion();
@@ -66,6 +80,51 @@ namespace Modelo_PrototipoMenu
             return sql;
         }
 
+        //Existencia de la cita a reagendar
+        public Cita BuscarCita(int noBoleta, int noDocumento, int noCGC)
+        {
+            Cita citaEncontrada = null;
 
+            using (OdbcConnection conn = con.connection())
+            {
+                try
+                {
+                    conn.Open();
+
+                    string consulta = "SELECT Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_ciudad, tbl_boleta_Pk_No_Boleta, tbl_documento_Pk_num_dpi, tbl_CGC_Pk_no_cgc FROM tbl_cita WHERE tbl_boleta_Pk_No_Boleta = ? AND tbl_documento_Pk_num_dpi = ? AND tbl_CGC_Pk_no_cgc = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@NoBoleta", noBoleta);
+                        cmd.Parameters.AddWithValue("@NoDocumento", noDocumento);
+                        cmd.Parameters.AddWithValue("@NoCGC", noCGC);
+
+                        using (OdbcDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                citaEncontrada = new Cita
+                                {
+                                    Pk_id_cita = Convert.ToInt32(reader["Pk_id_cita"]),
+                                    cit_fecha = reader["cit_fecha"].ToString(),
+                                    cit_hora = reader["cit_hora"].ToString(),
+                                    cit_dept = reader["cit_dept"].ToString(),
+                                    cit_ciudad = reader["cit_ciudad"].ToString(),
+                                    tbl_boleta_Pk_No_Boleta = Convert.ToInt32(reader["tbl_boleta_Pk_No_Boleta"]),
+                                    tbl_documento_Pk_num_dpi = Convert.ToInt32(reader["tbl_documento_Pk_num_dpi"]),
+                                    tbl_CGC_Pk_no_cgc = Convert.ToInt32(reader["tbl_CGC_Pk_no_cgc"])
+                                };
+                            }
+                        }
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Cita no encontrada verificar datos: " + ex.Message);
+                }
+            }
+
+            return citaEncontrada;
+        }
+        //Fin Existencia de la cita a reagendar
     }
 }
