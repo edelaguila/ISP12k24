@@ -113,5 +113,13 @@ namespace Vista_PrototipoMenu
             form.Show();
             hideSubMenu();
         }
+
+        private void btn_generacionBoleta_Click(object sender, EventArgs e)
+        {
+            frmGeneracionBoleta form = new frmGeneracionBoleta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo_PrototipoMenu;
+using System.Data.Odbc;
+using System.Data;
 
 namespace Controlador_PrototipoMenu
 {
@@ -98,6 +100,22 @@ namespace Controlador_PrototipoMenu
         }
         //Fin Existencia de la cita a reagendar
 
+        //generacion de boleta
 
+        public List<string> llenarCombo(string columna1, string tabla)
+        {
+            return sn.llenarCombo(columna1, tabla);
+        }
+
+        public DataTable Buscar(string tabla, string columna, string dato)
+        {
+            return sn.Buscar(tabla, columna, dato);
+
+        }
+
+        public bool GuardarDatos(string tabla, Dictionary<string, object> valores)
+        {
+            return sn.Guardar(tabla, valores);
+        }
     }
 }

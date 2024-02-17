@@ -5,6 +5,8 @@ using System.Linq;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+
 
 namespace Modelo_PrototipoMenu
 {
@@ -126,5 +128,64 @@ namespace Modelo_PrototipoMenu
             return citaEncontrada;
         }
         //Fin Existencia de la cita a reagendar
+
+        //sentencias para generacion de boleta
+
+        public List<string> llenarCombo(string columna1, string tabla)
+        {
+            List<string> datos = new List<string>();
+            try
+            {
+
+                string consulta = $"SELECT {columna1} FROM {tabla}";
+
+                OdbcCommand command = new OdbcCommand(consulta, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    string ID = reader[columna1].ToString();
+                    datos.Add(ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            return datos;
+        }
+
+        public DataTable Buscar(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}'";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt;
+        }
+
+        public bool Guardar(string tabla, Dictionary<string, object> valores)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                // Construir la consulta SQL para insertar datos
+                string columnas = string.Join(", ", valores.Keys);
+                string parametros = string.Join(", ", valores.Keys.Select(key => "?"));
+                string consulta = $"INSERT INTO {tabla} ({columnas}) VALUES ({parametros})";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    // Agregar parámetros con sus valores correspondientes
+                    foreach (var kvp in valores)
+                    {
+                        cmd.Parameters.AddWithValue(kvp.Key, kvp.Value);
+                    }
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
     }
 }
