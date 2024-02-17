@@ -18,6 +18,7 @@ namespace Vista_PrototipoMenu
         public frmConfirmacionBoleta()
         {
             InitializeComponent();
+          
         }
 
         public void GuardarDatos()
@@ -44,9 +45,24 @@ namespace Vista_PrototipoMenu
 
         }
 
-        private void btn_guardar_Click(object sender, EventArgs e)
+        private async void btn_guardar_Click(object sender, EventArgs e)
         {
             GuardarDatos();
+            await Task.Delay(1000);
+            this.Close();
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            // Mostrar un cuadro de diálogo para confirmar el cierre
+            DialogResult result = MessageBox.Show("¿Deseas volver?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Si elige "No", no cerrar la form
+            if (result == DialogResult.Yes)
+            {
+                // Cerrar la Form2
+                this.Close();
+            }
         }
     }
 }

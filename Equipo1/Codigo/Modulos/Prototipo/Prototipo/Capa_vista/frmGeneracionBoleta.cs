@@ -44,7 +44,9 @@ namespace Vista_PrototipoMenu
             string tabla = "tbl_preciopasaporte";
 
             string columna = "id_prepasaporte";
-            string dato = cb_pasaporte.SelectedItem.ToString();
+           // string dato = cb_pasaporte.SelectedItem.ToString();
+            string dato = (cb_pasaporte.SelectedItem != null) ? cb_pasaporte.SelectedItem.ToString() : string.Empty;
+
             DataTable dt = cn.Buscar(tabla, columna, dato);
 
             if (dt.Rows.Count > 0)
@@ -63,7 +65,7 @@ namespace Vista_PrototipoMenu
             }
             else
             {
-                MessageBox.Show("No se encontro el dato");
+                
             }
         }
 
@@ -170,6 +172,48 @@ namespace Vista_PrototipoMenu
 
             await Task.Delay(2000);
             form2.Show();
+
+            txt_concepto.Text = "";
+            txt_tipoPago.Text = "";
+            txt_IDpasaport.Text = "";
+            txt_pasaporteSeleccionado.Text = "";
+            txt_tasaPromedio.Text = "";
+            txt_precioDolar.Text = "";
+            txt_precioQuetzal.Text = "";
+            txt_añosDuracion.Text = "";
+            txt_DPIC.Text = "";
+            txt_identificadorDPI.Text = "";
+            txt_nombre.Text = "";
+            txt_NoBoleta.Text = "";
+            txt_NoCGC.Text = "";
+            txt_edad.Text = "";
+            txt_genero.Text = "";
+
+            cb_dpi.SelectedIndex = -1;
+            cb_pasaporte.SelectedIndex = -1;
+        }
+
+        private void btn_limpiar_Click(object sender, EventArgs e)
+        {
+            txt_concepto.Text = "";
+            txt_tipoPago.Text = "";
+            txt_IDpasaport.Text = "";
+            txt_pasaporteSeleccionado.Text = "";
+            txt_tasaPromedio.Text = "";
+            txt_precioDolar.Text = "";
+            txt_precioQuetzal.Text = "";
+            txt_añosDuracion.Text = "";
+            txt_DPIC.Text = "";
+            txt_identificadorDPI.Text = "";
+            txt_nombre.Text = "";
+            txt_NoBoleta.Text = "";
+            txt_NoCGC.Text = "";
+            txt_edad.Text = "";
+            txt_genero.Text = "";
+
+            cb_dpi.SelectedIndex = -1;
+            cb_pasaporte.SelectedIndex = -1;
+
         }
     }
 }

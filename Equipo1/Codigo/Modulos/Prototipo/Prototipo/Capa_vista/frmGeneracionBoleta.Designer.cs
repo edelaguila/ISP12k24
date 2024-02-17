@@ -63,6 +63,7 @@ namespace Vista_PrototipoMenu
             this.btn_BusquedaDPI = new System.Windows.Forms.Button();
             this.txt_IDpasaport = new System.Windows.Forms.TextBox();
             this.txt_DPIC = new System.Windows.Forms.TextBox();
+            this.btn_limpiar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_edad
@@ -303,7 +304,7 @@ namespace Vista_PrototipoMenu
             // 
             // btn_generacion
             // 
-            this.btn_generacion.Location = new System.Drawing.Point(257, 622);
+            this.btn_generacion.Location = new System.Drawing.Point(173, 620);
             this.btn_generacion.Name = "btn_generacion";
             this.btn_generacion.Size = new System.Drawing.Size(148, 31);
             this.btn_generacion.TabIndex = 78;
@@ -314,7 +315,7 @@ namespace Vista_PrototipoMenu
             // txt_NoBoleta
             // 
             this.txt_NoBoleta.Enabled = false;
-            this.txt_NoBoleta.Location = new System.Drawing.Point(71, 631);
+            this.txt_NoBoleta.Location = new System.Drawing.Point(270, 353);
             this.txt_NoBoleta.Name = "txt_NoBoleta";
             this.txt_NoBoleta.Size = new System.Drawing.Size(149, 22);
             this.txt_NoBoleta.TabIndex = 79;
@@ -323,7 +324,7 @@ namespace Vista_PrototipoMenu
             // txt_NoCGC
             // 
             this.txt_NoCGC.Enabled = false;
-            this.txt_NoCGC.Location = new System.Drawing.Point(443, 631);
+            this.txt_NoCGC.Location = new System.Drawing.Point(457, 353);
             this.txt_NoCGC.Name = "txt_NoCGC";
             this.txt_NoCGC.Size = new System.Drawing.Size(149, 22);
             this.txt_NoCGC.TabIndex = 80;
@@ -333,7 +334,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(69, 601);
+            this.label13.Location = new System.Drawing.Point(268, 323);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(84, 17);
             this.label13.TabIndex = 81;
@@ -344,7 +345,7 @@ namespace Vista_PrototipoMenu
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(440, 601);
+            this.label14.Location = new System.Drawing.Point(454, 323);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 17);
             this.label14.TabIndex = 82;
@@ -383,11 +384,22 @@ namespace Vista_PrototipoMenu
             this.txt_DPIC.TabIndex = 84;
             this.txt_DPIC.Visible = false;
             // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.Location = new System.Drawing.Point(357, 620);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(148, 31);
+            this.btn_limpiar.TabIndex = 85;
+            this.btn_limpiar.Text = "Limpiar";
+            this.btn_limpiar.UseVisualStyleBackColor = true;
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
+            // 
             // frmGeneracionBoleta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 686);
+            this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.txt_DPIC);
             this.Controls.Add(this.txt_IDpasaport);
             this.Controls.Add(this.label14);
@@ -462,5 +474,6 @@ namespace Vista_PrototipoMenu
         public System.Windows.Forms.ComboBox cb_dpi;
         private System.Windows.Forms.TextBox txt_IDpasaport;
         private System.Windows.Forms.TextBox txt_DPIC;
+        private System.Windows.Forms.Button btn_limpiar;
     }
 }
