@@ -9,6 +9,7 @@ namespace Modelo_PrototipoMenu
 {
     public class Conexion
     {
+        
         public OdbcConnection connection()
         {
             OdbcConnection conn = new OdbcConnection("Dsn=Migracion");
