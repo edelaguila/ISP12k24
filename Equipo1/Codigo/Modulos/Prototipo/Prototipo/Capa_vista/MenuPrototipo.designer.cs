@@ -34,6 +34,7 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
+            this.btn_renap = new System.Windows.Forms.Button();
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
@@ -44,7 +45,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_renap = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -116,6 +117,7 @@ namespace Vista_PrototipoMenu
             // panelTranportes
             // 
             this.panelTranportes.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelTranportes.Controls.Add(this.button1);
             this.panelTranportes.Controls.Add(this.btn_renap);
             this.panelTranportes.Controls.Add(this.btnaplicaciones);
             this.panelTranportes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -125,6 +127,23 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.Size = new System.Drawing.Size(555, 231);
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
+            // 
+            // btn_renap
+            // 
+            this.btn_renap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_renap.FlatAppearance.BorderSize = 0;
+            this.btn_renap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_renap.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_renap.Location = new System.Drawing.Point(0, 66);
+            this.btn_renap.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_renap.Name = "btn_renap";
+            this.btn_renap.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_renap.Size = new System.Drawing.Size(555, 66);
+            this.btn_renap.TabIndex = 4;
+            this.btn_renap.Text = "RENAP";
+            this.btn_renap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_renap.UseVisualStyleBackColor = true;
+            this.btn_renap.Click += new System.EventHandler(this.btn_renap_Click);
             // 
             // btnaplicaciones
             // 
@@ -300,22 +319,22 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // btn_renap
+            // button1
             // 
-            this.btn_renap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_renap.FlatAppearance.BorderSize = 0;
-            this.btn_renap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_renap.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_renap.Location = new System.Drawing.Point(0, 66);
-            this.btn_renap.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_renap.Name = "btn_renap";
-            this.btn_renap.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btn_renap.Size = new System.Drawing.Size(555, 66);
-            this.btn_renap.TabIndex = 4;
-            this.btn_renap.Text = "RENAP";
-            this.btn_renap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_renap.UseVisualStyleBackColor = true;
-            this.btn_renap.Click += new System.EventHandler(this.btn_renap_Click);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button1.Location = new System.Drawing.Point(0, 132);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(555, 66);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "PAGO B";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MenuPrototipo
             // 
@@ -354,5 +373,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Button btn_renap;
+        private System.Windows.Forms.Button button1;
     }
 }

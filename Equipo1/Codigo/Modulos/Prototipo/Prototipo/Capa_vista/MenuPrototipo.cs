@@ -105,5 +105,13 @@ namespace Vista_PrototipoMenu
             form.Show();
             hideSubMenu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMantenimientoPrecioB form = new frmMantenimientoPrecioB();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
