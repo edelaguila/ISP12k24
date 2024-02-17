@@ -34,6 +34,7 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_renap = new System.Windows.Forms.Button();
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
@@ -45,10 +46,11 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_generacionBoleta = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
+            this.PanelAuditoria.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,6 +130,23 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button1.Location = new System.Drawing.Point(0, 132);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(555, 66);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "PRECIO BOLETA";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btn_renap
             // 
             this.btn_renap.Dock = System.Windows.Forms.DockStyle.Top;
@@ -185,6 +204,7 @@ namespace Vista_PrototipoMenu
             // PanelAuditoria
             // 
             this.PanelAuditoria.BackColor = System.Drawing.Color.LightSlateGray;
+            this.PanelAuditoria.Controls.Add(this.btn_generacionBoleta);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelAuditoria.Location = new System.Drawing.Point(0, 620);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4);
@@ -319,22 +339,22 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // button1
+            // btn_generacionBoleta
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button1.Location = new System.Drawing.Point(0, 132);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(555, 66);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "PAGO B";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_generacionBoleta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_generacionBoleta.FlatAppearance.BorderSize = 0;
+            this.btn_generacionBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_generacionBoleta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_generacionBoleta.Location = new System.Drawing.Point(0, 0);
+            this.btn_generacionBoleta.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_generacionBoleta.Name = "btn_generacionBoleta";
+            this.btn_generacionBoleta.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_generacionBoleta.Size = new System.Drawing.Size(555, 66);
+            this.btn_generacionBoleta.TabIndex = 6;
+            this.btn_generacionBoleta.Text = "GENERACION DE BOLETA";
+            this.btn_generacionBoleta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_generacionBoleta.UseVisualStyleBackColor = true;
+            this.btn_generacionBoleta.Click += new System.EventHandler(this.btn_generacionBoleta_Click);
             // 
             // MenuPrototipo
             // 
@@ -350,6 +370,7 @@ namespace Vista_PrototipoMenu
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTranportes.ResumeLayout(false);
+            this.PanelAuditoria.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -374,5 +395,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btnsalir;
         private System.Windows.Forms.Button btn_renap;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_generacionBoleta;
     }
 }

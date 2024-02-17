@@ -422,3 +422,4 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codig
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmReagendar.resources

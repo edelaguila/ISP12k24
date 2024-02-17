@@ -13,8 +13,9 @@ namespace Ejecucion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Vista_PrototipoMenu.frmDatosPersonales());
-            
-        }   
+            //Application.Run(new Vista_PrototipoMenu.frmGeneracionBoleta());
+            Application.Run(new Vista_PrototipoMenu.frmGeneracionBoleta());
+
+        }
     }
 }
