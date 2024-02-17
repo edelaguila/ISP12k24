@@ -58,3 +58,13 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\eCryptography.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb

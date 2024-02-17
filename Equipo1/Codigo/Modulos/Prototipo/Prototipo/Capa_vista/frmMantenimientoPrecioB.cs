@@ -15,6 +15,8 @@ namespace Vista_PrototipoMenu
         public frmMantenimientoPrecioB()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_preciopasaporte", this, "");
+            this.navegador1._initSeguridad();
         }
     }
 }
