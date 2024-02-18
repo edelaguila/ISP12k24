@@ -25,7 +25,7 @@ namespace Vista_PrototipoMenu
 
         public void LlenarComboTipoPasaporte()
         {
-            List<string> concepto = cn.llenarCombo("id_prepasaporte", "tbl_preciopasaporte");
+            List<string> concepto = cn.llenarCombo("Pk_id_prepasaporte", "tbl_preciopasaporte");
             cb_pasaporte.Items.Clear();
             cb_pasaporte.Items.AddRange(concepto.ToArray());
 
@@ -33,7 +33,7 @@ namespace Vista_PrototipoMenu
 
         public void LlenarComboDPI()
         {
-            List<string> concepto = cn.llenarCombo("renap_dpi", "tbl_renap");
+            List<string> concepto = cn.llenarCombo("Pk_num_dpi", "tbl_renap");
             cb_dpi.Items.Clear();
             cb_dpi.Items.AddRange(concepto.ToArray());
 
@@ -43,7 +43,7 @@ namespace Vista_PrototipoMenu
         {
             string tabla = "tbl_preciopasaporte";
 
-            string columna = "id_prepasaporte";
+            string columna = "Pk_id_prepasaporte";
            // string dato = cb_pasaporte.SelectedItem.ToString();
             string dato = (cb_pasaporte.SelectedItem != null) ? cb_pasaporte.SelectedItem.ToString() : string.Empty;
 
@@ -56,7 +56,7 @@ namespace Vista_PrototipoMenu
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
-                txt_IDpasaport.Text = row["id_prepasaporte"].ToString();
+                txt_IDpasaport.Text = row["Pk_id_prepasaporte"].ToString();
                 txt_pasaporteSeleccionado.Text = row["prepasaporte_nombre"].ToString();
                 txt_tasaPromedio.Text = row["prepasaporte_tasa"].ToString();
                 txt_precioDolar.Text = row["prepasaporte_dolar"].ToString();
@@ -73,7 +73,7 @@ namespace Vista_PrototipoMenu
         {
             string tabla = "tbl_renap";
 
-            string columna = "renap_dpi";
+            string columna = "Pk_num_dpi";
             string dato = cb_dpi.SelectedItem.ToString();
             DataTable dt = cn.Buscar(tabla, columna, dato);
 
@@ -84,11 +84,11 @@ namespace Vista_PrototipoMenu
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
-                txt_identificadorDPI.Text = row["id_renap"].ToString();
-                txt_nombre.Text = row["renap_nombre"].ToString();
-                txt_genero.Text = row["renap_genero"].ToString();
-                txt_edad.Text = row["renap_edad"].ToString();
-                txt_DPIC.Text = row["renap_dpi"].ToString();
+                txt_identificadorDPI.Text = row["Pk_num_dpi"].ToString();
+                txt_nombre.Text = row["ren_nombres"].ToString();
+                txt_genero.Text = row["ren_genero"].ToString();
+                txt_edad.Text = row["ren_edad"].ToString();
+                txt_DPIC.Text = row["ren_dpi"].ToString();
 
             }
             else

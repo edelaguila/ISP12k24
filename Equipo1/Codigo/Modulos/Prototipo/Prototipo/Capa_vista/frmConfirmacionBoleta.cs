@@ -23,7 +23,7 @@ namespace Vista_PrototipoMenu
 
         public void GuardarDatos()
         {
-            string tabla = "tbl_boletaBanco";
+            string tabla = "tbl_boleta";
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
             // valores.Add("Detalle_valor", int.Parse(txt_conceptoValor.Text));
@@ -31,9 +31,9 @@ namespace Vista_PrototipoMenu
             valores.Add("boleta_tipoPago", txt_tipoBoleta.Text);
             valores.Add("id_tipopasaporte", int.Parse(txt_IDPasaporte.Text));
             valores.Add("boleta_añosDuracion", int.Parse(txt_pagoAños.Text));
-            valores.Add("id_persona", int.Parse(txt_IDPersona.Text));
+            valores.Add("tbl_renap_Pk_num_dpi", int.Parse(txt_IDPersona.Text));
             valores.Add("boleta_numeroDoc", int.Parse(txt_NoBoletaSelet.Text));
-            valores.Add("boleta_numeroCGC", int.Parse(txt_NoCGCSelect.Text));
+            valores.Add("tbl_cgc_Pk_no_cgc", int.Parse(txt_NoCGCSelect.Text));
 
             cn.GuardarDatos(tabla, valores);
 
