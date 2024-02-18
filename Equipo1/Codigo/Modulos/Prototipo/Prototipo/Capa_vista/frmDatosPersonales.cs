@@ -14,7 +14,7 @@ namespace Vista_PrototipoMenu
     public partial class frmDatosPersonales : Form
     {
         Controlador controller = new Controlador();
-        int codigo = 7;
+       // int codigo = 7;
         public frmDatosPersonales()
         {
             InitializeComponent();
@@ -48,10 +48,10 @@ namespace Vista_PrototipoMenu
             string ojos = cmb_ojos.Text;
             string ocupacion = cmb_ocupacion.Text;
 
-            if (controller.InsertarDocumento(codigo, numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
+            if (controller.InsertarDocumento( numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
             {
                 MessageBox.Show("Datos personales ingresados correctamente");
-                controller.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, codigo, Capellido);
+                controller.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion,  Capellido);
                 LimpiarCampos();
             }
         }
