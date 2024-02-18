@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
-    public partial class frmLogin : Form
+    public partial class frmCreaciónUsuario : Form
     {
-        Controlador cn = new Controlador();
-
-        public frmLogin()
+        public frmCreaciónUsuario()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmCreaciónUsuario_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
