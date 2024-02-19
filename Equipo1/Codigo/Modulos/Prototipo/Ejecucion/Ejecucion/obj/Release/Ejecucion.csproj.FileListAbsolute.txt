@@ -111,7 +111,6 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Ejecucion.exe
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Ejecucion.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Vista_PrototipoMenu.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Calendar.NET.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Seguridad_Controlador.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorVista.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Modelo_Seguridad.dll
@@ -120,11 +119,9 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_VistaConsultas.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorModelo.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_ControladorConsultas.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorReporteria.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.Windows.Forms.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_Modelo.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloReporteria.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.Shared.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.ReportSource.dll
@@ -151,9 +148,7 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorModelo.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.dll.config
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_ControladorConsultas.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorReporteria.pdb
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_Modelo.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloReporteria.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.AssemblyReference.cache
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.SuggestedBindingRedirects.cache
@@ -281,3 +276,13 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Protot
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.exe
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Controlador_PrototipoMenu.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaNav.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Modelo_PrototipoMenu.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorNav.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Controlador_PrototipoMenu.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaNav.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Modelo_PrototipoMenu.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorNav.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloNav.pdb

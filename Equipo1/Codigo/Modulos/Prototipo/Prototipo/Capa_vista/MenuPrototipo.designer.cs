@@ -39,6 +39,8 @@ namespace Vista_PrototipoMenu
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
+            this.btn_reagendarCita = new System.Windows.Forms.Button();
+            this.btn_generacionBoleta = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panelseguridad = new System.Windows.Forms.Panel();
             this.btnSeguridad = new System.Windows.Forms.Button();
@@ -46,7 +48,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_generacionBoleta = new System.Windows.Forms.Button();
+            this.btn_datosPersonales = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -204,14 +206,50 @@ namespace Vista_PrototipoMenu
             // PanelAuditoria
             // 
             this.PanelAuditoria.BackColor = System.Drawing.Color.LightSlateGray;
+            this.PanelAuditoria.Controls.Add(this.btn_datosPersonales);
+            this.PanelAuditoria.Controls.Add(this.btn_reagendarCita);
             this.PanelAuditoria.Controls.Add(this.btn_generacionBoleta);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelAuditoria.Location = new System.Drawing.Point(0, 620);
             this.PanelAuditoria.Margin = new System.Windows.Forms.Padding(4);
             this.PanelAuditoria.Name = "PanelAuditoria";
-            this.PanelAuditoria.Size = new System.Drawing.Size(555, 168);
+            this.PanelAuditoria.Size = new System.Drawing.Size(555, 228);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
+            // 
+            // btn_reagendarCita
+            // 
+            this.btn_reagendarCita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_reagendarCita.FlatAppearance.BorderSize = 0;
+            this.btn_reagendarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reagendarCita.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_reagendarCita.Location = new System.Drawing.Point(0, 66);
+            this.btn_reagendarCita.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_reagendarCita.Name = "btn_reagendarCita";
+            this.btn_reagendarCita.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_reagendarCita.Size = new System.Drawing.Size(555, 66);
+            this.btn_reagendarCita.TabIndex = 7;
+            this.btn_reagendarCita.Text = "REAGENDAR CITA";
+            this.btn_reagendarCita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reagendarCita.UseVisualStyleBackColor = true;
+            this.btn_reagendarCita.Click += new System.EventHandler(this.btn_reagendarCita_Click);
+            // 
+            // btn_generacionBoleta
+            // 
+            this.btn_generacionBoleta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_generacionBoleta.FlatAppearance.BorderSize = 0;
+            this.btn_generacionBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_generacionBoleta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_generacionBoleta.Location = new System.Drawing.Point(0, 0);
+            this.btn_generacionBoleta.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_generacionBoleta.Name = "btn_generacionBoleta";
+            this.btn_generacionBoleta.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_generacionBoleta.Size = new System.Drawing.Size(555, 66);
+            this.btn_generacionBoleta.TabIndex = 6;
+            this.btn_generacionBoleta.Text = "GENERACION DE BOLETA";
+            this.btn_generacionBoleta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_generacionBoleta.UseVisualStyleBackColor = true;
+            this.btn_generacionBoleta.Click += new System.EventHandler(this.btn_generacionBoleta_Click);
             // 
             // btnReportes
             // 
@@ -222,7 +260,7 @@ namespace Vista_PrototipoMenu
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnReportes.Location = new System.Drawing.Point(0, 788);
+            this.btnReportes.Location = new System.Drawing.Point(0, 848);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -237,7 +275,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelseguridad.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelseguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelseguridad.Location = new System.Drawing.Point(0, 848);
+            this.panelseguridad.Location = new System.Drawing.Point(0, 908);
             this.panelseguridad.Margin = new System.Windows.Forms.Padding(4);
             this.panelseguridad.Name = "panelseguridad";
             this.panelseguridad.Size = new System.Drawing.Size(555, 69);
@@ -253,7 +291,7 @@ namespace Vista_PrototipoMenu
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 917);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 977);
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -268,7 +306,7 @@ namespace Vista_PrototipoMenu
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelayuda.Location = new System.Drawing.Point(0, 977);
+            this.panelayuda.Location = new System.Drawing.Point(0, 1037);
             this.panelayuda.Margin = new System.Windows.Forms.Padding(4);
             this.panelayuda.Name = "panelayuda";
             this.panelayuda.Size = new System.Drawing.Size(555, 63);
@@ -284,7 +322,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnayuda.Location = new System.Drawing.Point(0, 1040);
+            this.btnayuda.Location = new System.Drawing.Point(0, 1100);
             this.btnayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -328,7 +366,7 @@ namespace Vista_PrototipoMenu
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnsalir.Location = new System.Drawing.Point(0, 1100);
+            this.btnsalir.Location = new System.Drawing.Point(0, 1160);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
@@ -339,22 +377,22 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // btn_generacionBoleta
+            // btn_datosPersonales
             // 
-            this.btn_generacionBoleta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_generacionBoleta.FlatAppearance.BorderSize = 0;
-            this.btn_generacionBoleta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_generacionBoleta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_generacionBoleta.Location = new System.Drawing.Point(0, 0);
-            this.btn_generacionBoleta.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_generacionBoleta.Name = "btn_generacionBoleta";
-            this.btn_generacionBoleta.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btn_generacionBoleta.Size = new System.Drawing.Size(555, 66);
-            this.btn_generacionBoleta.TabIndex = 6;
-            this.btn_generacionBoleta.Text = "GENERACION DE BOLETA";
-            this.btn_generacionBoleta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_generacionBoleta.UseVisualStyleBackColor = true;
-            this.btn_generacionBoleta.Click += new System.EventHandler(this.btn_generacionBoleta_Click);
+            this.btn_datosPersonales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_datosPersonales.FlatAppearance.BorderSize = 0;
+            this.btn_datosPersonales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_datosPersonales.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_datosPersonales.Location = new System.Drawing.Point(0, 132);
+            this.btn_datosPersonales.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_datosPersonales.Name = "btn_datosPersonales";
+            this.btn_datosPersonales.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_datosPersonales.Size = new System.Drawing.Size(555, 66);
+            this.btn_datosPersonales.TabIndex = 8;
+            this.btn_datosPersonales.Text = "DATOS PERSONALES";
+            this.btn_datosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_datosPersonales.UseVisualStyleBackColor = true;
+            this.btn_datosPersonales.Click += new System.EventHandler(this.btn_datosPersonales_Click);
             // 
             // MenuPrototipo
             // 
@@ -396,5 +434,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btn_renap;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_generacionBoleta;
+        private System.Windows.Forms.Button btn_reagendarCita;
+        private System.Windows.Forms.Button btn_datosPersonales;
     }
 }
