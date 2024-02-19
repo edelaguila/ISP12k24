@@ -7,22 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
-    public partial class frmLogin : Form
+    public partial class frmVerificaciónPasaporte : Form
     {
-        Controlador cn = new Controlador();
-
-        public frmLogin()
+        public frmVerificaciónPasaporte()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmVerificaciónPasaporte_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

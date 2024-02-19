@@ -45,7 +45,7 @@ namespace Vista_PrototipoMenu
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(392, 94);
+            this.label1.Location = new System.Drawing.Point(386, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(178, 25);
             this.label1.TabIndex = 0;
@@ -69,7 +69,7 @@ namespace Vista_PrototipoMenu
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(126, 51);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Inicio";
+            this.button1.Text = "Servicio";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -79,7 +79,7 @@ namespace Vista_PrototipoMenu
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 51);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Servicio";
+            this.button2.Text = "Sedes";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -89,7 +89,7 @@ namespace Vista_PrototipoMenu
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 51);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Instituciones";
+            this.button3.Text = "Búsqueda";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -99,7 +99,7 @@ namespace Vista_PrototipoMenu
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(126, 51);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Búsqueda";
+            this.button4.Text = "Agregar Usuario";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -119,7 +119,7 @@ namespace Vista_PrototipoMenu
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(126, 51);
             this.button6.TabIndex = 7;
-            this.button6.Text = "Agregar Usuario";
+            this.button6.Text = "Cerrar Sesión";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // frmMenuRenap
