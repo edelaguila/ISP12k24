@@ -69,14 +69,14 @@ namespace Controlador_PrototipoMenu
             combo.Items.Add("Otra");
         }
 
-        public bool InsertarDocumento( string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
+        public bool InsertarDocumento(int dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
         {
-            return sn.InsertarDocumento( numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido);
+            return sn.InsertarDocumento(dpi,  numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido);
         }
 
-        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion,  string Capellido)
+        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, int numdoc, string Capellido)
         {
-            return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, Capellido);
+            return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,  Capellido);
         }
 
         //buscar cita existente a reagendar
@@ -113,9 +113,14 @@ namespace Controlador_PrototipoMenu
 
         }
 
-        public bool GuardarDatos(string tabla, Dictionary<string, object> valores)
+        public bool GuardarDatos(string tabla,  Dictionary<string, object> valores)
         {
-            return sn.Guardar(tabla, valores);
+            return sn.Guardar(tabla,  valores);
+        }
+
+        public bool GuardarDatosCGC(string table, Dictionary<string, object> vals)
+        {
+            return sn.Guardar(table, vals);
         }
     }
 }

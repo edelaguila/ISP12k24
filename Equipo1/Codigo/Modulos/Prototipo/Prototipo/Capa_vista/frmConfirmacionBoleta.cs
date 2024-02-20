@@ -24,16 +24,26 @@ namespace Vista_PrototipoMenu
         public void GuardarDatos()
         {
             string tabla = "tbl_boleta";
-            Dictionary<string, object> valores = new Dictionary<string, object>();
+            string table = "tbl_cgc";
 
-            // valores.Add("Detalle_valor", int.Parse(txt_conceptoValor.Text));
+            Dictionary<string, object> valores = new Dictionary<string, object>();
+            Dictionary<string, object> vals = new Dictionary<string, object>();
+
+  
             valores.Add("boleta_concepto", txt_conceptoBoleta.Text);
             valores.Add("boleta_tipoPago", txt_tipoBoleta.Text);
             valores.Add("id_tipopasaporte", int.Parse(txt_IDPasaporte.Text));
             valores.Add("boleta_añosDuracion", int.Parse(txt_pagoAños.Text));
             valores.Add("tbl_renap_Pk_num_dpi", int.Parse(txt_IDPersona.Text));
             valores.Add("boleta_numeroDoc", int.Parse(txt_NoBoletaSelet.Text));
+
+          
+            vals.Add("Pk_no_cgc", int.Parse(txt_NoCGCSelect.Text));
+            cn.GuardarDatosCGC(table, vals);
+
+
             valores.Add("tbl_cgc_Pk_no_cgc", int.Parse(txt_NoCGCSelect.Text));
+
 
             cn.GuardarDatos(tabla, valores);
 

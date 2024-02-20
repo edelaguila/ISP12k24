@@ -442,3 +442,5 @@ C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\P
 =======
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmConfirmacionBoleta.resources
 >>>>>>> 068b836139edef3b7ce55ff235d0fdcaccb54500
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmCreaciónUsuario.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmVerificaciónPasaporte.resources

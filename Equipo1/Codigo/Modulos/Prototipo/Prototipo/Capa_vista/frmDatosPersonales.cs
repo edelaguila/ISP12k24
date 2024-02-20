@@ -34,7 +34,8 @@ namespace Vista_PrototipoMenu
             DateTime fechaNacimiento_a = dtp_nacimiento.Value;
             string fechaNacimiento = fechaNacimiento_a.ToString("yyyy-MM-dd");
             string tipodo = txt_tipodoc.Text;
-            string numdoc = txt_numdoc.Text;
+            string numdocs = txt_numdoc.Text;
+            int numdoc = int.Parse(numdocs);
             string nacionalidad = txt_nacionalidad.Text;
             string genero = cmb_genero.Text;
             string estadocivil = cmb_estadocivil.Text;
@@ -48,10 +49,13 @@ namespace Vista_PrototipoMenu
             string ojos = cmb_ojos.Text;
             string ocupacion = cmb_ocupacion.Text;
 
-            if (controller.InsertarDocumento( numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
+            string dpis = txt_numdoc.Text;
+            int dpi = int.Parse(dpis);
+
+            if (controller.InsertarDocumento(dpi, numdocs, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
             {
                 MessageBox.Show("Datos personales ingresados correctamente");
-                controller.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion,  Capellido);
+                controller.InsertarDatosPersonales( nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,Capellido);
                 LimpiarCampos();
             }
         }
