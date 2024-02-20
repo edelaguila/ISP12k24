@@ -72,8 +72,7 @@ namespace MenuHCV
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Repro_Cita form = new CapaVista_MG2.Repro_Cita();
-            form.Show();
+           
             //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             //b.Show();
@@ -113,6 +112,8 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
+            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            form.Show();
             //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
             //form.Show();
             //cn.setBtitacora("8000", "Ingreso Prototipo");

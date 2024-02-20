@@ -76,7 +76,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form = new frmAplicaciones();
+            CapaVista_MG2.Repro_Cita form = new CapaVista_MG2.Repro_Cita();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -97,5 +97,14 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
-     }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.Cancelar_Cita form = new CapaVista_MG2.Cancelar_Cita();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+
+        }
+    }
 }

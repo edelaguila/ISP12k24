@@ -31,17 +31,20 @@ namespace CapaVista_MG2
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIDCita = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblDPI = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.uI_Calendario1 = new Calendario.UI_Calendario();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.fecha_n = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.textBoxCorreCita = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,14 +66,13 @@ namespace CapaVista_MG2
             this.label2.Size = new System.Drawing.Size(258, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ingrese correlativo de cita:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // txtIDCita
             // 
-            this.textBox1.Location = new System.Drawing.Point(289, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtIDCita.Location = new System.Drawing.Point(289, 72);
+            this.txtIDCita.Name = "txtIDCita";
+            this.txtIDCita.Size = new System.Drawing.Size(196, 20);
+            this.txtIDCita.TabIndex = 2;
             // 
             // label3
             // 
@@ -92,25 +94,25 @@ namespace CapaVista_MG2
             this.label4.TabIndex = 4;
             this.label4.Text = "Solicitante:";
             // 
-            // label5
+            // lblNombre
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(174, 115);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(18, 23);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "-";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(174, 115);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(18, 23);
+            this.lblNombre.TabIndex = 6;
+            this.lblNombre.Text = "-";
             // 
-            // label6
+            // lblDPI
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(174, 153);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(18, 23);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "-";
+            this.lblDPI.AutoSize = true;
+            this.lblDPI.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDPI.Location = new System.Drawing.Point(174, 153);
+            this.lblDPI.Name = "lblDPI";
+            this.lblDPI.Size = new System.Drawing.Size(18, 23);
+            this.lblDPI.TabIndex = 7;
+            this.lblDPI.Text = "-";
             // 
             // label7
             // 
@@ -132,71 +134,25 @@ namespace CapaVista_MG2
             this.label8.TabIndex = 9;
             this.label8.Text = "Nueva fecha:";
             // 
-            // label9
+            // lblFecha
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(174, 192);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 23);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "-";
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.Location = new System.Drawing.Point(174, 192);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(18, 23);
+            this.lblFecha.TabIndex = 10;
+            this.lblFecha.Text = "-";
             // 
-            // label10
+            // fecha_n
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(176, 274);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 23);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "-";
-            // 
-            // uI_Calendario1
-            // 
-            this.uI_Calendario1.BackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.ButtonCollapse = true;
-            this.uI_Calendario1.ButtonDay = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.uI_Calendario1.ButtonDayFont = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.uI_Calendario1.ButtonDownColor = System.Drawing.Color.WhiteSmoke;
-            this.uI_Calendario1.ButtonOverColor = System.Drawing.Color.WhiteSmoke;
-            this.uI_Calendario1.ButtonTextFormat = true;
-            this.uI_Calendario1.DayFont = new System.Drawing.Font("Century Gothic", 48.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.DayForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.DayFormat = Calendario.UI_Calendario.DiaLetra.Abbreviation;
-            this.uI_Calendario1.DayMonthFollowForeColor = System.Drawing.Color.Gray;
-            this.uI_Calendario1.DayMonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.DayMonthPassedForeColor = System.Drawing.Color.Gray;
-            this.uI_Calendario1.DaySemanaFont = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.DaysForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.uI_Calendario1.DayWeekForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.ElipceSize = 5;
-            this.uI_Calendario1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.HourFont = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.Location = new System.Drawing.Point(289, 274);
-            this.uI_Calendario1.MonthFont = new System.Drawing.Font("Century Gothic", 23.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.MonthForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.MoveCalendar = true;
-            this.uI_Calendario1.Name = "uI_Calendario1";
-            this.uI_Calendario1.PanelBottonBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelDateBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelDateHeight = 100;
-            this.uI_Calendario1.PanelDayBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.PanelLowerBackColor = System.Drawing.Color.White;
-            this.uI_Calendario1.SemanaFont = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.Size = new System.Drawing.Size(366, 402);
-            this.uI_Calendario1.TabIndex = 12;
-            this.uI_Calendario1.Text = "uI_Calendario1";
-            this.uI_Calendario1.TimeForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.TitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
-            this.uI_Calendario1.TitleFont = new System.Drawing.Font("Century Gothic", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.TitleForeColor = System.Drawing.Color.White;
-            this.uI_Calendario1.TitleFormat = Calendario.UI_Calendario.TextHora.Text;
-            this.uI_Calendario1.TitleHeight = 35;
-            this.uI_Calendario1.TitleText = "Calendario";
-            this.uI_Calendario1.TitleVisible = true;
-            this.uI_Calendario1.YearFont = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uI_Calendario1.YearForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.fecha_n.AutoSize = true;
+            this.fecha_n.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha_n.Location = new System.Drawing.Point(176, 274);
+            this.fecha_n.Name = "fecha_n";
+            this.fecha_n.Size = new System.Drawing.Size(18, 23);
+            this.fecha_n.TabIndex = 11;
+            this.fecha_n.Text = "-";
             // 
             // button1
             // 
@@ -209,28 +165,61 @@ namespace CapaVista_MG2
             this.button1.TabIndex = 13;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(331, 350);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 14;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // textBoxCorreCita
+            // 
+            this.textBoxCorreCita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(134)))), ((int)(((byte)(182)))), ((int)(((byte)(246)))));
+            this.textBoxCorreCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.textBoxCorreCita.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorreCita.Location = new System.Drawing.Point(544, 60);
+            this.textBoxCorreCita.Name = "textBoxCorreCita";
+            this.textBoxCorreCita.Size = new System.Drawing.Size(95, 47);
+            this.textBoxCorreCita.TabIndex = 16;
+            this.textBoxCorreCita.Text = "BUSCAR";
+            this.textBoxCorreCita.UseVisualStyleBackColor = false;
+            this.textBoxCorreCita.Click += new System.EventHandler(this.Buscar_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(289, 320);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(310, 209);
+            this.dataGridView1.TabIndex = 17;
+            this.dataGridView1.Visible = false;
             // 
             // Repro_Cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(774, 700);
+            this.ClientSize = new System.Drawing.Size(869, 760);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.textBoxCorreCita);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.uI_Calendario1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.fecha_n);
+            this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblDPI);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtIDCita);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Repro_Cita";
             this.Text = "REPROGRAMAR CITA";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,16 +229,18 @@ namespace CapaVista_MG2
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIDCita;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblDPI;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private Calendario.UI_Calendario uI_Calendario1;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label fecha_n;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.Button textBoxCorreCita;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
