@@ -29,31 +29,51 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ValidacionDeDatos));
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txt_tipodoc = new System.Windows.Forms.TextBox();
+            this.txt_apecasado = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.btn_aceptar = new System.Windows.Forms.Button();
+            this.cmb_ocupacion = new System.Windows.Forms.ComboBox();
+            this.cmb_ojos = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.cmb_tez = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.txt_altura = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.txt_confcorreo = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.txt_correo = new System.Windows.Forms.TextBox();
+            this.txt_telefono = new System.Windows.Forms.TextBox();
+            this.txt_celular = new System.Windows.Forms.TextBox();
+            this.txt_direccion = new System.Windows.Forms.TextBox();
+            this.cmb_estadocivil = new System.Windows.Forms.ComboBox();
+            this.cmb_genero = new System.Windows.Forms.ComboBox();
+            this.txt_nacionalidad = new System.Windows.Forms.TextBox();
+            this.txt_numdoc = new System.Windows.Forms.TextBox();
+            this.txt_segundoa = new System.Windows.Forms.TextBox();
+            this.txt_primera = new System.Windows.Forms.TextBox();
+            this.txt_nombres = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -64,386 +84,685 @@ namespace Vista_PrototipoMenu
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dtp_nacimiento = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btn_modificar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox19
+            // pictureBox19
             // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(546, 246);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(211, 30);
-            this.textBox19.TabIndex = 79;
+            this.pictureBox19.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(158, 261);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(25, 22);
+            this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox19.TabIndex = 176;
+            this.pictureBox19.TabStop = false;
             // 
-            // textBox18
+            // pictureBox18
             // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(546, 183);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(211, 30);
-            this.textBox18.TabIndex = 78;
+            this.pictureBox18.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(519, 734);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox18.TabIndex = 175;
+            this.pictureBox18.TabStop = false;
             // 
-            // textBox17
+            // pictureBox17
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(546, 101);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(211, 30);
-            this.textBox17.TabIndex = 77;
+            this.pictureBox17.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(519, 666);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox17.TabIndex = 174;
+            this.pictureBox17.TabStop = false;
             // 
-            // textBox16
+            // pictureBox16
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(546, 319);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(211, 30);
-            this.textBox16.TabIndex = 76;
+            this.pictureBox16.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(519, 593);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 173;
+            this.pictureBox16.TabStop = false;
             // 
-            // textBox15
+            // pictureBox15
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(546, 529);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(211, 30);
-            this.textBox15.TabIndex = 75;
+            this.pictureBox15.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(519, 522);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 172;
+            this.pictureBox15.TabStop = false;
             // 
-            // textBox14
+            // pictureBox14
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(546, 614);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(211, 30);
-            this.textBox14.TabIndex = 74;
+            this.pictureBox14.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(519, 391);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox14.TabIndex = 171;
+            this.pictureBox14.TabStop = false;
             // 
-            // textBox13
+            // pictureBox13
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(546, 691);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(211, 30);
-            this.textBox13.TabIndex = 73;
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(519, 324);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox13.TabIndex = 170;
+            this.pictureBox13.TabStop = false;
             // 
-            // textBox12
+            // pictureBox12
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(546, 766);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(211, 30);
-            this.textBox12.TabIndex = 72;
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(159, 734);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox12.TabIndex = 169;
+            this.pictureBox12.TabStop = false;
             // 
-            // textBox11
+            // pictureBox11
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(102, 766);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(211, 30);
-            this.textBox11.TabIndex = 71;
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(159, 666);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox11.TabIndex = 168;
+            this.pictureBox11.TabStop = false;
             // 
-            // textBox10
+            // pictureBox10
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(102, 691);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(211, 30);
-            this.textBox10.TabIndex = 70;
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(159, 593);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 167;
+            this.pictureBox10.TabStop = false;
             // 
-            // textBox9
+            // pictureBox9
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(102, 614);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(211, 30);
-            this.textBox9.TabIndex = 69;
+            this.pictureBox9.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(159, 522);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 166;
+            this.pictureBox9.TabStop = false;
             // 
-            // textBox8
+            // pictureBox8
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(102, 529);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(211, 30);
-            this.textBox8.TabIndex = 68;
+            this.pictureBox8.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(159, 450);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 165;
+            this.pictureBox8.TabStop = false;
             // 
-            // textBox7
+            // pictureBox7
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(306, 434);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(498, 30);
-            this.textBox7.TabIndex = 67;
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(159, 391);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 164;
+            this.pictureBox7.TabStop = false;
             // 
-            // textBox6
+            // pictureBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(180, 368);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(211, 30);
-            this.textBox6.TabIndex = 66;
+            this.pictureBox6.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(158, 324);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 163;
+            this.pictureBox6.TabStop = false;
             // 
-            // textBox5
+            // pictureBox5
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(102, 307);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(211, 30);
-            this.textBox5.TabIndex = 65;
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(519, 263);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(24, 29);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 162;
+            this.pictureBox5.TabStop = false;
             // 
-            // textBox4
+            // pictureBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(102, 243);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(211, 30);
-            this.textBox4.TabIndex = 64;
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(519, 195);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 161;
+            this.pictureBox4.TabStop = false;
             // 
-            // textBox3
+            // pictureBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(102, 177);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 30);
-            this.textBox3.TabIndex = 63;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(159, 194);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 160;
+            this.pictureBox3.TabStop = false;
             // 
-            // textBox2
+            // pictureBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(102, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 30);
-            this.textBox2.TabIndex = 62;
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(519, 124);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 159;
+            this.pictureBox2.TabStop = false;
             // 
-            // label21
+            // pictureBox1
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(541, 738);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(107, 25);
-            this.label21.TabIndex = 61;
-            this.label21.Text = "Ocupacion";
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(159, 124);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 158;
+            this.pictureBox1.TabStop = false;
             // 
-            // label20
+            // txt_tipodoc
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(108, 738);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 25);
-            this.label20.TabIndex = 60;
-            this.label20.Text = "Ojos";
+            this.txt_tipodoc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tipodoc.Location = new System.Drawing.Point(545, 263);
+            this.txt_tipodoc.Multiline = true;
+            this.txt_tipodoc.Name = "txt_tipodoc";
+            this.txt_tipodoc.Size = new System.Drawing.Size(266, 32);
+            this.txt_tipodoc.TabIndex = 157;
+            // 
+            // txt_apecasado
+            // 
+            this.txt_apecasado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apecasado.Location = new System.Drawing.Point(545, 195);
+            this.txt_apecasado.Multiline = true;
+            this.txt_apecasado.Name = "txt_apecasado";
+            this.txt_apecasado.Size = new System.Drawing.Size(266, 32);
+            this.txt_apecasado.TabIndex = 156;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(541, 663);
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(516, 171);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(46, 25);
-            this.label19.TabIndex = 59;
-            this.label19.Text = "Tez";
+            this.label19.Size = new System.Drawing.Size(177, 20);
+            this.label19.TabIndex = 155;
+            this.label19.Text = "Apellido de casado(a):";
+            // 
+            // btn_aceptar
+            // 
+            this.btn_aceptar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_aceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_aceptar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_aceptar.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_aceptar.Location = new System.Drawing.Point(380, 805);
+            this.btn_aceptar.Name = "btn_aceptar";
+            this.btn_aceptar.Size = new System.Drawing.Size(100, 48);
+            this.btn_aceptar.TabIndex = 154;
+            this.btn_aceptar.Text = "Guardar";
+            this.btn_aceptar.UseVisualStyleBackColor = false;
+            this.btn_aceptar.Click += new System.EventHandler(this.btn_aceptar_Click);
+            // 
+            // cmb_ocupacion
+            // 
+            this.cmb_ocupacion.FormattingEnabled = true;
+            this.cmb_ocupacion.Location = new System.Drawing.Point(545, 734);
+            this.cmb_ocupacion.Name = "cmb_ocupacion";
+            this.cmb_ocupacion.Size = new System.Drawing.Size(266, 24);
+            this.cmb_ocupacion.TabIndex = 153;
+            // 
+            // cmb_ojos
+            // 
+            this.cmb_ojos.FormattingEnabled = true;
+            this.cmb_ojos.Location = new System.Drawing.Point(189, 734);
+            this.cmb_ojos.Name = "cmb_ojos";
+            this.cmb_ojos.Size = new System.Drawing.Size(266, 24);
+            this.cmb_ojos.TabIndex = 152;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(516, 711);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 20);
+            this.label18.TabIndex = 151;
+            this.label18.Text = "Ocupación*:";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(541, 586);
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(157, 711);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(89, 25);
-            this.label17.TabIndex = 58;
-            this.label17.Text = "Telefono";
+            this.label17.Size = new System.Drawing.Size(51, 20);
+            this.label17.TabIndex = 150;
+            this.label17.Text = "Ojos*:";
+            // 
+            // cmb_tez
+            // 
+            this.cmb_tez.FormattingEnabled = true;
+            this.cmb_tez.Location = new System.Drawing.Point(545, 666);
+            this.cmb_tez.Name = "cmb_tez";
+            this.cmb_tez.Size = new System.Drawing.Size(266, 24);
+            this.cmb_tez.TabIndex = 149;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(541, 501);
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(516, 643);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(115, 25);
-            this.label16.TabIndex = 57;
-            this.label16.Text = "Estado Civil";
+            this.label16.Size = new System.Drawing.Size(40, 20);
+            this.label16.TabIndex = 148;
+            this.label16.Text = "Tez*:";
+            // 
+            // txt_altura
+            // 
+            this.txt_altura.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_altura.Location = new System.Drawing.Point(189, 666);
+            this.txt_altura.Multiline = true;
+            this.txt_altura.Name = "txt_altura";
+            this.txt_altura.Size = new System.Drawing.Size(266, 32);
+            this.txt_altura.TabIndex = 147;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(107, 663);
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(154, 643);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(103, 25);
-            this.label15.TabIndex = 56;
-            this.label15.Text = "Altura(cm)";
+            this.label15.Size = new System.Drawing.Size(162, 20);
+            this.label15.TabIndex = 146;
+            this.label15.Text = "Altura (centímetros)*:";
+            // 
+            // txt_confcorreo
+            // 
+            this.txt_confcorreo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_confcorreo.Location = new System.Drawing.Point(545, 593);
+            this.txt_confcorreo.Multiline = true;
+            this.txt_confcorreo.Name = "txt_confcorreo";
+            this.txt_confcorreo.Size = new System.Drawing.Size(266, 32);
+            this.txt_confcorreo.TabIndex = 145;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(107, 586);
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(516, 570);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(173, 25);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Correo Eelctronico";
+            this.label14.Size = new System.Drawing.Size(229, 20);
+            this.label14.TabIndex = 144;
+            this.label14.Text = "Confirme correo electrónico*:";
+            // 
+            // txt_correo
+            // 
+            this.txt_correo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_correo.Location = new System.Drawing.Point(189, 593);
+            this.txt_correo.Multiline = true;
+            this.txt_correo.Name = "txt_correo";
+            this.txt_correo.Size = new System.Drawing.Size(266, 32);
+            this.txt_correo.TabIndex = 143;
+            // 
+            // txt_telefono
+            // 
+            this.txt_telefono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_telefono.Location = new System.Drawing.Point(545, 522);
+            this.txt_telefono.Multiline = true;
+            this.txt_telefono.Name = "txt_telefono";
+            this.txt_telefono.Size = new System.Drawing.Size(266, 32);
+            this.txt_telefono.TabIndex = 142;
+            // 
+            // txt_celular
+            // 
+            this.txt_celular.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_celular.Location = new System.Drawing.Point(189, 522);
+            this.txt_celular.Multiline = true;
+            this.txt_celular.Name = "txt_celular";
+            this.txt_celular.Size = new System.Drawing.Size(266, 32);
+            this.txt_celular.TabIndex = 141;
+            // 
+            // txt_direccion
+            // 
+            this.txt_direccion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_direccion.Location = new System.Drawing.Point(189, 450);
+            this.txt_direccion.Multiline = true;
+            this.txt_direccion.Name = "txt_direccion";
+            this.txt_direccion.Size = new System.Drawing.Size(622, 32);
+            this.txt_direccion.TabIndex = 140;
+            // 
+            // cmb_estadocivil
+            // 
+            this.cmb_estadocivil.FormattingEnabled = true;
+            this.cmb_estadocivil.Location = new System.Drawing.Point(545, 391);
+            this.cmb_estadocivil.Name = "cmb_estadocivil";
+            this.cmb_estadocivil.Size = new System.Drawing.Size(266, 24);
+            this.cmb_estadocivil.TabIndex = 139;
+            // 
+            // cmb_genero
+            // 
+            this.cmb_genero.FormattingEnabled = true;
+            this.cmb_genero.Location = new System.Drawing.Point(194, 391);
+            this.cmb_genero.Name = "cmb_genero";
+            this.cmb_genero.Size = new System.Drawing.Size(261, 24);
+            this.cmb_genero.TabIndex = 138;
+            // 
+            // txt_nacionalidad
+            // 
+            this.txt_nacionalidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nacionalidad.Location = new System.Drawing.Point(545, 324);
+            this.txt_nacionalidad.Multiline = true;
+            this.txt_nacionalidad.Name = "txt_nacionalidad";
+            this.txt_nacionalidad.Size = new System.Drawing.Size(266, 32);
+            this.txt_nacionalidad.TabIndex = 137;
+            // 
+            // txt_numdoc
+            // 
+            this.txt_numdoc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_numdoc.Location = new System.Drawing.Point(189, 324);
+            this.txt_numdoc.Multiline = true;
+            this.txt_numdoc.Name = "txt_numdoc";
+            this.txt_numdoc.Size = new System.Drawing.Size(266, 32);
+            this.txt_numdoc.TabIndex = 136;
+            // 
+            // txt_segundoa
+            // 
+            this.txt_segundoa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_segundoa.Location = new System.Drawing.Point(189, 195);
+            this.txt_segundoa.Multiline = true;
+            this.txt_segundoa.Name = "txt_segundoa";
+            this.txt_segundoa.Size = new System.Drawing.Size(266, 32);
+            this.txt_segundoa.TabIndex = 135;
+            // 
+            // txt_primera
+            // 
+            this.txt_primera.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_primera.Location = new System.Drawing.Point(545, 124);
+            this.txt_primera.Multiline = true;
+            this.txt_primera.Name = "txt_primera";
+            this.txt_primera.Size = new System.Drawing.Size(266, 32);
+            this.txt_primera.TabIndex = 134;
+            // 
+            // txt_nombres
+            // 
+            this.txt_nombres.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombres.Location = new System.Drawing.Point(189, 124);
+            this.txt_nombres.Multiline = true;
+            this.txt_nombres.Name = "txt_nombres";
+            this.txt_nombres.Size = new System.Drawing.Size(266, 32);
+            this.txt_nombres.TabIndex = 133;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(97, 501);
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(157, 570);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 25);
-            this.label13.TabIndex = 54;
-            this.label13.Text = "Celular";
+            this.label13.Size = new System.Drawing.Size(160, 20);
+            this.label13.TabIndex = 132;
+            this.label13.Text = "Correo electrónico*:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(97, 439);
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(516, 499);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(194, 25);
-            this.label12.TabIndex = 53;
-            this.label12.Text = "Direccion Residencia";
+            this.label12.Size = new System.Drawing.Size(75, 20);
+            this.label12.TabIndex = 131;
+            this.label12.Text = "Teléfono:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(97, 371);
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(154, 499);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 25);
-            this.label11.TabIndex = 52;
-            this.label11.Text = "Genero";
+            this.label11.Size = new System.Drawing.Size(71, 20);
+            this.label11.TabIndex = 130;
+            this.label11.Text = "Celular*:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(541, 279);
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(155, 427);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(125, 25);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Nacionalidad";
+            this.label10.Size = new System.Drawing.Size(174, 20);
+            this.label10.TabIndex = 129;
+            this.label10.Text = "Dirección Residencia*:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(97, 279);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(516, 368);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 25);
-            this.label9.TabIndex = 50;
-            this.label9.Text = "No. Documento";
+            this.label9.Size = new System.Drawing.Size(103, 20);
+            this.label9.TabIndex = 128;
+            this.label9.Text = "Estado Civil*:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(541, 216);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(155, 368);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(156, 25);
-            this.label8.TabIndex = 49;
-            this.label8.Text = "Tipo Documento";
+            this.label8.Size = new System.Drawing.Size(76, 20);
+            this.label8.TabIndex = 127;
+            this.label8.Text = "Género*:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(97, 215);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(516, 301);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(196, 25);
-            this.label7.TabIndex = 48;
-            this.label7.Text = "Fecha de Nacimiento";
+            this.label7.Size = new System.Drawing.Size(118, 20);
+            this.label7.TabIndex = 126;
+            this.label7.Text = "Nacionalidad*:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(541, 149);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(154, 301);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(203, 25);
-            this.label6.TabIndex = 47;
-            this.label6.Text = "Apellido de casado(a)";
+            this.label6.Size = new System.Drawing.Size(168, 20);
+            this.label6.TabIndex = 125;
+            this.label6.Text = "Número Documento*:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(97, 149);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(516, 240);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 25);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "Segundo Apellido";
+            this.label5.Size = new System.Drawing.Size(138, 20);
+            this.label5.TabIndex = 124;
+            this.label5.Text = "Tipo Documento*:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(541, 73);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(160, 240);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 25);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Primer Apellido";
+            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.TabIndex = 123;
+            this.label4.Text = "Fecha Nacimiento*:";
+            // 
+            // dtp_nacimiento
+            // 
+            this.dtp_nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_nacimiento.Location = new System.Drawing.Point(189, 261);
+            this.dtp_nacimiento.Name = "dtp_nacimiento";
+            this.dtp_nacimiento.Size = new System.Drawing.Size(266, 22);
+            this.dtp_nacimiento.TabIndex = 122;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(97, 73);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(157, 171);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 25);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Nombre(s)";
+            this.label3.Size = new System.Drawing.Size(148, 20);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "Segundo Apellido*:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(248, 20);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(516, 101);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(264, 32);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Validacion de datos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Size = new System.Drawing.Size(128, 20);
+            this.label2.TabIndex = 120;
+            this.label2.Text = "Primer Apellido*:";
             // 
-            // button2
+            // label1
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(751, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 45);
-            this.button2.TabIndex = 42;
-            this.button2.Text = "Regresar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(154, 101);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(94, 20);
+            this.label1.TabIndex = 119;
+            this.label1.Text = "Nombre(s)*:";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(354, 21);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(316, 37);
+            this.label20.TabIndex = 177;
+            this.label20.Text = "Validacion de Datos";
+            // 
+            // btn_modificar
+            // 
+            this.btn_modificar.BackColor = System.Drawing.SystemColors.Control;
+            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modificar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.ForeColor = System.Drawing.Color.DarkGoldenrod;
+            this.btn_modificar.Location = new System.Drawing.Point(519, 805);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(100, 48);
+            this.btn_modificar.TabIndex = 178;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = false;
             // 
             // ValidacionDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 878);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label21);
+            this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.label20);
+            this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txt_tipodoc);
+            this.Controls.Add(this.txt_apecasado);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.btn_aceptar);
+            this.Controls.Add(this.cmb_ocupacion);
+            this.Controls.Add(this.cmb_ojos);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
+            this.Controls.Add(this.cmb_tez);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.txt_altura);
             this.Controls.Add(this.label15);
+            this.Controls.Add(this.txt_confcorreo);
             this.Controls.Add(this.label14);
+            this.Controls.Add(this.txt_correo);
+            this.Controls.Add(this.txt_telefono);
+            this.Controls.Add(this.txt_celular);
+            this.Controls.Add(this.txt_direccion);
+            this.Controls.Add(this.cmb_estadocivil);
+            this.Controls.Add(this.cmb_genero);
+            this.Controls.Add(this.txt_nacionalidad);
+            this.Controls.Add(this.txt_numdoc);
+            this.Controls.Add(this.txt_segundoa);
+            this.Controls.Add(this.txt_primera);
+            this.Controls.Add(this.txt_nombres);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -454,11 +773,31 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.dtp_nacimiento);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label1);
             this.Name = "ValidacionDeDatos";
             this.Text = "ValidacionDeDatos";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,31 +805,50 @@ namespace Vista_PrototipoMenu
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.PictureBox pictureBox17;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox pictureBox14;
+        private System.Windows.Forms.PictureBox pictureBox13;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txt_tipodoc;
+        private System.Windows.Forms.TextBox txt_apecasado;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btn_aceptar;
+        private System.Windows.Forms.ComboBox cmb_ocupacion;
+        private System.Windows.Forms.ComboBox cmb_ojos;
+        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cmb_tez;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txt_altura;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txt_confcorreo;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txt_correo;
+        private System.Windows.Forms.TextBox txt_telefono;
+        private System.Windows.Forms.TextBox txt_celular;
+        private System.Windows.Forms.TextBox txt_direccion;
+        private System.Windows.Forms.ComboBox cmb_estadocivil;
+        private System.Windows.Forms.ComboBox cmb_genero;
+        private System.Windows.Forms.TextBox txt_nacionalidad;
+        private System.Windows.Forms.TextBox txt_numdoc;
+        private System.Windows.Forms.TextBox txt_segundoa;
+        private System.Windows.Forms.TextBox txt_primera;
+        private System.Windows.Forms.TextBox txt_nombres;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -501,8 +859,11 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dtp_nacimiento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btn_modificar;
     }
 }

@@ -240,6 +240,79 @@ namespace Modelo_PrototipoMenu
            
         }
 
+        public void ValidarDatos(int id, string dp_nombre, string dp_primerapellido, string dp_segundoapellido, DateTime dp_fechanac, string dp_dirResidencia, int dp_celular, int dp_telefono, string dp_correo, string dp_correoconfir, int dp_alturacm, string dp_tez, string dp_ojos, string dp_ocupacion, string dp_casadoapellido)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_datospersonales (`Pk_id`, `dp_nombre`, `dp_primerapellido`, `dp_segundoapellido`,´dp_fechanac´,´dp_dirResidencia´,´dp_celular´,´dp_telefono´,´dp_correo´,´dp_correoconfir,´dp_alturacm´,´dp_tez´,´dp_ojos´,´dp_ocupacion´,´dp_casadoapellido´) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@Pk_id", id);
+                                cmd.Parameters.AddWithValue("@dp_nombre", dp_nombre);
+                                cmd.Parameters.AddWithValue("@dp_primerapellido", dp_primerapellido);
+                                cmd.Parameters.AddWithValue("@dp_segundoapellido", dp_segundoapellido);
+                                cmd.Parameters.AddWithValue("@dp_fechanac", dp_fechanac);
+                                cmd.Parameters.AddWithValue("@dp_dirResidencia", dp_dirResidencia);
+                                cmd.Parameters.AddWithValue("@dp_celular", dp_celular);
+                                cmd.Parameters.AddWithValue("@dp_telefono", dp_telefono);
+                                cmd.Parameters.AddWithValue("@dp_correo", dp_correo);
+                                cmd.Parameters.AddWithValue("@dp_correoconfir", dp_correoconfir);
+                                cmd.Parameters.AddWithValue("@dpalturacm", dp_alturacm);
+                                cmd.Parameters.AddWithValue("@dp_tez", dp_tez);
+                                cmd.Parameters.AddWithValue("@dp_ojos", dp_ojos);
+                                cmd.Parameters.AddWithValue("@dp_ocupacion", dp_ocupacion);
+                                cmd.Parameters.AddWithValue("@dp_casadoapellido", dp_casadoapellido);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al Validar Datos: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+        private void GuardarDatos(int id, string dp_nombre, string dp_primerapellido, string dp_segundoapellido, DateTime dp_fechanac, string dp_dirResidencia, int dp_celular, int dp_telefono, string dp_correo, string dp_correoconfir, int dp_alturacm, string dp_tez, string dp_ojos, string dp_ocupacion, string dp_casadoapellido)
+        {
+            /*
+        using (OdbcConnection connection = con.connection())
+        {
+            string query = "INSERT INTO tbl_datospersonales (nombre, primerApellido, segundoApellido, apellidoCasado, fechaNacimiento, tipoDocumento, numDocumento, nacionalidad, genero, estadoCivil, direccion, celular, telefono, correo, altura, tez, ojos, ocupacion) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            using (OdbcCommand command = new OdbcCommand(query, connection))
+            {
+                cmd.Parameters.AddWithValue("@Pk_id", id);
+                cmd.Parameters.AddWithValue("@dp_nombre", dp_nombre);
+                cmd.Parameters.AddWithValue("@dp_primerapellido", dp_primerapellido);
+                cmd.Parameters.AddWithValue("@dp_segundoapellido", dp_segundoapellido);
+                cmd.Parameters.AddWithValue("@dp_fechanac", dp_fechanac);
+                cmd.Parameters.AddWithValue("@dp_dirResidencia", dp_dirResidencia);
+                cmd.Parameters.AddWithValue("@dp_celular", dp_celular);
+                cmd.Parameters.AddWithValue("@dp_telefono", dp_telefono);
+                cmd.Parameters.AddWithValue("@dp_correo", dp_correo);
+                cmd.Parameters.AddWithValue("@dp_correoconfir", dp_correoconfir);
+                cmd.Parameters.AddWithValue("@dpalturacm", dp_alturacm);
+                cmd.Parameters.AddWithValue("@dp_tez", dp_tez);
+                cmd.Parameters.AddWithValue("@dp_ojos", dp_ojos);
+                cmd.Parameters.AddWithValue("@dp_ocupacion", dp_ocupacion);
+                cmd.Parameters.AddWithValue("@dp_casadoapellido", dp_casadoapellido);
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }*/
+        }
+
         public bool GuardarCGC(string table, Dictionary<string, object> vals)
         {
             using (OdbcConnection conn = con.connection())
