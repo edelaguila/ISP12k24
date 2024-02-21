@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sentences\CitaSentence.cs" />
+    <Compile Include="Templates\Cita.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sentencias.cs" />

@@ -8,8 +8,8 @@ using System.Data;
 
 
 namespace CapaModelo_MG2
-{ 
-   
+{
+
     public class Sentencias
     {
 
@@ -29,6 +29,15 @@ namespace CapaModelo_MG2
         }
 
 
+        public void executerCommand(string query)
+        {
+            Console.WriteLine("Creating command");
+            OdbcCommand mycommand = new OdbcCommand(query, con.connection());
+            Console.WriteLine("Before execute");
+            mycommand.ExecuteNonQuery();
+        }
+
+
     }
-    
+
 }

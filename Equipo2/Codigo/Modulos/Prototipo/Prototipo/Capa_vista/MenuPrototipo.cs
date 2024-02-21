@@ -21,17 +21,17 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {btnaplicaciones};
+            Button[] apps = { btnaplicaciones };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.getAccesoApp(1002, apps[0]);
         }
-        
+
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-            
+
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -95,7 +95,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "umg.chm");
         }
 
         private void button1_Click(object sender, EventArgs e)

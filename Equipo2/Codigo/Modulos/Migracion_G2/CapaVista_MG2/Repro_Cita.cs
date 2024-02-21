@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,12 +25,14 @@ namespace CapaVista_MG2
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             DateTime fechaseleccionada = monthCalendar1.SelectionStart;
-            fecha_n.Text = fechaseleccionada.ToString("dd/MM/yyyy");
+            fecha_n.Text = fechaseleccionada.ToString("yyyy/MM/dd");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int corr = Convert.ToInt32(txtIDCita.Text);
 
+            this.cn.updateCita(corr, monthCalendar1.SelectionStart);
         }
 
         private void Buscar_Click(object sender, EventArgs e)
