@@ -79,6 +79,12 @@
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatosBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosBoleta.Designer.cs">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,23 +157,24 @@
     <Compile Include="HorariosDispo.Designer.cs">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
     </Compile>
-    <Compile Include="MDIBanco.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDIBanco.Designer.cs">
-      <DependentUpon>MDIBanco.cs</DependentUpon>
-    </Compile>
     <Compile Include="MenuPrototipo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrototipo.designer.cs">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ValidacionDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidacionDeDatos.Designer.cs">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosBoleta.resx">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
@@ -213,15 +223,15 @@
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDIBanco.resx">
-      <DependentUpon>MDIBanco.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrototipo.resx">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidacionDeDatos.resx">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
