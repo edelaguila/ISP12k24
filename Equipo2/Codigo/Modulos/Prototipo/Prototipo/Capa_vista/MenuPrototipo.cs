@@ -76,7 +76,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.ReproC_AD form = new CapaVista_MG2.ReproC_AD();
+            CapaVista_MG2.Repro_Cita form = new CapaVista_MG2.Repro_Cita();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();

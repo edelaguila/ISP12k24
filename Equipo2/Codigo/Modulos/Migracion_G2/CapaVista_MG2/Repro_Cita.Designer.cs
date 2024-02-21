@@ -169,7 +169,7 @@ namespace CapaVista_MG2
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(331, 350);
+            this.monthCalendar1.Location = new System.Drawing.Point(329, 354);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 14;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -201,7 +201,7 @@ namespace CapaVista_MG2
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(869, 760);
+            this.ClientSize = new System.Drawing.Size(869, 749);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBoxCorreCita);
