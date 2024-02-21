@@ -34,15 +34,13 @@ namespace CapaVista_MG2
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.data_grid = new System.Windows.Forms.DataGridView();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).BeginInit();
             this.SuspendLayout();
             // 
             // navegador1
@@ -68,7 +66,6 @@ namespace CapaVista_MG2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(196, 20);
             this.textBox1.TabIndex = 3;
-            this.textBox1.Tag = "Corre_cita";
             // 
             // label1
             // 
@@ -90,6 +87,12 @@ namespace CapaVista_MG2
             this.label3.TabIndex = 5;
             this.label3.Text = "DPI:";
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(273, 391);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 20;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -99,6 +102,16 @@ namespace CapaVista_MG2
             this.label10.Size = new System.Drawing.Size(18, 23);
             this.label10.TabIndex = 18;
             this.label10.Text = "-";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(238, 296);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(18, 23);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "-";
             // 
             // label8
             // 
@@ -126,7 +139,6 @@ namespace CapaVista_MG2
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(196, 20);
             this.textBox2.TabIndex = 21;
-            this.textBox2.Tag = "Nombre";
             // 
             // textBox3
             // 
@@ -134,35 +146,6 @@ namespace CapaVista_MG2
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(196, 20);
             this.textBox3.TabIndex = 22;
-            this.textBox3.Tag = "dpi";
-            // 
-            // data_grid
-            // 
-            this.data_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid.Location = new System.Drawing.Point(753, 164);
-            this.data_grid.Name = "data_grid";
-            this.data_grid.Size = new System.Drawing.Size(38, 155);
-            this.data_grid.TabIndex = 23;
-            this.data_grid.Tag = "cita";
-            this.data_grid.Visible = false;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(238, 296);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 23);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "-";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(47, 387);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 24;
-            this.dateTimePicker1.Tag = "fecha_i";
             // 
             // ReproC_AD
             // 
@@ -170,10 +153,9 @@ namespace CapaVista_MG2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(814, 598);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.data_grid);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -184,9 +166,7 @@ namespace CapaVista_MG2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.navegador1);
             this.Name = "ReproC_AD";
-            this.Tag = "1000";
             this.Text = "ReproC_AD";
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,13 +179,12 @@ namespace CapaVista_MG2
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.DataGridView data_grid;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

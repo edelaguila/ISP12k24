@@ -42,6 +42,10 @@
       <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -108,6 +112,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ReproC_AD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReproC_AD.Designer.cs">
+      <DependentUpon>ReproC_AD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repro_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +147,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReproC_AD.resx">
+      <DependentUpon>ReproC_AD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Repro_Cita.resx">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
