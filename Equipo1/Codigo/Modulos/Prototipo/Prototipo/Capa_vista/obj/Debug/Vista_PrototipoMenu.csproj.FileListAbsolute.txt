@@ -516,3 +516,4 @@ C:\Users\Usuario\Documents\Ingenieria de Software\ProyectoMigracion_G1\Equipo1\C
 C:\Users\Usuario\Documents\Ingenieria de Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
 C:\Users\Usuario\Documents\Ingenieria de Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
 C:\Users\Usuario\Documents\Ingenieria de Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.DatosBoleta.resources
+C:\Users\Usuario\Documents\Ingenieria de Software\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.ValidacionDeDatos.resources
