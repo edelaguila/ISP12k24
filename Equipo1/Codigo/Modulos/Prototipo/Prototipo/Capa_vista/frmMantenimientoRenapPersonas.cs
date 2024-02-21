@@ -19,6 +19,7 @@ namespace Vista_PrototipoMenu
             this.navegador1._initSeguridad();
 
             cb_genero.SelectedIndexChanged += ComboBox1_SelectedIndexChanged;
+            cb_estado.SelectedIndexChanged += estadoCivil;
 
             txt_dpi.TextChanged += TextBox1_TextChanged;
             txt_dpi.MaxLength = 13;
@@ -33,6 +34,18 @@ namespace Vista_PrototipoMenu
             string opcionSeleccionada = cb_genero.SelectedItem.ToString();
             txt_genero.Text = opcionSeleccionada;
         }
+
+        private void estadoCivil(object sender, EventArgs e)
+        {
+            // Limpiar el TextBox antes de enviar la opción seleccionada
+            txt_estadoCivil.Clear();
+
+            // Obtener la opción seleccionada del ComboBox y enviarla al TextBox
+            string opcionSeleccionada = cb_estado.SelectedItem.ToString();
+            txt_estadoCivil.Text = opcionSeleccionada;
+        }
+
+       
 
         private async void TextBox1_TextChanged(object sender, EventArgs e)
         {
