@@ -79,6 +79,12 @@
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatosBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosBoleta.Designer.cs">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosBoleta.resx">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>

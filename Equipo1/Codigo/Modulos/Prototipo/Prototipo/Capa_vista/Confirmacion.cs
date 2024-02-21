@@ -16,5 +16,17 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Calendario_citas calendario_Citas = new Calendario_citas();
+            calendario_Citas.Show();
+        }
+
+        private void btn_AgregarBoleta_Click(object sender, EventArgs e)
+        {
+            DatosBoleta boletadatos = new DatosBoleta();
+            boletadatos.Show();
+        }
     }
 }
