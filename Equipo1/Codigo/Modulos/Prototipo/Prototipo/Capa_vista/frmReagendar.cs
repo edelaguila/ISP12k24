@@ -107,20 +107,23 @@ namespace Vista_PrototipoMenu
                 int noCGC = int.Parse(textBox2.Text);
                 int noDocumento = int.Parse(textBox3.Text);
 
-
-
-
                 bool citaEncontrada = ctrl.BuscarCita(noBoleta, noDocumento, noCGC);
+                int CitaNum = ctrl.ObtenerCitaNum();
 
-                if (citaEncontrada && ctrl.DatosValidos(noBoleta, noDocumento, noCGC))
+                MessageBox.Show("Cita Encontrada" + CitaNum);
+                if (citaEncontrada)
                 {
-                    MessageBox.Show("Cita encontrada");
+                    MessageBox.Show("Cita Encontrada"+CitaNum);
                     Calendario_citas formAgendarCita = new Calendario_citas();
-                    formAgendarCita.Show();
+                    formAgendarCita.txtcitanum.Text = CitaNum.ToString();
+                    formAgendarCita.txtboleta.Text = noBoleta.ToString();
+                    formAgendarCita.txtcgc.Text = noCGC.ToString();
+                    formAgendarCita.txtdpi.Text = noDocumento.ToString();
+                    formAgendarCita.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Cita no encontrada o llaves foráneas inválidas");
+                    MessageBox.Show("Cita no encontrada o datos invalidos");
                     Console.WriteLine(noBoleta);
                     Console.WriteLine(noDocumento);
                     Console.WriteLine(noCGC);
@@ -128,7 +131,7 @@ namespace Vista_PrototipoMenu
             }
             catch (FormatException ex)
             {
-                MessageBox.Show("Error al convertir datos: " + ex.Message);
+                MessageBox.Show("Error : " + ex.Message);
             }
         }
     }

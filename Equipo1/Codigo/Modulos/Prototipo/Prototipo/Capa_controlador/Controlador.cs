@@ -80,25 +80,46 @@ namespace Controlador_PrototipoMenu
         }
 
         //buscar cita existente a reagendar
+        public int Citanum;
+
         public bool BuscarCita(int noBoleta, int noDocumento, int noCGC)
         {
             Cita cita = sn.BuscarCita(noBoleta, noDocumento, noCGC);
+            if (cita != null)
+            {
+                Citanum = cita.Pk_id_cita;
+                Console.WriteLine("citabusque:" + Citanum);
+            }
+
             return cita != null;
         }
 
         public bool DatosValidos(int noBoleta, int noDocumento, int noCGC)
         {
-
             Sentencias sentencias = new Sentencias();
-
-
             Cita cita = sentencias.BuscarCita(noBoleta, noDocumento, noCGC);
 
+            Console.WriteLine("datavaltcitanum:" + Citanum);
 
-            return cita != null && cita.tbl_boleta_Pk_No_Boleta == noBoleta &&
-                   cita.tbl_documento_Pk_num_dpi == noDocumento && cita.tbl_CGC_Pk_no_cgc == noCGC;
+            return cita != null &&
+                   cita.tbl_boleta_Pk_No_Boleta == noBoleta &&
+                   cita.tbl_documento_Pk_num_dpi == noDocumento &&
+                   cita.tbl_CGC_Pk_no_cgc == noCGC;
+        }
+
+        public int ObtenerCitaNum()
+        {
+            Console.WriteLine("obtenercitanum:" + Citanum);
+            return Citanum;
         }
         //Fin Existencia de la cita a reagendar
+
+        //actualizar cita
+
+        public bool ActualizarCitas(int numeroCita, string nuevaFecha, string nuevaHora, string nuevoDept, string nuevoMunicipio)
+         {
+             return sn.ActualizarCita( numeroCita, nuevaFecha, nuevaHora,  nuevoDept,  nuevoMunicipio);
+         }
 
         //generacion de boleta
 
