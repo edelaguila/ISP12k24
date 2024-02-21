@@ -87,7 +87,7 @@ namespace Modelo_PrototipoMenu
         public Cita BuscarCita(int noBoleta, int noDocumento, int noCGC)
         {
             Cita citaEncontrada = null;
-
+            int Citanum ;
             using (OdbcConnection conn = con.connection())
             {
                 try
@@ -95,7 +95,7 @@ namespace Modelo_PrototipoMenu
                     conn.Close();
                     conn.Open();
 
-                    string consulta = "SELECT Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_ciudad, tbl_boleta_Pk_No_Boleta, tbl_documento_Pk_num_dpi, tbl_CGC_Pk_no_cgc FROM tbl_cita WHERE tbl_boleta_Pk_No_Boleta = ? AND tbl_documento_Pk_num_dpi = ? AND tbl_CGC_Pk_no_cgc = ?";
+                    string consulta = "SELECT Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_municipio, tbl_boleta_Pk_id_boleta, tbl_renap_Pk_num_dpi, tbl_CGC_Pk_no_cgc FROM tbl_cita WHERE tbl_boleta_Pk_id_boleta = ? AND tbl_renap_Pk_num_dpi = ? AND tbl_CGC_Pk_no_cgc = ?";
                     using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                     {
                         cmd.Parameters.AddWithValue("@NoBoleta", noBoleta);
@@ -112,11 +112,13 @@ namespace Modelo_PrototipoMenu
                                     cit_fecha = reader["cit_fecha"].ToString(),
                                     cit_hora = reader["cit_hora"].ToString(),
                                     cit_dept = reader["cit_dept"].ToString(),
-                                    cit_ciudad = reader["cit_ciudad"].ToString(),
-                                    tbl_boleta_Pk_No_Boleta = Convert.ToInt32(reader["tbl_boleta_Pk_No_Boleta"]),
-                                    tbl_documento_Pk_num_dpi = Convert.ToInt32(reader["tbl_documento_Pk_num_dpi"]),
-                                    tbl_CGC_Pk_no_cgc = Convert.ToInt32(reader["tbl_CGC_Pk_no_cgc"])
+                                    cit_ciudad = reader["cit_municipio"].ToString(),
+                                      
+
                                 };
+                                Citanum = Convert.ToInt32(reader["Pk_id_cita"]);
+                                Console.WriteLine("Numero de cita es : " + Citanum);
+
                             }
                         }
                     }
@@ -130,6 +132,52 @@ namespace Modelo_PrototipoMenu
             return citaEncontrada;
         }
         //Fin Existencia de la cita a reagendar
+        //actaulizar cita
+
+        public bool ActualizarCita(int numeroCita, string nuevaFecha, string nuevaHora, string nuevoDept, string nuevoMunicipio)
+        {
+            bool citaActualizada = false;
+
+            using (OdbcConnection conn = con.connection())
+            {
+                try
+                {
+                    conn.Close();
+                    conn.Open();
+
+                    string consulta = "UPDATE tbl_cita SET cit_fecha = ?, cit_hora = ?, cit_dept = ?, cit_municipio = ? WHERE Pk_id_cita = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@CitFecha", nuevaFecha);
+                        cmd.Parameters.AddWithValue("@CitHora", nuevaHora);
+                        cmd.Parameters.AddWithValue("@CitDept", nuevoDept);
+                        cmd.Parameters.AddWithValue("@CitMunicipio", nuevoMunicipio);
+                        cmd.Parameters.AddWithValue("@PkIdCita", numeroCita);
+
+                        int filasActualizadas = cmd.ExecuteNonQuery();
+
+                        if (filasActualizadas > 0)
+                        {
+                            citaActualizada = true;
+                            Console.WriteLine("Cita actualizada correctamente");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No se pudo actualizar la cita");
+                        }
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Error al actualizar la cita: " + ex.Message);
+                }
+            }
+
+            return citaActualizada;
+        }
+        //fin actualizar cita
+
 
         //sentencias para generacion de boleta
 
