@@ -151,6 +151,12 @@
     <Compile Include="HorariosDispo.Designer.cs">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIBanco.Designer.cs">
+      <DependentUpon>MDIBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrototipo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIBanco.resx">
+      <DependentUpon>MDIBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrototipo.resx">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>
