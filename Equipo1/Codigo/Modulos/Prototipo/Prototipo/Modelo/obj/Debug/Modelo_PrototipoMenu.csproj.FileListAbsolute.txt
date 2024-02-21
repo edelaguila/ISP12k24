@@ -28,3 +28,9 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb

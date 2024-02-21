@@ -7,12 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador_PrototipoMenu;
+
 
 namespace Vista_PrototipoMenu
 {
-    public partial class frmRenovacion : Form
+    public partial class frmReagendar : Form
     {
-        public frmRenovacion()
+        //Controlador
+        Controlador ctrl = new Controlador();
+
+
+        public frmReagendar()
         {
 
             InitializeComponent();
@@ -22,8 +28,13 @@ namespace Vista_PrototipoMenu
             textBox1.MouseClick += textBox1_MouseClick;
             textBox2.MouseClick += textBox2_MouseClick;
 
+            textBox1.MouseClick += textBox1_MouseClick;
+            textBox2.MouseClick += textBox2_MouseClick;
+            textBox3.MouseClick += textBox3_MouseClick;
+
             textBox1.Text = "-----";
             textBox2.Text = "-----";
+            textBox3.Text = "-----";
             panel1.Paint += panel1_Paint;
         }
 
@@ -78,6 +89,50 @@ namespace Vista_PrototipoMenu
             }
 
 
+        }
+
+        private void textBox3_MouseClick(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "-----")
+            {
+                textBox3.Text = string.Empty;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int noBoleta = int.Parse(textBox1.Text);
+                int noCGC = int.Parse(textBox2.Text);
+                int noDocumento = int.Parse(textBox3.Text);
+
+                bool citaEncontrada = ctrl.BuscarCita(noBoleta, noDocumento, noCGC);
+                int CitaNum = ctrl.ObtenerCitaNum();
+
+                MessageBox.Show("Cita Encontrada" + CitaNum);
+                if (citaEncontrada)
+                {
+                    MessageBox.Show("Cita Encontrada"+CitaNum);
+                    Calendario_citas formAgendarCita = new Calendario_citas();
+                    formAgendarCita.txtcitanum.Text = CitaNum.ToString();
+                    formAgendarCita.txtboleta.Text = noBoleta.ToString();
+                    formAgendarCita.txtcgc.Text = noCGC.ToString();
+                    formAgendarCita.txtdpi.Text = noDocumento.ToString();
+                    formAgendarCita.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Cita no encontrada o datos invalidos");
+                    Console.WriteLine(noBoleta);
+                    Console.WriteLine(noDocumento);
+                    Console.WriteLine(noCGC);
+                }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
+            }
         }
     }
 }

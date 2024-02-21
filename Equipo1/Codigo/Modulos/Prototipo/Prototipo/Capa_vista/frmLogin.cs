@@ -7,14 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
     public partial class frmLogin : Form
     {
+        Controlador cn = new Controlador();
+
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

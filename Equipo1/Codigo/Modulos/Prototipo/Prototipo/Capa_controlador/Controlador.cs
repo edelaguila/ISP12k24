@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo_PrototipoMenu;
+using System.Data.Odbc;
+using System.Data;
 
 namespace Controlador_PrototipoMenu
 {
@@ -67,15 +69,79 @@ namespace Controlador_PrototipoMenu
             combo.Items.Add("Otra");
         }
 
-        public bool InsertarDocumento(int codigo, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
+        public bool InsertarDocumento(int dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
         {
-            return sn.InsertarDocumento(codigo, numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido);
+            return sn.InsertarDocumento(dpi,  numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido);
         }
 
-        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, int codigo, string Capellido)
+        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, int numdoc, string Capellido)
         {
-            return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, codigo, Capellido);
+            return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,  Capellido);
         }
 
+        //buscar cita existente a reagendar
+        public int Citanum;
+
+        public bool BuscarCita(int noBoleta, int noDocumento, int noCGC)
+        {
+            Cita cita = sn.BuscarCita(noBoleta, noDocumento, noCGC);
+            if (cita != null)
+            {
+                Citanum = cita.Pk_id_cita;
+                Console.WriteLine("citabusque:" + Citanum);
+            }
+
+            return cita != null;
+        }
+
+        public bool DatosValidos(int noBoleta, int noDocumento, int noCGC)
+        {
+            Sentencias sentencias = new Sentencias();
+            Cita cita = sentencias.BuscarCita(noBoleta, noDocumento, noCGC);
+
+            Console.WriteLine("datavaltcitanum:" + Citanum);
+
+            return cita != null &&
+                   cita.tbl_boleta_Pk_No_Boleta == noBoleta &&
+                   cita.tbl_documento_Pk_num_dpi == noDocumento &&
+                   cita.tbl_CGC_Pk_no_cgc == noCGC;
+        }
+
+        public int ObtenerCitaNum()
+        {
+            Console.WriteLine("obtenercitanum:" + Citanum);
+            return Citanum;
+        }
+        //Fin Existencia de la cita a reagendar
+
+        //actualizar cita
+
+        public bool ActualizarCitas(int numeroCita, string nuevaFecha, string nuevaHora, string nuevoDept, string nuevoMunicipio)
+         {
+             return sn.ActualizarCita( numeroCita, nuevaFecha, nuevaHora,  nuevoDept,  nuevoMunicipio);
+         }
+
+        //generacion de boleta
+
+        public List<string> llenarCombo(string columna1, string tabla)
+        {
+            return sn.llenarCombo(columna1, tabla);
+        }
+
+        public DataTable Buscar(string tabla, string columna, string dato)
+        {
+            return sn.Buscar(tabla, columna, dato);
+
+        }
+
+        public bool GuardarDatos(string tabla,  Dictionary<string, object> valores)
+        {
+            return sn.Guardar(tabla,  valores);
+        }
+
+        public bool GuardarDatosCGC(string table, Dictionary<string, object> vals)
+        {
+            return sn.Guardar(table, vals);
+        }
     }
 }

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\Componentes\NavegadorTemporal\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
@@ -82,6 +85,18 @@
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConfirmacionBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacionBoleta.Designer.cs">
+      <DependentUpon>frmConfirmacionBoleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreaciónUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreaciónUsuario.Designer.cs">
+      <DependentUpon>frmCreaciónUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +133,18 @@
     <Compile Include="frmMenuRenap.Designer.cs">
       <DependentUpon>frmMenuRenap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReagendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReagendar.Designer.cs">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerificaciónPasaporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerificaciónPasaporte.Designer.cs">
+      <DependentUpon>frmVerificaciónPasaporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="HorariosDispo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +174,12 @@
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacionBoleta.resx">
+      <DependentUpon>frmConfirmacionBoleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreaciónUsuario.resx">
+      <DependentUpon>frmCreaciónUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenuRenap.resx">
       <DependentUpon>frmMenuRenap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReagendar.resx">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificaciónPasaporte.resx">
+      <DependentUpon>frmVerificaciónPasaporte.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HorariosDispo.resx">
       <DependentUpon>HorariosDispo.cs</DependentUpon>
@@ -272,6 +311,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\renap31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
