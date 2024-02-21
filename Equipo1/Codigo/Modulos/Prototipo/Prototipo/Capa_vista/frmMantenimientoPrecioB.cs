@@ -18,5 +18,10 @@ namespace Vista_PrototipoMenu
             this.navegador1.config("tbl_preciopasaporte", this, "");
             this.navegador1._initSeguridad();
         }
+
+        private void frmMantenimientoPrecioB_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

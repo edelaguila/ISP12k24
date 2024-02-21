@@ -767,6 +767,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.label1);
             this.Name = "frmDatosPersonales";
             this.Text = "frmDatosPersonales";
+            this.Load += new System.EventHandler(this.frmDatosPersonales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();

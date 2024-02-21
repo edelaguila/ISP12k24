@@ -48,7 +48,7 @@ namespace Vista_PrototipoMenu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(395, 68);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 17);
+            this.label4.Size = new System.Drawing.Size(93, 16);
             this.label4.TabIndex = 174;
             this.label4.Text = "NAVEGADOR";
             // 
@@ -166,10 +166,10 @@ namespace Vista_PrototipoMenu
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(13, 68);
+            this.navegador1.Location = new System.Drawing.Point(28, 14);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1031, 96);
+            this.navegador1.Size = new System.Drawing.Size(1012, 111);
             this.navegador1.TabIndex = 206;
             // 
             // frmMantenimientoPrecioB
@@ -190,6 +190,7 @@ namespace Vista_PrototipoMenu
             this.Controls.Add(this.label4);
             this.Name = "frmMantenimientoPrecioB";
             this.Text = "frmMantenimientoPrecioB";
+            this.Load += new System.EventHandler(this.frmMantenimientoPrecioB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

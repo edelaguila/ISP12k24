@@ -38,11 +38,11 @@ namespace Vista_PrototipoMenu
             this.label2 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaVista.Navegador();
             this.txt_genero = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cb_genero = new System.Windows.Forms.ComboBox();
             this.Mensaje = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,16 +151,8 @@ namespace Vista_PrototipoMenu
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(435, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.Size = new System.Drawing.Size(0, 16);
             this.label4.TabIndex = 185;
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 33);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 196;
             // 
             // txt_genero
             // 
@@ -216,16 +208,24 @@ namespace Vista_PrototipoMenu
             this.Mensaje.Text = "Ha alcanzado el limite de caracteres";
             this.Mensaje.Visible = false;
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(28, 15);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(990, 101);
+            this.navegador1.TabIndex = 201;
+            // 
             // frmMantenimientoRenapPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 530);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.Mensaje);
             this.Controls.Add(this.cb_genero);
             this.Controls.Add(this.txt_genero);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_edad);
@@ -254,10 +254,10 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label4;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_genero;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cb_genero;
         private System.Windows.Forms.Label Mensaje;
+        private CapaVista.Navegador navegador1;
     }
 }

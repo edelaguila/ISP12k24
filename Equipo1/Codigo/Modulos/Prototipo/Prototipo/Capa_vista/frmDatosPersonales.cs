@@ -9,12 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Controlador_PrototipoMenu;
 
+
 namespace Vista_PrototipoMenu
 {
     public partial class frmDatosPersonales : Form
     {
         Controlador controller = new Controlador();
-       // int codigo = 7;
+        // int codigo = 7;
         public frmDatosPersonales()
         {
             InitializeComponent();
@@ -50,14 +51,24 @@ namespace Vista_PrototipoMenu
             string ocupacion = cmb_ocupacion.Text;
 
             string dpis = txt_numdoc.Text;
-            int dpi = int.Parse(dpis);
+            int dpi = int.Parse(dpis); 
 
+            /*
+            Persona persona = new Persona(nombre, Papellido, Sappelido, Capellido, fechaNacimiento_a,
+                              tipodo, numdoc, nacionalidad, genero, estadocivil, direccion,
+                              celular, telefono, correo, confcorreo, Convert.ToInt32(altura), tez, ojos, ocupacion, dpi);
+            */
+            ValidacionDeDatos myform = new ValidacionDeDatos();
+            myform.setData(this);
+            myform.ShowDialog();
+
+            /*
             if (controller.InsertarDocumento(dpi, numdocs, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
             {
                 MessageBox.Show("Datos personales ingresados correctamente");
                 controller.InsertarDatosPersonales( nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,Capellido);
                 LimpiarCampos();
-            }
+            }*/
         }
 
         private void LimpiarCampos()
@@ -84,6 +95,11 @@ namespace Vista_PrototipoMenu
             cmb_tez.SelectedIndex = -1;
             cmb_ojos.SelectedIndex = -1;
             cmb_ocupacion.SelectedIndex = -1;
+        }
+
+        private void frmDatosPersonales_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

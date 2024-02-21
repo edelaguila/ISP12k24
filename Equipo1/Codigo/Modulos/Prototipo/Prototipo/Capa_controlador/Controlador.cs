@@ -79,6 +79,8 @@ namespace Controlador_PrototipoMenu
             return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,  Capellido);
         }
 
+
+       
         //buscar cita existente a reagendar
         public int Citanum;
 
