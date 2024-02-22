@@ -96,6 +96,10 @@ namespace Vista_PrototipoMenu
                 MessageBox.Show("Datos personales ingresados correctamente");
                 controller.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, Capellido,dpi);
 
+                Confirmacion conf = new Confirmacion();
+                conf.ShowDialog();
+
+
             }
 
         }
