@@ -736,7 +736,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(970, 878);
+            this.ClientSize = new System.Drawing.Size(970, 896);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pictureBox19);
