@@ -29,6 +29,25 @@ namespace CapaModelo_MG2
         }
 
 
+
+        public OdbcDataReader getByParam<T>(string param, string secondParam, string table, int mode = 0, T reference = default, T secondRef = default)
+        {
+            string[] sql = {
+        "select * from '"+table+"'",
+        "select * from '"+table+"' where '"+param+"'='"+reference+"';",
+        "select * from "+table+" where "+param+"="+reference+" and "+secondParam+"="+secondRef+""
+    };
+            Console.WriteLine(sql[mode]);
+
+            using (OdbcCommand mycommand = new OdbcCommand(sql[mode], this.con.connection()))
+            {
+                return mycommand.ExecuteReader();
+            }
+        }
+
+
+
+
         public void executerCommand(string query)
         {
             Console.WriteLine("Creating command");
@@ -36,7 +55,6 @@ namespace CapaModelo_MG2
             Console.WriteLine("Before execute");
             mycommand.ExecuteNonQuery();
         }
-
 
     }
 

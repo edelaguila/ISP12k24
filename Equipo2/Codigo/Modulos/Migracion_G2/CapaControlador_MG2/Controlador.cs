@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using CapaModelo_MG2;
 using System.Data.Odbc;
 using System.Data;
-using System;
 using CapaModelo_MG2.Sentences;
 
 
@@ -18,6 +17,7 @@ namespace CapaControlador_MG2
     {
         Sentencias sn = new Sentencias();
         public CitaSentence sn_cita = new CitaSentence();
+        public BoletaSentence sn_boleta = new BoletaSentence();
         public DataTable llenarTbl(string tabla)
         {
             OdbcDataAdapter dt = sn.llenarTbl(tabla);
@@ -30,6 +30,16 @@ namespace CapaControlador_MG2
         {
             Console.WriteLine("Controlador");
             this.sn_cita.update(new Cita(correlativo, nuevaFecha));
+        }
+
+        public bool existBol(int bolId, int bolCorr)
+        {
+            return this.sn_boleta.findBol(bolId, bolCorr);
+        }
+
+        public void saveBol()
+        {
+            this.sn_boleta.saveBoleta();
         }
 
     }

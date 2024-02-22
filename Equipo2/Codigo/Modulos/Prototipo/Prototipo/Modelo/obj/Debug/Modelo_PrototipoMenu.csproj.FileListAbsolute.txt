@@ -10,9 +10,9 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Prototi
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.dll
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.pdb
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.AssemblyReference.cache
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
-C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb

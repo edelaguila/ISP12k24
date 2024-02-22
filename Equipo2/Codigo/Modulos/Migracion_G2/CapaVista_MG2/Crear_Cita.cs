@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CapaVista_MG2
 {
-    public partial class Agendar : Form
+    public partial class Crear_cita : Form
     {
         private Panel panel_container;
         private ComboBox comboBox1;
@@ -18,9 +18,9 @@ namespace CapaVista_MG2
         private Label label4;
         private Label label3;
         private Label label2;
-        private TextBox textBox1;
+        private TextBox txt_no;
         private Label label7;
-        private TextBox textBox2;
+        private TextBox txt_corr;
         private Label label6;
         private Button button1;
         private Label label8;
@@ -28,20 +28,25 @@ namespace CapaVista_MG2
         private PictureBox pictureBox2;
         private Label label1;
 
-        public Agendar()
-        {
 
+        CapaControlador_MG2.Controlador ctrl;
+        public Crear_cita()
+        {
+            this.InitializeComponent();
+            this.ctrl = new CapaControlador_MG2.Controlador();
         }
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agendar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Crear_cita));
             this.panel_container = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_corr = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_no = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,11 +54,9 @@ namespace CapaVista_MG2
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel_container.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_container
@@ -63,9 +66,9 @@ namespace CapaVista_MG2
             this.panel_container.Controls.Add(this.pictureBox1);
             this.panel_container.Controls.Add(this.label8);
             this.panel_container.Controls.Add(this.button1);
-            this.panel_container.Controls.Add(this.textBox2);
+            this.panel_container.Controls.Add(this.txt_corr);
             this.panel_container.Controls.Add(this.label6);
-            this.panel_container.Controls.Add(this.textBox1);
+            this.panel_container.Controls.Add(this.txt_no);
             this.panel_container.Controls.Add(this.label7);
             this.panel_container.Controls.Add(this.comboBox1);
             this.panel_container.Controls.Add(this.label5);
@@ -79,6 +82,26 @@ namespace CapaVista_MG2
             this.panel_container.Size = new System.Drawing.Size(1079, 570);
             this.panel_container.TabIndex = 0;
             this.panel_container.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_container_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(46, 222);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(63, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(476, 202);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(534, 252);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 14;
+            this.pictureBox1.TabStop = false;
             // 
             // label8
             // 
@@ -103,16 +126,17 @@ namespace CapaVista_MG2
             this.button1.TabIndex = 12;
             this.button1.Text = "Validar Boleta";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // txt_corr
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(48, 422);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 32);
-            this.textBox2.TabIndex = 10;
+            this.txt_corr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.txt_corr.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_corr.Location = new System.Drawing.Point(48, 422);
+            this.txt_corr.Multiline = true;
+            this.txt_corr.Name = "txt_corr";
+            this.txt_corr.Size = new System.Drawing.Size(244, 32);
+            this.txt_corr.TabIndex = 10;
             // 
             // label6
             // 
@@ -124,15 +148,15 @@ namespace CapaVista_MG2
             this.label6.TabIndex = 9;
             this.label6.Text = "NO. CORRELATIVO CGC.:";
             // 
-            // textBox1
+            // txt_no
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(48, 339);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 32);
-            this.textBox1.TabIndex = 8;
+            this.txt_no.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
+            this.txt_no.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_no.Location = new System.Drawing.Point(48, 339);
+            this.txt_no.Multiline = true;
+            this.txt_no.Name = "txt_no";
+            this.txt_no.Size = new System.Drawing.Size(244, 32);
+            this.txt_no.TabIndex = 8;
             // 
             // label7
             // 
@@ -184,7 +208,7 @@ namespace CapaVista_MG2
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(43, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 16);
+            this.label3.Size = new System.Drawing.Size(201, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Ingresa los Datos de tu Boleta";
             // 
@@ -209,40 +233,40 @@ namespace CapaVista_MG2
             this.label1.TabIndex = 0;
             this.label1.Text = "Realiza tu cita en línea para obtener tu pasaporte.";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(476, 202);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(534, 252);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(46, 222);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 55);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // Agendar
+            // Crear_cita
             // 
             this.ClientSize = new System.Drawing.Size(1079, 570);
             this.Controls.Add(this.panel_container);
-            this.Name = "Agendar";
+            this.Name = "Crear_cita";
+            this.Load += new System.EventHandler(this.Crear_cita_Load);
             this.panel_container.ResumeLayout(false);
             this.panel_container.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         private void panel_container_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        public int getInt(string reference) { return Convert.ToInt32(reference); }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.ctrl.existBol(this.getInt(txt_no.Text), getInt(txt_corr.Text)))
+            {
+                frmDatosPersonales frm = new frmDatosPersonales();
+                frm.Show();
+            }
+            else
+            {
+                MessageBox.Show("boleta incorrecta");
+            }
+        }
+
+        private void Crear_cita_Load(object sender, EventArgs e)
         {
 
         }
