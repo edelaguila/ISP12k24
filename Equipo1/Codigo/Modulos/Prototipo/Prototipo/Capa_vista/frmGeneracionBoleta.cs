@@ -35,7 +35,7 @@ namespace Vista_PrototipoMenu
 
         public void LlenarComboDPI()
         {
-            List<string> concepto = cn.llenarCombo("Pk_num_dpi", "tbl_renap");
+            List<string> concepto = cn.llenarCombo("Pk_num_dpi", "tbl_documento");
             cb_dpi.Items.Clear();
             cb_dpi.Items.AddRange(concepto.ToArray());
 
@@ -75,7 +75,7 @@ namespace Vista_PrototipoMenu
         {
           //Carlos Enrique 
          //Diego Marroquin
-            string tabla = "tbl_renap";
+            string tabla = "tbl_documento";
             string columna = "Pk_num_dpi";
             string dato = cb_dpi.SelectedItem.ToString();
             DataTable dt = cn.Buscar(tabla, columna, dato);
@@ -86,24 +86,24 @@ namespace Vista_PrototipoMenu
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Construimos el nombre completo
-                string nombreCompleto = row["ren_nombres"].ToString();
+                string nombreCompleto = row["doc_nombres"].ToString();
 
                 // Añadimos el primer apellido si está disponible
-                if (!string.IsNullOrEmpty(row["ren_primerapellido"].ToString()))
+                if (!string.IsNullOrEmpty(row["doc_primerapellido"].ToString()))
                 {
-                    nombreCompleto += " " + row["ren_primerapellido"].ToString();
+                    nombreCompleto += " " + row["doc_primerapellido"].ToString();
                 }
 
                 // Añadimos el segundo apellido si está disponible
-                if (!string.IsNullOrEmpty(row["ren_segundoapellido"].ToString()))
+                if (!string.IsNullOrEmpty(row["doc_segundoapellido"].ToString()))
                 {
-                    nombreCompleto += " " + row["ren_segundoapellido"].ToString();
+                    nombreCompleto += " " + row["doc_segundoapellido"].ToString();
                 }
 
                 // Añadimos el apellido de casado si está disponible
-                if (!string.IsNullOrEmpty(row["ren_casadoapellido"].ToString()))
+                if (!string.IsNullOrEmpty(row["doc_casadoapellido"].ToString()))
                 {
-                    nombreCompleto += " de " + row["ren_casadoapellido"].ToString();
+                    nombreCompleto += " de " + row["doc_casadoapellido"].ToString();
                 }
 
                 // Asignamos el nombre completo al TextBox
@@ -111,8 +111,8 @@ namespace Vista_PrototipoMenu
 
                 // Llenamos los demás controles
                 txt_identificadorDPI.Text = row["Pk_num_dpi"].ToString();
-                txt_genero.Text = row["ren_genero"].ToString();
-                txt_edad.Text = row["ren_fechanacimiento"].ToString();
+                txt_genero.Text = row["doc_genero"].ToString();
+                txt_edad.Text = row["doc_fechanacimiento"].ToString();
                 txt_DPIC.Text = row["Pk_num_dpi"].ToString();
             }
             else
