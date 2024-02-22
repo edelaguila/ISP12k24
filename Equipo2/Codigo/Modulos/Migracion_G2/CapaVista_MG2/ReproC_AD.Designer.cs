@@ -139,9 +139,9 @@ namespace CapaVista_MG2
             // data_grid
             // 
             this.data_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid.Location = new System.Drawing.Point(753, 164);
+            this.data_grid.Location = new System.Drawing.Point(396, 339);
             this.data_grid.Name = "data_grid";
-            this.data_grid.Size = new System.Drawing.Size(38, 155);
+            this.data_grid.Size = new System.Drawing.Size(287, 185);
             this.data_grid.TabIndex = 23;
             this.data_grid.Tag = "cita";
             this.data_grid.Visible = false;
