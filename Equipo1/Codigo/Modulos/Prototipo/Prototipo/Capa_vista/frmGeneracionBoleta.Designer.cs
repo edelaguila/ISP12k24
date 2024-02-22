@@ -81,7 +81,7 @@ namespace Vista_PrototipoMenu
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(354, 510);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 16);
+            this.label11.Size = new System.Drawing.Size(137, 17);
             this.label11.TabIndex = 65;
             this.label11.Text = "Fecha Nacimiento";
             // 
@@ -89,7 +89,7 @@ namespace Vista_PrototipoMenu
             // 
             this.txt_genero.Enabled = false;
             this.txt_genero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_genero.Location = new System.Drawing.Point(500, 530);
+            this.txt_genero.Location = new System.Drawing.Point(536, 530);
             this.txt_genero.Name = "txt_genero";
             this.txt_genero.Size = new System.Drawing.Size(135, 28);
             this.txt_genero.TabIndex = 64;
@@ -98,9 +98,9 @@ namespace Vista_PrototipoMenu
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(497, 510);
+            this.label10.Location = new System.Drawing.Point(533, 510);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(58, 16);
+            this.label10.Size = new System.Drawing.Size(62, 17);
             this.label10.TabIndex = 63;
             this.label10.Text = "Genero";
             // 
@@ -119,7 +119,7 @@ namespace Vista_PrototipoMenu
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(21, 510);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(130, 16);
+            this.label9.Size = new System.Drawing.Size(134, 17);
             this.label9.TabIndex = 61;
             this.label9.Text = "Nombre completo";
             // 
@@ -129,7 +129,7 @@ namespace Vista_PrototipoMenu
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(22, 429);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 16);
+            this.label8.Size = new System.Drawing.Size(92, 17);
             this.label8.TabIndex = 58;
             this.label8.Text = "Ingrese DPI";
             // 
@@ -139,7 +139,7 @@ namespace Vista_PrototipoMenu
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(16, 327);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 16);
+            this.label7.Size = new System.Drawing.Size(134, 17);
             this.label7.TabIndex = 57;
             this.label7.Text = "años de duracion";
             // 
@@ -166,7 +166,7 @@ namespace Vista_PrototipoMenu
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(454, 252);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 16);
+            this.label6.Size = new System.Drawing.Size(94, 17);
             this.label6.TabIndex = 54;
             this.label6.Text = "Precio en Q";
             // 
@@ -185,7 +185,7 @@ namespace Vista_PrototipoMenu
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(16, 252);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 16);
+            this.label5.Size = new System.Drawing.Size(121, 17);
             this.label5.TabIndex = 52;
             this.label5.Text = "Tasa  promedio";
             // 
@@ -204,7 +204,7 @@ namespace Vista_PrototipoMenu
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(267, 252);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
+            this.label4.Size = new System.Drawing.Size(91, 17);
             this.label4.TabIndex = 50;
             this.label4.Text = "Precio en $";
             // 
@@ -214,7 +214,7 @@ namespace Vista_PrototipoMenu
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(16, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(158, 16);
+            this.label3.Size = new System.Drawing.Size(163, 17);
             this.label3.TabIndex = 49;
             this.label3.Text = "Codido del pasaporte";
             // 
@@ -231,9 +231,9 @@ namespace Vista_PrototipoMenu
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(497, 29);
+            this.label1.Location = new System.Drawing.Point(533, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 16);
+            this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 70;
             this.label1.Text = "Tipo de pago:";
             // 
@@ -243,14 +243,14 @@ namespace Vista_PrototipoMenu
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(16, 29);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 16);
+            this.label2.Size = new System.Drawing.Size(81, 17);
             this.label2.TabIndex = 69;
             this.label2.Text = "Concepto:";
             // 
             // txt_tipoPago
             // 
             this.txt_tipoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tipoPago.Location = new System.Drawing.Point(500, 59);
+            this.txt_tipoPago.Location = new System.Drawing.Point(536, 59);
             this.txt_tipoPago.Name = "txt_tipoPago";
             this.txt_tipoPago.Size = new System.Drawing.Size(135, 28);
             this.txt_tipoPago.TabIndex = 71;
@@ -289,7 +289,7 @@ namespace Vista_PrototipoMenu
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(267, 157);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(177, 16);
+            this.label12.Size = new System.Drawing.Size(182, 17);
             this.label12.TabIndex = 74;
             this.label12.Text = "Pasaporte seleccionado";
             // 
@@ -336,7 +336,7 @@ namespace Vista_PrototipoMenu
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(268, 323);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 16);
+            this.label13.Size = new System.Drawing.Size(84, 17);
             this.label13.TabIndex = 81;
             this.label13.Text = "No. Boleta";
             this.label13.Visible = false;
@@ -347,7 +347,7 @@ namespace Vista_PrototipoMenu
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(454, 323);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 16);
+            this.label14.Size = new System.Drawing.Size(70, 17);
             this.label14.TabIndex = 82;
             this.label14.Text = "No. CGC";
             this.label14.Visible = false;
@@ -398,7 +398,7 @@ namespace Vista_PrototipoMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 686);
+            this.ClientSize = new System.Drawing.Size(695, 686);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.txt_DPIC);
             this.Controls.Add(this.txt_IDpasaport);
