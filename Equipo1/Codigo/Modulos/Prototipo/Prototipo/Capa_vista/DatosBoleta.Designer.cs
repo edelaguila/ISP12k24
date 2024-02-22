@@ -29,39 +29,40 @@ namespace Vista_PrototipoMenu
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txt_nocorrelativo = new System.Windows.Forms.TextBox();
+            this.txtnoboleta = new System.Windows.Forms.TextBox();
+            this.btnvalidarboleta = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txt_nocorrelativo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(113, 331);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(371, 30);
-            this.textBox2.TabIndex = 16;
+            this.txt_nocorrelativo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nocorrelativo.Location = new System.Drawing.Point(113, 331);
+            this.txt_nocorrelativo.Name = "txt_nocorrelativo";
+            this.txt_nocorrelativo.Size = new System.Drawing.Size(371, 30);
+            this.txt_nocorrelativo.TabIndex = 16;
             // 
-            // textBox1
+            // txtnoboleta
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(113, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 30);
-            this.textBox1.TabIndex = 15;
+            this.txtnoboleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnoboleta.Location = new System.Drawing.Point(113, 185);
+            this.txtnoboleta.Name = "txtnoboleta";
+            this.txtnoboleta.Size = new System.Drawing.Size(371, 30);
+            this.txtnoboleta.TabIndex = 15;
             // 
-            // button1
+            // btnvalidarboleta
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(597, 349);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 96);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Validar Boleta";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnvalidarboleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnvalidarboleta.Location = new System.Drawing.Point(597, 349);
+            this.btnvalidarboleta.Name = "btnvalidarboleta";
+            this.btnvalidarboleta.Size = new System.Drawing.Size(186, 96);
+            this.btnvalidarboleta.TabIndex = 14;
+            this.btnvalidarboleta.Text = "Validar Boleta";
+            this.btnvalidarboleta.UseVisualStyleBackColor = true;
+            this.btnvalidarboleta.Click += new System.EventHandler(this.btnvalidarboleta_Click);
             // 
             // label2
             // 
@@ -89,7 +90,7 @@ namespace Vista_PrototipoMenu
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(254, 57);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 31);
+            this.label1.Size = new System.Drawing.Size(378, 31);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ingresa los Datos de tu boleta";
             // 
@@ -98,9 +99,9 @@ namespace Vista_PrototipoMenu
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(872, 485);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_nocorrelativo);
+            this.Controls.Add(this.txtnoboleta);
+            this.Controls.Add(this.btnvalidarboleta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -113,9 +114,9 @@ namespace Vista_PrototipoMenu
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_nocorrelativo;
+        private System.Windows.Forms.TextBox txtnoboleta;
+        private System.Windows.Forms.Button btnvalidarboleta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
