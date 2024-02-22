@@ -40,3 +40,9 @@ C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\bin\Debug\Modelo_PrototipoMenu.pdb
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.dll
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Prototipo\Modelo\obj\Debug\Modelo_PrototipoMenu.pdb
