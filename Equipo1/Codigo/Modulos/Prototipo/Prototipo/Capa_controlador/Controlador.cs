@@ -124,6 +124,7 @@ namespace Controlador_PrototipoMenu
          }
 
         //generacion de boleta
+        //carlos enrique y diego antonio
 
         public List<string> llenarCombo(string columna1, string tabla)
         {

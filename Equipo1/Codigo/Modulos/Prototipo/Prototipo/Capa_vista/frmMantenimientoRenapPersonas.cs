@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// carlos enrique guzman cabrera
 namespace Vista_PrototipoMenu
 {
     public partial class frmMantenimientoRenapPersonas : Form

@@ -54,6 +54,8 @@ namespace Vista_PrototipoMenu
             this.txt_estadoCivil = new System.Windows.Forms.TextBox();
             this.cb_estado = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_tipoDocumento = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +109,7 @@ namespace Vista_PrototipoMenu
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(296, 26);
             this.txt_dpi.TabIndex = 191;
-            this.txt_dpi.Tag = "renap_dpi";
+            this.txt_dpi.Tag = "Pk_num_dpi";
             // 
             // label5
             // 
@@ -335,7 +337,7 @@ namespace Vista_PrototipoMenu
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_estadoCivil.Enabled = false;
             this.txt_estadoCivil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_estadoCivil.Location = new System.Drawing.Point(494, 406);
+            this.txt_estadoCivil.Location = new System.Drawing.Point(253, 445);
             this.txt_estadoCivil.Name = "txt_estadoCivil";
             this.txt_estadoCivil.Size = new System.Drawing.Size(127, 26);
             this.txt_estadoCivil.TabIndex = 211;
@@ -363,11 +365,37 @@ namespace Vista_PrototipoMenu
             this.dateTimePicker1.TabIndex = 213;
             this.dateTimePicker1.Tag = "ren_fechanacimiento";
             // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(490, 406);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(155, 20);
+            this.label12.TabIndex = 214;
+            this.label12.Text = "Tipo de documento:";
+            // 
+            // txt_tipoDocumento
+            // 
+            this.txt_tipoDocumento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_tipoDocumento.Location = new System.Drawing.Point(687, 408);
+            this.txt_tipoDocumento.Name = "txt_tipoDocumento";
+            this.txt_tipoDocumento.Size = new System.Drawing.Size(164, 22);
+            this.txt_tipoDocumento.TabIndex = 215;
+            this.txt_tipoDocumento.Tag = "ren_dpi";
+            // 
             // frmMantenimientoRenapPersonas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 716);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txt_tipoDocumento);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.label11);
@@ -428,5 +456,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.TextBox txt_estadoCivil;
         private System.Windows.Forms.ComboBox cb_estado;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_tipoDocumento;
     }
 }

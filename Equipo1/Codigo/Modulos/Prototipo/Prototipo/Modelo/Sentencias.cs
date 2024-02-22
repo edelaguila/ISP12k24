@@ -179,7 +179,8 @@ namespace Modelo_PrototipoMenu
         //fin actualizar cita
 
 
-        //sentencias para generacion de boleta
+        //sentencias para generacion de boleta 
+        //carlos enrique y diego antonio
 
         public List<string> llenarCombo(string columna1, string tabla)
         {
