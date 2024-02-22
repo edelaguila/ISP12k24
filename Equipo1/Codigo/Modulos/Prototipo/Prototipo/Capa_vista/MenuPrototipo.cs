@@ -100,6 +100,7 @@ namespace Vista_PrototipoMenu
 
         private void btn_renap_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             frmMantenimientoRenapPersonas form = new frmMantenimientoRenapPersonas();
             form.MdiParent = this;
             form.Show();
@@ -108,6 +109,7 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             frmMantenimientoPrecioB form = new frmMantenimientoPrecioB();
             form.MdiParent = this;
             form.Show();
@@ -116,6 +118,7 @@ namespace Vista_PrototipoMenu
 
         private void btn_generacionBoleta_Click(object sender, EventArgs e)
         {
+            //carlos enrique
             frmGeneracionBoleta form = new frmGeneracionBoleta();
             form.MdiParent = this;
             form.Show();
