@@ -24,12 +24,17 @@ namespace Vista_PrototipoMenu
             controller.CargarOpcionesTez(cmb_tez);
             controller.CargarOpcionesOjos(cmb_ojos);
             controller.CargarOpcionesOcupacion(cmb_ocupacion);
+
+           
         }
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            ValidacionDeDatos val = new ValidacionDeDatos();
-            val.Show();
+           /* ValidacionDeDatos val = new ValidacionDeDatos();
+            val.Show();*/
+            ValidacionDeDatos myform = new ValidacionDeDatos();
+            myform.setData(this);
+            myform.ShowDialog();
         }
 
         private void LimpiarCampos()
