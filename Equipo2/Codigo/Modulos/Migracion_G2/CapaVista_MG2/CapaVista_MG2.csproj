@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Calendario, Version=2.0.7327.40555, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Calendario.dll</HintPath>
@@ -45,6 +46,10 @@
     <Reference Include="CapaVistaNav">
       <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -53,6 +58,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -86,6 +93,12 @@
     <Compile Include="Gen_Preguntas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Impresion_Pasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impresion_Pasa.Designer.cs">
+      <DependentUpon>Impresion_Pasa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Impre_Pas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +116,12 @@
     </Compile>
     <Compile Include="InformacionSolicitudPasaporte.Designer.cs">
       <DependentUpon>InformacionSolicitudPasaporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformePasaporte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InformePasaporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Man_Boleta.cs">
       <SubType>Form</SubType>
@@ -139,6 +158,9 @@
     <EmbeddedResource Include="frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Impresion_Pasa.resx">
+      <DependentUpon>Impresion_Pasa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Impre_Pas.resx">
       <DependentUpon>Impre_Pas.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +169,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InformacionSolicitudPasaporte.resx">
       <DependentUpon>InformacionSolicitudPasaporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformePasaporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InformePasaporte.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +202,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BRRLGT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
