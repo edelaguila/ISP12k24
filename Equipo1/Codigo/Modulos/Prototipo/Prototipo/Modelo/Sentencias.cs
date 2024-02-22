@@ -24,6 +24,18 @@ namespace Modelo_PrototipoMenu
         public int tbl_CGC_Pk_no_cgc { get; set; }
     }
 
+    public class Boleta
+    {
+        public int Pk_id_boleta { get; set; }
+        public string boleta_concepto { get; set; }
+        public string boleta_tipoPago { get; set; }
+        public int id_tipopasaporte { get; set; }
+        public int boleta_añosDuracion { get; set; }
+        public int boleta_numeroDoc { get; set; }
+        public int tbl_cgc_Pk_no_cgc { get; set; }
+        public int tbl_documento_Pk_num_dpi { get; set; }
+    }
+
 
     public class Sentencias
     {
