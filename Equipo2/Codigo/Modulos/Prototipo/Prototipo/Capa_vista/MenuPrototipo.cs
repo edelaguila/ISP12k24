@@ -106,5 +106,13 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.RV form = new CapaVista_MG2.RV();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
