@@ -22,6 +22,7 @@ C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\C
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.dll
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.pdb
+<<<<<<< HEAD
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\Controlador_MenuHCV.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\Controlador_MenuHCV.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\eCryptography.dll
@@ -30,3 +31,13 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\M
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.csproj.CopyComplete
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.pdb
+=======
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\Controlador_MenuHCV.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\Controlador_MenuHCV.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\bin\Debug\eCryptography.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.csproj.CopyComplete
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_controlador\obj\Debug\Controlador_MenuHCV.pdb
+>>>>>>> f829e4eb4c68fb7d45923043d4726cb7f3fd28fd
