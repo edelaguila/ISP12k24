@@ -172,11 +172,9 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Modelo_PrototipoMenu.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorModelo.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_ControladorConsultas.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorReporteria.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.Windows.Forms.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_Modelo.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloReporteria.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.Shared.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CrystalDecisions.ReportSource.dll
@@ -205,9 +203,7 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorModelo.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaReporteria.dll.config
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_ControladorConsultas.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorReporteria.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\Capa_Modelo.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloReporteria.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.AssemblyReference.cache
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.Properties.Resources.resources
@@ -346,3 +342,9 @@ C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.CopyComplete
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.exe
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaNav.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorNav.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloNav.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaVistaNav.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaControladorNav.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\CapaModeloNav.pdb

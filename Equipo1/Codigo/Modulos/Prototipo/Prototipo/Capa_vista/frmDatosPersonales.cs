@@ -28,47 +28,8 @@ namespace Vista_PrototipoMenu
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-            string nombre = txt_nombres.Text;
-            string Papellido = txt_primera.Text;
-            string Sappelido = txt_segundoa.Text;
-            string Capellido = txt_apecasado.Text;
-            DateTime fechaNacimiento_a = dtp_nacimiento.Value;
-            string fechaNacimiento = fechaNacimiento_a.ToString("yyyy-MM-dd");
-            string tipodo = txt_tipodoc.Text;
-            string numdocs = txt_numdoc.Text;
-            int numdoc = int.Parse(numdocs);
-            string nacionalidad = txt_nacionalidad.Text;
-            string genero = cmb_genero.Text;
-            string estadocivil = cmb_estadocivil.Text;
-            string direccion = txt_direccion.Text;
-            string celular = txt_celular.Text;
-            string telefono = txt_telefono.Text;
-            string correo = txt_correo.Text;
-            string confcorreo = txt_confcorreo.Text;
-            string altura = txt_altura.Text;
-            string tez = cmb_tez.Text;
-            string ojos = cmb_ojos.Text;
-            string ocupacion = cmb_ocupacion.Text;
-
-            string dpis = txt_numdoc.Text;
-            int dpi = int.Parse(dpis); 
-
-            /*
-            Persona persona = new Persona(nombre, Papellido, Sappelido, Capellido, fechaNacimiento_a,
-                              tipodo, numdoc, nacionalidad, genero, estadocivil, direccion,
-                              celular, telefono, correo, confcorreo, Convert.ToInt32(altura), tez, ojos, ocupacion, dpi);
-            */
-            ValidacionDeDatos myform = new ValidacionDeDatos();
-            myform.setData(this);
-            myform.ShowDialog();
-
-            /*
-            if (controller.InsertarDocumento(dpi, numdocs, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
-            {
-                MessageBox.Show("Datos personales ingresados correctamente");
-                controller.InsertarDatosPersonales( nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, numdoc,Capellido);
-                LimpiarCampos();
-            }*/
+            ValidacionDeDatos val = new ValidacionDeDatos();
+            val.Show();
         }
 
         private void LimpiarCampos()

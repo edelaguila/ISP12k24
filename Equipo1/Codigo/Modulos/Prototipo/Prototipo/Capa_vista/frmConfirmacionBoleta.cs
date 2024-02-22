@@ -35,7 +35,7 @@ namespace Vista_PrototipoMenu
             valores.Add("boleta_tipoPago", txt_tipoBoleta.Text);
             valores.Add("id_tipopasaporte", int.Parse(txt_IDPasaporte.Text));
             valores.Add("boleta_añosDuracion", int.Parse(txt_pagoAños.Text));
-            valores.Add("tbl_renap_Pk_num_dpi", long.Parse(txt_IDPersona.Text));
+            valores.Add("tbl_documento_Pk_num_dpi", long.Parse(txt_IDPersona.Text));
             valores.Add("boleta_numeroDoc", int.Parse(txt_NoBoletaSelet.Text));
 
           

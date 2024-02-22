@@ -127,17 +127,17 @@ namespace Vista_PrototipoMenu
 
         private void btn_reagendarCita_Click(object sender, EventArgs e)
         {
-            frmReagendar rea = new frmReagendar();
-            rea.MdiParent = this;
-            rea.Show();
+            DatosBoleta form = new DatosBoleta();
+            form.MdiParent = this;
+            form.Show();
             hideSubMenu();
         }
 
         private void btn_datosPersonales_Click(object sender, EventArgs e)
         {
-            frmDatosPersonales form = new frmDatosPersonales();
-            form.MdiParent = this;
-            form.Show();
+            frmReagendar rea = new frmReagendar();
+            rea.MdiParent = this;
+            rea.Show();
             hideSubMenu();
         }
     }
