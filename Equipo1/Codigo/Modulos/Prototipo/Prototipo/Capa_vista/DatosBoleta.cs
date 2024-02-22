@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
     public partial class DatosBoleta : Form
     {
+        Controlador controller = new Controlador();
         public DatosBoleta()
         {
             InitializeComponent();
@@ -19,8 +21,22 @@ namespace Vista_PrototipoMenu
 
         private void btnvalidarboleta_Click(object sender, EventArgs e)
         {
-            frmDatosPersonales datos = new frmDatosPersonales();
-            datos.Show();
+            string noboleta = txtnoboleta.Text;
+            int bole = int.Parse(noboleta);
+            string nocgc = txt_nocorrelativo.Text;
+            int cgc = int.Parse(nocgc);
+
+            if (controller.BuscarYMostrarBoleta(bole, cgc))
+            {
+                frmDatosPersonales datos = new frmDatosPersonales();
+                datos.Show();
+            }
+            else
+            {
+                MessageBox.Show("Boleta o Correlativo no encontrado");
+            }
         }
+
+
     }
 }
