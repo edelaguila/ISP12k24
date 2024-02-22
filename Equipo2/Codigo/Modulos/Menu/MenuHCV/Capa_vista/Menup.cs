@@ -23,7 +23,7 @@ namespace MenuHCV
         {
             InitializeComponent();
 
-            Button[] apps = { btnseguridad, btncompras, btnVentas, btnInventario, btnBancos, btnNominas, btnHoteleria, btnPrototipo};
+            Button[] apps = { btnseguridad, btncompras, btnVentas, btnInventario, btnBancos, btnNominas, btnHoteleria, btnPrototipo };
             cn.deshabilitarApps(apps);
 
             cn.getAccesoApp(1000, apps[0]);  //Modulo Seguridad
@@ -72,7 +72,7 @@ namespace MenuHCV
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-           
+
             //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             //b.Show();

@@ -33,8 +33,8 @@ namespace CapaModelo_MG2
         public OdbcDataReader getByParam<T>(string param, string secondParam, string table, int mode = 0, T reference = default, T secondRef = default)
         {
             string[] sql = {
-        "select * from '"+table+"'",
-        "select * from '"+table+"' where '"+param+"'='"+reference+"';",
+        "select * from "+table,
+        "select * from "+table+" where "+param+"="+reference,
         "select * from "+table+" where "+param+"="+reference+" and "+secondParam+"="+secondRef+""
     };
             Console.WriteLine(sql[mode]);

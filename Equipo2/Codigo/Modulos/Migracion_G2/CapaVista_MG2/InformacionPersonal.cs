@@ -29,7 +29,9 @@ namespace CapaVista_MG2
             this.mipersona.setData(cmb_pais.SelectedIndex + 1, txt_depa.Text, txt_muni.Text, txt_celu.Text,
                 txt_tel.Text, txt_correo.Text, Convert.ToDouble(txt_altura.Text), cmb_tez.Text,
                 cmb_ojos.Text, cmb_ocupacion.Text);
-            MessageBox.Show("Datos copiados");
+            frmCalendario frm = new frmCalendario();
+            frm.setData(this.mipersona);
+            frm.ShowDialog();
         }
     }
 }
