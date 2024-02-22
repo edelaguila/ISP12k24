@@ -11,6 +11,8 @@ using Controlador_PrototipoMenu;
 
 namespace Vista_PrototipoMenu
 {
+    //Carlos Enrique 
+    //Diego Marroquin
     public partial class frmGeneracionBoleta : Form
     {
         Controlador cn = new Controlador();
@@ -71,31 +73,54 @@ namespace Vista_PrototipoMenu
 
         public void BuscarDPI()
         {
+          //Carlos Enrique 
+         //Diego Marroquin
             string tabla = "tbl_renap";
-
             string columna = "Pk_num_dpi";
             string dato = cb_dpi.SelectedItem.ToString();
             DataTable dt = cn.Buscar(tabla, columna, dato);
 
             if (dt.Rows.Count > 0)
             {
-
                 MessageBox.Show("Datos Encontrados");
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
-                // Llenamos los controles con los valores del resultado
+                // Construimos el nombre completo
+                string nombreCompleto = row["ren_nombres"].ToString();
+
+                // Añadimos el primer apellido si está disponible
+                if (!string.IsNullOrEmpty(row["ren_primerapellido"].ToString()))
+                {
+                    nombreCompleto += " " + row["ren_primerapellido"].ToString();
+                }
+
+                // Añadimos el segundo apellido si está disponible
+                if (!string.IsNullOrEmpty(row["ren_segundoapellido"].ToString()))
+                {
+                    nombreCompleto += " " + row["ren_segundoapellido"].ToString();
+                }
+
+                // Añadimos el apellido de casado si está disponible
+                if (!string.IsNullOrEmpty(row["ren_casadoapellido"].ToString()))
+                {
+                    nombreCompleto += " de " + row["ren_casadoapellido"].ToString();
+                }
+
+                // Asignamos el nombre completo al TextBox
+                txt_nombre.Text = nombreCompleto;
+
+                // Llenamos los demás controles
                 txt_identificadorDPI.Text = row["Pk_num_dpi"].ToString();
-                txt_nombre.Text = row["ren_nombres"].ToString();
                 txt_genero.Text = row["ren_genero"].ToString();
                 txt_edad.Text = row["ren_fechanacimiento"].ToString();
                 txt_DPIC.Text = row["ren_dpi"].ToString();
-
             }
             else
             {
-                MessageBox.Show("No se encontro el dato");
+                MessageBox.Show("No se encontraron datos.");
             }
         }
+
 
 
 
@@ -127,6 +152,25 @@ namespace Vista_PrototipoMenu
 
         private async void btn_generacion_Click(object sender, EventArgs e)
         {
+            //Carlos Enrique 
+            //Diego Marroquin
+
+            var textBoxes = new List<TextBox>
+    {
+        txt_concepto, txt_tipoPago, txt_IDpasaport, txt_pasaporteSeleccionado,
+        txt_tasaPromedio, txt_precioDolar, txt_precioQuetzal, txt_añosDuracion,
+        txt_DPIC, txt_identificadorDPI, txt_nombre, txt_edad, txt_genero
+    };
+
+            // Verificar si algún TextBox está vacío
+            bool algunCampoVacio = textBoxes.Any(tb => string.IsNullOrWhiteSpace(tb.Text));
+
+            // Si algún campo está vacío, mostrar mensaje y salir del evento
+            if (algunCampoVacio)
+            {
+                MessageBox.Show("Todos los campos son obligatorios. Por favor, llénelos todos antes de continuar.", "Campos Obligatorios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
             // Generar número de 8 cifras
             string numero8Cifras = GenerarNumero8Cifras(8);

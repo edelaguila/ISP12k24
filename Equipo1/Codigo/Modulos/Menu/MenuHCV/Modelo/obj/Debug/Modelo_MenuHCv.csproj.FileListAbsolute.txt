@@ -10,3 +10,9 @@ C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyec
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
+C:\Users\DELL\Desktop\labo analisis\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
