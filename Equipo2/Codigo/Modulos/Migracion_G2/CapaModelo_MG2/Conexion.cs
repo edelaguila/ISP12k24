@@ -10,6 +10,13 @@ namespace CapaModelo_MG2
     public class Conexion
     {
 
+        public OdbcConnection myconn;
+        public Conexion()
+        {
+            this.myconn = new OdbcConnection("Dsn=HotelSConexion");
+        }
+
+
         public OdbcConnection connection()
         {
             OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
