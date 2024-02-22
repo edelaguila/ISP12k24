@@ -95,6 +95,11 @@ namespace Vista_PrototipoMenu
             }
 
         }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

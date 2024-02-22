@@ -39,6 +39,7 @@ namespace Vista_PrototipoMenu
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
+            this.btn_datosPersonales = new System.Windows.Forms.Button();
             this.btn_reagendarCita = new System.Windows.Forms.Button();
             this.btn_generacionBoleta = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_datosPersonales = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -217,6 +217,23 @@ namespace Vista_PrototipoMenu
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
             // 
+            // btn_datosPersonales
+            // 
+            this.btn_datosPersonales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_datosPersonales.FlatAppearance.BorderSize = 0;
+            this.btn_datosPersonales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_datosPersonales.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_datosPersonales.Location = new System.Drawing.Point(0, 132);
+            this.btn_datosPersonales.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_datosPersonales.Name = "btn_datosPersonales";
+            this.btn_datosPersonales.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
+            this.btn_datosPersonales.Size = new System.Drawing.Size(555, 66);
+            this.btn_datosPersonales.TabIndex = 8;
+            this.btn_datosPersonales.Text = "REAGENDAR CITA";
+            this.btn_datosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_datosPersonales.UseVisualStyleBackColor = true;
+            this.btn_datosPersonales.Click += new System.EventHandler(this.btn_datosPersonales_Click);
+            // 
             // btn_reagendarCita
             // 
             this.btn_reagendarCita.Dock = System.Windows.Forms.DockStyle.Top;
@@ -229,7 +246,7 @@ namespace Vista_PrototipoMenu
             this.btn_reagendarCita.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
             this.btn_reagendarCita.Size = new System.Drawing.Size(555, 66);
             this.btn_reagendarCita.TabIndex = 7;
-            this.btn_reagendarCita.Text = "REAGENDAR CITA";
+            this.btn_reagendarCita.Text = "AGENDAR CITA";
             this.btn_reagendarCita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_reagendarCita.UseVisualStyleBackColor = true;
             this.btn_reagendarCita.Click += new System.EventHandler(this.btn_reagendarCita_Click);
@@ -354,7 +371,7 @@ namespace Vista_PrototipoMenu
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(576, 684);
+            this.panelSideMenu.Size = new System.Drawing.Size(576, 903);
             this.panelSideMenu.TabIndex = 46;
             // 
             // btnsalir
@@ -377,28 +394,11 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // btn_datosPersonales
-            // 
-            this.btn_datosPersonales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_datosPersonales.FlatAppearance.BorderSize = 0;
-            this.btn_datosPersonales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_datosPersonales.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_datosPersonales.Location = new System.Drawing.Point(0, 132);
-            this.btn_datosPersonales.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_datosPersonales.Name = "btn_datosPersonales";
-            this.btn_datosPersonales.Padding = new System.Windows.Forms.Padding(85, 0, 0, 0);
-            this.btn_datosPersonales.Size = new System.Drawing.Size(555, 66);
-            this.btn_datosPersonales.TabIndex = 8;
-            this.btn_datosPersonales.Text = "DATOS PERSONALES";
-            this.btn_datosPersonales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_datosPersonales.UseVisualStyleBackColor = true;
-            this.btn_datosPersonales.Click += new System.EventHandler(this.btn_datosPersonales_Click);
-            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1672, 684);
+            this.ClientSize = new System.Drawing.Size(1672, 903);
             this.Controls.Add(this.panelSideMenu);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
