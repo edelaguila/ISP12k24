@@ -55,6 +55,9 @@ namespace Vista_PrototipoMenu
             frmhor.labelpais.Text = pais.ToString();
            // frmhor.labelhora.Text = frmhor.ToString();
             frmhor.ShowDialog();
+
+          /*  HorariosDispo horarios = new HorariosDispo();
+            horarios.Show();*/
         }
     }
 }
