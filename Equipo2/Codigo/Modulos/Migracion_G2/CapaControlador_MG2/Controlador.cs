@@ -17,6 +17,12 @@ namespace CapaControlador_MG2
         Sentencias sn = new Sentencias();
         public CitaSentence sn_cita = new CitaSentence();
         public BoletaSentence sn_boleta = new BoletaSentence();
+        public List<string> allDates = new List<string>();
+
+        public Controlador()
+        {
+            this.allDates = this.getDates();
+        }
         public DataTable llenarTbl(string tabla)
         {
             OdbcDataAdapter dt = sn.llenarTbl(tabla);
@@ -41,10 +47,22 @@ namespace CapaControlador_MG2
             this.sn_boleta.saveBoleta();
         }
 
-        public bool dateIsAvailable(string _date)
+        public List<string> getDates()
         {
-            return this.sn_cita.getDatesByDateTime(_date) < 1;
+            return this.sn_cita.getDatesByDateTime();
         }
+
+        public bool dateIsAvailable(string referenceDate)
+        {
+            foreach (string date in this.allDates)
+            {
+                Console.WriteLine(date + "--" + referenceDate);
+                if (date.Equals(referenceDate)) return false;
+            }
+            return true;
+        }
+
+
 
         public void saveCita(Persona persona)
         {

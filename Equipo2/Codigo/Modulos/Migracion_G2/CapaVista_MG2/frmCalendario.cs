@@ -44,7 +44,9 @@ namespace CapaVista_MG2
                 frm.lbl_numero.Text = i.ToString();
                 frm.lbl_dia.Text = _day.ToString();
                 frm.setData(this.mipersona);
-                bool isAvailable = this.ctrl.dateIsAvailable("2024-" + m.ToString() + "-" + i.ToString());
+                string mymonth = m.ToString().Length == 1 ? "0" + m.ToString() : m.ToString();
+                string myday = i.ToString().Length == 1 ? "0" + i.ToString() : i.ToString();
+                bool isAvailable = this.ctrl.dateIsAvailable("2024-" + mymonth + "-" + myday);
                 Color _color = isAvailable ? Color.Green : Color.Red;
                 frm.panel_enable.BackColor = _color;
                 this.frmCalendar.Controls.Add(frm);

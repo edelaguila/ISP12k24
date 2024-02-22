@@ -27,19 +27,17 @@ namespace CapaModelo_MG2.Sentences
 
 
 
-        public int getDatesByDateTime(string fecha)
+        public List<string> getDatesByDateTime()
         {
-            OdbcDataReader myresponse = this.getByParam("fecha_i", "", "cita", 1, "'" + fecha + "'", "");
-            int count = 0;
-            if (myresponse.HasRows)
+            OdbcDataReader myresponse = this.getByParam("", "", "cita", 0, "", "");
+            List<string> dates = new List<string>();
+            while (myresponse.Read())
             {
-                while (myresponse.Read())
-                {
-                    count++;
-                }
+                string date = myresponse.GetString(3);
+
+                dates.Add(date);
             }
-            Console.WriteLine("Cantidad: " + count + " --" + fecha);
-            return count;
+            return dates;
         }
 
         public void saveCita(Persona persona)
