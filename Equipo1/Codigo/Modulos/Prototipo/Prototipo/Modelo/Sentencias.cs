@@ -52,7 +52,7 @@ namespace Modelo_PrototipoMenu
 
         public string getQueryDocumento(int dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
         {
-            string sql = "INSERT INTO tbl_documento(Pk_num_dpi, ren_dpi,ren_nacionalidad,ren_genero,ren_estadocivil,ren_nombres,ren_primerapellido,ren_segundoapellido,ren_fechanacimiento,ren_casadoapellido)VALUES('" + dpi + "','" + numdoc + "', '" + nacionalidad + "', '" + genero + "', '" + estadocivil + "', '" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + Capellido + "')";
+            string sql = "INSERT INTO tbl_documento(Pk_num_dpi, doc_dpi,doc_nacionalidad,doc_genero,doc_estadocivil,doc_nombres,doc_primerapellido,doc_segundoapellido,doc_fechanacimiento,doc_casadoapellido)VALUES('" + dpi + "','" + numdoc + "', '" + nacionalidad + "', '" + genero + "', '" + estadocivil + "', '" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + Capellido + "')";
             return sql;
         }
 
