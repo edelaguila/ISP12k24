@@ -36,6 +36,18 @@ namespace Modelo_PrototipoMenu
         public int tbl_documento_Pk_num_dpi { get; set; }
     }
 
+    public class VerificarDatos
+    {
+        public int Pk_id_boleta { get; set; }
+        public string boleta_concepto { get; set; }
+        public string boleta_tipoPago { get; set; }
+        public int id_tipopasaporte { get; set; }
+        public int boleta_añosDuracion { get; set; }
+        public int boleta_numeroDoc { get; set; }
+        public int tbl_cgc_Pk_no_cgc { get; set; }
+        public int tbl_documento_Pk_num_dpi { get; set; }
+
+    }
 
     public class Sentencias
     {
@@ -348,6 +360,51 @@ namespace Modelo_PrototipoMenu
                 }
             }
         }
-        
+
+        public Boleta BuscarBoleta(int noBoleta, int noCGC)
+        {
+            Boleta boletaEncontrada = null;
+
+            using (OdbcConnection conn = con.connection())
+            {
+                try
+                {
+                    conn.Close();
+                    conn.Open();
+
+                    string consulta = "SELECT Pk_id_boleta, boleta_concepto, boleta_tipoPago, id_tipopasaporte, boleta_añosDuracion, boleta_numeroDoc, tbl_cgc_Pk_no_cgc, tbl_documento_Pk_num_dpi FROM tbl_boleta WHERE Pk_id_boleta = ? AND tbl_cgc_Pk_no_cgc = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@NoBoleta", noBoleta);
+                        cmd.Parameters.AddWithValue("@NoCGC", noCGC);
+
+                        using (OdbcDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                boletaEncontrada = new Boleta
+                                {
+                                    Pk_id_boleta = Convert.ToInt32(reader["Pk_id_boleta"]),
+                                    tbl_cgc_Pk_no_cgc = Convert.ToInt32(reader["tbl_cgc_Pk_no_cgc"]),
+                                };
+                            }
+                        }
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Boleta no encontrada verificar datos: " + ex.Message);
+                }
+            }
+
+            return boletaEncontrada;
+        }
+
+
+
+
+
     }
+    
 }

@@ -146,5 +146,26 @@ namespace Controlador_PrototipoMenu
         {
             return sn.Guardar(table, vals);
         }
+
+        public bool BuscarYMostrarBoleta(int noBoleta, int noCGC)
+        {
+            Boleta boletaEncontrada = sn.BuscarBoleta(noBoleta, noCGC);
+
+            if (boletaEncontrada != null)
+            {
+                Console.WriteLine("Número de boleta: " + boletaEncontrada.Pk_id_boleta);
+
+
+
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("No se encontró la boleta en la base de datos.");
+                return false;
+            }
+        }
+
+
     }
 }
