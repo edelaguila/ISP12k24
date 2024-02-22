@@ -84,11 +84,23 @@
     <Compile Include="Crear_Cita.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalendario.Designer.cs">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDatosPersonales.Designer.cs">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmDia.Designer.cs">
+      <DependentUpon>frmDia.cs</DependentUpon>
     </Compile>
     <Compile Include="Gen_Preguntas.cs">
       <SubType>Form</SubType>
@@ -155,11 +167,14 @@
     <EmbeddedResource Include="Crear_Cita.resx">
       <DependentUpon>Crear_Cita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCalendario.resx">
+      <DependentUpon>frmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gen_Preguntas.resx">
-      <DependentUpon>Gen_Preguntas.cs</DependentUpon>
+    <EmbeddedResource Include="frmDia.resx">
+      <DependentUpon>frmDia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Impresion_Pasa.resx">
       <DependentUpon>Impresion_Pasa.cs</DependentUpon>

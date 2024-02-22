@@ -7,8 +7,7 @@ using CapaModelo_MG2;
 using System.Data.Odbc;
 using System.Data;
 using CapaModelo_MG2.Sentences;
-
-
+using CapaModelo_MG2.Templates;
 
 namespace CapaControlador_MG2
 {
@@ -40,6 +39,16 @@ namespace CapaControlador_MG2
         public void saveBol()
         {
             this.sn_boleta.saveBoleta();
+        }
+
+        public bool dateIsAvailable(string _date)
+        {
+            return this.sn_cita.getDatesByDateTime(_date) < 1;
+        }
+
+        public void saveCita(Persona persona)
+        {
+            this.sn_cita.saveCita(persona);
         }
 
     }
