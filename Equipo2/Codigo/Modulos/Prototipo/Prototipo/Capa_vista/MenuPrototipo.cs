@@ -122,5 +122,21 @@ namespace Vista_PrototipoMenu
             form.Show();
             hideSubMenu();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.Gen_Preguntas form = new CapaVista_MG2.Gen_Preguntas();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.RV form = new CapaVista_MG2.RV();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }

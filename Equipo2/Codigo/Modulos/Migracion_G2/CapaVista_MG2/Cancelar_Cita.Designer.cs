@@ -39,6 +39,8 @@ namespace CapaVista_MG2
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.navegador1 = new CapaVista.Navegador();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label9
@@ -135,12 +137,22 @@ namespace CapaVista_MG2
             this.navegador1.Size = new System.Drawing.Size(751, 78);
             this.navegador1.TabIndex = 23;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(202, 330);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(335, 191);
+            this.dataGridView1.TabIndex = 24;
+            this.dataGridView1.Tag = "cita";
+            // 
             // Cancelar_Cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(829, 373);
+            this.ClientSize = new System.Drawing.Size(993, 588);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label9);
@@ -153,6 +165,7 @@ namespace CapaVista_MG2
             this.Controls.Add(this.label2);
             this.Name = "Cancelar_Cita";
             this.Text = "Cancelar_Cita";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +182,6 @@ namespace CapaVista_MG2
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private CapaVista.Navegador navegador1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
