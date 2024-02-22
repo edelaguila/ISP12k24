@@ -140,5 +140,13 @@ namespace Vista_PrototipoMenu
             rea.Show();
             hideSubMenu();
         }
+
+        private void btnDatosPersonales_Click(object sender, EventArgs e)
+        {
+            frmDatosPersonales dp = new frmDatosPersonales();
+            dp.MdiParent = this;
+            dp.Show();
+            hideSubMenu();
+        }
     }
 }
