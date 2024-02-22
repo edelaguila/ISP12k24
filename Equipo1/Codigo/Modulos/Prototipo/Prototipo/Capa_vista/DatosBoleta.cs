@@ -29,6 +29,8 @@ namespace Vista_PrototipoMenu
             if (controller.BuscarYMostrarBoleta(bole, cgc))
             {
                 frmDatosPersonales datos = new frmDatosPersonales();
+                datos.txtboleta.Text = bole.ToString();  
+                datos.txtcgc.Text = nocgc.ToString();
                 datos.Show();
             }
             else

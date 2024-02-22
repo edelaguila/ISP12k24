@@ -78,9 +78,15 @@ namespace Controlador_PrototipoMenu
         {
             return sn.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, Capellido, numdoc);
         }
+        //insertarcita
+        public void InsertarCitas(int idCita, string fecha, string hora, string dept, string ciudad, int idBoleta, int numDPI, int noCGC)
+        {
+            sn.InsertarCita(idCita, fecha, hora, dept, ciudad, idBoleta, numDPI, noCGC);
+        }
+
+        //insertarcita
 
 
-       
         //buscar cita existente a reagendar
         public int Citanum;
 

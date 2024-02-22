@@ -20,6 +20,8 @@ namespace Vista_PrototipoMenu
 
 
             monthCalendar1.DateChanged += monthCalendar1_DateChanged_1;
+
+            
         }
 
         private void monthCalendar1_DateChanged_1(object sender, DateRangeEventArgs e)

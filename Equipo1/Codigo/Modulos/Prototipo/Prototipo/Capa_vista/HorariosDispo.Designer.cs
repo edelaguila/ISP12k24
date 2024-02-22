@@ -344,6 +344,7 @@
             this.lblidcita.Size = new System.Drawing.Size(48, 17);
             this.lblidcita.TabIndex = 27;
             this.lblidcita.Text = "lblcita";
+            this.lblidcita.Visible = false;
             // 
             // labelfecha
             // 
@@ -353,6 +354,7 @@
             this.labelfecha.Size = new System.Drawing.Size(60, 17);
             this.labelfecha.TabIndex = 28;
             this.labelfecha.Text = "lblfecha";
+            this.labelfecha.Visible = false;
             // 
             // labelpais
             // 
@@ -362,6 +364,7 @@
             this.labelpais.Size = new System.Drawing.Size(49, 17);
             this.labelpais.TabIndex = 29;
             this.labelpais.Text = "lblpais";
+            this.labelpais.Visible = false;
             // 
             // labelhora
             // 
@@ -371,6 +374,7 @@
             this.labelhora.Size = new System.Drawing.Size(53, 17);
             this.labelhora.TabIndex = 30;
             this.labelhora.Text = "lblhora";
+            this.labelhora.Visible = false;
             // 
             // labeldep
             // 
@@ -380,6 +384,7 @@
             this.labeldep.Size = new System.Drawing.Size(54, 17);
             this.labeldep.TabIndex = 31;
             this.labeldep.Text = "lbldept";
+            this.labeldep.Visible = false;
             // 
             // labelmuni
             // 
@@ -389,6 +394,7 @@
             this.labelmuni.Size = new System.Drawing.Size(87, 17);
             this.labelmuni.TabIndex = 32;
             this.labelmuni.Text = "lblmunicipio";
+            this.labelmuni.Visible = false;
             // 
             // labelbol
             // 
@@ -398,6 +404,7 @@
             this.labelbol.Size = new System.Drawing.Size(66, 17);
             this.labelbol.TabIndex = 33;
             this.labelbol.Text = "lblboleta";
+            this.labelbol.Visible = false;
             // 
             // labelcgc
             // 
@@ -407,6 +414,7 @@
             this.labelcgc.Size = new System.Drawing.Size(48, 17);
             this.labelcgc.TabIndex = 34;
             this.labelcgc.Text = "lblcgc";
+            this.labelcgc.Visible = false;
             // 
             // labeldpi
             // 
@@ -416,6 +424,7 @@
             this.labeldpi.Size = new System.Drawing.Size(29, 17);
             this.labeldpi.TabIndex = 35;
             this.labeldpi.Text = "dpi";
+            this.labeldpi.Visible = false;
             // 
             // HorariosDispo
             // 

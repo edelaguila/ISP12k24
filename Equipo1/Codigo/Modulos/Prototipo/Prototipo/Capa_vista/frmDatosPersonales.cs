@@ -30,9 +30,16 @@ namespace Vista_PrototipoMenu
 
         private void btn_aceptar_Click(object sender, EventArgs e)
         {
-           /* ValidacionDeDatos val = new ValidacionDeDatos();
-            val.Show();*/
+            string noboleta = txtboleta.Text;
+            int bole = int.Parse(noboleta);
+            string nocgc = txtcgc.Text;
+            int cgc = int.Parse(nocgc);
+
+            /* ValidacionDeDatos val = new ValidacionDeDatos();
+             val.Show();*/
             ValidacionDeDatos myform = new ValidacionDeDatos();
+            myform.txtboleta.Text = noboleta.ToString();
+            myform.txtcgc.Text = nocgc.ToString();  
             myform.setData(this);
             myform.ShowDialog();
         }

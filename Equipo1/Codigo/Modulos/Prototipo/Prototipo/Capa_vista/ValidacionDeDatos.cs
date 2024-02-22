@@ -91,13 +91,26 @@ namespace Vista_PrototipoMenu
 
             string dpis = txt_numdoc.Text;
             long dpi = long.Parse(dpis);
+
+
+            string noboleta = txtboleta.Text;
+            int bole = int.Parse(noboleta);
+            string nocgc = txtcgc.Text;
+            int cgc = int.Parse(nocgc);
+
             if (controller.InsertarDocumento(dpi, numdocs, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido))
             {
                 MessageBox.Show("Datos personales ingresados correctamente");
                 controller.InsertarDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, Capellido,dpi);
 
-                Confirmacion conf = new Confirmacion();
-                conf.ShowDialog();
+                Calendario_citas cand = new Calendario_citas();
+              
+
+               //cand.txtcitanum.Text = dpis.ToString();
+                cand.txtboleta.Text = noboleta.ToString();
+                cand.txtcgc.Text = nocgc.ToString();
+                cand.txtdpi.Text = dpi.ToString();
+                cand.ShowDialog();
 
 
             }
