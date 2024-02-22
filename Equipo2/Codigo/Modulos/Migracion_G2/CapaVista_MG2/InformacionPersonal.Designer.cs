@@ -79,7 +79,7 @@ namespace CapaVista_MG2
             this.cmb_ocupacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.cmb_ocupacion.FormattingEnabled = true;
             this.cmb_ocupacion.Location = new System.Drawing.Point(504, 553);
-            this.cmb_ocupacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_ocupacion.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_ocupacion.Name = "cmb_ocupacion";
             this.cmb_ocupacion.Size = new System.Drawing.Size(316, 21);
             this.cmb_ocupacion.TabIndex = 55;
@@ -100,7 +100,7 @@ namespace CapaVista_MG2
             this.cmb_ojos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.cmb_ojos.FormattingEnabled = true;
             this.cmb_ojos.Location = new System.Drawing.Point(46, 553);
-            this.cmb_ojos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_ojos.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_ojos.Name = "cmb_ojos";
             this.cmb_ojos.Size = new System.Drawing.Size(316, 21);
             this.cmb_ojos.TabIndex = 53;
@@ -121,7 +121,7 @@ namespace CapaVista_MG2
             this.cmb_tez.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
             this.cmb_tez.FormattingEnabled = true;
             this.cmb_tez.Location = new System.Drawing.Point(504, 474);
-            this.cmb_tez.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmb_tez.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_tez.Name = "cmb_tez";
             this.cmb_tez.Size = new System.Drawing.Size(316, 21);
             this.cmb_tez.TabIndex = 51;
@@ -144,7 +144,6 @@ namespace CapaVista_MG2
             this.txt_altura.Location = new System.Drawing.Point(46, 466);
             this.txt_altura.Multiline = true;
             this.txt_altura.Name = "txt_altura";
-            this.txt_altura.ReadOnly = true;
             this.txt_altura.Size = new System.Drawing.Size(315, 28);
             this.txt_altura.TabIndex = 49;
             // 
@@ -165,7 +164,6 @@ namespace CapaVista_MG2
             this.txt_correo.Location = new System.Drawing.Point(504, 375);
             this.txt_correo.Multiline = true;
             this.txt_correo.Name = "txt_correo";
-            this.txt_correo.ReadOnly = true;
             this.txt_correo.Size = new System.Drawing.Size(315, 28);
             this.txt_correo.TabIndex = 47;
             // 
@@ -186,7 +184,6 @@ namespace CapaVista_MG2
             this.textBox6.Location = new System.Drawing.Point(46, 375);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(315, 28);
             this.textBox6.TabIndex = 45;
             // 
@@ -207,7 +204,6 @@ namespace CapaVista_MG2
             this.txt_tel.Location = new System.Drawing.Point(504, 288);
             this.txt_tel.Multiline = true;
             this.txt_tel.Name = "txt_tel";
-            this.txt_tel.ReadOnly = true;
             this.txt_tel.Size = new System.Drawing.Size(315, 28);
             this.txt_tel.TabIndex = 43;
             // 
@@ -228,7 +224,6 @@ namespace CapaVista_MG2
             this.txt_celu.Location = new System.Drawing.Point(46, 288);
             this.txt_celu.Multiline = true;
             this.txt_celu.Name = "txt_celu";
-            this.txt_celu.ReadOnly = true;
             this.txt_celu.Size = new System.Drawing.Size(315, 28);
             this.txt_celu.TabIndex = 41;
             // 
@@ -249,7 +244,6 @@ namespace CapaVista_MG2
             this.txt_direc.Location = new System.Drawing.Point(504, 209);
             this.txt_direc.Multiline = true;
             this.txt_direc.Name = "txt_direc";
-            this.txt_direc.ReadOnly = true;
             this.txt_direc.Size = new System.Drawing.Size(315, 28);
             this.txt_direc.TabIndex = 39;
             // 
@@ -332,7 +326,6 @@ namespace CapaVista_MG2
             this.txt_depa.Location = new System.Drawing.Point(504, 128);
             this.txt_depa.Multiline = true;
             this.txt_depa.Name = "txt_depa";
-            this.txt_depa.ReadOnly = true;
             this.txt_depa.Size = new System.Drawing.Size(315, 28);
             this.txt_depa.TabIndex = 58;
             // 
@@ -343,7 +336,6 @@ namespace CapaVista_MG2
             this.txt_muni.Location = new System.Drawing.Point(46, 209);
             this.txt_muni.Multiline = true;
             this.txt_muni.Name = "txt_muni";
-            this.txt_muni.ReadOnly = true;
             this.txt_muni.Size = new System.Drawing.Size(315, 28);
             this.txt_muni.TabIndex = 59;
             // 
@@ -379,7 +371,7 @@ namespace CapaVista_MG2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel_top);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InformacionPersonal";
             this.Text = "InformacionPersonal";
             this.panel_top.ResumeLayout(false);
