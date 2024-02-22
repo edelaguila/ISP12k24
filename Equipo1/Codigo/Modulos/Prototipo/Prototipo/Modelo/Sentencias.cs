@@ -29,7 +29,7 @@ namespace Modelo_PrototipoMenu
     {
         Conexion con = new Conexion();
 
-        public bool InsertarDocumento(int dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
+        public bool InsertarDocumento(long dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
         {
             string insertQueryDocumento = getQueryDocumento(dpi,  numdoc, nacionalidad, genero, estadocivil, nombre, Papellido, Sappelido, fechaNacimiento, Capellido);
             using (OdbcConnection conn = con.connection())
@@ -50,15 +50,15 @@ namespace Modelo_PrototipoMenu
             }
         }
 
-        public string getQueryDocumento(int dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
+        public string getQueryDocumento(long dpi, string numdoc, string nacionalidad, string genero, string estadocivil, string nombre, string Papellido, string Sappelido, string fechaNacimiento, string Capellido)
         {
             string sql = "INSERT INTO tbl_documento(Pk_num_dpi, doc_dpi,doc_nacionalidad,doc_genero,doc_estadocivil,doc_nombres,doc_primerapellido,doc_segundoapellido,doc_fechanacimiento,doc_casadoapellido)VALUES('" + dpi + "','" + numdoc + "', '" + nacionalidad + "', '" + genero + "', '" + estadocivil + "', '" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + Capellido + "')";
             return sql;
         }
 
-        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, int dpi,  string Capellido)
+        public bool InsertarDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, string Capellido, long dpi)
         {
-            string insertQueryDatosPersonales = getQueryDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, dpi,  Capellido);
+            string insertQueryDatosPersonales = getQueryDatosPersonales(nombre, Papellido, Sappelido, fechaNacimiento, direccion, celular, telefono, correo, confcorreo, altura, tez, ojos, ocupacion, Capellido,  dpi);
             using (OdbcConnection conn = con.connection())
             {
                 using (OdbcCommand cmd = new OdbcCommand(insertQueryDatosPersonales, conn))
@@ -77,9 +77,9 @@ namespace Modelo_PrototipoMenu
             }
         }
 
-        public string getQueryDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, int dpi,  string Capellido)
+        public string getQueryDatosPersonales(string nombre, string Papellido, string Sappelido, string fechaNacimiento, string direccion, string celular, string telefono, string correo, string confcorreo, string altura, string tez, string ojos, string ocupacion, string Capellido, long dpi)
         {
-            string sql = "INSERT INTO tbl_datospersonales(Pk_id,dp_nombre,dp_primerapellido,dp_segundoapellido,dp_fechanac,dp_dirResidencia,dp_celular,dp_telefono,dp_correo,dp_correoconfir,dp_alturacm,dp_tez,dp_ojos,dp_ocupacion,tbl_renap_Pk_num_dpi,dp_casadoapellido)VALUES(default,'" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + direccion + "', '" + celular + "', '" + telefono + "', '" + correo + "', '" + confcorreo + "', '" + altura + "', '" + tez + "', '" + ojos + "', '" + ocupacion + "', '"+dpi+"', '" + Capellido + "')";
+            string sql = "INSERT INTO tbl_datospersonales(Pk_id,dp_nombre,dp_primerapellido,dp_segundoapellido,dp_fechanac,dp_dirResidencia,dp_celular,dp_telefono,dp_correo,dp_correoconfir,dp_alturacm,dp_tez,dp_ojos,dp_ocupacion,dp_casadoapellido,tbl_documento_Pk_num_dpi)VALUES(default,'" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + direccion + "', '" + celular + "', '" + telefono + "', '" + correo + "', '" + confcorreo + "', '" + altura + "', '" + tez + "', '" + ojos + "', '" + ocupacion + "', '"+Capellido+"', '" + dpi + "')";
             return sql;
         }
 

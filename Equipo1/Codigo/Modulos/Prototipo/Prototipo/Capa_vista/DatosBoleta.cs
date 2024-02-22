@@ -19,9 +19,8 @@ namespace Vista_PrototipoMenu
 
         private void btnvalidarboleta_Click(object sender, EventArgs e)
         {
-            frmDatosPersonales frmDatosPersonales = new frmDatosPersonales();
-            frmDatosPersonales.ShowDialog();
-
+            frmDatosPersonales datos = new frmDatosPersonales();
+            datos.Show();
         }
     }
 }
