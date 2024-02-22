@@ -18,8 +18,12 @@ namespace Vista_PrototipoMenu
         public ValidacionDeDatos()
         {
             InitializeComponent();
-
+           
         }
+
+        
+
+        
 
         public void setData(Form myform)
         {

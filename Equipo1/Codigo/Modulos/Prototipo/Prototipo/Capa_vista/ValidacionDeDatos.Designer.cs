@@ -322,6 +322,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_tipodoc
             // 
+            this.txt_tipodoc.Enabled = false;
             this.txt_tipodoc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tipodoc.Location = new System.Drawing.Point(545, 263);
             this.txt_tipodoc.Multiline = true;
@@ -331,6 +332,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_apecasado
             // 
+            this.txt_apecasado.Enabled = false;
             this.txt_apecasado.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_apecasado.Location = new System.Drawing.Point(545, 195);
             this.txt_apecasado.Multiline = true;
@@ -364,6 +366,7 @@ namespace Vista_PrototipoMenu
             // 
             // cmb_ocupacion
             // 
+            this.cmb_ocupacion.Enabled = false;
             this.cmb_ocupacion.FormattingEnabled = true;
             this.cmb_ocupacion.Location = new System.Drawing.Point(545, 734);
             this.cmb_ocupacion.Name = "cmb_ocupacion";
@@ -372,6 +375,7 @@ namespace Vista_PrototipoMenu
             // 
             // cmb_ojos
             // 
+            this.cmb_ojos.Enabled = false;
             this.cmb_ojos.FormattingEnabled = true;
             this.cmb_ojos.Location = new System.Drawing.Point(189, 734);
             this.cmb_ojos.Name = "cmb_ojos";
@@ -400,6 +404,7 @@ namespace Vista_PrototipoMenu
             // 
             // cmb_tez
             // 
+            this.cmb_tez.Enabled = false;
             this.cmb_tez.FormattingEnabled = true;
             this.cmb_tez.Location = new System.Drawing.Point(545, 666);
             this.cmb_tez.Name = "cmb_tez";
@@ -418,6 +423,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_altura
             // 
+            this.txt_altura.Enabled = false;
             this.txt_altura.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_altura.Location = new System.Drawing.Point(189, 666);
             this.txt_altura.Multiline = true;
@@ -437,6 +443,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_confcorreo
             // 
+            this.txt_confcorreo.Enabled = false;
             this.txt_confcorreo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_confcorreo.Location = new System.Drawing.Point(545, 593);
             this.txt_confcorreo.Multiline = true;
@@ -456,6 +463,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_correo
             // 
+            this.txt_correo.Enabled = false;
             this.txt_correo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_correo.Location = new System.Drawing.Point(189, 593);
             this.txt_correo.Multiline = true;
@@ -465,6 +473,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_telefono
             // 
+            this.txt_telefono.Enabled = false;
             this.txt_telefono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_telefono.Location = new System.Drawing.Point(545, 522);
             this.txt_telefono.Multiline = true;
@@ -474,6 +483,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_celular
             // 
+            this.txt_celular.Enabled = false;
             this.txt_celular.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_celular.Location = new System.Drawing.Point(189, 522);
             this.txt_celular.Multiline = true;
@@ -483,6 +493,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_direccion
             // 
+            this.txt_direccion.Enabled = false;
             this.txt_direccion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_direccion.Location = new System.Drawing.Point(189, 450);
             this.txt_direccion.Multiline = true;
@@ -492,6 +503,7 @@ namespace Vista_PrototipoMenu
             // 
             // cmb_estadocivil
             // 
+            this.cmb_estadocivil.Enabled = false;
             this.cmb_estadocivil.FormattingEnabled = true;
             this.cmb_estadocivil.Location = new System.Drawing.Point(545, 391);
             this.cmb_estadocivil.Name = "cmb_estadocivil";
@@ -500,6 +512,7 @@ namespace Vista_PrototipoMenu
             // 
             // cmb_genero
             // 
+            this.cmb_genero.Enabled = false;
             this.cmb_genero.FormattingEnabled = true;
             this.cmb_genero.Location = new System.Drawing.Point(194, 391);
             this.cmb_genero.Name = "cmb_genero";
@@ -508,6 +521,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_nacionalidad
             // 
+            this.txt_nacionalidad.Enabled = false;
             this.txt_nacionalidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nacionalidad.Location = new System.Drawing.Point(545, 324);
             this.txt_nacionalidad.Multiline = true;
@@ -517,6 +531,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_numdoc
             // 
+            this.txt_numdoc.Enabled = false;
             this.txt_numdoc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_numdoc.Location = new System.Drawing.Point(189, 324);
             this.txt_numdoc.Multiline = true;
@@ -526,6 +541,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_segundoa
             // 
+            this.txt_segundoa.Enabled = false;
             this.txt_segundoa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_segundoa.Location = new System.Drawing.Point(189, 195);
             this.txt_segundoa.Multiline = true;
@@ -535,6 +551,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_primera
             // 
+            this.txt_primera.Enabled = false;
             this.txt_primera.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_primera.Location = new System.Drawing.Point(545, 124);
             this.txt_primera.Multiline = true;
@@ -544,6 +561,7 @@ namespace Vista_PrototipoMenu
             // 
             // txt_nombres
             // 
+            this.txt_nombres.Enabled = false;
             this.txt_nombres.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombres.Location = new System.Drawing.Point(189, 124);
             this.txt_nombres.Multiline = true;
@@ -653,6 +671,7 @@ namespace Vista_PrototipoMenu
             // 
             // dtp_nacimiento
             // 
+            this.dtp_nacimiento.Enabled = false;
             this.dtp_nacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtp_nacimiento.Location = new System.Drawing.Point(189, 261);
             this.dtp_nacimiento.Name = "dtp_nacimiento";
