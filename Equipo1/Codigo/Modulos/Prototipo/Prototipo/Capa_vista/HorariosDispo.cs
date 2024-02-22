@@ -29,8 +29,6 @@ namespace Vista_PrototipoMenu
             radioButton6.CheckedChanged += RadioButton_CheckedChanged;
             radioButton7.CheckedChanged += RadioButton_CheckedChanged;
             radioButton8.CheckedChanged += RadioButton_CheckedChanged;
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)

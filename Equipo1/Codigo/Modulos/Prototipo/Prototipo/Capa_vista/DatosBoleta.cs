@@ -16,5 +16,10 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
         }
+
+        private void btnvalidarboleta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
