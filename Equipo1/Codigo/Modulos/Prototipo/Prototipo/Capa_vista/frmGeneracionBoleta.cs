@@ -113,7 +113,7 @@ namespace Vista_PrototipoMenu
                 txt_identificadorDPI.Text = row["Pk_num_dpi"].ToString();
                 txt_genero.Text = row["ren_genero"].ToString();
                 txt_edad.Text = row["ren_fechanacimiento"].ToString();
-                txt_DPIC.Text = row["ren_dpi"].ToString();
+                txt_DPIC.Text = row["Pk_num_dpi"].ToString();
             }
             else
             {
