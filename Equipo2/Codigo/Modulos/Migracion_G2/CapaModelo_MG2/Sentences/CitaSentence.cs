@@ -23,5 +23,6 @@ namespace CapaModelo_MG2.Sentences
                 MessageBox.Show(e.Message);
             }
         }
+
     }
 }

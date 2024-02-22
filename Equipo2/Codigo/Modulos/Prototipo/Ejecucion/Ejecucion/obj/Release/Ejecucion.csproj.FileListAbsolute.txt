@@ -53,3 +53,9 @@ C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyec
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\FontAwesome.Sharp.dll
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\bin\Release\NavegadorVista.dll.config
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.exe.config
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.Properties.Resources.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.exe
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Ejecucion\Ejecucion\obj\Release\Ejecucion.pdb

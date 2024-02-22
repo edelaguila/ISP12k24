@@ -106,5 +106,21 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.Crear_cita form = new CapaVista_MG2.Crear_cita();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.GBP form = new CapaVista_MG2.GBP();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }

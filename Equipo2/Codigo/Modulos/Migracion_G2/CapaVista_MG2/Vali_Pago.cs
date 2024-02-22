@@ -12,9 +12,16 @@ namespace CapaVista_MG2
 {
     public partial class GBP : Form
     {
+        public CapaControlador_MG2.Controlador ctrl;
         public GBP()
         {
             InitializeComponent();
+            this.ctrl = new CapaControlador_MG2.Controlador();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.ctrl.saveBol();
         }
     }
 }

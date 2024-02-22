@@ -38,6 +38,10 @@
     <Reference Include="CapaControlador_MG2">
       <HintPath>..\CapaControlador_MG2\bin\Debug\CapaControlador_MG2.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo_MG2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CapaModelo_MG2\bin\Debug\CapaModelo_MG2.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVistaNav">
       <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
     </Reference>
