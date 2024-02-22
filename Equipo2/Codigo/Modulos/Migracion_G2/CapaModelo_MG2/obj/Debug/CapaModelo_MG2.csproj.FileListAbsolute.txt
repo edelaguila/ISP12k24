@@ -27,3 +27,9 @@ C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24
 C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.csproj.CoreCompileInputs.cache
 C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.dll
 C:\Users\rayju\OneDrive\Escritorio\ACTUALIZACIÓN PROYECTO 1 MIGRACIÓN\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.pdb
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\bin\Debug\CapaModelo_MG2.dll
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\bin\Debug\CapaModelo_MG2.pdb
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.csproj.AssemblyReference.cache
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.csproj.CoreCompileInputs.cache
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.dll
+C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Migracion_G2\CapaModelo_MG2\obj\Debug\CapaModelo_MG2.pdb
