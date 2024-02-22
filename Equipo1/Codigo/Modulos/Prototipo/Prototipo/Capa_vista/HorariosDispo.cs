@@ -50,34 +50,50 @@ namespace Vista_PrototipoMenu
                 labelhora.Text = radioButton.Text;
             }
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
-           //variables para agendar cita.
 
+            string cita = lblidcita.Text;
 
+            string dep = labeldep.Text;
+            string fecha = labelfecha.Text;
+            string muni = labelmuni.Text;
+            string pais = labelpais.Text;
+            string hora = labelhora.Text;
 
-            //para reagendar
-                string cita = lblidcita.Text;
-                int citas = int.Parse(lblidcita.Text);
-                string dep = labeldep.Text;
-                string fecha = labelfecha.Text;
-                string muni = labelmuni.Text;
-                string pais = labelpais.Text;
-                string hora = labelhora.Text;
+            string boleta = labelbol.Text;
+            int bolet = int.Parse(boleta);
+            string cgcc = labelcgc.Text;
+            int cgc = int.Parse(cgcc);
+            string dpis = labeldpi.Text;
+            int dpi = int.Parse(dpis);
 
-            bool exito = ctrl.ActualizarCitas(citas, fecha, hora,dep, muni  );
-
-            if (exito)
+            // Variables para agendar cita.
+            if (string.IsNullOrEmpty(lblidcita.Text))
             {
-                MessageBox.Show("Cita actualizada correctamente");
+                Random random = new Random();
+                int numeroAleatorio = random.Next(10000, 999999999);
+
+                lblidcita.Text = numeroAleatorio.ToString();
+
+                ctrl.InsertarCitas(numeroAleatorio, fecha, hora, dep, pais, bolet, dpi, cgc);
+                MessageBox.Show("Cita Agendada");
             }
             else
             {
-                MessageBox.Show("No se pudo actualizar la cita");
+                // Para reagendar
+                bool exito = ctrl.ActualizarCitas(int.Parse(cita), fecha, hora, dep, muni);
+
+                if (exito)
+                {
+                    MessageBox.Show("Cita actualizada correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar la cita");
+                }
             }
-
-
         }
     }
 }

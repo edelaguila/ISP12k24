@@ -106,6 +106,49 @@ namespace Modelo_PrototipoMenu
             string sql = "INSERT INTO tbl_datospersonales(Pk_id,dp_nombre,dp_primerapellido,dp_segundoapellido,dp_fechanac,dp_dirResidencia,dp_celular,dp_telefono,dp_correo,dp_correoconfir,dp_alturacm,dp_tez,dp_ojos,dp_ocupacion,dp_casadoapellido,tbl_documento_Pk_num_dpi)VALUES(default,'" + nombre + "', '" + Papellido + "', '" + Sappelido + "', '" + fechaNacimiento + "', '" + direccion + "', '" + celular + "', '" + telefono + "', '" + correo + "', '" + confcorreo + "', '" + altura + "', '" + tez + "', '" + ojos + "', '" + ocupacion + "', '"+Capellido+"', '" + dpi + "')";
             return sql;
         }
+        //Insertar Cita
+        public void InsertarCita(int idCita, string fecha, string hora, string dept, string ciudad, int idBoleta, int numDPI, int noCGC)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                try
+                {
+                    conn.Close();
+                    conn.Open();
+
+                    string consulta = "INSERT INTO tbl_cita (Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_ciudad, tbl_boleta_Pk_id_boleta, tbl_documento_Pk_num_dpi, tbl_CGC_Pk_no_cgc) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@IdCita", idCita);
+                        cmd.Parameters.AddWithValue("@Fecha", fecha);
+                        cmd.Parameters.AddWithValue("@Hora", hora);
+                        cmd.Parameters.AddWithValue("@Dept", dept);
+                        cmd.Parameters.AddWithValue("@Ciudad", ciudad);
+                        cmd.Parameters.AddWithValue("@IdBoleta", idBoleta);
+                        cmd.Parameters.AddWithValue("@NumDPI", numDPI);
+                        cmd.Parameters.AddWithValue("@NoCGC", noCGC);
+
+                        int filasAfectadas = cmd.ExecuteNonQuery();
+
+                        if (filasAfectadas > 0)
+                        {
+                            Console.WriteLine("Inserción exitosa.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No se pudo insertar la cita.");
+                        }
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Error al insertar la cita: " + ex.Message);
+                }
+            }
+        }
+        //fin insertar cita
+
 
         //Existencia de la cita a reagendar
         public Cita BuscarCita(int noBoleta, int noDocumento, int noCGC)
@@ -119,7 +162,7 @@ namespace Modelo_PrototipoMenu
                     conn.Close();
                     conn.Open();
 
-                    string consulta = "SELECT Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_municipio, tbl_boleta_Pk_id_boleta, tbl_renap_Pk_num_dpi, tbl_CGC_Pk_no_cgc FROM tbl_cita WHERE tbl_boleta_Pk_id_boleta = ? AND tbl_renap_Pk_num_dpi = ? AND tbl_CGC_Pk_no_cgc = ?";
+                    string consulta = "SELECT Pk_id_cita, cit_fecha, cit_hora, cit_dept, cit_ciudad, tbl_boleta_Pk_id_boleta, tbl_documento_Pk_num_dpi, tbl_CGC_Pk_no_cgc FROM tbl_cita WHERE tbl_boleta_Pk_id_boleta = ? AND tbl_documento_Pk_num_dpi = ? AND tbl_CGC_Pk_no_cgc = ?";
                     using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                     {
                         cmd.Parameters.AddWithValue("@NoBoleta", noBoleta);
@@ -136,7 +179,7 @@ namespace Modelo_PrototipoMenu
                                     cit_fecha = reader["cit_fecha"].ToString(),
                                     cit_hora = reader["cit_hora"].ToString(),
                                     cit_dept = reader["cit_dept"].ToString(),
-                                    cit_ciudad = reader["cit_municipio"].ToString(),
+                                    cit_ciudad = reader["cit_ciudad"].ToString(),
                                       
 
                                 };
@@ -169,14 +212,14 @@ namespace Modelo_PrototipoMenu
                     conn.Close();
                     conn.Open();
 
-                    string consulta = "UPDATE tbl_cita SET cit_fecha = ?, cit_hora = ?, cit_dept = ?, cit_municipio = ? WHERE Pk_id_cita = ?";
+                    string consulta = "UPDATE tbl_cita SET cit_fecha = ?, cit_hora = ?, cit_dept = ?, cit_ciudad = ? WHERE Pk_id_cita = ?";
 
                     using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                     {
                         cmd.Parameters.AddWithValue("@CitFecha", nuevaFecha);
                         cmd.Parameters.AddWithValue("@CitHora", nuevaHora);
                         cmd.Parameters.AddWithValue("@CitDept", nuevoDept);
-                        cmd.Parameters.AddWithValue("@CitMunicipio", nuevoMunicipio);
+                        cmd.Parameters.AddWithValue("@CitCiudad", nuevoMunicipio);
                         cmd.Parameters.AddWithValue("@PkIdCita", numeroCita);
 
                         int filasActualizadas = cmd.ExecuteNonQuery();

@@ -90,6 +90,8 @@ namespace Vista_PrototipoMenu
             this.label1 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.btn_modificar = new System.Windows.Forms.Button();
+            this.txtcgc = new System.Windows.Forms.TextBox();
+            this.txtboleta = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -732,11 +734,33 @@ namespace Vista_PrototipoMenu
             this.btn_modificar.UseVisualStyleBackColor = false;
             this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
+            // txtcgc
+            // 
+            this.txtcgc.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcgc.Location = new System.Drawing.Point(74, 12);
+            this.txtcgc.Multiline = true;
+            this.txtcgc.Name = "txtcgc";
+            this.txtcgc.Size = new System.Drawing.Size(40, 32);
+            this.txtcgc.TabIndex = 180;
+            this.txtcgc.Visible = false;
+            // 
+            // txtboleta
+            // 
+            this.txtboleta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboleta.Location = new System.Drawing.Point(28, 12);
+            this.txtboleta.Multiline = true;
+            this.txtboleta.Name = "txtboleta";
+            this.txtboleta.Size = new System.Drawing.Size(40, 32);
+            this.txtboleta.TabIndex = 179;
+            this.txtboleta.Visible = false;
+            // 
             // ValidacionDeDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(970, 896);
+            this.Controls.Add(this.txtcgc);
+            this.Controls.Add(this.txtboleta);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.pictureBox19);
@@ -885,5 +909,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btn_modificar;
+        public System.Windows.Forms.TextBox txtcgc;
+        public System.Windows.Forms.TextBox txtboleta;
     }
 }

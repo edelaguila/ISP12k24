@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendario_citas));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtdpi = new System.Windows.Forms.TextBox();
+            this.txtcgc = new System.Windows.Forms.TextBox();
+            this.txtboleta = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.txtfecha = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,9 +48,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.txtboleta = new System.Windows.Forms.TextBox();
-            this.txtcgc = new System.Windows.Forms.TextBox();
-            this.txtdpi = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(259, 469);
             this.panel1.TabIndex = 0;
+            // 
+            // txtdpi
+            // 
+            this.txtdpi.Location = new System.Drawing.Point(138, 3);
+            this.txtdpi.Name = "txtdpi";
+            this.txtdpi.ReadOnly = true;
+            this.txtdpi.Size = new System.Drawing.Size(33, 23);
+            this.txtdpi.TabIndex = 16;
+            this.txtdpi.Tag = "tbl_boleta_Pk_id_boleta";
+            this.txtdpi.Visible = false;
+            // 
+            // txtcgc
+            // 
+            this.txtcgc.Location = new System.Drawing.Point(99, 3);
+            this.txtcgc.Name = "txtcgc";
+            this.txtcgc.ReadOnly = true;
+            this.txtcgc.Size = new System.Drawing.Size(33, 23);
+            this.txtcgc.TabIndex = 15;
+            this.txtcgc.Tag = "tbl_boleta_Pk_id_boleta";
+            this.txtcgc.Visible = false;
+            // 
+            // txtboleta
+            // 
+            this.txtboleta.Location = new System.Drawing.Point(60, 3);
+            this.txtboleta.Name = "txtboleta";
+            this.txtboleta.ReadOnly = true;
+            this.txtboleta.Size = new System.Drawing.Size(33, 23);
+            this.txtboleta.TabIndex = 14;
+            this.txtboleta.Tag = "tbl_boleta_Pk_id_boleta";
+            this.txtboleta.Visible = false;
             // 
             // button3
             // 
@@ -121,6 +151,7 @@
             this.txtcitanum.Size = new System.Drawing.Size(33, 23);
             this.txtcitanum.TabIndex = 9;
             this.txtcitanum.Tag = "Pk_id_cita";
+            this.txtcitanum.Visible = false;
             // 
             // label4
             // 
@@ -214,33 +245,6 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged_1);
-            // 
-            // txtboleta
-            // 
-            this.txtboleta.Location = new System.Drawing.Point(60, 3);
-            this.txtboleta.Name = "txtboleta";
-            this.txtboleta.ReadOnly = true;
-            this.txtboleta.Size = new System.Drawing.Size(33, 23);
-            this.txtboleta.TabIndex = 14;
-            this.txtboleta.Tag = "tbl_boleta_Pk_id_boleta";
-            // 
-            // txtcgc
-            // 
-            this.txtcgc.Location = new System.Drawing.Point(99, 3);
-            this.txtcgc.Name = "txtcgc";
-            this.txtcgc.ReadOnly = true;
-            this.txtcgc.Size = new System.Drawing.Size(33, 23);
-            this.txtcgc.TabIndex = 15;
-            this.txtcgc.Tag = "tbl_boleta_Pk_id_boleta";
-            // 
-            // txtdpi
-            // 
-            this.txtdpi.Location = new System.Drawing.Point(138, 3);
-            this.txtdpi.Name = "txtdpi";
-            this.txtdpi.ReadOnly = true;
-            this.txtdpi.Size = new System.Drawing.Size(33, 23);
-            this.txtdpi.TabIndex = 16;
-            this.txtdpi.Tag = "tbl_boleta_Pk_id_boleta";
             // 
             // Calendario_citas
             // 
