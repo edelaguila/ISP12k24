@@ -51,7 +51,14 @@ namespace CapaModelo_MG2
             return dt;
         }
 
+        public OdbcDataReader getLast(string sql)
+        {
+            OdbcCommand mycommand = new OdbcCommand(sql, this.con.connection());
+            OdbcDataReader dt = mycommand.ExecuteReader();
+            this.con.myconn.Close();
+            return dt;
 
+        }
 
 
         public void executerCommand(string query)

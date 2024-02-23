@@ -69,10 +69,12 @@ namespace CapaControlador_MG2
             this.sn_cita.saveCita(persona);
         }
 
-        public void consultBol()
+        public List<string> consultBol()
         {
 
-             this.sn_boleta.consulBoleta();
+            return this.sn_boleta.consulBoleta();
+            
+             
         }
 
     }

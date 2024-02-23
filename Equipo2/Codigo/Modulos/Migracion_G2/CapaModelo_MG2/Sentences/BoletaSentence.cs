@@ -40,11 +40,21 @@ namespace CapaModelo_MG2.Sentences
             this.executerCommand(sql);
         }
 
-        public void consulBoleta()
+        public List<string> consulBoleta()
         {
+            List<string> datos = new List<string>();
+            string consultaSQL = "SELECT * FROM tbl_boleta ORDER BY bol_id DESC";
+            OdbcDataReader reader = this.getLast(consultaSQL);
+            if (reader.Read())
+            {
+                string id = reader.GetString(0);
+                string correlativo = reader.GetString(1);
+                datos.Add(id);
+                datos.Add(correlativo);
 
-            string consultaSQL = "SELECT TOP 1 * FROM tbl_boleta ORDER BY bol_id DESC";
-            this.executerCommand(consultaSQL);
+            }
+
+            return datos;
         }
     }
 }

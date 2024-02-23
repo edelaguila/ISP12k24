@@ -26,13 +26,30 @@ namespace CapaVista_MG2
         {
             this.ctrl.saveBol();
             MessageBox.Show("Pago realizado con exito");
-            btn_imprimir.Enabled = true;
+            btn_imprimir.Visible= true;
       
         }
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
-            this.ctrl.consultBol();
+            List<string> datos = this.ctrl.consultBol();
+            string contenidoPasaporte = $"Numero de documento: {datos[0]}\nCorrelativo: {datos[1]}\n Total pagado: Q100.00";
+
+            // Crear una instancia de PrintDocument
+            PrintDocument pd = new PrintDocument();
+            pd.PrintPage += (Printsender, args) => {
+                // Dibujar el contenido del pasaporte en la página de impresión
+                args.Graphics.DrawString(contenidoPasaporte, new Font("Arial", 12), Brushes.Black, new PointF(100, 100));
+            };
+
+            // Iniciar el proceso de impresión
+            PrintDialog printDialog = new PrintDialog();
+            printDialog.Document = pd;
+
+            if (printDialog.ShowDialog() == DialogResult.OK)
+            {
+                pd.Print();
+            }
         }
     }
 }
