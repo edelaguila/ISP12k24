@@ -33,7 +33,7 @@ namespace CapaVista_MG2
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
             List<string> datos = this.ctrl.consultBol();
-            string contenidoPasaporte = $"Numero de documento: {datos[0]}\nCorrelativo: {datos[1]}\n Total pagado: Q100.00";
+            string contenidoPasaporte = $"Numero de documento: {datos[0]}\nCorrelativo: {datos[1]}\nTotal pagado: Q100.00";
 
             // Crear una instancia de PrintDocument
             PrintDocument pd = new PrintDocument();

@@ -159,6 +159,12 @@
     <Compile Include="Repro_Cita.Designer.cs">
       <DependentUpon>Repro_Cita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Visualizar_Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar_Cita.Designer.cs">
+      <DependentUpon>Visualizar_Cita.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cancelar_Cita.resx">
@@ -216,6 +222,9 @@
     </Compile>
     <EmbeddedResource Include="Vali_Pago.resx">
       <DependentUpon>Vali_Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar_Cita.resx">
+      <DependentUpon>Visualizar_Cita.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -152,5 +152,13 @@ namespace Vista_PrototipoMenu
             form.Show();
             hideSubMenu();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.Visualizar_Cita form = new CapaVista_MG2.Visualizar_Cita();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
