@@ -39,5 +39,12 @@ namespace CapaModelo_MG2.Sentences
             string sql = "insert into tbl_boleta(bol_correlativo, bol_id_banco)values('" + bol.corr + "', '" + bol.id_banco + "')";
             this.executerCommand(sql);
         }
+
+        public void consulBoleta()
+        {
+
+            string consultaSQL = "SELECT TOP 1 * FROM tbl_boleta ORDER BY bol_id DESC";
+            this.executerCommand(consultaSQL);
+        }
     }
 }

@@ -46,8 +46,7 @@ namespace CapaVista_MG2
                     // Mostrar los datos en los TextBox correspondientes
                     txt_nombre.Text = filas[0]["nombre_persona"].ToString();
                     txt_dpi.Text = filas[0]["dpi_persona"].ToString();
-                    txt_fechaNac.Text = filas[0]["fecha_nacimiento"].ToString();
-                    txt_lugarNac.Text = filas[0]["lugar_nacimiento"].ToString();
+                   
                     txt_fechaEmi.Text = DateTime.Now.ToString("yyyy-MM-dd");
                     DateTime fechaVencimiento = DateTime.Now.AddYears(2);
                     txt_fechaVenci.Text = fechaVencimiento.ToString("yyyy-MM-dd");
@@ -71,8 +70,7 @@ namespace CapaVista_MG2
         {
             txt_nombre.Text = "";
             txt_dpi.Text = "";
-            txt_fechaNac.Text = "";
-            txt_lugarNac.Text = "";
+       
         }
 
         private void btn_generar_Click(object sender, EventArgs e)
@@ -88,7 +86,7 @@ namespace CapaVista_MG2
 
             //GENERACIÓN CON WINDOWS PRINTER EN CASO DE FALLA
             // Generar el contenido del pasaporte
-            string contenidoPasaporte = $"Nombre: {txt_nombre.Text}\nDPI: {txt_dpi.Text}\nFecha de Nacimiento: {txt_fechaNac.Text}\nLugar de Nacimiento: {txt_lugarNac.Text}\nFecha de Emisión: {txt_fechaEmi.Text}\nFecha de Vencimiento: {txt_fechaVenci.Text}";
+            string contenidoPasaporte = $"Nombre: {txt_nombre.Text}\nDPI: {txt_dpi.Text}\nFecha de Emisión: {txt_fechaEmi.Text}\nFecha de Vencimiento: {txt_fechaVenci.Text}";
 
             // Crear una instancia de PrintDocument
             PrintDocument pd = new PrintDocument();
@@ -105,6 +103,11 @@ namespace CapaVista_MG2
             {
                 pd.Print();
             }
+        }
+
+        private void btn_generar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

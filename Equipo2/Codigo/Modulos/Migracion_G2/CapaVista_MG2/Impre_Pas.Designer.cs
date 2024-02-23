@@ -37,15 +37,11 @@ namespace CapaVista_MG2
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_fechaVenci = new System.Windows.Forms.TextBox();
             this.txt_fechaEmi = new System.Windows.Forms.TextBox();
-            this.txt_lugarNac = new System.Windows.Forms.TextBox();
-            this.txt_fechaNac = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
@@ -61,7 +57,7 @@ namespace CapaVista_MG2
             // 
             this.dgv_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_datos.Location = new System.Drawing.Point(556, 92);
-            this.dgv_datos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_datos.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_datos.Name = "dgv_datos";
             this.dgv_datos.RowHeadersWidth = 51;
             this.dgv_datos.RowTemplate.Height = 24;
@@ -82,13 +78,14 @@ namespace CapaVista_MG2
             // btn_generar
             // 
             this.btn_generar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_generar.Location = new System.Drawing.Point(694, 344);
-            this.btn_generar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_generar.Location = new System.Drawing.Point(695, 277);
+            this.btn_generar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_generar.Name = "btn_generar";
             this.btn_generar.Size = new System.Drawing.Size(90, 29);
             this.btn_generar.TabIndex = 67;
             this.btn_generar.Text = "GENERAR";
             this.btn_generar.UseVisualStyleBackColor = true;
+            this.btn_generar.Click += new System.EventHandler(this.btn_generar_Click_1);
             // 
             // label11
             // 
@@ -105,7 +102,7 @@ namespace CapaVista_MG2
             // txt_dpi
             // 
             this.txt_dpi.Location = new System.Drawing.Point(378, 202);
-            this.txt_dpi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_dpi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_dpi.Name = "txt_dpi";
             this.txt_dpi.Size = new System.Drawing.Size(407, 20);
             this.txt_dpi.TabIndex = 65;
@@ -114,7 +111,7 @@ namespace CapaVista_MG2
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pictureBox1.Location = new System.Drawing.Point(64, 177);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(136, 154);
             this.pictureBox1.TabIndex = 64;
@@ -122,40 +119,24 @@ namespace CapaVista_MG2
             // 
             // txt_fechaVenci
             // 
-            this.txt_fechaVenci.Location = new System.Drawing.Point(378, 312);
-            this.txt_fechaVenci.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_fechaVenci.Location = new System.Drawing.Point(378, 253);
+            this.txt_fechaVenci.Margin = new System.Windows.Forms.Padding(2);
             this.txt_fechaVenci.Name = "txt_fechaVenci";
             this.txt_fechaVenci.Size = new System.Drawing.Size(407, 20);
             this.txt_fechaVenci.TabIndex = 63;
             // 
             // txt_fechaEmi
             // 
-            this.txt_fechaEmi.Location = new System.Drawing.Point(378, 285);
-            this.txt_fechaEmi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_fechaEmi.Location = new System.Drawing.Point(377, 226);
+            this.txt_fechaEmi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_fechaEmi.Name = "txt_fechaEmi";
             this.txt_fechaEmi.Size = new System.Drawing.Size(407, 20);
             this.txt_fechaEmi.TabIndex = 62;
             // 
-            // txt_lugarNac
-            // 
-            this.txt_lugarNac.Location = new System.Drawing.Point(378, 258);
-            this.txt_lugarNac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_lugarNac.Name = "txt_lugarNac";
-            this.txt_lugarNac.Size = new System.Drawing.Size(407, 20);
-            this.txt_lugarNac.TabIndex = 61;
-            // 
-            // txt_fechaNac
-            // 
-            this.txt_fechaNac.Location = new System.Drawing.Point(378, 230);
-            this.txt_fechaNac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_fechaNac.Name = "txt_fechaNac";
-            this.txt_fechaNac.Size = new System.Drawing.Size(407, 20);
-            this.txt_fechaNac.TabIndex = 60;
-            // 
             // txt_nombre
             // 
             this.txt_nombre.Location = new System.Drawing.Point(378, 177);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(407, 20);
             this.txt_nombre.TabIndex = 59;
@@ -183,45 +164,23 @@ namespace CapaVista_MG2
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(214, 313);
+            this.label8.Location = new System.Drawing.Point(213, 253);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 17);
+            this.label8.Size = new System.Drawing.Size(120, 17);
             this.label8.TabIndex = 56;
-            this.label8.Text = "Fecha de Vencimiento:";
+            this.label8.Text = "Fecha de Venc:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(214, 285);
+            this.label7.Location = new System.Drawing.Point(213, 226);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 17);
             this.label7.TabIndex = 55;
             this.label7.Text = "Fecha de Emisión:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(214, 257);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(157, 17);
-            this.label6.TabIndex = 54;
-            this.label6.Text = "Lugar de Nacimiento:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(214, 230);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(164, 17);
-            this.label5.TabIndex = 53;
-            this.label5.Text = "Fecha de Nacimiento:";
             // 
             // label4
             // 
@@ -249,7 +208,7 @@ namespace CapaVista_MG2
             // 
             this.btn_buscar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_buscar.Location = new System.Drawing.Point(443, 92);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(90, 29);
             this.btn_buscar.TabIndex = 50;
@@ -259,7 +218,7 @@ namespace CapaVista_MG2
             // txt_correlativo
             // 
             this.txt_correlativo.Location = new System.Drawing.Point(217, 98);
-            this.txt_correlativo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_correlativo.Margin = new System.Windows.Forms.Padding(2);
             this.txt_correlativo.Name = "txt_correlativo";
             this.txt_correlativo.Size = new System.Drawing.Size(213, 20);
             this.txt_correlativo.TabIndex = 49;
@@ -291,7 +250,7 @@ namespace CapaVista_MG2
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(2, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(814, 72);
             this.panel1.TabIndex = 69;
@@ -310,15 +269,11 @@ namespace CapaVista_MG2
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_fechaVenci);
             this.Controls.Add(this.txt_fechaEmi);
-            this.Controls.Add(this.txt_lugarNac);
-            this.Controls.Add(this.txt_fechaNac);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_buscar);
@@ -326,7 +281,7 @@ namespace CapaVista_MG2
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RV";
             this.Text = "RV";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_datos)).EndInit();
@@ -346,15 +301,11 @@ namespace CapaVista_MG2
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txt_fechaVenci;
         private System.Windows.Forms.TextBox txt_fechaEmi;
-        private System.Windows.Forms.TextBox txt_lugarNac;
-        private System.Windows.Forms.TextBox txt_fechaNac;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_buscar;

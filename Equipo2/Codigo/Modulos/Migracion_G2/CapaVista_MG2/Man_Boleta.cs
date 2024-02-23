@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Seguridad_Controlador;
+using Seguridad_Controlador;
 
 namespace CapaVista_MG2
 {
@@ -15,6 +17,8 @@ namespace CapaVista_MG2
         public GP()
         {
             InitializeComponent();
+            navegador1.config("tbl_boleta", this);
+            Seguridad_Controlador.Controlador cont = new Seguridad_Controlador.Controlador();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,6 +37,16 @@ namespace CapaVista_MG2
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
         {
 
         }

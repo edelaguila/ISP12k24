@@ -29,7 +29,7 @@ namespace CapaModelo_MG2
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
             string sql = "SELECT * FROM " + tabla + "  ;";
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.myconn);
-            this.con.myconn.Open();
+            //this.con.myconn.Open();
             return dataTable;
         }
 

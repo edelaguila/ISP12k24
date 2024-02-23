@@ -39,6 +39,7 @@ namespace CapaVista_MG2
             this.label1 = new System.Windows.Forms.Label();
             this.txt_vencimiento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_imprimir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_cod
@@ -85,7 +86,7 @@ namespace CapaVista_MG2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(307, 34);
+            this.label2.Location = new System.Drawing.Point(301, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(240, 28);
             this.label2.TabIndex = 30;
@@ -98,7 +99,7 @@ namespace CapaVista_MG2
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(534, 373);
+            this.button1.Location = new System.Drawing.Point(534, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 37);
             this.button1.TabIndex = 31;
@@ -146,12 +147,29 @@ namespace CapaVista_MG2
             this.label3.TabIndex = 32;
             this.label3.Text = "Fecha de Vencimiento";
             // 
+            // btn_imprimir
+            // 
+            this.btn_imprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(32)))), ((int)(((byte)(56)))));
+            this.btn_imprimir.FlatAppearance.BorderSize = 0;
+            this.btn_imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_imprimir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_imprimir.ForeColor = System.Drawing.Color.White;
+            this.btn_imprimir.Location = new System.Drawing.Point(534, 404);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(185, 37);
+            this.btn_imprimir.TabIndex = 36;
+            this.btn_imprimir.Text = "Imprimir";
+            this.btn_imprimir.UseVisualStyleBackColor = false;
+            this.btn_imprimir.Visible = false;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
+            // 
             // GBP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 476);
+            this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_vencimiento);
@@ -180,5 +198,6 @@ namespace CapaVista_MG2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_vencimiento;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btn_imprimir;
     }
 }

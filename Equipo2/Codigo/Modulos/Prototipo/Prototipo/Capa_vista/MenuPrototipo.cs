@@ -100,11 +100,7 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Cancelar_Cita form = new CapaVista_MG2.Cancelar_Cita();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
-
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -134,6 +130,24 @@ namespace Vista_PrototipoMenu
         private void button5_Click(object sender, EventArgs e)
         {
             CapaVista_MG2.RV form = new CapaVista_MG2.RV();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CapaVista_MG2.Cancelar_Cita form = new CapaVista_MG2.Cancelar_Cita();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+
+
+        }
+
+        private void man_boleta_Click(object sender, EventArgs e)
+        {
+            CapaVista_MG2.GP form = new CapaVista_MG2.GP();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();

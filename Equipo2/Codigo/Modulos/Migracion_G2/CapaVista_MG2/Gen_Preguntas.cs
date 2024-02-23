@@ -28,8 +28,6 @@ namespace CapaVista_MG2
 
         string GP_NOMBRE;
         private Label GP_label_1;
-        private TextBox BG_textbox_1;
-        private Label BG_;
         string GP_LNAC;
         string GP_DPI;
 
@@ -60,8 +58,6 @@ namespace CapaVista_MG2
             this.dgv_datos = new System.Windows.Forms.DataGridView();
             this.txt_correlativo = new System.Windows.Forms.TextBox();
             this.GP_label_1 = new System.Windows.Forms.Label();
-            this.BG_textbox_1 = new System.Windows.Forms.TextBox();
-            this.BG_ = new System.Windows.Forms.Label();
             this.GPpanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_datos)).BeginInit();
             this.SuspendLayout();
@@ -188,34 +184,10 @@ namespace CapaVista_MG2
             this.GP_label_1.Text = "ID:";
             this.GP_label_1.Click += new System.EventHandler(this.GP_label_1_Click);
             // 
-            // BG_textbox_1
-            // 
-            this.BG_textbox_1.Location = new System.Drawing.Point(215, 239);
-            this.BG_textbox_1.Margin = new System.Windows.Forms.Padding(2);
-            this.BG_textbox_1.Name = "BG_textbox_1";
-            this.BG_textbox_1.Size = new System.Drawing.Size(527, 20);
-            this.BG_textbox_1.TabIndex = 58;
-            this.BG_textbox_1.TextChanged += new System.EventHandler(this.BG_textbox_1_TextChanged);
-            // 
-            // BG_
-            // 
-            this.BG_.AutoSize = true;
-            this.BG_.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BG_.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BG_.Location = new System.Drawing.Point(61, 242);
-            this.BG_.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.BG_.Name = "BG_";
-            this.BG_.Size = new System.Drawing.Size(141, 17);
-            this.BG_.TabIndex = 59;
-            this.BG_.Text = "Lugar de nacimiento:";
-            this.BG_.Click += new System.EventHandler(this.BG__Click);
-            // 
             // Gen_Preguntas
             // 
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(765, 350);
-            this.Controls.Add(this.BG_);
-            this.Controls.Add(this.BG_textbox_1);
             this.Controls.Add(this.GP_label_1);
             this.Controls.Add(this.txt_correlativo);
             this.Controls.Add(this.dgv_datos);
@@ -252,7 +224,7 @@ namespace CapaVista_MG2
                     // Mostrar los datos en los TextBox correspondientes
                     GP_NOMBRE = filas[0]["nombre_persona"].ToString();
                     GP_DPI = filas[0]["dpi_persona"].ToString();
-                    GP_LNAC = filas[0]["lugar_nacimiento"].ToString();
+                    
                 }
                 else
                 {
@@ -267,7 +239,7 @@ namespace CapaVista_MG2
                 // LimpiarTextBox();
                 // MessageBox.Show("Por favor ingrese un correlativo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (GPtextbox2.Text == GP_NOMBRE && GPtextBox3.Text == GP_DPI && BG_textbox_1.Text == GP_LNAC)
+            if (GPtextbox2.Text == GP_NOMBRE && GPtextBox3.Text == GP_DPI )
             {
                 MessageBox.Show("Informacion Correcta", " ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
