@@ -31,13 +31,13 @@ namespace CapaVista.Componentes.Utilidades
             Controlador ctriv = new Controlador();
             var dictionary = new Dictionary<string, string>();
             List<string> columns = this.ctrl.getColumns(this.tabla);
-
             foreach (Control c in child.Controls)
             {
                 if (c is TextBox)
                 {
                     if (c.Text.Equals(""))
                     {
+                        if (c.Visible == false) continue;
                         MessageBox.Show("Debe llenar todos los campos para poder guardar");
                         return;
                     }
@@ -54,7 +54,6 @@ namespace CapaVista.Componentes.Utilidades
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
-
                         DateTimePicker dateTimePicker = c as DateTimePicker;
                         DateTime fechaHora = dateTimePicker.Value;
                         dictionary.Add(tag, fechaHora.ToString("yyyy-MM-dd"));
@@ -62,6 +61,7 @@ namespace CapaVista.Componentes.Utilidades
                 }
                 else if (c is ComboBox)
                 {
+                    if (c.Tag == null || c.Visible == false) continue;
                     string tag = c.Tag.ToString();
                     if (columns.Contains(tag))
                     {
@@ -70,12 +70,13 @@ namespace CapaVista.Componentes.Utilidades
                     }
                 }
             }
+
             ctriv.setTabla(this.tabla);
-            if (dictionary.Count != columns.Count)
+            /*if (dictionary.Count != columns.Count)
             {
                 MessageBox.Show("No todos los campos necesarios para la insercion han sido colocados, verifique sus campos para poder realizar la insercion");
                 return;
-            }
+            }*/
             ctriv.guardar(dictionary);
             MessageBox.Show("INVENTARIO GUARDADO");
         }
