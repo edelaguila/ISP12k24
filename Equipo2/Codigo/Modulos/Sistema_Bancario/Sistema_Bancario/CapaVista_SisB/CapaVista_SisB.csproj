@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovimientosBancarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovimientosBancarios.Designer.cs">
+      <DependentUpon>MovimientosBancarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="PagoServicios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +61,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MovimientosBancarios.resx">
+      <DependentUpon>MovimientosBancarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PagoServicios.resx">
       <DependentUpon>PagoServicios.cs</DependentUpon>
     </EmbeddedResource>
