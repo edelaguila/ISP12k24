@@ -21,11 +21,11 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {btnaplicaciones};
+            //Button[] apps = {btnaplicaciones};
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            cn.deshabilitarApps(apps);
+            //cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
-            cn.getAccesoApp(1002, apps[0]);
+           // cn.getAccesoApp(1002, apps[0]);
         }
         
         //Validaciones que si son visibles los panales los oculta
@@ -97,5 +97,56 @@ namespace Vista_PrototipoMenu
         {
             Help.ShowHelp(this, "umg.chm");            
         }
-     }
+
+        private void btn_renap_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            frmMantenimientoRenapPersonas form = new frmMantenimientoRenapPersonas();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            frmMantenimientoPrecioB form = new frmMantenimientoPrecioB();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_generacionBoleta_Click(object sender, EventArgs e)
+        {
+            //carlos enrique
+            frmGeneracionBoleta form = new frmGeneracionBoleta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_reagendarCita_Click(object sender, EventArgs e)
+        {
+            DatosBoleta form = new DatosBoleta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_datosPersonales_Click(object sender, EventArgs e)
+        {
+            frmReagendar rea = new frmReagendar();
+            rea.MdiParent = this;
+            rea.Show();
+            hideSubMenu();
+        }
+
+        private void btnDatosPersonales_Click(object sender, EventArgs e)
+        {
+            frmDatosPersonales dp = new frmDatosPersonales();
+            dp.MdiParent = this;
+            dp.Show();
+            hideSubMenu();
+        }
+    }
 }
