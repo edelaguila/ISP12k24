@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheques.Designer.cs">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Cheques.resx">
+      <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
     </EmbeddedResource>
