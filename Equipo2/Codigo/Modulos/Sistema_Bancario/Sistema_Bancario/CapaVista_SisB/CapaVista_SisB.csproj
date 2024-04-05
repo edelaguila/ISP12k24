@@ -58,6 +58,12 @@
     <Compile Include="Cheques.Designer.cs">
       <DependentUpon>Cheques.cs</DependentUpon>
     </Compile>
+    <Compile Include="CodigoDeSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodigoDeSeguridad.Designer.cs">
+      <DependentUpon>CodigoDeSeguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Cheques.resx">
       <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodigoDeSeguridad.resx">
+      <DependentUpon>CodigoDeSeguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>

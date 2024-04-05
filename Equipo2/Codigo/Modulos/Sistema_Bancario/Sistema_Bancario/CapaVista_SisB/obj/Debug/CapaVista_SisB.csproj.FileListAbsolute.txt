@@ -41,3 +41,4 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModeloNav.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Cheques.resources
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.TarjetasCreditoyDebito.resources
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.CodigoDeSeguridad.resources
