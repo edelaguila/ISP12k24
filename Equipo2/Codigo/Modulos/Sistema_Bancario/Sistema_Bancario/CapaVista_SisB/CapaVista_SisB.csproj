@@ -58,6 +58,24 @@
     <Compile Include="Cheques.Designer.cs">
       <DependentUpon>Cheques.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCuenta.Designer.cs">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeposito.Designer.cs">
+      <DependentUpon>frmDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetiro.Designer.cs">
+      <DependentUpon>frmRetiro.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,10 +89,24 @@
       <DependentUpon>PagoServicios.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cheques.resx">
       <DependentUpon>Cheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCuenta.resx">
+      <DependentUpon>frmCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeposito.resx">
+      <DependentUpon>frmDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetiro.resx">
+      <DependentUpon>frmRetiro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
@@ -82,6 +114,13 @@
     <EmbeddedResource Include="PagoServicios.resx">
       <DependentUpon>PagoServicios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\qr-code.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
