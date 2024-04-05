@@ -76,6 +76,12 @@
     <Compile Include="frmRetiro.Designer.cs">
       <DependentUpon>frmRetiro.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenimientoTransaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoTransaccion.Designer.cs">
+      <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRetiro.resx">
       <DependentUpon>frmRetiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoTransaccion.resx">
+      <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
