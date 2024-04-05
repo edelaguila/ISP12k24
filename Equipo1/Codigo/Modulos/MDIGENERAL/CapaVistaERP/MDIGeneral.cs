@@ -49,6 +49,16 @@ namespace CapaVistaERP
             else
                 subMenu.Visible = false;
         }
+        private void showSubMenuMantenimientos(Panel subMenuMant)
+        {
+            if (subMenuMant.Visible == false)
+            {
+                hideSubMenu();
+                subMenuMant.Visible = true;
+            }
+            else
+                subMenuMant.Visible = false;
+        }
 
         private void Abrir(object abrirform)
         {
