@@ -148,5 +148,21 @@ namespace Vista_PrototipoMenu
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.TarjetasCreditoyDebito form = new CapaVista_SisB.TarjetasCreditoyDebito();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.MovimientosBancarios form = new CapaVista_SisB.MovimientosBancarios();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
