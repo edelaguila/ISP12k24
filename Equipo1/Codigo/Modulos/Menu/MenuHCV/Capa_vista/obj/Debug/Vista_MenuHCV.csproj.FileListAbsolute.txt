@@ -103,12 +103,10 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\M
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorNav.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_ControladorConsultas.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloNav.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorReporteria.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_Modelo.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.Shared.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -272,3 +270,5 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaERP.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaERP.pdb
