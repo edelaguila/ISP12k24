@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaVistaERP.Mantenimientos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,6 +38,7 @@ namespace CapaVistaERP
                 panelReporte.Visible = false;
             if (panelSeguridad.Visible == true)
                 panelSeguridad.Visible = false;
+
         }
         //Método que valida si el submenu no es visible oculta el submenu
         private void showSubMenu(Panel subMenu)
@@ -111,6 +113,8 @@ namespace CapaVistaERP
         private void btn_mantenimiento1_Click(object sender, EventArgs e)
         {
             //Abrir(new "carpeta"."form"());
+            frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
+            this.Parent=frm_Mant_Clientes;
             hideSubMenu();
         }
 
@@ -118,6 +122,11 @@ namespace CapaVistaERP
         {
             //Abrir(new "carpeta"."form"());
             hideSubMenu();
+        }
+
+        private void panel1_Click(object sender, PaintEventArgs e)
+        {
+            showSubMenu(PanelProcesos);
         }
     }
 }
