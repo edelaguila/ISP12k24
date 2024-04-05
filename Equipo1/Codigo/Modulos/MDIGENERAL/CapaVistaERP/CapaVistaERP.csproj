@@ -34,6 +34,9 @@
     <Reference Include="CapaControladorERP">
       <HintPath>..\CapaControladorERP\bin\Debug\CapaControladorERP.dll</HintPath>
     </Reference>
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />

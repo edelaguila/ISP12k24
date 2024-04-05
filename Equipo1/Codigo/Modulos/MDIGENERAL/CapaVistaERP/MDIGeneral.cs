@@ -112,9 +112,10 @@ namespace CapaVistaERP
 
         private void btn_mantenimiento1_Click(object sender, EventArgs e)
         {
-            //Abrir(new "carpeta"."form"());
-            frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
-            this.Parent=frm_Mant_Clientes;
+            Abrir(new Mantenimientos.frm_mant_clientes());
+           /* frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
+            frm_Mant_Clientes.MdiParent = this;
+            frm_Mant_Clientes.Show();*/
             hideSubMenu();
         }
 
