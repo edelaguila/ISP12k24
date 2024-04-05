@@ -26,6 +26,21 @@ namespace CapaVistaERP
             //cns.getAccesoApp(2003, apps[3]);
             //cns.getAccesoApp(2004, apps[4]);
             //cns.getAccesoApp(2005, apps[5]);
+            escondersubmenus();
+        }
+
+        private void escondersubmenus()
+        {
+            submenumantcompras.Visible = false;
+            submenumantventas.Visible = false;
+            submenumantlogistica.Visible = false;
+            submenumantbancos.Visible = false;
+            panelMantenimientos.Visible = false;
+            submenuprocesoscompra.Visible = false;
+            submenuprocesosventas.Visible = false;
+            submenuprocesoslogistica.Visible = false;
+            submenuprocesosbancos.Visible = false;
+            PanelProcesos.Visible = false;
         }
 
         private void hideSubMenu()
@@ -45,7 +60,7 @@ namespace CapaVistaERP
         {
             if (subMenu.Visible == false)
             {
-                hideSubMenu();
+                //hideSubMenu();
                 subMenu.Visible = true;
             }
             else
@@ -112,22 +127,61 @@ namespace CapaVistaERP
 
         private void btn_mantenimiento1_Click(object sender, EventArgs e)
         {
-            Abrir(new Mantenimientos.frm_mant_clientes());
-           /* frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
-            frm_Mant_Clientes.MdiParent = this;
-            frm_Mant_Clientes.Show();*/
-            hideSubMenu();
+            showSubMenu(submenumantcompras);
         }
 
         private void btn_proceso1_Click(object sender, EventArgs e)
         {
-            //Abrir(new "carpeta"."form"());
-            hideSubMenu();
+            showSubMenu(submenuprocesoscompra);
         }
 
         private void panel1_Click(object sender, PaintEventArgs e)
         {
             showSubMenu(PanelProcesos);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
+            //this.Parent = frm_Mant_Clientes;
+            //hideSubMenu();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
+            //this.Parent = frm_Mant_Clientes;
+            //hideSubMenu();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenumantventas);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenumantlogistica);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenumantbancos);
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenuprocesosventas);
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenuprocesoslogistica);
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            showSubMenu(submenuprocesosbancos);
         }
     }
 }
