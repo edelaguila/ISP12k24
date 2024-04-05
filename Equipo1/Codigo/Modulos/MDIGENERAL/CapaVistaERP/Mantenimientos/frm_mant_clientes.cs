@@ -15,6 +15,7 @@ namespace CapaVistaERP.Mantenimientos
         public frm_mant_clientes()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_clientes", this, "");
         }
     }
 }
