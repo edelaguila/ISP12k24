@@ -49,8 +49,6 @@ namespace CapaVistaERP
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.MantVendedores = new System.Windows.Forms.Button();
             this.panelMDI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MDI)).BeginInit();
             this.panelSideMenu.SuspendLayout();
@@ -59,7 +57,6 @@ namespace CapaVistaERP
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMDI
@@ -263,7 +260,6 @@ namespace CapaVistaERP
             // panelMantenimientos
             // 
             this.panelMantenimientos.BackColor = System.Drawing.Color.LightGray;
-            this.panelMantenimientos.Controls.Add(this.panel1);
             this.panelMantenimientos.Controls.Add(this.btn_mantenimiento1);
             this.panelMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMantenimientos.Location = new System.Drawing.Point(0, 203);
@@ -365,24 +361,6 @@ namespace CapaVistaERP
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.MantVendedores);
-            this.panel1.Location = new System.Drawing.Point(98, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 62);
-            this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Click);
-            // 
-            // MantVendedores
-            // 
-            this.MantVendedores.Location = new System.Drawing.Point(0, 0);
-            this.MantVendedores.Name = "MantVendedores";
-            this.MantVendedores.Size = new System.Drawing.Size(240, 45);
-            this.MantVendedores.TabIndex = 0;
-            this.MantVendedores.Text = "MantenimientoVendedores";
-            this.MantVendedores.UseVisualStyleBackColor = true;
-            // 
             // MDIGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -400,7 +378,6 @@ namespace CapaVistaERP
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -426,7 +403,5 @@ namespace CapaVistaERP
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button MantVendedores;
     }
 }

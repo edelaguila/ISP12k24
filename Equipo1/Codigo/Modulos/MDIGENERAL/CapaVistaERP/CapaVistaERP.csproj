@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cotizacion.Designer.cs">
+      <DependentUpon>frm_cotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_clientes.Designer.cs">
+      <DependentUpon>frm_mant_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_vendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_vendedores.Designer.cs">
+      <DependentUpon>frm_mant_vendedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_cotizacion.resx">
+      <DependentUpon>frm_cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_clientes.resx">
+      <DependentUpon>frm_mant_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_vendedores.resx">
+      <DependentUpon>frm_mant_vendedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDIGeneral.resx">
       <DependentUpon>MDIGeneral.cs</DependentUpon>
     </EmbeddedResource>
@@ -69,7 +96,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mantenimientos\" />
     <Folder Include="Procesos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
