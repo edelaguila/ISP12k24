@@ -59,7 +59,7 @@ namespace MenuHCV
             //Login b = new Login();
             //cn.setBtitacora("999", "Cerro Sesion");
             //b.Show();
-            //this.Close();
+           this.Close();
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
