@@ -38,6 +38,23 @@ namespace CapaVista
             //ctrl_seguridad.setBtitacora("7003", "actualizando");
             //ctrl_seguridad.setBtitacora("1000", "actualizando");
             //MessageBox.Show("Realizando bitacora");
+        }
+
+        public void _initSeguridad(string idApp = "1000", string user = "admin", string pass = "12345", string idUser = null)
+        {
+            if (idUser != null)
+            {
+                Seguridad_Controlador.Controlador.idUser = idUser;
+                return;
+            }
+            this.idApp = idApp;
+            string encriptado = this.SetHash(pass);
+            bool login = ctrl_seguridad.validarLogin(user, encriptado);
+            if (!login)
+            {
+                MessageBox.Show("Error, se ha denegado el accesso departe de seguridad");
+                return;
+            }
             this.loadButtons();
         }
 
@@ -51,6 +68,10 @@ namespace CapaVista
                     Button mybutton = (Button)c;
                     if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
                     int index = Convert.ToInt32(mybutton.Tag) - 1;
+                    if (idApp.Equals("1000"))
+                    {
+                        mybutton.Enabled = true; continue;
+                    }
                     mybutton.Enabled = !Convert.ToBoolean(arr[index]);
                 }
             }
@@ -237,7 +258,11 @@ namespace CapaVista
                 }
                 else if (control is ComboBox)
                 {
-                    ((ComboBox)control).SelectedIndex = 0;
+                    ComboBox cmb = ((ComboBox)control);
+                    if (cmb.Items.Count > 0)
+                    {
+                        cmb.SelectedIndex = 0;
+                    }
                 }
             }
         }
@@ -248,7 +273,7 @@ namespace CapaVista
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
+            Help.ShowHelp(this, "C:/Users/callo/Music/Ayudas NAV 2024/proyectoads22023-main/Codigo/Modulos/Prototipo/Prototipo/Capa_vista/bin/Debug/Ayudas/AyudaSeguridad.chm", "Ayuda.html");
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
