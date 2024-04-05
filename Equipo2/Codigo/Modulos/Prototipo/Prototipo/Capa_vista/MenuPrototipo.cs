@@ -76,10 +76,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Repro_Cita form = new CapaVista_MG2.Repro_Cita();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+            
         }
         //Método que muestra el formulario indicado
 
@@ -105,15 +102,13 @@ namespace Vista_PrototipoMenu
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Crear_cita form = new CapaVista_MG2.Crear_cita();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+             
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.GBP form = new CapaVista_MG2.GBP();
+            CapaVista_SisB.PagoServicios form = new CapaVista_SisB.PagoServicios();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -121,33 +116,24 @@ namespace Vista_PrototipoMenu
 
         private void button4_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Gen_Preguntas form = new CapaVista_MG2.Gen_Preguntas();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.RV form = new CapaVista_MG2.RV();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            CapaVista_MG2.Cancelar_Cita form = new CapaVista_MG2.Cancelar_Cita();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+           
 
 
         }
 
         private void man_boleta_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.GP form = new CapaVista_MG2.GP();
+            CapaVista_SisB.Cheques form = new CapaVista_SisB.Cheques();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -155,10 +141,12 @@ namespace Vista_PrototipoMenu
 
         private void button6_Click(object sender, EventArgs e)
         {
-            CapaVista_MG2.Visualizar_Cita form = new CapaVista_MG2.Visualizar_Cita();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -4,3 +4,9 @@ C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyec
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.CoreCompileInputs.cache
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.dll
 C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\bin\Debug\CapaModeloNav.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\bin\Debug\CapaModeloNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.pdb
