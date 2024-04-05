@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
 using Vista_PrototipoMenu;
-
+using CapaVistaERP;
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
 {
@@ -113,7 +113,7 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            CapaVistaERP.MDIGeneral form = new CapaVistaERP.MDIGeneral();
             form.Show();
             cn.setBtitacora("1000", "Ingreso Prototipo");
         }
