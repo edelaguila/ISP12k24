@@ -1,6 +1,18 @@
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.dll
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.pdb
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.CoreCompileInputs.cache
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.dll
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.pdb
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Octavo Semestre\Analisis\repos\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Release\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Release\CapaModeloNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\bin\Release\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\bin\Release\CapaModeloNav.pdb
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.dll
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\bin\Release\CapaModeloNav.pdb
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.dll
+C:\Users\callo\Music\Ayudas NAV 2024\proyectoads22023-main\Codigo\Componentes\Navegador\CapaModelo\obj\Release\CapaModeloNav.pdb
