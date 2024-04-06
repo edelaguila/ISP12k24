@@ -315,7 +315,6 @@ namespace CapaVistaERP
             this.button27.Text = "AUTORIZACIÓN ÓRDENES ";
             this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button27.UseVisualStyleBackColor = true;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -698,7 +697,6 @@ namespace CapaVistaERP
             this.button11.Text = "MOVIMIENTO DE BANCOS";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -716,7 +714,6 @@ namespace CapaVistaERP
             this.button10.Text = "MANT. BANCOS";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -826,6 +823,7 @@ namespace CapaVistaERP
             this.button5.Text = "VENDEDORES";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -843,6 +841,7 @@ namespace CapaVistaERP
             this.button4.Text = "CLIENTES";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
