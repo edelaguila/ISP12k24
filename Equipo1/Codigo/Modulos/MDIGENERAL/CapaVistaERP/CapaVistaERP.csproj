@@ -49,10 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_cotizacion.cs">
+    <Compile Include="Procesos\frm_cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_cotizacion.Designer.cs">
+    <Compile Include="Procesos\frm_cotizacion.Designer.cs">
       <DependentUpon>frm_cotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoBanco.cs">
@@ -99,7 +99,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frm_cotizacion.resx">
+    <EmbeddedResource Include="Procesos\frm_cotizacion.resx">
       <DependentUpon>frm_cotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoBanco.resx">
