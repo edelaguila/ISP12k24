@@ -543,6 +543,7 @@ namespace CapaVistaERP
             this.button14.Text = "MOVIMIENTO DE PROVEEDORES";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
