@@ -107,3 +107,41 @@ C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MD
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVist.CEC4F2E2.Up2Date
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.dll
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorERP.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaNav.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Seguridad_Controlador.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorNav.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Modelo_Seguridad.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorERP.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaNav.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorNav.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.pdb
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_Proveedor.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_tipo_de_cambio.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_TransProveedores.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Compras.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Dispo_Diaria.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.FacturaporPagar.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.frm_cotizacion.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoBanco.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoMovimientoBanco.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_clientes.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_vendedores.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.MDIGeneral.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.AutorizacionOrdenDeCompra.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.CajaProveedor.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.MovimientoProveedores.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Mov_bancario.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdenesdeCompra.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Properties.Resources.resources
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.CopyComplete
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.dll
+C:\Users\DELL\Desktop\labo analisis\api analisis\Nueva carpeta\Nueva carpeta\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.pdb
