@@ -17,12 +17,8 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_proveedor", this, "");
-            llenarcombo();
+           
         }
-        public void llenarcombo()
-        {
-            cb_estadoprov.Items.Add("Activo");
-            cb_estadoprov.Items.Add("Inactivo");
-        }
+   
     }
 }
