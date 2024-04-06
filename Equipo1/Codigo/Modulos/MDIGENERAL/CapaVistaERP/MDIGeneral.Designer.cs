@@ -298,6 +298,7 @@ namespace CapaVistaERP
             this.button24.Text = "DISPONIBILIDAD DIARIA";
             this.button24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button27
             // 
@@ -702,6 +703,7 @@ namespace CapaVistaERP
             this.button11.Text = "MOVIMIENTO DE BANCOS";
             this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 

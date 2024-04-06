@@ -55,6 +55,12 @@
     <Compile Include="Mantenimientos\frm_Mant_Proveedor.Designer.cs">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\frm_mant_tipo_de_cambio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_tipo_de_cambio.Designer.cs">
+      <DependentUpon>frm_mant_tipo_de_cambio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frm_Mant_TransProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="Procesos\Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\Dispo_Diaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Dispo_Diaria.Designer.cs">
+      <DependentUpon>Dispo_Diaria.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\FacturaporPagar.cs">
       <SubType>Form</SubType>
@@ -127,6 +139,12 @@
     <Compile Include="Procesos\MovimientoProveedores.Designer.cs">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Mov_bancario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Mov_bancario.Designer.cs">
+      <DependentUpon>Mov_bancario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\OrdenesdeCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +162,17 @@
     <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_tipo_de_cambio.resx">
+      <DependentUpon>frm_mant_tipo_de_cambio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_TransProveedores.resx">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Dispo_Diaria.resx">
+      <DependentUpon>Dispo_Diaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\FacturaporPagar.resx">
       <DependentUpon>FacturaporPagar.cs</DependentUpon>
@@ -179,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\MovimientoProveedores.resx">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Mov_bancario.resx">
+      <DependentUpon>Mov_bancario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\OrdenesdeCompra.resx">
       <DependentUpon>OrdenesdeCompra.cs</DependentUpon>
