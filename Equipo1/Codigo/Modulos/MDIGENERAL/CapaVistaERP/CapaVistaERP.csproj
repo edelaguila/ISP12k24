@@ -67,6 +67,24 @@
     <Compile Include="Mantenimientos\frm_Mant_TransProveedores.Designer.cs">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\BuscarCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\BuscarCompras.Designer.cs">
+      <DependentUpon>BuscarCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\BuscarOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\BuscarOrdenCompra.Designer.cs">
+      <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\BuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\BuscarProveedor.Designer.cs">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Compras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,11 +103,11 @@
     <Compile Include="Procesos\FacturaporPagar.Designer.cs">
       <DependentUpon>FacturaporPagar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\frm_cotizacion.cs">
+    <Compile Include="Procesos\Cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos\frm_cotizacion.Designer.cs">
-      <DependentUpon>frm_cotizacion.cs</DependentUpon>
+    <Compile Include="Procesos\Cotizacion.Designer.cs">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoBanco.cs">
       <SubType>Form</SubType>
@@ -133,6 +151,18 @@
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\frm_factura_cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frm_factura_cobrar.Designer.cs">
+      <DependentUpon>frm_factura_cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\frm_pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frm_pedidos.Designer.cs">
+      <DependentUpon>frm_pedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\MovimientoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +198,15 @@
     <EmbeddedResource Include="Mantenimientos\frm_Mant_TransProveedores.resx">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\BuscarCompras.resx">
+      <DependentUpon>BuscarCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\BuscarOrdenCompra.resx">
+      <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,8 +216,8 @@
     <EmbeddedResource Include="Procesos\FacturaporPagar.resx">
       <DependentUpon>FacturaporPagar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\frm_cotizacion.resx">
-      <DependentUpon>frm_cotizacion.cs</DependentUpon>
+    <EmbeddedResource Include="Procesos\Cotizacion.resx">
+      <DependentUpon>Cotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoBanco.resx">
       <DependentUpon>frmMantenimientoBanco.cs</DependentUpon>
@@ -200,6 +239,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frm_factura_cobrar.resx">
+      <DependentUpon>frm_factura_cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frm_pedidos.resx">
+      <DependentUpon>frm_pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\MovimientoProveedores.resx">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
