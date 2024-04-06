@@ -332,6 +332,7 @@ namespace CapaVistaERP
             this.button28.Text = "MOVIMIENTO BANCARIO";
             this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // button23
             // 
@@ -559,6 +560,7 @@ namespace CapaVistaERP
             this.button13.Text = "FACTURA POR PAGAR";
             this.button13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button25
             // 
@@ -576,6 +578,7 @@ namespace CapaVistaERP
             this.button25.Text = "COMPRAS";
             this.button25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -593,6 +596,7 @@ namespace CapaVistaERP
             this.button26.Text = "ÓRDENES DE COMPRA";
             this.button26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // btn_proceso1
             // 
