@@ -83,6 +83,8 @@
             this.cb_tipotrans.Name = "cb_tipotrans";
             this.cb_tipotrans.Size = new System.Drawing.Size(211, 24);
             this.cb_tipotrans.TabIndex = 28;
+            this.cb_tipotrans.Tag = "tipo_transprov";
+            this.cb_tipotrans.SelectedIndexChanged += new System.EventHandler(this.cb_tipotrans_SelectedIndexChanged);
             // 
             // cb_estadoprov
             // 
@@ -92,6 +94,7 @@
             this.cb_estadoprov.Name = "cb_estadoprov";
             this.cb_estadoprov.Size = new System.Drawing.Size(211, 24);
             this.cb_estadoprov.TabIndex = 27;
+            this.cb_estadoprov.Tag = "estado_transprov";
             // 
             // label10
             // 
@@ -134,6 +137,7 @@
             this.txt_idprov.Name = "txt_idprov";
             this.txt_idprov.Size = new System.Drawing.Size(211, 22);
             this.txt_idprov.TabIndex = 17;
+            this.txt_idprov.Tag = "id_transprov";
             // 
             // label8
             // 
@@ -153,6 +157,7 @@
             this.txt_Nomprov.Name = "txt_Nomprov";
             this.txt_Nomprov.Size = new System.Drawing.Size(211, 22);
             this.txt_Nomprov.TabIndex = 1;
+            this.txt_Nomprov.Tag = "nombre_transprov";
             // 
             // groupBox1
             // 
@@ -184,6 +189,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frm_Mant_TransProveedores";
             this.Text = "frm_Mant_TransProveedores";
+            this.Load += new System.EventHandler(this.frm_Mant_TransProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
