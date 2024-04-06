@@ -195,5 +195,28 @@ namespace CapaVistaERP
             Abrir(new Mantenimientos.frm_mant_vendedores());
             hideSubMenu();
         }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.OrdenesdeCompra());
+            hideSubMenu();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Compras());
+            hideSubMenu();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.FacturaporPagar());
+            hideSubMenu();
+        }
     }
 }
