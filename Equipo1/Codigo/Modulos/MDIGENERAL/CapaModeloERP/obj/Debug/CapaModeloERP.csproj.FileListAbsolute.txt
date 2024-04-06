@@ -9,3 +9,4 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache

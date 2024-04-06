@@ -183,5 +183,23 @@ namespace CapaVistaERP
         {
             showSubMenu(submenuprocesosbancos);
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMantenimientoBanco());
+            hideSubMenu();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMantenimientoMovimientoBanco());
+            hideSubMenu();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.AutorizacionOrdenDeCompra());
+            hideSubMenu();
+        }
     }
 }
