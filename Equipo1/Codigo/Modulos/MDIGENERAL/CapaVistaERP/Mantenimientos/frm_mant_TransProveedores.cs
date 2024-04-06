@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVistaERP
+namespace CapaVistaERP.Mantenimientos
 {
-    public partial class frm_mant_TransProveedores : Form
+    public partial class frm_Mant_TransProveedores : Form
     {
-        public frm_mant_TransProveedores()
+        public frm_Mant_TransProveedores()
         {
             InitializeComponent();
         }

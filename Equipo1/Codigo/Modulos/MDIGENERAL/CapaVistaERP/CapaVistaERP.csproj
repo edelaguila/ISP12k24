@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\frm_Mant_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_Mant_Proveedor.Designer.cs">
+      <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_Mant_TransProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_Mant_TransProveedores.Designer.cs">
+      <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Compras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,18 +78,6 @@
     </Compile>
     <Compile Include="Procesos\frm_cotizacion.Designer.cs">
       <DependentUpon>frm_cotizacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mantenimientos\frm_mant_TransProveedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\frm_mant_TransProveedores.Designer.cs">
-      <DependentUpon>frm_mant_TransProveedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mantenimientos\frm_mant_Proveedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\frm_mant_Proveedor.Designer.cs">
-      <DependentUpon>frm_mant_Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoBanco.cs">
       <SubType>Form</SubType>
@@ -141,6 +141,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
+      <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_Mant_TransProveedores.resx">
+      <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,12 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frm_cotizacion.resx">
       <DependentUpon>frm_cotizacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimientos\frm_mant_TransProveedores.resx">
-      <DependentUpon>frm_mant_TransProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimientos\frm_mant_Proveedor.resx">
-      <DependentUpon>frm_mant_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoBanco.resx">
       <DependentUpon>frmMantenimientoBanco.cs</DependentUpon>

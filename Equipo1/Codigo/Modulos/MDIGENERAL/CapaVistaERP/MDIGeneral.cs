@@ -142,16 +142,14 @@ namespace CapaVistaERP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
-            //this.Parent = frm_Mant_Clientes;
-            //hideSubMenu();
+            Abrir(new Mantenimientos.frm_Mant_Proveedor());
+            hideSubMenu();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //frm_mant_clientes frm_Mant_Clientes = new frm_mant_clientes();
-            //this.Parent = frm_Mant_Clientes;
-            //hideSubMenu();
+            Abrir(new Mantenimientos.frm_Mant_TransProveedores());
+            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -216,6 +214,12 @@ namespace CapaVistaERP
         private void button13_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.FacturaporPagar());
+            hideSubMenu();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.MovimientoProveedores());
             hideSubMenu();
         }
     }

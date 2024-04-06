@@ -1,6 +1,6 @@
-﻿namespace CapaVistaERP
+﻿namespace CapaVistaERP.Mantenimientos
 {
-    partial class frm_mant_TransProveedores
+    partial class frm_Mant_TransProveedores
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 282);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 282);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -66,7 +66,7 @@
             this.groupBox2.Controls.Add(this.txt_idprov);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txt_Nomprov);
-            this.groupBox2.Location = new System.Drawing.Point(12, 150);
+            this.groupBox2.Location = new System.Drawing.Point(14, 150);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -157,7 +157,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.navegador1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 11);
+            this.groupBox1.Location = new System.Drawing.Point(14, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -168,22 +168,22 @@
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(7, 21);
+            this.navegador1.Location = new System.Drawing.Point(17, 21);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1001, 96);
             this.navegador1.TabIndex = 0;
             // 
-            // frm_mant_TransProveedores
+            // frm_Mant_TransProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1059, 685);
+            this.ClientSize = new System.Drawing.Size(1051, 570);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frm_mant_TransProveedores";
-            this.Text = "frm_mant_TransProveedores";
+            this.Name = "frm_Mant_TransProveedores";
+            this.Text = "frm_Mant_TransProveedores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
