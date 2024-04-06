@@ -42,6 +42,8 @@ namespace CapaVista_SisB
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // navegador1
@@ -201,12 +203,39 @@ namespace CapaVista_SisB
             this.label6.TabIndex = 57;
             this.label6.Text = "DPI";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.label7.Location = new System.Drawing.Point(89, 394);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 13);
+            this.label7.TabIndex = 61;
+            this.label7.Text = "Numero de cuenta";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox6.Location = new System.Drawing.Point(92, 423);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(252, 28);
+            this.textBox6.TabIndex = 62;
+            this.textBox6.Tag = "Cantidad_a_retirar";
+            this.textBox6.Text = "0 0 0 0 0 0 0 0 0 0 0 0 0 ";
+            // 
             // frmCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(242)))));
-            this.ClientSize = new System.Drawing.Size(827, 464);
+            this.ClientSize = new System.Drawing.Size(827, 487);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox5);
@@ -242,5 +271,7 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }
