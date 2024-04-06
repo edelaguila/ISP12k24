@@ -17,20 +17,9 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_transprov", this, "");
-            llenarcombo();
-            llenarcombo2();
+         
         }
-        public void llenarcombo()
-        {
-            cb_tipotrans.Items.Add("Cargo");
-            cb_tipotrans.Items.Add("Abono");
-        }
-
-        public void llenarcombo2()
-        {
-            cb_estadoprov.Items.Add(0);
-            cb_estadoprov.Items.Add(1);
-        }
+       
         private void frm_Mant_TransProveedores_Load(object sender, EventArgs e)
         {
            
