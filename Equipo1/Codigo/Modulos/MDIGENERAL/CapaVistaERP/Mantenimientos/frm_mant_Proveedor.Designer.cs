@@ -1,6 +1,6 @@
-﻿namespace CapaVistaERP
+﻿namespace CapaVistaERP.Mantenimientos
 {
-    partial class frm_mant_Proveedor
+    partial class frm_Mant_Proveedor
     {
         /// <summary>
         /// Required designer variable.
@@ -219,22 +219,22 @@
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(7, 21);
+            this.navegador1.Location = new System.Drawing.Point(8, 21);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1001, 96);
             this.navegador1.TabIndex = 0;
             // 
-            // frm_mant_Proveedor
+            // frm_Mant_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1050, 621);
+            this.ClientSize = new System.Drawing.Size(1040, 615);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dg_prov);
             this.Controls.Add(this.groupBox2);
-            this.Name = "frm_mant_Proveedor";
-            this.Text = "frm_mant_Proveedor";
+            this.Name = "frm_Mant_Proveedor";
+            this.Text = "frm_Mant_Proveedor";
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dg_prov)).EndInit();
             this.groupBox2.ResumeLayout(false);
