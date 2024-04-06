@@ -226,13 +226,49 @@ namespace CapaVistaERP
 
         private void button11_Click(object sender, EventArgs e)
         {
-            Abrir(new Mantenimientos.frm_mant_tipo_de_cambio());
+            Abrir(new Mantenimientos.frmMantenimientoMovimientoBanco());
             hideSubMenu();
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.Dispo_Diaria());
+            hideSubMenu();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+          Abrir(new Procesos.Cotizacion());
+            hideSubMenu();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.frm_pedidos());
+            hideSubMenu();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMantenimientoBanco());
+            hideSubMenu();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frm_mant_tipo_de_cambio());
+            hideSubMenu();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.AutorizacionOrdenDeCompra());
+            hideSubMenu();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.frm_factura_cobrar());
             hideSubMenu();
         }
     }

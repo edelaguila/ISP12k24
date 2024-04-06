@@ -1,6 +1,6 @@
-﻿namespace CapaVistaERP
+﻿namespace CapaVistaERP.Procesos
 {
-    partial class frm_cotizacion
+    partial class Cotizacion
     {
         /// <summary>
         /// Required designer variable.

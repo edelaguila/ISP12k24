@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaVistaERP.Mantenimientos
 {
@@ -15,6 +16,13 @@ namespace CapaVistaERP.Mantenimientos
         public frm_Mant_Proveedor()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_proveedor", this, "");
+            llenarcombo();
+        }
+        public void llenarcombo()
+        {
+            cb_estadoprov.Items.Add("Activo");
+            cb_estadoprov.Items.Add("Inactivo");
         }
     }
 }

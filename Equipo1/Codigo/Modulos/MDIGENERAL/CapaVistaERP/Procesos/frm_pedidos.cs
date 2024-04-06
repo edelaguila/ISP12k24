@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaVistaERP
+namespace CapaVistaERP.Procesos
 {
     public partial class frm_pedidos : Form
     {

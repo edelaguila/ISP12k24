@@ -316,6 +316,7 @@ namespace CapaVistaERP
             this.button27.Text = "AUTORIZACIÓN ÓRDENES ";
             this.button27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -462,6 +463,7 @@ namespace CapaVistaERP
             this.button16.Text = "FACTURAS POR COBRAR";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button17
             // 
@@ -479,6 +481,7 @@ namespace CapaVistaERP
             this.button17.Text = "PEDIDOS";
             this.button17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button18
             // 
@@ -496,6 +499,7 @@ namespace CapaVistaERP
             this.button18.Text = "COTIZACIÓN DE VENTAS";
             this.button18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button15
             // 
@@ -686,6 +690,7 @@ namespace CapaVistaERP
             this.button12.Text = "TIPO DE CAMBIO";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button11
             // 
@@ -721,6 +726,7 @@ namespace CapaVistaERP
             this.button10.Text = "MANT. BANCOS";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 

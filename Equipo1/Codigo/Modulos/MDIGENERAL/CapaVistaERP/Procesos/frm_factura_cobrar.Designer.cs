@@ -1,5 +1,5 @@
 ﻿
-namespace CapaVistaERP
+namespace CapaVistaERP.Procesos
 {
     partial class frm_factura_cobrar
     {
