@@ -15,6 +15,8 @@ namespace CapaVistaERP.Mantenimientos
         public frm_mant_vendedores()
         {
             InitializeComponent();
+            this.navegador1.config("tbl_vendedor", this, "");
+            this.navegador1._initSeguridad();
         }
     }
 }
