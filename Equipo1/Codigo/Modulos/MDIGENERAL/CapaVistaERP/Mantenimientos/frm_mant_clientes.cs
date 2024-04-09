@@ -16,6 +16,7 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_clientes", this, "");
+            this.navegador1._initSeguridad();
         }
     }
 }
