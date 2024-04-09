@@ -62,7 +62,6 @@
             this.txt_estado.Size = new System.Drawing.Size(144, 22);
             this.txt_estado.TabIndex = 149;
             this.txt_estado.Tag = "moneda_destino";
-            this.txt_estado.Visible = false;
             this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
             // 
             // txt_fecha
@@ -122,7 +121,7 @@
             this.label4.Location = new System.Drawing.Point(469, 236);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 17);
+            this.label4.Size = new System.Drawing.Size(123, 16);
             this.label4.TabIndex = 141;
             this.label4.Text = "monega de destino";
             // 
@@ -135,7 +134,7 @@
             this.label9.Location = new System.Drawing.Point(54, 145);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 17);
+            this.label9.Size = new System.Drawing.Size(21, 16);
             this.label9.TabIndex = 144;
             this.label9.Text = "Id:";
             // 
@@ -172,7 +171,7 @@
             this.label1.Location = new System.Drawing.Point(53, 188);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(105, 16);
             this.label1.TabIndex = 139;
             this.label1.Text = "Tipo de cambio:";
             // 
@@ -185,7 +184,7 @@
             this.label2.Location = new System.Drawing.Point(48, 231);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
+            this.label2.Size = new System.Drawing.Size(117, 16);
             this.label2.TabIndex = 140;
             this.label2.Text = "moneda de origen";
             // 
