@@ -274,3 +274,7 @@ D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Cap
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
 >>>>>>> f43d00705ee35d4d010961de13697223c2674438
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.pdb
