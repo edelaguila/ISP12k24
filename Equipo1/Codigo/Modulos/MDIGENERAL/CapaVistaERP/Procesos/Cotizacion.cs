@@ -14,7 +14,7 @@ namespace CapaVistaERP.Procesos
     public partial class Cotizacion : Form
     {
         Controlador cn = new Controlador();
-       /* public Cotizacion()
+        public Cotizacion()
         {
             InitializeComponent();
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -27,8 +27,8 @@ namespace CapaVistaERP.Procesos
             dateTimePicker2.Value = nuevaFecha;
             CotiCombo();
 
-        }*/
-       /* public void CotiCombo()
+        }
+       public void CotiCombo()
         {
             try { 
             List<string> producto = cn.ComboFill("nombre_prod", "tbl_producto");
@@ -39,7 +39,7 @@ namespace CapaVistaERP.Procesos
                 MessageBox.Show("error" + e);
                     }
 
-        }*/
+        }
         private void label21_Click(object sender, EventArgs e)
         {
 
@@ -54,10 +54,10 @@ namespace CapaVistaERP.Procesos
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //CalcularTotal();
+            CalcularTotal();
         }
 
-        /*public void CalcularTotal()
+        public void CalcularTotal()
         {
             string nombreProducto = comboBox1.SelectedItem?.ToString();
             double precioUnitario = 0.0;
@@ -80,16 +80,16 @@ namespace CapaVistaERP.Procesos
             else
             {
             }
-        }*/
+        }
 
         private void txt_cant_TextChanged(object sender, EventArgs e)
         {
-            //CalcularTotal();
+            CalcularTotal();
         }
 
         //boton para guardar los datos del cliente
         private void button3_Click(object sender, EventArgs e)
-        {/*
+        {
             string nombre_cl = txt_nombre_cl.Text;
             string apellido_cl = txt_apellido_cl.Text;
             string direccion_cl = txt_direccion_cl.Text;
@@ -98,11 +98,11 @@ namespace CapaVistaERP.Procesos
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
             MessageBox.Show("Datos Guardados prosiga con su cotizacion");
-            */
+            
         }
 
        private void btn_agregar_Click(object sender, EventArgs e)
-        {/*
+        {
             string nombreProducto = comboBox1.SelectedItem?.ToString();
             double precioUnitario = 0.0;
             int cantidad = 0;
@@ -127,7 +127,7 @@ namespace CapaVistaERP.Procesos
             else
             {
                 MessageBox.Show("Por favor, seleccione un producto y especifique la cantidad.");
-            }*/
+            }
         }
 
         private void ActualizarSubtotal()
