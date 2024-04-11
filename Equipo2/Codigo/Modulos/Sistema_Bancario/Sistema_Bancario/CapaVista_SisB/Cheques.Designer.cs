@@ -159,9 +159,10 @@ namespace CapaVista_SisB
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(126, 293);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 13);
+            this.label8.Size = new System.Drawing.Size(46, 13);
             this.label8.TabIndex = 45;
-            this.label8.Text = "Nombre Completo:";
+            this.label8.Text = "Endoso:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox5
             // 
@@ -185,9 +186,9 @@ namespace CapaVista_SisB
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(126, 357);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 13);
+            this.label5.Size = new System.Drawing.Size(99, 13);
             this.label5.TabIndex = 49;
-            this.label5.Text = "Nombre:";
+            this.label5.Text = "Nombre de Cuenta:";
             // 
             // textBox4
             // 
