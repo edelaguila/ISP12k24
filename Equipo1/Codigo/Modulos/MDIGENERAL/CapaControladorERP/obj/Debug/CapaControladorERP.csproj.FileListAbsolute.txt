@@ -34,3 +34,12 @@ C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equip
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaCont.9041BD4A.Up2Date
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb

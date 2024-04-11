@@ -11,5 +11,14 @@ namespace CapaControladorERP
     public class Controlador
     {
         Sentencias sn = new Sentencias();
+
+        public DataTable llenarTablas(string tabla)
+        {
+            OdbcDataAdapter dt = sn.CargarDatos(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
     }
 }

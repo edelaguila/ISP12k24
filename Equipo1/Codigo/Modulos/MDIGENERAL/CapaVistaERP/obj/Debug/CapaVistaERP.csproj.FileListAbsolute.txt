@@ -88,9 +88,6 @@ C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MD
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.AssemblyReference.cache
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Compras.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.FacturaporPagar.resources
-C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.frm_cotizacion.resources
-C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.frm_mant_TransProveedores.resources
-C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.frm_mant_Proveedor.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoBanco.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoMovimientoBanco.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_clientes.resources
@@ -206,3 +203,14 @@ C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equip
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.dll
 C:\Users\DELL\Desktop\labo analisis\Nueva carpeta (2)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_Proveedor.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_tipo_de_cambio.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_TransProveedores.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarCompras.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarOrdenCompra.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarProveedor.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Dispo_Diaria.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Cotizacion.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frm_factura_cobrar.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frm_pedidos.resources
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Mov_bancario.resources
