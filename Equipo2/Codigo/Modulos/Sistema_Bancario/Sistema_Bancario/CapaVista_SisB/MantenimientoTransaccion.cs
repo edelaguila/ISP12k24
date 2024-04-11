@@ -43,5 +43,10 @@ namespace CapaVista_SisB
                 }
             }
         }
+
+        private void MantenimientoTransaccion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

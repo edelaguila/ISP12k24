@@ -18,11 +18,8 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.dll
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.AssemblyReference.cache
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CoreCompileInputs.cache
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
 C:\Users\PhoenixOsu\Desktop\Codigo Updated\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll
@@ -43,3 +40,6 @@ D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistem
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.dll
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
