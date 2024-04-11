@@ -157,10 +157,10 @@
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(33, 15);
+            this.navegador1.Location = new System.Drawing.Point(14, 13);
             this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1005, 105);
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
             this.navegador1.TabIndex = 54;
             // 
             // frm_Mant_TransProveedores

@@ -23,7 +23,7 @@ namespace MenuHCV
         {
             InitializeComponent();
 
-            Button[] apps = { btnseguridad, btncompras, btnVentas, btnInventario, btnBancos, btnNominas, btnHoteleria, btnPrototipo};
+            Button[] apps = { btnseguridad, btnPrototipo};
             cn.deshabilitarApps(apps);
 
             cn.getAccesoApp(1000, apps[0]);  //Modulo Seguridad
@@ -33,7 +33,7 @@ namespace MenuHCV
            // cn.getAccesoApp(5000, apps[4]);  //Modulo Bancos
            // cn.getAccesoApp(6000, apps[5]);  //Modulo Nominas
           //  cn.getAccesoApp(7000, apps[6]);  //Modulo Hoteleria
-            cn.getAccesoApp(1000, apps[7]);  //Modulo Prototipo
+            cn.getAccesoApp(8000, apps[1]);  //Modulo Prototipo
 
 
 
@@ -115,7 +115,7 @@ namespace MenuHCV
         {
             CapaVistaERP.MDIGeneral form = new CapaVistaERP.MDIGeneral();
             form.Show();
-            cn.setBtitacora("1000", "Ingreso Prototipo");
+            cn.setBtitacora("8000", "Ingreso Prototipo");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 

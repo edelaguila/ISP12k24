@@ -13,6 +13,11 @@ namespace CapaVistaERP
 {
     public partial class MDIGeneral : Form
     {
+        //VARIABLES ANDREA CORADO
+        private string idmovpro = "";
+        private string namemovpro = "";
+        private string nitmovpro = "";
+
         public MDIGeneral()
         {
             InitializeComponent();
@@ -220,7 +225,7 @@ namespace CapaVistaERP
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.MovimientoProveedores());
+            Abrir(new Procesos.MovimientoProveedores(idmovpro, namemovpro, nitmovpro));
             hideSubMenu();
         }
 
