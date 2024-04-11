@@ -40,6 +40,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.navegador1 = new CapaVista.Navegador();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,19 +60,19 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(619, 181);
+            this.textBox2.Location = new System.Drawing.Point(843, 185);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 22);
+            this.textBox2.Size = new System.Drawing.Size(172, 22);
             this.textBox2.TabIndex = 42;
             this.textBox2.Tag = "estado_transprov";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(619, 151);
+            this.textBox3.Location = new System.Drawing.Point(843, 149);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 22);
+            this.textBox3.Size = new System.Drawing.Size(172, 22);
             this.textBox3.TabIndex = 41;
             this.textBox3.Tag = "tipo_transprov";
             // 
@@ -86,10 +89,10 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(196, 213);
+            this.textBox4.Location = new System.Drawing.Point(414, 213);
             this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(211, 22);
+            this.textBox4.Size = new System.Drawing.Size(44, 22);
             this.textBox4.TabIndex = 39;
             this.textBox4.Tag = "tbl_proveedor_id_prov";
             // 
@@ -163,11 +166,38 @@
             this.navegador1.Size = new System.Drawing.Size(1001, 96);
             this.navegador1.TabIndex = 54;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(196, 213);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(211, 24);
+            this.comboBox1.TabIndex = 55;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(619, 149);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(211, 24);
+            this.comboBox2.TabIndex = 56;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(619, 183);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(211, 24);
+            this.comboBox3.TabIndex = 57;
+            // 
             // frm_Mant_TransProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1051, 570);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dataGridView1);
@@ -203,5 +233,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
         private CapaVista.Navegador navegador1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
