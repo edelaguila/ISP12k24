@@ -19,5 +19,10 @@ namespace CapaVista_SisB
             InitializeComponent();
             navegador1.config("usuarios", this);
         }
+
+        private void frmCuenta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
