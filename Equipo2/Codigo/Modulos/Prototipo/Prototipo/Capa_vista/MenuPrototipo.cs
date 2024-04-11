@@ -105,8 +105,10 @@ namespace Vista_PrototipoMenu
 
         private void button2_Click(object sender, EventArgs e)
         {
-             
-            
+            CapaVista_SisB.frmHistorial form = new CapaVista_SisB.frmHistorial();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -132,9 +134,10 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
-
-
+            CapaVista_SisB.frmEstado form = new CapaVista_SisB.frmEstado();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
 
         private void man_boleta_Click(object sender, EventArgs e)
