@@ -52,10 +52,10 @@ namespace CapaVista
                     Button mybutton = (Button)c;
                     if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
                     int index = Convert.ToInt32(mybutton.Tag) - 1;
-                    if (idApp.Equals("1000"))
-                    {
+                    //if (idApp.Equals("8000"))
+                    //{
                         mybutton.Enabled = true; continue;
-                    }
+                    //}
                     mybutton.Enabled = !Convert.ToBoolean(arr[index]);
                 }
             }
@@ -91,7 +91,7 @@ namespace CapaVista
             }
         }
 
-        public void config(string tabla, Form parent, string _id = "1000")
+        public void config(string tabla, Form parent, string _id)
         {
             this.idApp = _id;
             this.tabla = tabla;
