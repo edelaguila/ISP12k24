@@ -28,9 +28,18 @@ C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Men
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+<<<<<<< HEAD
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+=======
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+>>>>>>> f43d00705ee35d4d010961de13697223c2674438

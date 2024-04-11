@@ -7,7 +7,7 @@ using System.Data.Odbc;
 
 namespace CapaModelo_SisB
 {
-    class Conexion
+   public class Conexion
     {
 
         public OdbcConnection myconn;
