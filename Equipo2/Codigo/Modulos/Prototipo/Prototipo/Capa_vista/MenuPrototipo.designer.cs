@@ -56,11 +56,13 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.btn_tipo_cuenta = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
             this.PanelAuditoria.SuspendLayout();
             this.panelseguridad.SuspendLayout();
+            this.panelayuda.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,7 +172,7 @@ namespace Vista_PrototipoMenu
             this.button4.Location = new System.Drawing.Point(0, 165);
             this.button4.Name = "button4";
             this.button4.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(415, 57);
+            this.button4.Size = new System.Drawing.Size(415, 58);
             this.button4.TabIndex = 7;
             this.button4.Text = "TRANSACCIONES";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -414,7 +416,7 @@ namespace Vista_PrototipoMenu
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
             this.btnSeguridad.Size = new System.Drawing.Size(415, 49);
             this.btnSeguridad.TabIndex = 10;
-            this.btnSeguridad.Text = "SEGURIDAD";
+            this.btnSeguridad.Text = "Mantenimientos";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguridad.UseVisualStyleBackColor = false;
             this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
@@ -422,10 +424,11 @@ namespace Vista_PrototipoMenu
             // panelayuda
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelayuda.Controls.Add(this.btn_tipo_cuenta);
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelayuda.Location = new System.Drawing.Point(0, 1042);
             this.panelayuda.Name = "panelayuda";
-            this.panelayuda.Size = new System.Drawing.Size(415, 10);
+            this.panelayuda.Size = new System.Drawing.Size(415, 161);
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
             // 
@@ -438,7 +441,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.Black;
-            this.btnayuda.Location = new System.Drawing.Point(0, 1052);
+            this.btnayuda.Location = new System.Drawing.Point(0, 1203);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
             this.btnayuda.Size = new System.Drawing.Size(415, 47);
@@ -480,7 +483,7 @@ namespace Vista_PrototipoMenu
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.Black;
-            this.btnsalir.Location = new System.Drawing.Point(0, 1099);
+            this.btnsalir.Location = new System.Drawing.Point(0, 1250);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
             this.btnsalir.Size = new System.Drawing.Size(415, 52);
@@ -489,6 +492,22 @@ namespace Vista_PrototipoMenu
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
+            // 
+            // btn_tipo_cuenta
+            // 
+            this.btn_tipo_cuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_tipo_cuenta.FlatAppearance.BorderSize = 0;
+            this.btn_tipo_cuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_tipo_cuenta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_tipo_cuenta.Location = new System.Drawing.Point(0, 0);
+            this.btn_tipo_cuenta.Name = "btn_tipo_cuenta";
+            this.btn_tipo_cuenta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_tipo_cuenta.Size = new System.Drawing.Size(415, 51);
+            this.btn_tipo_cuenta.TabIndex = 8;
+            this.btn_tipo_cuenta.Text = "Tipo de Cuenta";
+            this.btn_tipo_cuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_tipo_cuenta.UseVisualStyleBackColor = true;
+            this.btn_tipo_cuenta.Click += new System.EventHandler(this.btn_tipo_cuenta_Click);
             // 
             // MenuPrototipo
             // 
@@ -507,6 +526,7 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.ResumeLayout(false);
             this.PanelAuditoria.ResumeLayout(false);
             this.panelseguridad.ResumeLayout(false);
+            this.panelayuda.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -541,5 +561,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_tipo_cuenta;
     }
 }

@@ -100,7 +100,7 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -121,7 +121,7 @@ namespace Vista_PrototipoMenu
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -150,7 +150,7 @@ namespace Vista_PrototipoMenu
 
         private void button6_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -177,6 +177,14 @@ namespace Vista_PrototipoMenu
         private void button9_Click(object sender, EventArgs e)
         {
             CapaVista_SisB.frmRetiro form = new CapaVista_SisB.frmRetiro();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_tipo_cuenta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmTipoCuenta form = new CapaVista_SisB.frmTipoCuenta();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
