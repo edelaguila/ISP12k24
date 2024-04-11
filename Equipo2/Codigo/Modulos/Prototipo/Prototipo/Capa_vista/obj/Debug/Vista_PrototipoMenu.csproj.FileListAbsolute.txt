@@ -225,3 +225,7 @@ D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Cap
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.pdb

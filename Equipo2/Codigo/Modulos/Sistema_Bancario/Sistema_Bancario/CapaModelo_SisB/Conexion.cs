@@ -19,16 +19,16 @@ namespace CapaModelo_SisB
 
         public OdbcConnection connection()
         {
-            OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
             try
             {
-                conn.Open();
+                this.myconn = new OdbcConnection("Dsn=HotelSConexion");
+                myconn.Open();
             }
             catch (OdbcException)
             {
                 Console.WriteLine("No Conectó");
             }
-            return conn;
+            return myconn;
         }
 
 
