@@ -16,7 +16,6 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_tipocambio", this, "");
-            this.navegador1._initSeguridad();
         }
 
         private void txt_estado_TextChanged(object sender, EventArgs e)

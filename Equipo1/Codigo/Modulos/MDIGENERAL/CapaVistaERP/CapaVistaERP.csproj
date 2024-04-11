@@ -34,7 +34,8 @@
     <Reference Include="CapaControladorERP">
       <HintPath>..\CapaControladorERP\bin\Debug\CapaControladorERP.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaNav">
+    <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
     </Reference>
     <Reference Include="System" />

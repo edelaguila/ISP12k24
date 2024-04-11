@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dg_prov = new System.Windows.Forms.DataGridView();
-            this.navegador1 = new CapaVista.Navegador();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.id_prov = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -42,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nombre_prov = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dg_prov)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,14 +56,6 @@
             this.dg_prov.Size = new System.Drawing.Size(1016, 257);
             this.dg_prov.TabIndex = 50;
             this.dg_prov.Tag = "tbl_proveedor";
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(10, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1017, 105);
-            this.navegador1.TabIndex = 55;
             // 
             // textBox1
             // 
@@ -185,11 +177,20 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Domicilio";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(26, 41);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 68;
+            // 
             // frm_Mant_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 615);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.id_prov);
             this.Controls.Add(this.label5);
@@ -202,7 +203,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.nombre_prov);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dg_prov);
             this.Name = "frm_Mant_Proveedor";
             this.Text = "frm_Mant_Proveedor";
@@ -214,7 +214,6 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dg_prov;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox id_prov;
         private System.Windows.Forms.Label label5;
@@ -227,5 +226,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox nombre_prov;
         private System.Windows.Forms.Label label4;
+        private CapaVista.Navegador navegador1;
     }
 }
