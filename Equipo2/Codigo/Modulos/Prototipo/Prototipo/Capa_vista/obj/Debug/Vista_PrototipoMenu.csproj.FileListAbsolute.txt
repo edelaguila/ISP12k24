@@ -225,3 +225,26 @@ C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Pro
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
 C:\Users\PhoenixOsu\Desktop\Codigo Ingeneria\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\eCryptography.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVistaNav.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControladorNav.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModeloNav.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVistaNav.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControladorNav.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModeloNav.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmAplicaciones.resources
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.MenuPrototipo.resources
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.Properties.Resources.resources
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.GenerateResource.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
