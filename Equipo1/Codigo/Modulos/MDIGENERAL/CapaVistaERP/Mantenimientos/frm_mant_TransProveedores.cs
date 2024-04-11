@@ -17,7 +17,6 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_transprov", this, "");
-         
         }
        
         private void frm_Mant_TransProveedores_Load(object sender, EventArgs e)
