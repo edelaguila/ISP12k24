@@ -32,10 +32,7 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proye
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.pdb
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorERP.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaNav.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloERP.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Seguridad_Controlador.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorNav.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Modelo_Seguridad.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.dll
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorERP.pdb
@@ -214,3 +211,6 @@ C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MD
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMovimientoInventario.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmProductos.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.TrasladoDeProducto.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMovimientoInventario.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmProductos.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.TrasladoDeProducto.resources

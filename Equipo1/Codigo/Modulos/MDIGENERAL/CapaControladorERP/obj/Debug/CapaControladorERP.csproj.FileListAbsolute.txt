@@ -43,3 +43,12 @@ C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MD
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaCont.9041BD4A.Up2Date
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.dll
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CopyComplete
