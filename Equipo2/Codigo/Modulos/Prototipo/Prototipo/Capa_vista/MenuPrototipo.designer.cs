@@ -36,15 +36,17 @@ namespace Vista_PrototipoMenu
             this.btninicio = new System.Windows.Forms.Button();
             this.btnmanteniminetos = new System.Windows.Forms.Button();
             this.panelTranportes = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnaplicaciones = new System.Windows.Forms.Button();
             this.btnProcesos = new System.Windows.Forms.Button();
             this.PanelAuditoria = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.man_boleta = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEC = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
             this.panelseguridad = new System.Windows.Forms.Panel();
@@ -54,8 +56,6 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -161,6 +161,22 @@ namespace Vista_PrototipoMenu
             this.panelTranportes.TabIndex = 3;
             this.panelTranportes.Visible = false;
             // 
+            // button4
+            // 
+            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button4.Location = new System.Drawing.Point(0, 165);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.button4.Size = new System.Drawing.Size(415, 57);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "TRANSACCIONES";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            // 
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -235,7 +251,7 @@ namespace Vista_PrototipoMenu
             this.PanelAuditoria.Controls.Add(this.button7);
             this.PanelAuditoria.Controls.Add(this.button6);
             this.PanelAuditoria.Controls.Add(this.man_boleta);
-            this.PanelAuditoria.Controls.Add(this.button1);
+            this.PanelAuditoria.Controls.Add(this.btnEC);
             this.PanelAuditoria.Controls.Add(this.button5);
             this.PanelAuditoria.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelAuditoria.Location = new System.Drawing.Point(0, 554);
@@ -243,6 +259,22 @@ namespace Vista_PrototipoMenu
             this.PanelAuditoria.Size = new System.Drawing.Size(415, 326);
             this.PanelAuditoria.TabIndex = 5;
             this.PanelAuditoria.Visible = false;
+            // 
+            // button9
+            // 
+            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button9.Location = new System.Drawing.Point(0, 272);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.button9.Size = new System.Drawing.Size(415, 51);
+            this.button9.TabIndex = 12;
+            this.button9.Text = "RETIRO";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button7
             // 
@@ -290,21 +322,21 @@ namespace Vista_PrototipoMenu
             this.man_boleta.UseVisualStyleBackColor = true;
             this.man_boleta.Click += new System.EventHandler(this.man_boleta_Click);
             // 
-            // button1
+            // btnEC
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button1.Location = new System.Drawing.Point(0, 51);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.button1.Size = new System.Drawing.Size(415, 56);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "INFORME DE ESTADO DE CUENTA";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnEC.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEC.FlatAppearance.BorderSize = 0;
+            this.btnEC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEC.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btnEC.Location = new System.Drawing.Point(0, 51);
+            this.btnEC.Name = "btnEC";
+            this.btnEC.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btnEC.Size = new System.Drawing.Size(415, 56);
+            this.btnEC.TabIndex = 8;
+            this.btnEC.Text = "INFORME DE ESTADO DE CUENTA";
+            this.btnEC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEC.UseVisualStyleBackColor = true;
+            this.btnEC.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button5
             // 
@@ -458,38 +490,6 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button4.Location = new System.Drawing.Point(0, 165);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.button4.Size = new System.Drawing.Size(415, 57);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "TRANSACCIONES";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
-            // 
-            // button9
-            // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.button9.Location = new System.Drawing.Point(0, 272);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(415, 51);
-            this.button9.TabIndex = 12;
-            this.button9.Text = "RETIRO";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -532,7 +532,7 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEC;
         private System.Windows.Forms.Button man_boleta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
