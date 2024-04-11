@@ -276,5 +276,23 @@ namespace CapaVistaERP
             Abrir(new Procesos.frm_factura_cobrar());
             hideSubMenu();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMovimientoInventario());
+            hideSubMenu();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmProductos());
+            hideSubMenu();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.TrasladoDeProducto());
+            hideSubMenu();
+        }
     }
 }

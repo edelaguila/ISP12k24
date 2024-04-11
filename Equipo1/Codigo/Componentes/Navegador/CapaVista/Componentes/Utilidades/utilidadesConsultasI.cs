@@ -78,7 +78,7 @@ namespace CapaVista.Componentes.Utilidades
                 return;
             }*/
             ctriv.guardar(dictionary);
-            MessageBox.Show("REGISTRO GUARDADO");
+            MessageBox.Show("INVENTARIO GUARDADO");
         }
 
 
@@ -111,7 +111,6 @@ namespace CapaVista.Componentes.Utilidades
                     {
                         ((DataGridView)c).DataSource = ctriv.refrescar();
                         refrescadoExitosamente = true; // Si no hubo excepción, se refrescó con éxito
-                       
                     }
                     catch (Exception ex) // Captura el error
                     {
@@ -155,7 +154,6 @@ namespace CapaVista.Componentes.Utilidades
                             dateTimePicker.Value = cellValue;
                         }
                     }
-                   
                 }
             }
             catch (Exception ex)
