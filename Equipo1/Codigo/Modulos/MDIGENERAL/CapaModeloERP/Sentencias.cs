@@ -14,9 +14,9 @@ namespace CapaModeloERP
 
         public OdbcDataAdapter CargarDatos(string tabla)
         {
-            string query = "SELECT * FROM " + tabla + ";";
-            OdbcDataAdapter data = new OdbcDataAdapter(query, con.conexion());
-            return data;
+           string query = "SELECT * FROM " + tabla + ";";
+           OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
+           return data;
         }
 
     }

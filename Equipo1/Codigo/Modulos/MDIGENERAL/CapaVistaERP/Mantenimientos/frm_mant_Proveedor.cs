@@ -16,7 +16,7 @@ namespace CapaVistaERP.Mantenimientos
         public frm_Mant_Proveedor()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_proveedor", this, "1000");
+            this.navegador1.config("tbl_proveedor", this, "8001");
         }
    
     }
