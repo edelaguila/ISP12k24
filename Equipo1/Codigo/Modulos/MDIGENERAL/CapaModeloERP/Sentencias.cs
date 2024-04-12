@@ -9,6 +9,7 @@ using System.Security.Policy;
 
 namespace CapaModeloERP
 {
+
     public class Producto
     {
         public int CodProducto { get; set; }
@@ -17,18 +18,21 @@ namespace CapaModeloERP
         public double PrecioUnitario { get; set; }
 
     }
+
+
     public class Sentencias
     {
         Conexion con = new Conexion();
-
+        private OdbcDataAdapter adaptador;
+        private DataTable tabla;
         public OdbcDataAdapter CargarDatos(string tabla)
         {
-           string query = "SELECT * FROM " + tabla + ";";
-           OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
-           return data;
+            string query = "SELECT * FROM " + tabla + ";";
+            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
+            return data;
         }
 
-
+        
 
 
 
