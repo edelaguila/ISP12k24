@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frm_mant_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frm_mant_proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\procesos\\movimientoproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\procesos\\movimientoproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF59815-3027-4A19-A879-124E43022DF6}|CapaModeloERP\\CapaModeloERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capamodeloerp\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF59815-3027-4A19-A879-124E43022DF6}|CapaModeloERP\\CapaModeloERP.csproj|solutionrelative:capamodeloerp\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capavistaerp\\mdigeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mdigeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +30,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frm_Mant_Proveedor.cs",
-              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_Proveedor.cs",
-              "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frm_mant_Proveedor.cs",
-              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_Proveedor.cs",
-              "RelativeToolTip": "CapaVistaERP\\Mantenimientos\\frm_mant_Proveedor.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAA/AAAA",
+              "DocumentIndex": 2,
+              "Title": "MovimientoProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\MovimientoProveedores.cs",
+              "RelativeDocumentMoniker": "CapaVistaERP\\Procesos\\MovimientoProveedores.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\MovimientoProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVistaERP\\Procesos\\MovimientoProveedores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T21:39:08.533Z",
+              "WhenOpened": "2024-04-12T00:16:11.317Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sentencias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaModeloERP\\Sentencias.cs",
+              "RelativeDocumentMoniker": "CapaModeloERP\\Sentencias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaModeloERP\\Sentencias.cs",
+              "RelativeToolTip": "CapaModeloERP\\Sentencias.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAwwEMAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-11T23:08:11.533Z",
               "EditorCaption": ""
             },
             {
@@ -49,14 +65,14 @@
               "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "RelativeToolTip": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAA/AAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAQwD4AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T21:39:01.34Z",
+              "WhenOpened": "2024-04-11T23:50:41.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "frm_Mant_TransProveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
@@ -68,15 +84,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MDIGeneral.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\MDIGeneral.cs",
               "RelativeDocumentMoniker": "CapaVistaERP\\MDIGeneral.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\MDIGeneral.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaVistaERP\\MDIGeneral.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T00:49:21.57Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-06T00:49:21.57Z"
             }
           ]
         }
