@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using CapaModeloERP;
+using System.Windows.Forms;
+
 namespace CapaControladorERP
 {
     public class Controlador
     {
         Sentencias sn = new Sentencias();
-
+        //Andrea Corado 0901-20-2841
         public DataTable llenarTablas(string tabla)
         {
             OdbcDataAdapter dt = sn.CargarDatos(tabla);
@@ -19,6 +21,15 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+        //Andrea Corado 0901-20-2841
+        public DataTable BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
+        {
+            OdbcDataAdapter dt = sn.BuscarProv(tabla, columna, dato, columna2, dato2, columna3, dato3);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {
@@ -90,5 +101,81 @@ namespace CapaControladorERP
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
+
+        //Carol Chuy Modulo Compras
+        public string[] itemsprod()
+        {
+            string[] Items = sn.llenarCmbprod();
+            return Items;
+        }
+
+        //Carol Chuy Modulo Compras
+        public DataTable enviarprod()
+        {
+
+            var dt1 = sn.obtenerprod();
+            return dt1;
+        }
+
+        //Carol Chuy Modulo Compras
+        public void CargarOpcionesOrden(ComboBox combo)
+        {
+            // Aquí proporciona las opciones al ComboBox
+            combo.Items.Add("Directa");
+            combo.Items.Add("Relacionada");
+        }
+
+        //Carol Chuy Modulo Compras
+        public int ObtenerUltimoNumeroOrden(String campoid, String tabla)
+        {
+            return sn.ObtenerUltimoNumeroOrden(campoid, tabla);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerDescripcion(string productId)
+        {
+            return sn.ObtenerDescripcion(productId);
+        }
+
+        //Carol Chuy Modulo Compras
+        public decimal ObtenerPrecioUnitario(string productId)
+        {
+            return sn.ObtenerPrecioUnitario(productId);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerNombreProveedor(string proveedorID)
+        {
+            return sn.ObtenerNombreProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerDomicilioProveedor(string proveedorID)
+        {
+            return sn.ObtenerDomicilioProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerTelefonoProveedor(string proveedorID)
+        {
+            return sn.ObtenerTelefonoProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerNitProveedor(string proveedorID)
+        {
+            return sn.ObtenerNitProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public DataTable llenarTablasCondicion(String tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTablasCondicion(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
     }
 }

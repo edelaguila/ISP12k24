@@ -109,7 +109,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(26, 807);
+            this.groupBox3.Location = new System.Drawing.Point(13, 768);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -134,9 +134,9 @@ namespace CapaVistaERP.Procesos
             this.label21.Location = new System.Drawing.Point(69, 95);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(219, 20);
+            this.label21.Size = new System.Drawing.Size(144, 20);
             this.label21.TabIndex = 30;
-            this.label21.Text = "Estatus de compra completa";
+            this.label21.Text = "Estatus de compra";
             // 
             // button4
             // 
@@ -244,7 +244,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(26, 464);
+            this.groupBox2.Location = new System.Drawing.Point(13, 424);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -262,6 +262,7 @@ namespace CapaVistaERP.Procesos
             this.btn_confirmar.TabIndex = 13;
             this.btn_confirmar.Text = "Confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // cmb_productos
             // 
@@ -271,6 +272,7 @@ namespace CapaVistaERP.Procesos
             this.cmb_productos.Name = "cmb_productos";
             this.cmb_productos.Size = new System.Drawing.Size(160, 27);
             this.cmb_productos.TabIndex = 12;
+            this.cmb_productos.SelectedIndexChanged += new System.EventHandler(this.cmb_productos_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -292,6 +294,7 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar.TabIndex = 10;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_agregar
             // 
@@ -302,6 +305,7 @@ namespace CapaVistaERP.Procesos
             this.btn_agregar.TabIndex = 9;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // dgv_detalle
             // 
@@ -466,11 +470,11 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.txt_departamentos);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(26, 25);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1071, 431);
+            this.groupBox1.Size = new System.Drawing.Size(1071, 403);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la compra";
@@ -537,6 +541,7 @@ namespace CapaVistaERP.Procesos
             this.btn_numorden.Size = new System.Drawing.Size(33, 25);
             this.btn_numorden.TabIndex = 21;
             this.btn_numorden.UseVisualStyleBackColor = false;
+            this.btn_numorden.Click += new System.EventHandler(this.btn_numorden_Click);
             // 
             // cmb_orden
             // 
@@ -546,6 +551,7 @@ namespace CapaVistaERP.Procesos
             this.cmb_orden.Name = "cmb_orden";
             this.cmb_orden.Size = new System.Drawing.Size(239, 27);
             this.cmb_orden.TabIndex = 28;
+            this.cmb_orden.SelectedIndexChanged += new System.EventHandler(this.cmb_orden_SelectedIndexChanged);
             // 
             // txt_numorden
             // 
@@ -724,12 +730,13 @@ namespace CapaVistaERP.Procesos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1126, 1001);
+            this.ClientSize = new System.Drawing.Size(1126, 971);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Compras";
             this.Text = "Compras";
+            this.Load += new System.EventHandler(this.Compras_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

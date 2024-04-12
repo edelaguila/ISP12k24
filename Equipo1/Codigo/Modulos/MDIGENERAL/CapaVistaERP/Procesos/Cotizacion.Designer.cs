@@ -73,6 +73,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -148,7 +149,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Location = new System.Drawing.Point(12, 362);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(721, 47);
+            this.panel1.Size = new System.Drawing.Size(768, 47);
             this.panel1.TabIndex = 8;
             // 
             // label10
@@ -216,7 +217,7 @@
             this.panel2.Controls.Add(this.label11);
             this.panel2.Location = new System.Drawing.Point(12, 124);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(734, 40);
+            this.panel2.Size = new System.Drawing.Size(768, 40);
             this.panel2.TabIndex = 11;
             // 
             // label11
@@ -411,7 +412,7 @@
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(91, 45);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(143, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(174, 30);
             this.dateTimePicker1.TabIndex = 67;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
@@ -456,7 +457,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 293);
+            this.dataGridView1.Size = new System.Drawing.Size(697, 293);
             this.dataGridView1.TabIndex = 71;
             // 
             // Descripcion
@@ -489,7 +490,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(563, 223);
+            this.button3.Location = new System.Drawing.Point(588, 225);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(145, 109);
             this.button3.TabIndex = 28;
@@ -511,17 +512,29 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(609, 181);
+            this.label16.Location = new System.Drawing.Point(623, 181);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(56, 25);
             this.label16.TabIndex = 73;
             this.label16.Text = "????";
+            this.label16.Visible = false;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Location = new System.Drawing.Point(723, 508);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(69, 60);
+            this.btn_eliminar.TabIndex = 74;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // Cotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(768, 944);
+            this.ClientSize = new System.Drawing.Size(792, 944);
+            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btn_agregar);
             this.Controls.Add(this.button3);
@@ -614,5 +627,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio_Unitario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btn_eliminar;
     }
 }
