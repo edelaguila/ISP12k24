@@ -26,7 +26,6 @@ namespace CapaVistaERP.Procesos
             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
             dateTimePicker2.Value = nuevaFecha;
             CotiCombo();
-
         }
        public void CotiCombo()
         {
@@ -98,7 +97,9 @@ namespace CapaVistaERP.Procesos
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
             MessageBox.Show("Datos Guardados prosiga con su cotizacion");
-            
+
+            cliente();
+
         }
 
        private void btn_agregar_Click(object sender, EventArgs e)
@@ -130,6 +131,24 @@ namespace CapaVistaERP.Procesos
             }
         }
 
+        private void cliente()
+        {
+            string cliente = txt_nombre_cl.Text;
+            string idClienteString = cn.obtenerCliente(cliente);
+
+            if (!string.IsNullOrEmpty(idClienteString))
+            {
+                int idCliente = Convert.ToInt32(idClienteString);
+                label16.Text = idCliente.ToString();
+                Console.WriteLine("Nombre del cliente: " + cliente);
+                Console.WriteLine("ID del cliente: " + idCliente);
+            }
+            else
+            {
+                label16.Text = "Cliente no encontrado";
+                Console.WriteLine("Cliente no encontrado");
+            }
+        }
         private void ActualizarSubtotal()
         {
             double subtotal = 0.0;
@@ -140,5 +159,18 @@ namespace CapaVistaERP.Procesos
             lbl_subTotal.Text = subtotal.ToString();
         }
 
+        private void txt_nombre_cl_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int no_coti = Convert.ToInt32(lblNoCoti.Text);
+            string fechaini = dateTimePicker1.Text;
+            string fechafin=dateTimePicker2.Text;
+
+            cn.InsertarCoti(no_coti, fechaini, fechafin);
+        }
     }
 }
