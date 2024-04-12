@@ -34,11 +34,6 @@
     <Reference Include="CapaControladorERP">
       <HintPath>..\CapaControladorERP\bin\Debug\CapaControladorERP.dll</HintPath>
     </Reference>
-    <Reference Include="CapaControladorNav, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
-    <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\CapaVistaNav.dll</HintPath>
-    </Reference>
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
