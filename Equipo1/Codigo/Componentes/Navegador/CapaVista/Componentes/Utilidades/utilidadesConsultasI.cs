@@ -78,7 +78,7 @@ namespace CapaVista.Componentes.Utilidades
                 return;
             }*/
             ctriv.guardar(dictionary);
-            MessageBox.Show("INVENTARIO GUARDADO");
+            MessageBox.Show("REGISTRO GUARDADO");
         }
 
 

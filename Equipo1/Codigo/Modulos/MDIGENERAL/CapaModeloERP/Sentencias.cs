@@ -9,6 +9,7 @@ using System.Security.Policy;
 
 namespace CapaModeloERP
 {
+    //David Carrillo 0901-20-3201 
     public class Producto
     {
         public int CodProducto { get; set; }
@@ -31,7 +32,7 @@ namespace CapaModeloERP
 
 
 
-
+        //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
         {
             using (OdbcConnection connection = con.connection())
@@ -65,7 +66,7 @@ namespace CapaModeloERP
                 }
             }
         }
-
+        //David Carrillo 0901-20-3201 
         public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
         {
             using (OdbcConnection connection = con.connection())
@@ -98,7 +99,7 @@ namespace CapaModeloERP
             }
         }
 
-
+        //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {
             List<string> datos = new List<string>();
@@ -121,7 +122,7 @@ namespace CapaModeloERP
             }
             return datos;
         }
-
+        //David Carrillo 0901-20-3201 
         public double GetPrecio(string nombreProducto)
         {
             double precioUnitario = 0.0;
@@ -165,7 +166,7 @@ namespace CapaModeloERP
 
             return precioUnitario;
         }
-
+        //David Carrillo 0901-20-3201 
         public string ObtenerCliente(string nombrecliente)
         {
             try
@@ -186,6 +187,7 @@ namespace CapaModeloERP
                 return null; 
             }
         }
+        //David Carrillo 0901-20-3201 
         public string ObtenerUltimoIdCoti()
         {
             try
@@ -219,7 +221,7 @@ namespace CapaModeloERP
             }
         }
 
-
+        //David Carrillo 0901-20-3201 
         public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
             using (OdbcConnection connection = con.connection())
@@ -253,7 +255,7 @@ namespace CapaModeloERP
                 }
             }
         }
-
+        //David Carrillo 0901-20-3201 
         public int ObtenerCodigoProducto(string nombreProducto)
         {
             int codigoProducto = 0;
