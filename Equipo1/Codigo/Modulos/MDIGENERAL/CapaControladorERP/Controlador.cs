@@ -175,7 +175,71 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+        // Diego Antonio modulo de banco 
+
+        public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)
+        {
+            sn.InsertarTipoMoneda(TipoMoneda, ValorMoneda, estado);
+        }
+
+        public DataTable LlenarTablaMoneda(string tabla)
+        {
+            return sn.LlenarTablaMoneda(tabla);
+        }
+
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuenta, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
+        {
+            sn.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuenta, tipoTransaccion, estado, valorTrans, estadoConciliacion);
+        }
 
 
+
+        public DataTable ObtenerCuentas()
+        {
+            return sn.ObtenerCuentas();
+        }
+
+        public decimal ObtenerSaldoTotal()
+        {
+            return sn.CalcularSaldoTotal();
+        }
+
+        public DataTable ObtenerTipoDeTransacciones()
+        {
+            return sn.TipoTransaccionBancaria();
+        }
+
+        public DataTable ObtenerTiposMoneda()
+        {
+            return sn.ObtenerTiposMoneda();
+        }
+
+        public DataTable ObtenerBancos()
+        {
+            return sn.ObtenerBancos();
+        }
+
+        public DataTable ObtenerTipoCuenta()
+        {
+            return sn.ObtenerTipoCuenta();
+        }
+
+        public DataTable valorTrans()
+        {
+            return sn.valorTransaccion();
+        }
+        public DataTable llenarTbl(string tabla)
+        {
+            return sn.LlenarTabla(tabla);
+        }
+        public int ObtenerValorTransaccion(string tipoTransaccion)
+        {
+            return sn.ObtenerValorTransaccion(tipoTransaccion);
+        }
     }
+
+
+
+
 }
+

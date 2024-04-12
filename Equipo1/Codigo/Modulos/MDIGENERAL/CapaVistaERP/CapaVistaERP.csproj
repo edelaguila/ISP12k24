@@ -69,6 +69,12 @@
     <Compile Include="Mantenimientos\frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.Designer.cs">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frm_Mant_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_agregar_cuenta.resx">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
