@@ -128,10 +128,8 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\M
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorVista.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Controlador_PrototipoMenu.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaNav.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorControlador.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Modelo_PrototipoMenu.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorNav.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.dll.config
