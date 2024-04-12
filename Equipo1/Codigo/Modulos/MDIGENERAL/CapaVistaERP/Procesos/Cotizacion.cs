@@ -14,6 +14,7 @@ namespace CapaVistaERP.Procesos
     public partial class Cotizacion : Form
     {
         Controlador cn = new Controlador();
+        //David Carrillo 0901-20-3201
         public Cotizacion()
         {
             InitializeComponent();
@@ -31,15 +32,23 @@ namespace CapaVistaERP.Procesos
 
         private void obtIDCoti()
         {
-            cn.ObtenerUltimoIdCoti();
-            string idcoti= cn.ObtenerUltimoIdCoti();
-            lblNoCoti.Text = idcoti;
-            int Ncoti=Convert.ToInt32(idcoti.ToString());
-            int Ncoti2 = Ncoti + 1;
-            lblNoCoti.Text=Ncoti2.ToString();
-            Console.WriteLine("id ultima cotizacion "+idcoti);
+            string idcoti = cn.ObtenerUltimoIdCoti();
+            if (idcoti == "No hay cotizaciones registradas.")
+            {
+                idcoti = "0";
+                lblNoCoti.Text = idcoti;
+            }
+            else
+            {
+                int Ncoti = Convert.ToInt32(idcoti) + 1;
+                Console.WriteLine("Ncoti1 " + Ncoti);
+                lblNoCoti.Text = Ncoti.ToString();
+                Console.WriteLine("id ultima cotizacion " + idcoti);
+            }
+
+         
         }
-       public void CotiCombo()
+        public void CotiCombo()
         {
             try { 
             List<string> producto = cn.ComboFill("nombre_prod", "tbl_producto");
