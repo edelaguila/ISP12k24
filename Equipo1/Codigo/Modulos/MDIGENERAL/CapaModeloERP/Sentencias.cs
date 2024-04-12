@@ -27,6 +27,11 @@ namespace CapaModeloERP
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
+
+
+
+
+
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
         {
             using (OdbcConnection connection = con.connection())
