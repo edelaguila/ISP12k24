@@ -33,6 +33,21 @@ namespace CapaVistaERP.Procesos
             dgv_proveedores.DataSource = dt;
         }
 
+        public void BuscarProv()
+        {
+            string idprove = txt_Idprov.Text;
+            string nombreprov = txt_nombreprov.Text;
+            string nitprove = txt_nitprov.Text;
+
+
+            DataTable dt = cn.BuscarProv(tabla1, "id_prov", idprove, "nombre_prov", nombreprov, "nit_prov", nitprove);
+            dgv_proveedores.DataSource = dt;
+
+            txt_Idprov.Text = " ";
+            txt_nombreprov.Text = " ";
+            txt_nitprov.Text = " ";
+        }
+
         private void btn_pagoproveedor_Click(object sender, EventArgs e)
         {
             CajaProveedor CajaProveedor = new CajaProveedor(this);
@@ -43,6 +58,11 @@ namespace CapaVistaERP.Procesos
         private void dgv_proveedores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            BuscarProv();
         }
     }
 }
