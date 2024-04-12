@@ -31,8 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CapaVista_MG2">
-      <HintPath>..\..\..\Migracion_G2\CapaVista_MG2\bin\Debug\CapaVista_MG2.dll</HintPath>
+    <Reference Include="CapaVista_SisB">
+      <HintPath>..\..\..\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll</HintPath>
     </Reference>
     <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
