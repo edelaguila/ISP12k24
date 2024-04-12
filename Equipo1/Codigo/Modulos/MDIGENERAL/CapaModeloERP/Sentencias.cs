@@ -186,6 +186,39 @@ namespace CapaModeloERP
                 return null; 
             }
         }
+        public string ObtenerUltimoIdCoti()
+        {
+            try
+            {
+                using (OdbcConnection connection = con.connection())
+                {
+                    if (connection.State != ConnectionState.Open)
+                    {
+                        connection.Open();
+                    }
+
+                    using (OdbcCommand cmd = new OdbcCommand("SELECT No_Cotizacion FROM tbl_cotizaciones ORDER BY No_Cotizacion DESC LIMIT 1", connection))
+                    {
+                        object result = cmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            string ultimoIdCoti = result.ToString();
+                            return ultimoIdCoti;
+                        }
+                        else
+                        {
+                            return "No hay cotizaciones registradas.";
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return null;
+            }
+        }
+
 
         public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
@@ -197,7 +230,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No.Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
@@ -220,6 +253,41 @@ namespace CapaModeloERP
                 }
             }
         }
+
+        public int ObtenerCodigoProducto(string nombreProducto)
+        {
+            int codigoProducto = 0;
+
+            try
+            {
+                using (OdbcConnection connection = con.connection())
+                {
+                    if (connection.State != ConnectionState.Open)
+                    {
+                        connection.Open();
+                    }
+
+                    string query = "SELECT cod_producto FROM tbl_producto WHERE nombre_prod = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.Add(new OdbcParameter("nombre_producto", nombreProducto));
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            codigoProducto = Convert.ToInt32(result);
+                        }
+                    } 
+                } 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener el código del producto: " + ex.Message);
+            }
+
+            return codigoProducto;
+        }
+
 
 
     }
