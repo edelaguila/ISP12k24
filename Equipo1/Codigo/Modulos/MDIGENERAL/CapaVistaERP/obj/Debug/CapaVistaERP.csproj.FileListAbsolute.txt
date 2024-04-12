@@ -257,3 +257,34 @@ C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloERP.pdb
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.pdb
 C:\Users\oteke\OneDrive\Escritorio\PROYECTO1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.CopyComplete
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoCuentaBancaria.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMovimientoInventario.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmProductos.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_Proveedor.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_tipo_de_cambio.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_Mant_TransProveedores.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarCompras.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarOrdenCompra.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.BuscarProveedor.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Compras.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Dispo_Diaria.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.FacturaporPagar.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Cotizacion.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoBanco.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMantenimientoMovimientoConcepto.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_clientes.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_vendedores.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.AutorizacionOrdenDeCompra.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.CajaProveedor.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frmMovimientoDeBancos.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frm_factura_cobrar.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frm_pedidos.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.MovimientoProveedores.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Mov_bancario.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdenesdeCompra.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.TrasladoDeProducto.resources
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Modelo_Seguridad.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.pdb
