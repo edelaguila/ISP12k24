@@ -360,7 +360,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(230, 26);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 59);
+            this.button2.Size = new System.Drawing.Size(176, 59);
             this.button2.TabIndex = 27;
             this.button2.Text = "Solicitar Pedido";
             this.button2.UseVisualStyleBackColor = true;
@@ -498,7 +498,7 @@
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(657, 415);
+            this.btn_agregar.Location = new System.Drawing.Point(649, 414);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(107, 42);
             this.btn_agregar.TabIndex = 72;
