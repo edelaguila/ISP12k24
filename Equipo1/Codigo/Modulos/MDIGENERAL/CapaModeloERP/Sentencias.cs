@@ -288,6 +288,86 @@ namespace CapaModeloERP
             return codigoProducto;
         }
 
+        // carlos enrique modulo bancos
+        public List<string> llenarCombo(string columna1, string tabla)
+        {
+            List<string> datos = new List<string>();
+            try
+            {
+
+                string consulta = $"SELECT {columna1} FROM {tabla}";
+
+                OdbcCommand command = new OdbcCommand(consulta, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    string ID = reader[columna1].ToString();
+                    datos.Add(ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            return datos;
+
+        }
+
+        // carlos enrique modulo bancos
+        public DataTable Buscar(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}'";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt;
+        }
+
+        // carlos enrique modulo bancos
+        public bool Guardar(string tabla, Dictionary<string, object> valores)
+        {
+
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string columnas = string.Join(", ", valores.Keys);
+                string parametros = string.Join(", ", valores.Keys.Select(key => "?"));
+                string consulta = $"INSERT INTO {tabla} ({columnas}) VALUES ({parametros})";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    foreach (var kvp in valores)
+                    {
+                        cmd.Parameters.AddWithValue(kvp.Key, kvp.Value);
+                    }
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+
+
+        }
+        // carlos enrique modulo bancos
+        public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
+        {
+            string operador = esDeposito ? "+" : "-";
+            string consulta = $"UPDATE tbl_cuentaBancaria SET saldoDisponible = saldoDisponible {operador} ? WHERE id_cuentaBancaria = ?";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("@monto", monto);
+                    cmd.Parameters.AddWithValue("@id_cuenta", idCuenta);
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
 
 
     }
