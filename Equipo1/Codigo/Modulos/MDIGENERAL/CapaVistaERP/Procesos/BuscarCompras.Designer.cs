@@ -47,6 +47,7 @@ namespace CapaVistaERP.Procesos
             this.btn_seleccionar.TabIndex = 44;
             this.btn_seleccionar.Text = "Seleccionar";
             this.btn_seleccionar.UseVisualStyleBackColor = true;
+            this.btn_seleccionar.Click += new System.EventHandler(this.btn_seleccionar_Click);
             // 
             // dgv_orden
             // 
@@ -81,13 +82,15 @@ namespace CapaVistaERP.Procesos
             this.btn_buscarOrden.Size = new System.Drawing.Size(31, 25);
             this.btn_buscarOrden.TabIndex = 41;
             this.btn_buscarOrden.UseVisualStyleBackColor = false;
+            this.btn_buscarOrden.Click += new System.EventHandler(this.btn_buscarOrden_Click);
             // 
             // txt_Orden
             // 
             this.txt_Orden.Location = new System.Drawing.Point(217, 31);
             this.txt_Orden.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Orden.Multiline = true;
             this.txt_Orden.Name = "txt_Orden";
-            this.txt_Orden.Size = new System.Drawing.Size(239, 22);
+            this.txt_Orden.Size = new System.Drawing.Size(239, 27);
             this.txt_Orden.TabIndex = 40;
             // 
             // BuscarCompras
