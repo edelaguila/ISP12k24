@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using CapaModeloERP;
+using System.Windows.Forms;
+
 namespace CapaControladorERP
 {
     public class Controlador
@@ -85,5 +87,81 @@ namespace CapaControladorERP
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
+
+        //Carol Chuy Modulo Compras
+        public string[] itemsprod()
+        {
+            string[] Items = sn.llenarCmbprod();
+            return Items;
+        }
+
+        //Carol Chuy Modulo Compras
+        public DataTable enviarprod()
+        {
+
+            var dt1 = sn.obtenerprod();
+            return dt1;
+        }
+
+        //Carol Chuy Modulo Compras
+        public void CargarOpcionesOrden(ComboBox combo)
+        {
+            // Aquí proporciona las opciones al ComboBox
+            combo.Items.Add("Directa");
+            combo.Items.Add("Relacionada");
+        }
+
+        //Carol Chuy Modulo Compras
+        public int ObtenerUltimoNumeroOrden(String campoid, String tabla)
+        {
+            return sn.ObtenerUltimoNumeroOrden(campoid, tabla);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerDescripcion(string productId)
+        {
+            return sn.ObtenerDescripcion(productId);
+        }
+
+        //Carol Chuy Modulo Compras
+        public decimal ObtenerPrecioUnitario(string productId)
+        {
+            return sn.ObtenerPrecioUnitario(productId);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerNombreProveedor(string proveedorID)
+        {
+            return sn.ObtenerNombreProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerDomicilioProveedor(string proveedorID)
+        {
+            return sn.ObtenerDomicilioProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerTelefonoProveedor(string proveedorID)
+        {
+            return sn.ObtenerTelefonoProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public string ObtenerNitProveedor(string proveedorID)
+        {
+            return sn.ObtenerNitProveedor(proveedorID);
+        }
+
+        //Carol Chuy Modulo Compras
+        public DataTable llenarTablasCondicion(String tabla)
+        {
+            OdbcDataAdapter dt = sn.llenarTablasCondicion(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
     }
 }

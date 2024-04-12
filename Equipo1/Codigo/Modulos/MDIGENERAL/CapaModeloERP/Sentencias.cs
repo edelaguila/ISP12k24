@@ -372,6 +372,208 @@ namespace CapaModeloERP
             }
         }
 
+        //Carol Chuy Modulo de Compras
+        public string[] llenarCmbprod()
+        {
+            string[] Campos = new string[300];
+            string[] auto = new string[300];
+            int i = 0;
+            string sql = "SELECT cod_producto, nombre_prod FROM tbl_producto;";
+
+            try
+            {
+                OdbcCommand command = new OdbcCommand(sql, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Campos[i] = reader.GetValue(0).ToString() + "-" + reader.GetValue(1).ToString();
+                    i++;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo"); }
+            return Campos;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public DataTable obtenerprod()
+        {
+
+            string sql = "SELECT cod_producto, nombre_prod FROM tbl_producto;";
+
+            OdbcCommand command = new OdbcCommand(sql, con.connection());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            return dt;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public int ObtenerUltimoNumeroOrden(string campoid, string tabla)
+        {
+            int ultimoNumeroOrden = 0;
+            Conexion con = new Conexion();
+            OdbcConnection conn = con.connection();
+
+            // Conectar a la base de datos utilizando la clase Conexion
+            using (conn)
+            {
+                // Consulta SQL para obtener el último número de orden
+                string query = "SELECT MAX(" + campoid + ") FROM " + tabla + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        ultimoNumeroOrden = Convert.ToInt32(result) + 1;
+                    }
+                    else
+                    {
+                        ultimoNumeroOrden++;
+                    }
+                }
+            }
+
+            // 'conn' se cerrará automáticamente
+            return ultimoNumeroOrden;
+        }
+
+        //Carol Chuy Modulo de Compras
+        //Buscar todo de cualquier tabla
+        public OdbcDataAdapter llenarTablas(string tabla)
+        {
+            string sql = "SELECT * FROM " + tabla + ";";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+            return dataTable;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public string ObtenerDescripcion(string productId)
+        {
+            string descripcion = string.Empty;
+            using (OdbcConnection conn = con.connection())
+            {
+                string query = "SELECT descripcion_prod FROM tbl_producto WHERE cod_producto = " + productId + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", productId);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        descripcion = result.ToString();
+                    }
+                }
+            }
+            return descripcion;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public decimal ObtenerPrecioUnitario(string productId)
+        {
+            decimal precioUnitario = 0;
+            using (OdbcConnection conn = con.connection())
+            {
+                string query = "SELECT precioUnitario_prod FROM tbl_producto WHERE cod_producto = " + productId + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", productId);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        precioUnitario = Convert.ToDecimal(result);
+                    }
+                }
+            }
+            return precioUnitario;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public string ObtenerNombreProveedor(string proveedorID)
+        {
+            string query = "SELECT nombre_prov FROM tbl_proveedor WHERE id_prov = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty; // Se irá aquí en caso de no encontrar al proveedor
+        }
+
+        //Carol Chuy Modulo de Compras
+        public string ObtenerDomicilioProveedor(string proveedorID)
+        {
+            string query = "SELECT domicilio_prov FROM tbl_proveedor WHERE id_prov = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public string ObtenerTelefonoProveedor(string proveedorID)
+        {
+            string query = "SELECT telefono_prov FROM tbl_proveedor WHERE id_prov = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public string ObtenerNitProveedor(string proveedorID)
+        {
+            string query = "SELECT nit_prov FROM tbl_proveedor WHERE id_prov = " + proveedorID + ";";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        return result.ToString();
+                    }
+                }
+            }
+
+            return string.Empty;
+        }
+
+        //Carol Chuy Modulo de Compras
+        public OdbcDataAdapter llenarTablasCondicion(string tabla)
+        {
+            string sql = "SELECT * FROM " + tabla + " WHERE recibidoIgualSolicitado_EncComp=1;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+            return dataTable;
+        }
+
 
     }
 
