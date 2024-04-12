@@ -22,15 +22,21 @@ namespace CapaModeloERP
     {
         Conexion con = new Conexion();
 
+        //Andrea Corado 0901-20-2841
         public OdbcDataAdapter CargarDatos(string tabla)
         {
            string query = "SELECT * FROM " + tabla + ";";
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
+        //Andrea Corado 0901-20-2841
 
-
-
+        public OdbcDataAdapter BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}' OR {columna2} = '{dato2}' OR {columna3} = '{dato3}'";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+            return datos;
+        }
 
         //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)

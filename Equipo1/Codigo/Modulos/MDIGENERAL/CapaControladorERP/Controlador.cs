@@ -13,7 +13,7 @@ namespace CapaControladorERP
     public class Controlador
     {
         Sentencias sn = new Sentencias();
-
+        //Andrea Corado 0901-20-2841
         public DataTable llenarTablas(string tabla)
         {
             OdbcDataAdapter dt = sn.CargarDatos(tabla);
@@ -21,6 +21,15 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+        //Andrea Corado 0901-20-2841
+        public DataTable BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
+        {
+            OdbcDataAdapter dt = sn.BuscarProv(tabla, columna, dato, columna2, dato2, columna3, dato3);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {
