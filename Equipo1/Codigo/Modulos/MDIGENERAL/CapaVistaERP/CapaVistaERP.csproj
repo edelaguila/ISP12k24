@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.Designer.cs">
+      <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frmMovimientoInventario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +136,11 @@
     <Compile Include="Mantenimientos\frmMantenimientoBanco.Designer.cs">
       <DependentUpon>frmMantenimientoBanco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\frmMantenimientoMovimientoBanco.cs">
+    <Compile Include="Mantenimientos\frmMantenimientoMovimientoConcepto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenimientos\frmMantenimientoMovimientoBanco.Designer.cs">
-      <DependentUpon>frmMantenimientoMovimientoBanco.cs</DependentUpon>
+    <Compile Include="Mantenimientos\frmMantenimientoMovimientoConcepto.Designer.cs">
+      <DependentUpon>frmMantenimientoMovimientoConcepto.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frm_mant_clientes.cs">
       <SubType>Form</SubType>
@@ -165,6 +171,12 @@
     </Compile>
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\frmMovimientoDeBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmMovimientoDeBancos.Designer.cs">
+      <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\frm_factura_cobrar.cs">
       <SubType>Form</SubType>
@@ -210,6 +222,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\frmMantenimientoCuentaBancaria.resx">
+      <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMovimientoInventario.resx">
       <DependentUpon>frmMovimientoInventario.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,8 +264,8 @@
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoBanco.resx">
       <DependentUpon>frmMantenimientoBanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimientos\frmMantenimientoMovimientoBanco.resx">
-      <DependentUpon>frmMantenimientoMovimientoBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenimientos\frmMantenimientoMovimientoConcepto.resx">
+      <DependentUpon>frmMantenimientoMovimientoConcepto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_mant_clientes.resx">
       <DependentUpon>frm_mant_clientes.cs</DependentUpon>
@@ -266,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
+      <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frm_factura_cobrar.resx">
       <DependentUpon>frm_factura_cobrar.cs</DependentUpon>
