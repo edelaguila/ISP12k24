@@ -35,16 +35,10 @@ namespace CapaControladorERP
             sn.InsertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
         }
 
-        public string obtenerCliente(string nombreCliente)
+        public Vendedor BuscarVendedorPorID(int id)
         {
-           
-            string nombrecl = sn.ObtenerCliente(nombreCliente);
-            return nombrecl;
+            Vendedor vendedor = sn.BuscarVendedorPorID(id);
+            return vendedor;
         }
-        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
-        {
-            sn.InsertarCoti(No_Cotizacion,fecha_coti,fechaFinal_coti);
-        }
-
     }
 }

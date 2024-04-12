@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
-using System.Security.Policy;
 
 namespace CapaModeloERP
 {
@@ -15,6 +14,15 @@ namespace CapaModeloERP
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public double PrecioUnitario { get; set; }
+
+    }
+
+    public class Vendedor
+    {
+        public int idVendedor  { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Estado { get; set; }
 
     }
     public class Sentencias
@@ -27,11 +35,6 @@ namespace CapaModeloERP
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
-
-
-
-
-
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
         {
             using (OdbcConnection connection = con.connection())
@@ -65,39 +68,6 @@ namespace CapaModeloERP
                 }
             }
         }
-
-        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
-        {
-            using (OdbcConnection connection = con.connection())
-            {
-                if (connection != null)
-                {
-                    using (OdbcTransaction transaction = connection.BeginTransaction())
-                    {
-                        try
-                        {
-                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti) VALUES (?, ?, ?)";
-                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
-                            {
-                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
-                                cmd.Parameters.AddWithValue("@fecha_coti", fecha_coti);
-                                cmd.Parameters.AddWithValue("@fechaFinal_coti", fechaFinal_coti);
-
-                                cmd.ExecuteNonQuery();
-                            }
-
-                            transaction.Commit();
-                        }
-                        catch (Exception ex)
-                        {
-                            transaction.Rollback();
-                            Console.WriteLine($"Error al guardar la cotización: {ex.Message}");
-                        }
-                    }
-                }
-            }
-        }
-
 
         public List<string> ComboFill(string columna, string tabla)
         {
@@ -165,63 +135,140 @@ namespace CapaModeloERP
 
             return precioUnitario;
         }
-
-        public string ObtenerCliente(string nombrecliente)
+        public Vendedor BuscarVendedorPorID(int idVendedor)
         {
-            try
-            {
-                using (OdbcConnection connection = con.connection())
-                {
-                    using (OdbcCommand cmd = new OdbcCommand("SELECT id_cliente FROM tbl_clientes WHERE nombre_cl= ?", connection))
-                    {
-                        cmd.Parameters.Add(new OdbcParameter("nombre_cliente", nombrecliente));
-                        string descripcion = cmd.ExecuteScalar().ToString();
-                        return descripcion;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Error: " + e.Message);
-                return null; 
-            }
-        }
+            Vendedor vendedorEncontrado = null;
 
-        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
-        {
-            using (OdbcConnection connection = con.connection())
+            using (OdbcConnection connection=con.connection())
             {
-                if (connection != null)
+                try
                 {
-                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    connection.Open();
+                   
+                    string consulta = "SELECT nombre_vend, telefono_vend, estado_vend FROM tbl_vendedor WHERE Pk_id_vendedor = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, connection))
                     {
-                        try
+                        cmd.Parameters.AddWithValue("@ID", idVendedor);
+
+                        using (OdbcDataReader reader = cmd.ExecuteReader())
                         {
-                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No.Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
-                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            if (reader.Read())
                             {
-                                cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
-                                cmd.Parameters.AddWithValue("@cantidad_coti", cantidad_coti);
-                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
-                                cmd.Parameters.AddWithValue("@cod_producto", cod_producto);
-                                cmd.Parameters.AddWithValue("@total_detCoti", total_detCoti);
-
-                                cmd.ExecuteNonQuery();
+                                vendedorEncontrado = new Vendedor
+                                {
+                                    idVendedor = idVendedor,
+                                    Nombre = reader["nombre_vend"].ToString(),
+                                    Telefono = reader["telefono_vend"].ToString(),
+                                    Estado = reader["estado_vend"].ToString(),
+                                };
                             }
-
-                            transaction.Commit();
-                        }
-                        catch (Exception ex)
-                        {
-                            transaction.Rollback();
-                            Console.WriteLine($"Error al guardar el detalle de la cotización: {ex.Message}");
                         }
                     }
                 }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Error al buscar al vendedor: " + ex.Message);
+                }
             }
+
+            return vendedorEncontrado;
         }
 
+        
 
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
