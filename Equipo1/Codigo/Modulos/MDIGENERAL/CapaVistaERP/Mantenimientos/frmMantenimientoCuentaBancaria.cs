@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using CapaControladorERP;
 
 namespace CapaVistaERP.Mantenimientos
-{
+{// carlos enrique guzman cabrera
     public partial class frmMantenimientoCuentaBancaria : Form
     {
         Controlador cn = new Controlador();
