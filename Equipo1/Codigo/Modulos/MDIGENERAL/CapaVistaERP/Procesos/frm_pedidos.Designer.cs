@@ -69,6 +69,8 @@ namespace CapaVistaERP.Procesos
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_apellido_vendedor = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -95,6 +97,8 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.txt_apellido_vendedor);
+            this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txt_telefono_vendedor);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.txt_estado_vendedor);
@@ -108,7 +112,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.Controls.Add(this.txt_id_vendedor);
             this.groupBox3.Location = new System.Drawing.Point(40, 69);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1205, 195);
+            this.groupBox3.Size = new System.Drawing.Size(1205, 223);
             this.groupBox3.TabIndex = 144;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
@@ -121,7 +125,7 @@ namespace CapaVistaERP.Procesos
             this.txt_telefono_vendedor.ReadOnly = true;
             this.txt_telefono_vendedor.Size = new System.Drawing.Size(234, 34);
             this.txt_telefono_vendedor.TabIndex = 120;
-            this.txt_telefono_vendedor.Tag = "tbl_departamento_Pk_id_departamento";
+            this.txt_telefono_vendedor.Tag = "telefono_vend";
             // 
             // label11
             // 
@@ -141,7 +145,7 @@ namespace CapaVistaERP.Procesos
             this.txt_estado_vendedor.ReadOnly = true;
             this.txt_estado_vendedor.Size = new System.Drawing.Size(234, 34);
             this.txt_estado_vendedor.TabIndex = 108;
-            this.txt_estado_vendedor.Tag = "emp_cargo";
+            this.txt_estado_vendedor.Tag = "estado_vend";
             // 
             // btn_buscar
             // 
@@ -210,7 +214,7 @@ namespace CapaVistaERP.Procesos
             this.txt_nombre_vendedor.ReadOnly = true;
             this.txt_nombre_vendedor.Size = new System.Drawing.Size(234, 34);
             this.txt_nombre_vendedor.TabIndex = 90;
-            this.txt_nombre_vendedor.Tag = "emp_nombre";
+            this.txt_nombre_vendedor.Tag = "nombre_vend";
             // 
             // txt_id_vendedor
             // 
@@ -219,7 +223,7 @@ namespace CapaVistaERP.Procesos
             this.txt_id_vendedor.Name = "txt_id_vendedor";
             this.txt_id_vendedor.Size = new System.Drawing.Size(127, 34);
             this.txt_id_vendedor.TabIndex = 89;
-            this.txt_id_vendedor.Tag = "Pk_id_empleado";
+            this.txt_id_vendedor.Tag = "id_vendedor";
             // 
             // label17
             // 
@@ -234,7 +238,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(221, 291);
+            this.dateTimePicker1.Location = new System.Drawing.Point(230, 309);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(384, 30);
             this.dateTimePicker1.TabIndex = 146;
@@ -243,7 +247,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 291);
+            this.label9.Location = new System.Drawing.Point(44, 309);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 29);
             this.label9.TabIndex = 147;
@@ -280,7 +284,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Location = new System.Drawing.Point(40, 357);
+            this.groupBox1.Location = new System.Drawing.Point(49, 375);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1205, 332);
             this.groupBox1.TabIndex = 149;
@@ -474,7 +478,7 @@ namespace CapaVistaERP.Procesos
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1261, 460);
+            this.button2.Location = new System.Drawing.Point(1270, 478);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 90);
             this.button2.TabIndex = 150;
@@ -483,12 +487,32 @@ namespace CapaVistaERP.Procesos
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1261, 590);
+            this.button3.Location = new System.Drawing.Point(1270, 608);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 73);
             this.button3.TabIndex = 151;
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(20, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 22);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "Apellido_Vendedor";
+            // 
+            // txt_apellido_vendedor
+            // 
+            this.txt_apellido_vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apellido_vendedor.Location = new System.Drawing.Point(331, 173);
+            this.txt_apellido_vendedor.Name = "txt_apellido_vendedor";
+            this.txt_apellido_vendedor.ReadOnly = true;
+            this.txt_apellido_vendedor.Size = new System.Drawing.Size(234, 34);
+            this.txt_apellido_vendedor.TabIndex = 122;
+            this.txt_apellido_vendedor.Tag = "apellido_vend";
             // 
             // frm_pedidos
             // 
@@ -559,5 +583,7 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_apellido_vendedor;
+        private System.Windows.Forms.Label label3;
     }
 }
