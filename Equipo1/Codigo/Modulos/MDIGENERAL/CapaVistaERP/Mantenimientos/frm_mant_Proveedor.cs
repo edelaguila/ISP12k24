@@ -17,7 +17,17 @@ namespace CapaVistaERP.Mantenimientos
         {
             InitializeComponent();
             this.navegador1.config("tbl_proveedor", this, "8001");
+            empezar();
         }
-   
+        public void empezar()
+        {
+            comboBox2.Items.Add("Activo");
+            comboBox2.Items.Add("Inactivo");
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_estado.Text = comboBox2.SelectedItem.ToString();
+        }
     }
 }
