@@ -45,6 +45,20 @@ namespace CapaControladorERP
         {
             sn.InsertarCoti(No_Cotizacion,fecha_coti,fechaFinal_coti);
         }
+        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
+        {
+            sn.InsertarDetalleCoti(id_cliente,cantidad_coti,No_Cotizacion,cod_producto,total_detCoti);
+        }
+
+        public string ObtenerUltimoIdCoti()
+        {
+          return  sn.ObtenerUltimoIdCoti();
+        }
+
+        public int ObtenerCodigoProducto(string nombreProducto)
+        {
+            return sn.ObtenerCodigoProducto(nombreProducto);
+        }
 
     }
 }
