@@ -60,5 +60,27 @@ namespace CapaControladorERP
             return sn.ObtenerCodigoProducto(nombreProducto);
         }
 
+        // carlos enrique modulo bancos
+        public List<string> llenarCombo(string columna1, string tabla)
+        {
+            return sn.llenarCombo(columna1, tabla);
+        }
+
+        // carlos enrique modulo bancos
+        public DataTable Buscar(string tabla, string columna, string dato)
+        {
+            return sn.Buscar(tabla, columna, dato);
+
+        }
+        // carlos enrique modulo bancos
+        public bool GuardarDatos(string tabla, Dictionary<string, object> valores)
+        {
+            return sn.Guardar(tabla, valores);
+        }
+        // carlos enrique modulo bancos
+        public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
+        {
+            return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
+        }
     }
 }
