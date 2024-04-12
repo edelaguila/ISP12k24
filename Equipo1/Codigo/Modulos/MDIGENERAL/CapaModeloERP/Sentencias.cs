@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
+using System.Security.Policy;
 
 namespace CapaModeloERP
 {
@@ -41,7 +42,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_cliente (nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl) VALUES (?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_clientes (nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@nombre_cl", nombre_cl);
@@ -64,6 +65,39 @@ namespace CapaModeloERP
                 }
             }
         }
+
+        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti) VALUES (?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
+                                cmd.Parameters.AddWithValue("@fecha_coti", fecha_coti);
+                                cmd.Parameters.AddWithValue("@fechaFinal_coti", fechaFinal_coti);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar la cotización: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
 
         public List<string> ComboFill(string columna, string tabla)
         {
@@ -131,6 +165,129 @@ namespace CapaModeloERP
 
             return precioUnitario;
         }
+
+        public string ObtenerCliente(string nombrecliente)
+        {
+            try
+            {
+                using (OdbcConnection connection = con.connection())
+                {
+                    using (OdbcCommand cmd = new OdbcCommand("SELECT id_cliente FROM tbl_clientes WHERE nombre_cl= ?", connection))
+                    {
+                        cmd.Parameters.Add(new OdbcParameter("nombre_cliente", nombrecliente));
+                        string descripcion = cmd.ExecuteScalar().ToString();
+                        return descripcion;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return null; 
+            }
+        }
+        public string ObtenerUltimoIdCoti()
+        {
+            try
+            {
+                using (OdbcConnection connection = con.connection())
+                {
+                    if (connection.State != ConnectionState.Open)
+                    {
+                        connection.Open();
+                    }
+
+                    using (OdbcCommand cmd = new OdbcCommand("SELECT No_Cotizacion FROM tbl_cotizaciones ORDER BY No_Cotizacion DESC LIMIT 1", connection))
+                    {
+                        object result = cmd.ExecuteScalar();
+                        if (result != null)
+                        {
+                            string ultimoIdCoti = result.ToString();
+                            return ultimoIdCoti;
+                        }
+                        else
+                        {
+                            return "No hay cotizaciones registradas.";
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e.Message);
+                return null;
+            }
+        }
+
+
+        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
+                                cmd.Parameters.AddWithValue("@cantidad_coti", cantidad_coti);
+                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
+                                cmd.Parameters.AddWithValue("@cod_producto", cod_producto);
+                                cmd.Parameters.AddWithValue("@total_detCoti", total_detCoti);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar el detalle de la cotización: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+        public int ObtenerCodigoProducto(string nombreProducto)
+        {
+            int codigoProducto = 0;
+
+            try
+            {
+                using (OdbcConnection connection = con.connection())
+                {
+                    if (connection.State != ConnectionState.Open)
+                    {
+                        connection.Open();
+                    }
+
+                    string query = "SELECT cod_producto FROM tbl_producto WHERE nombre_prod = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.Add(new OdbcParameter("nombre_producto", nombreProducto));
+                        object result = cmd.ExecuteScalar();
+
+                        if (result != null)
+                        {
+                            codigoProducto = Convert.ToInt32(result);
+                        }
+                    } 
+                } 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al obtener el código del producto: " + ex.Message);
+            }
+
+            return codigoProducto;
+        }
+
 
 
     }
