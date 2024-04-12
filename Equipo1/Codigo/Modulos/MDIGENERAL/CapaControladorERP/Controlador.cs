@@ -35,6 +35,10 @@ namespace CapaControladorERP
             sn.InsertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
         }
 
-
+        public Vendedor BuscarVendedorPorID(int id)
+        {
+            Vendedor vendedor = sn.BuscarVendedorPorID(id);
+            return vendedor;
+        }
     }
 }

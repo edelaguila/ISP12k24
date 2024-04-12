@@ -16,6 +16,15 @@ namespace CapaModeloERP
         public double PrecioUnitario { get; set; }
 
     }
+
+    public class Vendedor
+    {
+        public int idVendedor  { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Estado { get; set; }
+
+    }
     public class Sentencias
     {
         Conexion con = new Conexion();
@@ -36,7 +45,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_cliente (nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl) VALUES (?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_clientes (nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@nombre_cl", nombre_cl);
@@ -126,8 +135,140 @@ namespace CapaModeloERP
 
             return precioUnitario;
         }
+        public Vendedor BuscarVendedorPorID(int idVendedor)
+        {
+            Vendedor vendedorEncontrado = null;
 
+            using (OdbcConnection connection=con.connection())
+            {
+                try
+                {
+                    connection.Open();
+                   
+                    string consulta = "SELECT nombre_vend, telefono_vend, estado_vend FROM tbl_vendedor WHERE Pk_id_vendedor = ?";
+                    using (OdbcCommand cmd = new OdbcCommand(consulta, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", idVendedor);
+
+                        using (OdbcDataReader reader = cmd.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                vendedorEncontrado = new Vendedor
+                                {
+                                    idVendedor = idVendedor,
+                                    Nombre = reader["nombre_vend"].ToString(),
+                                    Telefono = reader["telefono_vend"].ToString(),
+                                    Estado = reader["estado_vend"].ToString(),
+                                };
+                            }
+                        }
+                    }
+                }
+                catch (OdbcException ex)
+                {
+                    Console.WriteLine("Error al buscar al vendedor: " + ex.Message);
+                }
+            }
+
+            return vendedorEncontrado;
+        }
+
+        
 
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
