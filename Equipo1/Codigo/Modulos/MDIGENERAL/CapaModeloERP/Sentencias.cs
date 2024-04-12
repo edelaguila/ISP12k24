@@ -296,6 +296,17 @@ namespace CapaModeloERP
 
             return codigoProducto;
         }
+        // Otto Adrian Lopez Ventura
+        public DataTable BuscarVendedor(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}'";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt;
+        }
 
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)
