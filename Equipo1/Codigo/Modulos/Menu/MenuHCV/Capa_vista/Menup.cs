@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
 using Vista_PrototipoMenu;
-
+using CapaVistaERP;
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
 {
@@ -59,7 +59,7 @@ namespace MenuHCV
             //Login b = new Login();
             //cn.setBtitacora("999", "Cerro Sesion");
             //b.Show();
-            //this.Close();
+           this.Close();
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
@@ -113,7 +113,7 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
+            CapaVistaERP.MDIGeneral form = new CapaVistaERP.MDIGeneral();
             form.Show();
             cn.setBtitacora("1000", "Ingreso Prototipo");
         }
