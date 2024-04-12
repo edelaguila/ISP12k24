@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
 namespace CapaVistaERP.Procesos
-{
+{// carlos enrique guzman cabrera
     public partial class frmMovimientoDeBancos : Form
     {
         Controlador cn = new Controlador();

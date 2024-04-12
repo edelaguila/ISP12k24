@@ -29,66 +29,78 @@ namespace CapaVistaERP.Procesos
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
+            this.btn_aprobar = new System.Windows.Forms.Button();
+            this.cb_estado = new System.Windows.Forms.ComboBox();
+            this.txt_Descripcion = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_MontoOrden = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_saldoDisponible = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_totalOrdenLetras = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txt_totalOrden = new System.Windows.Forms.TextBox();
+            this.dtp_fechaAutorizacion = new System.Windows.Forms.DateTimePicker();
+            this.cb_numeroOrden = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cb_cuenta = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_NoCuenta = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_nombreCuenta = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
+            // btn_cancelar
             // 
-            this.button2.Location = new System.Drawing.Point(510, 565);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 58);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Location = new System.Drawing.Point(662, 537);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(105, 58);
+            this.btn_cancelar.TabIndex = 31;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_aprobar
             // 
-            this.button1.Location = new System.Drawing.Point(380, 565);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 58);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Aprobar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_aprobar.Location = new System.Drawing.Point(662, 451);
+            this.btn_aprobar.Name = "btn_aprobar";
+            this.btn_aprobar.Size = new System.Drawing.Size(105, 58);
+            this.btn_aprobar.TabIndex = 30;
+            this.btn_aprobar.Text = "Aprobar";
+            this.btn_aprobar.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // cb_estado
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(380, 516);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(235, 24);
-            this.comboBox2.TabIndex = 29;
+            this.cb_estado.FormattingEnabled = true;
+            this.cb_estado.Items.AddRange(new object[] {
+            "[seleccionar]",
+            "Aprobado",
+            "No aprobado ",
+            "En espera",
+            "Suspendido"});
+            this.cb_estado.Location = new System.Drawing.Point(380, 482);
+            this.cb_estado.Name = "cb_estado";
+            this.cb_estado.Size = new System.Drawing.Size(235, 24);
+            this.cb_estado.TabIndex = 29;
             // 
-            // textBox6
+            // txt_Descripcion
             // 
-            this.textBox6.Location = new System.Drawing.Point(35, 516);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(287, 107);
-            this.textBox6.TabIndex = 28;
+            this.txt_Descripcion.Location = new System.Drawing.Point(31, 482);
+            this.txt_Descripcion.Multiline = true;
+            this.txt_Descripcion.Name = "txt_Descripcion";
+            this.txt_Descripcion.Size = new System.Drawing.Size(287, 107);
+            this.txt_Descripcion.TabIndex = 28;
             // 
             // label10
             // 
@@ -100,23 +112,23 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txt_MontoOrden);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_saldoDisponible);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(31, 321);
+            this.groupBox2.Location = new System.Drawing.Point(31, 263);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(569, 141);
+            this.groupBox2.Size = new System.Drawing.Size(723, 141);
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Validacion de saldos";
             // 
-            // textBox5
+            // txt_MontoOrden
             // 
-            this.textBox5.Location = new System.Drawing.Point(199, 76);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(127, 22);
-            this.textBox5.TabIndex = 13;
+            this.txt_MontoOrden.Location = new System.Drawing.Point(199, 76);
+            this.txt_MontoOrden.Name = "txt_MontoOrden";
+            this.txt_MontoOrden.Size = new System.Drawing.Size(127, 22);
+            this.txt_MontoOrden.TabIndex = 13;
             // 
             // label9
             // 
@@ -127,12 +139,12 @@ namespace CapaVistaERP.Procesos
             this.label9.TabIndex = 12;
             this.label9.Text = "Monto de la orden";
             // 
-            // textBox4
+            // txt_saldoDisponible
             // 
-            this.textBox4.Location = new System.Drawing.Point(16, 76);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(127, 22);
-            this.textBox4.TabIndex = 11;
+            this.txt_saldoDisponible.Location = new System.Drawing.Point(16, 76);
+            this.txt_saldoDisponible.Name = "txt_saldoDisponible";
+            this.txt_saldoDisponible.Size = new System.Drawing.Size(127, 22);
+            this.txt_saldoDisponible.TabIndex = 11;
             // 
             // label8
             // 
@@ -145,46 +157,37 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_totalOrdenLetras);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(31, 149);
+            this.groupBox1.Controls.Add(this.txt_totalOrden);
+            this.groupBox1.Location = new System.Drawing.Point(31, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(569, 157);
+            this.groupBox1.Size = new System.Drawing.Size(326, 132);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de orden";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(133, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 22);
-            this.textBox1.TabIndex = 9;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 37);
+            this.label7.Location = new System.Drawing.Point(377, 31);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 17);
             this.label7.TabIndex = 6;
             this.label7.Text = "Cuenta asociada";
             // 
-            // textBox3
+            // txt_totalOrdenLetras
             // 
-            this.textBox3.Location = new System.Drawing.Point(269, 91);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(269, 22);
-            this.textBox3.TabIndex = 11;
+            this.txt_totalOrdenLetras.Location = new System.Drawing.Point(115, 73);
+            this.txt_totalOrdenLetras.Name = "txt_totalOrdenLetras";
+            this.txt_totalOrdenLetras.Size = new System.Drawing.Size(190, 22);
+            this.txt_totalOrdenLetras.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(169, 94);
+            this.label6.Location = new System.Drawing.Point(15, 76);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 17);
             this.label6.TabIndex = 5;
@@ -193,39 +196,39 @@ namespace CapaVistaERP.Procesos
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 94);
+            this.label5.Location = new System.Drawing.Point(13, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Total";
             // 
-            // textBox2
+            // txt_totalOrden
             // 
-            this.textBox2.Location = new System.Drawing.Point(59, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 22);
-            this.textBox2.TabIndex = 10;
+            this.txt_totalOrden.Location = new System.Drawing.Point(115, 39);
+            this.txt_totalOrden.Name = "txt_totalOrden";
+            this.txt_totalOrden.Size = new System.Drawing.Size(190, 22);
+            this.txt_totalOrden.TabIndex = 10;
             // 
-            // dateTimePicker1
+            // dtp_fechaAutorizacion
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(369, 53);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 24;
-            this.dateTimePicker1.Value = new System.DateTime(2024, 4, 5, 0, 0, 0, 0);
+            this.dtp_fechaAutorizacion.Location = new System.Drawing.Point(380, 553);
+            this.dtp_fechaAutorizacion.Name = "dtp_fechaAutorizacion";
+            this.dtp_fechaAutorizacion.Size = new System.Drawing.Size(235, 22);
+            this.dtp_fechaAutorizacion.TabIndex = 24;
+            this.dtp_fechaAutorizacion.Value = new System.DateTime(2024, 4, 5, 0, 0, 0, 0);
             // 
-            // comboBox1
+            // cb_numeroOrden
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(31, 51);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(158, 24);
-            this.comboBox1.TabIndex = 23;
+            this.cb_numeroOrden.FormattingEnabled = true;
+            this.cb_numeroOrden.Location = new System.Drawing.Point(31, 51);
+            this.cb_numeroOrden.Name = "cb_numeroOrden";
+            this.cb_numeroOrden.Size = new System.Drawing.Size(158, 24);
+            this.cb_numeroOrden.TabIndex = 23;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(366, 31);
+            this.label4.Location = new System.Drawing.Point(377, 531);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 17);
             this.label4.TabIndex = 22;
@@ -234,7 +237,7 @@ namespace CapaVistaERP.Procesos
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 485);
+            this.label3.Location = new System.Drawing.Point(28, 451);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 17);
             this.label3.TabIndex = 21;
@@ -243,7 +246,7 @@ namespace CapaVistaERP.Procesos
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(377, 485);
+            this.label2.Location = new System.Drawing.Point(377, 451);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 17);
             this.label2.TabIndex = 20;
@@ -258,30 +261,90 @@ namespace CapaVistaERP.Procesos
             this.label1.TabIndex = 19;
             this.label1.Text = "Numero de orden";
             // 
+            // cb_cuenta
+            // 
+            this.cb_cuenta.FormattingEnabled = true;
+            this.cb_cuenta.Location = new System.Drawing.Point(380, 51);
+            this.cb_cuenta.Name = "cb_cuenta";
+            this.cb_cuenta.Size = new System.Drawing.Size(158, 24);
+            this.cb_cuenta.TabIndex = 32;
+            this.cb_cuenta.SelectedIndexChanged += new System.EventHandler(this.cb_cuenta_SelectedIndexChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txt_NoCuenta);
+            this.groupBox3.Controls.Add(this.label11);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.txt_nombreCuenta);
+            this.groupBox3.Location = new System.Drawing.Point(380, 110);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(374, 132);
+            this.groupBox3.TabIndex = 26;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Datos de la cuenta";
+            // 
+            // txt_NoCuenta
+            // 
+            this.txt_NoCuenta.Location = new System.Drawing.Point(159, 73);
+            this.txt_NoCuenta.Name = "txt_NoCuenta";
+            this.txt_NoCuenta.Size = new System.Drawing.Size(190, 22);
+            this.txt_NoCuenta.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(15, 76);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(125, 17);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Numero de cuenta";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 39);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 17);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Nombre de la cuenta";
+            // 
+            // txt_nombreCuenta
+            // 
+            this.txt_nombreCuenta.Location = new System.Drawing.Point(159, 39);
+            this.txt_nombreCuenta.Name = "txt_nombreCuenta";
+            this.txt_nombreCuenta.Size = new System.Drawing.Size(190, 22);
+            this.txt_nombreCuenta.TabIndex = 10;
+            // 
             // AutorizacionOrdenDeCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 660);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(795, 637);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.cb_cuenta);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btn_cancelar);
+            this.Controls.Add(this.btn_aprobar);
+            this.Controls.Add(this.cb_estado);
+            this.Controls.Add(this.txt_Descripcion);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dtp_fechaAutorizacion);
+            this.Controls.Add(this.cb_numeroOrden);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AutorizacionOrdenDeCompra";
             this.Text = "AutorizacionOrdenDeCompra";
+            this.Load += new System.EventHandler(this.AutorizacionOrdenDeCompra_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,28 +352,33 @@ namespace CapaVistaERP.Procesos
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.Button btn_aprobar;
+        private System.Windows.Forms.ComboBox cb_estado;
+        private System.Windows.Forms.TextBox txt_Descripcion;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_MontoOrden;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_saldoDisponible;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_totalOrdenLetras;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txt_totalOrden;
+        private System.Windows.Forms.DateTimePicker dtp_fechaAutorizacion;
+        private System.Windows.Forms.ComboBox cb_numeroOrden;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cb_cuenta;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TextBox txt_NoCuenta;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_nombreCuenta;
     }
 }
