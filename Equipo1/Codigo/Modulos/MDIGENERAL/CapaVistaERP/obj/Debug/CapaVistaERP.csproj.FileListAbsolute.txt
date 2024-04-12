@@ -283,8 +283,3 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGEN
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Mov_bancario.resources
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdenesdeCompra.resources
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.TrasladoDeProducto.resources
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\Modelo_Seguridad.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorNav.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaNav.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.pdb
