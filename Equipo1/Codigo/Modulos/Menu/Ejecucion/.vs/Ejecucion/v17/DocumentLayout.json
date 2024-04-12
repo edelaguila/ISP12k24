@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\Menu\\Ejecucion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FD7D34F4-CC18-4DAE-86EF-8BC705E10627}|Ejecucion\\Ejecucion.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\Menu\\Ejecucion\\ejecucion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FD7D34F4-CC18-4DAE-86EF-8BC705E10627}|Ejecucion\\Ejecucion.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\menu\\ejecucion\\ejecucion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD7D34F4-CC18-4DAE-86EF-8BC705E10627}|Ejecucion\\Ejecucion.csproj|solutionrelative:ejecucion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Ejecucion\\Program.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\Menu\\Ejecucion\\Ejecucion\\Program.cs",
               "RelativeToolTip": "Ejecucion\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T00:49:52.252Z",
               "EditorCaption": ""
@@ -42,7 +42,8 @@
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\Menu\\Ejecucion\\Ejecucion\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Ejecucion\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T00:49:28.507Z"
+              "WhenOpened": "2024-04-11T00:49:28.507Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }
