@@ -36,7 +36,7 @@
     </Reference>
     <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\EvaluacionIS2k24\Codigo\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+      <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
