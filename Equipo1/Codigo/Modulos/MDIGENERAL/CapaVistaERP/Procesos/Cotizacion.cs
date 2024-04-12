@@ -28,7 +28,10 @@ namespace CapaVistaERP.Procesos
             dateTimePicker2.Value = nuevaFecha;
             CotiCombo();
             obtIDCoti();
+            
         }
+
+ 
 
         private void obtIDCoti()
         {
@@ -122,7 +125,7 @@ namespace CapaVistaERP.Procesos
             cliente();
 
         }
-
+        //agregar los productos al dgv
        private void btn_agregar_Click(object sender, EventArgs e)
         {
             string nombreProducto = comboBox1.SelectedItem?.ToString();
@@ -185,7 +188,7 @@ namespace CapaVistaERP.Procesos
         {
            
         }
-
+        //boton para guardar la cotizacion
         private void button1_Click(object sender, EventArgs e)
         {
             int no_coti = Convert.ToInt32(lblNoCoti.Text);
@@ -196,7 +199,7 @@ namespace CapaVistaERP.Procesos
             MessageBox.Show("Cotizacion Guardada");
             if (string.IsNullOrEmpty(label16.Text))
             {
-                MessageBox.Show("Por favor, seleccione un cliente.");
+                MessageBox.Show("Por favor,ingrese sus datos");
                 return;
             }
 
@@ -227,12 +230,24 @@ namespace CapaVistaERP.Procesos
                 }
                 else
                 {
-                    // Manejar el caso en que la celda "Descripcion" esté vacía
-                    Console.WriteLine("La celda 'Descripcion' está vacía en una fila.");
+                    Console.WriteLine("Celdas vacias");
                 }
             }
 
             MessageBox.Show("Detalles de cotización guardados correctamente.");
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow DGVfila = dataGridView1.SelectedRows[0];
+                dataGridView1.Rows.Remove(DGVfila);
+            }
+            else 
+            {
+                MessageBox.Show("Seleccione una fila valida para eliminar");
+            }
         }
     }
 }

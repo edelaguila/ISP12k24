@@ -122,6 +122,7 @@ namespace CapaModeloERP
             }
             return datos;
         }
+
         //David Carrillo 0901-20-3201 
         public double GetPrecio(string nombreProducto)
         {
