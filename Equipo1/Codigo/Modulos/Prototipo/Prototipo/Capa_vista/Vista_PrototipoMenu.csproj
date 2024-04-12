@@ -31,7 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Capa_VistaConsultas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="CapaVistaNav">
+      <HintPath>..\..\..\..\Componentes\NavegadorTemporal\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+    </Reference>
     <Reference Include="Controlador_PrototipoMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll</HintPath>
@@ -65,11 +67,95 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendario_citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario_citas.Designer.cs">
+      <DependentUpon>Calendario_citas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmacion.Designer.cs">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosBoleta.Designer.cs">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAplicaciones.Designer.cs">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmacionBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmacionBoleta.Designer.cs">
+      <DependentUpon>frmConfirmacionBoleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreaciónUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreaciónUsuario.Designer.cs">
+      <DependentUpon>frmCreaciónUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosPersonales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosPersonales.Designer.cs">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneracionBoleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneracionBoleta.Designer.cs">
+      <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoPrecioB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoPrecioB.Designer.cs">
+      <DependentUpon>frmMantenimientoPrecioB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantenimientoRenapPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantenimientoRenapPersonas.Designer.cs">
+      <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuRenap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuRenap.Designer.cs">
+      <DependentUpon>frmMenuRenap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReagendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReagendar.Designer.cs">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVerificaciónPasaporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerificaciónPasaporte.Designer.cs">
+      <DependentUpon>frmVerificaciónPasaporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HorariosDispo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorariosDispo.Designer.cs">
+      <DependentUpon>HorariosDispo.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrototipo.cs">
       <SubType>Form</SubType>
@@ -77,16 +163,65 @@
     <Compile Include="MenuPrototipo.designer.cs">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ValidacionDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidacionDeDatos.Designer.cs">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Calendario_citas.resx">
+      <DependentUpon>Calendario_citas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmacion.resx">
+      <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosBoleta.resx">
+      <DependentUpon>DatosBoleta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAplicaciones.resx">
       <DependentUpon>frmAplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmacionBoleta.resx">
+      <DependentUpon>frmConfirmacionBoleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreaciónUsuario.resx">
+      <DependentUpon>frmCreaciónUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosPersonales.resx">
+      <DependentUpon>frmDatosPersonales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneracionBoleta.resx">
+      <DependentUpon>frmGeneracionBoleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoPrecioB.resx">
+      <DependentUpon>frmMantenimientoPrecioB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantenimientoRenapPersonas.resx">
+      <DependentUpon>frmMantenimientoRenapPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuRenap.resx">
+      <DependentUpon>frmMenuRenap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReagendar.resx">
+      <DependentUpon>frmReagendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerificaciónPasaporte.resx">
+      <DependentUpon>frmVerificaciónPasaporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorariosDispo.resx">
+      <DependentUpon>HorariosDispo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrototipo.resx">
       <DependentUpon>MenuPrototipo.cs</DependentUpon>
@@ -94,6 +229,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidacionDeDatos.resx">
+      <DependentUpon>ValidacionDeDatos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +315,36 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

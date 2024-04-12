@@ -1,6 +1,6 @@
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Debug\CapaModeloNav.dll
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\bin\Debug\CapaModeloNav.pdb
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.AssemblyReference.cache
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.CoreCompileInputs.cache
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.dll
-C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k23\ProyectosFinales\proyectoads22023\Codigo\Componentes\Navegador\CapaModelo\obj\Debug\CapaModeloNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\bin\Debug\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\bin\Debug\CapaModeloNav.pdb
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.AssemblyReference.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Debug\CapaModeloNav.csproj.CoreCompileInputs.cache
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Debug\CapaModeloNav.dll
+C:\Users\d_car\OneDrive\Escritorio\Navegador\CapaModelo\obj\Debug\CapaModeloNav.pdb

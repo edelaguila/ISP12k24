@@ -38,8 +38,9 @@ namespace CapaVista
             //ctrl_seguridad.setBtitacora("7003", "actualizando");
             //ctrl_seguridad.setBtitacora("1000", "actualizando");
             //MessageBox.Show("Realizando bitacora");
-            this.loadButtons();
         }
+
+
 
         public void loadButtons()
         {
@@ -51,24 +52,16 @@ namespace CapaVista
                     Button mybutton = (Button)c;
                     if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
                     int index = Convert.ToInt32(mybutton.Tag) - 1;
+                    if (idApp.Equals("1000"))
+                    {
+                        mybutton.Enabled = true; continue;
+                    }
                     mybutton.Enabled = !Convert.ToBoolean(arr[index]);
                 }
             }
         }
 
 
-        public string SetHash(string inputString)
-        {
-            string hash = "x2";
-            byte[] bytes = UTF8Encoding.UTF8.GetBytes(inputString);
-            MD5 mD5 = MD5.Create();
-            TripleDES tripleDES = TripleDES.Create();
-            tripleDES.Key = mD5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-            tripleDES.Mode = CipherMode.ECB;
-            ICryptoTransform transform = tripleDES.CreateEncryptor();
-            byte[] output = transform.TransformFinalBlock(bytes, 0, bytes.Length);
-            return Convert.ToBase64String(output);
-        }
 
         public void fillCombo()
         {
@@ -98,10 +91,11 @@ namespace CapaVista
             }
         }
 
-        public void config(string tabla, Form parent, string tabla2)
+        public void config(string tabla, Form parent, string _id = "1000")
         {
+            this.idApp = _id;
             this.tabla = tabla;
-            this.tabla_cmb = tabla2;
+            this.tabla_cmb = "";
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
@@ -117,6 +111,8 @@ namespace CapaVista
             gd.CellClick += this.data_Click;
             this.utilConsultasI.refrescar(this.parent);
             this.cambiarEstado(false);
+            this.loadButtons();
+            gd.AllowUserToAddRows = false;
         }
 
 
@@ -237,7 +233,11 @@ namespace CapaVista
                 }
                 else if (control is ComboBox)
                 {
-                    ((ComboBox)control).SelectedIndex = 0;
+                    ComboBox cmb = ((ComboBox)control);
+                    if (cmb.Items.Count > 0)
+                    {
+                        cmb.SelectedIndex = 0;
+                    }
                 }
             }
         }
@@ -366,7 +366,6 @@ namespace CapaVista
                 filaActual++;
                 gd.Rows[filaActual].Selected = true;
                 focusData((DataTable)gd.DataSource);
-
             }
             else
             {

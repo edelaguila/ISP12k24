@@ -21,17 +21,17 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {btnaplicaciones};
+            Button[] apps = { btnaplicaciones };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.getAccesoApp(1002, apps[0]);
         }
-        
+
         //Validaciones que si son visibles los panales los oculta
         private void hideSubMenu()
         {
-            
+
             if (panelTranportes.Visible == true)
                 panelTranportes.Visible = false;
             if (PanelAuditoria.Visible == true)
@@ -76,7 +76,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            frmAplicaciones form = new frmAplicaciones();
+            CapaVista_SisB.frmCuenta form = new CapaVista_SisB.frmCuenta();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -95,7 +95,99 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");            
+            Help.ShowHelp(this, "umg.chm");
         }
-     }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmHistorial form = new CapaVista_SisB.frmHistorial();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.PagoServicios form = new CapaVista_SisB.PagoServicios();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmDeposito form = new CapaVista_SisB.frmDeposito();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmEstado form = new CapaVista_SisB.frmEstado();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void man_boleta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Cheques form = new CapaVista_SisB.Cheques();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.MovimientosBancarios form = new CapaVista_SisB.MovimientosBancarios();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            CapaVista_SisB.MantenimientoTransaccion form = new CapaVista_SisB.MantenimientoTransaccion();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmRetiro form = new CapaVista_SisB.frmRetiro();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_tipo_cuenta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmTipoCuenta form = new CapaVista_SisB.frmTipoCuenta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+    }
 }

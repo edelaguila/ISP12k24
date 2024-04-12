@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
 using Vista_Seguridad;
-//using Vista_PrototipoMenu;
-
+using Vista_PrototipoMenu;
+using CapaVistaERP;
 //Comentado por George Mayén 25/02/2023
 namespace MenuHCV
 {
@@ -27,13 +27,13 @@ namespace MenuHCV
             cn.deshabilitarApps(apps);
 
             cn.getAccesoApp(1000, apps[0]);  //Modulo Seguridad
-            cn.getAccesoApp(2000, apps[1]);  //Modulo Compras y Cxp
-            cn.getAccesoApp(3000, apps[2]);  //Modulo Ventas y Cxc
-            cn.getAccesoApp(4000, apps[3]);  //Modulo Inventarios
-            cn.getAccesoApp(5000, apps[4]);  //Modulo Bancos
-            cn.getAccesoApp(6000, apps[5]);  //Modulo Nominas
-            cn.getAccesoApp(7000, apps[6]);  //Modulo Hoteleria
-            cn.getAccesoApp(8000, apps[7]);  //Modulo Prototipo
+           // cn.getAccesoApp(2000, apps[1]);  //Modulo Compras y Cxp
+           // cn.getAccesoApp(3000, apps[2]);  //Modulo Ventas y Cxc
+           // cn.getAccesoApp(4000, apps[3]);  //Modulo Inventarios
+           // cn.getAccesoApp(5000, apps[4]);  //Modulo Bancos
+           // cn.getAccesoApp(6000, apps[5]);  //Modulo Nominas
+          //  cn.getAccesoApp(7000, apps[6]);  //Modulo Hoteleria
+            cn.getAccesoApp(1000, apps[7]);  //Modulo Prototipo
 
 
 
@@ -59,7 +59,7 @@ namespace MenuHCV
             //Login b = new Login();
             //cn.setBtitacora("999", "Cerro Sesion");
             //b.Show();
-            //this.Close();
+           this.Close();
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
@@ -113,9 +113,9 @@ namespace MenuHCV
 
         private void btnPrototipo_Click(object sender, EventArgs e)
         {
-            //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
-            //form.Show();
-            //cn.setBtitacora("8000", "Ingreso Prototipo");
+            CapaVistaERP.MDIGeneral form = new CapaVistaERP.MDIGeneral();
+            form.Show();
+            cn.setBtitacora("1000", "Ingreso Prototipo");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 
