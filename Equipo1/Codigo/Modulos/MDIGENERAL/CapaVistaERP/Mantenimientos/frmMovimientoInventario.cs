@@ -15,6 +15,6 @@ namespace CapaVistaERP.Mantenimientos
         public frmMovimientoInventario()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_movimiento_inv", this, "");        }
+            this.navegador1.config("tbl_movimiento_inv", this, "8006");        }
     }
 }
