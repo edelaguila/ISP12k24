@@ -15,7 +15,7 @@ namespace CapaVistaERP.Mantenimientos
         public frmProductos()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_productos", this, "");
+            this.navegador1.config("tbl_producto", this, "8005");
         }
     }
 }
