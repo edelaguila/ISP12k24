@@ -43,3 +43,9 @@ D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 D:\Escritorio\Proyecto 2\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
 >>>>>>> f43d00705ee35d4d010961de13697223c2674438
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
