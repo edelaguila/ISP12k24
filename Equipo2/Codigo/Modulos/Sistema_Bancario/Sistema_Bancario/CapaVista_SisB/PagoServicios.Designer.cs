@@ -46,7 +46,7 @@ namespace CapaVista_SisB
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.navegador1 = new CapaVista.Navegador();
+            
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,10 +218,7 @@ namespace CapaVista_SisB
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(17, 54);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(751, 78);
-            this.navegador1.TabIndex = 49;
+            
             // 
             // PagoServicios
             // 
@@ -229,7 +226,7 @@ namespace CapaVista_SisB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(790, 483);
-            this.Controls.Add(this.navegador1);
+            
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -274,6 +271,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private CapaVista.Navegador navegador1;
+        
     }
 }

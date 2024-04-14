@@ -34,8 +34,8 @@
     <Reference Include="CapaControlador_SisB">
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaNav">
-      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
+    <Reference Include="Navegador2.0">
+      <HintPath>..\..\..\..\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Navegador2.0.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>

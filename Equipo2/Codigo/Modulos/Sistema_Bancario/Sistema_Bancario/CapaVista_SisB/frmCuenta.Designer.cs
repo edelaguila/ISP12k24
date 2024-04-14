@@ -29,7 +29,7 @@ namespace CapaVista_SisB
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
+            
             this.txt_saldo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -44,11 +44,7 @@ namespace CapaVista_SisB
             // 
             // navegador1
             // 
-            this.navegador1.Location = new System.Drawing.Point(38, 27);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(751, 78);
-            this.navegador1.TabIndex = 0;
-            // 
+            
             // txt_saldo
             // 
             this.txt_saldo.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -161,7 +157,7 @@ namespace CapaVista_SisB
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_saldo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.navegador1);
+           
             this.Name = "frmCuenta";
             this.Text = "frmCuenta";
             this.Load += new System.EventHandler(this.frmCuenta_Load);
@@ -173,7 +169,7 @@ namespace CapaVista_SisB
 
         #endregion
 
-        private CapaVista.Navegador navegador1;
+        
         private System.Windows.Forms.TextBox txt_saldo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dataGridView1;

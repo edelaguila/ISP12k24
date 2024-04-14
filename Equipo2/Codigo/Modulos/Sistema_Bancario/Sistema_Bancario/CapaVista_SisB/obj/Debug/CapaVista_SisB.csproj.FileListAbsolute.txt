@@ -1,12 +1,3 @@
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.AssemblyReference.cache
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CoreCompileInputs.cache
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
@@ -19,18 +10,6 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Cheques.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MovimientosBancarios.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.PagoServicios.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.GenerateResource.cache
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVistaNav.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Seguridad_Controlador.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControladorNav.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Modelo_Seguridad.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModeloNav.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVistaNav.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControladorNav.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModeloNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
@@ -76,11 +55,6 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCuenta.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmDeposito.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmRetiro.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MantenimientoTransaccion.resources
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Properties.Resources.resources
 C:\Users\PhoenixOsu\Desktop\Codigo Updated\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
 C:\Users\PhoenixOsu\Desktop\Codigo Updated\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
 C:\Users\PhoenixOsu\Desktop\Codigo Updated\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
@@ -170,7 +144,34 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Cheques.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCuenta.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmDeposito.resources
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmEstado.resources
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmHistorial.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmRetiro.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmTipoCuenta.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MantenimientoTransaccion.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MovimientosBancarios.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.PagoServicios.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Properties.Resources.resources
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.GenerateResource.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CoreCompileInputs.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Seguridad_Controlador.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Modelo_Seguridad.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.AssemblyReference.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Navegador2.0.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ControllerLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ModelLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Navegador2.0.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ControllerLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ModelLayer.pdb

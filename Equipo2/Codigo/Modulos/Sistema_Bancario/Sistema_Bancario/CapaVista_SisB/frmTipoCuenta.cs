@@ -15,7 +15,7 @@ namespace CapaVista_SisB
         public frmTipoCuenta()
         {
             InitializeComponent();
-            this.nav.config("tbl_tipo_cuenta", this);
+            //this.nav.config("tbl_tipo_cuenta", this);
         }
     }
 }

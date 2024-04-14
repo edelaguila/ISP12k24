@@ -30,7 +30,6 @@ namespace CapaVista_SisB
         private void InitializeComponent()
         {
             this.label9 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaVista.Navegador();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -46,6 +45,7 @@ namespace CapaVista_SisB
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.navegador2 = new Navegador2._0.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,14 +59,6 @@ namespace CapaVista_SisB
             this.label9.Size = new System.Drawing.Size(178, 44);
             this.label9.TabIndex = 32;
             this.label9.Text = "Cheques";
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(30, 56);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(751, 78);
-            this.navegador1.TabIndex = 37;
-            this.navegador1.Load += new System.EventHandler(this.navegador1_Load);
             // 
             // dataGridView1
             // 
@@ -198,12 +190,20 @@ namespace CapaVista_SisB
             this.textBox4.TabIndex = 52;
             this.textBox4.Tag = "Saldo";
             // 
+            // navegador2
+            // 
+            this.navegador2.Location = new System.Drawing.Point(37, 56);
+            this.navegador2.Name = "navegador2";
+            this.navegador2.Size = new System.Drawing.Size(751, 78);
+            this.navegador2.TabIndex = 53;
+            // 
             // Cheques
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(828, 656);
+            this.Controls.Add(this.navegador2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label4);
@@ -219,7 +219,6 @@ namespace CapaVista_SisB
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label9);
             this.Name = "Cheques";
             this.Tag = "1000";
@@ -233,7 +232,6 @@ namespace CapaVista_SisB
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
@@ -249,5 +247,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox4;
+        private Navegador2._0.Navegador navegador2;
     }
 }

@@ -20,7 +20,7 @@ namespace CapaVista_SisB
             this.helper = new WidgetHelper();
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            navegador1.config("tbl_cuenta", this);
+            //navegador2.config("tbl_cuenta", this);
             this.loadCmbs();
         }
 

@@ -17,7 +17,8 @@ namespace CapaVista_SisB
         {
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            navegador1.config("tbl_mantenimientos_tipo_movimiento", this);
+            
+            //navegador1.config("tbl_mantenimientos_tipo_movimiento", this);
         }
 
         private void txt_estado_TextChanged(object sender, EventArgs e)

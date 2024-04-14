@@ -32,7 +32,7 @@ namespace CapaVista_SisB
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_cuenta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.nav = new CapaVista.Navegador();
+           
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,10 +74,7 @@ namespace CapaVista_SisB
             // 
             // nav
             // 
-            this.nav.Location = new System.Drawing.Point(46, 18);
-            this.nav.Name = "nav";
-            this.nav.Size = new System.Drawing.Size(751, 78);
-            this.nav.TabIndex = 64;
+           
             // 
             // frmTipoCuenta
             // 
@@ -88,7 +85,7 @@ namespace CapaVista_SisB
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_cuenta);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.nav);
+            
             this.Name = "frmTipoCuenta";
             this.Text = "frmTipoCuenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -102,6 +99,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_cuenta;
         private System.Windows.Forms.Label label4;
-        private CapaVista.Navegador nav;
+        
     }
 }
