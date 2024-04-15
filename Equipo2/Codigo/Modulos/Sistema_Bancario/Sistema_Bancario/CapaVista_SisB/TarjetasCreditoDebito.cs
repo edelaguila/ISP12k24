@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaVista_SisB
 {
-    public partial class frmTipoCuenta : Form
+    public partial class TarjetasCreditoDebito : Form
     {
-        public frmTipoCuenta()
+        public TarjetasCreditoDebito()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_tipo_cuenta", this,"8002");
         }
     }
 }
