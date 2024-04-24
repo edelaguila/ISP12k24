@@ -24,36 +24,16 @@ namespace CapaVistaERP.Mantenimientos
         {
 
             // Establece la cadena de conexión a tu base de datos ODBC
-            string connectionString = "Dsn=HotelSConexion";
+            Controlador cn = new Controlador();
 
-            // Define la consulta SQL para cada tabla
-            string queryCuenta = "SELECT * FROM tbl_mantenimientos_agregar_cuenta";
-            string queryBancos = "SELECT * FROM tbl_mantenimientos_agregar_bancos";
-            string queryMoneda = "SELECT * FROM tbl_monedabanco";
+            // Obtener los datos de la tabla de cuentas
+            DataTable tablaCuenta = cn.ObtenerCuentas();
 
-            // Crea un DataTable para cada tabla
-            DataTable tablaCuenta = new DataTable();
-            DataTable tablaBancos = new DataTable();
-            DataTable tablaMoneda = new DataTable();
+            // Obtener los datos de la tabla de bancos
+            DataTable tablaBancos = cn.ObtenerBancos();
 
-            // Crea una conexión OdbcConnection
-            using (OdbcConnection connection = new OdbcConnection(connectionString))
-            {
-                // Abre la conexión
-                connection.Open();
-
-                // Crea un OdbcDataAdapter para cada consulta y llena el DataTable correspondiente
-                using (OdbcDataAdapter adapterCuenta = new OdbcDataAdapter(queryCuenta, connection))
-                using (OdbcDataAdapter adapterBancos = new OdbcDataAdapter(queryBancos, connection))
-                using (OdbcDataAdapter adapterMoneda = new OdbcDataAdapter(queryMoneda, connection))
-                {
-                    adapterCuenta.Fill(tablaCuenta);
-                    adapterBancos.Fill(tablaBancos);
-                    adapterMoneda.Fill(tablaMoneda);
-                }
-            }
-
-
+            // Obtener los datos de la tabla de moneda de banco
+            //  DataTable tablaMoneda = cn.ObtenerMonedaBanco();
 
             DataTable tiposMoneda = cn.ObtenerTiposMoneda();
             if (tiposMoneda != null)
@@ -63,6 +43,7 @@ namespace CapaVistaERP.Mantenimientos
                     cb_tipoMoneda.Items.Add(row["mon_nomMoneda"].ToString());
                 }
             }
+
 
             DataTable Bancos = cn.ObtenerBancos();
             if (Bancos != null)
@@ -82,6 +63,9 @@ namespace CapaVistaERP.Mantenimientos
                 }
             }
 
+
+
+
         }
 
         private void cb_tipoMoneda_SelectedIndexChanged(object sender, EventArgs e)
@@ -89,7 +73,7 @@ namespace CapaVistaERP.Mantenimientos
             if (cb_tipoMoneda.SelectedItem != null)
             {
                 string tipoMonedaSeleccionada = cb_tipoMoneda.SelectedItem.ToString();
-                cb_tipoMoneda.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
+                txt_tipo_mon.Text = tipoMonedaSeleccionada; // Muestra la selección en el TextBox txt_tipo_mon
             }
         }
 
@@ -109,6 +93,16 @@ namespace CapaVistaERP.Mantenimientos
                 string bancoSeleccionado = cb_tipocuenta.SelectedItem.ToString();
                 txt_tipocuenta.Text = bancoSeleccionado; // Muestra la selección en el TextBox txt_tipo_mon
             }
+        }
+
+        private void txt_tipo_moneda_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void txt_estado_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

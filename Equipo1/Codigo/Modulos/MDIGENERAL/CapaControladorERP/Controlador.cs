@@ -224,6 +224,7 @@ namespace CapaControladorERP
             return sn.ObtenerTipoCuenta();
         }
 
+
         public DataTable valorTrans()
         {
             return sn.valorTransaccion();
@@ -236,10 +237,31 @@ namespace CapaControladorERP
         {
             return sn.ObtenerValorTransaccion(tipoTransaccion);
         }
+        // public DataTable ObtenerMonedaBanco()
+        // {
+        // Crea un DataTable para almacenar los datos de la tabla de moneda de banco
+        //  DataTable tablaMoneda = new DataTable();
+
+        // Realiza la conexión y la consulta
+        //using (OdbcConnection connection = new OdbcConnection("Dsn=HotelSConexion"))
+        //  {
+        // Abre la conexión
+        //  connection.Open();
+
+        // Define la consulta SQL para obtener la moneda de banco
+        //  string queryMoneda = "SELECT * FROM tbl_monedabanco";
+
+        // Crea un OdbcDataAdapter para ejecutar la consulta y llenar el DataTable
+        // using (OdbcDataAdapter adapterMoneda = new OdbcDataAdapter(queryMoneda, connection))
+        // {
+        //  adapterMoneda.Fill(tablaMoneda); // Llena el DataTable con los datos obtenidos de la consulta
+        //}
+        // }
+
+        // Retorna el DataTable con los datos de la moneda de banco
+        //  return tablaMoneda;
+        // }
     }
-
-
-
-
 }
+
 
