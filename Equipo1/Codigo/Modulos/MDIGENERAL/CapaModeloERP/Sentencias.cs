@@ -666,19 +666,22 @@ namespace CapaModeloERP
 
         public DataTable LlenarTabla(string tabla)
         {
-            using (OdbcConnection connection = con.connection())
-            {
-                if (connection != null)
-                {
 
-                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_movban_valorTrans, fk_movban_num_cuenta, fk_movban_tipo_transaccion, movban_status, movban_fecha_de_ingreso, manag_status_conciliacion FROM " + tabla + ";";
+            string connectionString = "Dsn=HotelSConexion";
+            using (OdbcConnection connection = new OdbcConnection(connectionString))
+            {
+                try
+                {
+                    string sql = "SELECT * FROM " + tabla + ";";
                     OdbcDataAdapter dataAdapter = new OdbcDataAdapter(sql, connection);
                     DataTable dataTable = new DataTable();
                     dataAdapter.Fill(dataTable);
                     return dataTable;
                 }
-                else
+                catch (OdbcException ex)
                 {
+                    // Manejar la excepción
+                    Console.WriteLine("Error al cargar datos: " + ex.Message);
                     return null;
                 }
             }
@@ -875,6 +878,9 @@ namespace CapaModeloERP
 
             return valorTransaccion;
         }
+
+
+
 
 
     }

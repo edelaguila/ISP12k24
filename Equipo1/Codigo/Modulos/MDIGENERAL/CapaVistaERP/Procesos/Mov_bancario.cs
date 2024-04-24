@@ -40,29 +40,24 @@ namespace CapaVistaERP.Procesos
 
         private void Mov_bancario_Load(object sender, EventArgs e)
         {
-            string connectionString = "Dsn=HotelSConexion";
-            OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
-            using (OdbcConnection connection = new OdbcConnection(connectionString))
-            {
-                OdbcDataAdapter adapter = new OdbcDataAdapter("SELECT * FROM tbl_mantenimientos_tipo_movimiento", connection);
-                DataSet dataSet = new DataSet();
+            // Utiliza la conexión del controlador
+            Controlador con = new Controlador();
 
-                try
+            // Llamar a métodos del controlador para obtener datos del modelo
+            DataTable datos = con.llenarTablas("tbl_mantenimientos_tipo_movimiento");
+
+            // Mostrar los datos en la consola
+            foreach (DataRow fila in datos.Rows)
+            {
+                foreach (var item in fila.ItemArray)
                 {
-                    connection.Open();
-                    adapter.Fill(dataSet, "tbl_mantenimientos_tipo_movimiento");
+                    Console.Write(item + "\t");
                 }
-                catch (OdbcException ex)
-                {
-                    // Manejar la excepción
-                    Console.WriteLine("Error al cargar datos: " + ex.Message);
-                }
-                finally
-                {
-                    connection.Close();
-                }
+                Console.WriteLine();
             }
 
+            // Utiliza la conexión del controlador
+            DataTable dataTableTipoMovimiento = cn.llenarTbl("tbl_mantenimientos_tipo_movimiento");
             // Llama al controlador para obtener el saldo total y mostrarlo en el Label
             decimal saldoTotal = cn.ObtenerSaldoTotal();
             label6.Text = "Q. " + saldoTotal.ToString();
@@ -222,6 +217,104 @@ namespace CapaVistaERP.Procesos
             if (string.IsNullOrEmpty(textBox.Text))
             {
                 ((TextBox)sender).Text = "0";
+            }
+        }
+
+        private void btn_rtrans_Click_1(object sender, EventArgs e)
+        {
+            string estado = "1";
+            decimal saldoTotal = cn.ObtenerSaldoTotal();
+
+            DialogResult result = MessageBox.Show("¿Desea realizar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+
+
+                // Convierte el valor de la transacción desde la base de datos
+                decimal valorTransaccion = cn.ObtenerValorTransaccion(txt_ttransaccion.Text);
+
+                // Convierte el valor del TextBox a decimal
+                if (decimal.TryParse(txt_valorTransferencia.Text, out decimal valorTransferencia))
+                {
+                    // Suma o resta según el tipo de transacción
+                    if (valorTransaccion == 1)
+                    {
+                        saldoTotal += valorTransferencia;
+                    }
+                    else if (valorTransaccion == 0)
+                    {
+                        saldoTotal -= valorTransferencia;
+                    }
+
+                    // Actualiza el Label
+                    label6.Text = "Saldo total: " + saldoTotal.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("El valor de la transferencia no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+                // Llamar al Controlador para insertar el movimiento en la base de datos
+                cn.InsertarMovimiento(txt_valorTransferencia.Text, txt_descripcionTransferencia.Text, txt_numeroCuenta.Text, txt_ttransaccion.Text, estado, txt_valorTrans.Text, txt_stCon.Text);
+
+                // Actualizar el DataGridView con los datos actualizados
+                actualizardatagridView();
+
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
+                txt_ttransaccion.Clear();
+                txt_estado.Clear();
+                txt_numeroCuenta.Clear();
+                txt_valorTransferencia.Clear();
+                txt_descripcionTransferencia.Clear();
+
+                // Mostrar un mensaje de éxito
+                MessageBox.Show("Movimiento realizado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                label6.Text = "Q. " + saldoTotal.ToString();
+            }
+            else
+            {
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
+                txt_ttransaccion.Clear();
+                txt_estado.Clear();
+                txt_numeroCuenta.Clear();
+                txt_valorTransferencia.Clear();
+                txt_descripcionTransferencia.Clear();
+
+                // Mostrar un mensaje informativo
+                MessageBox.Show("No se realizó la transacción.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                label6.Text = "Q. " + saldoTotal.ToString();
+            }
+        }
+
+        private void btn_cancelarTransaccion_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Desea guardar el archivo?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                // Limpiar los TextBox y combobox
+                cb_nCuenta.SelectedIndex = -1;
+                cb_tipoTrans.SelectedIndex = -1;
+                txt_ttransaccion.Clear();
+                txt_estado.Clear();
+                txt_numeroCuenta.Clear();
+                txt_valorTransferencia.Clear();
+                txt_descripcionTransferencia.Clear();
+
+
+                // Mostrar un mensaje de éxito
+                MessageBox.Show("Transacción cancelada correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No se canceló la transaccion.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }
