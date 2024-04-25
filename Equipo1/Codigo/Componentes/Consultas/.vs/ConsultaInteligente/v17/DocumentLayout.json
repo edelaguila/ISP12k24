@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C13A3DCC-1028-46CF-84DA-56C299439EA7}|Capa_Vista\\Capa_VistaConsultas.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\componentes\\consultas\\capa_vista\\busqueda_simple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C13A3DCC-1028-46CF-84DA-56C299439EA7}|Capa_Vista\\Capa_VistaConsultas.csproj|solutionrelative:capa_vista\\busqueda_simple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C13A3DCC-1028-46CF-84DA-56C299439EA7}|Capa_Vista\\Capa_VistaConsultas.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\capa_vista\\busqueda_simple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C13A3DCC-1028-46CF-84DA-56C299439EA7}|Capa_Vista\\Capa_VistaConsultas.csproj|solutionrelative:capa_vista\\busqueda_simple.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89010DBE-91C2-49EF-B278-62CA71753822}|Capa_Modelo\\Capa_ModeloConsultas.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\capa_modelo\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89010DBE-91C2-49EF-B278-62CA71753822}|Capa_Modelo\\Capa_ModeloConsultas.csproj|solutionrelative:capa_modelo\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A893E94-5EAF-4A15-9706-DA3BEFB9DD5D}|Capa_Controlador\\Capa_ControladorConsultas.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\capa_controlador\\cscontralador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A893E94-5EAF-4A15-9706-DA3BEFB9DD5D}|Capa_Controlador\\Capa_ControladorConsultas.csproj|solutionrelative:capa_controlador\\cscontralador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89010DBE-91C2-49EF-B278-62CA71753822}|Capa_Modelo\\Capa_ModeloConsultas.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\capa_modelo\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89010DBE-91C2-49EF-B278-62CA71753822}|Capa_Modelo\\Capa_ModeloConsultas.csproj|solutionrelative:capa_modelo\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "csContralador.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Controlador\\csContralador.cs",
+              "RelativeDocumentMoniker": "Capa_Controlador\\csContralador.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Controlador\\csContralador.cs",
+              "RelativeToolTip": "Capa_Controlador\\csContralador.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAcwNEAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:18:21.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Modelo\\Conexion.cs",
+              "RelativeDocumentMoniker": "Capa_Modelo\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Modelo\\Conexion.cs",
+              "RelativeToolTip": "Capa_Modelo\\Conexion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:18:21.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sentencias.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Modelo\\Sentencias.cs",
+              "RelativeDocumentMoniker": "Capa_Modelo\\Sentencias.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Modelo\\Sentencias.cs",
+              "RelativeToolTip": "Capa_Modelo\\Sentencias.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAASwHIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:18:21.973Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Busqueda_Simple.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Vista\\Busqueda_Simple.cs",
+              "RelativeDocumentMoniker": "Capa_Vista\\Busqueda_Simple.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Vista\\Busqueda_Simple.cs",
+              "RelativeToolTip": "Capa_Vista\\Busqueda_Simple.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAlwCEAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:18:21.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Busqueda_Simple.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Vista\\Busqueda_Simple.cs",
+              "RelativeDocumentMoniker": "Capa_Vista\\Busqueda_Simple.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Componentes\\Consultas\\Capa_Vista\\Busqueda_Simple.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Capa_Vista\\Busqueda_Simple.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T22:18:22.196Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\mantenimientos\\frmmantenimientocuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frmmantenimientocuentabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\mantenimientos\\frm_mant_transproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,6 +39,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "frmMantenimientoCuentaBancaria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frmMantenimientoCuentaBancaria.cs",
+              "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frmMantenimientoCuentaBancaria.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frmMantenimientoCuentaBancaria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CapaVistaERP\\Mantenimientos\\frmMantenimientoCuentaBancaria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T15:33:42.354Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frm_Mant_TransProveedores.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
@@ -42,12 +58,11 @@
               "RelativeToolTip": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T23:40:45.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-17T23:40:45.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frm_Mant_TransProveedores.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
               "RelativeDocumentMoniker": "CapaVistaERP\\Mantenimientos\\frm_mant_TransProveedores.cs",
@@ -58,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Controlador.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaControladorERP\\Controlador.cs",
               "RelativeDocumentMoniker": "CapaControladorERP\\Controlador.cs",
@@ -70,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Sentencias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaModeloERP\\Sentencias.cs",
               "RelativeDocumentMoniker": "CapaModeloERP\\Sentencias.cs",
@@ -82,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MDIGeneral.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\MDIGeneral.cs",
               "RelativeDocumentMoniker": "CapaVistaERP\\MDIGeneral.cs",
