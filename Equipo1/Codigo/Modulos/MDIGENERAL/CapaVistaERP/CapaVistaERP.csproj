@@ -177,6 +177,12 @@
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.Designer.cs">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\frmMovimientoDeBancos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -289,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
       <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>

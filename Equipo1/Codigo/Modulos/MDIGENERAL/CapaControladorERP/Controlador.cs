@@ -101,6 +101,19 @@ namespace CapaControladorERP
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
+        // carlos enrique guzman cabrera
+        public DataTable llenartablabitacoraMB(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablabitacoraMB(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        // carlos enrique guzman cabrera
+        public DataTable BuscarMB(string strfiltro)
+        {
+            return sn.BuscarMB(strfiltro);
+        }
 
         //Carol Chuy Modulo Compras
         public string[] itemsprod()

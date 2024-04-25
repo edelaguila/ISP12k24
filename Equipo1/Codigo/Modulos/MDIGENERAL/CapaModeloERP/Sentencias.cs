@@ -388,6 +388,25 @@ namespace CapaModeloERP
                 }
             }
         }
+        // carlos enrique guzman cabrera
+        public OdbcDataAdapter llenartablabitacoraMB(string tabla)// metodo  que obtinene el contenio de una tabla
+        {
+            //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
+            string sql = "SELECT * FROM " + tabla + "  ;";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+            return dataTable;
+        }
+        // carlos enrique guzman cabrera
+        public DataTable BuscarMB(string strfiltro)
+        {
+            string consulta = $"SELECT * FROM tbl_movimientodebancos WHERE fecha_movimientoBanco = '{strfiltro}'";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt;
+        }
 
         //Carol Chuy Modulo de Compras
         public string[] llenarCmbprod()
