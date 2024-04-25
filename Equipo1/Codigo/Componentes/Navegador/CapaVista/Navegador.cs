@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Seguridad_Controlador;
 using System.Security.Cryptography;
 using System.Runtime.CompilerServices;
+using Capa_VistaConsultas;
 
 namespace CapaVista
 {
@@ -408,6 +409,13 @@ namespace CapaVista
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             this.identificarFormulario(this.parent, "e");
+        }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            Capa_VistaConsultas.Busqueda_Simple form = new Capa_VistaConsultas.Busqueda_Simple();
+            form.setTable(this.tabla);
+            form.Show();
         }
     }
 }
