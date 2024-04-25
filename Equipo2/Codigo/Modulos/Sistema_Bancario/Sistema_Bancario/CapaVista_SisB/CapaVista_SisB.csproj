@@ -34,8 +34,10 @@
     <Reference Include="CapaControlador_SisB">
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
     </Reference>
-    <Reference Include="CapaVistaNav">
-      <HintPath>..\..\..\..\Componentes\Navegador\CapaVista\bin\Release\CapaVistaNav.dll</HintPath>
+    <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Navegador2.0.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
@@ -118,6 +120,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TarjetasCreditoDebito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarjetasCreditoDebito.Designer.cs">
+      <DependentUpon>TarjetasCreditoDebito.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Cheques.resx">
@@ -153,6 +161,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TarjetasCreditoDebito.resx">
+      <DependentUpon>TarjetasCreditoDebito.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

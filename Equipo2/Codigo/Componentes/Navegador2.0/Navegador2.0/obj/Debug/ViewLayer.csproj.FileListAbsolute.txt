@@ -1,0 +1,15 @@
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Navegador2.0.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Navegador2.0.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\ControllerLayer.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\ModelLayer.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\ControllerLayer.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\ModelLayer.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\ViewLayer.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\Navegador2._0.Navegador.resources
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\ViewLayer.csproj.GenerateResource.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\ViewLayer.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\ViewLayer.csproj.CopyComplete
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\Navegador2.0.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\obj\Debug\Navegador2.0.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Seguridad_Controlador.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Modelo_Seguridad.dll
