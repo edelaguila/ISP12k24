@@ -136,7 +136,6 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\M
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloNav.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorReporteria.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.AssemblyReference.cache
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\MenuHCV.Login.resources
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\MenuHCV.Menup.resources
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.Properties.Resources.resources
@@ -550,3 +549,6 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorNav.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.AssemblyReference.cache
