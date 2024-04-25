@@ -25,5 +25,17 @@ namespace CapaVista_SisB
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // FUNCIONES PARA EL BOTON BUSCAR
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // FUNCIONES PARA EL BOTON PAGAR
+
+        }
     }
 }
