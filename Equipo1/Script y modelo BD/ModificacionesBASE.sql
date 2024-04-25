@@ -162,3 +162,24 @@ insert into tbl_mantenimientos_tipo_movimiento(pk_movtm_id_transaccion, movtm_tr
 insert into tbl_mantenimientos_agregar_cuenta (pk_manac_id_cuenta, manac_numero_de_cuenta, fk_manac_tipo_de_moneda, manac_tipo_de_cuenta, fk_manac_selec_banco, manac_alias, manac_status) values 
 (1, 10001, 'Quetzales', 'Ahorro', 'Banco industrial', '<Diego Marroquin', 1),
 (2, 10002, 'Dólares', 'Monetaria', 'Banrural', 'Diego Marroquin', 1);
+
+
+
+-- -----------------------------------------------------
+-- CARLOS
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS tbl_AutorizacionOrdenesCompra (
+    id_numeroDeAutorizacion INT NOT NULL AUTO_INCREMENT,
+    tbl_OrdenesCompra_id_OrdComp INT NOT NULL,
+    estadoOrden VARCHAR(30) NOT NULL,
+    conceptoDeAutorizacion VARCHAR(50) NOT NULL,
+    fechaAutorizacion DATE NOT NULL,
+    subTotal DOUBLE NOT NULL,
+    iva DOUBLE NOT NULL,
+    totalOrden DOUBLE NOT NULL,
+    cuentaAsociada INT NOT NULL,
+    PRIMARY KEY (id_numeroDeAutorizacion),
+    FOREIGN KEY (tbl_OrdenesCompra_id_OrdComp) REFERENCES tbl_ordenescompra (id_OrdComp),
+    FOREIGN KEY (cuentaAsociada) REFERENCES tbl_cuentaBancaria (id_cuentaBancaria)
+) ENGINE = InnoDB CHARACTER SET = latin1;
