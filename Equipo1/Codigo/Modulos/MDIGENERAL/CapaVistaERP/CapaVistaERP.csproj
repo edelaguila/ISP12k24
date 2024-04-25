@@ -69,6 +69,12 @@
     <Compile Include="Mantenimientos\frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.Designer.cs">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frm_Mant_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,12 @@
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.Designer.cs">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\frmMovimientoDeBancos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +242,9 @@
     <EmbeddedResource Include="Mantenimientos\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_agregar_cuenta.resx">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
       <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>

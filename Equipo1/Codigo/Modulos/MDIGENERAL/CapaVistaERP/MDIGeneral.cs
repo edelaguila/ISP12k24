@@ -319,5 +319,11 @@ namespace CapaVistaERP
             Abrir(new Procesos.frmMovimientoDeBancos());
             hideSubMenu();
         }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frm_mant_agregar_cuenta());
+            hideSubMenu();
+        }
     }
 }

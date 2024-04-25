@@ -147,7 +147,7 @@ CREATE TABLE `tbl_banco` (
   `telefono_banco` varchar(20) DEFAULT NULL,
   `estado_banco` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id_banco`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -156,6 +156,7 @@ CREATE TABLE `tbl_banco` (
 
 LOCK TABLES `tbl_banco` WRITE;
 /*!40000 ALTER TABLE `tbl_banco` DISABLE KEYS */;
+INSERT INTO `tbl_banco` VALUES (3,'Banco Industrial','zona2','142412','Activo '),(4,'BAM','zona3','87656278','Suspendido');
 /*!40000 ALTER TABLE `tbl_banco` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,7 +181,7 @@ CREATE TABLE `tbl_bitacoradeeventos` (
   KEY `fk_id_aplicacion` (`fk_id_aplicacion`),
   CONSTRAINT `tbl_bitacoradeeventos_ibfk_1` FOREIGN KEY (`fk_id_usuario`) REFERENCES `tbl_usuarios` (`pk_id_usuario`),
   CONSTRAINT `tbl_bitacoradeeventos_ibfk_2` FOREIGN KEY (`fk_id_aplicacion`) REFERENCES `tbl_aplicaciones` (`pk_id_aplicacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=274 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=380 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -189,7 +190,7 @@ CREATE TABLE `tbl_bitacoradeeventos` (
 
 LOCK TABLES `tbl_bitacoradeeventos` WRITE;
 /*!40000 ALTER TABLE `tbl_bitacoradeeventos` DISABLE KEYS */;
-INSERT INTO `tbl_bitacoradeeventos` VALUES (1,1,1000,'2024-02-21','19:21:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(2,1,1000,'2024-02-21','19:21:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(3,1,1,'2024-02-23','08:36:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(4,1,1000,'2024-02-23','08:36:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(5,1,1,'2024-02-23','08:37:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(6,1,1,'2024-02-23','08:37:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(7,1,999,'2024-02-23','08:37:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(8,1,1,'2024-02-23','09:12:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(9,1,1000,'2024-02-23','09:12:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(10,1,1000,'2024-02-23','09:14:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(11,1,999,'2024-02-23','09:27:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(12,1,1,'2024-02-23','21:23:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(13,1,1000,'2024-02-23','21:23:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(14,1,1000,'2024-02-23','21:24:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(15,1,1000,'2024-02-23','21:25:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(16,1,1,'2024-02-23','21:26:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(17,1,1000,'2024-02-23','21:26:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(18,1,1,'2024-02-23','21:28:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(19,1,1000,'2024-02-23','21:28:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(20,1,1000,'2024-02-23','21:29:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(21,1,1000,'2024-02-23','21:30:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(22,1,999,'2024-02-23','21:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(23,1,1,'2024-04-10','20:28:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(24,1,1000,'2024-04-10','20:28:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(25,1,1000,'2024-04-10','20:29:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(26,1,1000,'2024-04-10','20:29:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(27,1,1000,'2024-04-10','20:29:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(28,1,1000,'2024-04-10','20:29:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(29,1,1,'2024-04-10','20:41:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(30,1,1000,'2024-04-10','20:41:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(31,1,1,'2024-04-10','20:43:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(32,1,1000,'2024-04-10','20:43:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(33,1,1,'2024-04-10','20:45:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(34,1,1000,'2024-04-10','20:45:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(35,1,1,'2024-04-10','20:46:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(36,1,1000,'2024-04-10','20:46:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(37,1,1,'2024-04-10','20:47:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(38,1,1000,'2024-04-10','20:47:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(39,1,1,'2024-04-10','22:32:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(40,1,1000,'2024-04-10','22:32:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(41,1,1,'2024-04-10','22:33:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(42,1,1000,'2024-04-10','22:33:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(43,1,1,'2024-04-10','22:40:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(44,1,1000,'2024-04-10','22:40:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(45,1,1,'2024-04-10','22:42:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(46,1,1000,'2024-04-10','22:42:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(47,1,1,'2024-04-10','22:44:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(48,1,1000,'2024-04-10','22:44:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(49,1,1,'2024-04-10','22:45:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(50,1,1000,'2024-04-10','22:45:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(51,1,1,'2024-04-10','22:48:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(52,1,1000,'2024-04-10','22:48:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(53,1,1,'2024-04-10','22:49:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(54,1,1000,'2024-04-10','22:49:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(55,1,1,'2024-04-10','22:50:44','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(56,1,1000,'2024-04-10','22:50:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(57,1,1,'2024-04-10','22:52:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(58,1,1000,'2024-04-10','22:52:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(59,1,1,'2024-04-10','22:58:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(60,1,1000,'2024-04-10','22:58:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(61,1,1,'2024-04-10','22:59:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(62,1,1000,'2024-04-10','22:59:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(63,1,1000,'2024-04-10','23:01:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(64,1,1,'2024-04-10','23:02:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(65,1,1000,'2024-04-10','23:02:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(66,1,1,'2024-04-10','23:05:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(67,1,1000,'2024-04-10','23:05:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(68,1,1,'2024-04-10','23:06:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(69,1,1000,'2024-04-10','23:06:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(70,1,1,'2024-04-10','23:06:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(71,1,1000,'2024-04-10','23:06:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(72,1,1,'2024-04-10','23:09:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(73,1,1000,'2024-04-10','23:09:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(74,1,1,'2024-04-10','23:10:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(75,1,1000,'2024-04-10','23:10:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(76,1,1,'2024-04-10','23:11:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(77,1,1000,'2024-04-10','23:11:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(78,1,1,'2024-04-10','23:13:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(79,1,1000,'2024-04-10','23:13:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(80,1,1,'2024-04-10','23:16:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(81,1,1000,'2024-04-10','23:16:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(82,1,1,'2024-04-10','23:25:44','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(83,1,1000,'2024-04-10','23:25:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(84,1,1,'2024-04-10','23:27:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(85,1,1000,'2024-04-10','23:27:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(86,1,1,'2024-04-10','23:28:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(87,1,1000,'2024-04-10','23:28:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(88,1,1,'2024-04-10','23:31:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(89,1,1000,'2024-04-10','23:31:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(90,1,1,'2024-04-10','23:31:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(91,1,1000,'2024-04-10','23:32:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(92,1,1,'2024-04-10','23:34:12','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(93,1,1000,'2024-04-10','23:34:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(94,1,1,'2024-04-10','23:35:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(95,1,1000,'2024-04-10','23:35:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(96,1,1,'2024-04-10','23:37:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(97,1,1000,'2024-04-10','23:37:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(98,1,1,'2024-04-10','23:39:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(99,1,1000,'2024-04-10','23:39:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(100,1,1,'2024-04-10','23:52:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(101,1,1000,'2024-04-10','23:52:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(102,1,1,'2024-04-10','23:53:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(103,1,1000,'2024-04-10','23:54:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(104,1,1,'2024-04-10','23:54:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(105,1,1000,'2024-04-10','23:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(106,1,1,'2024-04-10','23:56:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(107,1,1000,'2024-04-10','23:56:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(108,1,1,'2024-04-11','09:43:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(109,1,1000,'2024-04-11','09:43:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(111,1,1000,'2024-04-11','09:43:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(112,1,1,'2024-04-11','09:44:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(113,1,1000,'2024-04-11','09:44:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(114,1,1000,'2024-04-11','09:44:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(115,1,1000,'2024-04-11','09:44:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(116,1,1,'2024-04-11','09:47:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(117,1,1000,'2024-04-11','09:47:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(119,1,1000,'2024-04-11','09:47:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(120,1,1,'2024-04-11','09:50:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(121,1,1000,'2024-04-11','09:50:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(122,1,1,'2024-04-11','09:53:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(123,1,1000,'2024-04-11','09:53:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(124,1,1,'2024-04-11','16:43:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(125,1,1,'2024-04-11','16:45:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(126,1,8000,'2024-04-11','16:45:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(127,1,1,'2024-04-11','16:47:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(128,1,8000,'2024-04-11','16:47:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(129,1,1,'2024-04-11','16:59:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(130,1,8000,'2024-04-11','16:59:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(131,1,1,'2024-04-11','17:01:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(132,1,8000,'2024-04-11','17:01:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(133,1,8000,'2024-04-11','17:01:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(134,1,1,'2024-04-11','17:20:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(135,1,8000,'2024-04-11','17:20:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(136,1,1,'2024-04-11','17:22:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(137,1,8000,'2024-04-11','17:22:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(138,1,1,'2024-04-11','17:23:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(139,1,8000,'2024-04-11','17:23:12','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(140,1,1,'2024-04-11','17:29:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(141,1,8000,'2024-04-11','17:29:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(142,1,1,'2024-04-11','17:30:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(143,1,8000,'2024-04-11','17:30:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(144,1,1,'2024-04-11','17:32:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(145,1,8000,'2024-04-11','17:32:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(146,1,1,'2024-04-11','17:33:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(147,1,8000,'2024-04-11','17:33:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(148,1,1,'2024-04-11','17:35:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(149,1,8000,'2024-04-11','17:35:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(150,1,1,'2024-04-11','17:41:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(151,1,8000,'2024-04-11','17:41:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(152,1,1,'2024-04-11','17:42:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(153,1,8000,'2024-04-11','17:42:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(154,1,1,'2024-04-11','17:45:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(155,1,8000,'2024-04-11','17:45:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(156,1,8000,'2024-04-11','17:45:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(157,1,1,'2024-04-11','18:31:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(158,1,8000,'2024-04-11','18:32:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(159,1,1,'2024-04-11','18:40:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(160,1,8000,'2024-04-11','18:40:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(161,1,1,'2024-04-11','19:02:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(162,1,8000,'2024-04-11','19:02:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(163,1,1,'2024-04-11','19:39:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(164,1,8000,'2024-04-11','19:39:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(165,1,1,'2024-04-11','19:40:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(166,1,8000,'2024-04-11','19:40:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(167,1,1,'2024-04-11','20:00:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(168,1,8000,'2024-04-11','20:00:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(169,1,1,'2024-04-11','20:01:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(170,1,8000,'2024-04-11','20:01:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(171,1,1,'2024-04-11','20:03:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(172,1,8000,'2024-04-11','20:03:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(173,1,1,'2024-04-11','20:05:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(174,1,8000,'2024-04-11','20:05:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(175,1,1,'2024-04-11','20:19:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(176,1,8000,'2024-04-11','20:19:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(177,1,1,'2024-04-11','20:21:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(178,1,8000,'2024-04-11','20:21:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(179,1,1,'2024-04-11','20:22:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(180,1,8000,'2024-04-11','20:22:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(181,1,1,'2024-04-11','20:24:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(182,1,8000,'2024-04-11','20:24:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(183,1,1,'2024-04-11','20:29:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(184,1,8000,'2024-04-11','20:29:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(185,1,1,'2024-04-11','20:31:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(186,1,8000,'2024-04-11','20:31:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(187,1,1,'2024-04-11','20:34:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(188,1,8000,'2024-04-11','20:34:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(189,1,1,'2024-04-11','20:36:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(190,1,8000,'2024-04-11','20:37:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(191,1,1,'2024-04-11','20:39:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(192,1,8000,'2024-04-11','20:39:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(193,1,1,'2024-04-11','20:44:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(194,1,8000,'2024-04-11','20:44:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(195,1,1,'2024-04-11','20:46:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(196,1,8000,'2024-04-11','20:46:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(197,1,1,'2024-04-11','20:48:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(198,1,8000,'2024-04-11','20:48:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(199,1,1,'2024-04-11','20:49:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(200,1,8000,'2024-04-11','20:49:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(201,1,1,'2024-04-11','20:56:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(202,1,8000,'2024-04-11','20:56:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(203,1,1,'2024-04-11','21:07:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(204,1,8000,'2024-04-11','21:07:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(205,1,8003,'2024-04-11','21:07:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(206,1,1000,'2024-04-11','21:07:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(207,1,1,'2024-04-12','08:59:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(208,1,8000,'2024-04-12','08:59:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(209,1,1,'2024-04-12','09:09:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(210,1,8000,'2024-04-12','09:09:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(211,1,1,'2024-04-12','09:11:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(212,1,8000,'2024-04-12','09:11:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(213,1,1,'2024-04-12','10:06:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(214,1,8000,'2024-04-12','10:06:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(215,1,8003,'2024-04-12','10:08:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(216,1,8003,'2024-04-12','10:09:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(217,1,8003,'2024-04-12','10:09:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(218,1,8004,'2024-04-12','10:09:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(219,1,1,'2024-04-12','10:17:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(220,1,8000,'2024-04-12','10:17:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(221,1,1,'2024-04-12','10:19:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(222,1,8000,'2024-04-12','10:19:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(223,1,1,'2024-04-12','10:21:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(224,1,8000,'2024-04-12','10:21:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(225,1,1,'2024-04-12','10:23:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(226,1,8000,'2024-04-12','10:23:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(227,1,1,'2024-04-12','10:24:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(228,1,8000,'2024-04-12','10:24:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(229,1,1,'2024-04-12','10:25:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(230,1,8000,'2024-04-12','10:25:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(231,1,1,'2024-04-12','10:31:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(232,1,8000,'2024-04-12','10:31:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(233,1,1,'2024-04-12','10:36:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(234,1,8000,'2024-04-12','10:36:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(235,1,1,'2024-04-12','10:36:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(236,1,8000,'2024-04-12','10:36:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(237,1,1,'2024-04-12','10:38:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(238,1,8000,'2024-04-12','10:38:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(239,1,1,'2024-04-12','10:40:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(240,1,8000,'2024-04-12','10:40:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(241,1,1,'2024-04-12','10:45:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(242,1,8000,'2024-04-12','10:45:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(243,1,1,'2024-04-12','10:47:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(244,1,8000,'2024-04-12','10:47:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(245,1,1,'2024-04-12','10:47:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(246,1,8000,'2024-04-12','10:47:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(247,1,1,'2024-04-12','10:58:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(248,1,8000,'2024-04-12','10:58:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(249,1,1,'2024-04-12','11:25:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(250,1,8000,'2024-04-12','11:25:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(251,1,1,'2024-04-12','11:49:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(252,1,8000,'2024-04-12','11:49:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(253,1,1,'2024-04-12','11:50:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(254,1,8000,'2024-04-12','11:50:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(255,1,1,'2024-04-12','11:52:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(256,1,8000,'2024-04-12','11:52:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(257,1,8001,'2024-04-12','11:52:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(258,1,8001,'2024-04-12','11:52:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(259,1,8001,'2024-04-12','11:52:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(260,1,8001,'2024-04-12','11:53:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(261,1,8001,'2024-04-12','11:53:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(262,1,8001,'2024-04-12','11:53:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(263,1,8001,'2024-04-12','11:53:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha eliminado un registro'),(264,1,8001,'2024-04-12','11:53:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha eliminado un registro'),(265,1,8001,'2024-04-12','11:53:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(266,1,8003,'2024-04-12','11:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(267,1,8001,'2024-04-12','11:55:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(268,1,1,'2024-04-12','11:56:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(269,1,8000,'2024-04-12','11:56:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(270,1,8001,'2024-04-12','11:56:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(271,1,8001,'2024-04-12','11:56:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(272,1,8001,'2024-04-12','11:56:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(273,1,8001,'2024-04-12','11:56:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro');
+INSERT INTO `tbl_bitacoradeeventos` VALUES (1,1,1000,'2024-02-21','19:21:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(2,1,1000,'2024-02-21','19:21:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(3,1,1,'2024-02-23','08:36:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(4,1,1000,'2024-02-23','08:36:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(5,1,1,'2024-02-23','08:37:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(6,1,1,'2024-02-23','08:37:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(7,1,999,'2024-02-23','08:37:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(8,1,1,'2024-02-23','09:12:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(9,1,1000,'2024-02-23','09:12:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(10,1,1000,'2024-02-23','09:14:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(11,1,999,'2024-02-23','09:27:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(12,1,1,'2024-02-23','21:23:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(13,1,1000,'2024-02-23','21:23:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(14,1,1000,'2024-02-23','21:24:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(15,1,1000,'2024-02-23','21:25:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(16,1,1,'2024-02-23','21:26:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(17,1,1000,'2024-02-23','21:26:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(18,1,1,'2024-02-23','21:28:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(19,1,1000,'2024-02-23','21:28:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(20,1,1000,'2024-02-23','21:29:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(21,1,1000,'2024-02-23','21:30:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(22,1,999,'2024-02-23','21:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Cerro Sesion'),(23,1,1,'2024-04-10','20:28:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(24,1,1000,'2024-04-10','20:28:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(25,1,1000,'2024-04-10','20:29:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(26,1,1000,'2024-04-10','20:29:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(27,1,1000,'2024-04-10','20:29:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(28,1,1000,'2024-04-10','20:29:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(29,1,1,'2024-04-10','20:41:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(30,1,1000,'2024-04-10','20:41:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(31,1,1,'2024-04-10','20:43:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(32,1,1000,'2024-04-10','20:43:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(33,1,1,'2024-04-10','20:45:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(34,1,1000,'2024-04-10','20:45:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(35,1,1,'2024-04-10','20:46:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(36,1,1000,'2024-04-10','20:46:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(37,1,1,'2024-04-10','20:47:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(38,1,1000,'2024-04-10','20:47:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(39,1,1,'2024-04-10','22:32:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(40,1,1000,'2024-04-10','22:32:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(41,1,1,'2024-04-10','22:33:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(42,1,1000,'2024-04-10','22:33:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(43,1,1,'2024-04-10','22:40:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(44,1,1000,'2024-04-10','22:40:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(45,1,1,'2024-04-10','22:42:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(46,1,1000,'2024-04-10','22:42:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(47,1,1,'2024-04-10','22:44:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(48,1,1000,'2024-04-10','22:44:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(49,1,1,'2024-04-10','22:45:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(50,1,1000,'2024-04-10','22:45:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(51,1,1,'2024-04-10','22:48:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(52,1,1000,'2024-04-10','22:48:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(53,1,1,'2024-04-10','22:49:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(54,1,1000,'2024-04-10','22:49:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(55,1,1,'2024-04-10','22:50:44','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(56,1,1000,'2024-04-10','22:50:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(57,1,1,'2024-04-10','22:52:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(58,1,1000,'2024-04-10','22:52:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(59,1,1,'2024-04-10','22:58:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(60,1,1000,'2024-04-10','22:58:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(61,1,1,'2024-04-10','22:59:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(62,1,1000,'2024-04-10','22:59:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(63,1,1000,'2024-04-10','23:01:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(64,1,1,'2024-04-10','23:02:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(65,1,1000,'2024-04-10','23:02:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(66,1,1,'2024-04-10','23:05:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(67,1,1000,'2024-04-10','23:05:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(68,1,1,'2024-04-10','23:06:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(69,1,1000,'2024-04-10','23:06:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(70,1,1,'2024-04-10','23:06:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(71,1,1000,'2024-04-10','23:06:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(72,1,1,'2024-04-10','23:09:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(73,1,1000,'2024-04-10','23:09:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(74,1,1,'2024-04-10','23:10:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(75,1,1000,'2024-04-10','23:10:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(76,1,1,'2024-04-10','23:11:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(77,1,1000,'2024-04-10','23:11:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(78,1,1,'2024-04-10','23:13:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(79,1,1000,'2024-04-10','23:13:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(80,1,1,'2024-04-10','23:16:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(81,1,1000,'2024-04-10','23:16:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(82,1,1,'2024-04-10','23:25:44','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(83,1,1000,'2024-04-10','23:25:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(84,1,1,'2024-04-10','23:27:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(85,1,1000,'2024-04-10','23:27:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(86,1,1,'2024-04-10','23:28:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(87,1,1000,'2024-04-10','23:28:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(88,1,1,'2024-04-10','23:31:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(89,1,1000,'2024-04-10','23:31:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(90,1,1,'2024-04-10','23:31:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(91,1,1000,'2024-04-10','23:32:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(92,1,1,'2024-04-10','23:34:12','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(93,1,1000,'2024-04-10','23:34:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(94,1,1,'2024-04-10','23:35:43','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(95,1,1000,'2024-04-10','23:35:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(96,1,1,'2024-04-10','23:37:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(97,1,1000,'2024-04-10','23:37:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(98,1,1,'2024-04-10','23:39:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(99,1,1000,'2024-04-10','23:39:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(100,1,1,'2024-04-10','23:52:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(101,1,1000,'2024-04-10','23:52:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(102,1,1,'2024-04-10','23:53:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(103,1,1000,'2024-04-10','23:54:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(104,1,1,'2024-04-10','23:54:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(105,1,1000,'2024-04-10','23:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(106,1,1,'2024-04-10','23:56:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(107,1,1000,'2024-04-10','23:56:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(108,1,1,'2024-04-11','09:43:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(109,1,1000,'2024-04-11','09:43:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(111,1,1000,'2024-04-11','09:43:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(112,1,1,'2024-04-11','09:44:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(113,1,1000,'2024-04-11','09:44:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(114,1,1000,'2024-04-11','09:44:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(115,1,1000,'2024-04-11','09:44:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(116,1,1,'2024-04-11','09:47:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(117,1,1000,'2024-04-11','09:47:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(119,1,1000,'2024-04-11','09:47:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(120,1,1,'2024-04-11','09:50:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(121,1,1000,'2024-04-11','09:50:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(122,1,1,'2024-04-11','09:53:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(123,1,1000,'2024-04-11','09:53:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(124,1,1,'2024-04-11','16:43:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(125,1,1,'2024-04-11','16:45:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(126,1,8000,'2024-04-11','16:45:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(127,1,1,'2024-04-11','16:47:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(128,1,8000,'2024-04-11','16:47:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(129,1,1,'2024-04-11','16:59:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(130,1,8000,'2024-04-11','16:59:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(131,1,1,'2024-04-11','17:01:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(132,1,8000,'2024-04-11','17:01:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(133,1,8000,'2024-04-11','17:01:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(134,1,1,'2024-04-11','17:20:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(135,1,8000,'2024-04-11','17:20:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(136,1,1,'2024-04-11','17:22:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(137,1,8000,'2024-04-11','17:22:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(138,1,1,'2024-04-11','17:23:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(139,1,8000,'2024-04-11','17:23:12','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(140,1,1,'2024-04-11','17:29:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(141,1,8000,'2024-04-11','17:29:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(142,1,1,'2024-04-11','17:30:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(143,1,8000,'2024-04-11','17:30:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(144,1,1,'2024-04-11','17:32:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(145,1,8000,'2024-04-11','17:32:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(146,1,1,'2024-04-11','17:33:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(147,1,8000,'2024-04-11','17:33:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(148,1,1,'2024-04-11','17:35:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(149,1,8000,'2024-04-11','17:35:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(150,1,1,'2024-04-11','17:41:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(151,1,8000,'2024-04-11','17:41:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(152,1,1,'2024-04-11','17:42:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(153,1,8000,'2024-04-11','17:42:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(154,1,1,'2024-04-11','17:45:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(155,1,8000,'2024-04-11','17:45:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(156,1,8000,'2024-04-11','17:45:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(157,1,1,'2024-04-11','18:31:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(158,1,8000,'2024-04-11','18:32:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(159,1,1,'2024-04-11','18:40:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(160,1,8000,'2024-04-11','18:40:11','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(161,1,1,'2024-04-11','19:02:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(162,1,8000,'2024-04-11','19:02:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(163,1,1,'2024-04-11','19:39:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(164,1,8000,'2024-04-11','19:39:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(165,1,1,'2024-04-11','19:40:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(166,1,8000,'2024-04-11','19:40:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(167,1,1,'2024-04-11','20:00:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(168,1,8000,'2024-04-11','20:00:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(169,1,1,'2024-04-11','20:01:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(170,1,8000,'2024-04-11','20:01:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(171,1,1,'2024-04-11','20:03:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(172,1,8000,'2024-04-11','20:03:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(173,1,1,'2024-04-11','20:05:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(174,1,8000,'2024-04-11','20:05:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(175,1,1,'2024-04-11','20:19:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(176,1,8000,'2024-04-11','20:19:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(177,1,1,'2024-04-11','20:21:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(178,1,8000,'2024-04-11','20:21:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(179,1,1,'2024-04-11','20:22:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(180,1,8000,'2024-04-11','20:22:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(181,1,1,'2024-04-11','20:24:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(182,1,8000,'2024-04-11','20:24:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(183,1,1,'2024-04-11','20:29:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(184,1,8000,'2024-04-11','20:29:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(185,1,1,'2024-04-11','20:31:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(186,1,8000,'2024-04-11','20:31:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(187,1,1,'2024-04-11','20:34:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(188,1,8000,'2024-04-11','20:34:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(189,1,1,'2024-04-11','20:36:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(190,1,8000,'2024-04-11','20:37:00','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(191,1,1,'2024-04-11','20:39:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(192,1,8000,'2024-04-11','20:39:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(193,1,1,'2024-04-11','20:44:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(194,1,8000,'2024-04-11','20:44:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(195,1,1,'2024-04-11','20:46:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(196,1,8000,'2024-04-11','20:46:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(197,1,1,'2024-04-11','20:48:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(198,1,8000,'2024-04-11','20:48:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(199,1,1,'2024-04-11','20:49:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(200,1,8000,'2024-04-11','20:49:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(201,1,1,'2024-04-11','20:56:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(202,1,8000,'2024-04-11','20:56:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(203,1,1,'2024-04-11','21:07:13','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(204,1,8000,'2024-04-11','21:07:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(205,1,8003,'2024-04-11','21:07:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(206,1,1000,'2024-04-11','21:07:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(207,1,1,'2024-04-12','08:59:35','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(208,1,8000,'2024-04-12','08:59:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(209,1,1,'2024-04-12','09:09:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(210,1,8000,'2024-04-12','09:09:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(211,1,1,'2024-04-12','09:11:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(212,1,8000,'2024-04-12','09:11:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(213,1,1,'2024-04-12','10:06:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(214,1,8000,'2024-04-12','10:06:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(215,1,8003,'2024-04-12','10:08:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(216,1,8003,'2024-04-12','10:09:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(217,1,8003,'2024-04-12','10:09:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(218,1,8004,'2024-04-12','10:09:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(219,1,1,'2024-04-12','10:17:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(220,1,8000,'2024-04-12','10:17:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(221,1,1,'2024-04-12','10:19:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(222,1,8000,'2024-04-12','10:19:42','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(223,1,1,'2024-04-12','10:21:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(224,1,8000,'2024-04-12','10:21:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(225,1,1,'2024-04-12','10:23:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(226,1,8000,'2024-04-12','10:23:16','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(227,1,1,'2024-04-12','10:24:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(228,1,8000,'2024-04-12','10:24:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(229,1,1,'2024-04-12','10:25:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(230,1,8000,'2024-04-12','10:25:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(231,1,1,'2024-04-12','10:31:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(232,1,8000,'2024-04-12','10:31:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(233,1,1,'2024-04-12','10:36:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(234,1,8000,'2024-04-12','10:36:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(235,1,1,'2024-04-12','10:36:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(236,1,8000,'2024-04-12','10:36:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(237,1,1,'2024-04-12','10:38:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(238,1,8000,'2024-04-12','10:38:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(239,1,1,'2024-04-12','10:40:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(240,1,8000,'2024-04-12','10:40:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(241,1,1,'2024-04-12','10:45:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(242,1,8000,'2024-04-12','10:45:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(243,1,1,'2024-04-12','10:47:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(244,1,8000,'2024-04-12','10:47:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(245,1,1,'2024-04-12','10:47:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(246,1,8000,'2024-04-12','10:47:49','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(247,1,1,'2024-04-12','10:58:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(248,1,8000,'2024-04-12','10:58:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(249,1,1,'2024-04-12','11:25:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(250,1,8000,'2024-04-12','11:25:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(251,1,1,'2024-04-12','11:49:04','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(252,1,8000,'2024-04-12','11:49:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(253,1,1,'2024-04-12','11:50:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(254,1,8000,'2024-04-12','11:50:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(255,1,1,'2024-04-12','11:52:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(256,1,8000,'2024-04-12','11:52:32','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(257,1,8001,'2024-04-12','11:52:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(258,1,8001,'2024-04-12','11:52:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(259,1,8001,'2024-04-12','11:52:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(260,1,8001,'2024-04-12','11:53:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(261,1,8001,'2024-04-12','11:53:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(262,1,8001,'2024-04-12','11:53:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(263,1,8001,'2024-04-12','11:53:41','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha eliminado un registro'),(264,1,8001,'2024-04-12','11:53:47','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha eliminado un registro'),(265,1,8001,'2024-04-12','11:53:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(266,1,8003,'2024-04-12','11:54:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(267,1,8001,'2024-04-12','11:55:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(268,1,1,'2024-04-12','11:56:01','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(269,1,8000,'2024-04-12','11:56:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(270,1,8001,'2024-04-12','11:56:14','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(271,1,8001,'2024-04-12','11:56:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(272,1,8001,'2024-04-12','11:56:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(273,1,8001,'2024-04-12','11:56:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(274,1,1,'2024-04-12','13:12:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(275,1,8000,'2024-04-12','13:12:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(276,1,1,'2024-04-12','13:13:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(277,1,8000,'2024-04-12','13:13:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(278,1,8004,'2024-04-12','13:14:36','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(279,1,1,'2024-04-12','13:15:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(280,1,8000,'2024-04-12','13:15:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(281,1,8004,'2024-04-12','13:16:15','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(282,1,8004,'2024-04-12','13:16:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(283,1,8004,'2024-04-12','13:16:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(284,1,8000,'2024-04-12','13:17:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(285,1,8004,'2024-04-12','13:17:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(286,1,1,'2024-04-12','13:18:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(287,1,8000,'2024-04-12','13:18:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(288,1,8004,'2024-04-12','13:18:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(289,1,1,'2024-04-12','13:23:19','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(290,1,8000,'2024-04-12','13:23:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(291,1,8004,'2024-04-12','13:23:40','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(292,1,1,'2024-04-12','13:25:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(293,1,8000,'2024-04-12','13:25:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(294,1,8004,'2024-04-12','13:25:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(295,1,1,'2024-04-12','13:26:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(296,1,8000,'2024-04-12','13:26:38','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(297,1,8004,'2024-04-12','13:26:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(298,1,1,'2024-04-12','13:28:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(299,1,8000,'2024-04-12','13:28:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(300,1,8004,'2024-04-12','13:29:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(301,1,1,'2024-04-12','13:30:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(302,1,8000,'2024-04-12','13:30:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(303,1,8004,'2024-04-12','13:31:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(304,1,1,'2024-04-12','13:45:20','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(305,1,8000,'2024-04-12','13:45:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(306,1,1,'2024-04-12','13:52:44','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(307,1,8000,'2024-04-12','13:52:45','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(308,1,1,'2024-04-12','14:13:02','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(309,1,8000,'2024-04-12','14:13:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(310,1,1,'2024-04-12','14:13:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(311,1,8000,'2024-04-12','14:13:54','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(312,1,1,'2024-04-12','14:15:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(313,1,8000,'2024-04-12','14:15:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(314,1,1,'2024-04-12','14:18:22','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(315,1,8000,'2024-04-12','14:18:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(316,1,1,'2024-04-12','14:19:31','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(317,1,8000,'2024-04-12','14:19:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(318,1,1,'2024-04-12','14:27:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(319,1,8000,'2024-04-12','14:27:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(320,1,1,'2024-04-12','14:28:07','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(321,1,8000,'2024-04-12','14:28:08','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(322,1,1,'2024-04-12','14:28:55','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(323,1,8000,'2024-04-12','14:28:57','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(324,1,1,'2024-04-12','14:30:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(325,1,8000,'2024-04-12','14:30:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(326,1,1,'2024-04-12','14:32:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(327,1,8000,'2024-04-12','14:32:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(328,1,1,'2024-04-12','14:34:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(329,1,8000,'2024-04-12','14:34:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(330,1,1,'2024-04-12','14:35:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(331,1,8000,'2024-04-12','14:35:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(332,1,1,'2024-04-12','18:11:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(333,1,8000,'2024-04-12','18:11:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(334,1,1,'2024-04-12','18:17:17','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(335,1,8000,'2024-04-12','18:17:18','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(336,1,1,'2024-04-12','18:17:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(337,1,8000,'2024-04-12','18:17:53','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(338,1,8007,'2024-04-12','18:18:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(339,1,8008,'2024-04-12','18:18:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(340,1,8030,'2024-04-12','18:19:29','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(341,1,1000,'2024-04-12','18:21:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(342,1,1,'2024-04-12','18:29:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(343,1,8000,'2024-04-12','18:29:30','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(345,1,8000,'2024-04-12','18:30:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(346,1,1,'2024-04-12','18:30:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(347,1,8000,'2024-04-12','18:30:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(348,1,1,'2024-04-12','21:50:27','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(349,1,8000,'2024-04-12','21:50:28','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(350,1,1,'2024-04-12','21:50:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(351,1,8000,'2024-04-12','21:50:51','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(352,1,1,'2024-04-12','21:52:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(353,1,8000,'2024-04-12','21:52:26','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(354,1,1,'2024-04-12','21:53:23','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(355,1,8000,'2024-04-12','21:53:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(356,1,1,'2024-04-12','21:54:09','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(357,1,8000,'2024-04-12','21:54:10','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(358,1,1,'2024-04-12','22:29:21','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(359,1,8000,'2024-04-12','22:29:25','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(360,1,8001,'2024-04-12','22:29:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(361,1,8002,'2024-04-12','22:30:39','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(362,1,8002,'2024-04-12','22:30:59','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(363,1,8003,'2024-04-12','22:31:58','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(364,1,8004,'2024-04-12','22:32:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(365,1,8004,'2024-04-12','22:32:37','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha modificado un registro'),(366,1,8007,'2024-04-12','22:33:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(367,1,8008,'2024-04-12','22:33:52','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(368,1,8030,'2024-04-12','22:34:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(369,1,1000,'2024-04-12','22:44:48','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(370,1,1,'2024-04-12','22:45:50','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(371,1,1000,'2024-04-12','22:45:56','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Seguridad'),(372,1,1,'2024-04-12','22:51:33','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(373,1,8000,'2024-04-12','22:51:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(374,1,8002,'2024-04-12','22:51:46','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(375,1,8002,'2024-04-12','22:52:03','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(376,1,8002,'2024-04-12','22:52:34','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro'),(377,1,1,'2024-04-12','22:54:05','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Login'),(378,1,8000,'2024-04-12','22:54:06','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Ingreso Prototipo'),(379,1,8002,'2024-04-12','22:54:24','LAPTOP-R6RT5UAG','fe80::b0e1:4dc3:fcc8:4576%10','Se ha guardado un registro');
 /*!40000 ALTER TABLE `tbl_bitacoradeeventos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -234,7 +235,7 @@ CREATE TABLE `tbl_clientes` (
   `correo_cl` varchar(100) NOT NULL,
   `telefono_cl` varchar(45) NOT NULL,
   PRIMARY KEY (`id_cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=323 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -243,7 +244,7 @@ CREATE TABLE `tbl_clientes` (
 
 LOCK TABLES `tbl_clientes` WRITE;
 /*!40000 ALTER TABLE `tbl_clientes` DISABLE KEYS */;
-INSERT INTO `tbl_clientes` VALUES (1,'aalonos','alex','a','a','a'),(2,'Lucas','hernandez','zon2','l@mail.com','123412'),(3,'David','Carrillo','Mixco','dav@mail.com','187652'),(4,'sas','das','das','das','sad'),(13,'Jose','Martinez','zona4','josm@mail.com','42142341'),(14,'Lucas','Hernandez','zona4','lc','412421'),(15,'David','a','a','a','a'),(16,'a','d','d','d','d'),(17,'a','a','a','a','a'),(18,'a','a','a','a','a'),(19,'e','e','e','e','e'),(20,'h','h','h','h','h'),(21,'g','g','g','g','g'),(22,'t','t','t','t','t'),(23,'t','t','t','t','t'),(24,'1b','b','b','b','b'),(25,'b','b','b','b','b'),(26,'1','1','1','1','1'),(27,'2','2','2','2','2'),(28,'barrios','balines','b','b','b'),(29,'b','b','b','b','bb'),(30,'n','n','n','n','n'),(31,'4','4','4','4','4'),(32,'1','1','1','1','1'),(33,'1','1','1','1','1'),(34,'1','1','1','1','1'),(35,'David','Carrillo','zona2','carri@mail.com','512521'),(36,'a','a','a','a','a'),(37,'m','am','m','m','m'),(38,'a','a','a','a','a'),(39,'23','23','23','23','23'),(99,'a','a','a','a','a');
+INSERT INTO `tbl_clientes` VALUES (1,'aalonos','alex','a','a','a'),(2,'Lucas','hernandez','zon2','l@mail.com','123412'),(3,'David','Carrillo','Mixco','dav@mail.com','187652'),(4,'sas','das','das','das','sad'),(13,'Jose','Martinez','zona4','josm@mail.com','42142341'),(14,'Lucas','Hernandez','zona4','lc','412421'),(15,'David','a','a','a','a'),(16,'a','d','d','d','d'),(17,'a','a','a','a','a'),(18,'a','a','a','a','a'),(19,'e','e','e','e','e'),(20,'h','h','h','h','h'),(21,'g','g','g','g','g'),(22,'t','t','t','t','t'),(23,'t','t','t','t','t'),(24,'1b','b','b','b','b'),(25,'b','b','b','b','b'),(26,'1','1','1','1','1'),(27,'2','2','2','2','2'),(28,'barrios','balines','b','b','b'),(29,'b','b','b','b','bb'),(30,'n','n','n','n','n'),(31,'4','4','4','4','4'),(32,'1','1','1','1','1'),(33,'1','1','1','1','1'),(34,'1','1','1','1','1'),(35,'David','Carrillo','zona2','carri@mail.com','512521'),(36,'a','a','a','a','a'),(37,'m','am','m','m','m'),(38,'a','a','a','a','a'),(39,'23','23','23','23','23'),(99,'a','a','a','a','a'),(100,'David','Carrillo','mixco','car@mail.','123123'),(101,'Andrea','Cecilia','su casita','coradoa@mail.com','5682135'),(321,'Jose','Martinez','zona4','jos@mail.com','12412'),(322,'Jose','Escobar','zona4','esc@mail.com','421421');
 /*!40000 ALTER TABLE `tbl_clientes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -273,7 +274,7 @@ CREATE TABLE `tbl_compras` (
   KEY `fk_OrdenCompra` (`id_OrdComp`),
   CONSTRAINT `fk_OrdenCompra` FOREIGN KEY (`id_OrdComp`) REFERENCES `tbl_ordenescompra` (`id_OrdComp`),
   CONSTRAINT `fk_tbl_Encabezado_Compras_tbl_proveedor1` FOREIGN KEY (`tbl_proveedor_id_prov`) REFERENCES `tbl_proveedor` (`id_prov`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -282,6 +283,7 @@ CREATE TABLE `tbl_compras` (
 
 LOCK TABLES `tbl_compras` WRITE;
 /*!40000 ALTER TABLE `tbl_compras` DISABLE KEYS */;
+INSERT INTO `tbl_compras` VALUES (1,'2023-10-26','2023-10-27','Contabilidad','Carol Cecilia',500.2,15.2,515.2,'Mi primera compra yeiiii',1,1,'2024-05-12',1);
 /*!40000 ALTER TABLE `tbl_compras` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,7 +300,7 @@ CREATE TABLE `tbl_conceptomovimientodebancos` (
   `efecto_movimientoBanco` varchar(2) NOT NULL,
   `estado_movimientoBanco` varchar(30) NOT NULL,
   PRIMARY KEY (`id_conceptoMovimiento`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,7 +309,37 @@ CREATE TABLE `tbl_conceptomovimientodebancos` (
 
 LOCK TABLES `tbl_conceptomovimientodebancos` WRITE;
 /*!40000 ALTER TABLE `tbl_conceptomovimientodebancos` DISABLE KEYS */;
+INSERT INTO `tbl_conceptomovimientodebancos` VALUES (1,'Deposito','+','Activo'),(2,'Retiro','-','Activo');
 /*!40000 ALTER TABLE `tbl_conceptomovimientodebancos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_conciliacion_bancaria`
+--
+
+DROP TABLE IF EXISTS `tbl_conciliacion_bancaria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_conciliacion_bancaria` (
+  `pk_conb_id_conciliacion` int NOT NULL AUTO_INCREMENT,
+  `conb_anio_conciliacion` varchar(100) DEFAULT NULL,
+  `conb_mes_conciliacion` varchar(100) DEFAULT NULL,
+  `fk_conb_mov_libro` float NOT NULL,
+  `fk_conb_estatusConc` int NOT NULL,
+  `conb_mov_conciliacion` float DEFAULT NULL,
+  `conb_saldo_final` float DEFAULT NULL,
+  `conb_status` int DEFAULT NULL,
+  PRIMARY KEY (`pk_conb_id_conciliacion`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_conciliacion_bancaria`
+--
+
+LOCK TABLES `tbl_conciliacion_bancaria` WRITE;
+/*!40000 ALTER TABLE `tbl_conciliacion_bancaria` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_conciliacion_bancaria` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -331,7 +363,7 @@ CREATE TABLE `tbl_cotizaciones` (
 
 LOCK TABLES `tbl_cotizaciones` WRITE;
 /*!40000 ALTER TABLE `tbl_cotizaciones` DISABLE KEYS */;
-INSERT INTO `tbl_cotizaciones` VALUES (0,'2024-04-12','2024-04-27'),(1,'2024-04-12','2024-04-27');
+INSERT INTO `tbl_cotizaciones` VALUES (0,'2024-04-12','2024-04-27'),(1,'2024-04-12','2024-04-27'),(2,'2024-04-12','2024-04-27'),(3,'2024-04-12','2024-04-27'),(4,'2024-04-12','2024-04-27');
 /*!40000 ALTER TABLE `tbl_cotizaciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -355,7 +387,7 @@ CREATE TABLE `tbl_cuentabancaria` (
   PRIMARY KEY (`id_cuentaBancaria`),
   KEY `id_bancoAsociado` (`id_bancoAsociado`),
   CONSTRAINT `tbl_cuentabancaria_ibfk_1` FOREIGN KEY (`id_bancoAsociado`) REFERENCES `tbl_banco` (`id_banco`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -364,6 +396,7 @@ CREATE TABLE `tbl_cuentabancaria` (
 
 LOCK TABLES `tbl_cuentabancaria` WRITE;
 /*!40000 ALTER TABLE `tbl_cuentabancaria` DISABLE KEYS */;
+INSERT INTO `tbl_cuentabancaria` VALUES (1,'Carrillo FC',3,'Monetaria','3201',100499,'2024-04-12','Activo','Dollar'),(2,'Bytech SA',4,'Monetaria','8765',4500,'2024-04-12','Activo','Euro');
 /*!40000 ALTER TABLE `tbl_cuentabancaria` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -388,7 +421,7 @@ CREATE TABLE `tbl_detalle_cotizacion` (
   CONSTRAINT `fk_tbl_detalle_cotizacion_tbl_clientes1` FOREIGN KEY (`tbl_clientes_id_cliente`) REFERENCES `tbl_clientes` (`id_cliente`),
   CONSTRAINT `fk_tbl_detalle_cotizacion_tbl_cotizaciones1` FOREIGN KEY (`tbl_cotizaciones_No_Cotizacion`) REFERENCES `tbl_cotizaciones` (`No_Cotizacion`),
   CONSTRAINT `fk_tbl_detalle_cotizacion_tbl_producto1` FOREIGN KEY (`tbl_producto_cod_producto`) REFERENCES `tbl_producto` (`cod_producto`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +430,7 @@ CREATE TABLE `tbl_detalle_cotizacion` (
 
 LOCK TABLES `tbl_detalle_cotizacion` WRITE;
 /*!40000 ALTER TABLE `tbl_detalle_cotizacion` DISABLE KEYS */;
-INSERT INTO `tbl_detalle_cotizacion` VALUES (25,16,1,0,1,9850),(26,16,1,0,2,9850),(27,39,1,1,1,27500),(28,39,10,1,1,27500);
+INSERT INTO `tbl_detalle_cotizacion` VALUES (25,16,1,0,1,9850),(26,16,1,0,2,9850),(27,39,1,1,1,27500),(28,39,10,1,1,27500),(29,3,1,2,1,2500),(30,3,1,2,1,5000),(31,3,1,2,1,5000),(32,101,1,3,1,61300),(33,101,4,3,2,61300),(34,13,12,4,1,44700),(35,13,1,4,2,44700),(36,13,1,4,2,44700);
 /*!40000 ALTER TABLE `tbl_detalle_cotizacion` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -671,6 +704,94 @@ LOCK TABLES `tbl_lineas` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `tbl_mantenimientos_agregar_bancos`
+--
+
+DROP TABLE IF EXISTS `tbl_mantenimientos_agregar_bancos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_mantenimientos_agregar_bancos` (
+  `pk_manag_id_ban` int NOT NULL AUTO_INCREMENT,
+  `manag_id_bancoag` int DEFAULT NULL,
+  `manag_nombre_banco` varchar(100) DEFAULT NULL,
+  `manag_status` int DEFAULT NULL,
+  PRIMARY KEY (`pk_manag_id_ban`),
+  UNIQUE KEY `manag_nombre_banco` (`manag_nombre_banco`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_mantenimientos_agregar_bancos`
+--
+
+LOCK TABLES `tbl_mantenimientos_agregar_bancos` WRITE;
+/*!40000 ALTER TABLE `tbl_mantenimientos_agregar_bancos` DISABLE KEYS */;
+INSERT INTO `tbl_mantenimientos_agregar_bancos` VALUES (1,111,'Banco industrial',1),(2,222,'Banrural',1);
+/*!40000 ALTER TABLE `tbl_mantenimientos_agregar_bancos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_mantenimientos_agregar_cuenta`
+--
+
+DROP TABLE IF EXISTS `tbl_mantenimientos_agregar_cuenta`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_mantenimientos_agregar_cuenta` (
+  `pk_manac_id_cuenta` int NOT NULL AUTO_INCREMENT,
+  `manac_numero_de_cuenta` int DEFAULT NULL,
+  `fk_manac_tipo_de_moneda` varchar(100) DEFAULT NULL,
+  `manac_tipo_de_cuenta` varchar(100) DEFAULT NULL,
+  `fk_manac_selec_banco` varchar(50) DEFAULT NULL,
+  `manac_alias` varchar(100) DEFAULT NULL,
+  `manac_status` int DEFAULT NULL,
+  PRIMARY KEY (`pk_manac_id_cuenta`),
+  UNIQUE KEY `manac_numero_de_cuenta` (`manac_numero_de_cuenta`),
+  KEY `fk_manac_selec_banco` (`fk_manac_selec_banco`),
+  KEY `fk_manac_tipo_de_moneda` (`fk_manac_tipo_de_moneda`),
+  CONSTRAINT `tbl_mantenimientos_agregar_cuenta_ibfk_1` FOREIGN KEY (`fk_manac_selec_banco`) REFERENCES `tbl_mantenimientos_agregar_bancos` (`manag_nombre_banco`),
+  CONSTRAINT `tbl_mantenimientos_agregar_cuenta_ibfk_2` FOREIGN KEY (`fk_manac_tipo_de_moneda`) REFERENCES `tbl_monedabanco` (`mon_nomMoneda`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_mantenimientos_agregar_cuenta`
+--
+
+LOCK TABLES `tbl_mantenimientos_agregar_cuenta` WRITE;
+/*!40000 ALTER TABLE `tbl_mantenimientos_agregar_cuenta` DISABLE KEYS */;
+INSERT INTO `tbl_mantenimientos_agregar_cuenta` VALUES (1,12312321,NULL,'Debito','Banco industrial','Extra',NULL);
+/*!40000 ALTER TABLE `tbl_mantenimientos_agregar_cuenta` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_mantenimientos_tipo_movimiento`
+--
+
+DROP TABLE IF EXISTS `tbl_mantenimientos_tipo_movimiento`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_mantenimientos_tipo_movimiento` (
+  `pk_movtm_id_transaccion` int NOT NULL AUTO_INCREMENT,
+  `movtm_transacciones_existentes` varchar(100) DEFAULT NULL,
+  `movtm_status` int DEFAULT NULL,
+  `movtm_valor_transaccion` int NOT NULL,
+  PRIMARY KEY (`pk_movtm_id_transaccion`),
+  UNIQUE KEY `movtm_transacciones_existentes` (`movtm_transacciones_existentes`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_mantenimientos_tipo_movimiento`
+--
+
+LOCK TABLES `tbl_mantenimientos_tipo_movimiento` WRITE;
+/*!40000 ALTER TABLE `tbl_mantenimientos_tipo_movimiento` DISABLE KEYS */;
+INSERT INTO `tbl_mantenimientos_tipo_movimiento` VALUES (1,'Debito',1,0),(2,'Credito',1,1);
+/*!40000 ALTER TABLE `tbl_mantenimientos_tipo_movimiento` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `tbl_marcas`
 --
 
@@ -717,6 +838,59 @@ LOCK TABLES `tbl_modulos` WRITE;
 /*!40000 ALTER TABLE `tbl_modulos` DISABLE KEYS */;
 INSERT INTO `tbl_modulos` VALUES (1000,'SEGURIDAD','Seguridad',1),(8000,'PROTOTIPO ERP','ERP',1);
 /*!40000 ALTER TABLE `tbl_modulos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_moneda`
+--
+
+DROP TABLE IF EXISTS `tbl_moneda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_moneda` (
+  `mon_id_moneda` int NOT NULL AUTO_INCREMENT,
+  `fk_mon_nombre_moneda` varchar(50) DEFAULT NULL,
+  `mon_Cant_moneda` float DEFAULT NULL,
+  `mon_status` int DEFAULT NULL,
+  PRIMARY KEY (`mon_id_moneda`),
+  KEY `fk_mon_nombre_moneda` (`fk_mon_nombre_moneda`),
+  CONSTRAINT `tbl_moneda_ibfk_1` FOREIGN KEY (`fk_mon_nombre_moneda`) REFERENCES `tbl_registro_moneda` (`regmon_Tipo_moneda`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_moneda`
+--
+
+LOCK TABLES `tbl_moneda` WRITE;
+/*!40000 ALTER TABLE `tbl_moneda` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_moneda` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_monedabanco`
+--
+
+DROP TABLE IF EXISTS `tbl_monedabanco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_monedabanco` (
+  `pk_mon_id_moneda` int NOT NULL AUTO_INCREMENT,
+  `mon_nomMoneda` varchar(100) DEFAULT NULL,
+  `mon_status` int DEFAULT NULL,
+  PRIMARY KEY (`pk_mon_id_moneda`),
+  UNIQUE KEY `mon_nomMoneda` (`mon_nomMoneda`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_monedabanco`
+--
+
+LOCK TABLES `tbl_monedabanco` WRITE;
+/*!40000 ALTER TABLE `tbl_monedabanco` DISABLE KEYS */;
+INSERT INTO `tbl_monedabanco` VALUES (1,'Quetzales',NULL),(2,'Dólares',NULL);
+/*!40000 ALTER TABLE `tbl_monedabanco` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -771,7 +945,7 @@ CREATE TABLE `tbl_movimientodebancos` (
   KEY `cuenta_movimientoBanco` (`cuenta_movimientoBanco`),
   CONSTRAINT `tbl_movimientodebancos_ibfk_1` FOREIGN KEY (`tipo_movimientoBanco`) REFERENCES `tbl_conceptomovimientodebancos` (`id_conceptoMovimiento`),
   CONSTRAINT `tbl_movimientodebancos_ibfk_2` FOREIGN KEY (`cuenta_movimientoBanco`) REFERENCES `tbl_cuentabancaria` (`id_cuentaBancaria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -780,6 +954,7 @@ CREATE TABLE `tbl_movimientodebancos` (
 
 LOCK TABLES `tbl_movimientodebancos` WRITE;
 /*!40000 ALTER TABLE `tbl_movimientodebancos` DISABLE KEYS */;
+INSERT INTO `tbl_movimientodebancos` VALUES (1,1,'2024-04-11',500,1),(2,2,'2024-04-11',500,2);
 /*!40000 ALTER TABLE `tbl_movimientodebancos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -815,17 +990,21 @@ DROP TABLE IF EXISTS `tbl_movimientosbancarios`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tbl_movimientosbancarios` (
-  `id_movimientoBancario` int NOT NULL AUTO_INCREMENT,
-  `id_cuentaAsociada` int NOT NULL,
-  `tipo_movimiento` varchar(50) NOT NULL,
-  `monto_movimiento` double NOT NULL,
-  `fecha_movimiento` date NOT NULL,
-  `estado_movimiento` varchar(20) NOT NULL,
-  `efecto_movimiento` varchar(10) NOT NULL,
-  PRIMARY KEY (`id_movimientoBancario`),
-  KEY `id_cuentaAsociada` (`id_cuentaAsociada`),
-  CONSTRAINT `tbl_movimientosbancarios_ibfk_1` FOREIGN KEY (`id_cuentaAsociada`) REFERENCES `tbl_cuentabancaria` (`id_cuentaBancaria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `pk_movban_id_transaccion` int NOT NULL AUTO_INCREMENT,
+  `movban_valor_transaccion` float NOT NULL,
+  `movban_descripcion_transaccion` varchar(100) DEFAULT NULL,
+  `fk_movban_num_cuenta` int DEFAULT NULL,
+  `fk_movban_tipo_transaccion` varchar(50) DEFAULT NULL,
+  `fk_movban_valorTrans` int NOT NULL,
+  `movban_status` int DEFAULT NULL,
+  `movban_fecha_de_ingreso` datetime DEFAULT NULL,
+  `manag_status_conciliacion` int NOT NULL,
+  PRIMARY KEY (`pk_movban_id_transaccion`),
+  KEY `fk_movban_num_cuenta` (`fk_movban_num_cuenta`),
+  KEY `fk_movban_tipo_transaccion` (`fk_movban_tipo_transaccion`),
+  CONSTRAINT `tbl_movimientosbancarios_ibfk_1` FOREIGN KEY (`fk_movban_num_cuenta`) REFERENCES `tbl_mantenimientos_agregar_cuenta` (`manac_numero_de_cuenta`),
+  CONSTRAINT `tbl_movimientosbancarios_ibfk_2` FOREIGN KEY (`fk_movban_tipo_transaccion`) REFERENCES `tbl_mantenimientos_tipo_movimiento` (`movtm_transacciones_existentes`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1006,7 +1185,7 @@ CREATE TABLE `tbl_proveedor` (
   `nit_prov` varchar(20) NOT NULL,
   `estado_prov` varchar(45) NOT NULL,
   PRIMARY KEY (`id_prov`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1015,8 +1194,35 @@ CREATE TABLE `tbl_proveedor` (
 
 LOCK TABLES `tbl_proveedor` WRITE;
 /*!40000 ALTER TABLE `tbl_proveedor` DISABLE KEYS */;
-INSERT INTO `tbl_proveedor` VALUES (1,'2otto','zona2','14124','12412','activo'),(2,'a','a','a','12','Inactivo'),(3,'1','1','1','1','Inactivo'),(6,'1a','as','s','12','Inactivo'),(7,'adsa','adasd','12312','123123','Inactivo'),(8,'asdas','ada','adsa','31231','Activo');
+INSERT INTO `tbl_proveedor` VALUES (1,'2otto','zona2','14124','12412','activo'),(2,'a','a','a','12','Inactivo'),(3,'1','1','1','1','Inactivo'),(6,'1a','as','s','12','Inactivo'),(7,'adsa','adasd','12312','123123','Inactivo'),(8,'asdas','ada','adsa','31231','Activo'),(9,'Jose','zona2','1241421','12412','Inactivo');
 /*!40000 ALTER TABLE `tbl_proveedor` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_registro_moneda`
+--
+
+DROP TABLE IF EXISTS `tbl_registro_moneda`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_registro_moneda` (
+  `regmon_id_Moneda` int NOT NULL AUTO_INCREMENT,
+  `regmon_Tipo_moneda` varchar(100) DEFAULT NULL,
+  `regmon_Valor_moneda` float DEFAULT NULL,
+  `regmon_fecha_de_registro` datetime DEFAULT NULL,
+  `regmon_status` int DEFAULT NULL,
+  PRIMARY KEY (`regmon_id_Moneda`),
+  UNIQUE KEY `regmon_Tipo_moneda` (`regmon_Tipo_moneda`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_registro_moneda`
+--
+
+LOCK TABLES `tbl_registro_moneda` WRITE;
+/*!40000 ALTER TABLE `tbl_registro_moneda` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_registro_moneda` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -1112,13 +1318,13 @@ DROP TABLE IF EXISTS `tbl_transprov`;
 CREATE TABLE `tbl_transprov` (
   `id_transprov` int NOT NULL AUTO_INCREMENT,
   `nombre_transprov` varchar(45) NOT NULL,
-  `estado_transprov` int NOT NULL,
+  `estado_transprov` varchar(45) NOT NULL,
   `tipo_transprov` varchar(20) NOT NULL,
   `tbl_proveedor_id_prov` int NOT NULL,
   PRIMARY KEY (`id_transprov`),
   KEY `fk_tbl_transprov_tbl_proveedor1_idx` (`tbl_proveedor_id_prov`),
   CONSTRAINT `fk_tbl_transprov_tbl_proveedor1` FOREIGN KEY (`tbl_proveedor_id_prov`) REFERENCES `tbl_proveedor` (`id_prov`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1127,6 +1333,7 @@ CREATE TABLE `tbl_transprov` (
 
 LOCK TABLES `tbl_transprov` WRITE;
 /*!40000 ALTER TABLE `tbl_transprov` DISABLE KEYS */;
+INSERT INTO `tbl_transprov` VALUES (2,'sd','Inactivo','Abono',2);
 /*!40000 ALTER TABLE `tbl_transprov` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1171,10 +1378,11 @@ DROP TABLE IF EXISTS `tbl_vendedor`;
 CREATE TABLE `tbl_vendedor` (
   `id_vendedor` int NOT NULL AUTO_INCREMENT,
   `nombre_vend` varchar(45) NOT NULL,
+  `apellido_vend` varchar(45) NOT NULL,
   `telefono_vend` varchar(45) NOT NULL,
   `estado_vend` varchar(45) NOT NULL,
   PRIMARY KEY (`id_vendedor`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1183,7 +1391,7 @@ CREATE TABLE `tbl_vendedor` (
 
 LOCK TABLES `tbl_vendedor` WRITE;
 /*!40000 ALTER TABLE `tbl_vendedor` DISABLE KEYS */;
-INSERT INTO `tbl_vendedor` VALUES (1,'Marcos','123','acctivo'),(2,'David','512515','Activo');
+INSERT INTO `tbl_vendedor` VALUES (5,'Lucas','hernandez','12124','Activo'),(6,'david','carrix','1231','Activo'),(7,'a','a','a','Activo'),(8,'d','d','d','Activo'),(9,'v','v','v','Activo'),(10,'Otto','AventuraLopez','421231','Inactivo');
 /*!40000 ALTER TABLE `tbl_vendedor` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1216,6 +1424,41 @@ LOCK TABLES `tbl_ventaspedido` WRITE;
 /*!40000 ALTER TABLE `tbl_ventaspedido` DISABLE KEYS */;
 /*!40000 ALTER TABLE `tbl_ventaspedido` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary view structure for view `vista_clientes`
+--
+
+DROP TABLE IF EXISTS `vista_clientes`;
+/*!50001 DROP VIEW IF EXISTS `vista_clientes`*/;
+SET @saved_cs_client     = @@character_set_client;
+/*!50503 SET character_set_client = utf8mb4 */;
+/*!50001 CREATE VIEW `vista_clientes` AS SELECT 
+ 1 AS `ID_Cliente`,
+ 1 AS `Nombre`,
+ 1 AS `Apellido`,
+ 1 AS `Direccion`,
+ 1 AS `Correo`,
+ 1 AS `Telefono`*/;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `vista_clientes`
+--
+
+/*!50001 DROP VIEW IF EXISTS `vista_clientes`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8mb4 */;
+/*!50001 SET character_set_results     = utf8mb4 */;
+/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `vista_clientes` AS select `tbl_clientes`.`id_cliente` AS `ID_Cliente`,`tbl_clientes`.`nombre_cl` AS `Nombre`,`tbl_clientes`.`apellido_cl` AS `Apellido`,`tbl_clientes`.`direccion_cl` AS `Direccion`,`tbl_clientes`.`correo_cl` AS `Correo`,`tbl_clientes`.`telefono_cl` AS `Telefono` from `tbl_clientes` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -1226,4 +1469,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-04-12 12:06:54
+-- Dump completed on 2024-04-12 22:55:24

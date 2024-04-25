@@ -79,7 +79,12 @@ namespace CapaControladorERP
         {
             return sn.llenarCombo(columna1, tabla);
         }
+        // Otto Adrian Lopez Ventura
+        public DataTable BuscarVende(string tabla, string columna, string dato)
+        {
+            return sn.BuscarVendedor(tabla, columna, dato);
 
+        }
         // carlos enrique modulo bancos
         public DataTable Buscar(string tabla, string columna, string dato)
         {
@@ -95,6 +100,19 @@ namespace CapaControladorERP
         public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
+        }
+        // carlos enrique guzman cabrera
+        public DataTable llenartablabitacoraMB(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablabitacoraMB(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        // carlos enrique guzman cabrera
+        public DataTable BuscarMB(string strfiltro)
+        {
+            return sn.BuscarMB(strfiltro);
         }
 
         //Carol Chuy Modulo Compras
@@ -170,7 +188,93 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+        // Diego Antonio modulo de banco 
+
+        public void InsertarTipoMoneda(string TipoMoneda, string ValorMoneda, string estado)
+        {
+            sn.InsertarTipoMoneda(TipoMoneda, ValorMoneda, estado);
+        }
+
+        public DataTable LlenarTablaMoneda(string tabla)
+        {
+            return sn.LlenarTablaMoneda(tabla);
+        }
+
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuenta, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
+        {
+            sn.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuenta, tipoTransaccion, estado, valorTrans, estadoConciliacion);
+        }
 
 
+
+        public DataTable ObtenerCuentas()
+        {
+            return sn.ObtenerCuentas();
+        }
+
+        public decimal ObtenerSaldoTotal()
+        {
+            return sn.CalcularSaldoTotal();
+        }
+
+        public DataTable ObtenerTipoDeTransacciones()
+        {
+            return sn.TipoTransaccionBancaria();
+        }
+
+        public DataTable ObtenerTiposMoneda()
+        {
+            return sn.ObtenerTiposMoneda();
+        }
+
+        public DataTable ObtenerBancos()
+        {
+            return sn.ObtenerBancos();
+        }
+
+        public DataTable ObtenerTipoCuenta()
+        {
+            return sn.ObtenerTipoCuenta();
+        }
+
+
+        public DataTable valorTrans()
+        {
+            return sn.valorTransaccion();
+        }
+        public DataTable llenarTbl(string tabla)
+        {
+            return sn.LlenarTabla(tabla);
+        }
+        public int ObtenerValorTransaccion(string tipoTransaccion)
+        {
+            return sn.ObtenerValorTransaccion(tipoTransaccion);
+        }
+        // public DataTable ObtenerMonedaBanco()
+        // {
+        // Crea un DataTable para almacenar los datos de la tabla de moneda de banco
+        //  DataTable tablaMoneda = new DataTable();
+
+        // Realiza la conexión y la consulta
+        //using (OdbcConnection connection = new OdbcConnection("Dsn=HotelSConexion"))
+        //  {
+        // Abre la conexión
+        //  connection.Open();
+
+        // Define la consulta SQL para obtener la moneda de banco
+        //  string queryMoneda = "SELECT * FROM tbl_monedabanco";
+
+        // Crea un OdbcDataAdapter para ejecutar la consulta y llenar el DataTable
+        // using (OdbcDataAdapter adapterMoneda = new OdbcDataAdapter(queryMoneda, connection))
+        // {
+        //  adapterMoneda.Fill(tablaMoneda); // Llena el DataTable con los datos obtenidos de la consulta
+        //}
+        // }
+
+        // Retorna el DataTable con los datos de la moneda de banco
+        //  return tablaMoneda;
+        // }
     }
 }
+
+

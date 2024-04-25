@@ -18,7 +18,7 @@ namespace CapaVista_SisB
         {
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            navegador1.config("tbl_cuenta", this);
+            navegador1.config("tbl_cuenta", this, "8003");
         }
 
         private void label3_Click(object sender, EventArgs e)
