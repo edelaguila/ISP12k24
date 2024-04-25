@@ -66,3 +66,10 @@ C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Na
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.csproj.CopyComplete
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.dll
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\obj\Debug\CapaVistaNav.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_VistaConsultas.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_ControladorConsultas.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_VistaConsultas.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_ControladorConsultas.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Navegador\CapaVista\bin\Debug\Capa_Modelo.pdb
