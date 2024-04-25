@@ -40,11 +40,11 @@ C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Deb
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
 C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Mod.E9CF46D1.Up2Date
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
