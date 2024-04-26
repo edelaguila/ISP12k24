@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capavistaerp\\procesos\\cajaproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\procesos\\cajaproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\procesos\\cajaproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|c:\\users\\usuario\\documents\\github\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capavistaerp\\procesos\\movimientoproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capavistaerp\\procesos\\movimientoproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\procesos\\movimientoproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,8 +62,7 @@
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\CajaProveedor.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaVistaERP\\Procesos\\CajaProveedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T03:09:15.849Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-26T03:09:15.849Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "CapaVistaERP\\Procesos\\MovimientoProveedores.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAYwBcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T03:09:07.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-26T03:09:07.476Z"
             },
             {
               "$type": "Document",
@@ -87,8 +85,7 @@
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\MovimientoProveedores.cs [Dise\u00F1o]",
               "RelativeToolTip": "CapaVistaERP\\Procesos\\MovimientoProveedores.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T03:09:02.788Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-26T03:09:02.788Z"
             },
             {
               "$type": "Document",
