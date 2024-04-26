@@ -118,10 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_refrescartabla.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DwAACw8BkvkDpQAAAdJJREFUSEvl1UsobVEcx/HtTV7FSPLM4FIKCSmSIq+B7kC3dFFGBswwkCKhDI1E
+        GRgQpuRZigwMDCize7vlJiEMPPIK39/OqYMTe+/TGcivPoO9Yv/PWnut/zK+VWJQgz5MYBZj6EEpwuE4
+        EWjBLk5wjQc84h5XOMIcChEAW4nCCPTiO+jX1yEJsfiB31iACp6hEf6wnAIcYhrp8IOnBOEntqFi/bC8
+        fFqqIkSbT58nA5qtCvVCxX2SRGzgP4o14Cm5qIKtdX2TLNxgEO9mE4ZJHCBeAw6jb7eKFaRowBX98gYc
+        4wn6A30Tp2nFH+SZTy9JxRZUwEUHLxh2UoYOjENbfxSdqIUxDO0K9yJaNv2TnWjb63C6v+cCFTDioNlM
+        QcU0mIxI2ImWvQnuRbrxakW6cIl688lZ1Fr0TVVgE5rAq2h5NN1lBGrAYbKxg2q8Ow6hmId6lfmxHEbv
+        yYT6n8fk4xTqRWoVPonWtBmazQwSYCVq9ToflnuWCg1Ad8cacvBRF9aO2sctdBVYjtq1uqmanXrRItpQ
+        AvW4crRjHbq89vALtvteCNRNh7CEf9Dh0lKe4y90K6pYGrxprGYxLYNOtLZ5JXS3qzfpm3mz3b9UDOMZ
+        Mlhk1C4TPm0AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btn_buscar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAARoxJREFUeF7tnQeYZFW1tiXnjMIwCEiUrCTJIEGvAiqoSEZAEQOiKHBNiAFFjKgX
+        vAAADrwBlbxySQAARoxJREFUeF7tnQeYZFW1tiXnjMIwCEiUrCTJIEGvAiqoSEZAEQOiKHBNiAFFjKgX
         BMXAVbwSTJiQKIIoYZCMZERyzjiE//++1hqbmdXd1dVVO5zzvs/zPo9SPd1VZ6+z96kd1noRAAAAAACU
         xcxyMbm63EK+Rb5Dflh+Vn5T/lCeKs+Q58lL5LXyJnm/fHCYD8n/N53+b8N/xv/G/9a/w7/Lv9O/23/D
         f8t/03/b78Hvxe/J783v0e/V7xkAAABGYEG5mtxGvkt+Rv5Ani6vkHfJ5+T0A3bp+j37vfsz+LP4M/mz
