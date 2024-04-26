@@ -30,12 +30,10 @@ namespace CapaVistaERP.Mantenimientos
         private void InitializeComponent()
         {
             this.navegador1 = new CapaVista.Navegador();
-            this.txt_cantidadDisponible = new System.Windows.Forms.TextBox();
             this.txt_precioUnitario = new System.Windows.Forms.TextBox();
             this.txt_descripProducto = new System.Windows.Forms.TextBox();
             this.txt_nombreProducto = new System.Windows.Forms.TextBox();
             this.txt_codigoProducto = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,23 +44,20 @@ namespace CapaVistaERP.Mantenimientos
             this.label1 = new System.Windows.Forms.Label();
             this.cb_MarcaProd = new System.Windows.Forms.ComboBox();
             this.cb_LineaProd = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // navegador1
             // 
             this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
             this.navegador1.Name = "navegador1";
             this.navegador1.Size = new System.Drawing.Size(1001, 96);
             this.navegador1.TabIndex = 33;
-            // 
-            // txt_cantidadDisponible
-            // 
-            this.txt_cantidadDisponible.Location = new System.Drawing.Point(641, 266);
-            this.txt_cantidadDisponible.Name = "txt_cantidadDisponible";
-            this.txt_cantidadDisponible.Size = new System.Drawing.Size(168, 22);
-            this.txt_cantidadDisponible.TabIndex = 49;
             // 
             // txt_precioUnitario
             // 
@@ -70,6 +65,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_precioUnitario.Name = "txt_precioUnitario";
             this.txt_precioUnitario.Size = new System.Drawing.Size(168, 22);
             this.txt_precioUnitario.TabIndex = 48;
+            this.txt_precioUnitario.Tag = "precioUnitario_prod";
             // 
             // txt_descripProducto
             // 
@@ -77,6 +73,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_descripProducto.Name = "txt_descripProducto";
             this.txt_descripProducto.Size = new System.Drawing.Size(251, 22);
             this.txt_descripProducto.TabIndex = 47;
+            this.txt_descripProducto.Tag = "descripcion_prod";
             // 
             // txt_nombreProducto
             // 
@@ -84,6 +81,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_nombreProducto.Name = "txt_nombreProducto";
             this.txt_nombreProducto.Size = new System.Drawing.Size(185, 22);
             this.txt_nombreProducto.TabIndex = 44;
+            this.txt_nombreProducto.Tag = "nombre_prod";
             // 
             // txt_codigoProducto
             // 
@@ -91,16 +89,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_codigoProducto.Name = "txt_codigoProducto";
             this.txt_codigoProducto.Size = new System.Drawing.Size(185, 22);
             this.txt_codigoProducto.TabIndex = 43;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(454, 266);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 20);
-            this.label8.TabIndex = 42;
-            this.label8.Text = "Cantidad Disponible:";
+            this.txt_codigoProducto.Tag = "cod_producto";
             // 
             // label7
             // 
@@ -189,6 +178,7 @@ namespace CapaVistaERP.Mantenimientos
             this.cb_MarcaProd.Name = "cb_MarcaProd";
             this.cb_MarcaProd.Size = new System.Drawing.Size(185, 24);
             this.cb_MarcaProd.TabIndex = 52;
+            this.cb_MarcaProd.SelectedIndexChanged += new System.EventHandler(this.cb_MarcaProd_SelectedIndexChanged);
             // 
             // cb_LineaProd
             // 
@@ -197,20 +187,59 @@ namespace CapaVistaERP.Mantenimientos
             this.cb_LineaProd.Name = "cb_LineaProd";
             this.cb_LineaProd.Size = new System.Drawing.Size(185, 24);
             this.cb_LineaProd.TabIndex = 53;
+            this.cb_LineaProd.SelectedIndexChanged += new System.EventHandler(this.cb_LineaProd_SelectedIndexChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(496, 380);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 20);
+            this.label9.TabIndex = 54;
+            this.label9.Text = "Fecha Registro:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(12, 319);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(114, 22);
+            this.textBox2.TabIndex = 56;
+            this.textBox2.Tag = "tbl_marca_id_marca";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(12, 378);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(114, 22);
+            this.textBox3.TabIndex = 57;
+            this.textBox3.Tag = "tbl_linea_id_linea";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Location = new System.Drawing.Point(630, 371);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(274, 30);
+            this.dateTimePicker1.TabIndex = 68;
+            this.dateTimePicker1.Tag = "fecha_registro";
             // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 665);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.cb_LineaProd);
             this.Controls.Add(this.cb_MarcaProd);
-            this.Controls.Add(this.txt_cantidadDisponible);
             this.Controls.Add(this.txt_precioUnitario);
             this.Controls.Add(this.txt_descripProducto);
             this.Controls.Add(this.txt_nombreProducto);
             this.Controls.Add(this.txt_codigoProducto);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -231,12 +260,10 @@ namespace CapaVistaERP.Mantenimientos
         #endregion
 
         private CapaVista.Navegador navegador1;
-        private System.Windows.Forms.TextBox txt_cantidadDisponible;
         private System.Windows.Forms.TextBox txt_precioUnitario;
         private System.Windows.Forms.TextBox txt_descripProducto;
         private System.Windows.Forms.TextBox txt_nombreProducto;
         private System.Windows.Forms.TextBox txt_codigoProducto;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -247,5 +274,9 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cb_MarcaProd;
         private System.Windows.Forms.ComboBox cb_LineaProd;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
