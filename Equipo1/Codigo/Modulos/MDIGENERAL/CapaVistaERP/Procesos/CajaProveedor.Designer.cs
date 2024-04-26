@@ -44,6 +44,8 @@
             this.cmb_banco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_nitprov = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Idprov = new System.Windows.Forms.TextBox();
             this.txt_nombreprov = new System.Windows.Forms.TextBox();
@@ -220,6 +222,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_nitprov);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_Idprov);
             this.groupBox1.Controls.Add(this.txt_nombreprov);
@@ -237,6 +241,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
             // 
+            // txt_nitprov
+            // 
+            this.txt_nitprov.Enabled = false;
+            this.txt_nitprov.Location = new System.Drawing.Point(830, 52);
+            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nitprov.Name = "txt_nitprov";
+            this.txt_nitprov.Size = new System.Drawing.Size(184, 24);
+            this.txt_nitprov.TabIndex = 42;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(709, 50);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 20);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "NIT Proveedor";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -250,6 +274,7 @@
             // 
             // txt_Idprov
             // 
+            this.txt_Idprov.Enabled = false;
             this.txt_Idprov.Location = new System.Drawing.Point(162, 50);
             this.txt_Idprov.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Idprov.Name = "txt_Idprov";
@@ -288,10 +313,11 @@
             // 
             // txt_nombre
             // 
+            this.txt_nombre.Enabled = false;
             this.txt_nombre.Location = new System.Drawing.Point(375, 48);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(606, 24);
+            this.txt_nombre.Size = new System.Drawing.Size(309, 24);
             this.txt_nombre.TabIndex = 37;
             // 
             // dgv_pagoproveedor
@@ -303,6 +329,7 @@
             this.dgv_pagoproveedor.RowTemplate.Height = 24;
             this.dgv_pagoproveedor.Size = new System.Drawing.Size(943, 293);
             this.dgv_pagoproveedor.TabIndex = 38;
+            this.dgv_pagoproveedor.Tag = "tbl_facturaxpagar";
             // 
             // CajaProveedor
             // 
@@ -341,11 +368,13 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Idprov;
         private System.Windows.Forms.TextBox txt_nombreprov;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.DataGridView dgv_pagoproveedor;
+        public System.Windows.Forms.TextBox txt_Idprov;
+        public System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txt_nitprov;
     }
 }
