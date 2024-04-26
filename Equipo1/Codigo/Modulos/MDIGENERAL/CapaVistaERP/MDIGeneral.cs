@@ -325,5 +325,11 @@ namespace CapaVistaERP
             Abrir(new Mantenimientos.frm_mant_agregar_cuenta());
             hideSubMenu();
         }
+
+        private void btn_buscarCoti_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.BuscarCotizacion());
+            hideSubMenu();
+        }
     }
 }

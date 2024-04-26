@@ -73,6 +73,11 @@ namespace CapaControladorERP
         {
             return sn.ObtenerCodigoProducto(nombreProducto);
         }
+        //David Carrillo 0901-20-3201 
+        public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
+        {
+            return sn.BuscarDato(dato,tabla,DatoABuscar,igualA);
+        }
 
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)

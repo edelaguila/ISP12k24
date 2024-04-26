@@ -99,6 +99,12 @@
     <Compile Include="Procesos\BuscarCompras.Designer.cs">
       <DependentUpon>BuscarCompras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\BuscarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\BuscarCotizacion.Designer.cs">
+      <DependentUpon>BuscarCotizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\BuscarOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarCompras.resx">
       <DependentUpon>BuscarCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\BuscarCotizacion.resx">
+      <DependentUpon>BuscarCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarOrdenCompra.resx">
       <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
