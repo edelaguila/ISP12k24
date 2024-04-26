@@ -44,9 +44,58 @@ namespace CapaVistaERP.Procesos
         {
             // Actualiza los textbox en del formulario con los datos recibidos
             txt_numcompra.Text = idcompra;
+            int numero = int.Parse(idcompra);
             dateTimePickerVencimiento.Text = fechaV;
             txt_Idprov.Text = proveedorfact;
             ObtenerDatosProveedor(proveedorfact);
+            actualizardatagridviewFactura(numero);
+        }
+        public void actualizardatagridviewFactura(int codigo)
+        {
+            DataTable dt = controller.llenarTablasCondicionFactura(codigo);
+            // Filtras los datos que deseas mostrar en el DataGridView
+            DataTable filteredTable = FiltrarDatos(dt);
+            // Asignas el DataTable filtrado como origen de datos del DataGridView
+            dgv_detalle.DataSource = filteredTable;
+        }
+        private DataTable FiltrarDatos(DataTable dt)
+        {
+            DataTable filteredTable = new DataTable();
+
+            // Agregar las columnas necesarias al DataTable filtrado
+            filteredTable.Columns.Add("Cantidad", typeof(int));
+            filteredTable.Columns.Add("ID_Producto", typeof(int));
+            filteredTable.Columns.Add("Nombre", typeof(string));
+            filteredTable.Columns.Add("Descripción", typeof(string));
+            filteredTable.Columns.Add("Precio_Unitario", typeof(decimal));
+            filteredTable.Columns.Add("Total", typeof(double));
+
+            // Iterar sobre cada fila en el DataTable original
+            foreach (DataRow row in dt.Rows)
+            {
+                string codigoProducto = row["tbl_Producto_cod_producto"].ToString();
+                string nombre = controller.ObtenerNombre(codigoProducto);
+                string descripcion = controller.ObtenerDescripcion(codigoProducto);
+                decimal precioUnitario = controller.ObtenerPrecioUnitario(codigoProducto);
+
+                // Si se encontraron datos del producto, llenamos las columnas correspondientes en el DataTable filtrado
+                if (!string.IsNullOrEmpty(nombre) && !string.IsNullOrEmpty(descripcion))
+                {
+                    // Creamos una nueva fila en el DataTable filtrado
+                    DataRow newRow = filteredTable.NewRow();
+                    // Asignamos los valores a las columnas correspondientes en la nueva fila
+                    newRow["Cantidad"] = row["cantidad_compra_det"];
+                    newRow["ID_Producto"] = row["tbl_Producto_cod_producto"];
+                    newRow["Nombre"] = nombre;
+                    newRow["Descripción"] = descripcion;
+                    newRow["Precio_Unitario"] = precioUnitario;
+                    newRow["Total"] = row["totalPorProducto_det"];
+                    // Agregamos la nueva fila al DataTable filtrado
+                    filteredTable.Rows.Add(newRow);
+                }
+            }
+            // Devolvemos el DataTable filtrado
+            return filteredTable;
         }
         private void ObtenerDatosProveedor(string proveedorId)
         {
