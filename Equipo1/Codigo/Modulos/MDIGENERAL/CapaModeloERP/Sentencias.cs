@@ -9,7 +9,7 @@ using System.Security.Policy;
 
 namespace CapaModeloERP
 {
-    //David Carrillo 0901-20-3201 
+    //David Carrillo  0901-20-3201 
     public class Producto
     {
         public int CodProducto { get; set; }
