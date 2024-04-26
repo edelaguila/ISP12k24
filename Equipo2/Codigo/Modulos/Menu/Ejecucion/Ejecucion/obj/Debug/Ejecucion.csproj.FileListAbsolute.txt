@@ -176,16 +176,13 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorControlador.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_VistaConsultas.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaNav.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorModelo.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_ControladorConsultas.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorNav.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorReporteria.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_Modelo.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModeloNav.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModeloReporteria.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.Shared.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.ReportSource.dll
@@ -207,13 +204,10 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Vista_MenuHCV.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Vista_PrototipoMenu.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorControlador.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorModelo.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.dll.config
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorReporteria.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModeloNav.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModeloReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.Properties.Resources.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.GenerateResource.cache
@@ -489,3 +483,9 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Navegador2.0.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ControllerLayer.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ModelLayer.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Navegador2.0.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ControllerLayer.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ModelLayer.pdb

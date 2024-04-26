@@ -44,5 +44,13 @@ namespace CapaControlador_SisB
             }
         }
 
+        public void ComboFiller(ComboBox cmb, string tablename)
+        {
+            List<string> rows = this.provider.getSingleRowValues(tablename);
+            foreach (string row in rows) cmb.Items.Add(row);
+        }
     }
 }
+
+
+
