@@ -298,9 +298,9 @@ namespace CapaModeloERP
         }
 
         //David Carrillo 0901-20-3201 
-        public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
+        public DataTable BuscarDato(string ObtenerDato, string tabla, string DatodeColumna, int igualA)
         {
-            string consulta = $"SELECT {dato} FROM {tabla} WHERE {DatoABuscar} ={igualA} ";
+            string consulta = $"SELECT {ObtenerDato} FROM {tabla} WHERE {DatodeColumna} ={igualA} ";
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
 
             DataTable dt = new DataTable();
