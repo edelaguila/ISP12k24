@@ -296,6 +296,19 @@ namespace CapaModeloERP
 
             return codigoProducto;
         }
+
+        //David Carrillo 0901-20-3201 
+        public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
+        {
+            string consulta = $"SELECT {dato} FROM {tabla} WHERE {DatoABuscar} ={igualA} ";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt; 
+        }
+
         // Otto Adrian Lopez Ventura
         public DataTable BuscarVendedor(string tabla, string columna, string dato)
         {
@@ -844,9 +857,6 @@ namespace CapaModeloERP
                 }
             }
         }
-
-
-
         public DataTable ObtenerBancos()
         {
             using (OdbcConnection connection = con.connection())
@@ -884,7 +894,6 @@ namespace CapaModeloERP
                 }
             }
         }
-
         public int ObtenerValorTransaccion(string tipoTransaccion)
         {
             int valorTransaccion = 0; // Valor predeterminado (por ejemplo, pasivo)
@@ -908,10 +917,124 @@ namespace CapaModeloERP
 
             return valorTransaccion;
         }
+        //Carol Chuy Modulo Compras
+        public DataTable ObtenerProveedorPorID(int id)
+        {
+            DataTable proveedorData = new DataTable();
 
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT nombre_prov, domicilio_prov, telefono_prov FROM tbl_proveedor WHERE id_prov = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (OdbcDataAdapter adapter = new OdbcDataAdapter(cmd))
+                    {
+                        adapter.Fill(proveedorData);
+                    }
+                }
+            }
 
+            return proveedorData;
+        }
+        //Carol Chuy Modulo Compras
+        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, string entregara, double subtotal, double iva, double total, string notas, int codProv)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
 
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
 
+                    try
+                    {
+                        // Se inserta la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_ordenescompra(id_OrdComp,fechaSolicitid_OrdComp,fechaEntrega_OrdComp,deptoSolicitante_OrdComp,entregar_a_OrdComp,subTotal_OrdComp,iva_OrdComp,totalOrden_OrdComp,notas_OrdComp,tbl_proveedor_id_prov) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        cmd.Parameters.AddWithValue("@id_OrdComp", codigo);
+                        cmd.Parameters.AddWithValue("@fechaSolicitid_OrdComp", fechasolicitud);
+                        cmd.Parameters.AddWithValue("@fechaEntrega_OrdComp", fechaentrega);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante_OrdComp", depa);
+                        cmd.Parameters.AddWithValue("@entregar_a_OrdComp", entregara);
+                        cmd.Parameters.AddWithValue("@subTotal_OrdComp", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_OrdComp", iva);
+                        cmd.Parameters.AddWithValue("@totalOrden_OrdComp", total);
+                        cmd.Parameters.AddWithValue("@notas_OrdComp", notas);
+                        cmd.Parameters.AddWithValue("@tbl_proveedor_id_prov", codProv);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Modulo Compras
+        public void InsertarDetalleOrdenCompra(int codigoOrden, int codigo, int cantidad, double totalfila, int idproducto)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se inserta el detalle de la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_detalleordenescompra(id_detalle,OrdenesCompra_id_OrdComp,cantidad_det,totalProducto_det,tbl_Producto_cod_producto) VALUES (?,?, ?, ?, ?)";
+                        cmd.Parameters.AddWithValue("@id_detalle", codigoOrden);
+                        cmd.Parameters.AddWithValue("@OrdenesCompra_id_OrdComp", codigo);
+                        cmd.Parameters.AddWithValue("@cantidad_det", cantidad);
+                        cmd.Parameters.AddWithValue("@totalProducto_det", totalfila);
+                        cmd.Parameters.AddWithValue("@tbl_Producto_cod_producto", idproducto);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar el detalle de la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Modulo Compras
+        public OdbcDataAdapter llenarTablasCondicionFactura(int codigo)
+        {
+            string sql = "SELECT * FROM tbl_detallecompras WHERE tbl_Encabezado_Compras_id_EncComp=" + codigo + ";";
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+            return dataTable;
+        }
+        //Carol Chuy Modulo Compras
+        public string ObtenerNombre(string productId)
+        {
+            string descripcion = string.Empty;
+            using (OdbcConnection conn = con.connection())
+            {
+                string query = "SELECT nombre_prod FROM tbl_producto WHERE cod_producto = " + productId + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", productId);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        descripcion = result.ToString();
+                    }
+                }
+            }
+            return descripcion;
+        }
 
     }
 
