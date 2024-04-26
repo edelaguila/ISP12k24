@@ -91,11 +91,12 @@ namespace CapaControladorERP
 
         }
         // Otto Adrian Lopez Ventura
-        public DataTable BuscarCotiza(string tabla, string columna, string dato)
+        public DataTable BuscarCotizacion(string tabla, string columna, string dato)
         {
-            return sn.BuscarCotizacion(tabla, columna, dato);
+            return sn.BuscarVendedor(tabla, columna, dato);
 
         }
+
 
         // carlos enrique modulo bancos
         public DataTable Buscar(string tabla, string columna, string dato)

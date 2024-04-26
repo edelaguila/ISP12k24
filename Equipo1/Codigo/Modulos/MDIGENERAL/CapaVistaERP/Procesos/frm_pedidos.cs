@@ -60,6 +60,35 @@ namespace CapaVistaERP.Procesos
             }
         }
 
+        private void buscarCotizacion(int idCotizacion)
+        {
+            // Agrega un mensaje para verificar que se está llamando al método buscarVendedor
+            MessageBox.Show("Buscando vendedor...");
+
+            // Intenta obtener los datos del vendedor desde la base de datos
+            DataTable dtCotizacion = cn.BuscarCotizacion("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", idCotizacion.ToString());
+
+            // Verifica si se encontraron resultados
+            if (dtCotizacion.Rows.Count > 0)
+            {
+                // Muestra los datos del primer vendedor encontrado
+                DataRow row = dtCotizacion.Rows[0];
+                MessageBox.Show($"Nombre del vendedor: {row["id_detalle_cotizacion"]}, Cliente: {row["tbl_clientes_id_cliente"]}, Cantidad: {row["cantidad_coti"]}, Numero: {row["tbl_cotizaciones_No_Cotizacion"]}, Producto: {row["tbl_producto_cod_producto"]}, Total: {row["total_detCoti"]}");
+
+                // Asigna los datos a los cuadros de texto
+                txt_nombre.Text = row["tbl_clientes_id_cliente"].ToString();
+                txt_cantidad.Text = row["cantidad_coti"].ToString();
+                txt_precio.Text = row["tbl_cotizaciones_No_Cotizacion"].ToString();
+                txt_descripcion.Text = row["tbl_producto_cod_producto"].ToString();
+                txt_total.Text = row["total_detCoti"].ToString();
+            }
+            else
+            {
+                // Muestra un mensaje si no se encontraron resultados
+                MessageBox.Show("Vendedor no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
 
         private void btn_buscar_Click(object sender, EventArgs e)
         {
@@ -79,18 +108,18 @@ namespace CapaVistaERP.Procesos
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int idVendedor;
-            if (!int.TryParse(txt_id_cotizacion.Text, out idVendedor))
+            int idCotizacion;
+            if (!int.TryParse(txt_id_cotizacion.Text, out idCotizacion))
             {
                 MessageBox.Show("Ingrese un ID de cotizacion valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             // Agrega un mensaje para verificar que se obtiene el ID del vendedor correctamente
-            MessageBox.Show($"ID de cotizacion: {idVendedor}");
+            MessageBox.Show($"ID de cotizacion: {idCotizacion}");
 
             // Llama al método buscarVendedor
-            buscarVendedor(idVendedor);
+            buscarCotizacion(idCotizacion);
         }
     }
 }

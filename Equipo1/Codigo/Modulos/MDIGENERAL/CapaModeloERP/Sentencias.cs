@@ -321,6 +321,7 @@ namespace CapaModeloERP
             return dt;
         }
         // Otto Adrian Lopez Ventura
+
         public DataTable BuscarCotizacion(string tabla, string columna, string dato)
         {
             string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}'";

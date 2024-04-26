@@ -55,19 +55,19 @@ namespace CapaVistaERP.Procesos
             this.button1 = new System.Windows.Forms.Button();
             this.txt_id_cotizacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txt_precio = new System.Windows.Forms.TextBox();
+            this.txt_cantidad = new System.Windows.Forms.TextBox();
+            this.txt_total = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txt_descripcion = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -290,19 +290,19 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.txt_id_cotizacion);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.txt_precio);
+            this.groupBox1.Controls.Add(this.txt_cantidad);
+            this.groupBox1.Controls.Add(this.txt_total);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.txt_descripcion);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label20);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Location = new System.Drawing.Point(49, 375);
             this.groupBox1.Name = "groupBox1";
@@ -359,35 +359,35 @@ namespace CapaVistaERP.Procesos
             this.label1.TabIndex = 127;
             this.label1.Text = "No. Cotizacion";
             // 
-            // textBox2
+            // txt_precio
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(833, 124);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(234, 34);
-            this.textBox2.TabIndex = 126;
-            this.textBox2.Tag = "emp_cargo";
+            this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precio.Location = new System.Drawing.Point(833, 124);
+            this.txt_precio.Name = "txt_precio";
+            this.txt_precio.ReadOnly = true;
+            this.txt_precio.Size = new System.Drawing.Size(234, 34);
+            this.txt_precio.TabIndex = 126;
+            this.txt_precio.Tag = "emp_cargo";
             // 
-            // textBox1
+            // txt_cantidad
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(833, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(234, 34);
-            this.textBox1.TabIndex = 125;
-            this.textBox1.Tag = "emp_cargo";
+            this.txt_cantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cantidad.Location = new System.Drawing.Point(833, 185);
+            this.txt_cantidad.Name = "txt_cantidad";
+            this.txt_cantidad.ReadOnly = true;
+            this.txt_cantidad.Size = new System.Drawing.Size(234, 34);
+            this.txt_cantidad.TabIndex = 125;
+            this.txt_cantidad.Tag = "emp_cargo";
             // 
-            // textBox12
+            // txt_total
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(833, 259);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(234, 34);
-            this.textBox12.TabIndex = 124;
-            this.textBox12.Tag = "emp_cargo";
+            this.txt_total.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_total.Location = new System.Drawing.Point(833, 259);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.ReadOnly = true;
+            this.txt_total.Size = new System.Drawing.Size(234, 34);
+            this.txt_total.TabIndex = 124;
+            this.txt_total.Tag = "emp_cargo";
             // 
             // label25
             // 
@@ -409,15 +409,15 @@ namespace CapaVistaERP.Procesos
             this.label24.TabIndex = 122;
             this.label24.Text = "Precio Unitario";
             // 
-            // textBox11
+            // txt_descripcion
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(331, 249);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(234, 34);
-            this.textBox11.TabIndex = 121;
-            this.textBox11.Tag = "emp_nombre";
+            this.txt_descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_descripcion.Location = new System.Drawing.Point(331, 249);
+            this.txt_descripcion.Name = "txt_descripcion";
+            this.txt_descripcion.ReadOnly = true;
+            this.txt_descripcion.Size = new System.Drawing.Size(234, 34);
+            this.txt_descripcion.TabIndex = 121;
+            this.txt_descripcion.Tag = "emp_nombre";
             // 
             // label18
             // 
@@ -478,15 +478,15 @@ namespace CapaVistaERP.Procesos
             this.label23.TabIndex = 91;
             this.label23.Text = "No. Pedido";
             // 
-            // textBox9
+            // txt_nombre
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(326, 180);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(234, 34);
-            this.textBox9.TabIndex = 90;
-            this.textBox9.Tag = "emp_nombre";
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(326, 180);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.ReadOnly = true;
+            this.txt_nombre.Size = new System.Drawing.Size(234, 34);
+            this.txt_nombre.TabIndex = 90;
+            this.txt_nombre.Tag = "emp_nombre";
             // 
             // textBox10
             // 
@@ -569,17 +569,17 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txt_descripcion;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_id_cotizacion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_precio;
+        private System.Windows.Forms.TextBox txt_cantidad;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
