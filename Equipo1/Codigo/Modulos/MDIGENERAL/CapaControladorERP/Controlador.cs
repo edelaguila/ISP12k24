@@ -30,6 +30,14 @@ namespace CapaControladorERP
             return table;
         }
 
+        public DataTable filtrardatos(string tabla, string columna, string dato) 
+        { 
+            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {

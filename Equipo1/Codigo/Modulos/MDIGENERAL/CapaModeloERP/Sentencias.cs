@@ -38,6 +38,13 @@ namespace CapaModeloERP
             return datos;
         }
 
+        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}';";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+            return datos;
+        }
+
         //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
         {

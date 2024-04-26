@@ -12,6 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaVistaERP.Procesos
 {
+    //Andrea Corado 0901-20-2841
     public partial class MovimientoProveedores : Form
     {
         
@@ -55,14 +56,13 @@ namespace CapaVistaERP.Procesos
             string nombreprov = txt_nombreprov.Text;
             string nitprove = txt_nitprov.Text;
 
-            CajaProveedor CajaProveedor = new CajaProveedor();
+            CajaProveedor CajaProveedor = new CajaProveedor(idprove,nombreprov,nitprove);
             CajaProveedor.txt_Idprov.Text = idprove.ToString();
             CajaProveedor.txt_nombre.Text = nombreprov.ToString();
             CajaProveedor.txt_nitprov.Text = nitprove.ToString();
             CajaProveedor.Show();
-
-
         }
+
         private void dgv_proveedores_SelectionChanged(object sender, EventArgs e)
         {
             if (dgv_proveedores.SelectedRows.Count > 0)
