@@ -191,6 +191,18 @@ namespace CapaVistaERP.Procesos
         //boton para guardar la cotizacion
         private void button1_Click(object sender, EventArgs e)
         {
+            string nombre_cl = txt_nombre_cl.Text;
+            string apellido_cl = txt_apellido_cl.Text;
+            string direccion_cl = txt_direccion_cl.Text;
+            string correo_cl = txt_correo_cl.Text;
+            string telefono_cl = txt_telefono_cl.Text;
+            cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
+
+            MessageBox.Show("Datos Guardados prosiga con su cotizacion");
+
+            cliente();
+            MessageBox.Show("Continuando");
+
             int no_coti = Convert.ToInt32(lblNoCoti.Text);
             string fechaini = dateTimePicker1.Text;
             string fechafin=dateTimePicker2.Text;
@@ -235,6 +247,8 @@ namespace CapaVistaERP.Procesos
             }
 
             MessageBox.Show("Detalles de cotización guardados correctamente.");
+            this.Close();
+            //this.Refresh();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
@@ -243,6 +257,7 @@ namespace CapaVistaERP.Procesos
             {
                 DataGridViewRow DGVfila = dataGridView1.SelectedRows[0];
                 dataGridView1.Rows.Remove(DGVfila);
+                ActualizarSubtotal();
             }
             else 
             {

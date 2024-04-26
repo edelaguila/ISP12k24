@@ -296,6 +296,19 @@ namespace CapaModeloERP
 
             return codigoProducto;
         }
+
+        //David Carrillo 0901-20-3201 
+        public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
+        {
+            string consulta = $"SELECT {dato} FROM {tabla} WHERE {DatoABuscar} ={igualA} ";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt; 
+        }
+
         // Otto Adrian Lopez Ventura
         public DataTable BuscarVendedor(string tabla, string columna, string dato)
         {
