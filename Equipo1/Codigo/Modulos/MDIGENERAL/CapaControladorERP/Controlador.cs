@@ -73,6 +73,11 @@ namespace CapaControladorERP
         {
             return sn.ObtenerCodigoProducto(nombreProducto);
         }
+        //David Carrillo 0901-20-3201 
+        public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
+        {
+            return sn.BuscarDato(dato,tabla,DatoABuscar,igualA);
+        }
 
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)
@@ -205,8 +210,6 @@ namespace CapaControladorERP
             sn.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuenta, tipoTransaccion, estado, valorTrans, estadoConciliacion);
         }
 
-
-
         public DataTable ObtenerCuentas()
         {
             return sn.ObtenerCuentas();
@@ -274,6 +277,36 @@ namespace CapaControladorERP
         // Retorna el DataTable con los datos de la moneda de banco
         //  return tablaMoneda;
         // }
+
+        //Carol Chuy Modulo Compras
+        public DataTable ObtenerProveedorPorID(int id)
+        {
+            return sn.ObtenerProveedorPorID(id);
+        }
+        //Carol Chuy Modulo Compras
+        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, string entregara, double subtotal, double iva, double total, string notas, int codProv)
+        {
+            sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, entregara, subtotal, iva, total, notas, codProv);
+        }
+        //Carol Chuy Modulo Compras
+        public void InsertarDetalleOrdenCompra(int codDetalle, int codigo, int cantidad, double totalfila, int idproducto)
+        {
+            sn.InsertarDetalleOrdenCompra(codDetalle, codigo, cantidad, totalfila, idproducto);
+        }
+        //Carol Chuy Modulo Compras
+        public DataTable llenarTablasCondicionFactura(int codigo)
+        {
+            OdbcDataAdapter dt = sn.llenarTablasCondicionFactura(codigo);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        //Carol Chuy Modulo Compras
+        public string ObtenerNombre(string productId)
+        {
+            return sn.ObtenerNombre(productId);
+        }
+
     }
 }
 

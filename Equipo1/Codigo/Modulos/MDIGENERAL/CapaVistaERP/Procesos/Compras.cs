@@ -21,6 +21,8 @@ namespace CapaVistaERP.Procesos
             controller = new Controlador();
             llenarprod();
             controller.CargarOpcionesOrden(cmb_orden);
+            cmb_igualsolicitado.Items.Add("Completa");
+            cmb_igualsolicitado.Items.Add("Incompleta");
             txt_numorden.Text = idord;
             dateTimePickerEntrega.Text = fechaE;
             dateTimePickerPedido.Text = fechaS;
