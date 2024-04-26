@@ -32,6 +32,8 @@ namespace CapaVistaERP.Procesos
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_apellido_vendedor = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txt_telefono_vendedor = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_estado_vendedor = new System.Windows.Forms.TextBox();
@@ -51,7 +53,7 @@ namespace CapaVistaERP.Procesos
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_id_cotizacion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -69,8 +71,6 @@ namespace CapaVistaERP.Procesos
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_apellido_vendedor = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -116,6 +116,26 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.TabIndex = 144;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
+            // 
+            // txt_apellido_vendedor
+            // 
+            this.txt_apellido_vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_apellido_vendedor.Location = new System.Drawing.Point(331, 173);
+            this.txt_apellido_vendedor.Name = "txt_apellido_vendedor";
+            this.txt_apellido_vendedor.ReadOnly = true;
+            this.txt_apellido_vendedor.Size = new System.Drawing.Size(234, 34);
+            this.txt_apellido_vendedor.TabIndex = 122;
+            this.txt_apellido_vendedor.Tag = "apellido_vend";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(20, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(189, 22);
+            this.label3.TabIndex = 121;
+            this.label3.Text = "Apellido_Vendedor";
             // 
             // txt_telefono_vendedor
             // 
@@ -268,7 +288,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_id_cotizacion);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
@@ -318,15 +338,16 @@ namespace CapaVistaERP.Procesos
             this.button1.TabIndex = 129;
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox3
+            // txt_id_cotizacion
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(190, 44);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 34);
-            this.textBox3.TabIndex = 128;
-            this.textBox3.Tag = "Pk_id_empleado";
+            this.txt_id_cotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_id_cotizacion.Location = new System.Drawing.Point(190, 44);
+            this.txt_id_cotizacion.Name = "txt_id_cotizacion";
+            this.txt_id_cotizacion.Size = new System.Drawing.Size(127, 34);
+            this.txt_id_cotizacion.TabIndex = 128;
+            this.txt_id_cotizacion.Tag = "tbl_cotizaciones_No_Cotizacion";
             // 
             // label1
             // 
@@ -382,7 +403,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(20, 258);
+            this.label24.Location = new System.Drawing.Point(590, 130);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(139, 22);
             this.label24.TabIndex = 122;
@@ -402,7 +423,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(590, 139);
+            this.label18.Location = new System.Drawing.Point(20, 257);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(116, 22);
             this.label18.TabIndex = 119;
@@ -494,26 +515,6 @@ namespace CapaVistaERP.Procesos
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 173);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 22);
-            this.label3.TabIndex = 121;
-            this.label3.Text = "Apellido_Vendedor";
-            // 
-            // txt_apellido_vendedor
-            // 
-            this.txt_apellido_vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_apellido_vendedor.Location = new System.Drawing.Point(331, 173);
-            this.txt_apellido_vendedor.Name = "txt_apellido_vendedor";
-            this.txt_apellido_vendedor.ReadOnly = true;
-            this.txt_apellido_vendedor.Size = new System.Drawing.Size(234, 34);
-            this.txt_apellido_vendedor.TabIndex = 122;
-            this.txt_apellido_vendedor.Tag = "apellido_vend";
-            // 
             // frm_pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -575,7 +576,7 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_id_cotizacion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;

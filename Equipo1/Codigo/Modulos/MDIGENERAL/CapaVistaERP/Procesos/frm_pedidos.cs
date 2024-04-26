@@ -76,6 +76,22 @@ namespace CapaVistaERP.Procesos
             // Llama al método buscarVendedor
             buscarVendedor(idVendedor);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int idVendedor;
+            if (!int.TryParse(txt_id_cotizacion.Text, out idVendedor))
+            {
+                MessageBox.Show("Ingrese un ID de cotizacion valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Agrega un mensaje para verificar que se obtiene el ID del vendedor correctamente
+            MessageBox.Show($"ID de cotizacion: {idVendedor}");
+
+            // Llama al método buscarVendedor
+            buscarVendedor(idVendedor);
+        }
     }
 }
 
