@@ -52,3 +52,9 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.dll
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
+C:\Users\oteke\OneDrive\Escritorio\GRUPO 1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
