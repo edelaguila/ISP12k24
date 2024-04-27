@@ -1044,6 +1044,27 @@ namespace CapaModeloERP
             return descripcion;
         }
 
+        // DIEGO DISPONIBLILIDAD DIARIA
+
+        public OdbcDataAdapter BuscarBanco(string nombreBanco, string estadoBanco)
+        {
+            Conexion con = new Conexion();
+            string query = "SELECT nombre_banco, estado_banco FROM tbl_banco WHERE nombre_banco = ? AND estado_banco = ?";
+
+            using (OdbcConnection connection = con.connection())
+            {
+                OdbcCommand command = new OdbcCommand(query, connection);
+                command.Parameters.AddWithValue("@nombreBanco", nombreBanco);
+                command.Parameters.AddWithValue("@estadoBanco", estadoBanco);
+
+                OdbcDataAdapter adapter = new OdbcDataAdapter(command);
+                return adapter;
+            }
+        }
+
+
+
+
     }
 
 }

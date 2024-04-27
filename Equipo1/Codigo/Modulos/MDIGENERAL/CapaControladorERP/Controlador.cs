@@ -323,6 +323,36 @@ namespace CapaControladorERP
             return sn.ObtenerNombre(productId);
         }
 
+        //Diego Marroquin DISPONIBLILIDAD DIARIA 
+        public DataTable BuscarBanco(string nombreBanco, string estadoBanco)
+        {
+            OdbcDataAdapter adapter = sn.BuscarBanco(nombreBanco, estadoBanco);
+            DataTable dt = new DataTable();
+
+            try
+            {
+                adapter.Fill(dt);
+            }
+            catch (OdbcException ex)
+            {
+                // Manejar excepciones de ODBC
+                Console.WriteLine("Error al buscar en la base de datos: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier otra excepción
+                Console.WriteLine("Error general: " + ex.Message);
+            }
+            finally
+            {
+                adapter.Dispose();
+            }
+
+            return dt;
+        }
+
+
+
     }
 }
 
