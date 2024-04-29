@@ -331,5 +331,23 @@ namespace CapaVistaERP
             Abrir(new Procesos.BuscarCotizacion());
             hideSubMenu();
         }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMarca());
+            hideSubMenu();
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmLinea());
+            hideSubMenu();
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmSucursales());
+            hideSubMenu();
+        }
     }
 }

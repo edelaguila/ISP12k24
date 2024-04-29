@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.Odbc;
 using CapaModeloERP;
 using System.Windows.Forms;
+using CapaModeloERP.clases;
 
 namespace CapaControladorERP
 {
@@ -352,8 +353,55 @@ namespace CapaControladorERP
         }
 
 
+        public ProductoM ObtenerProducto(string codigo)
+        {
+            List<ProductoM> productos = new List<ProductoM>();
 
+            if (productos == null || codigo.Length == 0) return null;
+
+            productos = sn.ObtenerProductos();
+
+            foreach (ProductoM prd in productos)
+            {
+                Console.WriteLine(prd.codigo + "--" + codigo);
+                if (Convert.ToInt32(prd.codigo) == Convert.ToInt32(codigo))
+                {
+                    return prd;
+                }
+            }
+            return null;
+        }
+
+        public void llenarComboSucursal(ComboBox cmb)
+        {
+            List<Sucursal> sucursales = new List<Sucursal>();
+            sucursales = sn.ObtenerSucursales();
+            foreach (Sucursal suc in sucursales)
+            {
+                cmb.Items.Add(suc.nombre);
+            }
+        }
+
+        public void llenarComboProducto(ComboBox cmb)
+        {
+            List<ProductoM> productos = new List<ProductoM>();
+            productos = sn.ObtenerProductos();
+            foreach (ProductoM prd in productos)
+            {
+                cmb.Items.Add(prd.nombre);
+            }
+        }
+
+        public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
+        {
+            sn.TrasladoProducto(idOrigen, idDestino, idProducto, cantidad);
+        }
     }
+
+
+
+
+
 }
 
 

@@ -69,7 +69,7 @@ namespace CapaVistaERP.Mantenimientos
             // 
             // txt_descripProducto
             // 
-            this.txt_descripProducto.Location = new System.Drawing.Point(640, 325);
+            this.txt_descripProducto.Location = new System.Drawing.Point(640, 268);
             this.txt_descripProducto.Name = "txt_descripProducto";
             this.txt_descripProducto.Size = new System.Drawing.Size(251, 22);
             this.txt_descripProducto.TabIndex = 47;
@@ -95,7 +95,7 @@ namespace CapaVistaERP.Mantenimientos
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(520, 325);
+            this.label7.Location = new System.Drawing.Point(520, 268);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 20);
             this.label7.TabIndex = 41;
@@ -160,12 +160,13 @@ namespace CapaVistaERP.Mantenimientos
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(947, 195);
             this.dataGridView1.TabIndex = 35;
+            this.dataGridView1.Tag = "tbl_producto";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(398, 143);
+            this.label1.Location = new System.Drawing.Point(413, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(176, 29);
             this.label1.TabIndex = 34;
@@ -193,7 +194,7 @@ namespace CapaVistaERP.Mantenimientos
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(496, 380);
+            this.label9.Location = new System.Drawing.Point(496, 323);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(128, 20);
             this.label9.TabIndex = 54;
@@ -218,10 +219,11 @@ namespace CapaVistaERP.Mantenimientos
             // dateTimePicker1
             // 
             this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(630, 371);
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(641, 321);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(274, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(274, 22);
             this.dateTimePicker1.TabIndex = 68;
             this.dateTimePicker1.Tag = "fecha_registro";
             // 
