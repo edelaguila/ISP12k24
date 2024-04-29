@@ -51,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\frmLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmLinea.Designer.cs">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.Designer.cs">
       <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMarca.Designer.cs">
+      <DependentUpon>frmMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frmMovimientoInventario.cs">
       <SubType>Form</SubType>
@@ -68,6 +80,12 @@
     </Compile>
     <Compile Include="Mantenimientos\frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmSucursales.Designer.cs">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.cs">
       <SubType>Form</SubType>
@@ -239,14 +257,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\frmLinea.resx">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoCuentaBancaria.resx">
       <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmMarca.resx">
+      <DependentUpon>frmMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMovimientoInventario.resx">
       <DependentUpon>frmMovimientoInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmSucursales.resx">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_mant_agregar_cuenta.resx">
       <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>

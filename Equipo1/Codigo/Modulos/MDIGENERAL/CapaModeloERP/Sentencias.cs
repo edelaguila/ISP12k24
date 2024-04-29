@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.Odbc;
 using System.Security.Policy;
-
+using CapaModeloERP.clases;
 namespace CapaModeloERP
 {
     //David Carrillo  0901-20-3201 
@@ -1061,6 +1061,85 @@ namespace CapaModeloERP
                 return adapter;
             }
         }
+
+        public List<ProductoM> ObtenerProductos()
+        {
+            List<ProductoM> productos = new List<ProductoM>();
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string query = "select * from tbl_producto";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        OdbcDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            int cod = reader.GetInt32(0);
+                            string fecha = reader.GetString(1);
+                            string nombre = reader.GetString(2);
+                            string descripcion = reader.GetString(3);
+                            double precio = reader.GetDouble(4);
+                            int marca = reader.GetInt32(5);
+                            int linea = reader.GetInt32(6);
+                            int cantidad = 0;
+                            ProductoM newPrd = new ProductoM(cod, nombre, descripcion, precio, marca, linea, cantidad);
+                            productos.Add(newPrd);
+                        }
+                    }
+                    Console.WriteLine("error");
+                }
+                con.disconnect(connection);
+            }
+            return productos;
+        }
+
+        public List<Sucursal> ObtenerSucursales()
+        {
+            List<Sucursal> sucursales = new List<Sucursal>();
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string query = "select * from tbl_sucursales";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        OdbcDataReader reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            string cod = reader.GetString(0);
+                            string nombre = reader.GetString(1);
+                            string dir = reader.GetString(2);
+                            string telefono = reader.GetString(3);
+                            string correo = reader.GetString(4);
+                            Sucursal suc = new Sucursal(cod, nombre, dir, telefono, correo);
+                            sucursales.Add(suc);
+                        }
+                    }
+                    Console.WriteLine("error");
+                }
+                con.disconnect(connection);
+            }
+            return sucursales;
+        }
+
+        public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string query = "CALL TransferirProducto('" + idOrigen + "','" + idDestino + "','" + idProducto + "','" + cantidad + "')";
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.ExecuteNonQuery();
+                    }
+                    Console.WriteLine("error");
+                }
+                con.disconnect(connection);
+            }
+        }
+
 
 
 

@@ -22,7 +22,6 @@ namespace CapaVistaERP.Mantenimientos
             CotiCombo();
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-      
         }
 
         public void CotiCombo()
