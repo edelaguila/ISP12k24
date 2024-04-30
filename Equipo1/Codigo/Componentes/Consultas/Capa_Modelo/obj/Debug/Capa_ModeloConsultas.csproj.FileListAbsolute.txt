@@ -1,0 +1,50 @@
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\Ingenieria Software\Nueva carpeta\proyectoads22023\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\CONSULTAS INTELIGENTES\proyectoads22023\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Consultas inteligentes\CONSULTAS INTELIGENTES\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CopyComplete
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\Capa_Modelo.pdb
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_ModeloConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Mod.E9CF46D1.Up2Date
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.dll
+C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Componentes\Consultas\Capa_Modelo\obj\Debug\Capa_Modelo.pdb

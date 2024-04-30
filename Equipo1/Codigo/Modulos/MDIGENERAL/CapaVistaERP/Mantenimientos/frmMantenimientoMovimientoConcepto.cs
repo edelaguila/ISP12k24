@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CapaVistaERP.Mantenimientos
-{
+{// carlos enrique guzman cabrera
     public partial class frmMantenimientoMovimientoConcepto : Form
     {
         public frmMantenimientoMovimientoConcepto()

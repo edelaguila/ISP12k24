@@ -45,8 +45,8 @@ namespace CapaVistaERP.Procesos
             this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_monto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_monto = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_efecto = new System.Windows.Forms.TextBox();
@@ -54,6 +54,9 @@ namespace CapaVistaERP.Procesos
             this.label2 = new System.Windows.Forms.Label();
             this.cb_movimiento = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txt_IDmovimiento = new System.Windows.Forms.TextBox();
+            this.txt_IDCUENTAB = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -65,8 +68,9 @@ namespace CapaVistaERP.Procesos
             this.btn_cancelarMovimiento.Name = "btn_cancelarMovimiento";
             this.btn_cancelarMovimiento.Size = new System.Drawing.Size(142, 51);
             this.btn_cancelarMovimiento.TabIndex = 31;
-            this.btn_cancelarMovimiento.Text = "Cancelar Movimiento";
+            this.btn_cancelarMovimiento.Text = "Salir y cancelar ";
             this.btn_cancelarMovimiento.UseVisualStyleBackColor = true;
+            this.btn_cancelarMovimiento.Click += new System.EventHandler(this.btn_cancelarMovimiento_Click);
             // 
             // btn_realizarMovimiento
             // 
@@ -169,8 +173,8 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.Controls.Add(this.dtp_fecha);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.txt_monto);
             this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.txt_monto);
             this.groupBox2.Location = new System.Drawing.Point(408, 115);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(373, 159);
@@ -181,7 +185,7 @@ namespace CapaVistaERP.Procesos
             // cb_cuenta
             // 
             this.cb_cuenta.FormattingEnabled = true;
-            this.cb_cuenta.Location = new System.Drawing.Point(156, 76);
+            this.cb_cuenta.Location = new System.Drawing.Point(156, 35);
             this.cb_cuenta.Name = "cb_cuenta";
             this.cb_cuenta.Size = new System.Drawing.Size(200, 24);
             this.cb_cuenta.TabIndex = 10;
@@ -198,7 +202,7 @@ namespace CapaVistaERP.Procesos
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 33);
+            this.label4.Location = new System.Drawing.Point(19, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(47, 17);
             this.label4.TabIndex = 8;
@@ -213,21 +217,21 @@ namespace CapaVistaERP.Procesos
             this.label6.TabIndex = 11;
             this.label6.Text = "Fecha";
             // 
-            // txt_monto
-            // 
-            this.txt_monto.Location = new System.Drawing.Point(156, 30);
-            this.txt_monto.Name = "txt_monto";
-            this.txt_monto.Size = new System.Drawing.Size(200, 22);
-            this.txt_monto.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 76);
+            this.label5.Location = new System.Drawing.Point(19, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Selecionar cuenta";
+            // 
+            // txt_monto
+            // 
+            this.txt_monto.Location = new System.Drawing.Point(156, 76);
+            this.txt_monto.Name = "txt_monto";
+            this.txt_monto.Size = new System.Drawing.Size(200, 22);
+            this.txt_monto.TabIndex = 7;
             // 
             // groupBox1
             // 
@@ -294,11 +298,42 @@ namespace CapaVistaERP.Procesos
             this.label1.TabIndex = 25;
             this.label1.Text = "tipo de movimiento";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(343, 418);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 51);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "ver movimientos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txt_IDmovimiento
+            // 
+            this.txt_IDmovimiento.Enabled = false;
+            this.txt_IDmovimiento.Location = new System.Drawing.Point(745, 446);
+            this.txt_IDmovimiento.Name = "txt_IDmovimiento";
+            this.txt_IDmovimiento.Size = new System.Drawing.Size(36, 22);
+            this.txt_IDmovimiento.TabIndex = 33;
+            this.txt_IDmovimiento.Visible = false;
+            // 
+            // txt_IDCUENTAB
+            // 
+            this.txt_IDCUENTAB.Enabled = false;
+            this.txt_IDCUENTAB.Location = new System.Drawing.Point(745, 418);
+            this.txt_IDCUENTAB.Name = "txt_IDCUENTAB";
+            this.txt_IDCUENTAB.Size = new System.Drawing.Size(36, 22);
+            this.txt_IDCUENTAB.TabIndex = 34;
+            this.txt_IDCUENTAB.Visible = false;
+            // 
             // frmMovimientoDeBancos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(813, 489);
+            this.Controls.Add(this.txt_IDCUENTAB);
+            this.Controls.Add(this.txt_IDmovimiento);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_cancelarMovimiento);
             this.Controls.Add(this.btn_realizarMovimiento);
             this.Controls.Add(this.groupBox3);
@@ -307,7 +342,9 @@ namespace CapaVistaERP.Procesos
             this.Controls.Add(this.cb_movimiento);
             this.Controls.Add(this.label1);
             this.Name = "frmMovimientoDeBancos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMovimientoDeBancos";
+            this.Load += new System.EventHandler(this.frmMovimientoDeBancos_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -346,5 +383,8 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cb_movimiento;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txt_IDmovimiento;
+        private System.Windows.Forms.TextBox txt_IDCUENTAB;
     }
 }

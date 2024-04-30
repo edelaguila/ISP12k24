@@ -17,6 +17,19 @@ namespace CapaVistaERP
         private string idmovpro = "";
         private string namemovpro = "";
         private string nitmovpro = "";
+        //Variables Carol Chuy Compras
+        private string id = "";
+        private string nombre = "";
+        private string domicilio = "";
+        private string telefono = "";
+        private string idord = "";
+        private string fechaS = "";
+        private string fechaE = "";
+        private string solicitante = "";
+        private string proveedor = "";
+        private string idcompra = "";
+        private string fechaV = "";
+        private string proveedorfact = "";
 
         public MDIGeneral()
         {
@@ -207,19 +220,19 @@ namespace CapaVistaERP
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.OrdenesdeCompra());
+            Abrir(new Procesos.OrdenesdeCompra(id, nombre, domicilio, telefono));
             hideSubMenu();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.Compras());
+            Abrir(new Procesos.Compras(idord, fechaS, fechaE, solicitante, proveedor));
             hideSubMenu();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.FacturaporPagar());
+            Abrir(new Procesos.FacturaporPagar(idcompra, fechaV, proveedorfact));
             hideSubMenu();
         }
 
@@ -304,6 +317,36 @@ namespace CapaVistaERP
         private void button29_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.frmMovimientoDeBancos());
+            hideSubMenu();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frm_mant_agregar_cuenta());
+            hideSubMenu();
+        }
+
+        private void btn_buscarCoti_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.BuscarCotizacion());
+            hideSubMenu();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmMarca());
+            hideSubMenu();
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmLinea());
+            hideSubMenu();
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {
+            Abrir(new Mantenimientos.frmSucursales());
             hideSubMenu();
         }
     }

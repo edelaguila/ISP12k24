@@ -36,7 +36,7 @@
     </Reference>
     <Reference Include="CapaVistaNav, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\EvaluacionIS2k24\Codigo\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
+      <HintPath>..\..\..\Componentes\Navegador\CapaVista\bin\Debug\CapaVistaNav.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="System" />
@@ -51,11 +51,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mantenimientos\frmLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmLinea.Designer.cs">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mantenimientos\frmMantenimientoCuentaBancaria.Designer.cs">
       <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmMarca.Designer.cs">
+      <DependentUpon>frmMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frmMovimientoInventario.cs">
       <SubType>Form</SubType>
@@ -68,6 +80,18 @@
     </Compile>
     <Compile Include="Mantenimientos\frmProductos.Designer.cs">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frmSucursales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frmSucursales.Designer.cs">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.Designer.cs">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\frm_Mant_Proveedor.cs">
       <SubType>Form</SubType>
@@ -92,6 +116,12 @@
     </Compile>
     <Compile Include="Procesos\BuscarCompras.Designer.cs">
       <DependentUpon>BuscarCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\BuscarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\BuscarCotizacion.Designer.cs">
+      <DependentUpon>BuscarCotizacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\BuscarOrdenCompra.cs">
       <SubType>Form</SubType>
@@ -171,6 +201,12 @@
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.Designer.cs">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\frmMovimientoDeBancos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,14 +257,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Mantenimientos\frmLinea.resx">
+      <DependentUpon>frmLinea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMantenimientoCuentaBancaria.resx">
       <DependentUpon>frmMantenimientoCuentaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmMarca.resx">
+      <DependentUpon>frmMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmMovimientoInventario.resx">
       <DependentUpon>frmMovimientoInventario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmProductos.resx">
       <DependentUpon>frmProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frmSucursales.resx">
+      <DependentUpon>frmSucursales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\frm_mant_agregar_cuenta.resx">
+      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
@@ -241,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarCompras.resx">
       <DependentUpon>BuscarCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\BuscarCotizacion.resx">
+      <DependentUpon>BuscarCotizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarOrdenCompra.resx">
       <DependentUpon>BuscarOrdenCompra.cs</DependentUpon>
@@ -280,6 +331,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
+      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
       <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>

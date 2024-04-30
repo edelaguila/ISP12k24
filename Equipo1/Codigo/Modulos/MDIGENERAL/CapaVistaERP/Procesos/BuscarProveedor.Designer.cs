@@ -47,6 +47,7 @@ namespace CapaVistaERP.Procesos
             this.btn_seleccionar.TabIndex = 34;
             this.btn_seleccionar.Text = "Seleccionar";
             this.btn_seleccionar.UseVisualStyleBackColor = true;
+            this.btn_seleccionar.Click += new System.EventHandler(this.btn_seleccionar_Click);
             // 
             // dgv_proveedores
             // 
@@ -81,13 +82,15 @@ namespace CapaVistaERP.Procesos
             this.btn_buscarProveedor.Size = new System.Drawing.Size(31, 25);
             this.btn_buscarProveedor.TabIndex = 31;
             this.btn_buscarProveedor.UseVisualStyleBackColor = false;
+            this.btn_buscarProveedor.Click += new System.EventHandler(this.btn_buscarProveedor_Click);
             // 
             // txt_Prov
             // 
             this.txt_Prov.Location = new System.Drawing.Point(193, 32);
             this.txt_Prov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Prov.Multiline = true;
             this.txt_Prov.Name = "txt_Prov";
-            this.txt_Prov.Size = new System.Drawing.Size(239, 22);
+            this.txt_Prov.Size = new System.Drawing.Size(239, 26);
             this.txt_Prov.TabIndex = 30;
             // 
             // BuscarProveedor

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
 namespace CapaVistaERP.Procesos
-{
+{// carlos enrique guzman cabrera
     public partial class frmMovimientoDeBancos : Form
     {
         Controlador cn = new Controlador();
@@ -22,14 +22,14 @@ namespace CapaVistaERP.Procesos
 
         public void LlenarComboTipoMovimiento()
         {
-            List<string> concepto = cn.llenarCombo("id_conceptoMovimiento", "tbl_conceptomovimientodebancos");
+            List<string> concepto = cn.llenarCombo("concepto_movimientoBanco", "tbl_conceptomovimientodebancos");
             cb_movimiento.Items.Clear();
             cb_movimiento.Items.AddRange(concepto.ToArray());
         }
 
         public void LlenarComboCuentaBancaria()
         {
-            List<string> concepto = cn.llenarCombo("id_cuentaBancaria", "tbl_cuentabancaria");
+            List<string> concepto = cn.llenarCombo("nombre_empresa", "tbl_cuentabancaria");
             cb_cuenta.Items.Clear();
             cb_cuenta.Items.AddRange(concepto.ToArray());
         }
@@ -39,7 +39,7 @@ namespace CapaVistaERP.Procesos
         {
             string tabla = "tbl_conceptomovimientodebancos";
 
-            string columna = "id_conceptoMovimiento";
+            string columna = "concepto_movimientoBanco";
             // string dato = cb_pasaporte.SelectedItem.ToString();
             string dato = (cb_movimiento.SelectedItem != null) ? cb_movimiento.SelectedItem.ToString() : string.Empty;
 
@@ -48,10 +48,11 @@ namespace CapaVistaERP.Procesos
             if (dt.Rows.Count > 0)
             {
 
-                MessageBox.Show("Datos Encontrados");
+              //  MessageBox.Show("Datos Encontrados");
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
+                txt_IDmovimiento.Text = row["id_conceptoMovimiento"].ToString();
                 txt_concepto.Text = row["concepto_movimientoBanco"].ToString();
                 txt_efecto.Text = row["efecto_movimientoBanco"].ToString();
 
@@ -66,7 +67,7 @@ namespace CapaVistaERP.Procesos
         {
             string tabla = "tbl_cuentabancaria";
 
-            string columna = "id_cuentaBancaria";
+            string columna = "nombre_empresa";
             // string dato = cb_pasaporte.SelectedItem.ToString();
             string dato = (cb_cuenta.SelectedItem != null) ? cb_cuenta.SelectedItem.ToString() : string.Empty;
 
@@ -75,10 +76,11 @@ namespace CapaVistaERP.Procesos
             if (dt.Rows.Count > 0)
             {
 
-                MessageBox.Show("Datos Encontrados");
+               // MessageBox.Show("Datos Encontrados");
                 DataRow row = dt.Rows[0]; // Tomamos la primera fila (si hay resultados)
 
                 // Llenamos los controles con los valores del resultado
+                txt_IDCUENTAB.Text = row["id_cuentaBancaria"].ToString();
                 txt_nombreCuenta.Text = row["nombre_empresa"].ToString();
                 txt_noCuenta.Text = row["numero_cuenta"].ToString();
                 txt_tipoCuenta.Text = row["tipo_cuenta"].ToString();
@@ -96,10 +98,10 @@ namespace CapaVistaERP.Procesos
             string tabla = "tbl_movimientodebancos";
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
-            valores.Add("tipo_movimientoBanco", int.Parse(cb_movimiento.SelectedItem.ToString()));
+            valores.Add("tipo_movimientoBanco", int.Parse(txt_IDmovimiento.Text));
             valores.Add("fecha_movimientoBanco", dtp_fecha.Value);
             valores.Add("monto_movimientoBanco", int.Parse(txt_monto.Text));
-            valores.Add("cuenta_movimientoBanco", int.Parse(cb_cuenta.SelectedItem.ToString()));
+            valores.Add("cuenta_movimientoBanco", int.Parse(txt_IDCUENTAB.Text));
 
 
             cn.GuardarDatos(tabla, valores);
@@ -111,7 +113,7 @@ namespace CapaVistaERP.Procesos
         {
             double monto = double.Parse(txt_monto.Text);
             bool esDeposito = (txt_efecto.Text == "+"); // Verificar si el texto es "+"
-            int idCuenta = int.Parse(cb_cuenta.SelectedItem.ToString());
+            int idCuenta = int.Parse(txt_IDCUENTAB.Text);
             bool resultado = cn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
 
             //if (resultado)
@@ -139,6 +141,43 @@ namespace CapaVistaERP.Procesos
             GuardarDatos();
             ActualizarSaldoCuentaBancaria();
             MessageBox.Show("Datos guadaddos y saldos actualizados exitosamente");
+        }
+
+        private async void btn_cancelarMovimiento_Click(object sender, EventArgs e)
+        {
+            // Mostrar un mensaje de confirmación
+            DialogResult result = MessageBox.Show("¿Estás seguro de que deseas salir? Todos los datos no guardados se eliminarán.", "Confirmación", MessageBoxButtons.YesNo);
+
+            // Si el usuario elige "Sí", cerrar la ventana; de lo contrario, mantenerla abierta.
+            if (result == DialogResult.Yes)
+            {
+                txt_concepto.Text = "";
+                txt_efecto.Text = "";
+                txt_IDmovimiento.Text = "";
+                txt_IDCUENTAB.Text = "";
+                txt_monto.Text = "";
+                txt_nombreCuenta.Text = "";
+                txt_tipoCuenta.Text = "";
+                txt_noCuenta.Text = "";
+                txt_estadoCuenta.Text = "";
+                cb_cuenta.SelectedIndex = -1;
+                cb_movimiento.SelectedIndex = -1;
+
+                await Task.Delay(500);
+                this.Close();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmBitacoraMovimientoDeBancos form2 = new frmBitacoraMovimientoDeBancos();
+            form2.Show();
+          
+        }
+
+        private void frmMovimientoDeBancos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

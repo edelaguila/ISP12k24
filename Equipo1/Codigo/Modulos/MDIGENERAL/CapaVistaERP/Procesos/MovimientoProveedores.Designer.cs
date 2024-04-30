@@ -31,14 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovimientoProveedores));
             this.btn_pagoproveedor = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_refrescartabla = new System.Windows.Forms.Button();
+            this.txt_nitprov = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.dgv_proveedores = new System.Windows.Forms.DataGridView();
             this.txt_nombreprov = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Idprov = new System.Windows.Forms.TextBox();
-            this.txt_nitprov = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).BeginInit();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_refrescartabla);
             this.groupBox1.Controls.Add(this.btn_pagoproveedor);
             this.groupBox1.Controls.Add(this.txt_nitprov);
             this.groupBox1.Controls.Add(this.label1);
@@ -76,6 +78,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
             // 
+            // btn_refrescartabla
+            // 
+            this.btn_refrescartabla.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_refrescartabla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_refrescartabla.BackgroundImage")));
+            this.btn_refrescartabla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_refrescartabla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refrescartabla.Location = new System.Drawing.Point(999, 50);
+            this.btn_refrescartabla.Name = "btn_refrescartabla";
+            this.btn_refrescartabla.Size = new System.Drawing.Size(33, 25);
+            this.btn_refrescartabla.TabIndex = 39;
+            this.btn_refrescartabla.UseVisualStyleBackColor = false;
+            this.btn_refrescartabla.Click += new System.EventHandler(this.btn_refrescartabla_Click);
+            // 
+            // txt_nitprov
+            // 
+            this.txt_nitprov.Location = new System.Drawing.Point(740, 50);
+            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nitprov.Name = "txt_nitprov";
+            this.txt_nitprov.Size = new System.Drawing.Size(184, 24);
+            this.txt_nitprov.TabIndex = 36;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(619, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 20);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "NIT Proveedor";
+            // 
             // dgv_proveedores
             // 
             this.dgv_proveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -86,6 +120,7 @@
             this.dgv_proveedores.Size = new System.Drawing.Size(943, 293);
             this.dgv_proveedores.TabIndex = 34;
             this.dgv_proveedores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_proveedores_CellContentClick);
+            this.dgv_proveedores.SelectionChanged += new System.EventHandler(this.dgv_proveedores_SelectionChanged);
             // 
             // txt_nombreprov
             // 
@@ -118,6 +153,7 @@
             this.btn_buscar.Size = new System.Drawing.Size(33, 25);
             this.btn_buscar.TabIndex = 21;
             this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // label2
             // 
@@ -137,25 +173,6 @@
             this.txt_Idprov.Name = "txt_Idprov";
             this.txt_Idprov.Size = new System.Drawing.Size(104, 24);
             this.txt_Idprov.TabIndex = 11;
-            // 
-            // txt_nitprov
-            // 
-            this.txt_nitprov.Location = new System.Drawing.Point(740, 50);
-            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nitprov.Name = "txt_nitprov";
-            this.txt_nitprov.Size = new System.Drawing.Size(184, 24);
-            this.txt_nitprov.TabIndex = 36;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(619, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 20);
-            this.label1.TabIndex = 35;
-            this.label1.Text = "NIT Proveedor";
             // 
             // MovimientoProveedores
             // 
@@ -184,5 +201,6 @@
         private System.Windows.Forms.TextBox txt_Idprov;
         private System.Windows.Forms.TextBox txt_nitprov;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_refrescartabla;
     }
 }
