@@ -586,7 +586,7 @@ namespace CapaVistaERP
             this.button14.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.button14.Size = new System.Drawing.Size(348, 67);
             this.button14.TabIndex = 27;
-            this.button14.Text = "MOVIMIENTO DE PROVEEDORES";
+            this.button14.Text = "OPERACIÓN CON PROVEEDORES";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Click += new System.EventHandler(this.button14_Click);
