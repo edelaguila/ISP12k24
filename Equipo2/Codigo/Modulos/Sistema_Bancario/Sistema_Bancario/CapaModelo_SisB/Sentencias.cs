@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
+using CapaModelo_SisB.Templates;
 
 
 namespace CapaModelo_SisB
@@ -190,6 +191,77 @@ namespace CapaModelo_SisB
 
             return valorTransaccion;
         }
+
+
+        public List<CuentaAmiga> getFriendAccount(int idReference)
+        {
+            List<CuentaAmiga> accounts = new List<CuentaAmiga>();
+            try
+            {
+                string query = "call ObtenerCuentasAmigas('" + idReference + "')";
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                OdbcDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    CuentaAmiga account = new CuentaAmiga(reader.GetInt32(0), reader.GetString(1), reader.GetString(2));
+                    accounts.Add(account);
+                }
+                return accounts;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+            return null;
+        }
+
+        public void addFriendAccount(int idReference, string accountFriend)
+        {
+            try
+            {
+                string query = "call AgregarCuentaAmiga('" + accountFriend + "', '" + idReference + "')";
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+        }
+
+        public Cuenta getCurrentAccount(int Id)
+        {
+            try
+            {
+                string query = "SELECT * FROM tbl_cuenta where cue_usuario = '" + Id + "';";
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                OdbcDataReader reader = cmd.ExecuteReader();
+                return new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6));
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+            return null;
+        }
+
+        public void makeDepositTransaction(int origin, int dest, double monto)
+        {
+            try
+            {
+                string query = "call transaccion_deposito('" + origin + "', '" + dest + "', '" + monto + "');";
+                Console.WriteLine(query);
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+        }
+
+
 
 
     }

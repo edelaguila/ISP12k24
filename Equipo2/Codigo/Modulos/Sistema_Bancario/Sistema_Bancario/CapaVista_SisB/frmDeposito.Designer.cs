@@ -31,8 +31,6 @@ namespace CapaVista_SisB
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmb_cuenta = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_cuenta = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,14 +38,12 @@ namespace CapaVista_SisB
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_monto = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmb_moneda = new System.Windows.Forms.ComboBox();
+            this.cmb_cuenta = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,36 +67,13 @@ namespace CapaVista_SisB
             this.panel1.Size = new System.Drawing.Size(220, 4);
             this.panel1.TabIndex = 1;
             // 
-            // cmb_cuenta
-            // 
-            this.cmb_cuenta.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmb_cuenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_cuenta.FormattingEnabled = true;
-            this.cmb_cuenta.Location = new System.Drawing.Point(67, 217);
-            this.cmb_cuenta.Name = "cmb_cuenta";
-            this.cmb_cuenta.Size = new System.Drawing.Size(252, 24);
-            this.cmb_cuenta.TabIndex = 46;
-            this.cmb_cuenta.Text = "Selecciona un tipo";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label3.Location = new System.Drawing.Point(64, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
-            this.label3.TabIndex = 45;
-            this.label3.Text = "Tipo de cuenta";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label4.Location = new System.Drawing.Point(64, 278);
+            this.label4.Location = new System.Drawing.Point(53, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(255, 13);
             this.label4.TabIndex = 47;
@@ -111,13 +84,14 @@ namespace CapaVista_SisB
             this.txt_cuenta.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.txt_cuenta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cuenta.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_cuenta.Location = new System.Drawing.Point(67, 305);
+            this.txt_cuenta.Location = new System.Drawing.Point(56, 135);
             this.txt_cuenta.Multiline = true;
             this.txt_cuenta.Name = "txt_cuenta";
             this.txt_cuenta.Size = new System.Drawing.Size(252, 30);
             this.txt_cuenta.TabIndex = 48;
             this.txt_cuenta.Tag = "Cantidad_a_retirar";
             this.txt_cuenta.Text = " Número de cuenta";
+            this.txt_cuenta.Enter += new System.EventHandler(this.txt_cuenta_Enter);
             // 
             // button1
             // 
@@ -126,22 +100,23 @@ namespace CapaVista_SisB
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(67, 366);
+            this.button1.Location = new System.Drawing.Point(56, 196);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 28);
+            this.button1.Size = new System.Drawing.Size(122, 28);
             this.button1.TabIndex = 49;
-            this.button1.Text = "Crear";
+            this.button1.Text = "Agregar Cuenta";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(57)))));
+            this.panel2.Controls.Add(this.cmb_cuenta);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txt_monto);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.comboBox2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label5);
@@ -161,8 +136,9 @@ namespace CapaVista_SisB
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 28);
             this.button2.TabIndex = 53;
-            this.button2.Text = "Crear";
+            this.button2.Text = "Depositar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -189,18 +165,17 @@ namespace CapaVista_SisB
             this.label8.TabIndex = 51;
             this.label8.Text = "Comentario";
             // 
-            // textBox1
+            // txt_monto
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(63, 219);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 26);
-            this.textBox1.TabIndex = 50;
-            this.textBox1.Tag = "Cantidad_a_retirar";
-            this.textBox1.Text = "Q. 100";
+            this.txt_monto.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_monto.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_monto.Location = new System.Drawing.Point(63, 219);
+            this.txt_monto.Multiline = true;
+            this.txt_monto.Name = "txt_monto";
+            this.txt_monto.Size = new System.Drawing.Size(252, 26);
+            this.txt_monto.TabIndex = 50;
+            this.txt_monto.Tag = "Cantidad_a_retirar";
             // 
             // label7
             // 
@@ -213,19 +188,6 @@ namespace CapaVista_SisB
             this.label7.Size = new System.Drawing.Size(96, 13);
             this.label7.TabIndex = 49;
             this.label7.Text = "Monto a debitar";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
-            this.comboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(63, 137);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(252, 24);
-            this.comboBox2.TabIndex = 46;
-            this.comboBox2.Text = "BI - Q. - 439124241865 Oliver Tzunun";
             // 
             // label6
             // 
@@ -260,25 +222,13 @@ namespace CapaVista_SisB
             this.label5.TabIndex = 2;
             this.label5.Text = "Transferencia ";
             // 
-            // label2
+            // cmb_cuenta
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label2.Location = new System.Drawing.Point(64, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 43;
-            this.label2.Text = "Moneda";
-            // 
-            // cmb_moneda
-            // 
-            this.cmb_moneda.FormattingEnabled = true;
-            this.cmb_moneda.Location = new System.Drawing.Point(67, 140);
-            this.cmb_moneda.Name = "cmb_moneda";
-            this.cmb_moneda.Size = new System.Drawing.Size(252, 21);
-            this.cmb_moneda.TabIndex = 51;
+            this.cmb_cuenta.FormattingEnabled = true;
+            this.cmb_cuenta.Location = new System.Drawing.Point(63, 143);
+            this.cmb_cuenta.Name = "cmb_cuenta";
+            this.cmb_cuenta.Size = new System.Drawing.Size(252, 21);
+            this.cmb_cuenta.TabIndex = 54;
             // 
             // frmDeposito
             // 
@@ -286,14 +236,10 @@ namespace CapaVista_SisB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cmb_moneda);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_cuenta);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmb_cuenta);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "frmDeposito";
@@ -309,22 +255,18 @@ namespace CapaVista_SisB
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmb_cuenta;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_cuenta;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_monto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ComboBox cmb_moneda;
+        private System.Windows.Forms.ComboBox cmb_cuenta;
     }
 }

@@ -13,10 +13,37 @@ namespace CapaControlador_SisB
     {
 
         public DataProvider provider;
+        public Sentencias sentence;
         public WidgetHelper()
         {
             this.provider = new DataProvider();
+            this.sentence = new Sentencias();
         }
+
+
+
+
+        public void manageAccountsCmb(ComboBox cmb, int idVariable)
+        {
+
+        }
+
+
+        public void fillAccountsCmb(ComboBox cmb, int ID)
+        {
+            List<CuentaAmiga> accounts = this.sentence.getFriendAccount(ID);
+            if (accounts.Count > 0)
+            {
+                foreach (CuentaAmiga acc in accounts)
+                {
+                    cmb.Items.Add(acc.numero + "-" + acc.cliente);
+                }
+            }
+            return;
+        }
+
+
+
 
         public void fillCliente(ComboBox cmb)
         {
@@ -26,7 +53,6 @@ namespace CapaControlador_SisB
                 cmb.Items.Add(cl.nombre);
             }
         }
-
         public void fillMoneda(ComboBox cmb)
         {
             List<Moneda> monedas = this.provider.getMonedas();
@@ -43,7 +69,6 @@ namespace CapaControlador_SisB
                 cmb.Items.Add(cuenta.name);
             }
         }
-
         public void ComboFiller(ComboBox cmb, string tablename)
         {
             List<string> rows = this.provider.getSingleRowValues(tablename);
