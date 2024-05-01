@@ -116,7 +116,7 @@ namespace CapaVistaERP
             this.panelMDI.Location = new System.Drawing.Point(369, 0);
             this.panelMDI.Margin = new System.Windows.Forms.Padding(4);
             this.panelMDI.Name = "panelMDI";
-            this.panelMDI.Size = new System.Drawing.Size(1149, 964);
+            this.panelMDI.Size = new System.Drawing.Size(1149, 929);
             this.panelMDI.TabIndex = 61;
             // 
             // MDI
@@ -133,7 +133,7 @@ namespace CapaVistaERP
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.Silver;
+            this.panelSideMenu.BackColor = System.Drawing.Color.MidnightBlue;
             this.panelSideMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelSideMenu.Controls.Add(this.btnsalir);
             this.panelSideMenu.Controls.Add(this.btnayuda);
@@ -151,7 +151,7 @@ namespace CapaVistaERP
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(369, 964);
+            this.panelSideMenu.Size = new System.Drawing.Size(369, 929);
             this.panelSideMenu.TabIndex = 60;
             // 
             // btnsalir
@@ -163,11 +163,11 @@ namespace CapaVistaERP
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.Transparent;
-            this.btnsalir.Location = new System.Drawing.Point(0, 2114);
+            this.btnsalir.Location = new System.Drawing.Point(0, 2454);
             this.btnsalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnsalir.Size = new System.Drawing.Size(348, 38);
+            this.btnsalir.Size = new System.Drawing.Size(348, 94);
             this.btnsalir.TabIndex = 13;
             this.btnsalir.Text = "SALIR";
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,11 +183,11 @@ namespace CapaVistaERP
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.Transparent;
-            this.btnayuda.Location = new System.Drawing.Point(0, 2066);
+            this.btnayuda.Location = new System.Drawing.Point(0, 2394);
             this.btnayuda.Margin = new System.Windows.Forms.Padding(4);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnayuda.Size = new System.Drawing.Size(348, 48);
+            this.btnayuda.Size = new System.Drawing.Size(348, 60);
             this.btnayuda.TabIndex = 12;
             this.btnayuda.Text = "AYUDA";
             this.btnayuda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -198,10 +198,10 @@ namespace CapaVistaERP
             // 
             this.panelSeguridad.BackColor = System.Drawing.Color.RoyalBlue;
             this.panelSeguridad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSeguridad.Location = new System.Drawing.Point(0, 2020);
+            this.panelSeguridad.Location = new System.Drawing.Point(0, 2336);
             this.panelSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.panelSeguridad.Name = "panelSeguridad";
-            this.panelSeguridad.Size = new System.Drawing.Size(348, 46);
+            this.panelSeguridad.Size = new System.Drawing.Size(348, 58);
             this.panelSeguridad.TabIndex = 11;
             this.panelSeguridad.Visible = false;
             // 
@@ -214,11 +214,11 @@ namespace CapaVistaERP
             this.btnSeguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSeguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeguridad.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSeguridad.Location = new System.Drawing.Point(0, 1972);
+            this.btnSeguridad.Location = new System.Drawing.Point(0, 2276);
             this.btnSeguridad.Margin = new System.Windows.Forms.Padding(4);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSeguridad.Size = new System.Drawing.Size(348, 48);
+            this.btnSeguridad.Size = new System.Drawing.Size(348, 60);
             this.btnSeguridad.TabIndex = 10;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -229,10 +229,10 @@ namespace CapaVistaERP
             // 
             this.panelReporte.BackColor = System.Drawing.Color.RoyalBlue;
             this.panelReporte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelReporte.Location = new System.Drawing.Point(0, 1929);
+            this.panelReporte.Location = new System.Drawing.Point(0, 2218);
             this.panelReporte.Margin = new System.Windows.Forms.Padding(4);
             this.panelReporte.Name = "panelReporte";
-            this.panelReporte.Size = new System.Drawing.Size(348, 43);
+            this.panelReporte.Size = new System.Drawing.Size(348, 58);
             this.panelReporte.TabIndex = 9;
             this.panelReporte.Visible = false;
             // 
@@ -245,11 +245,11 @@ namespace CapaVistaERP
             this.btnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReportes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReportes.ForeColor = System.Drawing.Color.Transparent;
-            this.btnReportes.Location = new System.Drawing.Point(0, 1872);
+            this.btnReportes.Location = new System.Drawing.Point(0, 2140);
             this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnReportes.Size = new System.Drawing.Size(348, 57);
+            this.btnReportes.Size = new System.Drawing.Size(348, 78);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "REPORTES";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -269,10 +269,10 @@ namespace CapaVistaERP
             this.PanelProcesos.Controls.Add(this.submenuprocesoscompra);
             this.PanelProcesos.Controls.Add(this.btn_proceso1);
             this.PanelProcesos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProcesos.Location = new System.Drawing.Point(0, 1062);
+            this.PanelProcesos.Location = new System.Drawing.Point(0, 1216);
             this.PanelProcesos.Margin = new System.Windows.Forms.Padding(4);
             this.PanelProcesos.Name = "PanelProcesos";
-            this.PanelProcesos.Size = new System.Drawing.Size(348, 810);
+            this.PanelProcesos.Size = new System.Drawing.Size(348, 924);
             this.PanelProcesos.TabIndex = 5;
             this.PanelProcesos.Visible = false;
             // 
@@ -284,9 +284,9 @@ namespace CapaVistaERP
             this.submenuprocesosbancos.Controls.Add(this.button27);
             this.submenuprocesosbancos.Controls.Add(this.button28);
             this.submenuprocesosbancos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenuprocesosbancos.Location = new System.Drawing.Point(0, 625);
+            this.submenuprocesosbancos.Location = new System.Drawing.Point(0, 745);
             this.submenuprocesosbancos.Name = "submenuprocesosbancos";
-            this.submenuprocesosbancos.Size = new System.Drawing.Size(348, 185);
+            this.submenuprocesosbancos.Size = new System.Drawing.Size(348, 179);
             this.submenuprocesosbancos.TabIndex = 15;
             // 
             // button29
@@ -301,7 +301,7 @@ namespace CapaVistaERP
             this.button29.Margin = new System.Windows.Forms.Padding(4);
             this.button29.Name = "button29";
             this.button29.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button29.Size = new System.Drawing.Size(348, 43);
+            this.button29.Size = new System.Drawing.Size(348, 50);
             this.button29.TabIndex = 41;
             this.button29.Text = "MOVIMIENTO DE BANCOS";
             this.button29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -373,11 +373,11 @@ namespace CapaVistaERP
             this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button23.Location = new System.Drawing.Point(0, 582);
+            this.button23.Location = new System.Drawing.Point(0, 677);
             this.button23.Margin = new System.Windows.Forms.Padding(4);
             this.button23.Name = "button23";
             this.button23.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button23.Size = new System.Drawing.Size(348, 43);
+            this.button23.Size = new System.Drawing.Size(348, 68);
             this.button23.TabIndex = 14;
             this.button23.Text = "BANCOS";
             this.button23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -390,9 +390,9 @@ namespace CapaVistaERP
             this.submenuprocesoslogistica.Controls.Add(this.button21);
             this.submenuprocesoslogistica.Controls.Add(this.button22);
             this.submenuprocesoslogistica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenuprocesoslogistica.Location = new System.Drawing.Point(0, 485);
+            this.submenuprocesoslogistica.Location = new System.Drawing.Point(0, 582);
             this.submenuprocesoslogistica.Name = "submenuprocesoslogistica";
-            this.submenuprocesoslogistica.Size = new System.Drawing.Size(348, 97);
+            this.submenuprocesoslogistica.Size = new System.Drawing.Size(348, 95);
             this.submenuprocesoslogistica.TabIndex = 13;
             // 
             // button21
@@ -407,7 +407,7 @@ namespace CapaVistaERP
             this.button21.Margin = new System.Windows.Forms.Padding(4);
             this.button21.Name = "button21";
             this.button21.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(348, 43);
+            this.button21.Size = new System.Drawing.Size(348, 52);
             this.button21.TabIndex = 33;
             this.button21.Text = "AUDITORÍA DE INVENTARIO";
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -440,11 +440,11 @@ namespace CapaVistaERP
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button19.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button19.Location = new System.Drawing.Point(0, 442);
+            this.button19.Location = new System.Drawing.Point(0, 514);
             this.button19.Margin = new System.Windows.Forms.Padding(4);
             this.button19.Name = "button19";
             this.button19.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button19.Size = new System.Drawing.Size(348, 43);
+            this.button19.Size = new System.Drawing.Size(348, 68);
             this.button19.TabIndex = 12;
             this.button19.Text = "LOGÍSTICA";
             this.button19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -459,9 +459,9 @@ namespace CapaVistaERP
             this.submenuprocesosventas.Controls.Add(this.button17);
             this.submenuprocesosventas.Controls.Add(this.button18);
             this.submenuprocesosventas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenuprocesosventas.Location = new System.Drawing.Point(0, 262);
+            this.submenuprocesosventas.Location = new System.Drawing.Point(0, 332);
             this.submenuprocesosventas.Name = "submenuprocesosventas";
-            this.submenuprocesosventas.Size = new System.Drawing.Size(348, 180);
+            this.submenuprocesosventas.Size = new System.Drawing.Size(348, 182);
             this.submenuprocesosventas.TabIndex = 11;
             // 
             // btn_buscarCoti
@@ -476,7 +476,7 @@ namespace CapaVistaERP
             this.btn_buscarCoti.Margin = new System.Windows.Forms.Padding(4);
             this.btn_buscarCoti.Name = "btn_buscarCoti";
             this.btn_buscarCoti.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.btn_buscarCoti.Size = new System.Drawing.Size(348, 43);
+            this.btn_buscarCoti.Size = new System.Drawing.Size(348, 53);
             this.btn_buscarCoti.TabIndex = 31;
             this.btn_buscarCoti.Text = "BUSCAR COTIZACION";
             this.btn_buscarCoti.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -548,11 +548,11 @@ namespace CapaVistaERP
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button15.Location = new System.Drawing.Point(0, 219);
+            this.button15.Location = new System.Drawing.Point(0, 264);
             this.button15.Margin = new System.Windows.Forms.Padding(4);
             this.button15.Name = "button15";
             this.button15.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button15.Size = new System.Drawing.Size(348, 43);
+            this.button15.Size = new System.Drawing.Size(348, 68);
             this.button15.TabIndex = 10;
             this.button15.Text = "VENTAS";
             this.button15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -567,9 +567,9 @@ namespace CapaVistaERP
             this.submenuprocesoscompra.Controls.Add(this.button25);
             this.submenuprocesoscompra.Controls.Add(this.button26);
             this.submenuprocesoscompra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenuprocesoscompra.Location = new System.Drawing.Point(0, 43);
+            this.submenuprocesoscompra.Location = new System.Drawing.Point(0, 68);
             this.submenuprocesoscompra.Name = "submenuprocesoscompra";
-            this.submenuprocesoscompra.Size = new System.Drawing.Size(348, 176);
+            this.submenuprocesoscompra.Size = new System.Drawing.Size(348, 196);
             this.submenuprocesoscompra.TabIndex = 9;
             // 
             // button14
@@ -584,7 +584,7 @@ namespace CapaVistaERP
             this.button14.Margin = new System.Windows.Forms.Padding(4);
             this.button14.Name = "button14";
             this.button14.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button14.Size = new System.Drawing.Size(348, 43);
+            this.button14.Size = new System.Drawing.Size(348, 67);
             this.button14.TabIndex = 27;
             this.button14.Text = "MOVIMIENTO DE PROVEEDORES";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -660,7 +660,7 @@ namespace CapaVistaERP
             this.btn_proceso1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_proceso1.Name = "btn_proceso1";
             this.btn_proceso1.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.btn_proceso1.Size = new System.Drawing.Size(348, 43);
+            this.btn_proceso1.Size = new System.Drawing.Size(348, 68);
             this.btn_proceso1.TabIndex = 8;
             this.btn_proceso1.Text = "COMPRAS";
             this.btn_proceso1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -676,11 +676,11 @@ namespace CapaVistaERP
             this.btnProcesos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProcesos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcesos.ForeColor = System.Drawing.Color.Transparent;
-            this.btnProcesos.Location = new System.Drawing.Point(0, 1014);
+            this.btnProcesos.Location = new System.Drawing.Point(0, 1156);
             this.btnProcesos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProcesos.Name = "btnProcesos";
             this.btnProcesos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnProcesos.Size = new System.Drawing.Size(348, 48);
+            this.btnProcesos.Size = new System.Drawing.Size(348, 60);
             this.btnProcesos.TabIndex = 4;
             this.btnProcesos.Text = "PROCESOS";
             this.btnProcesos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -701,10 +701,10 @@ namespace CapaVistaERP
             this.panelMantenimientos.Controls.Add(this.submenumantcompras);
             this.panelMantenimientos.Controls.Add(this.btn_mantenimiento1);
             this.panelMantenimientos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMantenimientos.Location = new System.Drawing.Point(0, 203);
+            this.panelMantenimientos.Location = new System.Drawing.Point(0, 228);
             this.panelMantenimientos.Margin = new System.Windows.Forms.Padding(4);
             this.panelMantenimientos.Name = "panelMantenimientos";
-            this.panelMantenimientos.Size = new System.Drawing.Size(348, 811);
+            this.panelMantenimientos.Size = new System.Drawing.Size(348, 928);
             this.panelMantenimientos.TabIndex = 3;
             this.panelMantenimientos.Visible = false;
             // 
@@ -716,11 +716,11 @@ namespace CapaVistaERP
             this.button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button30.Font = new System.Drawing.Font("Segoe UI", 8.25F);
             this.button30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button30.Location = new System.Drawing.Point(0, 768);
+            this.button30.Location = new System.Drawing.Point(0, 860);
             this.button30.Margin = new System.Windows.Forms.Padding(4);
             this.button30.Name = "button30";
             this.button30.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button30.Size = new System.Drawing.Size(348, 43);
+            this.button30.Size = new System.Drawing.Size(348, 68);
             this.button30.TabIndex = 21;
             this.button30.Text = "AGREGAR CUENTA";
             this.button30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -734,7 +734,7 @@ namespace CapaVistaERP
             this.submenumantbancos.Controls.Add(this.button11);
             this.submenumantbancos.Controls.Add(this.button10);
             this.submenumantbancos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenumantbancos.Location = new System.Drawing.Point(0, 595);
+            this.submenumantbancos.Location = new System.Drawing.Point(0, 687);
             this.submenumantbancos.Name = "submenumantbancos";
             this.submenumantbancos.Size = new System.Drawing.Size(348, 173);
             this.submenumantbancos.TabIndex = 11;
@@ -751,7 +751,7 @@ namespace CapaVistaERP
             this.button20.Margin = new System.Windows.Forms.Padding(4);
             this.button20.Name = "button20";
             this.button20.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button20.Size = new System.Drawing.Size(348, 43);
+            this.button20.Size = new System.Drawing.Size(348, 54);
             this.button20.TabIndex = 20;
             this.button20.Text = "CUENTA BANCARIA";
             this.button20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -823,11 +823,11 @@ namespace CapaVistaERP
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button9.Location = new System.Drawing.Point(0, 552);
+            this.button9.Location = new System.Drawing.Point(0, 619);
             this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button9.Size = new System.Drawing.Size(348, 43);
+            this.button9.Size = new System.Drawing.Size(348, 68);
             this.button9.TabIndex = 10;
             this.button9.Text = "BANCOS";
             this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -842,7 +842,7 @@ namespace CapaVistaERP
             this.submenumantlogistica.Controls.Add(this.button8);
             this.submenumantlogistica.Controls.Add(this.button7);
             this.submenumantlogistica.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenumantlogistica.Location = new System.Drawing.Point(0, 327);
+            this.submenumantlogistica.Location = new System.Drawing.Point(0, 394);
             this.submenumantlogistica.Name = "submenumantlogistica";
             this.submenumantlogistica.Size = new System.Drawing.Size(348, 225);
             this.submenumantlogistica.TabIndex = 9;
@@ -859,7 +859,7 @@ namespace CapaVistaERP
             this.button33.Margin = new System.Windows.Forms.Padding(4);
             this.button33.Name = "button33";
             this.button33.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button33.Size = new System.Drawing.Size(348, 43);
+            this.button33.Size = new System.Drawing.Size(348, 54);
             this.button33.TabIndex = 17;
             this.button33.Text = "MANT. SUCURSALES";
             this.button33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -950,11 +950,11 @@ namespace CapaVistaERP
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(0, 284);
+            this.button6.Location = new System.Drawing.Point(0, 326);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(348, 43);
+            this.button6.Size = new System.Drawing.Size(348, 68);
             this.button6.TabIndex = 8;
             this.button6.Text = "LOGÍSTICA";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -966,9 +966,9 @@ namespace CapaVistaERP
             this.submenumantventas.Controls.Add(this.button5);
             this.submenumantventas.Controls.Add(this.button4);
             this.submenumantventas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenumantventas.Location = new System.Drawing.Point(0, 200);
+            this.submenumantventas.Location = new System.Drawing.Point(0, 241);
             this.submenumantventas.Name = "submenumantventas";
-            this.submenumantventas.Size = new System.Drawing.Size(348, 84);
+            this.submenumantventas.Size = new System.Drawing.Size(348, 85);
             this.submenumantventas.TabIndex = 7;
             // 
             // button5
@@ -983,7 +983,7 @@ namespace CapaVistaERP
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
             this.button5.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
-            this.button5.Size = new System.Drawing.Size(348, 41);
+            this.button5.Size = new System.Drawing.Size(348, 42);
             this.button5.TabIndex = 11;
             this.button5.Text = "VENDEDORES";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1017,11 +1017,11 @@ namespace CapaVistaERP
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(0, 157);
+            this.button3.Location = new System.Drawing.Point(0, 173);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(348, 43);
+            this.button3.Size = new System.Drawing.Size(348, 68);
             this.button3.TabIndex = 6;
             this.button3.Text = "VENTAS";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1034,9 +1034,9 @@ namespace CapaVistaERP
             this.submenumantcompras.Controls.Add(this.button2);
             this.submenumantcompras.Controls.Add(this.button1);
             this.submenumantcompras.Dock = System.Windows.Forms.DockStyle.Top;
-            this.submenumantcompras.Location = new System.Drawing.Point(0, 48);
+            this.submenumantcompras.Location = new System.Drawing.Point(0, 75);
             this.submenumantcompras.Name = "submenumantcompras";
-            this.submenumantcompras.Size = new System.Drawing.Size(348, 109);
+            this.submenumantcompras.Size = new System.Drawing.Size(348, 98);
             this.submenumantcompras.TabIndex = 5;
             // 
             // button2
@@ -1089,7 +1089,7 @@ namespace CapaVistaERP
             this.btn_mantenimiento1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_mantenimiento1.Name = "btn_mantenimiento1";
             this.btn_mantenimiento1.Padding = new System.Windows.Forms.Padding(70, 0, 0, 0);
-            this.btn_mantenimiento1.Size = new System.Drawing.Size(348, 48);
+            this.btn_mantenimiento1.Size = new System.Drawing.Size(348, 75);
             this.btn_mantenimiento1.TabIndex = 4;
             this.btn_mantenimiento1.Text = "COMPRAS";
             this.btn_mantenimiento1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1105,11 +1105,11 @@ namespace CapaVistaERP
             this.btnmanteniminetos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmanteniminetos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmanteniminetos.ForeColor = System.Drawing.Color.Transparent;
-            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 155);
+            this.btnmanteniminetos.Location = new System.Drawing.Point(0, 168);
             this.btnmanteniminetos.Margin = new System.Windows.Forms.Padding(4);
             this.btnmanteniminetos.Name = "btnmanteniminetos";
             this.btnmanteniminetos.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnmanteniminetos.Size = new System.Drawing.Size(348, 48);
+            this.btnmanteniminetos.Size = new System.Drawing.Size(348, 60);
             this.btnmanteniminetos.TabIndex = 2;
             this.btnmanteniminetos.Text = "MANTENIMIENTOS";
             this.btnmanteniminetos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1125,11 +1125,11 @@ namespace CapaVistaERP
             this.btninicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninicio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninicio.ForeColor = System.Drawing.Color.Transparent;
-            this.btninicio.Location = new System.Drawing.Point(0, 107);
+            this.btninicio.Location = new System.Drawing.Point(0, 108);
             this.btninicio.Margin = new System.Windows.Forms.Padding(4);
             this.btninicio.Name = "btninicio";
             this.btninicio.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btninicio.Size = new System.Drawing.Size(348, 48);
+            this.btninicio.Size = new System.Drawing.Size(348, 60);
             this.btninicio.TabIndex = 0;
             this.btninicio.Text = "INICIO";
             this.btninicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1144,7 +1144,7 @@ namespace CapaVistaERP
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(348, 107);
+            this.panelLogo.Size = new System.Drawing.Size(348, 108);
             this.panelLogo.TabIndex = 0;
             // 
             // pictureBox2
@@ -1164,7 +1164,7 @@ namespace CapaVistaERP
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(1518, 964);
+            this.ClientSize = new System.Drawing.Size(1518, 929);
             this.Controls.Add(this.panelMDI);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "MDIGeneral";

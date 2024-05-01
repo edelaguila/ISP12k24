@@ -540,3 +540,7 @@ C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\M
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmLinea.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMarca.resources
 C:\Users\Usuario\Documents\GitHub\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmSucursales.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmLinea.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmMarca.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frmSucursales.resources
+C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdenesdeCompraMaestro.resources
