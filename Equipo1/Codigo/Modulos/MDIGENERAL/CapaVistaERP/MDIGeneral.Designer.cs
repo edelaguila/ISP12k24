@@ -116,7 +116,7 @@ namespace CapaVistaERP
             this.panelMDI.Location = new System.Drawing.Point(369, 0);
             this.panelMDI.Margin = new System.Windows.Forms.Padding(4);
             this.panelMDI.Name = "panelMDI";
-            this.panelMDI.Size = new System.Drawing.Size(1149, 929);
+            this.panelMDI.Size = new System.Drawing.Size(1175, 1009);
             this.panelMDI.TabIndex = 61;
             // 
             // MDI
@@ -151,7 +151,7 @@ namespace CapaVistaERP
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(369, 929);
+            this.panelSideMenu.Size = new System.Drawing.Size(369, 1009);
             this.panelSideMenu.TabIndex = 60;
             // 
             // btnsalir
@@ -1164,7 +1164,7 @@ namespace CapaVistaERP
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(1518, 929);
+            this.ClientSize = new System.Drawing.Size(1544, 1009);
             this.Controls.Add(this.panelMDI);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "MDIGeneral";
