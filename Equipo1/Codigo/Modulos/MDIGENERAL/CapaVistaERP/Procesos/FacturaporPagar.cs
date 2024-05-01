@@ -40,13 +40,16 @@ namespace CapaVistaERP.Procesos
             int ultimoNumeroOrden = controller.ObtenerUltimoNumeroOrden(campoid, tabla);
             txt_numfactura.Text = ultimoNumeroOrden.ToString();
         }
-        public void RecibirDatosDesdeBuscarOrdenes(string idcompra, string fechaV, string proveedorfact)
+        public void RecibirDatosDesdeBuscarOrdenes(string idcompra, string fechaV, string proveedorfact, string subtotal, string iva, string total)
         {
             // Actualiza los textbox en del formulario con los datos recibidos
             txt_numcompra.Text = idcompra;
             int numero = int.Parse(idcompra);
             dateTimePickerVencimiento.Text = fechaV;
             txt_Idprov.Text = proveedorfact;
+            txt_subtotal.Text = subtotal;
+            txt_iva.Text = iva;
+            txt_total.Text = total;
             ObtenerDatosProveedor(proveedorfact);
             actualizardatagridviewFactura(numero);
         }
@@ -127,6 +130,13 @@ namespace CapaVistaERP.Procesos
                 txt_nitprov.Enabled = true;
                 dateTimePickerVencimiento.Enabled = true;
                 dateTimePickerAbono.Enabled = true;
+                // Añadir las columnas con los encabezados deseados
+                dgv_detalle.Columns.Add("Cantidad", "Cantidad");
+                dgv_detalle.Columns.Add("ID_Producto", "ID_Producto");
+                dgv_detalle.Columns.Add("Nombre", "Nombre");
+                dgv_detalle.Columns.Add("Descripcion", "Descripción");
+                dgv_detalle.Columns.Add("Precio_Unitario", "Precio_unitario");
+                dgv_detalle.Columns.Add("Total", "Total");
             }
 
             // Si se selecciona "Relacionada", deshabilitar TextBox para ingresar directamente
@@ -141,6 +151,10 @@ namespace CapaVistaERP.Procesos
                 txt_nitprov.Enabled = false;
                 dateTimePickerVencimiento.Enabled = false;
                 dateTimePickerAbono.Enabled = true;
+                btn_agregar.Enabled = false;
+                btn_confirmar.Enabled = false;
+                btn_eliminar.Enabled = false;
+                dgv_detalle.Columns.Clear();
             }
         }
 

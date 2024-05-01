@@ -29,23 +29,15 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_IDLinea = new System.Windows.Forms.TextBox();
             this.txt_NombreLinea = new System.Windows.Forms.TextBox();
             this.dgv_Linea = new System.Windows.Forms.DataGridView();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Linea)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 33;
             // 
             // label6
             // 
@@ -104,18 +96,26 @@ namespace CapaVistaERP.Mantenimientos
             this.dgv_Linea.TabIndex = 50;
             this.dgv_Linea.Tag = "tbl_lineas";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(13, 31);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 51;
+            // 
             // frmLinea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 502);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dgv_Linea);
             this.Controls.Add(this.txt_NombreLinea);
             this.Controls.Add(this.txt_IDLinea);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmLinea";
             this.Text = "frmLinea";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Linea)).EndInit();
@@ -125,13 +125,12 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_IDLinea;
         private System.Windows.Forms.TextBox txt_NombreLinea;
         private System.Windows.Forms.DataGridView dgv_Linea;
+        private CapaVista.Navegador navegador1;
     }
 }

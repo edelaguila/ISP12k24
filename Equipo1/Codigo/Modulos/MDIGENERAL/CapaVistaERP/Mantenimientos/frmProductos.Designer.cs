@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.txt_precioUnitario = new System.Windows.Forms.TextBox();
             this.txt_descripProducto = new System.Windows.Forms.TextBox();
             this.txt_nombreProducto = new System.Windows.Forms.TextBox();
@@ -48,16 +47,9 @@ namespace CapaVistaERP.Mantenimientos
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 33;
             // 
             // txt_precioUnitario
             // 
@@ -227,11 +219,20 @@ namespace CapaVistaERP.Mantenimientos
             this.dateTimePicker1.TabIndex = 68;
             this.dateTimePicker1.Tag = "fecha_registro";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(12, 13);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 69;
+            // 
             // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 665);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -250,7 +251,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmProductos";
             this.Text = "frmProductos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -260,8 +260,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_precioUnitario;
         private System.Windows.Forms.TextBox txt_descripProducto;
         private System.Windows.Forms.TextBox txt_nombreProducto;
@@ -280,5 +278,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private CapaVista.Navegador navegador1;
     }
 }

@@ -39,8 +39,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nombre_prov = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaVista.Navegador();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dg_prov)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,14 +157,6 @@
             this.label4.TabIndex = 56;
             this.label4.Text = "Domicilio";
             // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(18, 30);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 68;
-            // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
@@ -174,13 +166,21 @@
             this.comboBox2.TabIndex = 70;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(26, 36);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 71;
+            // 
             // frm_Mant_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1040, 633);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.txt_estado);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.telefono_prov);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox nombre_prov;
         private System.Windows.Forms.Label label4;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private CapaVista.Navegador navegador1;
     }
 }
