@@ -47,12 +47,12 @@
             // btn_pagoproveedor
             // 
             this.btn_pagoproveedor.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_pagoproveedor.Location = new System.Drawing.Point(39, 408);
+            this.btn_pagoproveedor.Location = new System.Drawing.Point(951, 52);
             this.btn_pagoproveedor.Margin = new System.Windows.Forms.Padding(4);
             this.btn_pagoproveedor.Name = "btn_pagoproveedor";
-            this.btn_pagoproveedor.Size = new System.Drawing.Size(207, 46);
+            this.btn_pagoproveedor.Size = new System.Drawing.Size(90, 30);
             this.btn_pagoproveedor.TabIndex = 37;
-            this.btn_pagoproveedor.Text = "Pago a proveedor";
+            this.btn_pagoproveedor.Text = "Seleccionar";
             this.btn_pagoproveedor.UseVisualStyleBackColor = true;
             this.btn_pagoproveedor.Click += new System.EventHandler(this.btn_pagoproveedor_Click);
             // 
@@ -73,10 +73,9 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1071, 489);
+            this.groupBox1.Size = new System.Drawing.Size(1071, 413);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Movimientos";
             // 
             // btn_refrescartabla
             // 
@@ -84,7 +83,7 @@
             this.btn_refrescartabla.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_refrescartabla.BackgroundImage")));
             this.btn_refrescartabla.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_refrescartabla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refrescartabla.Location = new System.Drawing.Point(999, 50);
+            this.btn_refrescartabla.Location = new System.Drawing.Point(894, 54);
             this.btn_refrescartabla.Name = "btn_refrescartabla";
             this.btn_refrescartabla.Size = new System.Drawing.Size(33, 25);
             this.btn_refrescartabla.TabIndex = 39;
@@ -93,7 +92,7 @@
             // 
             // txt_nitprov
             // 
-            this.txt_nitprov.Location = new System.Drawing.Point(740, 50);
+            this.txt_nitprov.Location = new System.Drawing.Point(662, 54);
             this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nitprov.Name = "txt_nitprov";
             this.txt_nitprov.Size = new System.Drawing.Size(184, 24);
@@ -103,7 +102,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(619, 48);
+            this.label1.Location = new System.Drawing.Point(541, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(113, 20);
@@ -124,7 +123,7 @@
             // 
             // txt_nombreprov
             // 
-            this.txt_nombreprov.Location = new System.Drawing.Point(386, 48);
+            this.txt_nombreprov.Location = new System.Drawing.Point(349, 48);
             this.txt_nombreprov.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombreprov.Name = "txt_nombreprov";
             this.txt_nombreprov.Size = new System.Drawing.Size(184, 24);
@@ -134,7 +133,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(310, 50);
+            this.label3.Location = new System.Drawing.Point(273, 48);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 20);
@@ -147,7 +146,7 @@
             this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
             this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(959, 50);
+            this.btn_buscar.Location = new System.Drawing.Point(854, 54);
             this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_buscar.Name = "btn_buscar";
             this.btn_buscar.Size = new System.Drawing.Size(33, 25);
@@ -168,7 +167,7 @@
             // 
             // txt_Idprov
             // 
-            this.txt_Idprov.Location = new System.Drawing.Point(173, 46);
+            this.txt_Idprov.Location = new System.Drawing.Point(161, 46);
             this.txt_Idprov.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Idprov.Name = "txt_Idprov";
             this.txt_Idprov.Size = new System.Drawing.Size(104, 24);
@@ -178,7 +177,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 515);
+            this.ClientSize = new System.Drawing.Size(1099, 459);
             this.Controls.Add(this.groupBox1);
             this.Name = "MovimientoProveedores";
             this.Text = "MovimientoProveedores";

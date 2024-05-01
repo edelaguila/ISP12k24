@@ -22,8 +22,6 @@ namespace CapaVistaERP.Procesos
         {
             InitializeComponent();
             cn = new Controlador();
-            txt_nitprov.Text = nitprove;
-            filtrodata(nitprove);
             Combo();
             Combo2();
         }
@@ -35,9 +33,10 @@ namespace CapaVistaERP.Procesos
         }
 
 
-        public void filtrodata(string nitprove)
+        public void filtrodata()
         {
-            DataTable dt = cn.filtrardatos(tabla1, "nitprov_facxpag", nitprove);
+            string filtro = txt_nit.Text;
+            DataTable dt = cn.filtrardatos(tabla1,"nitprov_facxpag", filtro);
             dgv_pagoproveedor.DataSource = dt;
         }
 
@@ -50,7 +49,6 @@ namespace CapaVistaERP.Procesos
 
                 string total = filaSeleccionada.Cells["totalfac_facxpag"].Value.ToString();
                 txt_totalapagar.Text = total;
-                
             }
 
         }
@@ -86,6 +84,31 @@ namespace CapaVistaERP.Procesos
         private void cmb_banco_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_bancos.Text = cmb_banco.SelectedItem.ToString();
+        }
+
+        private void txt_nombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_buscar_Click(object sender, EventArgs e)
+        {
+            MovimientoProveedores proveedor = new MovimientoProveedores(this);
+            proveedor.Show();
+        }
+
+
+        public void datosProv (string idprov,string nombreprov,string nitprov)
+        {
+            txt_idprov.Text = idprov;
+            txt_nombreprov.Text = nombreprov;
+            txt_nitprov.Text = nitprov;
+            txt_nit.Text= nitprov;
+        }
+
+        private void btn_buscarFactura_Click(object sender, EventArgs e)
+        {
+            filtrodata();
         }
     }
 }
