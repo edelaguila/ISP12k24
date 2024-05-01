@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -39,16 +38,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(-10, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 138;
             // 
             // label3
             // 
@@ -90,7 +82,7 @@
             this.txt_fecha.Location = new System.Drawing.Point(641, 141);
             this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(158, 22);
+            this.txt_fecha.Size = new System.Drawing.Size(323, 22);
             this.txt_fecha.TabIndex = 187;
             this.txt_fecha.Tag = "regmon_fecha_de_registro";
             this.txt_fecha.Visible = false;
@@ -114,7 +106,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(821, 602);
+            this.dataGridView1.Size = new System.Drawing.Size(986, 602);
             this.dataGridView1.TabIndex = 184;
             this.dataGridView1.Tag = "tbl_tipocambio";
             // 
@@ -126,7 +118,7 @@
             this.txt_tipo_moneda.Location = new System.Drawing.Point(351, 208);
             this.txt_tipo_moneda.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tipo_moneda.Name = "txt_tipo_moneda";
-            this.txt_tipo_moneda.Size = new System.Drawing.Size(229, 22);
+            this.txt_tipo_moneda.Size = new System.Drawing.Size(394, 22);
             this.txt_tipo_moneda.TabIndex = 185;
             this.txt_tipo_moneda.Tag = "tipo_cambio";
             // 
@@ -169,11 +161,20 @@
             this.label2.TabIndex = 182;
             this.label2.Text = " Moneda local:";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(13, 13);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 191;
+            // 
             // frm_mant_tipo_de_cambio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 747);
+            this.ClientSize = new System.Drawing.Size(1023, 747);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
@@ -184,7 +185,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.navegador1);
             this.Name = "frm_mant_tipo_de_cambio";
             this.Text = "frm_mant_tipo_de_cambio";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -194,7 +194,6 @@
         }
 
         #endregion
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -205,5 +204,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private CapaVista.Navegador navegador1;
     }
 }

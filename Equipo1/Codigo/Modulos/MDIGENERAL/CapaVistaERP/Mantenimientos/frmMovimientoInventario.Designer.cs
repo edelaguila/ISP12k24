@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label12 = new System.Windows.Forms.Label();
             this.dtp_Fecha = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,16 +48,9 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_Movimiento = new System.Windows.Forms.TextBox();
             this.txt_Sucursal = new System.Windows.Forms.TextBox();
             this.txt_Producto = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MovimientoInv)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 32;
             // 
             // label12
             // 
@@ -238,11 +230,20 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_Producto.TabIndex = 64;
             this.txt_Producto.Tag = "tbl_Producto_cod_producto";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(15, 13);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 65;
+            // 
             // frmMovimientoInventario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 639);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_Producto);
             this.Controls.Add(this.txt_Sucursal);
             this.Controls.Add(this.txt_Movimiento);
@@ -262,7 +263,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmMovimientoInventario";
             this.Text = "frmMovimientoInventario";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_MovimientoInv)).EndInit();
@@ -272,8 +272,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtp_Fecha;
         private System.Windows.Forms.Label label6;
@@ -293,5 +291,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.TextBox txt_Movimiento;
         private System.Windows.Forms.TextBox txt_Sucursal;
         private System.Windows.Forms.TextBox txt_Producto;
+        private CapaVista.Navegador navegador1;
     }
 }

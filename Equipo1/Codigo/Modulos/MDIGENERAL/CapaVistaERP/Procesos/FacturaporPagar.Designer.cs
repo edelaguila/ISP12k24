@@ -64,6 +64,9 @@ namespace CapaVistaERP.Procesos
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonoprov = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btn_confirmar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -182,6 +185,9 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_confirmar);
+            this.groupBox2.Controls.Add(this.btn_eliminar);
+            this.groupBox2.Controls.Add(this.btn_agregar);
             this.groupBox2.Controls.Add(this.dgv_detalle);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(26, 348);
@@ -444,6 +450,36 @@ namespace CapaVistaERP.Procesos
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
+            // btn_confirmar
+            // 
+            this.btn_confirmar.Location = new System.Drawing.Point(934, 179);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_confirmar.Name = "btn_confirmar";
+            this.btn_confirmar.Size = new System.Drawing.Size(99, 39);
+            this.btn_confirmar.TabIndex = 19;
+            this.btn_confirmar.Text = "Confirmar";
+            this.btn_confirmar.UseVisualStyleBackColor = true;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Location = new System.Drawing.Point(934, 121);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(99, 39);
+            this.btn_eliminar.TabIndex = 18;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Location = new System.Drawing.Point(934, 64);
+            this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(99, 39);
+            this.btn_agregar.TabIndex = 17;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            // 
             // FacturaporPagar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -501,5 +537,8 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_telefonoprov;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_confirmar;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_agregar;
     }
 }

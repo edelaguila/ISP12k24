@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_Sucursal = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,16 +41,9 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_DireccionSuc = new System.Windows.Forms.TextBox();
             this.txt_TelefonoSuc = new System.Windows.Forms.TextBox();
             this.txt_CorreoSuc = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursal)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 33;
             // 
             // label6
             // 
@@ -164,11 +156,20 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_CorreoSuc.TabIndex = 56;
             this.txt_CorreoSuc.Tag = "correo_sucursal";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(15, 26);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 57;
+            // 
             // frmSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 521);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_CorreoSuc);
             this.Controls.Add(this.txt_TelefonoSuc);
             this.Controls.Add(this.txt_DireccionSuc);
@@ -181,7 +182,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_Sucursal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmSucursales";
             this.Text = "frmSucursales";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursal)).EndInit();
@@ -191,8 +191,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_Sucursal;
         private System.Windows.Forms.Label label1;
@@ -205,5 +203,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.TextBox txt_DireccionSuc;
         private System.Windows.Forms.TextBox txt_TelefonoSuc;
         private System.Windows.Forms.TextBox txt_CorreoSuc;
+        private CapaVista.Navegador navegador1;
     }
 }

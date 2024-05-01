@@ -32,7 +32,6 @@
             this.telefono_vend = new System.Windows.Forms.TextBox();
             this.estado_vend = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.navegador1 = new CapaVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,6 +39,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,19 +83,11 @@
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.Tag = "tbl_vendedor";
             // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(3, 3);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(996, 98);
-            this.navegador1.TabIndex = 8;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(362, 119);
+            this.label1.Location = new System.Drawing.Point(361, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(190, 29);
             this.label1.TabIndex = 9;
@@ -161,11 +153,20 @@
             this.textBox1.TabIndex = 15;
             this.textBox1.Tag = "apellido_vend";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(25, 19);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 17;
+            // 
             // frm_mant_vendedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 745);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
@@ -173,7 +174,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.estado_vend);
             this.Controls.Add(this.telefono_vend);
@@ -191,7 +191,6 @@
         private System.Windows.Forms.TextBox telefono_vend;
         private System.Windows.Forms.TextBox estado_vend;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -199,5 +198,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private CapaVista.Navegador navegador1;
     }
 }

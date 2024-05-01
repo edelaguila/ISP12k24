@@ -18,10 +18,6 @@ namespace CapaVistaERP
         private string namemovpro = "";
         private string nitmovpro = "";
         //Variables Carol Chuy Compras
-        private string id = "";
-        private string nombre = "";
-        private string domicilio = "";
-        private string telefono = "";
         private string idord = "";
         private string fechaS = "";
         private string fechaE = "";
@@ -220,7 +216,7 @@ namespace CapaVistaERP
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.OrdenesdeCompra(id, nombre, domicilio, telefono));
+            Abrir(new Procesos.OrdenesdeCompraMaestro());
             hideSubMenu();
         }
 

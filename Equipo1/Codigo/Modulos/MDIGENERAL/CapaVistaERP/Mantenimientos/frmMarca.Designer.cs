@@ -29,23 +29,15 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_Marca = new System.Windows.Forms.DataGridView();
             this.txt_NombreMarca = new System.Windows.Forms.TextBox();
             this.txt_IDMarca = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Marca)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 33;
             // 
             // label6
             // 
@@ -105,18 +97,26 @@ namespace CapaVistaERP.Mantenimientos
             this.label1.TabIndex = 50;
             this.label1.Text = "ID:";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(12, 25);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 54;
+            // 
             // frmMarca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 491);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_NombreMarca);
             this.Controls.Add(this.txt_IDMarca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_Marca);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmMarca";
             this.Text = "frmMarca";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Marca)).EndInit();
@@ -126,13 +126,12 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_Marca;
         private System.Windows.Forms.TextBox txt_NombreMarca;
         private System.Windows.Forms.TextBox txt_IDMarca;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private CapaVista.Navegador navegador1;
     }
 }
