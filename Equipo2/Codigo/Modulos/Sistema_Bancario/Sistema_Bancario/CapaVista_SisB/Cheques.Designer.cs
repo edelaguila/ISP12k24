@@ -175,7 +175,7 @@ namespace CapaVista_SisB
             // navegador2
             // 
             this.navegador2.Location = new System.Drawing.Point(37, 56);
-            this.navegador2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador2.Margin = new System.Windows.Forms.Padding(4);
             this.navegador2.Name = "navegador2";
             this.navegador2.Size = new System.Drawing.Size(751, 78);
             this.navegador2.TabIndex = 53;
