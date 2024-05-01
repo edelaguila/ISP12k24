@@ -84,6 +84,12 @@
     <Compile Include="frmHistorial.Designer.cs">
       <DependentUpon>frmHistorial.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneda.Designer.cs">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRetiro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,24 @@
     </Compile>
     <Compile Include="MantenimientoTransaccion.Designer.cs">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Aplicaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Aplicaciones.Designer.cs">
+      <DependentUpon>Mantenimiento_Aplicaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_AsignacionPerfilUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_AsignacionPerfilUsuario.Designer.cs">
+      <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Modulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Modulos.Designer.cs">
+      <DependentUpon>Mantenimiento_Modulos.cs</DependentUpon>
     </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
@@ -143,6 +167,9 @@
     <EmbeddedResource Include="frmHistorial.resx">
       <DependentUpon>frmHistorial.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneda.resx">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRetiro.resx">
       <DependentUpon>frmRetiro.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +178,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoTransaccion.resx">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Aplicaciones.resx">
+      <DependentUpon>Mantenimiento_Aplicaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_AsignacionPerfilUsuario.resx">
+      <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Modulos.resx">
+      <DependentUpon>Mantenimiento_Modulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
