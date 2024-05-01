@@ -37,7 +37,10 @@ namespace CapaVistaERP.Procesos
                 string idcompra = filaSeleccionada.Cells["id_EncComp"].Value.ToString();
                 string fechaV = filaSeleccionada.Cells["fechaVencimientoPago_EncComp"].Value.ToString();
                 string proveedorfact = filaSeleccionada.Cells["tbl_proveedor_id_prov"].Value.ToString();
-                FacturaporPagar.RecibirDatosDesdeBuscarOrdenes(idcompra, fechaV, proveedorfact);
+                string subtotalfact = filaSeleccionada.Cells["subTotal_EncComp"].Value.ToString();
+                string ivafact = filaSeleccionada.Cells["iva_EncComp"].Value.ToString();
+                string total = filaSeleccionada.Cells["totalOrden_EncComp"].Value.ToString();
+                FacturaporPagar.RecibirDatosDesdeBuscarOrdenes(idcompra, fechaV, proveedorfact, subtotalfact, ivafact, total);
                 this.Close();
             }
             else

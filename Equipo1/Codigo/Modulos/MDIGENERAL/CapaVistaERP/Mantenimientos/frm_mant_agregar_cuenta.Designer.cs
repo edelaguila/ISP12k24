@@ -43,8 +43,8 @@ namespace CapaVistaERP.Mantenimientos
             this.dgv_agCuentas = new System.Windows.Forms.DataGridView();
             this.txt_tipo_moneda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.navegador1 = new CapaVista.Navegador();
             this.txt_tipo_mon = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_agCuentas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +106,7 @@ namespace CapaVistaERP.Mantenimientos
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(490, 168);
+            this.label5.Location = new System.Drawing.Point(506, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 190;
@@ -149,7 +149,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_estado.Location = new System.Drawing.Point(633, 252);
             this.txt_estado.Margin = new System.Windows.Forms.Padding(4);
             this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(184, 22);
+            this.txt_estado.Size = new System.Drawing.Size(287, 22);
             this.txt_estado.TabIndex = 186;
             this.txt_estado.Tag = "manac_alias";
             this.txt_estado.TextChanged += new System.EventHandler(this.txt_estado_TextChanged);
@@ -162,7 +162,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_fecha.Location = new System.Drawing.Point(633, 212);
             this.txt_fecha.Margin = new System.Windows.Forms.Padding(4);
             this.txt_fecha.Name = "txt_fecha";
-            this.txt_fecha.Size = new System.Drawing.Size(184, 22);
+            this.txt_fecha.Size = new System.Drawing.Size(287, 22);
             this.txt_fecha.TabIndex = 185;
             this.txt_fecha.Tag = "regmon_fecha_de_registro";
             this.txt_fecha.Visible = false;
@@ -177,7 +177,7 @@ namespace CapaVistaERP.Mantenimientos
             this.dgv_agCuentas.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_agCuentas.Name = "dgv_agCuentas";
             this.dgv_agCuentas.RowHeadersWidth = 51;
-            this.dgv_agCuentas.Size = new System.Drawing.Size(810, 451);
+            this.dgv_agCuentas.Size = new System.Drawing.Size(913, 451);
             this.dgv_agCuentas.TabIndex = 183;
             this.dgv_agCuentas.Tag = "tbl_mantenimientos_agregar_cuenta";
             // 
@@ -189,7 +189,7 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_tipo_moneda.Location = new System.Drawing.Point(222, 168);
             this.txt_tipo_moneda.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tipo_moneda.Name = "txt_tipo_moneda";
-            this.txt_tipo_moneda.Size = new System.Drawing.Size(218, 22);
+            this.txt_tipo_moneda.Size = new System.Drawing.Size(321, 22);
             this.txt_tipo_moneda.TabIndex = 184;
             this.txt_tipo_moneda.Tag = "manac_numero_de_cuenta";
             this.txt_tipo_moneda.TextChanged += new System.EventHandler(this.txt_tipo_moneda_TextChanged);
@@ -207,14 +207,6 @@ namespace CapaVistaERP.Mantenimientos
             this.label2.TabIndex = 182;
             this.label2.Text = "moneda de origen";
             // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 36);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 196;
-            // 
             // txt_tipo_mon
             // 
             this.txt_tipo_mon.Enabled = false;
@@ -227,13 +219,21 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_tipo_mon.Tag = "fk_manac_tipo_de_moneda";
             this.txt_tipo_mon.Visible = false;
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(41, 30);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 198;
+            // 
             // frm_mant_agregar_cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(958, 636);
-            this.Controls.Add(this.txt_tipo_mon);
+            this.ClientSize = new System.Drawing.Size(1061, 636);
             this.Controls.Add(this.navegador1);
+            this.Controls.Add(this.txt_tipo_mon);
             this.Controls.Add(this.txt_tipocuenta);
             this.Controls.Add(this.txt_sect_banco);
             this.Controls.Add(this.cb_Banco);
@@ -273,7 +273,7 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.DataGridView dgv_agCuentas;
         private System.Windows.Forms.TextBox txt_tipo_moneda;
         private System.Windows.Forms.Label label2;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_tipo_mon;
+        private CapaVista.Navegador navegador1;
     }
 }

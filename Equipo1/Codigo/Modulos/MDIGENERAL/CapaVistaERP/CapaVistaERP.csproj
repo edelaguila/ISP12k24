@@ -243,6 +243,12 @@
     <Compile Include="Procesos\OrdenesdeCompra.Designer.cs">
       <DependentUpon>OrdenesdeCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\OrdenesdeCompraMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OrdenesdeCompraMaestro.Designer.cs">
+      <DependentUpon>OrdenesdeCompraMaestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\TrasladoDeProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -352,6 +358,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\OrdenesdeCompra.resx">
       <DependentUpon>OrdenesdeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\OrdenesdeCompraMaestro.resx">
+      <DependentUpon>OrdenesdeCompraMaestro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\TrasladoDeProducto.resx">
       <DependentUpon>TrasladoDeProducto.cs</DependentUpon>
