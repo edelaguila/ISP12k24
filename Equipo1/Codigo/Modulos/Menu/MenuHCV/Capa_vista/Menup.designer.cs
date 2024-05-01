@@ -31,11 +31,11 @@ namespace MenuHCV
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menup));
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnPrototipo = new System.Windows.Forms.Button();
+            this.btnseguridad = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.btnLogout = new System.Windows.Forms.Button();
-            this.btnseguridad = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSideMenu.SuspendLayout();
@@ -55,6 +55,25 @@ namespace MenuHCV
             this.panelLogo.Size = new System.Drawing.Size(318, 617);
             this.panelLogo.TabIndex = 0;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnLogout.Location = new System.Drawing.Point(18, 310);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(301, 31);
+            this.btnLogout.TabIndex = 14;
+            this.btnLogout.Text = "CERRAR SESIÓN";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
+            // 
             // btnPrototipo
             // 
             this.btnPrototipo.BackColor = System.Drawing.Color.MidnightBlue;
@@ -69,10 +88,29 @@ namespace MenuHCV
             this.btnPrototipo.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
             this.btnPrototipo.Size = new System.Drawing.Size(319, 38);
             this.btnPrototipo.TabIndex = 19;
-            this.btnPrototipo.Text = "EPR COMERCIAL";
+            this.btnPrototipo.Text = "ERP COMERCIAL";
             this.btnPrototipo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPrototipo.UseVisualStyleBackColor = false;
             this.btnPrototipo.Click += new System.EventHandler(this.btnPrototipo_Click);
+            // 
+            // btnseguridad
+            // 
+            this.btnseguridad.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnseguridad.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnseguridad.FlatAppearance.BorderSize = 0;
+            this.btnseguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnseguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnseguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
+            this.btnseguridad.Location = new System.Drawing.Point(18, 275);
+            this.btnseguridad.Margin = new System.Windows.Forms.Padding(4);
+            this.btnseguridad.Name = "btnseguridad";
+            this.btnseguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
+            this.btnseguridad.Size = new System.Drawing.Size(300, 27);
+            this.btnseguridad.TabIndex = 13;
+            this.btnseguridad.Text = "SEGURIDAD";
+            this.btnseguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnseguridad.UseVisualStyleBackColor = false;
+            this.btnseguridad.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // pictureBox1
             // 
@@ -98,44 +136,6 @@ namespace MenuHCV
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(318, 729);
             this.panelSideMenu.TabIndex = 46;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnLogout.Location = new System.Drawing.Point(18, 310);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(301, 31);
-            this.btnLogout.TabIndex = 14;
-            this.btnLogout.Text = "CERRAR SESIÓN";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
-            // 
-            // btnseguridad
-            // 
-            this.btnseguridad.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnseguridad.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnseguridad.FlatAppearance.BorderSize = 0;
-            this.btnseguridad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnseguridad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnseguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(242)))), ((int)(((byte)(253)))));
-            this.btnseguridad.Location = new System.Drawing.Point(18, 275);
-            this.btnseguridad.Margin = new System.Windows.Forms.Padding(4);
-            this.btnseguridad.Name = "btnseguridad";
-            this.btnseguridad.Padding = new System.Windows.Forms.Padding(68, 0, 0, 0);
-            this.btnseguridad.Size = new System.Drawing.Size(300, 27);
-            this.btnseguridad.TabIndex = 13;
-            this.btnseguridad.Text = "SEGURIDAD";
-            this.btnseguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnseguridad.UseVisualStyleBackColor = false;
-            this.btnseguridad.Click += new System.EventHandler(this.btnlogout_Click);
             // 
             // Menup
             // 

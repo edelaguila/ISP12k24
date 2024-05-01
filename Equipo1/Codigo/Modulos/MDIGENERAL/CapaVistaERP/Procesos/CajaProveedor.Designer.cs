@@ -47,20 +47,20 @@
             this.cmb_banco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.txt_totalapagar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_nit = new System.Windows.Forms.TextBox();
             this.dgv_pagoproveedor = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_idprov = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_nombreprov = new System.Windows.Forms.TextBox();
             this.txt_nitprov = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_nit = new System.Windows.Forms.TextBox();
-            this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -266,6 +266,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
             // 
+            // btn_buscarFactura
+            // 
+            this.btn_buscarFactura.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
+            this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 24);
+            this.btn_buscarFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscarFactura.Name = "btn_buscarFactura";
+            this.btn_buscarFactura.Size = new System.Drawing.Size(33, 25);
+            this.btn_buscarFactura.TabIndex = 41;
+            this.btn_buscarFactura.UseVisualStyleBackColor = false;
+            this.btn_buscarFactura.Click += new System.EventHandler(this.btn_buscarFactura_Click);
+            // 
             // txt_totalapagar
             // 
             this.txt_totalapagar.Location = new System.Drawing.Point(790, 356);
@@ -284,6 +298,27 @@
             this.label1.Size = new System.Drawing.Size(105, 20);
             this.label1.TabIndex = 39;
             this.label1.Text = "Total a pagar";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(27, 27);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 20);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "NIT Proveedor";
+            // 
+            // txt_nit
+            // 
+            this.txt_nit.Enabled = false;
+            this.txt_nit.Location = new System.Drawing.Point(152, 25);
+            this.txt_nit.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nit.Name = "txt_nit";
+            this.txt_nit.Size = new System.Drawing.Size(309, 24);
+            this.txt_nit.TabIndex = 37;
+            this.txt_nit.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
             // dgv_pagoproveedor
             // 
@@ -313,6 +348,20 @@
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Location = new System.Drawing.Point(576, 31);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(33, 25);
+            this.btn_buscar.TabIndex = 22;
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
             // 
             // label11
             // 
@@ -375,59 +424,11 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "NIT";
             // 
-            // btn_buscar
-            // 
-            this.btn_buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
-            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(576, 31);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(33, 25);
-            this.btn_buscar.TabIndex = 22;
-            this.btn_buscar.UseVisualStyleBackColor = false;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 27);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 20);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "NIT Proveedor";
-            // 
-            // txt_nit
-            // 
-            this.txt_nit.Enabled = false;
-            this.txt_nit.Location = new System.Drawing.Point(152, 25);
-            this.txt_nit.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nit.Name = "txt_nit";
-            this.txt_nit.Size = new System.Drawing.Size(309, 24);
-            this.txt_nit.TabIndex = 37;
-            this.txt_nit.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
-            // 
-            // btn_buscarFactura
-            // 
-            this.btn_buscarFactura.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
-            this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 24);
-            this.btn_buscarFactura.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_buscarFactura.Name = "btn_buscarFactura";
-            this.btn_buscarFactura.Size = new System.Drawing.Size(33, 25);
-            this.btn_buscarFactura.TabIndex = 41;
-            this.btn_buscarFactura.UseVisualStyleBackColor = false;
-            this.btn_buscarFactura.Click += new System.EventHandler(this.btn_buscarFactura_Click);
-            // 
             // CajaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1058, 931);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cmb_tipo);
