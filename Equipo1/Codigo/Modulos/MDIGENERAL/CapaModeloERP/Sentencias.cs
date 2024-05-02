@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.Odbc;
 using System.Security.Policy;
 using CapaModeloERP.clases;
+
 namespace CapaModeloERP
 {
     //David Carrillo  0901-20-3201 
@@ -80,7 +81,7 @@ namespace CapaModeloERP
             }
         }
         //David Carrillo 0901-20-3201 
-        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
+        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti, string Solicitud)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -90,13 +91,13 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti) VALUES (?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti,Solicitud) VALUES (?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
                                 cmd.Parameters.AddWithValue("@fecha_coti", fecha_coti);
                                 cmd.Parameters.AddWithValue("@fechaFinal_coti", fechaFinal_coti);
-
+                                cmd.Parameters.AddWithValue("@Solicitud",  Solicitud);
                                 cmd.ExecuteNonQuery();
                             }
 
@@ -112,6 +113,37 @@ namespace CapaModeloERP
             }
         }
 
+
+        public void INSVentasPedido(int id_vendedor, int tbl_detalle_cotizacion_id)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_ventaspedido (id_vendedor, tbl_cotizaciones_No_Cotizacion) VALUES (?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@id_vendedor", id_vendedor);
+                                cmd.Parameters.AddWithValue("@tbl_cotizaciones_No_Cotizacion", tbl_detalle_cotizacion_id);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar el pedido: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {
@@ -236,7 +268,7 @@ namespace CapaModeloERP
         }
 
         //David Carrillo 0901-20-3201 
-        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
+        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti, string Solicitud)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -246,7 +278,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti, Solicitud) VALUES (?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
@@ -254,7 +286,8 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
                                 cmd.Parameters.AddWithValue("@cod_producto", cod_producto);
                                 cmd.Parameters.AddWithValue("@total_detCoti", total_detCoti);
-
+                                cmd.Parameters.AddWithValue("@total_detCoti", Solicitud);
+                               
                                 cmd.ExecuteNonQuery();
                             }
 
@@ -264,6 +297,38 @@ namespace CapaModeloERP
                         {
                             transaction.Rollback();
                             Console.WriteLine($"Error al guardar el detalle de la cotización: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+        //David Carrillo 0901-20-3201
+        public void ActCoti(int No_Cotizacion)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string updateQuery = "UPDATE tbl_cotizaciones SET Solicitud = ? WHERE No_Cotizacion = ?";
+                            using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@Solicitud", "Pedido");
+                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                            
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al actualizar el detalle de la cotización: {ex.Message}");
                         }
                     }
                 }

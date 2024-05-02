@@ -16,5 +16,7 @@ namespace CapaVistaERP.Procesos
         {
             InitializeComponent();
         }
+
+       
     }
 }

@@ -133,7 +133,7 @@ namespace CapaVistaERP.Procesos
             this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(20, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 22);
+            this.label3.Size = new System.Drawing.Size(182, 21);
             this.label3.TabIndex = 121;
             this.label3.Text = "Apellido_Vendedor";
             // 
@@ -153,7 +153,7 @@ namespace CapaVistaERP.Procesos
             this.label11.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(581, 73);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 22);
+            this.label11.Size = new System.Drawing.Size(86, 21);
             this.label11.TabIndex = 119;
             this.label11.Text = "Telefono";
             // 
@@ -193,7 +193,7 @@ namespace CapaVistaERP.Procesos
             this.label12.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(14, 171);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 22);
+            this.label12.Size = new System.Drawing.Size(0, 21);
             this.label12.TabIndex = 95;
             // 
             // label13
@@ -202,7 +202,7 @@ namespace CapaVistaERP.Procesos
             this.label13.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(581, 134);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 22);
+            this.label13.Size = new System.Drawing.Size(70, 21);
             this.label13.TabIndex = 93;
             this.label13.Text = "Estado";
             // 
@@ -212,7 +212,7 @@ namespace CapaVistaERP.Procesos
             this.label14.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(20, 124);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(189, 22);
+            this.label14.Size = new System.Drawing.Size(181, 21);
             this.label14.TabIndex = 92;
             this.label14.Text = "Nombre_Vendedor";
             // 
@@ -222,7 +222,7 @@ namespace CapaVistaERP.Procesos
             this.label15.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(20, 73);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(134, 22);
+            this.label15.Size = new System.Drawing.Size(128, 21);
             this.label15.TabIndex = 91;
             this.label15.Text = "ID_Vendedor";
             // 
@@ -326,7 +326,7 @@ namespace CapaVistaERP.Procesos
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(590, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 22);
+            this.label2.Size = new System.Drawing.Size(121, 21);
             this.label2.TabIndex = 130;
             this.label2.Text = "Fecha Limite";
             // 
@@ -355,7 +355,7 @@ namespace CapaVistaERP.Procesos
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(20, 53);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 22);
+            this.label1.Size = new System.Drawing.Size(140, 21);
             this.label1.TabIndex = 127;
             this.label1.Text = "No. Cotizacion";
             // 
@@ -395,7 +395,7 @@ namespace CapaVistaERP.Procesos
             this.label25.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(590, 261);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(132, 22);
+            this.label25.Size = new System.Drawing.Size(126, 21);
             this.label25.TabIndex = 123;
             this.label25.Text = "Total a Pagar";
             // 
@@ -405,7 +405,7 @@ namespace CapaVistaERP.Procesos
             this.label24.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.Location = new System.Drawing.Point(590, 130);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(139, 22);
+            this.label24.Size = new System.Drawing.Size(135, 21);
             this.label24.TabIndex = 122;
             this.label24.Text = "Precio Unitario";
             // 
@@ -425,7 +425,7 @@ namespace CapaVistaERP.Procesos
             this.label18.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(20, 257);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(116, 22);
+            this.label18.Size = new System.Drawing.Size(112, 21);
             this.label18.TabIndex = 119;
             this.label18.Text = "Descripcion";
             // 
@@ -445,7 +445,7 @@ namespace CapaVistaERP.Procesos
             this.label20.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(14, 171);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(0, 22);
+            this.label20.Size = new System.Drawing.Size(0, 21);
             this.label20.TabIndex = 95;
             // 
             // label21
@@ -454,7 +454,7 @@ namespace CapaVistaERP.Procesos
             this.label21.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(590, 192);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(99, 22);
+            this.label21.Size = new System.Drawing.Size(94, 21);
             this.label21.TabIndex = 93;
             this.label21.Text = "Cantidad";
             // 
@@ -464,7 +464,7 @@ namespace CapaVistaERP.Procesos
             this.label22.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(20, 194);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(187, 22);
+            this.label22.Size = new System.Drawing.Size(181, 21);
             this.label22.TabIndex = 92;
             this.label22.Text = "Nombre_Solicitante";
             // 
@@ -474,7 +474,7 @@ namespace CapaVistaERP.Procesos
             this.label23.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(20, 136);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(110, 22);
+            this.label23.Size = new System.Drawing.Size(107, 21);
             this.label23.TabIndex = 91;
             this.label23.Text = "No. Pedido";
             // 
@@ -505,6 +505,7 @@ namespace CapaVistaERP.Procesos
             this.button2.TabIndex = 150;
             this.button2.Text = "Generar Pedido";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
