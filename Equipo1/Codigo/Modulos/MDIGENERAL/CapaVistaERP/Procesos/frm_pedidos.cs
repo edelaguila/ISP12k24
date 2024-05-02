@@ -121,6 +121,16 @@ namespace CapaVistaERP.Procesos
             // Llama al método buscarVendedor
             buscarCotizacion(idCotizacion);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int idVendedor= Convert.ToInt32(txt_id_vendedor.Text);
+            int idCotizacion= Convert.ToInt32(txt_id_cotizacion.Text);
+
+            cn.INSVentasPedido(idVendedor, idCotizacion);
+            MessageBox.Show("idVendedor" + idVendedor + "idCoti" + idCotizacion);
+
+        }
     }
 }
 
