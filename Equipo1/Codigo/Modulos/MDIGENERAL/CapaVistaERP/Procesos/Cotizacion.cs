@@ -196,6 +196,7 @@ namespace CapaVistaERP.Procesos
             string direccion_cl = txt_direccion_cl.Text;
             string correo_cl = txt_correo_cl.Text;
             string telefono_cl = txt_telefono_cl.Text;
+            string Solicitud = "Cotizacion";
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
             MessageBox.Show("Datos Guardados prosiga con su cotizacion");
@@ -207,7 +208,7 @@ namespace CapaVistaERP.Procesos
             string fechaini = dateTimePicker1.Text;
             string fechafin=dateTimePicker2.Text;
 
-            cn.InsertarCoti(no_coti, fechaini, fechafin);
+            cn.InsertarCoti(no_coti, fechaini, fechafin, Solicitud);
             MessageBox.Show("Cotizacion Guardada");
             if (string.IsNullOrEmpty(label16.Text))
             {
@@ -238,7 +239,7 @@ namespace CapaVistaERP.Procesos
                     Console.WriteLine("numCoti  "+no_coti);
                     Console.WriteLine("codProd  "+codProducto);
                     Console.WriteLine("subtotal  "+subtotal);
-                    cn.InsertarDetalleCoti(idCliente, cantidads, Convert.ToInt32(lblNoCoti.Text), codProducto, subtotal);
+                    cn.InsertarDetalleCoti(idCliente, cantidads, Convert.ToInt32(lblNoCoti.Text), codProducto, subtotal, Solicitud);
                 }
                 else
                 {

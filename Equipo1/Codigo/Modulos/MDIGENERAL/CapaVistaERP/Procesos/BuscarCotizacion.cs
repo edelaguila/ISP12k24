@@ -99,5 +99,13 @@ namespace CapaVistaERP.Procesos
                 }
             }
         }
+
+        private void btn_Hacer_pedido_Click(object sender, EventArgs e)
+        {
+            int idCoti = Convert.ToInt32(txt_NoCoti.Text);
+
+            cn.ActCoti(idCoti);
+            MessageBox.Show("Pedido realizado");
+        }
     }
 }

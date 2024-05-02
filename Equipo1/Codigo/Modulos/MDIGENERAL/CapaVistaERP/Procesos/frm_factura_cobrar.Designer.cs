@@ -29,178 +29,486 @@ namespace CapaVistaERP.Procesos
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_factura_cobrar));
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.txt_totalLetras = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_total = new System.Windows.Forms.TextBox();
+            this.txt_iva = new System.Windows.Forms.TextBox();
+            this.txt_subtotal = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_agregar = new System.Windows.Forms.Button();
+            this.dgv_detalle = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_nitprov = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txt_numfactura = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btn_numorden = new System.Windows.Forms.Button();
+            this.txt_numcompra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_nombreprov = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txt_Idprov = new System.Windows.Forms.TextBox();
+            this.dateTimePickerVencimiento = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txt_domicilio = new System.Windows.Forms.TextBox();
+            this.dateTimePickerAbono = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txt_telefonoprov = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.txt_totalLetras);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.txt_total);
+            this.groupBox3.Controls.Add(this.txt_iva);
+            this.groupBox3.Controls.Add(this.txt_subtotal);
+            this.groupBox3.Controls.Add(this.label16);
+            this.groupBox3.Controls.Add(this.label15);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(13, 593);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1071, 154);
+            this.groupBox3.TabIndex = 44;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Totales";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(948, 43);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(85, 53);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "Enviar Factura";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // txt_totalLetras
+            // 
+            this.txt_totalLetras.Location = new System.Drawing.Point(73, 87);
+            this.txt_totalLetras.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_totalLetras.Name = "txt_totalLetras";
+            this.txt_totalLetras.Size = new System.Drawing.Size(525, 24);
+            this.txt_totalLetras.TabIndex = 28;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(69, 49);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(178, 20);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "Notas / Observaciones";
+            // 
+            // txt_total
+            // 
+            this.txt_total.Enabled = false;
+            this.txt_total.Location = new System.Drawing.Point(768, 108);
+            this.txt_total.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_total.Name = "txt_total";
+            this.txt_total.Size = new System.Drawing.Size(132, 24);
+            this.txt_total.TabIndex = 26;
+            // 
+            // txt_iva
+            // 
+            this.txt_iva.Enabled = false;
+            this.txt_iva.Location = new System.Drawing.Point(768, 70);
+            this.txt_iva.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_iva.Name = "txt_iva";
+            this.txt_iva.Size = new System.Drawing.Size(132, 24);
+            this.txt_iva.TabIndex = 25;
+            // 
+            // txt_subtotal
+            // 
+            this.txt_subtotal.Enabled = false;
+            this.txt_subtotal.Location = new System.Drawing.Point(768, 31);
+            this.txt_subtotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_subtotal.Name = "txt_subtotal";
+            this.txt_subtotal.Size = new System.Drawing.Size(132, 24);
+            this.txt_subtotal.TabIndex = 24;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(656, 111);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(42, 20);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Total";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(656, 70);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 20);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "IVA";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(656, 33);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 20);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Sub-Total";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_agregar);
+            this.groupBox2.Controls.Add(this.dgv_detalle);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(13, 325);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(1071, 251);
+            this.groupBox2.TabIndex = 43;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Descripción de la factura";
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Location = new System.Drawing.Point(934, 64);
+            this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(99, 39);
+            this.btn_agregar.TabIndex = 17;
+            this.btn_agregar.Text = "PAGAR";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            // 
+            // dgv_detalle
+            // 
+            this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_detalle.Location = new System.Drawing.Point(35, 43);
+            this.dgv_detalle.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_detalle.Name = "dgv_detalle";
+            this.dgv_detalle.RowHeadersWidth = 51;
+            this.dgv_detalle.Size = new System.Drawing.Size(865, 185);
+            this.dgv_detalle.TabIndex = 8;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.txt_nitprov);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.txt_numfactura);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.btn_numorden);
+            this.groupBox1.Controls.Add(this.txt_numcompra);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.txt_nombreprov);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_Idprov);
+            this.groupBox1.Controls.Add(this.dateTimePickerVencimiento);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txt_domicilio);
+            this.groupBox1.Controls.Add(this.dateTimePickerAbono);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txt_telefonoprov);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(13, 3);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1071, 314);
+            this.groupBox1.TabIndex = 42;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Datos de la factura";
+            // 
+            // txt_nitprov
+            // 
+            this.txt_nitprov.Location = new System.Drawing.Point(647, 135);
+            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nitprov.Name = "txt_nitprov";
+            this.txt_nitprov.Size = new System.Drawing.Size(253, 24);
+            this.txt_nitprov.TabIndex = 33;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(553, 134);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(69, 20);
+            this.label21.TabIndex = 32;
+            this.label21.Text = "Apellido";
+            // 
+            // txt_numfactura
+            // 
+            this.txt_numfactura.Location = new System.Drawing.Point(727, 38);
+            this.txt_numfactura.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numfactura.Name = "txt_numfactura";
+            this.txt_numfactura.Size = new System.Drawing.Size(132, 24);
+            this.txt_numfactura.TabIndex = 31;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(553, 38);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(149, 20);
+            this.label20.TabIndex = 30;
+            this.label20.Text = "Numero de factura";
+            // 
+            // btn_numorden
+            // 
+            this.btn_numorden.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_numorden.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_numorden.BackgroundImage")));
+            this.btn_numorden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_numorden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_numorden.Location = new System.Drawing.Point(490, 38);
+            this.btn_numorden.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_numorden.Name = "btn_numorden";
+            this.btn_numorden.Size = new System.Drawing.Size(33, 25);
+            this.btn_numorden.TabIndex = 21;
+            this.btn_numorden.UseVisualStyleBackColor = false;
+            // 
+            // txt_numcompra
+            // 
+            this.txt_numcompra.Location = new System.Drawing.Point(286, 40);
+            this.txt_numcompra.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numcompra.Name = "txt_numcompra";
+            this.txt_numcompra.Size = new System.Drawing.Size(237, 24);
+            this.txt_numcompra.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(140, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 29);
+            this.label1.Size = new System.Drawing.Size(147, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "No. Factura";
+            this.label1.Text = "Numero de Pedido";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(460, 270);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(175, 20);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Fecha de vencimiento";
+            // 
+            // txt_nombreprov
+            // 
+            this.txt_nombreprov.Location = new System.Drawing.Point(297, 132);
+            this.txt_nombreprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombreprov.Name = "txt_nombreprov";
+            this.txt_nombreprov.Size = new System.Drawing.Size(240, 24);
+            this.txt_nombreprov.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 115);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(553, 89);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(238, 29);
+            this.label2.Size = new System.Drawing.Size(84, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre de Producto";
+            this.label2.Text = "Vendedor";
+            // 
+            // txt_Idprov
+            // 
+            this.txt_Idprov.Location = new System.Drawing.Point(727, 86);
+            this.txt_Idprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Idprov.Name = "txt_Idprov";
+            this.txt_Idprov.Size = new System.Drawing.Size(136, 24);
+            this.txt_Idprov.TabIndex = 11;
+            // 
+            // dateTimePickerVencimiento
+            // 
+            this.dateTimePickerVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerVencimiento.Location = new System.Drawing.Point(682, 266);
+            this.dateTimePickerVencimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerVencimiento.Name = "dateTimePickerVencimiento";
+            this.dateTimePickerVencimiento.Size = new System.Drawing.Size(177, 24);
+            this.dateTimePickerVencimiento.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 192);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(140, 135);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(246, 29);
+            this.label3.Size = new System.Drawing.Size(68, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Cantidad de Producto";
+            this.label3.Text = "Nombre";
             // 
-            // label4
+            // txt_domicilio
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 268);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(154, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Total Factura";
+            this.txt_domicilio.Location = new System.Drawing.Point(297, 180);
+            this.txt_domicilio.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_domicilio.Name = "txt_domicilio";
+            this.txt_domicilio.Size = new System.Drawing.Size(565, 24);
+            this.txt_domicilio.TabIndex = 12;
             // 
-            // label5
+            // dateTimePickerAbono
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(22, 333);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(194, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Tiempo de Pago";
+            this.dateTimePickerAbono.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePickerAbono.Location = new System.Drawing.Point(299, 266);
+            this.dateTimePickerAbono.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerAbono.Name = "dateTimePickerAbono";
+            this.dateTimePickerAbono.Size = new System.Drawing.Size(153, 24);
+            this.dateTimePickerAbono.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(22, 400);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(140, 270);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 29);
+            this.label6.Size = new System.Drawing.Size(108, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Estado de Factura";
+            this.label6.Text = "Fecha abono";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(140, 183);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Direccion";
+            // 
+            // txt_telefonoprov
+            // 
+            this.txt_telefonoprov.Location = new System.Drawing.Point(297, 222);
+            this.txt_telefonoprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_telefonoprov.Name = "txt_telefonoprov";
+            this.txt_telefonoprov.Size = new System.Drawing.Size(240, 24);
+            this.txt_telefonoprov.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(140, 225);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Teléfono";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(155, 18);
+            this.textBox1.Location = new System.Drawing.Point(647, 218);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 30);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(284, 114);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 30);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(284, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(149, 30);
-            this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(284, 267);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(149, 30);
-            this.textBox4.TabIndex = 9;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(284, 333);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(149, 30);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(284, 399);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(149, 30);
-            this.textBox6.TabIndex = 11;
+            this.textBox1.Size = new System.Drawing.Size(240, 24);
+            this.textBox1.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(391, 18);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(553, 222);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(215, 29);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Factura por Cobrar";
+            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Correo";
             // 
             // frm_factura_cobrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 450);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1144, 796);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Name = "frm_factura_cobrar";
             this.Text = "frm_factura_cobrar";
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txt_totalLetras;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txt_total;
+        private System.Windows.Forms.TextBox txt_iva;
+        private System.Windows.Forms.TextBox txt_subtotal;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.DataGridView dgv_detalle;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_nitprov;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txt_numfactura;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btn_numorden;
+        private System.Windows.Forms.TextBox txt_numcompra;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_nombreprov;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_Idprov;
+        private System.Windows.Forms.DateTimePicker dateTimePickerVencimiento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_domicilio;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAbono;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_telefonoprov;
+        private System.Windows.Forms.Label label5;
     }
 }
