@@ -126,6 +126,12 @@
     <Compile Include="Mantenimiento_AsignacionPerfilUsuario.Designer.cs">
       <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimiento_Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Cuenta.Designer.cs">
+      <DependentUpon>Mantenimiento_Cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimiento_Estado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento_AsignacionPerfilUsuario.resx">
       <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Cuenta.resx">
+      <DependentUpon>Mantenimiento_Cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento_Estado.resx">
       <DependentUpon>Mantenimiento_Estado.cs</DependentUpon>
