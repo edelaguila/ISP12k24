@@ -17,7 +17,7 @@ namespace CapaVista_SisB
         {
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            navegador1.config("tbl_mantenimientos_tipo_movimiento", this);
+            navegador1.config("tbl_mantenimientos_tipo_movimiento", this, "8001");
         }
 
         private void txt_estado_TextChanged(object sender, EventArgs e)
@@ -45,6 +45,16 @@ namespace CapaVista_SisB
         }
 
         private void MantenimientoTransaccion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navegador1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_tipoMov_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

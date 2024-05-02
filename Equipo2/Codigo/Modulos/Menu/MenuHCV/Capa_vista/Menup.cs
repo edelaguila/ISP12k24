@@ -56,10 +56,10 @@ namespace MenuHCV
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btnLogout_Click_1(object sender, EventArgs e)
         {
-            //Login b = new Login();
-            //cn.setBtitacora("999", "Cerro Sesion");
-            //b.Show();
-            //this.Close();
+            Login b = new Login();
+            cn.setBtitacora("999", "Cerró Sesión");
+            b.Show();
+            this.Close();
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
         private void btncompras_Click(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace MenuHCV
             form.Show();
             //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
             //form.Show();
-            //cn.setBtitacora("8000", "Ingreso Prototipo");
+            cn.setBtitacora("8000", "Ingreso a bancos");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 

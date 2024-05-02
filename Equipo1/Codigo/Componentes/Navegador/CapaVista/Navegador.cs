@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Seguridad_Controlador;
 using System.Security.Cryptography;
 using System.Runtime.CompilerServices;
+using Capa_VistaConsultas;
 
 namespace CapaVista
 {
@@ -40,23 +41,7 @@ namespace CapaVista
             //MessageBox.Show("Realizando bitacora");
         }
 
-        public void _initSeguridad(string idApp = "1000", string user = "admin", string pass = "12345", string idUser = null)
-        {
-            if (idUser != null)
-            {
-                Seguridad_Controlador.Controlador.idUser = idUser;
-                return;
-            }
-            this.idApp = idApp;
-            string encriptado = this.SetHash(pass);
-            bool login = ctrl_seguridad.validarLogin(user, encriptado);
-            if (!login)
-            {
-                MessageBox.Show("Error, se ha denegado el accesso departe de seguridad");
-                return;
-            }
-            this.loadButtons();
-        }
+
 
         public void loadButtons()
         {
@@ -68,28 +53,16 @@ namespace CapaVista
                     Button mybutton = (Button)c;
                     if (mybutton.Tag == null || mybutton.Tag.Equals("")) continue;
                     int index = Convert.ToInt32(mybutton.Tag) - 1;
-                    if (idApp.Equals("1000"))
-                    {
+                    //if (idApp.Equals("8000"))
+                    //{
                         mybutton.Enabled = true; continue;
-                    }
+                    //}
                     mybutton.Enabled = !Convert.ToBoolean(arr[index]);
                 }
             }
         }
 
 
-        public string SetHash(string inputString)
-        {
-            string hash = "x2";
-            byte[] bytes = UTF8Encoding.UTF8.GetBytes(inputString);
-            MD5 mD5 = MD5.Create();
-            TripleDES tripleDES = TripleDES.Create();
-            tripleDES.Key = mD5.ComputeHash(UTF8Encoding.UTF8.GetBytes(hash));
-            tripleDES.Mode = CipherMode.ECB;
-            ICryptoTransform transform = tripleDES.CreateEncryptor();
-            byte[] output = transform.TransformFinalBlock(bytes, 0, bytes.Length);
-            return Convert.ToBase64String(output);
-        }
 
         public void fillCombo()
         {
@@ -119,10 +92,11 @@ namespace CapaVista
             }
         }
 
-        public void config(string tabla, Form parent, string tabla2)
+        public void config(string tabla, Form parent, string _id)
         {
+            this.idApp = _id;
             this.tabla = tabla;
-            this.tabla_cmb = tabla2;
+            this.tabla_cmb = "";
             this.parent = parent;
             this.utilConsultasI.setTabla(this.tabla);
             DataGridView gd = GetDGV(this.parent);
@@ -138,6 +112,8 @@ namespace CapaVista
             gd.CellClick += this.data_Click;
             this.utilConsultasI.refrescar(this.parent);
             this.cambiarEstado(false);
+            this.loadButtons();
+            gd.AllowUserToAddRows = false;
         }
 
 
@@ -273,7 +249,7 @@ namespace CapaVista
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "C:/Users/callo/Music/Ayudas NAV 2024/proyectoads22023-main/Codigo/Modulos/Prototipo/Prototipo/Capa_vista/bin/Debug/Ayudas/AyudaSeguridad.chm", "Ayuda.html");
+            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
@@ -391,7 +367,6 @@ namespace CapaVista
                 filaActual++;
                 gd.Rows[filaActual].Selected = true;
                 focusData((DataTable)gd.DataSource);
-
             }
             else
             {
@@ -434,6 +409,13 @@ namespace CapaVista
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             this.identificarFormulario(this.parent, "e");
+        }
+
+        private void btn_consultar_Click(object sender, EventArgs e)
+        {
+            Capa_VistaConsultas.Busqueda_Simple form = new Capa_VistaConsultas.Busqueda_Simple();
+            form.setTable(this.tabla);
+            form.Show();
         }
     }
 }

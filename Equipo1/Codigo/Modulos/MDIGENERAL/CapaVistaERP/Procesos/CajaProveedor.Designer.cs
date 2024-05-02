@@ -35,22 +35,26 @@
             this.txt_beneficiario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.btn_pagar = new System.Windows.Forms.Button();
-            this.dateTimePickerFechaAbono = new System.Windows.Forms.DateTimePicker();
+            this.dt_fechaabono = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_numero = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cb_tipotransa = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmb_banco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_nitprov = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Idprov = new System.Windows.Forms.TextBox();
-            this.txt_nombreprov = new System.Windows.Forms.TextBox();
+            this.txt_totalapagar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.dgv_pagoproveedor = new System.Windows.Forms.DataGridView();
+            this.txt_bancos = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -58,17 +62,19 @@
             // 
             // cmb_tipo
             // 
+            this.cmb_tipo.Controls.Add(this.textBox1);
+            this.cmb_tipo.Controls.Add(this.txt_bancos);
             this.cmb_tipo.Controls.Add(this.btn_cancelar);
             this.cmb_tipo.Controls.Add(this.txt_concepto);
             this.cmb_tipo.Controls.Add(this.label9);
             this.cmb_tipo.Controls.Add(this.txt_beneficiario);
             this.cmb_tipo.Controls.Add(this.label8);
             this.cmb_tipo.Controls.Add(this.btn_pagar);
-            this.cmb_tipo.Controls.Add(this.dateTimePickerFechaAbono);
+            this.cmb_tipo.Controls.Add(this.dt_fechaabono);
             this.cmb_tipo.Controls.Add(this.label7);
             this.cmb_tipo.Controls.Add(this.txt_numero);
             this.cmb_tipo.Controls.Add(this.label6);
-            this.cmb_tipo.Controls.Add(this.comboBox3);
+            this.cmb_tipo.Controls.Add(this.cb_tipotransa);
             this.cmb_tipo.Controls.Add(this.label5);
             this.cmb_tipo.Controls.Add(this.cmb_banco);
             this.cmb_tipo.Controls.Add(this.label4);
@@ -141,14 +147,14 @@
             this.btn_pagar.Text = "Pagar";
             this.btn_pagar.UseVisualStyleBackColor = true;
             // 
-            // dateTimePickerFechaAbono
+            // dt_fechaabono
             // 
-            this.dateTimePickerFechaAbono.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerFechaAbono.Location = new System.Drawing.Point(552, 93);
-            this.dateTimePickerFechaAbono.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePickerFechaAbono.Name = "dateTimePickerFechaAbono";
-            this.dateTimePickerFechaAbono.Size = new System.Drawing.Size(161, 24);
-            this.dateTimePickerFechaAbono.TabIndex = 48;
+            this.dt_fechaabono.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dt_fechaabono.Location = new System.Drawing.Point(552, 93);
+            this.dt_fechaabono.Margin = new System.Windows.Forms.Padding(4);
+            this.dt_fechaabono.Name = "dt_fechaabono";
+            this.dt_fechaabono.Size = new System.Drawing.Size(161, 24);
+            this.dt_fechaabono.TabIndex = 48;
             // 
             // label7
             // 
@@ -180,13 +186,13 @@
             this.label6.TabIndex = 45;
             this.label6.Text = "Número";
             // 
-            // comboBox3
+            // cb_tipotransa
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(552, 37);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(161, 27);
-            this.comboBox3.TabIndex = 44;
+            this.cb_tipotransa.FormattingEnabled = true;
+            this.cb_tipotransa.Location = new System.Drawing.Point(552, 37);
+            this.cb_tipotransa.Name = "cb_tipotransa";
+            this.cb_tipotransa.Size = new System.Drawing.Size(161, 27);
+            this.cb_tipotransa.TabIndex = 44;
             // 
             // label5
             // 
@@ -206,6 +212,7 @@
             this.cmb_banco.Name = "cmb_banco";
             this.cmb_banco.Size = new System.Drawing.Size(161, 27);
             this.cmb_banco.TabIndex = 42;
+            this.cmb_banco.SelectedIndexChanged += new System.EventHandler(this.cmb_banco_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -220,9 +227,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_nitprov);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_Idprov);
-            this.groupBox1.Controls.Add(this.txt_nombreprov);
+            this.groupBox1.Controls.Add(this.txt_totalapagar);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_nombre);
@@ -237,6 +246,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
             // 
+            // txt_nitprov
+            // 
+            this.txt_nitprov.Enabled = false;
+            this.txt_nitprov.Location = new System.Drawing.Point(830, 52);
+            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nitprov.Name = "txt_nitprov";
+            this.txt_nitprov.Size = new System.Drawing.Size(184, 24);
+            this.txt_nitprov.TabIndex = 42;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(709, 50);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 20);
+            this.label10.TabIndex = 41;
+            this.label10.Text = "NIT Proveedor";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -250,19 +279,20 @@
             // 
             // txt_Idprov
             // 
+            this.txt_Idprov.Enabled = false;
             this.txt_Idprov.Location = new System.Drawing.Point(162, 50);
             this.txt_Idprov.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Idprov.Name = "txt_Idprov";
             this.txt_Idprov.Size = new System.Drawing.Size(104, 24);
             this.txt_Idprov.TabIndex = 35;
             // 
-            // txt_nombreprov
+            // txt_totalapagar
             // 
-            this.txt_nombreprov.Location = new System.Drawing.Point(797, 432);
-            this.txt_nombreprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nombreprov.Name = "txt_nombreprov";
-            this.txt_nombreprov.Size = new System.Drawing.Size(184, 24);
-            this.txt_nombreprov.TabIndex = 40;
+            this.txt_totalapagar.Location = new System.Drawing.Point(797, 432);
+            this.txt_totalapagar.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_totalapagar.Name = "txt_totalapagar";
+            this.txt_totalapagar.Size = new System.Drawing.Size(184, 24);
+            this.txt_totalapagar.TabIndex = 40;
             // 
             // label1
             // 
@@ -288,10 +318,11 @@
             // 
             // txt_nombre
             // 
+            this.txt_nombre.Enabled = false;
             this.txt_nombre.Location = new System.Drawing.Point(375, 48);
             this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(606, 24);
+            this.txt_nombre.Size = new System.Drawing.Size(309, 24);
             this.txt_nombre.TabIndex = 37;
             // 
             // dgv_pagoproveedor
@@ -303,6 +334,24 @@
             this.dgv_pagoproveedor.RowTemplate.Height = 24;
             this.dgv_pagoproveedor.Size = new System.Drawing.Size(943, 293);
             this.dgv_pagoproveedor.TabIndex = 38;
+            this.dgv_pagoproveedor.Tag = "tbl_facturaxpagar";
+            this.dgv_pagoproveedor.SelectionChanged += new System.EventHandler(this.dgv_pagoproveedor_SelectionChanged);
+            // 
+            // txt_bancos
+            // 
+            this.txt_bancos.Enabled = false;
+            this.txt_bancos.Location = new System.Drawing.Point(315, 37);
+            this.txt_bancos.Name = "txt_bancos";
+            this.txt_bancos.Size = new System.Drawing.Size(52, 24);
+            this.txt_bancos.TabIndex = 55;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(728, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(68, 24);
+            this.textBox1.TabIndex = 56;
             // 
             // CajaProveedor
             // 
@@ -331,21 +380,25 @@
         private System.Windows.Forms.TextBox txt_beneficiario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_pagar;
-        private System.Windows.Forms.DateTimePicker dateTimePickerFechaAbono;
+        private System.Windows.Forms.DateTimePicker dt_fechaabono;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_numero;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cb_tipotransa;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmb_banco;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Idprov;
-        private System.Windows.Forms.TextBox txt_nombreprov;
+        private System.Windows.Forms.TextBox txt_totalapagar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.DataGridView dgv_pagoproveedor;
+        public System.Windows.Forms.TextBox txt_Idprov;
+        public System.Windows.Forms.TextBox txt_nombre;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.TextBox txt_nitprov;
+        private System.Windows.Forms.TextBox txt_bancos;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

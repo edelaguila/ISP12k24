@@ -18,7 +18,7 @@ namespace CapaVista_SisB
         {
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
-            navegador1.config("Cheque", this);
+            navegador2.config("tbl_cheque", this, "8005");
            
 
         }

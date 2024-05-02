@@ -28,33 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.id_vendedor = new System.Windows.Forms.TextBox();
             this.nombre_vend = new System.Windows.Forms.TextBox();
             this.telefono_vend = new System.Windows.Forms.TextBox();
             this.estado_vend = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.navegador1 = new CapaVista.Navegador();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // id_vendedor
-            // 
-            this.id_vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_vendedor.Location = new System.Drawing.Point(142, 241);
-            this.id_vendedor.Name = "id_vendedor";
-            this.id_vendedor.Size = new System.Drawing.Size(200, 30);
-            this.id_vendedor.TabIndex = 1;
-            this.id_vendedor.Tag = "id_vendedor";
             // 
             // nombre_vend
             // 
             this.nombre_vend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombre_vend.Location = new System.Drawing.Point(142, 333);
+            this.nombre_vend.Location = new System.Drawing.Point(171, 241);
             this.nombre_vend.Name = "nombre_vend";
             this.nombre_vend.Size = new System.Drawing.Size(200, 30);
             this.nombre_vend.TabIndex = 2;
@@ -63,7 +55,7 @@
             // telefono_vend
             // 
             this.telefono_vend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefono_vend.Location = new System.Drawing.Point(554, 241);
+            this.telefono_vend.Location = new System.Drawing.Point(171, 333);
             this.telefono_vend.Name = "telefono_vend";
             this.telefono_vend.Size = new System.Drawing.Size(200, 30);
             this.telefono_vend.TabIndex = 3;
@@ -72,11 +64,13 @@
             // estado_vend
             // 
             this.estado_vend.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.estado_vend.Location = new System.Drawing.Point(554, 333);
+            this.estado_vend.Location = new System.Drawing.Point(787, 330);
             this.estado_vend.Name = "estado_vend";
             this.estado_vend.Size = new System.Drawing.Size(200, 30);
             this.estado_vend.TabIndex = 4;
             this.estado_vend.Tag = "estado_vend";
+            this.estado_vend.Text = "Activo";
+            this.estado_vend.Visible = false;
             // 
             // dataGridView1
             // 
@@ -107,21 +101,11 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "VENDEDORES";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(228, 201);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 25);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "ID";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(207, 299);
+            this.label3.Location = new System.Drawing.Point(212, 201);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(81, 25);
             this.label3.TabIndex = 11;
@@ -131,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(602, 201);
+            this.label4.Location = new System.Drawing.Point(219, 293);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 12;
@@ -143,26 +127,57 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(602, 299);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 31);
+            this.label5.Size = new System.Drawing.Size(73, 25);
             this.label5.TabIndex = 13;
             this.label5.Text = "Estado";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(554, 330);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 33);
+            this.comboBox1.TabIndex = 14;
+            this.comboBox1.Text = "--Seleccione--";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(595, 201);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Apellido";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(554, 241);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 30);
+            this.textBox1.TabIndex = 15;
+            this.textBox1.Tag = "apellido_vend";
             // 
             // frm_mant_vendedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 629);
+            this.ClientSize = new System.Drawing.Size(1039, 745);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.navegador1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.estado_vend);
             this.Controls.Add(this.telefono_vend);
             this.Controls.Add(this.nombre_vend);
-            this.Controls.Add(this.id_vendedor);
             this.Name = "frm_mant_vendedores";
             this.Text = "frm_mant_vendedores";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -172,17 +187,17 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox id_vendedor;
         private System.Windows.Forms.TextBox nombre_vend;
         private System.Windows.Forms.TextBox telefono_vend;
         private System.Windows.Forms.TextBox estado_vend;
         private System.Windows.Forms.DataGridView dataGridView1;
         private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

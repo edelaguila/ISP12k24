@@ -119,6 +119,7 @@ namespace CapaVistaERP.Procesos
             this.button4.TabIndex = 13;
             this.button4.Text = "Enviar Órden";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txt_nota
             // 
@@ -234,6 +235,7 @@ namespace CapaVistaERP.Procesos
             this.btn_confirmar.TabIndex = 13;
             this.btn_confirmar.Text = "Confirmar";
             this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // cmb_productos
             // 
@@ -243,6 +245,7 @@ namespace CapaVistaERP.Procesos
             this.cmb_productos.Name = "cmb_productos";
             this.cmb_productos.Size = new System.Drawing.Size(160, 27);
             this.cmb_productos.TabIndex = 12;
+            this.cmb_productos.SelectedIndexChanged += new System.EventHandler(this.cmb_productos_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -264,6 +267,7 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar.TabIndex = 10;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_agregar
             // 
@@ -274,6 +278,7 @@ namespace CapaVistaERP.Procesos
             this.btn_agregar.TabIndex = 9;
             this.btn_agregar.Text = "Agregar";
             this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // dgv_detalle
             // 
@@ -462,6 +467,7 @@ namespace CapaVistaERP.Procesos
             this.cmb_orden.Name = "cmb_orden";
             this.cmb_orden.Size = new System.Drawing.Size(239, 27);
             this.cmb_orden.TabIndex = 28;
+            this.cmb_orden.SelectedIndexChanged += new System.EventHandler(this.cmb_orden_SelectedIndexChanged);
             // 
             // txt_numeroorden
             // 
@@ -496,6 +502,7 @@ namespace CapaVistaERP.Procesos
             this.btn_buscarProveedor.Size = new System.Drawing.Size(31, 26);
             this.btn_buscarProveedor.TabIndex = 19;
             this.btn_buscarProveedor.UseVisualStyleBackColor = false;
+            this.btn_buscarProveedor.Click += new System.EventHandler(this.btn_buscarProveedor_Click);
             // 
             // label9
             // 
@@ -550,8 +557,9 @@ namespace CapaVistaERP.Procesos
             // 
             this.txt_idProv.Location = new System.Drawing.Point(291, 94);
             this.txt_idProv.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_idProv.Multiline = true;
             this.txt_idProv.Name = "txt_idProv";
-            this.txt_idProv.Size = new System.Drawing.Size(239, 24);
+            this.txt_idProv.Size = new System.Drawing.Size(239, 26);
             this.txt_idProv.TabIndex = 11;
             // 
             // dateTimePickerEntrega
@@ -661,6 +669,7 @@ namespace CapaVistaERP.Procesos
             this.Controls.Add(this.groupBox1);
             this.Name = "OrdenesdeCompra";
             this.Text = "OrdenesdeCompra";
+            this.Load += new System.EventHandler(this.OrdenesdeCompra_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);

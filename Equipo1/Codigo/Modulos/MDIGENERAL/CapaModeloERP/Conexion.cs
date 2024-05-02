@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 using System.Data.Odbc;
 namespace CapaModeloERP
 {
-    class Conexion
+   public class Conexion
     {
-        public OdbcConnection conexion()
+        public OdbcConnection connection()
         {
-            //creacion de la conexion via ODBC
-            OdbcConnection conn = new OdbcConnection("dsn=HotelSConexion");//manejar estandarizacion
+            OdbcConnection conn = new OdbcConnection("Dsn=HotelSConexion");
             try
             {
                 conn.Open();
@@ -23,8 +22,8 @@ namespace CapaModeloERP
             return conn;
         }
 
-        //metodo para cerrar la conexion
-        public void desconexion(OdbcConnection conn)
+
+        public void disconnect(OdbcConnection conn)
         {
             try
             {
@@ -32,7 +31,7 @@ namespace CapaModeloERP
             }
             catch (OdbcException)
             {
-                Console.WriteLine("No Conectó");
+                Console.WriteLine("No desconectó");
             }
         }
     }
