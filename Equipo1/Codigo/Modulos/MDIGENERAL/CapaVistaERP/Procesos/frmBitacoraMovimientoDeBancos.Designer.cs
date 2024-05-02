@@ -59,6 +59,7 @@ namespace CapaVistaERP.Procesos
             this.dtTabla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtTabla.Size = new System.Drawing.Size(997, 358);
             this.dtTabla.TabIndex = 0;
+            this.dtTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellContentClick);
             // 
             // label1
             // 
@@ -217,6 +218,7 @@ namespace CapaVistaERP.Procesos
             this.btn_ayudas.Text = "Ayuda";
             this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ayudas.UseVisualStyleBackColor = false;
+            this.btn_ayudas.Click += new System.EventHandler(this.btn_ayudas_Click);
             // 
             // btn_reporte
             // 

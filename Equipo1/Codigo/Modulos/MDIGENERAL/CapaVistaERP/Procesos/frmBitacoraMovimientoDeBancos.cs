@@ -62,7 +62,7 @@ namespace CapaVistaERP.Procesos
             if (dtTabla.SelectedRows.Count > 0)
             {
                 // Obtener el ID de la fila seleccionada
-                int idSeleccionado = Convert.ToInt32(dtTabla.SelectedRows[0].Cells["id_movimientoBanco"].Value);
+                int idSeleccionado = Convert.ToInt32(dtTabla.SelectedRows[0].Cells["ID"].Value);
 
                 // Llamar al método EliminarMovimiento del controlador con el ID seleccionado
                 bool eliminado = cn.EliminarMovimiento(idSeleccionado);
@@ -106,6 +106,16 @@ namespace CapaVistaERP.Procesos
             DataTable dtRegistros = cn.FiltrarRegistrosPorFecha(añoSeleccionado, "Mensual");
             // Asignar el DataTable al DataGridView para mostrar los registros filtrados
             dtTabla.DataSource = dtRegistros;
+        }
+
+        private void dtTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
