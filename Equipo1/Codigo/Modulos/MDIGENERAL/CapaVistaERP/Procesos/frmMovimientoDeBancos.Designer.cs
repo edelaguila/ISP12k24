@@ -68,7 +68,7 @@ namespace CapaVistaERP.Procesos
             this.btn_cancelarMovimiento.Name = "btn_cancelarMovimiento";
             this.btn_cancelarMovimiento.Size = new System.Drawing.Size(142, 51);
             this.btn_cancelarMovimiento.TabIndex = 31;
-            this.btn_cancelarMovimiento.Text = "Salir y cancelar ";
+            this.btn_cancelarMovimiento.Text = "Limpiar";
             this.btn_cancelarMovimiento.UseVisualStyleBackColor = true;
             this.btn_cancelarMovimiento.Click += new System.EventHandler(this.btn_cancelarMovimiento_Click);
             // 
@@ -304,7 +304,7 @@ namespace CapaVistaERP.Procesos
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 51);
             this.button1.TabIndex = 32;
-            this.button1.Text = "ver movimientos";
+            this.button1.Text = "Regresar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

@@ -312,7 +312,7 @@ namespace CapaVistaERP
 
         private void button29_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.frmMovimientoDeBancos());
+            Abrir(new Procesos.frmBitacoraMovimientoDeBancos());
             hideSubMenu();
         }
 

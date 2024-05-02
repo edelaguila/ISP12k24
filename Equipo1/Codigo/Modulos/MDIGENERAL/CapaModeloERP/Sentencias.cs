@@ -440,6 +440,41 @@ namespace CapaModeloERP
             return dt;
         }
 
+        // carlos enrique guzman cabrera
+        public bool EliminarMovimiento(int idMovimiento)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_movimientoDeBancos WHERE id_movimientoBanco = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("idMovimiento", idMovimiento);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable ObtenerRegistrosPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtRegistros = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT * FROM tbl_movimientoDeBancos WHERE fecha_movimientoBanco BETWEEN ? AND ? ORDER BY fecha_movimientoBanco DESC";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtRegistros);
+                }
+            }
+
+            return dtRegistros;
+        }
+
         //Carol Chuy Modulo de Compras
         public string[] llenarCmbprod()
         {

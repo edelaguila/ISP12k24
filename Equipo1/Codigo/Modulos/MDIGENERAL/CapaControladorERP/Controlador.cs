@@ -137,6 +137,46 @@ namespace CapaControladorERP
             return sn.BuscarMB(strfiltro);
         }
 
+        // carlos enrique guzman cabrera
+        public bool EliminarMovimiento(int idMovimiento)
+        {
+            return sn.EliminarMovimiento(idMovimiento);
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
+        {
+           
+
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerRegistrosPorFecha(fechaInicio, fechaFin);
+        }
+
         //Carol Chuy Modulo Compras
         public string[] itemsprod()
         {

@@ -102,6 +102,7 @@ namespace CapaVistaERP.Procesos
             valores.Add("fecha_movimientoBanco", dtp_fecha.Value);
             valores.Add("monto_movimientoBanco", int.Parse(txt_monto.Text));
             valores.Add("cuenta_movimientoBanco", int.Parse(txt_IDCUENTAB.Text));
+            valores.Add("efecto_movimientoBanco", txt_efecto.Text);
 
 
             cn.GuardarDatos(tabla, valores);
@@ -146,7 +147,7 @@ namespace CapaVistaERP.Procesos
         private async void btn_cancelarMovimiento_Click(object sender, EventArgs e)
         {
             // Mostrar un mensaje de confirmación
-            DialogResult result = MessageBox.Show("¿Estás seguro de que deseas salir? Todos los datos no guardados se eliminarán.", "Confirmación", MessageBoxButtons.YesNo);
+            DialogResult result = MessageBox.Show("Se limpiaran todas las casillas. ¿Desea limpiar?", "Confirmación", MessageBoxButtons.YesNo);
 
             // Si el usuario elige "Sí", cerrar la ventana; de lo contrario, mantenerla abierta.
             if (result == DialogResult.Yes)
@@ -163,16 +164,18 @@ namespace CapaVistaERP.Procesos
                 cb_cuenta.SelectedIndex = -1;
                 cb_movimiento.SelectedIndex = -1;
 
-                await Task.Delay(500);
-                this.Close();
+            }else if (result == DialogResult.No){
+
+                MessageBox.Show("no se limpiaron las casillas");
+
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            frmBitacoraMovimientoDeBancos form2 = new frmBitacoraMovimientoDeBancos();
-            form2.Show();
-          
+            await Task.Delay(500);
+            this.Close();
+
         }
 
         private void frmMovimientoDeBancos_Load(object sender, EventArgs e)
