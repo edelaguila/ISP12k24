@@ -81,3 +81,13 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Controlador_PrototipoMenu.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\eCryptography.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\bin\Debug\Modelo_PrototipoMenu.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.AssemblyReference.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CoreCompileInputs.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.csproj.CopyComplete
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_controlador\obj\Debug\Controlador_PrototipoMenu.pdb

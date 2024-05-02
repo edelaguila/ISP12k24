@@ -260,3 +260,30 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Navegador2.0.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ControllerLayer.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ModelLayer.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\eCryptography.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\FontAwesome.Sharp.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Navegador2.0.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ControllerLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ModelLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Navegador2.0.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ControllerLayer.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ModelLayer.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.AssemblyReference.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmAplicaciones.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.MenuPrototipo.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.Properties.Resources.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.GenerateResource.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CoreCompileInputs.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
