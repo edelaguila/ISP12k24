@@ -34,3 +34,9 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.AssemblyReference.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
