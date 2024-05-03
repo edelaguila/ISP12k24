@@ -73,9 +73,9 @@ namespace CapaControladorERP
             sn.InsertarCoti(No_Cotizacion,fecha_coti,fechaFinal_coti, Solicitud);
         }
         //David Carrillo 0901-20-3201 
-        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti, string Solicitud)
+        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
-            sn.InsertarDetalleCoti(id_cliente,cantidad_coti,No_Cotizacion,cod_producto,total_detCoti, Solicitud);
+            sn.InsertarDetalleCoti(id_cliente,cantidad_coti,No_Cotizacion,cod_producto,total_detCoti);
         }
         //David Carrillo 0901-20-3201 
         public void ActCoti(int No_Cotizacion)
@@ -83,10 +83,18 @@ namespace CapaControladorERP
             sn.ActCoti(No_Cotizacion);
         }
         //David Carrillo 0901-20-3201 
-        public string ObtenerUltimoIdCoti()
+
+        public string ObtenerUltimoDato(string dato, string tabla, string dato2)
         {
-          return  sn.ObtenerUltimoIdCoti();
+           return sn.ObtenerUltimoDato(dato, tabla, dato2);
         }
+
+        //David Carrillo
+        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        {
+             sn.InsertarFactura( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+        }
+
         //David Carrillo 0901-20-3201 
         public int ObtenerCodigoProducto(string nombreProducto)
         {

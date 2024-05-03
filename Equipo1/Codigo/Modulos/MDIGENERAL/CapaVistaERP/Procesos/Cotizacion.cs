@@ -35,7 +35,7 @@ namespace CapaVistaERP.Procesos
 
         private void obtIDCoti()
         {
-            string idcoti = cn.ObtenerUltimoIdCoti();
+            string idcoti = cn.ObtenerUltimoDato("No_Cotizacion", "tbl_cotizaciones", "No_Cotizacion");
             if (idcoti == "No hay cotizaciones registradas.")
             {
                 idcoti = "0";
@@ -239,7 +239,7 @@ namespace CapaVistaERP.Procesos
                     Console.WriteLine("numCoti  "+no_coti);
                     Console.WriteLine("codProd  "+codProducto);
                     Console.WriteLine("subtotal  "+subtotal);
-                    cn.InsertarDetalleCoti(idCliente, cantidads, Convert.ToInt32(lblNoCoti.Text), codProducto, subtotal, Solicitud);
+                    cn.InsertarDetalleCoti(idCliente, cantidads, Convert.ToInt32(lblNoCoti.Text), codProducto, subtotal);
                 }
                 else
                 {
@@ -264,6 +264,11 @@ namespace CapaVistaERP.Procesos
             {
                 MessageBox.Show("Seleccione una fila valida para eliminar");
             }
+        }
+
+        private void lblNoCoti_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

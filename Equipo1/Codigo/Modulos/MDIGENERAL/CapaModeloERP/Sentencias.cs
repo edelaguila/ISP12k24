@@ -234,7 +234,8 @@ namespace CapaModeloERP
             }
         }
         //David Carrillo 0901-20-3201 
-        public string ObtenerUltimoIdCoti()
+       
+        public string ObtenerUltimoDato(string dato, string tabla, string dato2)
         {
             try
             {
@@ -245,7 +246,7 @@ namespace CapaModeloERP
                         connection.Open();
                     }
 
-                    using (OdbcCommand cmd = new OdbcCommand("SELECT No_Cotizacion FROM tbl_cotizaciones ORDER BY No_Cotizacion DESC LIMIT 1", connection))
+                    using (OdbcCommand cmd = new OdbcCommand($"SELECT {dato} FROM {tabla} ORDER BY {dato2} DESC LIMIT 1", connection))
                     {
                         object result = cmd.ExecuteScalar();
                         if (result != null)
@@ -255,7 +256,7 @@ namespace CapaModeloERP
                         }
                         else
                         {
-                            return "No hay cotizaciones registradas.";
+                            return $"No hay {dato} registrado";
                         }
                     }
                 }
@@ -268,7 +269,7 @@ namespace CapaModeloERP
         }
 
         //David Carrillo 0901-20-3201 
-        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti, string Solicitud)
+        public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -278,7 +279,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti, Solicitud) VALUES (?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_detalle_cotizacion (tbl_clientes_id_cliente, cantidad_coti, tbl_cotizaciones_No_Cotizacion, tbl_producto_cod_producto, total_detCoti) VALUES (?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@id_cliente", id_cliente);
@@ -286,7 +287,6 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
                                 cmd.Parameters.AddWithValue("@cod_producto", cod_producto);
                                 cmd.Parameters.AddWithValue("@total_detCoti", total_detCoti);
-                                cmd.Parameters.AddWithValue("@total_detCoti", Solicitud);
                                
                                 cmd.ExecuteNonQuery();
                             }
@@ -379,6 +379,41 @@ namespace CapaModeloERP
             datos.Fill(dt);
 
             return dt; 
+        }
+
+        //David Carrillo 0901-20-3201
+        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente) VALUES ( ?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@total_facxcob", total_facxcob);
+                                cmd.Parameters.AddWithValue("@tiempoPago_facxcob", tiempoPago_facxcob);
+                                cmd.Parameters.AddWithValue("@estado_facxcob", estado_facxcob);
+                                cmd.Parameters.AddWithValue("@tbl_Ventas_detalle_id_ventas_det", tbl_Ventas_detalle_id_ventas_det);
+                                cmd.Parameters.AddWithValue("@tbl_Clientes_id_cliente", tbl_Clientes_id_cliente);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar factura: {ex.Message}");
+                        }
+                    }
+                }
+            }
         }
 
         // Otto Adrian Lopez Ventura
