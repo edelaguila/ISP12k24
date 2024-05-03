@@ -306,7 +306,7 @@ namespace CapaModeloERP
                         }
                         else
                         {
-                            return $"No hay {dato} registrado";
+                            return $"No hay dato registrado";
                         }
                     }
                 }

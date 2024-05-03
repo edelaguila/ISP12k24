@@ -137,7 +137,6 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.AutorizacionOrdenDeCompra.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.CajaProveedor.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.MovimientoProveedores.resources
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Mov_bancario.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdenesdeCompra.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.Cotizacion.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.frm_factura_cobrar.resources
@@ -337,7 +336,6 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (5)\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (5)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaModeloNav.pdb
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (5)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (5)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_agregar_cuenta.resources
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Mantenimientos.frm_mant_agregar_cuenta.resources
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaVistaERP.pdb
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\bin\Debug\CapaControladorERP.dll

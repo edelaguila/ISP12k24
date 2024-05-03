@@ -36,7 +36,7 @@ namespace CapaVistaERP.Procesos
         private void obtIDCoti()
         {
             string idcoti = cn.ObtenerUltimoDato("No_Cotizacion", "tbl_cotizaciones", "No_Cotizacion");
-            if (idcoti == "No hay cotizaciones registradas.")
+            if (idcoti == "No hay dato registrado")
             {
                 idcoti = "0";
                 lblNoCoti.Text = idcoti;

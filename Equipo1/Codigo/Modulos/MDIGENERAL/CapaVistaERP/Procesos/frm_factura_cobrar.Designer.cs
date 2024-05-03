@@ -32,8 +32,6 @@ namespace CapaVistaERP.Procesos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_factura_cobrar));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.txt_totalLetras = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.txt_iva = new System.Windows.Forms.TextBox();
             this.txt_subtotal = new System.Windows.Forms.TextBox();
@@ -44,6 +42,9 @@ namespace CapaVistaERP.Procesos
             this.btn_agregar = new System.Windows.Forms.Button();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_idcliente = new System.Windows.Forms.TextBox();
+            this.txt_numPedido = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txt_coreocl = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_apellidocl = new System.Windows.Forms.TextBox();
@@ -57,17 +58,16 @@ namespace CapaVistaERP.Procesos
             this.txt_nombrecl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_vend = new System.Windows.Forms.TextBox();
-            this.dateTimePickerVencimiento = new System.Windows.Forms.DateTimePicker();
+            this.dgvVencimiento = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_direccioncl = new System.Windows.Forms.TextBox();
-            this.dateTimePickerAbono = new System.Windows.Forms.DateTimePicker();
+            this.dgvFactura = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonocl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_numPedido = new System.Windows.Forms.TextBox();
-            this.txt_idcliente = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txt_facturaestado = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -77,15 +77,13 @@ namespace CapaVistaERP.Procesos
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.txt_totalLetras);
-            this.groupBox3.Controls.Add(this.label18);
             this.groupBox3.Controls.Add(this.txt_total);
             this.groupBox3.Controls.Add(this.txt_iva);
             this.groupBox3.Controls.Add(this.txt_subtotal);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(13, 593);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
@@ -105,32 +103,13 @@ namespace CapaVistaERP.Procesos
             this.button4.Text = "Enviar Factura";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // txt_totalLetras
-            // 
-            this.txt_totalLetras.Location = new System.Drawing.Point(73, 87);
-            this.txt_totalLetras.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_totalLetras.Name = "txt_totalLetras";
-            this.txt_totalLetras.Size = new System.Drawing.Size(525, 24);
-            this.txt_totalLetras.TabIndex = 28;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(69, 49);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(178, 20);
-            this.label18.TabIndex = 27;
-            this.label18.Text = "Notas / Observaciones";
-            // 
             // txt_total
             // 
             this.txt_total.Enabled = false;
             this.txt_total.Location = new System.Drawing.Point(768, 108);
             this.txt_total.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total.Name = "txt_total";
-            this.txt_total.Size = new System.Drawing.Size(132, 24);
+            this.txt_total.Size = new System.Drawing.Size(132, 28);
             this.txt_total.TabIndex = 26;
             // 
             // txt_iva
@@ -139,7 +118,7 @@ namespace CapaVistaERP.Procesos
             this.txt_iva.Location = new System.Drawing.Point(768, 70);
             this.txt_iva.Margin = new System.Windows.Forms.Padding(4);
             this.txt_iva.Name = "txt_iva";
-            this.txt_iva.Size = new System.Drawing.Size(132, 24);
+            this.txt_iva.Size = new System.Drawing.Size(132, 28);
             this.txt_iva.TabIndex = 25;
             // 
             // txt_subtotal
@@ -148,7 +127,7 @@ namespace CapaVistaERP.Procesos
             this.txt_subtotal.Location = new System.Drawing.Point(768, 31);
             this.txt_subtotal.Margin = new System.Windows.Forms.Padding(4);
             this.txt_subtotal.Name = "txt_subtotal";
-            this.txt_subtotal.Size = new System.Drawing.Size(132, 24);
+            this.txt_subtotal.Size = new System.Drawing.Size(132, 28);
             this.txt_subtotal.TabIndex = 24;
             // 
             // label16
@@ -188,7 +167,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.groupBox2.Controls.Add(this.btn_agregar);
             this.groupBox2.Controls.Add(this.dgv_detalle);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 325);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
@@ -220,6 +199,8 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_facturaestado);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txt_idcliente);
             this.groupBox1.Controls.Add(this.txt_numPedido);
             this.groupBox1.Controls.Add(this.label8);
@@ -236,15 +217,15 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.txt_nombrecl);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_vend);
-            this.groupBox1.Controls.Add(this.dateTimePickerVencimiento);
+            this.groupBox1.Controls.Add(this.dgvVencimiento);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_direccioncl);
-            this.groupBox1.Controls.Add(this.dateTimePickerAbono);
+            this.groupBox1.Controls.Add(this.dgvFactura);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt_telefonocl);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 3);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -254,19 +235,49 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la factura";
             // 
+            // txt_idcliente
+            // 
+            this.txt_idcliente.Enabled = false;
+            this.txt_idcliente.Location = new System.Drawing.Point(8, 134);
+            this.txt_idcliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_idcliente.Name = "txt_idcliente";
+            this.txt_idcliente.Size = new System.Drawing.Size(58, 28);
+            this.txt_idcliente.TabIndex = 38;
+            this.txt_idcliente.Visible = false;
+            // 
+            // txt_numPedido
+            // 
+            this.txt_numPedido.Enabled = false;
+            this.txt_numPedido.Location = new System.Drawing.Point(286, 86);
+            this.txt_numPedido.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numPedido.Name = "txt_numPedido";
+            this.txt_numPedido.Size = new System.Drawing.Size(251, 28);
+            this.txt_numPedido.TabIndex = 37;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(105, 86);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(147, 20);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Numero de Pedido";
+            // 
             // txt_coreocl
             // 
-            this.txt_coreocl.Location = new System.Drawing.Point(647, 218);
+            this.txt_coreocl.Location = new System.Drawing.Point(694, 183);
             this.txt_coreocl.Margin = new System.Windows.Forms.Padding(4);
             this.txt_coreocl.Name = "txt_coreocl";
-            this.txt_coreocl.Size = new System.Drawing.Size(240, 24);
+            this.txt_coreocl.Size = new System.Drawing.Size(169, 28);
             this.txt_coreocl.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(553, 222);
+            this.label7.Location = new System.Drawing.Point(553, 183);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(61, 20);
@@ -275,10 +286,10 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_apellidocl
             // 
-            this.txt_apellidocl.Location = new System.Drawing.Point(647, 135);
+            this.txt_apellidocl.Location = new System.Drawing.Point(694, 135);
             this.txt_apellidocl.Margin = new System.Windows.Forms.Padding(4);
             this.txt_apellidocl.Name = "txt_apellidocl";
-            this.txt_apellidocl.Size = new System.Drawing.Size(253, 24);
+            this.txt_apellidocl.Size = new System.Drawing.Size(169, 28);
             this.txt_apellidocl.TabIndex = 33;
             // 
             // label21
@@ -294,10 +305,11 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_numfactura
             // 
+            this.txt_numfactura.Enabled = false;
             this.txt_numfactura.Location = new System.Drawing.Point(727, 38);
             this.txt_numfactura.Margin = new System.Windows.Forms.Padding(4);
             this.txt_numfactura.Name = "txt_numfactura";
-            this.txt_numfactura.Size = new System.Drawing.Size(132, 24);
+            this.txt_numfactura.Size = new System.Drawing.Size(132, 28);
             this.txt_numfactura.TabIndex = 31;
             // 
             // label20
@@ -320,7 +332,7 @@ namespace CapaVistaERP.Procesos
             this.btn_Buscar.Location = new System.Drawing.Point(490, 38);
             this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(33, 25);
+            this.btn_Buscar.Size = new System.Drawing.Size(33, 30);
             this.btn_Buscar.TabIndex = 21;
             this.btn_Buscar.UseVisualStyleBackColor = false;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
@@ -330,7 +342,7 @@ namespace CapaVistaERP.Procesos
             this.txt_numcoti.Location = new System.Drawing.Point(286, 40);
             this.txt_numcoti.Margin = new System.Windows.Forms.Padding(4);
             this.txt_numcoti.Name = "txt_numcoti";
-            this.txt_numcoti.Size = new System.Drawing.Size(237, 24);
+            this.txt_numcoti.Size = new System.Drawing.Size(237, 28);
             this.txt_numcoti.TabIndex = 9;
             // 
             // label1
@@ -348,7 +360,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(460, 270);
+            this.label9.Location = new System.Drawing.Point(499, 270);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 20);
@@ -360,7 +372,7 @@ namespace CapaVistaERP.Procesos
             this.txt_nombrecl.Location = new System.Drawing.Point(286, 132);
             this.txt_nombrecl.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombrecl.Name = "txt_nombrecl";
-            this.txt_nombrecl.Size = new System.Drawing.Size(240, 24);
+            this.txt_nombrecl.Size = new System.Drawing.Size(251, 28);
             this.txt_nombrecl.TabIndex = 10;
             // 
             // label2
@@ -376,26 +388,28 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_vend
             // 
+            this.txt_vend.Enabled = false;
             this.txt_vend.Location = new System.Drawing.Point(727, 86);
             this.txt_vend.Margin = new System.Windows.Forms.Padding(4);
             this.txt_vend.Name = "txt_vend";
-            this.txt_vend.Size = new System.Drawing.Size(136, 24);
+            this.txt_vend.Size = new System.Drawing.Size(136, 28);
             this.txt_vend.TabIndex = 11;
             // 
-            // dateTimePickerVencimiento
+            // dgvVencimiento
             // 
-            this.dateTimePickerVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerVencimiento.Location = new System.Drawing.Point(682, 266);
-            this.dateTimePickerVencimiento.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePickerVencimiento.Name = "dateTimePickerVencimiento";
-            this.dateTimePickerVencimiento.Size = new System.Drawing.Size(177, 24);
-            this.dateTimePickerVencimiento.TabIndex = 17;
+            this.dgvVencimiento.Enabled = false;
+            this.dgvVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dgvVencimiento.Location = new System.Drawing.Point(694, 266);
+            this.dgvVencimiento.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvVencimiento.Name = "dgvVencimiento";
+            this.dgvVencimiento.Size = new System.Drawing.Size(177, 28);
+            this.dgvVencimiento.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(140, 135);
+            this.label3.Location = new System.Drawing.Point(105, 136);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 20);
@@ -407,26 +421,27 @@ namespace CapaVistaERP.Procesos
             this.txt_direccioncl.Location = new System.Drawing.Point(286, 180);
             this.txt_direccioncl.Margin = new System.Windows.Forms.Padding(4);
             this.txt_direccioncl.Name = "txt_direccioncl";
-            this.txt_direccioncl.Size = new System.Drawing.Size(576, 24);
+            this.txt_direccioncl.Size = new System.Drawing.Size(251, 28);
             this.txt_direccioncl.TabIndex = 12;
             // 
-            // dateTimePickerAbono
+            // dgvFactura
             // 
-            this.dateTimePickerAbono.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePickerAbono.Location = new System.Drawing.Point(299, 266);
-            this.dateTimePickerAbono.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePickerAbono.Name = "dateTimePickerAbono";
-            this.dateTimePickerAbono.Size = new System.Drawing.Size(153, 24);
-            this.dateTimePickerAbono.TabIndex = 16;
+            this.dgvFactura.Enabled = false;
+            this.dgvFactura.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dgvFactura.Location = new System.Drawing.Point(286, 266);
+            this.dgvFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvFactura.Name = "dgvFactura";
+            this.dgvFactura.Size = new System.Drawing.Size(162, 28);
+            this.dgvFactura.TabIndex = 16;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(140, 270);
+            this.label6.Location = new System.Drawing.Point(105, 266);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(144, 25);
+            this.label6.Size = new System.Drawing.Size(115, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Fecha Factura";
             // 
@@ -434,7 +449,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(140, 183);
+            this.label4.Location = new System.Drawing.Point(105, 182);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
@@ -446,46 +461,39 @@ namespace CapaVistaERP.Procesos
             this.txt_telefonocl.Location = new System.Drawing.Point(286, 222);
             this.txt_telefonocl.Margin = new System.Windows.Forms.Padding(4);
             this.txt_telefonocl.Name = "txt_telefonocl";
-            this.txt_telefonocl.Size = new System.Drawing.Size(251, 24);
+            this.txt_telefonocl.Size = new System.Drawing.Size(251, 28);
             this.txt_telefonocl.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(140, 225);
+            this.label5.Location = new System.Drawing.Point(105, 226);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
-            // label8
+            // label10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(105, 86);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 20);
-            this.label8.TabIndex = 36;
-            this.label8.Text = "Numero de Pedido";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(553, 222);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(118, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Estado Factura";
             // 
-            // txt_numPedido
+            // txt_facturaestado
             // 
-            this.txt_numPedido.Location = new System.Drawing.Point(286, 86);
-            this.txt_numPedido.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_numPedido.Name = "txt_numPedido";
-            this.txt_numPedido.Size = new System.Drawing.Size(237, 24);
-            this.txt_numPedido.TabIndex = 37;
-            // 
-            // txt_idcliente
-            // 
-            this.txt_idcliente.Location = new System.Drawing.Point(8, 134);
-            this.txt_idcliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_idcliente.Name = "txt_idcliente";
-            this.txt_idcliente.Size = new System.Drawing.Size(58, 24);
-            this.txt_idcliente.TabIndex = 38;
+            this.txt_facturaestado.Enabled = false;
+            this.txt_facturaestado.Location = new System.Drawing.Point(694, 220);
+            this.txt_facturaestado.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_facturaestado.Name = "txt_facturaestado";
+            this.txt_facturaestado.Size = new System.Drawing.Size(169, 28);
+            this.txt_facturaestado.TabIndex = 40;
             // 
             // frm_factura_cobrar
             // 
@@ -511,8 +519,6 @@ namespace CapaVistaERP.Procesos
 
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox txt_totalLetras;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.TextBox txt_iva;
         private System.Windows.Forms.TextBox txt_subtotal;
@@ -536,10 +542,10 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.TextBox txt_nombrecl;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_vend;
-        private System.Windows.Forms.DateTimePicker dateTimePickerVencimiento;
+        private System.Windows.Forms.DateTimePicker dgvVencimiento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_direccioncl;
-        private System.Windows.Forms.DateTimePicker dateTimePickerAbono;
+        private System.Windows.Forms.DateTimePicker dgvFactura;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_telefonocl;
@@ -547,5 +553,7 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.TextBox txt_numPedido;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_idcliente;
+        private System.Windows.Forms.TextBox txt_facturaestado;
+        private System.Windows.Forms.Label label10;
     }
 }

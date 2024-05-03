@@ -37,7 +37,7 @@ namespace CapaVistaERP.Procesos
         private void UltimaVenta()
         {
             string idVenta = cn.ObtenerUltimoDato("id_ventas_ped", "tbl_ventaspedido", "id_ventas_ped");
-            if (idVenta == "No hay id_ventas_ped registradas.")
+            if (idVenta == "No hay dato registrado")
             {
                 idVenta = "0";
                 txt_venta.Text = idVenta;
