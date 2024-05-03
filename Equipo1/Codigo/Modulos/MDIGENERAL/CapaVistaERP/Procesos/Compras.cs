@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +16,7 @@ namespace CapaVistaERP.Procesos
     public partial class Compras : Form
     {
         private Controlador controller;
+        int estadoCompra;
         public Compras(string idord, string fechaS, string fechaE, string solicitante, string proveedor)
         {
             InitializeComponent();
@@ -77,7 +79,6 @@ namespace CapaVistaERP.Procesos
             dateTimePickerEntrega.Enabled = false;
             dateTimePickerPedido.Enabled = false;
             dateTimePickerVencimiento.Enabled = false;
-            txt_recibidopor.Enabled = false;
             int ultimoNumeroOrden = controller.ObtenerUltimoNumeroOrden(campoid, tabla);
             txt_numcompra.Text = ultimoNumeroOrden.ToString();
         }
@@ -212,7 +213,9 @@ namespace CapaVistaERP.Procesos
 
         private void cmb_orden_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string seleccion = cmb_orden.SelectedItem.ToString();
+            if (cmb_orden != null && cmb_orden.SelectedIndex >= 0)
+            {
+                string seleccion = cmb_orden.SelectedItem.ToString();
 
             // Si se selecciona "Directa", deshabilitar botones para buscar proveedor
             if (seleccion == "Directa")
@@ -227,7 +230,6 @@ namespace CapaVistaERP.Procesos
                 dateTimePickerEntrega.Enabled = true;
                 dateTimePickerPedido.Enabled = true;
                 dateTimePickerVencimiento.Enabled = true;
-                txt_recibidopor.Enabled = true;
             }
 
             // Si se selecciona "Relacionada", deshabilitar TextBox para ingresar directamente
@@ -243,14 +245,16 @@ namespace CapaVistaERP.Procesos
                 dateTimePickerEntrega.Enabled = false;
                 dateTimePickerPedido.Enabled = false;
                 dateTimePickerVencimiento.Enabled = true;
-                txt_recibidopor.Enabled = true;
+            }
             }
         }
 
         private void cmb_productos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Obtener el ID del producto que seleccionó el usuario
-            string selectedValue = cmb_productos.SelectedItem.ToString();
+            if (cmb_productos != null && cmb_productos.SelectedIndex >= 0)
+            {
+                // Obtener el ID del producto que seleccionó el usuario
+                string selectedValue = cmb_productos.SelectedItem.ToString();
 
             // Divide la cadena para tener ambos campos
             string[] parts = selectedValue.Split('-');
@@ -269,6 +273,7 @@ namespace CapaVistaERP.Procesos
             int cantidad = int.TryParse(txt_cantidad.Text, out int cant) ? cant : 0;
             double totalprod = precioU * cantidad;
             txt_totalfila.Text = totalprod.ToString();
+            }
         }
 
         private void btn_numorden_Click(object sender, EventArgs e)
@@ -276,5 +281,230 @@ namespace CapaVistaERP.Procesos
             BuscarOrdenCompra BuscarOrdenCompra = new BuscarOrdenCompra(this);
             BuscarOrdenCompra.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string tabla = "tbl_detallecompras";
+            string campoid = "id_detalleCompra";
+
+            // Verifica que los campos de número de compra, código de proveedor y número de orden sean válidos
+            if (int.TryParse(txt_numcompra.Text, out int codigo) &&
+                int.TryParse(txt_Idprov.Text, out int codigoprov) &&
+                int.TryParse(txt_numorden.Text, out int codorden))
+            {
+                // Verifica que el código de proveedor sea válido
+                if (!ValidarOrden())
+                {
+                    MessageBox.Show("Los datos de la órden no coinciden con la base de datos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                if (!ValidarProveedor())
+                {
+                    MessageBox.Show("Los datos del proveedor no coinciden con la base de datos o el código de proveedor no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Verifica si la descripción de la orden de compra está vacía
+                if (dgv_detalle.RowCount < 2)
+                {
+                    MessageBox.Show("Por favor, llene la descripción de la orden de compra.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Verifica los campos opcionales (subtotal, IVA y total)
+                double subtotal, iva, totalOrden;
+                if (double.TryParse(txt_subtotal.Text, out subtotal) &&
+                    double.TryParse(txt_iva.Text, out iva) &&
+                    double.TryParse(txt_total.Text, out totalOrden))
+                {
+                    // Resto del código para insertar la compra
+                    DateTime fechaSolicitud = dateTimePickerPedido.Value;
+                    DateTime fechaEntrega = dateTimePickerEntrega.Value;
+                    DateTime fechaPago = dateTimePickerVencimiento.Value;
+                    string fechas = fechaSolicitud.ToString("yyyy-MM-dd");
+                    string fechae = fechaEntrega.ToString("yyyy-MM-dd");
+                    string fechap = fechaPago.ToString("yyyy-MM-dd");
+                    // Confirmar con el usuario antes de enviar la orden de compra
+                    DialogResult resultado = MessageBox.Show("¿Está seguro de enviar la compra?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                    if (resultado == DialogResult.Yes)
+                    {
+                        // Intenta realizar la inserción de la orden y el detalle dentro de una transacción
+                        try
+                        {
+                            controller.InsertarCompra(codigo, fechas, fechae, txt_departamentos.Text, subtotal, iva, totalOrden, txt_notas.Text, codigoprov, estadoCompra, fechap, codorden);
+                            foreach (DataGridViewRow fila in dgv_detalle.Rows)
+                            {
+                                if (!fila.IsNewRow)
+                                {
+                                    int ultimoNumeroCompra = controller.ObtenerUltimoNumeroOrden(campoid, tabla);
+                                    string cantd = fila.Cells[0].Value.ToString();
+                                    string idprod = fila.Cells[1].Value.ToString();
+                                    string totfil = fila.Cells[5].Value.ToString();
+
+                                    if (int.TryParse(cantd, out int cantidad) && int.TryParse(idprod, out int idproducto) && double.TryParse(totfil, out double totalfila))
+                                    {
+                                        controller.InsertarDetalleCompra(ultimoNumeroCompra, cantidad, totalfila, idproducto, codigo);
+                                    }
+                                }
+                            }
+
+                            MessageBox.Show("Compra registrada correctamente.");
+                            LimpiarCampos();
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine("Error al enviar la compra: " + ex.Message);
+                            MessageBox.Show("Error al enviar la compra.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void LimpiarCampos()
+        {
+            string tabla = "tbl_compras";
+            string campoid = "id_EncComp";
+            int ultimoNumeroOrden = controller.ObtenerUltimoNumeroOrden(campoid, tabla);
+            txt_numcompra.Text = ultimoNumeroOrden.ToString();
+            txt_Idprov.Clear();
+            txt_nombreprov.Clear();
+            txt_domicilio.Clear();
+            txt_telefonoprov.Clear();
+            txt_departamentos.Clear();
+            dateTimePickerPedido.Value = DateTime.Now; // Restablece la fecha actual
+            dateTimePickerEntrega.Value = DateTime.Now; // Restablece la fecha actual
+            dateTimePickerVencimiento.Value = DateTime.Now; // Restablece la fecha actual
+            txt_subtotal.Clear();
+            txt_iva.Clear();
+            txt_total.Clear();
+            txt_notas.Clear();
+            cmb_orden.SelectedIndex = -1;
+            cmb_productos.SelectedIndex = -1;
+            dgv_detalle.Rows.Clear();
+            txt_numcompra.Enabled = false;
+            txt_Idprov.Enabled = false;
+            btn_numorden.Enabled = false;
+            txt_nombreprov.Enabled = false;
+            txt_domicilio.Enabled = false;
+            txt_telefonoprov.Enabled = false;
+            txt_departamentos.Enabled = false;
+            dateTimePickerEntrega.Enabled = false;
+            dateTimePickerPedido.Enabled = false;
+            dateTimePickerVencimiento.Enabled = false;
+            dgv_detalle.Enabled = true;
+            txt_cantidad.Enabled = true;
+            txt_descripcion.Enabled = true;
+            cmb_productos.Enabled = true;
+            txt_totalfila.Enabled = true;
+            txt_preciou.Enabled = true;
+            txt_numorden.Clear();
+        }
+
+        private bool ValidarOrden()
+        {
+            if (int.TryParse(txt_numorden.Text, out int idOrden))
+            {
+                DataTable ordenData = controller.ObtenerOrdenPorID(idOrden);
+
+                if (ordenData.Rows.Count > 0)
+                {
+                    DateTime fechaSolicitudBD = (DateTime)ordenData.Rows[0]["fechaSolicitid_OrdComp"];
+                    DateTime fechaEntregaBD = (DateTime)ordenData.Rows[0]["fechaEntrega_OrdComp"];
+                    string deptoBD = ordenData.Rows[0]["deptoSolicitante_OrdComp"].ToString();
+                    string proidBD = ordenData.Rows[0]["tbl_proveedor_id_prov"].ToString();
+
+                    string fechapIngresado = dateTimePickerPedido.Value.ToString("yyyy-MM-dd");
+                    string fechaeIngresado = dateTimePickerEntrega.Value.ToString("yyyy-MM-dd");
+
+                    string deptoIngresado = txt_departamentos.Text;
+                    string provIngresado = txt_Idprov.Text;
+
+                    DateTime fechaSolicitudIngresada = DateTime.ParseExact(fechapIngresado, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                    DateTime fechaEntregaIngresada = DateTime.ParseExact(fechaeIngresado, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                    if (fechaSolicitudBD == fechaSolicitudIngresada && fechaEntregaBD == fechaEntregaIngresada && deptoIngresado == deptoBD && provIngresado == proidBD)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        // Los datos ingresados no coinciden con los datos de la orden.
+                        MessageBox.Show("Los datos ingresados no coinciden con los de la orden en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+                else
+                {
+                    // La orden no se encontró en la base de datos.
+                    MessageBox.Show("El código de orden no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un código de orden válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private bool ValidarProveedor()
+        {
+            if (int.TryParse(txt_Idprov.Text, out int idProveedor))
+            {
+                DataTable proveedorData = controller.ObtenerProveedorPorID(idProveedor);
+
+                if (proveedorData.Rows.Count > 0)
+                {
+                    string nombreProveedor = proveedorData.Rows[0]["nombre_prov"].ToString();
+                    string domicilioProveedor = proveedorData.Rows[0]["domicilio_prov"].ToString();
+                    string telefonoProveedor = proveedorData.Rows[0]["telefono_prov"].ToString();
+
+                    string nombreIngresado = txt_nombreprov.Text;
+                    string domicilioIngresado = txt_domicilio.Text;
+                    string telefonoIngresado = txt_telefonoprov.Text;
+
+                    if (nombreProveedor == nombreIngresado && domicilioProveedor == domicilioIngresado && telefonoProveedor == telefonoIngresado)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        // Los datos ingresados no coinciden con los datos del proveedor.
+                        MessageBox.Show("Los datos ingresados no coinciden con los del proveedor en la base de datos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+                else
+                {
+                    // El proveedor no se encontró en la base de datos.
+                    MessageBox.Show("El código de proveedor no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un código de proveedor válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        private void cmb_igualsolicitado_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmb_igualsolicitado.SelectedItem != null)
+            {
+                if (cmb_igualsolicitado.SelectedItem.ToString() == "Completa")
+                {
+                    estadoCompra = 1;
+                }
+                else if (cmb_igualsolicitado.SelectedItem.ToString() == "Incompleta")
+                {
+                    estadoCompra = 0;
+                }
+            }
+        }
+
     }
 }

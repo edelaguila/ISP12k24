@@ -1,7 +1,7 @@
 ﻿
 namespace CapaVistaERP.Procesos
 {
-    partial class OrdenesdeCompraMaestro
+    partial class FacturaporPagarMaestro
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace CapaVistaERP.Procesos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenesdeCompraMaestro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacturaporPagarMaestro));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,29 +48,29 @@ namespace CapaVistaERP.Procesos
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 147);
+            this.comboBox1.Location = new System.Drawing.Point(103, 127);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 7;
+            this.comboBox1.TabIndex = 14;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 191);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 171);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1057, 372);
-            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.TabIndex = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 147);
+            this.label1.Location = new System.Drawing.Point(21, 127);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 19);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 12;
             this.label1.Text = "Filtrar por:";
             // 
             // panel1
@@ -83,10 +83,10 @@ namespace CapaVistaERP.Procesos
             this.panel1.Controls.Add(this.btn_eliminar);
             this.panel1.Controls.Add(this.btn_modificar);
             this.panel1.Controls.Add(this.btn_nueva);
-            this.panel1.Location = new System.Drawing.Point(24, 24);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(652, 101);
-            this.panel1.TabIndex = 4;
+            this.panel1.TabIndex = 11;
             // 
             // btn_salir
             // 
@@ -203,18 +203,18 @@ namespace CapaVistaERP.Procesos
             this.btn_nueva.UseVisualStyleBackColor = false;
             this.btn_nueva.Click += new System.EventHandler(this.btn_nueva_Click);
             // 
-            // OrdenesdeCompraMaestro
+            // FacturaporPagarMaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1102, 585);
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ClientSize = new System.Drawing.Size(1099, 578);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.Name = "OrdenesdeCompraMaestro";
-            this.Text = "OrdenesdeCompraMaestro";
+            this.Name = "FacturaporPagarMaestro";
+            this.Text = "FacturaporPagarMaestro";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
