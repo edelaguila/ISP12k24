@@ -30,13 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CajaProveedor));
             this.cmb_tipo = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_tipomovpro = new System.Windows.Forms.TextBox();
             this.txt_bancos = new System.Windows.Forms.TextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.txt_concepto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_beneficiario = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.btn_pagar = new System.Windows.Forms.Button();
             this.dt_fechaabono = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -55,7 +53,6 @@
             this.txt_facSub = new System.Windows.Forms.TextBox();
             this.txt_FechaV = new System.Windows.Forms.TextBox();
             this.txtNoFactura = new System.Windows.Forms.TextBox();
-            this.btn_confirmar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_buscarFactura = new System.Windows.Forms.Button();
@@ -80,13 +77,11 @@
             // 
             // cmb_tipo
             // 
-            this.cmb_tipo.Controls.Add(this.textBox1);
+            this.cmb_tipo.Controls.Add(this.txt_tipomovpro);
             this.cmb_tipo.Controls.Add(this.txt_bancos);
             this.cmb_tipo.Controls.Add(this.btn_cancelar);
             this.cmb_tipo.Controls.Add(this.txt_concepto);
             this.cmb_tipo.Controls.Add(this.label9);
-            this.cmb_tipo.Controls.Add(this.txt_beneficiario);
-            this.cmb_tipo.Controls.Add(this.label8);
             this.cmb_tipo.Controls.Add(this.btn_pagar);
             this.cmb_tipo.Controls.Add(this.dt_fechaabono);
             this.cmb_tipo.Controls.Add(this.label7);
@@ -104,23 +99,27 @@
             this.cmb_tipo.Size = new System.Drawing.Size(1118, 271);
             this.cmb_tipo.TabIndex = 45;
             this.cmb_tipo.TabStop = false;
+            this.cmb_tipo.Tag = "";
             this.cmb_tipo.Text = "Pago";
             // 
-            // textBox1
+            // txt_tipomovpro
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(786, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(68, 24);
-            this.textBox1.TabIndex = 56;
+            this.txt_tipomovpro.Enabled = false;
+            this.txt_tipomovpro.Location = new System.Drawing.Point(786, 32);
+            this.txt_tipomovpro.Name = "txt_tipomovpro";
+            this.txt_tipomovpro.Size = new System.Drawing.Size(68, 24);
+            this.txt_tipomovpro.TabIndex = 56;
+            this.txt_tipomovpro.Tag = "tipo_MovP";
+            this.txt_tipomovpro.TextChanged += new System.EventHandler(this.txt_tipomovpro_TextChanged);
             // 
             // txt_bancos
             // 
             this.txt_bancos.Enabled = false;
-            this.txt_bancos.Location = new System.Drawing.Point(315, 37);
+            this.txt_bancos.Location = new System.Drawing.Point(315, 40);
             this.txt_bancos.Name = "txt_bancos";
             this.txt_bancos.Size = new System.Drawing.Size(52, 24);
             this.txt_bancos.TabIndex = 55;
+            this.txt_bancos.Tag = "banco_MovP";
             // 
             // btn_cancelar
             // 
@@ -134,42 +133,24 @@
             // 
             // txt_concepto
             // 
-            this.txt_concepto.Location = new System.Drawing.Point(119, 216);
+            this.txt_concepto.Location = new System.Drawing.Point(109, 180);
             this.txt_concepto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_concepto.Multiline = true;
             this.txt_concepto.Name = "txt_concepto";
             this.txt_concepto.Size = new System.Drawing.Size(652, 36);
             this.txt_concepto.TabIndex = 53;
+            this.txt_concepto.Tag = "concepto_MovP";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(385, 181);
+            this.label9.Location = new System.Drawing.Point(375, 145);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 20);
             this.label9.TabIndex = 52;
             this.label9.Text = "Concepto";
-            // 
-            // txt_beneficiario
-            // 
-            this.txt_beneficiario.Location = new System.Drawing.Point(220, 141);
-            this.txt_beneficiario.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_beneficiario.Name = "txt_beneficiario";
-            this.txt_beneficiario.Size = new System.Drawing.Size(551, 24);
-            this.txt_beneficiario.TabIndex = 51;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(115, 141);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 20);
-            this.label8.TabIndex = 50;
-            this.label8.Text = "Beneficiario";
             // 
             // btn_pagar
             // 
@@ -180,6 +161,7 @@
             this.btn_pagar.TabIndex = 49;
             this.btn_pagar.Text = "Pagar";
             this.btn_pagar.UseVisualStyleBackColor = true;
+            this.btn_pagar.Click += new System.EventHandler(this.btn_pagar_Click);
             // 
             // dt_fechaabono
             // 
@@ -189,6 +171,7 @@
             this.dt_fechaabono.Name = "dt_fechaabono";
             this.dt_fechaabono.Size = new System.Drawing.Size(161, 24);
             this.dt_fechaabono.TabIndex = 48;
+            this.dt_fechaabono.Tag = "fecha_MovPro";
             // 
             // label7
             // 
@@ -208,6 +191,7 @@
             this.txt_numero.Name = "txt_numero";
             this.txt_numero.Size = new System.Drawing.Size(161, 24);
             this.txt_numero.TabIndex = 46;
+            this.txt_numero.Tag = "numero_MovP";
             // 
             // label6
             // 
@@ -227,6 +211,7 @@
             this.cb_tipotransa.Name = "cb_tipotransa";
             this.cb_tipotransa.Size = new System.Drawing.Size(161, 27);
             this.cb_tipotransa.TabIndex = 44;
+            this.cb_tipotransa.SelectedIndexChanged += new System.EventHandler(this.cb_tipotransa_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -269,7 +254,6 @@
             this.groupBox1.Controls.Add(this.txt_facSub);
             this.groupBox1.Controls.Add(this.txt_FechaV);
             this.groupBox1.Controls.Add(this.txtNoFactura);
-            this.groupBox1.Controls.Add(this.btn_confirmar);
             this.groupBox1.Controls.Add(this.btn_eliminar);
             this.groupBox1.Controls.Add(this.btn_agregar);
             this.groupBox1.Controls.Add(this.btn_buscarFactura);
@@ -363,17 +347,8 @@
             this.txtNoFactura.Name = "txtNoFactura";
             this.txtNoFactura.Size = new System.Drawing.Size(85, 24);
             this.txtNoFactura.TabIndex = 45;
+            this.txtNoFactura.Tag = "noFactura";
             this.txtNoFactura.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // btn_confirmar
-            // 
-            this.btn_confirmar.Location = new System.Drawing.Point(1001, 364);
-            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_confirmar.Name = "btn_confirmar";
-            this.btn_confirmar.Size = new System.Drawing.Size(99, 38);
-            this.btn_confirmar.TabIndex = 44;
-            this.btn_confirmar.Text = "Confirmar";
-            this.btn_confirmar.UseVisualStyleBackColor = true;
             // 
             // btn_eliminar
             // 
@@ -418,6 +393,7 @@
             this.txt_totalapagar.Name = "txt_totalapagar";
             this.txt_totalapagar.Size = new System.Drawing.Size(184, 24);
             this.txt_totalapagar.TabIndex = 40;
+            this.txt_totalapagar.Tag = "total_MovPro";
             // 
             // label1
             // 
@@ -514,6 +490,7 @@
             this.txt_idprov.Name = "txt_idprov";
             this.txt_idprov.Size = new System.Drawing.Size(349, 26);
             this.txt_idprov.TabIndex = 19;
+            this.txt_idprov.Tag = "id_prove";
             // 
             // label12
             // 
@@ -583,8 +560,6 @@
         private System.Windows.Forms.Button btn_cancelar;
         private System.Windows.Forms.TextBox txt_concepto;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_beneficiario;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btn_pagar;
         private System.Windows.Forms.DateTimePicker dt_fechaabono;
         private System.Windows.Forms.Label label7;
@@ -599,7 +574,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgv_pagoproveedor;
         private System.Windows.Forms.TextBox txt_bancos;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_tipomovpro;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_idprov;
@@ -611,7 +586,6 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txt_nit;
         private System.Windows.Forms.Button btn_buscarFactura;
-        private System.Windows.Forms.Button btn_confirmar;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.Label label2;

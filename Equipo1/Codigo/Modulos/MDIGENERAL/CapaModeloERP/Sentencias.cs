@@ -30,7 +30,7 @@ namespace CapaModeloERP
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
-        //Andrea Corado 0901-20-2841
+        //Andrea Corado    0901-20-2841
 
         public OdbcDataAdapter BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
         {
@@ -45,6 +45,56 @@ namespace CapaModeloERP
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
             return datos;
         }
+
+        //Andrea Corado    0901-20-2841
+        public void guardarDatos(string idp,string fechamov,string totalmov,string nofact,string banmov,string tipomov,string numov,string conceptomov)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la primera tabla 
+                            string insertQuery1 = "INSERT INTO tbl_encabezadomovpro (id_prove,fecha_MovPro,total_MovPro) VALUES (?,?,?)";
+                            using (OdbcCommand cmd1 = new OdbcCommand(insertQuery1, connection, transaction))
+                            {
+                                cmd1.Parameters.AddWithValue("@id_prove", idp);
+                                cmd1.Parameters.AddWithValue("@fecha_MovPro", fechamov);
+                                cmd1.Parameters.AddWithValue("@itotal_MovPro", totalmov);
+                                cmd1.ExecuteNonQuery();
+                            }
+
+                            // Insertar en la segunda tabla 
+                            string insertQuery2 = "INSERT INTO tbl_detallemovpro (noFactura,banco_MovP,tipo_MovP,numero_MovP,concepto_MovP)VALUES (?,?,?,?,?)";
+                            using (OdbcCommand cmd2 = new OdbcCommand(insertQuery2, connection, transaction))
+                            {
+                                cmd2.Parameters.AddWithValue("@noFactura", nofact);
+                                cmd2.Parameters.AddWithValue("@banco_MovP", banmov);
+                                cmd2.Parameters.AddWithValue("@tipo_MovP", tipomov);
+                                cmd2.Parameters.AddWithValue("@numero_MovP", numov);
+                                cmd2.Parameters.AddWithValue("@concepto_MovP", conceptomov);
+                                cmd2.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar los datos: {ex.Message}");
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+
 
         //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)

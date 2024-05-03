@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -115,10 +116,11 @@ namespace CapaVistaERP.Procesos
                 // Mostrar la suma total en el otro TextBox
                 txt_totalapagar.Text = sumaTotal.ToString();
 
-                txtNoFactura.Text = "";
+                //txtNoFactura.Text = "";
                 txt_FechaV.Text = "";
                 txt_facSub.Text = "";
                 txt_factotal.Text = "";
+                
             }
             else
             {
@@ -165,8 +167,11 @@ namespace CapaVistaERP.Procesos
             // Verificar si el contenido del TextBox es un número válido
             if (double.TryParse(txt_factotal.Text, out double montoFactura))
             {
-                // Restar el monto de la factura al total acumulado de facturas
+                // Restar el monto de la factura del total acumulado de facturas
                 totalFacturasAcumulado -= montoFactura;
+
+                // Restar el monto de la factura de la suma total
+                sumaTotal -= montoFactura;
 
                 // Asegurarse de que el total acumulado no sea menor que cero
                 if (totalFacturasAcumulado < 0)
@@ -174,21 +179,59 @@ namespace CapaVistaERP.Procesos
                     totalFacturasAcumulado = 0;
                 }
 
-                // Si el total acumulado llega a cero, borrarlo
-                if (totalFacturasAcumulado == 0)
+                // Asegurarse de que la suma total no sea menor que cero
+                if (sumaTotal < 0)
                 {
-                    txt_totalapagar.Text = "0";
+                    sumaTotal = 0;
                 }
-                else
-                {
-                    // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
-                    txt_totalapagar.Text = totalFacturasAcumulado.ToString();
-                }
+
+                // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
+                txt_totalapagar.Text = sumaTotal.ToString();
             }
             else
             {
                 MessageBox.Show("Por favor, ingrese un monto de factura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_pagar_Click(object sender, EventArgs e)
+        {
+            string idp = txt_idprov.Text;
+            string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
+            string totalmov = txt_totalapagar.Text;
+            string nofact = txtNoFactura.Text;
+            string banmov = txt_bancos.Text;
+            string tipomov = txt_tipomovpro.Text;
+            string numov = txt_numero.Text;
+            string conceptomov = txt_concepto.Text;
+            cn.Guardarmovpro(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+            MessageBox.Show("Pago Realizado con Exito");
+            LimpiarCampos();
+
+        }
+        private void LimpiarCampos()
+        {
+            txt_idprov.Clear();
+            txt_nombreprov.Clear();
+            txt_nitprov.Clear();
+            txt_nit.Clear();
+            txtNoFactura.Clear();
+            txt_totalapagar.Clear();
+            txt_bancos.Clear();
+            txt_tipomovpro.Clear();
+            txt_numero.Clear();
+            dt_fechaabono.Value = DateTime.Now; // Restablece la fecha actual
+            txt_concepto.Clear();
+        }
+
+        private void txt_tipomovpro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_tipotransa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_tipomovpro.Text = cb_tipotransa.SelectedItem.ToString();
         }
     }
 }
