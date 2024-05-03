@@ -71,6 +71,60 @@ namespace CapaVistaERP.Procesos
             {
 
             }
+
+
+            //codigo del saldo 
+
+            Decimal saldoActual;
+            if (!decimal.TryParse(textsaldoactual.Text, out saldoActual))
+            {
+                MessageBox.Show("El valor de Saldo Actual no es un número válido.");
+                return;
+            }
+
+            decimal fondosIngresados = 0;
+            decimal fondoRetiro = 0;
+
+            // Procesar cada movimiento y aplicar al saldo actual según el efecto del movimiento
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells["Monto"].Value != null &&
+                    row.Cells["Efecto"].Value != null)
+                {
+                    decimal monto;
+                    if (decimal.TryParse(row.Cells["Monto"].Value.ToString(), out monto))
+                    {
+                        string efectoMovimiento = row.Cells["Efecto"].Value.ToString();
+
+                        if (efectoMovimiento == "+") // Suma al saldo actual
+                        {
+                            fondosIngresados += monto;
+                        }
+                        else if (efectoMovimiento == "-") // Resta al saldo actual
+                        {
+                            fondoRetiro += monto;
+                        }
+                    }
+                }
+            }
+
+            // Mostrar el total de la suma en el TextBox fondosIngresados
+            fondosIgresados.Text = fondosIngresados.ToString();
+
+            // Mostrar el total de la resta en el TextBox txtFondoRetiro
+            txtFondoRetiro.Text = fondoRetiro.ToString();
+
+            // Calcular el saldo disponible
+            decimal saldoDisponible = saldoActual + fondosIngresados - fondoRetiro;
+
+            // Mostrar el saldo disponible en el TextBox txtSaldoDisponible
+            txtSaldoDisponible.Text = saldoDisponible.ToString();
+
+
+
+
+
+
         }
 
         private void cb_cuenta_SelectedIndexChanged(object sender, EventArgs e)
@@ -79,9 +133,7 @@ namespace CapaVistaERP.Procesos
             {
                 // Si se selecciona algo en el ComboBox, habilita el Label y el botón
                 label4.Visible = true;
-                botton3.Enabled = true;
-                botton3.Visible = true;
-                Calcular.Visible = true;
+               
                 Registrar.Visible = true;
                 Cancelar.Visible = true;
             }
@@ -89,9 +141,7 @@ namespace CapaVistaERP.Procesos
             {
                 // Si no se selecciona nada en el ComboBox, deshabilita el Label y el botón
                 label4.Visible = false;
-                botton3.Enabled = false;
-                botton3.Visible = false;
-                Calcular.Visible = false;
+                
                 Registrar.Visible = false;
                 Cancelar.Visible = false;
             }
@@ -127,49 +177,10 @@ namespace CapaVistaERP.Procesos
             }
         }
 
-        private void botton3_Click(object sender, EventArgs e)
-        {
-            BuscarDetalleBanco();
-        }
+        
 
-        private void Calcular_Click(object sender, EventArgs e)
-        {
-            decimal totalFondosRetiro = 0;
-
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                if (row.Cells["tipo_movimientoBanco"].Value != null && row.Cells["monto_movimientoBanco"].Value != null)
-                {
-                    // Verificar si el valor de la columna tipo_movimientoBanco es igual a 2
-                    if (row.Cells["tipo_movimientoBanco"].Value.ToString() == "2")
-                    {
-                        // Obtener el valor de la celda monto_movimientoBanco y convertirlo a decimal
-                        decimal monto;
-                        if (decimal.TryParse(row.Cells["monto_movimientoBanco"].Value.ToString(), out monto))
-                        {
-                            // Sumar el monto al total
-                            totalFondosRetiro += monto;
-                        }
-                    }
-                }
-            }
-
-            // Asignar el total al TextBox txtFondoRetiro
-            txtFondoRetiro.Text = totalFondosRetiro.ToString();
-
-            // Restar el valor de txtFondoRetiro al valor de txtSaldoActual y mostrar el resultado en txtSaldoDisponible
-            decimal saldoActual, fondoRetiro;
-            if (decimal.TryParse(textsaldoactual.Text, out saldoActual) && decimal.TryParse(txtFondoRetiro.Text, out fondoRetiro))
-            {
-                decimal saldoDisponible = saldoActual - fondoRetiro;
-                txtSaldoDisponible.Text = saldoDisponible.ToString();
-            }
-            else
-            {
-                // Manejar la situación en la que los valores de los TextBox no sean números válidos
-                MessageBox.Show("Los valores de Saldo Actual y Fondo de Retiro deben ser números válidos.");
-            }
-        }
+        
+        
         public void GuardarDatos()
             {
                 string tabla = "tbl_disponibilidaddiaria";
@@ -211,6 +222,16 @@ namespace CapaVistaERP.Procesos
         {
             LimpiarCampos();
             MessageBox.Show("Se han cancelado los registros.", "Cancelación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdBanco_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BuscarDetalleBanco();
         }
     }
 

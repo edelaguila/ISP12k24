@@ -87,12 +87,6 @@
     <Compile Include="Mantenimientos\frmSucursales.Designer.cs">
       <DependentUpon>frmSucursales.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\frm_mant_agregar_cuenta.Designer.cs">
-      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimientos\frm_Mant_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,12 +225,6 @@
     <Compile Include="Procesos\MovimientoProveedores.Designer.cs">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\Mov_bancario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Procesos\Mov_bancario.Designer.cs">
-      <DependentUpon>Mov_bancario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Procesos\OrdenesdeCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,9 +268,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frmSucursales.resx">
       <DependentUpon>frmSucursales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimientos\frm_mant_agregar_cuenta.resx">
-      <DependentUpon>frm_mant_agregar_cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_Proveedor.resx">
       <DependentUpon>frm_Mant_Proveedor.cs</DependentUpon>
@@ -352,9 +337,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\MovimientoProveedores.resx">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\Mov_bancario.resx">
-      <DependentUpon>Mov_bancario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\OrdenesdeCompra.resx">
       <DependentUpon>OrdenesdeCompra.cs</DependentUpon>

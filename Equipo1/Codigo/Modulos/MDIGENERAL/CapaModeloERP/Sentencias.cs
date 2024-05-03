@@ -524,7 +524,21 @@ namespace CapaModeloERP
         public OdbcDataAdapter llenartablabitacoraMB(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "SELECT * FROM " + tabla + "  ;";
+            //string sql = "SELECT * FROM " + tabla + "  ;";
+
+            string sql = "SELECT mb.id_movimientoBanco AS ID, " +
+             "cm.concepto_movimientoBanco AS Concepto, " +
+             "cb.nombre_empresa AS Cuenta, " +
+             "mb.fecha_movimientoBanco AS Fecha, " +
+             "mb.monto_movimientoBanco AS Monto, " +
+             "mb.efecto_movimientoBanco AS Efecto, " +
+             "mb.tipo_movimientoBanco AS IDCON, " +
+             "mb.cuenta_movimientoBanco AS IDCUE " +
+             "FROM " + tabla + " mb " + // Agregamos un espacio después de tabla
+             "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
+             "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria";
+
+
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
             return dataTable;
         }
@@ -538,6 +552,56 @@ namespace CapaModeloERP
             datos.Fill(dt);
 
             return dt;
+        }
+
+        // carlos enrique guzman cabrera
+        public bool EliminarMovimiento(int idMovimiento)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_movimientoDeBancos WHERE id_movimientoBanco = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("idMovimiento", idMovimiento);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable ObtenerRegistrosPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtRegistros = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                //string consulta = "SELECT * FROM tbl_movimientoDeBancos WHERE fecha_movimientoBanco BETWEEN ? AND ? ORDER BY fecha_movimientoBanco DESC";
+
+                string consulta = "SELECT mb.id_movimientoBanco AS ID, " +
+                  "cm.concepto_movimientoBanco AS Concepto, " +
+                  "cb.nombre_empresa AS Cuenta, " +
+                  "mb.fecha_movimientoBanco AS Fecha, " +
+                  "mb.monto_movimientoBanco AS Monto, " +
+                  "mb.efecto_movimientoBanco AS Efecto, " +
+                  "mb.tipo_movimientoBanco AS IDCON, " +
+                  "mb.cuenta_movimientoBanco AS IDCUE " +
+                  "FROM tbl_movimientoDeBancos mb " +
+                  "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
+                  "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria " +
+                  "WHERE mb.fecha_movimientoBanco BETWEEN ? AND ? " +
+                  "ORDER BY mb.fecha_movimientoBanco DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtRegistros);
+                }
+            }
+
+            return dtRegistros;
         }
 
         //Carol Chuy Modulo de Compras

@@ -183,3 +183,6 @@ CREATE TABLE IF NOT EXISTS tbl_AutorizacionOrdenesCompra (
     FOREIGN KEY (tbl_OrdenesCompra_id_OrdComp) REFERENCES tbl_ordenescompra (id_OrdComp),
     FOREIGN KEY (cuentaAsociada) REFERENCES tbl_cuentaBancaria (id_cuentaBancaria)
 ) ENGINE = InnoDB CHARACTER SET = latin1;
+
+ALTER TABLE tbl_movimientoDeBancos
+ADD COLUMN efecto_movimientoBanco VARCHAR(5) NOT NULL;
