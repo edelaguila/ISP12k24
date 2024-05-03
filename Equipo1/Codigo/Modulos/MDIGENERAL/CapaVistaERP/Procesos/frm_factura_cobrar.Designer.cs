@@ -44,27 +44,30 @@ namespace CapaVistaERP.Procesos
             this.btn_agregar = new System.Windows.Forms.Button();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_nitprov = new System.Windows.Forms.TextBox();
+            this.txt_coreocl = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_apellidocl = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txt_numfactura = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.btn_numorden = new System.Windows.Forms.Button();
-            this.txt_numcompra = new System.Windows.Forms.TextBox();
+            this.btn_Buscar = new System.Windows.Forms.Button();
+            this.txt_numcoti = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_nombreprov = new System.Windows.Forms.TextBox();
+            this.txt_nombrecl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Idprov = new System.Windows.Forms.TextBox();
+            this.txt_vend = new System.Windows.Forms.TextBox();
             this.dateTimePickerVencimiento = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_domicilio = new System.Windows.Forms.TextBox();
+            this.txt_direccioncl = new System.Windows.Forms.TextBox();
             this.dateTimePickerAbono = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_telefonoprov = new System.Windows.Forms.TextBox();
+            this.txt_telefonocl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_numPedido = new System.Windows.Forms.TextBox();
+            this.txt_idcliente = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -217,26 +220,29 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_idcliente);
+            this.groupBox1.Controls.Add(this.txt_numPedido);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txt_coreocl);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txt_nitprov);
+            this.groupBox1.Controls.Add(this.txt_apellidocl);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.txt_numfactura);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.btn_numorden);
-            this.groupBox1.Controls.Add(this.txt_numcompra);
+            this.groupBox1.Controls.Add(this.btn_Buscar);
+            this.groupBox1.Controls.Add(this.txt_numcoti);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txt_nombreprov);
+            this.groupBox1.Controls.Add(this.txt_nombrecl);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txt_Idprov);
+            this.groupBox1.Controls.Add(this.txt_vend);
             this.groupBox1.Controls.Add(this.dateTimePickerVencimiento);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txt_domicilio);
+            this.groupBox1.Controls.Add(this.txt_direccioncl);
             this.groupBox1.Controls.Add(this.dateTimePickerAbono);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txt_telefonoprov);
+            this.groupBox1.Controls.Add(this.txt_telefonocl);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 3);
@@ -248,13 +254,32 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la factura";
             // 
-            // txt_nitprov
+            // txt_coreocl
             // 
-            this.txt_nitprov.Location = new System.Drawing.Point(647, 135);
-            this.txt_nitprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nitprov.Name = "txt_nitprov";
-            this.txt_nitprov.Size = new System.Drawing.Size(253, 24);
-            this.txt_nitprov.TabIndex = 33;
+            this.txt_coreocl.Location = new System.Drawing.Point(647, 218);
+            this.txt_coreocl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_coreocl.Name = "txt_coreocl";
+            this.txt_coreocl.Size = new System.Drawing.Size(240, 24);
+            this.txt_coreocl.TabIndex = 35;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(553, 222);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Correo";
+            // 
+            // txt_apellidocl
+            // 
+            this.txt_apellidocl.Location = new System.Drawing.Point(647, 135);
+            this.txt_apellidocl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_apellidocl.Name = "txt_apellidocl";
+            this.txt_apellidocl.Size = new System.Drawing.Size(253, 24);
+            this.txt_apellidocl.TabIndex = 33;
             // 
             // label21
             // 
@@ -286,37 +311,38 @@ namespace CapaVistaERP.Procesos
             this.label20.TabIndex = 30;
             this.label20.Text = "Numero de factura";
             // 
-            // btn_numorden
+            // btn_Buscar
             // 
-            this.btn_numorden.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_numorden.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_numorden.BackgroundImage")));
-            this.btn_numorden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_numorden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_numorden.Location = new System.Drawing.Point(490, 38);
-            this.btn_numorden.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_numorden.Name = "btn_numorden";
-            this.btn_numorden.Size = new System.Drawing.Size(33, 25);
-            this.btn_numorden.TabIndex = 21;
-            this.btn_numorden.UseVisualStyleBackColor = false;
+            this.btn_Buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
+            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Location = new System.Drawing.Point(490, 38);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(33, 25);
+            this.btn_Buscar.TabIndex = 21;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
-            // txt_numcompra
+            // txt_numcoti
             // 
-            this.txt_numcompra.Location = new System.Drawing.Point(286, 40);
-            this.txt_numcompra.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_numcompra.Name = "txt_numcompra";
-            this.txt_numcompra.Size = new System.Drawing.Size(237, 24);
-            this.txt_numcompra.TabIndex = 9;
+            this.txt_numcoti.Location = new System.Drawing.Point(286, 40);
+            this.txt_numcoti.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numcoti.Name = "txt_numcoti";
+            this.txt_numcoti.Size = new System.Drawing.Size(237, 24);
+            this.txt_numcoti.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(140, 42);
+            this.label1.Location = new System.Drawing.Point(105, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 20);
+            this.label1.Size = new System.Drawing.Size(173, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Numero de Pedido";
+            this.label1.Text = "Numero de Cotizacion";
             // 
             // label9
             // 
@@ -329,13 +355,13 @@ namespace CapaVistaERP.Procesos
             this.label9.TabIndex = 8;
             this.label9.Text = "Fecha de vencimiento";
             // 
-            // txt_nombreprov
+            // txt_nombrecl
             // 
-            this.txt_nombreprov.Location = new System.Drawing.Point(297, 132);
-            this.txt_nombreprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_nombreprov.Name = "txt_nombreprov";
-            this.txt_nombreprov.Size = new System.Drawing.Size(240, 24);
-            this.txt_nombreprov.TabIndex = 10;
+            this.txt_nombrecl.Location = new System.Drawing.Point(286, 132);
+            this.txt_nombrecl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_nombrecl.Name = "txt_nombrecl";
+            this.txt_nombrecl.Size = new System.Drawing.Size(240, 24);
+            this.txt_nombrecl.TabIndex = 10;
             // 
             // label2
             // 
@@ -348,13 +374,13 @@ namespace CapaVistaERP.Procesos
             this.label2.TabIndex = 1;
             this.label2.Text = "Vendedor";
             // 
-            // txt_Idprov
+            // txt_vend
             // 
-            this.txt_Idprov.Location = new System.Drawing.Point(727, 86);
-            this.txt_Idprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_Idprov.Name = "txt_Idprov";
-            this.txt_Idprov.Size = new System.Drawing.Size(136, 24);
-            this.txt_Idprov.TabIndex = 11;
+            this.txt_vend.Location = new System.Drawing.Point(727, 86);
+            this.txt_vend.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_vend.Name = "txt_vend";
+            this.txt_vend.Size = new System.Drawing.Size(136, 24);
+            this.txt_vend.TabIndex = 11;
             // 
             // dateTimePickerVencimiento
             // 
@@ -376,13 +402,13 @@ namespace CapaVistaERP.Procesos
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre";
             // 
-            // txt_domicilio
+            // txt_direccioncl
             // 
-            this.txt_domicilio.Location = new System.Drawing.Point(297, 180);
-            this.txt_domicilio.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_domicilio.Name = "txt_domicilio";
-            this.txt_domicilio.Size = new System.Drawing.Size(565, 24);
-            this.txt_domicilio.TabIndex = 12;
+            this.txt_direccioncl.Location = new System.Drawing.Point(286, 180);
+            this.txt_direccioncl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_direccioncl.Name = "txt_direccioncl";
+            this.txt_direccioncl.Size = new System.Drawing.Size(576, 24);
+            this.txt_direccioncl.TabIndex = 12;
             // 
             // dateTimePickerAbono
             // 
@@ -400,9 +426,9 @@ namespace CapaVistaERP.Procesos
             this.label6.Location = new System.Drawing.Point(140, 270);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(144, 25);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Fecha abono";
+            this.label6.Text = "Fecha Factura";
             // 
             // label4
             // 
@@ -415,13 +441,13 @@ namespace CapaVistaERP.Procesos
             this.label4.TabIndex = 3;
             this.label4.Text = "Direccion";
             // 
-            // txt_telefonoprov
+            // txt_telefonocl
             // 
-            this.txt_telefonoprov.Location = new System.Drawing.Point(297, 222);
-            this.txt_telefonoprov.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_telefonoprov.Name = "txt_telefonoprov";
-            this.txt_telefonoprov.Size = new System.Drawing.Size(240, 24);
-            this.txt_telefonoprov.TabIndex = 13;
+            this.txt_telefonocl.Location = new System.Drawing.Point(286, 222);
+            this.txt_telefonocl.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_telefonocl.Name = "txt_telefonocl";
+            this.txt_telefonocl.Size = new System.Drawing.Size(251, 24);
+            this.txt_telefonocl.TabIndex = 13;
             // 
             // label5
             // 
@@ -434,24 +460,32 @@ namespace CapaVistaERP.Procesos
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
-            // textBox1
+            // label8
             // 
-            this.textBox1.Location = new System.Drawing.Point(647, 218);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 24);
-            this.textBox1.TabIndex = 35;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(105, 86);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(147, 20);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Numero de Pedido";
             // 
-            // label7
+            // txt_numPedido
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(553, 222);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Correo";
+            this.txt_numPedido.Location = new System.Drawing.Point(286, 86);
+            this.txt_numPedido.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_numPedido.Name = "txt_numPedido";
+            this.txt_numPedido.Size = new System.Drawing.Size(237, 24);
+            this.txt_numPedido.TabIndex = 37;
+            // 
+            // txt_idcliente
+            // 
+            this.txt_idcliente.Location = new System.Drawing.Point(8, 134);
+            this.txt_idcliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_idcliente.Name = "txt_idcliente";
+            this.txt_idcliente.Size = new System.Drawing.Size(58, 24);
+            this.txt_idcliente.TabIndex = 38;
             // 
             // frm_factura_cobrar
             // 
@@ -489,26 +523,29 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button btn_agregar;
         private System.Windows.Forms.DataGridView dgv_detalle;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_coreocl;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_nitprov;
+        private System.Windows.Forms.TextBox txt_apellidocl;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txt_numfactura;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btn_numorden;
-        private System.Windows.Forms.TextBox txt_numcompra;
+        private System.Windows.Forms.Button btn_Buscar;
+        private System.Windows.Forms.TextBox txt_numcoti;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_nombreprov;
+        private System.Windows.Forms.TextBox txt_nombrecl;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Idprov;
+        private System.Windows.Forms.TextBox txt_vend;
         private System.Windows.Forms.DateTimePicker dateTimePickerVencimiento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_domicilio;
+        private System.Windows.Forms.TextBox txt_direccioncl;
         private System.Windows.Forms.DateTimePicker dateTimePickerAbono;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_telefonoprov;
+        private System.Windows.Forms.TextBox txt_telefonocl;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txt_numPedido;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_idcliente;
     }
 }

@@ -26,56 +26,65 @@ namespace CapaVistaERP.Procesos
             DateTime fechaSeleccionada = dateTimePicker1.Value;
             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
             dateTimePicker2.Value = nuevaFecha;
+            UltimaVenta();
+           
         }
 
         private void frm_pedidos_Load(object sender, EventArgs e)
         {
 
         }
+        private void UltimaVenta()
+        {
+            string idVenta = cn.ObtenerUltimoDato("id_ventas_ped", "tbl_ventaspedido", "id_ventas_ped");
+            if (idVenta == "No hay id_ventas_ped registradas.")
+            {
+                idVenta = "0";
+                txt_venta.Text = idVenta;
+            }
+            else
+            {
+                int venta = Convert.ToInt32(idVenta) + 1;
+                Console.WriteLine("Ncoti1 " + venta);
+                txt_venta.Text = venta.ToString();
+                Console.WriteLine("id ultima venta " + idVenta);
+            }
+        }
+        
         private void buscarVendedor(int idVendedor)
         {
-            // Agrega un mensaje para verificar que se está llamando al método buscarVendedor
-            MessageBox.Show("Buscando vendedor...");
 
-            // Intenta obtener los datos del vendedor desde la base de datos
             DataTable dtVendedor = cn.BuscarVende("tbl_vendedor", "id_vendedor", idVendedor.ToString());
 
-            // Verifica si se encontraron resultados
             if (dtVendedor.Rows.Count > 0)
             {
-                // Muestra los datos del primer vendedor encontrado
                 DataRow row = dtVendedor.Rows[0];
                 MessageBox.Show($"Nombre del vendedor: {row["nombre_vend"]}, Apellido: {row["apellido_vend"]}, Teléfono: {row["telefono_vend"]}");
 
-                // Asigna los datos a los cuadros de texto
                 txt_nombre_vendedor.Text = row["nombre_vend"].ToString();
+                txt_idCliente.Text = row["nombre_vend"].ToString();
                 txt_apellido_vendedor.Text = row["apellido_vend"].ToString();
                 txt_telefono_vendedor.Text = row["telefono_vend"].ToString();
                 txt_estado_vendedor.Text = row["estado_vend"].ToString();
             }
             else
             {
-                // Muestra un mensaje si no se encontraron resultados
                 MessageBox.Show("Vendedor no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void buscarCotizacion(int idCotizacion)
         {
-            // Agrega un mensaje para verificar que se está llamando al método buscarVendedor
-            MessageBox.Show("Buscando vendedor...");
 
-            // Intenta obtener los datos del vendedor desde la base de datos
+
             DataTable dtCotizacion = cn.BuscarCotizacion("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", idCotizacion.ToString());
 
-            // Verifica si se encontraron resultados
             if (dtCotizacion.Rows.Count > 0)
             {
-                // Muestra los datos del primer vendedor encontrado
+
                 DataRow row = dtCotizacion.Rows[0];
                 MessageBox.Show($"Nombre del vendedor: {row["id_detalle_cotizacion"]}, Cliente: {row["tbl_clientes_id_cliente"]}, Cantidad: {row["cantidad_coti"]}, Numero: {row["tbl_cotizaciones_No_Cotizacion"]}, Producto: {row["tbl_producto_cod_producto"]}, Total: {row["total_detCoti"]}");
 
-                // Asigna los datos a los cuadros de texto
                 txt_nombre.Text = row["tbl_clientes_id_cliente"].ToString();
                 txt_cantidad.Text = row["cantidad_coti"].ToString();
                 txt_precio.Text = row["tbl_cotizaciones_No_Cotizacion"].ToString();
@@ -84,7 +93,6 @@ namespace CapaVistaERP.Procesos
             }
             else
             {
-                // Muestra un mensaje si no se encontraron resultados
                 MessageBox.Show("Vendedor no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -99,10 +107,8 @@ namespace CapaVistaERP.Procesos
                 return;
             }
 
-            // Agrega un mensaje para verificar que se obtiene el ID del vendedor correctamente
             MessageBox.Show($"ID del vendedor: {idVendedor}");
 
-            // Llama al método buscarVendedor
             buscarVendedor(idVendedor);
         }
 
@@ -115,20 +121,35 @@ namespace CapaVistaERP.Procesos
                 return;
             }
 
-            // Agrega un mensaje para verificar que se obtiene el ID del vendedor correctamente
+
             MessageBox.Show($"ID de cotizacion: {idCotizacion}");
 
-            // Llama al método buscarVendedor
             buscarCotizacion(idCotizacion);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int idVendedor= Convert.ToInt32(txt_id_vendedor.Text);
+            //Creditos a David Carrillo 0901-20-3201 
+            int idVendedor = Convert.ToInt32(txt_id_vendedor.Text);
             int idCotizacion= Convert.ToInt32(txt_id_cotizacion.Text);
+            
+
 
             cn.INSVentasPedido(idVendedor, idCotizacion);
             MessageBox.Show("idVendedor" + idVendedor + "idCoti" + idCotizacion);
+            double total = Convert.ToDouble(txt_total.Text);
+            string limite = dateTimePicker2.Text;
+            string estado = "Por Pagar";
+            int idVenta = Convert.ToInt32(txt_venta.Text);
+            MessageBox.Show("idVenta" + idVenta);
+            MessageBox.Show("idCliente" + txt_nombre.Text);
+            int cl= Convert.ToInt32(txt_nombre.Text);
+
+
+
+            cn.InsertarFactura(total, limite, estado, idVenta, cl);
+            // MessageBox.Show("Datos a guarddar"+total+limite+estado+idVenta+cl);
+            MessageBox.Show("Datos Guardados Correctamente");
 
         }
     }
