@@ -22,12 +22,18 @@ namespace CapaVistaERP.Procesos
             controller = new Controlador();
             llenarprod();
             controller.CargarOpcionesOrden(cmb_orden);
+            iniciarcombodepartamento();
             txt_idProv.Text = id;
             txt_nombreProv.Text = nombre;
             txt_domicilioProv.Text = domicilio;
             txt_telefonoProv.Text = telefono;
         }
-
+        public void iniciarcombodepartamento()
+        {
+            cmb_deptosolicitante.Items.Add("Compras");
+            cmb_deptosolicitante.Items.Add("Inventario");
+            cmb_deptosolicitante.Items.Add("Logística");
+        }
         //Llena el combobox de productos
         public void llenarprod()
         {
@@ -71,31 +77,29 @@ namespace CapaVistaERP.Procesos
             // Si se selecciona "Directa", deshabilitar botones para buscar proveedor
             if (seleccion == "Directa")
             {
-                btn_buscarProveedor.Enabled = false;
-                txt_idProv.Enabled = true;
-                btn_buscarProveedor.Enabled = false;
-                txt_nombreProv.Enabled = true;
-                txt_domicilioProv.Enabled = true;
-                txt_telefonoProv.Enabled = true;
-                txt_departamentos.Enabled = true;
-                dateTimePickerEntrega.Enabled = true;
-                dateTimePickerPedido.Enabled = true;
-                txt_entregara.Enabled = true;
-            }
+               btn_buscarProveedor.Enabled = false;
+               txt_idProv.Enabled = true;
+               btn_buscarProveedor.Enabled = false;
+               txt_nombreProv.Enabled = true;
+               txt_domicilioProv.Enabled = true;
+               txt_telefonoProv.Enabled = true;
+               cmb_deptosolicitante.Enabled = true;
+               dateTimePickerEntrega.Enabled = true;
+               dateTimePickerPedido.Enabled = true;
+             }
 
             // Si se selecciona "Relacionada", deshabilitar TextBox para ingresar directamente
             if (seleccion == "Relacionada")
             {
-                btn_buscarProveedor.Enabled = true;
-                txt_idProv.Enabled = false;
-                txt_nombreProv.Enabled = false;
-                txt_telefonoProv.Enabled = false;
-                txt_domicilioProv.Enabled = false;
-                txt_departamentos.Enabled = true;
-                dateTimePickerEntrega.Enabled = true;
-                dateTimePickerPedido.Enabled = true;
-                txt_entregara.Enabled = true;
-            }
+               btn_buscarProveedor.Enabled = true;
+               txt_idProv.Enabled = false;
+               txt_nombreProv.Enabled = false;
+               txt_telefonoProv.Enabled = false;
+               txt_domicilioProv.Enabled = false;
+               cmb_deptosolicitante.Enabled = true;
+               dateTimePickerEntrega.Enabled = true;
+               dateTimePickerPedido.Enabled = true;
+                }
             }
         }
         private void OrdenesdeCompra_Load(object sender, EventArgs e)
@@ -108,10 +112,9 @@ namespace CapaVistaERP.Procesos
             txt_nombreProv.Enabled = false;
             txt_domicilioProv.Enabled = false;
             txt_telefonoProv.Enabled = false;
-            txt_departamentos.Enabled = false;
+            cmb_deptosolicitante.Enabled = false;
             dateTimePickerEntrega.Enabled = false;
             dateTimePickerPedido.Enabled = false;
-            txt_entregara.Enabled = false;
             int ultimoNumeroOrden = controller.ObtenerUltimoNumeroOrden(campoid, tabla);
             txt_numeroorden.Text = ultimoNumeroOrden.ToString();
         }
@@ -312,7 +315,7 @@ namespace CapaVistaERP.Procesos
                 // Intenta realizar la inserción de la orden y el detalle dentro de una transacción
                 try
                 {
-                    controller.InsertarOrdenCompra(codigo, fechas, fechae, txt_departamentos.Text, txt_entregara.Text, subtotal, iva, totalOrden, txt_nota.Text, codigoprov);
+                    controller.InsertarOrdenCompra(codigo, fechas, fechae, cmb_deptosolicitante.Text, subtotal, iva, totalOrden, txt_nota.Text, codigoprov);
                     foreach (DataGridViewRow fila in dgv_detalle.Rows)
                     {
                         if (!fila.IsNewRow)
@@ -350,8 +353,7 @@ namespace CapaVistaERP.Procesos
             txt_nombreProv.Clear();
             txt_domicilioProv.Clear();
             txt_telefonoProv.Clear();
-            txt_departamentos.Clear();
-            txt_entregara.Clear();
+            cmb_deptosolicitante.SelectedIndex = -1;
             dateTimePickerPedido.Value = DateTime.Now; // Restablece la fecha actual
             dateTimePickerEntrega.Value = DateTime.Now; // Restablece la fecha actual
             txt_subtotal.Clear();
@@ -366,11 +368,10 @@ namespace CapaVistaERP.Procesos
             btn_buscarProveedor.Enabled = false;
             txt_nombreProv.Enabled = false;
             txt_domicilioProv.Enabled = false;
+            cmb_deptosolicitante.Enabled = false;
             txt_telefonoProv.Enabled = false;
-            txt_departamentos.Enabled = false;
             dateTimePickerEntrega.Enabled = false;
             dateTimePickerPedido.Enabled = false;
-            txt_entregara.Enabled = false;
             dgv_detalle.Enabled = true;
             txt_cantidad.Enabled = true;
             txt_descripcion.Enabled = true;

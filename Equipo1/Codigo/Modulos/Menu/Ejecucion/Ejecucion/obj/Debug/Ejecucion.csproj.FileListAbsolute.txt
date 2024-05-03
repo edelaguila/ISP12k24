@@ -860,3 +860,6 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigr
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_VistaConsultas.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_ControladorConsultas.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Capa_Modelo.pdb

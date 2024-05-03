@@ -31,8 +31,8 @@ namespace CapaControladorERP
             return table;
         }
         //Andrea Corado 0901-20-2841
-        public DataTable filtrardatos(string tabla, string columna, string dato) 
-        { 
+        public DataTable filtrardatos(string tabla, string columna, string dato)
+        {
             OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
             DataTable table = new DataTable();
             dt.Fill(table);
@@ -71,19 +71,19 @@ namespace CapaControladorERP
         //David Carrillo 0901-20-3201 
         public string obtenerCliente(string nombreCliente)
         {
-           
+
             string nombrecl = sn.ObtenerCliente(nombreCliente);
             return nombrecl;
         }
         //David Carrillo 0901-20-3201 
         public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti, string Solicitud)
         {
-            sn.InsertarCoti(No_Cotizacion,fecha_coti,fechaFinal_coti, Solicitud);
+            sn.InsertarCoti(No_Cotizacion, fecha_coti, fechaFinal_coti, Solicitud);
         }
         //David Carrillo 0901-20-3201 
         public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
-            sn.InsertarDetalleCoti(id_cliente,cantidad_coti,No_Cotizacion,cod_producto,total_detCoti);
+            sn.InsertarDetalleCoti(id_cliente, cantidad_coti, No_Cotizacion, cod_producto, total_detCoti);
         }
         //David Carrillo 0901-20-3201 
         public void ActCoti(int No_Cotizacion)
@@ -94,13 +94,13 @@ namespace CapaControladorERP
 
         public string ObtenerUltimoDato(string dato, string tabla, string dato2)
         {
-           return sn.ObtenerUltimoDato(dato, tabla, dato2);
+            return sn.ObtenerUltimoDato(dato, tabla, dato2);
         }
 
         //David Carrillo
-        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
         {
-             sn.InsertarFactura( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
         }
 
         //David Carrillo 0901-20-3201 
@@ -111,7 +111,7 @@ namespace CapaControladorERP
         //David Carrillo 0901-20-3201 
         public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
         {
-            return sn.BuscarDato(dato,tabla,DatoABuscar,igualA);
+            return sn.BuscarDato(dato, tabla, DatoABuscar, igualA);
         }
 
         // carlos enrique modulo bancos
@@ -172,7 +172,7 @@ namespace CapaControladorERP
         // carlos enrique guzman cabrera
         public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
         {
-           
+
 
             DateTime fechaInicio, fechaFin;
 
@@ -367,9 +367,9 @@ namespace CapaControladorERP
             return sn.ObtenerProveedorPorID(id);
         }
         //Carol Chuy Modulo Compras
-        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, string entregara, double subtotal, double iva, double total, string notas, int codProv)
+        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv)
         {
-            sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, entregara, subtotal, iva, total, notas, codProv);
+            sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv);
         }
         //Carol Chuy Modulo Compras
         public void InsertarDetalleOrdenCompra(int codDetalle, int codigo, int cantidad, double totalfila, int idproducto)
@@ -461,6 +461,37 @@ namespace CapaControladorERP
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             sn.TrasladoProducto(idOrigen, idDestino, idProducto, cantidad);
+        }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenPorID(int id)
+        {
+            return sn.ObtenerOrdenPorID(id);
+        }
+        //Carol Chuy Compras
+        public void InsertarCompra(int codigo, string fechas, string fechae, string depa, double subtotal, double iva, double totalCompra, string notas, int codigoprov, int estadoCompra, string fechap, int codorden)
+        {
+            sn.InsertarCompra(codigo, fechas, fechae, depa, subtotal, iva, totalCompra, notas, codigoprov, estadoCompra, fechap, codorden);
+        }
+        //Carol Chuy Compras
+        public void InsertarDetalleCompra(int codDetalle, int cantidad, double totalfila, int idprod, int codigo)
+        {
+            sn.InsertarDetalleCompra(codDetalle, cantidad, totalfila, idprod, codigo);
+        }
+        //Carol Chuy Compras
+        public void InsertarFactura(int codigo, string nombrep, string nitp, string fechaV, string fechaA, double subtotal, double iva, double totalCompra, int estado, string notas, int codcompra)
+        {
+            sn.InsertarFactura(codigo, nombrep, nitp, fechaV, fechaA, subtotal, iva, totalCompra, estado, notas, codcompra);
+        }
+        //Carol Chuy Compras
+        public void InsertarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
+        {
+            sn.InsertarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerFactPorID(int id)
+        {
+            return sn.ObtenerFactPorID(id);
         }
     }
 
