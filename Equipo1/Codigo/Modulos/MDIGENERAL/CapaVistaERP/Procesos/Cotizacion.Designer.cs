@@ -258,7 +258,7 @@
             this.txt_direccion_cl.Location = new System.Drawing.Point(123, 128);
             this.txt_direccion_cl.Name = "txt_direccion_cl";
             this.txt_direccion_cl.Size = new System.Drawing.Size(383, 30);
-            this.txt_direccion_cl.TabIndex = 16;
+            this.txt_direccion_cl.TabIndex = 12;
             // 
             // txt_correo_cl
             // 
@@ -266,7 +266,7 @@
             this.txt_correo_cl.Location = new System.Drawing.Point(123, 165);
             this.txt_correo_cl.Name = "txt_correo_cl";
             this.txt_correo_cl.Size = new System.Drawing.Size(383, 30);
-            this.txt_correo_cl.TabIndex = 17;
+            this.txt_correo_cl.TabIndex = 13;
             // 
             // txt_telefono_cl
             // 
@@ -274,7 +274,7 @@
             this.txt_telefono_cl.Location = new System.Drawing.Point(123, 204);
             this.txt_telefono_cl.Name = "txt_telefono_cl";
             this.txt_telefono_cl.Size = new System.Drawing.Size(383, 30);
-            this.txt_telefono_cl.TabIndex = 18;
+            this.txt_telefono_cl.TabIndex = 14;
             // 
             // lbl_precioUni
             // 
@@ -414,7 +414,7 @@
             this.txt_apellido_cl.Location = new System.Drawing.Point(123, 92);
             this.txt_apellido_cl.Name = "txt_apellido_cl";
             this.txt_apellido_cl.Size = new System.Drawing.Size(383, 30);
-            this.txt_apellido_cl.TabIndex = 69;
+            this.txt_apellido_cl.TabIndex = 11;
             // 
             // dataGridView1
             // 

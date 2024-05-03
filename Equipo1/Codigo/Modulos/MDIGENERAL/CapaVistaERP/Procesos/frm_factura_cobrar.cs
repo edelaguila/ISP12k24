@@ -17,7 +17,14 @@ namespace CapaVistaERP.Procesos
         public frm_factura_cobrar()
         {
             InitializeComponent();
-          
+            dgvFactura.Format = DateTimePickerFormat.Custom;
+            dgvFactura.CustomFormat = "yyyy-MM-dd";
+            dgvVencimiento.Format = DateTimePickerFormat.Custom;
+            dgvVencimiento.CustomFormat = "yyyy-MM-dd";
+
+            DateTime fechaSeleccionada = dgvFactura.Value;
+            DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
+            dgvVencimiento.Value = nuevaFecha;
         }
         private void obtenerNoFact()
         {
@@ -35,7 +42,7 @@ namespace CapaVistaERP.Procesos
         private void UltimaFact()
         {
             string idFact = cn.ObtenerUltimoDato("NoFactura", "tbl_facturaxcobrar", "NoFactura");
-            if (idFact == "No hay NoFactura registradas.")
+            if (idFact == "No hay dato registrado")
             {
                 idFact = "0";
                 txt_numfactura.Text = idFact;
@@ -110,8 +117,8 @@ namespace CapaVistaERP.Procesos
 
                 DataRow row = dt2.Rows[0];
                 txt_total.Text = row["total_facxcob"].ToString();
-                dateTimePickerVencimiento.Text = row["tiempoPago_facxcob"].ToString();
-
+                dgvVencimiento.Text = row["tiempoPago_facxcob"].ToString();
+                txt_facturaestado.Text = row["estado_facxcob"].ToString();
                 txt_nombrecl.Text = row["tbl_Clientes_id_cliente"].ToString();
                 txt_idcliente.Text = txt_nombrecl.Text;
                DataTable nombre_cl = cn.BuscarDato("nombre_cl", "tbl_clientes", "id_cliente", Convert.ToInt32(txt_nombrecl.Text));
