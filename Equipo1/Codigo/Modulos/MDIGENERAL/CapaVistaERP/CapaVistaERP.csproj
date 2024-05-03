@@ -135,6 +135,12 @@
     <Compile Include="Procesos\Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\ComprasMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ComprasMaestro.Designer.cs">
+      <DependentUpon>ComprasMaestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\Dispo_Diaria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +200,12 @@
     </Compile>
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FacturaporPagarMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FacturaporPagarMaestro.Designer.cs">
+      <DependentUpon>FacturaporPagarMaestro.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
       <SubType>Form</SubType>
@@ -293,6 +305,9 @@
     <EmbeddedResource Include="Procesos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ComprasMaestro.resx">
+      <DependentUpon>ComprasMaestro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Dispo_Diaria.resx">
       <DependentUpon>Dispo_Diaria.cs</DependentUpon>
     </EmbeddedResource>
@@ -322,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FacturaporPagarMaestro.resx">
+      <DependentUpon>FacturaporPagarMaestro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
       <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>

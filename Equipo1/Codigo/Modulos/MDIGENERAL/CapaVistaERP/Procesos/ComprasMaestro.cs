@@ -12,14 +12,15 @@ using CapaControladorERP;
 //Programado por: Carol Chuy
 namespace CapaVistaERP.Procesos
 {
-    public partial class OrdenesdeCompraMaestro : Form
+    public partial class ComprasMaestro : Form
     {
-        private string id = "";
-        private string nombre = "";
-        private string domicilio = "";
-        private string telefono = "";
+        private string idord = "";
+        private string fechaS = "";
+        private string fechaE = "";
+        private string solicitante = "";
+        private string proveedor = "";
         Controlador cn = new Controlador();
-        public OrdenesdeCompraMaestro()
+        public ComprasMaestro()
         {
             InitializeComponent();
             actualizardatagridview();
@@ -27,12 +28,12 @@ namespace CapaVistaERP.Procesos
 
         private void btn_nueva_Click(object sender, EventArgs e)
         {
-            OrdenesdeCompra OrdenesdeCompra = new OrdenesdeCompra(id, nombre, domicilio, telefono);
-            OrdenesdeCompra.Show();
+            Compras Compras = new Compras(idord, fechaS, fechaE, solicitante, proveedor);
+            Compras.Show();
         }
         public void actualizardatagridview()
         {
-            DataTable dt = cn.llenarTablas("tbl_ordenescompra");
+            DataTable dt = cn.llenarTablas("tbl_compras");
             dataGridView1.DataSource = dt;
         }
 

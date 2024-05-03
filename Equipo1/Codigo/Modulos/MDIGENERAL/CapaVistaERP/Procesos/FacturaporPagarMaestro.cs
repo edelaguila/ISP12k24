@@ -9,17 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
 
-//Programado por: Carol Chuy
+//Programado por: Carol Chuy 
 namespace CapaVistaERP.Procesos
 {
-    public partial class OrdenesdeCompraMaestro : Form
+    public partial class FacturaporPagarMaestro : Form
     {
-        private string id = "";
-        private string nombre = "";
-        private string domicilio = "";
-        private string telefono = "";
+        private string idcompra = "";
+        private string fechaV = "";
+        private string proveedorfact = "";
         Controlador cn = new Controlador();
-        public OrdenesdeCompraMaestro()
+        public FacturaporPagarMaestro()
         {
             InitializeComponent();
             actualizardatagridview();
@@ -27,12 +26,12 @@ namespace CapaVistaERP.Procesos
 
         private void btn_nueva_Click(object sender, EventArgs e)
         {
-            OrdenesdeCompra OrdenesdeCompra = new OrdenesdeCompra(id, nombre, domicilio, telefono);
-            OrdenesdeCompra.Show();
+            FacturaporPagar FacturaporPagar = new FacturaporPagar(idcompra, fechaV, proveedorfact);
+            FacturaporPagar.Show();
         }
         public void actualizardatagridview()
         {
-            DataTable dt = cn.llenarTablas("tbl_ordenescompra");
+            DataTable dt = cn.llenarTablas("tbl_facturaxpagar");
             dataGridView1.DataSource = dt;
         }
 
