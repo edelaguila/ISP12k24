@@ -17,7 +17,7 @@ namespace CapaVistaERP.Procesos
     {
         private Controlador cn;
         string tabla1 = "tbl_facturaxpagar";
-        
+
         public CajaProveedor(string idprove, string nombreprov, string nitprove)
         {
             InitializeComponent();
@@ -36,22 +36,12 @@ namespace CapaVistaERP.Procesos
         public void filtrodata()
         {
             string filtro = txt_nit.Text;
-            DataTable dt = cn.filtrardatos(tabla1,"nitprov_facxpag", filtro);
+            DataTable dt = cn.filtrardatos(tabla1, "nitprov_facxpag", filtro);
             dgv_pagoproveedor.DataSource = dt;
         }
 
 
-        private void dgv_pagoproveedor_SelectionChanged(object sender, EventArgs e)
-        {
-            if (dgv_pagoproveedor.SelectedRows.Count > 0)
-            {
-                DataGridViewRow filaSeleccionada = dgv_pagoproveedor.SelectedRows[0];
-
-                string total = filaSeleccionada.Cells["totalfac_facxpag"].Value.ToString();
-                txt_totalapagar.Text = total;
-            }
-
-        }
+    
 
         public void Combo()
         {
@@ -108,7 +98,97 @@ namespace CapaVistaERP.Procesos
 
         private void btn_buscarFactura_Click(object sender, EventArgs e)
         {
+           // dgv_pagoproveedor.DataBindingComplete += dgv_pagoproveedor_DataBindingComplete;
+
             filtrodata();
+        }
+
+        double sumaTotal = 0;
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            // Verificar si el contenido del TextBox es un número válido
+            if (double.TryParse(txt_factotal.Text, out double valor))
+            {
+                // Sumar el valor al total acumulado
+                sumaTotal += valor;
+
+                // Mostrar la suma total en el otro TextBox
+                txt_totalapagar.Text = sumaTotal.ToString();
+
+                txtNoFactura.Text = "";
+                txt_FechaV.Text = "";
+                txt_facSub.Text = "";
+                txt_factotal.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgv_pagoproveedor_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgv_pagoproveedor_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_pagoproveedor_SelectionChanged(object sender, EventArgs e)
+        {
+
+            // Verificar si hay alguna fila seleccionada
+            if (dgv_pagoproveedor.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgv_pagoproveedor.SelectedRows[0];
+
+                // Obtener los valores de las celdas y asignarlos a los TextBoxes
+                txtNoFactura.Text = filaSeleccionada.Cells["NoFactura"].Value.ToString();
+                    txt_FechaV.Text = filaSeleccionada.Cells["fechavenc_facxpag"].Value.ToString();
+                    txt_facSub.Text = filaSeleccionada.Cells["subtotal_facxpag"].Value.ToString();
+                    txt_factotal.Text = filaSeleccionada.Cells["totalfac_facxpag"].Value.ToString();
+               
+            }
+        }
+
+
+        private double totalFacturasAcumulado = 0;
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            // Verificar si el contenido del TextBox es un número válido
+            if (double.TryParse(txt_factotal.Text, out double montoFactura))
+            {
+                // Restar el monto de la factura al total acumulado de facturas
+                totalFacturasAcumulado -= montoFactura;
+
+                // Asegurarse de que el total acumulado no sea menor que cero
+                if (totalFacturasAcumulado < 0)
+                {
+                    totalFacturasAcumulado = 0;
+                }
+
+                // Si el total acumulado llega a cero, borrarlo
+                if (totalFacturasAcumulado == 0)
+                {
+                    txt_totalapagar.Text = "0";
+                }
+                else
+                {
+                    // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
+                    txt_totalapagar.Text = totalFacturasAcumulado.ToString();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un monto de factura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
