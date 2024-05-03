@@ -47,6 +47,17 @@
             this.cmb_banco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_factotal = new System.Windows.Forms.TextBox();
+            this.txt_facSub = new System.Windows.Forms.TextBox();
+            this.txt_FechaV = new System.Windows.Forms.TextBox();
+            this.txtNoFactura = new System.Windows.Forms.TextBox();
+            this.btn_confirmar = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.txt_totalapagar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -86,11 +97,11 @@
             this.cmb_tipo.Controls.Add(this.cmb_banco);
             this.cmb_tipo.Controls.Add(this.label4);
             this.cmb_tipo.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_tipo.Location = new System.Drawing.Point(13, 646);
+            this.cmb_tipo.Location = new System.Drawing.Point(13, 734);
             this.cmb_tipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_tipo.Name = "cmb_tipo";
             this.cmb_tipo.Padding = new System.Windows.Forms.Padding(4);
-            this.cmb_tipo.Size = new System.Drawing.Size(1024, 271);
+            this.cmb_tipo.Size = new System.Drawing.Size(1118, 271);
             this.cmb_tipo.TabIndex = 45;
             this.cmb_tipo.TabStop = false;
             this.cmb_tipo.Text = "Pago";
@@ -98,7 +109,7 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(728, 37);
+            this.textBox1.Location = new System.Drawing.Point(786, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(68, 24);
             this.textBox1.TabIndex = 56;
@@ -113,7 +124,7 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(797, 181);
+            this.btn_cancelar.Location = new System.Drawing.Point(910, 119);
             this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(148, 46);
@@ -123,7 +134,7 @@
             // 
             // txt_concepto
             // 
-            this.txt_concepto.Location = new System.Drawing.Point(61, 216);
+            this.txt_concepto.Location = new System.Drawing.Point(119, 216);
             this.txt_concepto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_concepto.Multiline = true;
             this.txt_concepto.Name = "txt_concepto";
@@ -134,7 +145,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(327, 181);
+            this.label9.Location = new System.Drawing.Point(385, 181);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 20);
@@ -143,7 +154,7 @@
             // 
             // txt_beneficiario
             // 
-            this.txt_beneficiario.Location = new System.Drawing.Point(162, 141);
+            this.txt_beneficiario.Location = new System.Drawing.Point(220, 141);
             this.txt_beneficiario.Margin = new System.Windows.Forms.Padding(4);
             this.txt_beneficiario.Name = "txt_beneficiario";
             this.txt_beneficiario.Size = new System.Drawing.Size(551, 24);
@@ -153,7 +164,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(57, 141);
+            this.label8.Location = new System.Drawing.Point(115, 141);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(96, 20);
@@ -162,7 +173,7 @@
             // 
             // btn_pagar
             // 
-            this.btn_pagar.Location = new System.Drawing.Point(797, 105);
+            this.btn_pagar.Location = new System.Drawing.Point(910, 49);
             this.btn_pagar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_pagar.Name = "btn_pagar";
             this.btn_pagar.Size = new System.Drawing.Size(148, 46);
@@ -173,7 +184,7 @@
             // dt_fechaabono
             // 
             this.dt_fechaabono.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dt_fechaabono.Location = new System.Drawing.Point(552, 93);
+            this.dt_fechaabono.Location = new System.Drawing.Point(610, 88);
             this.dt_fechaabono.Margin = new System.Windows.Forms.Padding(4);
             this.dt_fechaabono.Name = "dt_fechaabono";
             this.dt_fechaabono.Size = new System.Drawing.Size(161, 24);
@@ -183,7 +194,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(424, 93);
+            this.label7.Location = new System.Drawing.Point(482, 88);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 20);
@@ -212,7 +223,7 @@
             // cb_tipotransa
             // 
             this.cb_tipotransa.FormattingEnabled = true;
-            this.cb_tipotransa.Location = new System.Drawing.Point(552, 37);
+            this.cb_tipotransa.Location = new System.Drawing.Point(610, 32);
             this.cb_tipotransa.Name = "cb_tipotransa";
             this.cb_tipotransa.Size = new System.Drawing.Size(161, 27);
             this.cb_tipotransa.TabIndex = 44;
@@ -221,7 +232,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(424, 39);
+            this.label5.Location = new System.Drawing.Point(482, 34);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 20);
@@ -250,6 +261,17 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_factotal);
+            this.groupBox1.Controls.Add(this.txt_facSub);
+            this.groupBox1.Controls.Add(this.txt_FechaV);
+            this.groupBox1.Controls.Add(this.txtNoFactura);
+            this.groupBox1.Controls.Add(this.btn_confirmar);
+            this.groupBox1.Controls.Add(this.btn_eliminar);
+            this.groupBox1.Controls.Add(this.btn_agregar);
             this.groupBox1.Controls.Add(this.btn_buscarFactura);
             this.groupBox1.Controls.Add(this.txt_totalapagar);
             this.groupBox1.Controls.Add(this.label1);
@@ -257,14 +279,123 @@
             this.groupBox1.Controls.Add(this.txt_nit);
             this.groupBox1.Controls.Add(this.dgv_pagoproveedor);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 224);
+            this.groupBox1.Location = new System.Drawing.Point(12, 217);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1024, 403);
+            this.groupBox1.Size = new System.Drawing.Size(1118, 509);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(506, 98);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 20);
+            this.label15.TabIndex = 52;
+            this.label15.Text = "Total ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(356, 98);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(68, 20);
+            this.label13.TabIndex = 51;
+            this.label13.Text = "SubTotal";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(145, 98);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(175, 20);
+            this.label10.TabIndex = 50;
+            this.label10.Text = "Fecha de vencimiento";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 96);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 20);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "No. Factura";
+            // 
+            // txt_factotal
+            // 
+            this.txt_factotal.Enabled = false;
+            this.txt_factotal.Location = new System.Drawing.Point(510, 121);
+            this.txt_factotal.Name = "txt_factotal";
+            this.txt_factotal.Size = new System.Drawing.Size(111, 24);
+            this.txt_factotal.TabIndex = 48;
+            // 
+            // txt_facSub
+            // 
+            this.txt_facSub.Enabled = false;
+            this.txt_facSub.Location = new System.Drawing.Point(360, 119);
+            this.txt_facSub.Name = "txt_facSub";
+            this.txt_facSub.Size = new System.Drawing.Size(111, 24);
+            this.txt_facSub.TabIndex = 47;
+            // 
+            // txt_FechaV
+            // 
+            this.txt_FechaV.Enabled = false;
+            this.txt_FechaV.Location = new System.Drawing.Point(149, 121);
+            this.txt_FechaV.Name = "txt_FechaV";
+            this.txt_FechaV.Size = new System.Drawing.Size(161, 24);
+            this.txt_FechaV.TabIndex = 46;
+            // 
+            // txtNoFactura
+            // 
+            this.txtNoFactura.Enabled = false;
+            this.txtNoFactura.Location = new System.Drawing.Point(25, 119);
+            this.txtNoFactura.Name = "txtNoFactura";
+            this.txtNoFactura.Size = new System.Drawing.Size(85, 24);
+            this.txtNoFactura.TabIndex = 45;
+            this.txtNoFactura.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // btn_confirmar
+            // 
+            this.btn_confirmar.Location = new System.Drawing.Point(1001, 364);
+            this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_confirmar.Name = "btn_confirmar";
+            this.btn_confirmar.Size = new System.Drawing.Size(99, 38);
+            this.btn_confirmar.TabIndex = 44;
+            this.btn_confirmar.Text = "Confirmar";
+            this.btn_confirmar.UseVisualStyleBackColor = true;
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Location = new System.Drawing.Point(1001, 306);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(99, 38);
+            this.btn_eliminar.TabIndex = 43;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Location = new System.Drawing.Point(1001, 247);
+            this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(99, 38);
+            this.btn_agregar.TabIndex = 42;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_buscarFactura
             // 
@@ -272,7 +403,7 @@
             this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
             this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 24);
+            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 50);
             this.btn_buscarFactura.Margin = new System.Windows.Forms.Padding(4);
             this.btn_buscarFactura.Name = "btn_buscarFactura";
             this.btn_buscarFactura.Size = new System.Drawing.Size(33, 25);
@@ -282,7 +413,7 @@
             // 
             // txt_totalapagar
             // 
-            this.txt_totalapagar.Location = new System.Drawing.Point(790, 356);
+            this.txt_totalapagar.Location = new System.Drawing.Point(790, 460);
             this.txt_totalapagar.Margin = new System.Windows.Forms.Padding(4);
             this.txt_totalapagar.Name = "txt_totalapagar";
             this.txt_totalapagar.Size = new System.Drawing.Size(184, 24);
@@ -292,7 +423,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(666, 358);
+            this.label1.Location = new System.Drawing.Point(666, 462);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 20);
@@ -303,7 +434,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 27);
+            this.label3.Location = new System.Drawing.Point(27, 53);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 20);
@@ -313,7 +444,7 @@
             // txt_nit
             // 
             this.txt_nit.Enabled = false;
-            this.txt_nit.Location = new System.Drawing.Point(152, 25);
+            this.txt_nit.Location = new System.Drawing.Point(152, 51);
             this.txt_nit.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nit.Name = "txt_nit";
             this.txt_nit.Size = new System.Drawing.Size(309, 24);
@@ -323,7 +454,7 @@
             // dgv_pagoproveedor
             // 
             this.dgv_pagoproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_pagoproveedor.Location = new System.Drawing.Point(31, 56);
+            this.dgv_pagoproveedor.Location = new System.Drawing.Point(31, 160);
             this.dgv_pagoproveedor.Name = "dgv_pagoproveedor";
             this.dgv_pagoproveedor.RowHeadersWidth = 51;
             this.dgv_pagoproveedor.RowTemplate.Height = 24;
@@ -342,9 +473,9 @@
             this.groupBox2.Controls.Add(this.txt_nitprov);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(13, 19);
+            this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1024, 198);
+            this.groupBox2.Size = new System.Drawing.Size(1088, 198);
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -429,7 +560,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1058, 931);
+            this.ClientSize = new System.Drawing.Size(1143, 1018);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cmb_tipo);
             this.Controls.Add(this.groupBox1);
@@ -480,5 +611,16 @@
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txt_nit;
         private System.Windows.Forms.Button btn_buscarFactura;
+        private System.Windows.Forms.Button btn_confirmar;
+        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txt_factotal;
+        private System.Windows.Forms.TextBox txt_facSub;
+        private System.Windows.Forms.TextBox txt_FechaV;
+        private System.Windows.Forms.TextBox txtNoFactura;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label10;
     }
 }
