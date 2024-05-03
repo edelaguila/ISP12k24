@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -115,7 +116,7 @@ namespace CapaVistaERP.Procesos
                 // Mostrar la suma total en el otro TextBox
                 txt_totalapagar.Text = sumaTotal.ToString();
 
-                txtNoFactura.Text = "";
+                //txtNoFactura.Text = "";
                 txt_FechaV.Text = "";
                 txt_facSub.Text = "";
                 txt_factotal.Text = "";
@@ -191,6 +192,46 @@ namespace CapaVistaERP.Procesos
             {
                 MessageBox.Show("Por favor, ingrese un monto de factura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btn_pagar_Click(object sender, EventArgs e)
+        {
+            string idp = txt_idprov.Text;
+            string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
+            string totalmov = txt_totalapagar.Text;
+            string nofact = txtNoFactura.Text;
+            string banmov = txt_bancos.Text;
+            string tipomov = txt_tipomovpro.Text;
+            string numov = txt_numero.Text;
+            string conceptomov = txt_concepto.Text;
+            cn.Guardarmovpro(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+            MessageBox.Show("Pago Realizado con Exito");
+            LimpiarCampos();
+
+        }
+        private void LimpiarCampos()
+        {
+            txt_idprov.Clear();
+            txt_nombreprov.Clear();
+            txt_nitprov.Clear();
+            txt_nit.Clear();
+            txtNoFactura.Clear();
+            txt_totalapagar.Clear();
+            txt_bancos.Clear();
+            txt_tipomovpro.Clear();
+            txt_numero.Clear();
+            dt_fechaabono.Value = DateTime.Now; // Restablece la fecha actual
+            txt_concepto.Clear();
+        }
+
+        private void txt_tipomovpro_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cb_tipotransa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_tipomovpro.Text = cb_tipotransa.SelectedItem.ToString();
         }
     }
 }

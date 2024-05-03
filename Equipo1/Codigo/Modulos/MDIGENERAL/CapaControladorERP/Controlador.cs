@@ -30,7 +30,7 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
-
+        //Andrea Corado 0901-20-2841
         public DataTable filtrardatos(string tabla, string columna, string dato) 
         { 
             OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
@@ -38,6 +38,14 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+        //Andrea Corado 0901-20-2841
+        public void Guardarmovpro(string idp, string fechamov, string totalmov, string nofact, string banmov, string tipomov, string numov, string conceptomov)
+        {
+            sn.guardarDatos(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+        }
+
+
+
 
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
