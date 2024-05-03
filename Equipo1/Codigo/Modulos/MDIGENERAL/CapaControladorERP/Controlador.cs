@@ -14,7 +14,7 @@ namespace CapaControladorERP
     public class Controlador
     {
         Sentencias sn = new Sentencias();
-        //Andrea Corado 0901-20-2841
+        //Andrea Corado  0901-20-2841
         public DataTable llenarTablas(string tabla)
         {
             OdbcDataAdapter dt = sn.CargarDatos(tabla);

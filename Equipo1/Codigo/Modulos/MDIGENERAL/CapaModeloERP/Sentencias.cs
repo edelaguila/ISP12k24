@@ -30,7 +30,7 @@ namespace CapaModeloERP
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
-        //Andrea Corado 0901-20-2841
+        //Andrea Corado    0901-20-2841
 
         public OdbcDataAdapter BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
         {

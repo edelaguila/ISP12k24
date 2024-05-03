@@ -119,6 +119,7 @@ namespace CapaVistaERP.Procesos
                 txt_FechaV.Text = "";
                 txt_facSub.Text = "";
                 txt_factotal.Text = "";
+                
             }
             else
             {
@@ -165,8 +166,11 @@ namespace CapaVistaERP.Procesos
             // Verificar si el contenido del TextBox es un número válido
             if (double.TryParse(txt_factotal.Text, out double montoFactura))
             {
-                // Restar el monto de la factura al total acumulado de facturas
+                // Restar el monto de la factura del total acumulado de facturas
                 totalFacturasAcumulado -= montoFactura;
+
+                // Restar el monto de la factura de la suma total
+                sumaTotal -= montoFactura;
 
                 // Asegurarse de que el total acumulado no sea menor que cero
                 if (totalFacturasAcumulado < 0)
@@ -174,16 +178,14 @@ namespace CapaVistaERP.Procesos
                     totalFacturasAcumulado = 0;
                 }
 
-                // Si el total acumulado llega a cero, borrarlo
-                if (totalFacturasAcumulado == 0)
+                // Asegurarse de que la suma total no sea menor que cero
+                if (sumaTotal < 0)
                 {
-                    txt_totalapagar.Text = "0";
+                    sumaTotal = 0;
                 }
-                else
-                {
-                    // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
-                    txt_totalapagar.Text = totalFacturasAcumulado.ToString();
-                }
+
+                // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
+                txt_totalapagar.Text = sumaTotal.ToString();
             }
             else
             {
