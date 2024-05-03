@@ -705,3 +705,8 @@ C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\M
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.CopyComplete
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_ControladorConsultas.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_Modelo.dll
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_VistaConsultas.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_ControladorConsultas.pdb
+C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_Modelo.pdb
