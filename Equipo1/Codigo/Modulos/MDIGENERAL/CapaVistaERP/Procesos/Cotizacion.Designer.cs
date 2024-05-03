@@ -98,6 +98,7 @@
             this.lblNoCoti.Size = new System.Drawing.Size(23, 25);
             this.lblNoCoti.TabIndex = 1;
             this.lblNoCoti.Text = "0";
+            this.lblNoCoti.Click += new System.EventHandler(this.lblNoCoti_Click);
             // 
             // label4
             // 

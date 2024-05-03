@@ -71,6 +71,9 @@ namespace CapaVistaERP.Procesos
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.txt_venta = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_idCliente = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -285,6 +288,7 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_idCliente);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
@@ -302,7 +306,6 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Location = new System.Drawing.Point(49, 375);
             this.groupBox1.Name = "groupBox1";
@@ -481,7 +484,7 @@ namespace CapaVistaERP.Procesos
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(326, 180);
+            this.txt_nombre.Location = new System.Drawing.Point(36, 858);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.ReadOnly = true;
             this.txt_nombre.Size = new System.Drawing.Size(234, 34);
@@ -516,11 +519,43 @@ namespace CapaVistaERP.Procesos
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // txt_venta
+            // 
+            this.txt_venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_venta.Location = new System.Drawing.Point(36, 913);
+            this.txt_venta.Name = "txt_venta";
+            this.txt_venta.ReadOnly = true;
+            this.txt_venta.Size = new System.Drawing.Size(234, 34);
+            this.txt_venta.TabIndex = 148;
+            this.txt_venta.Tag = "";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(26, 1009);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(234, 34);
+            this.textBox1.TabIndex = 148;
+            this.textBox1.Tag = "";
+            // 
+            // txt_idCliente
+            // 
+            this.txt_idCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_idCliente.Location = new System.Drawing.Point(331, 183);
+            this.txt_idCliente.Name = "txt_idCliente";
+            this.txt_idCliente.ReadOnly = true;
+            this.txt_idCliente.Size = new System.Drawing.Size(234, 34);
+            this.txt_idCliente.TabIndex = 152;
+            this.txt_idCliente.Tag = "";
+            // 
             // frm_pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 1055);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_venta);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
@@ -531,6 +566,7 @@ namespace CapaVistaERP.Procesos
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_nombre);
             this.Name = "frm_pedidos";
             this.Text = "frm_pedidos";
             this.Load += new System.EventHandler(this.frm_pedidos_Load);
@@ -587,5 +623,8 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txt_apellido_vendedor;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_venta;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_idCliente;
     }
 }
