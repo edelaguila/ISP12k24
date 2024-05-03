@@ -101,6 +101,13 @@ namespace CapaVistaERP
             fh.Dock = DockStyle.None;
             this.panelMDI.Controls.Add(fh);
             this.panelMDI.Tag = fh;
+            // fh.StartPosition = FormStartPosition.CenterParent; 
+            //carlos enrique guzman cabrera (hace que las formas esten centradas)
+            // Calcular la posición para centrar la forma en el panel
+            int x = (this.panelMDI.Width - fh.Width) / 2;
+            int y = (this.panelMDI.Height - fh.Height) / 2;
+            // Establecer la posición de la forma
+            fh.Location = new Point(x, y);
             fh.Show();
         }
 
@@ -208,11 +215,6 @@ namespace CapaVistaERP
             hideSubMenu();
         }
 
-        private void button28_Click(object sender, EventArgs e)
-        {
-            Abrir(new Procesos.Mov_bancario());
-            hideSubMenu();
-        }
 
         private void button26_Click(object sender, EventArgs e)
         {
@@ -316,11 +318,6 @@ namespace CapaVistaERP
             hideSubMenu();
         }
 
-        private void button30_Click(object sender, EventArgs e)
-        {
-            Abrir(new Mantenimientos.frm_mant_agregar_cuenta());
-            hideSubMenu();
-        }
 
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {

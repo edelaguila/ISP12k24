@@ -29,8 +29,7 @@ namespace CapaVistaERP.Procesos
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_cancelarMovimiento = new System.Windows.Forms.Button();
-            this.btn_realizarMovimiento = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMovimientoDeBancos));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txt_estadoCuenta = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -54,33 +53,18 @@ namespace CapaVistaERP.Procesos
             this.label2 = new System.Windows.Forms.Label();
             this.cb_movimiento = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.txt_IDmovimiento = new System.Windows.Forms.TextBox();
             this.txt_IDCUENTAB = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_ayudas = new System.Windows.Forms.Button();
+            this.btn_cancelarMovimiento = new System.Windows.Forms.Button();
+            this.btn_realizarMovimiento = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_cancelarMovimiento
-            // 
-            this.btn_cancelarMovimiento.Location = new System.Drawing.Point(185, 418);
-            this.btn_cancelarMovimiento.Name = "btn_cancelarMovimiento";
-            this.btn_cancelarMovimiento.Size = new System.Drawing.Size(142, 51);
-            this.btn_cancelarMovimiento.TabIndex = 31;
-            this.btn_cancelarMovimiento.Text = "Limpiar";
-            this.btn_cancelarMovimiento.UseVisualStyleBackColor = true;
-            this.btn_cancelarMovimiento.Click += new System.EventHandler(this.btn_cancelarMovimiento_Click);
-            // 
-            // btn_realizarMovimiento
-            // 
-            this.btn_realizarMovimiento.Location = new System.Drawing.Point(29, 418);
-            this.btn_realizarMovimiento.Name = "btn_realizarMovimiento";
-            this.btn_realizarMovimiento.Size = new System.Drawing.Size(142, 51);
-            this.btn_realizarMovimiento.TabIndex = 30;
-            this.btn_realizarMovimiento.Text = "Realizar Movimiento";
-            this.btn_realizarMovimiento.UseVisualStyleBackColor = true;
-            this.btn_realizarMovimiento.Click += new System.EventHandler(this.btn_realizarMovimiento_Click);
             // 
             // groupBox3
             // 
@@ -298,20 +282,10 @@ namespace CapaVistaERP.Procesos
             this.label1.TabIndex = 25;
             this.label1.Text = "tipo de movimiento";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(343, 418);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 51);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Regresar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // txt_IDmovimiento
             // 
             this.txt_IDmovimiento.Enabled = false;
-            this.txt_IDmovimiento.Location = new System.Drawing.Point(745, 446);
+            this.txt_IDmovimiento.Location = new System.Drawing.Point(699, 53);
             this.txt_IDmovimiento.Name = "txt_IDmovimiento";
             this.txt_IDmovimiento.Size = new System.Drawing.Size(36, 22);
             this.txt_IDmovimiento.TabIndex = 33;
@@ -320,22 +294,100 @@ namespace CapaVistaERP.Procesos
             // txt_IDCUENTAB
             // 
             this.txt_IDCUENTAB.Enabled = false;
-            this.txt_IDCUENTAB.Location = new System.Drawing.Point(745, 418);
+            this.txt_IDCUENTAB.Location = new System.Drawing.Point(699, 25);
             this.txt_IDCUENTAB.Name = "txt_IDCUENTAB";
             this.txt_IDCUENTAB.Size = new System.Drawing.Size(36, 22);
             this.txt_IDCUENTAB.TabIndex = 34;
             this.txt_IDCUENTAB.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(3)))), ((int)(((byte)(38)))));
+            this.panel1.Controls.Add(this.btn_salir);
+            this.panel1.Controls.Add(this.txt_IDmovimiento);
+            this.panel1.Controls.Add(this.txt_IDCUENTAB);
+            this.panel1.Controls.Add(this.btn_ayudas);
+            this.panel1.Controls.Add(this.btn_cancelarMovimiento);
+            this.panel1.Controls.Add(this.btn_realizarMovimiento);
+            this.panel1.Location = new System.Drawing.Point(29, 418);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(752, 101);
+            this.panel1.TabIndex = 35;
+            // 
+            // btn_salir
+            // 
+            this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.Color.Snow;
+            this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
+            this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_salir.Location = new System.Drawing.Point(192, 13);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(84, 71);
+            this.btn_salir.TabIndex = 6;
+            this.btn_salir.Text = "Regresar";
+            this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // btn_ayudas
+            // 
+            this.btn_ayudas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_ayudas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ayudas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ayudas.ForeColor = System.Drawing.Color.Snow;
+            this.btn_ayudas.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayudas.Image")));
+            this.btn_ayudas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ayudas.Location = new System.Drawing.Point(282, 13);
+            this.btn_ayudas.Name = "btn_ayudas";
+            this.btn_ayudas.Size = new System.Drawing.Size(84, 71);
+            this.btn_ayudas.TabIndex = 5;
+            this.btn_ayudas.Text = "Ayuda";
+            this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ayudas.UseVisualStyleBackColor = false;
+            // 
+            // btn_cancelarMovimiento
+            // 
+            this.btn_cancelarMovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_cancelarMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancelarMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelarMovimiento.ForeColor = System.Drawing.Color.Snow;
+            this.btn_cancelarMovimiento.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancelarMovimiento.Image")));
+            this.btn_cancelarMovimiento.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_cancelarMovimiento.Location = new System.Drawing.Point(102, 13);
+            this.btn_cancelarMovimiento.Name = "btn_cancelarMovimiento";
+            this.btn_cancelarMovimiento.Size = new System.Drawing.Size(84, 71);
+            this.btn_cancelarMovimiento.TabIndex = 1;
+            this.btn_cancelarMovimiento.Text = "Limpiar";
+            this.btn_cancelarMovimiento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_cancelarMovimiento.UseVisualStyleBackColor = false;
+            this.btn_cancelarMovimiento.Click += new System.EventHandler(this.btn_cancelarMovimiento_Click_1);
+            // 
+            // btn_realizarMovimiento
+            // 
+            this.btn_realizarMovimiento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_realizarMovimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_realizarMovimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_realizarMovimiento.ForeColor = System.Drawing.Color.Snow;
+            this.btn_realizarMovimiento.Image = ((System.Drawing.Image)(resources.GetObject("btn_realizarMovimiento.Image")));
+            this.btn_realizarMovimiento.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_realizarMovimiento.Location = new System.Drawing.Point(12, 13);
+            this.btn_realizarMovimiento.Name = "btn_realizarMovimiento";
+            this.btn_realizarMovimiento.Size = new System.Drawing.Size(84, 71);
+            this.btn_realizarMovimiento.TabIndex = 0;
+            this.btn_realizarMovimiento.Text = "Nuevo";
+            this.btn_realizarMovimiento.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_realizarMovimiento.UseVisualStyleBackColor = false;
+            this.btn_realizarMovimiento.Click += new System.EventHandler(this.btn_realizarMovimiento_Click_1);
+            // 
             // frmMovimientoDeBancos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 489);
-            this.Controls.Add(this.txt_IDCUENTAB);
-            this.Controls.Add(this.txt_IDmovimiento);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_cancelarMovimiento);
-            this.Controls.Add(this.btn_realizarMovimiento);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(813, 536);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -351,40 +403,43 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_cancelarMovimiento;
-        private System.Windows.Forms.Button btn_realizarMovimiento;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox txt_estadoCuenta;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txt_tipoCuenta;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_noCuenta;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_nombreCuenta;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cb_cuenta;
-        private System.Windows.Forms.DateTimePicker dtp_fecha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txt_monto;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_efecto;
-        private System.Windows.Forms.TextBox txt_concepto;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cb_movimiento;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_IDmovimiento;
-        private System.Windows.Forms.TextBox txt_IDCUENTAB;
+        public System.Windows.Forms.ComboBox cb_cuenta;
+        public System.Windows.Forms.DateTimePicker dtp_fecha;
+        public System.Windows.Forms.TextBox txt_monto;
+        public System.Windows.Forms.TextBox txt_efecto;
+        public System.Windows.Forms.TextBox txt_concepto;
+        public System.Windows.Forms.ComboBox cb_movimiento;
+        public System.Windows.Forms.TextBox txt_IDmovimiento;
+        public System.Windows.Forms.TextBox txt_IDCUENTAB;
+        public System.Windows.Forms.TextBox txt_estadoCuenta;
+        public System.Windows.Forms.TextBox txt_tipoCuenta;
+        public System.Windows.Forms.TextBox txt_noCuenta;
+        public System.Windows.Forms.TextBox txt_nombreCuenta;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Button btn_ayudas;
+        public System.Windows.Forms.Button btn_cancelarMovimiento;
+        public System.Windows.Forms.Button btn_realizarMovimiento;
     }
 }

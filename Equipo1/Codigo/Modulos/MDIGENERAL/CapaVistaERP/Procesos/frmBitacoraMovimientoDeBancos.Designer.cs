@@ -34,6 +34,7 @@ namespace CapaVistaERP.Procesos
             this.label1 = new System.Windows.Forms.Label();
             this.cb_año = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_refrescar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@ namespace CapaVistaERP.Procesos
             this.btn_reporte = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_nueva = new System.Windows.Forms.Button();
-            this.btn_refrescar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtTabla)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,7 @@ namespace CapaVistaERP.Procesos
             this.dtTabla.Size = new System.Drawing.Size(997, 358);
             this.dtTabla.TabIndex = 0;
             this.dtTabla.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellContentClick);
+            this.dtTabla.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtTabla_CellDoubleClick);
             // 
             // label1
             // 
@@ -134,6 +135,23 @@ namespace CapaVistaERP.Procesos
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(997, 101);
             this.panel1.TabIndex = 5;
+            // 
+            // btn_refrescar
+            // 
+            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_refrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_refrescar.ForeColor = System.Drawing.Color.Snow;
+            this.btn_refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_refrescar.Image")));
+            this.btn_refrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_refrescar.Location = new System.Drawing.Point(102, 13);
+            this.btn_refrescar.Name = "btn_refrescar";
+            this.btn_refrescar.Size = new System.Drawing.Size(84, 71);
+            this.btn_refrescar.TabIndex = 16;
+            this.btn_refrescar.Text = "Refrescar";
+            this.btn_refrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_refrescar.UseVisualStyleBackColor = false;
+            this.btn_refrescar.Click += new System.EventHandler(this.btn_refrescar_Click);
             // 
             // button3
             // 
@@ -269,23 +287,6 @@ namespace CapaVistaERP.Procesos
             this.btn_nueva.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_nueva.UseVisualStyleBackColor = false;
             this.btn_nueva.Click += new System.EventHandler(this.btn_nueva_Click);
-            // 
-            // btn_refrescar
-            // 
-            this.btn_refrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.btn_refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_refrescar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_refrescar.ForeColor = System.Drawing.Color.Snow;
-            this.btn_refrescar.Image = ((System.Drawing.Image)(resources.GetObject("btn_refrescar.Image")));
-            this.btn_refrescar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_refrescar.Location = new System.Drawing.Point(102, 13);
-            this.btn_refrescar.Name = "btn_refrescar";
-            this.btn_refrescar.Size = new System.Drawing.Size(84, 71);
-            this.btn_refrescar.TabIndex = 16;
-            this.btn_refrescar.Text = "Refrescar";
-            this.btn_refrescar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_refrescar.UseVisualStyleBackColor = false;
-            this.btn_refrescar.Click += new System.EventHandler(this.btn_refrescar_Click);
             // 
             // frmBitacoraMovimientoDeBancos
             // 

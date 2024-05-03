@@ -42,6 +42,7 @@ namespace CapaVistaERP.Procesos
         {
             await Task.Delay(500);
             frmMovimientoDeBancos form2 = new frmMovimientoDeBancos();
+            form2.StartPosition = FormStartPosition.CenterScreen;
             form2.Show();
         }
 
@@ -112,6 +113,42 @@ namespace CapaVistaERP.Procesos
         {
 
         }
+
+        private void dtTabla_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Obtener los datos de la fila seleccionada
+            DataGridViewRow filaSeleccionada = dtTabla.Rows[e.RowIndex];
+
+            // Crear una instancia de Form2
+            frmMovimientoDeBancos form2 = new frmMovimientoDeBancos();
+
+            // Pasar los datos a los controles en Form2
+            form2.cb_movimiento.Text = filaSeleccionada.Cells["Concepto"].Value.ToString();
+            form2.txt_concepto.Text = filaSeleccionada.Cells["Concepto"].Value.ToString();
+            form2.txt_efecto.Text = filaSeleccionada.Cells["Efecto"].Value.ToString();
+            form2.cb_cuenta.Text = filaSeleccionada.Cells["Cuenta"].Value.ToString();
+            form2.txt_monto.Text = filaSeleccionada.Cells["Monto"].Value.ToString();
+            form2.dtp_fecha.Value = Convert.ToDateTime(filaSeleccionada.Cells["Fecha"].Value);
+            form2.txt_IDmovimiento.Text = filaSeleccionada.Cells["IDCON"].Value.ToString();
+            form2.txt_IDCUENTAB.Text = filaSeleccionada.Cells["IDCUE"].Value.ToString();
+
+            //inabilita los controles de la form 2
+
+            form2.cb_movimiento.Enabled = false;
+            form2.cb_cuenta.Enabled = false;
+            form2.txt_monto.Enabled = false;
+            form2.dtp_fecha.Enabled = false;
+            form2.txt_IDmovimiento.Enabled = false;
+            form2.txt_IDCUENTAB.Enabled = false;
+            form2.btn_realizarMovimiento.Enabled = false;
+            form2.btn_cancelarMovimiento.Enabled = false;
+
+            form2.StartPosition = FormStartPosition.CenterScreen;
+            // Mostrar Form2
+            form2.ShowDialog();
+        }
+
+
 
         private void btn_ayudas_Click(object sender, EventArgs e)
         {

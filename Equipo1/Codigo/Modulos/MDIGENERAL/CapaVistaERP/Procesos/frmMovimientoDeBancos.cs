@@ -144,7 +144,7 @@ namespace CapaVistaERP.Procesos
             MessageBox.Show("Datos guadaddos y saldos actualizados exitosamente");
         }
 
-        private async void btn_cancelarMovimiento_Click(object sender, EventArgs e)
+        private void btn_cancelarMovimiento_Click(object sender, EventArgs e)
         {
             // Mostrar un mensaje de confirmación
             DialogResult result = MessageBox.Show("Se limpiaran todas las casillas. ¿Desea limpiar?", "Confirmación", MessageBoxButtons.YesNo);
@@ -181,6 +181,47 @@ namespace CapaVistaERP.Procesos
         private void frmMovimientoDeBancos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_cancelarMovimiento_Click_1(object sender, EventArgs e)
+        {
+            // Mostrar un mensaje de confirmación
+            DialogResult result = MessageBox.Show("Se limpiaran todas las casillas. ¿Desea limpiar?", "Confirmación", MessageBoxButtons.YesNo);
+
+            // Si el usuario elige "Sí", cerrar la ventana; de lo contrario, mantenerla abierta.
+            if (result == DialogResult.Yes)
+            {
+                txt_concepto.Text = "";
+                txt_efecto.Text = "";
+                txt_IDmovimiento.Text = "";
+                txt_IDCUENTAB.Text = "";
+                txt_monto.Text = "";
+                txt_nombreCuenta.Text = "";
+                txt_tipoCuenta.Text = "";
+                txt_noCuenta.Text = "";
+                txt_estadoCuenta.Text = "";
+                cb_cuenta.SelectedIndex = -1;
+                cb_movimiento.SelectedIndex = -1;
+
+            }
+            else if (result == DialogResult.No)
+            {
+
+                MessageBox.Show("no se limpiaron las casillas");
+
+            }
+        }
+
+        private void btn_realizarMovimiento_Click_1(object sender, EventArgs e)
+        {
+            GuardarDatos();
+            ActualizarSaldoCuentaBancaria();
+            MessageBox.Show("Datos guadaddos y saldos actualizados exitosamente");
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
