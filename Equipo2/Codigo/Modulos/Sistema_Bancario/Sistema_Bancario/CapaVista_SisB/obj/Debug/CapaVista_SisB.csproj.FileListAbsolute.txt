@@ -256,3 +256,42 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Cuenta.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Seguridad_Controlador.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ModelLayer.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Modelo_Seguridad.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ControllerLayer.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Navegador2.0.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ModelLayer.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Cheques.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCliente.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCuenta.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmDeposito.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmEstado.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmHistorial.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmMoneda.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmRetiro.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmTipoCuenta.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MantenimientoTransaccion.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Aplicaciones.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_AsignacionPerfilUsuario.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Cuenta.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Estado.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Modulos.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Tarjeta.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Usuarios.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MovimientosBancarios.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.PagoServicios.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Properties.Resources.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.TarjetasCreditoDebito.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.GenerateResource.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.pdb

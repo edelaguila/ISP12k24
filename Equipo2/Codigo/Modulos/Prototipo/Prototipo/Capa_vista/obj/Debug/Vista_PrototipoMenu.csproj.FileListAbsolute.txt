@@ -287,3 +287,30 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\eCryptography.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Navegador2.0.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ControllerLayer.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ModelLayer.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaVista_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Controlador_PrototipoMenu.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\Navegador2.0.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ControllerLayer.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\bin\Debug\ModelLayer.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.frmAplicaciones.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.MenuPrototipo.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.Properties.Resources.resources
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.GenerateResource.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.csproj.CopyComplete
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Prototipo\Prototipo\Capa_vista\obj\Debug\Vista_PrototipoMenu.pdb

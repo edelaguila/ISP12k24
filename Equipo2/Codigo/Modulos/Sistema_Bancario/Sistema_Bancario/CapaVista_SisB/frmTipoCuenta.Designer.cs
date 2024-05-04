@@ -42,10 +42,10 @@ namespace CapaVista_SisB
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(61, 228);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(931, 341);
             this.dataGridView1.TabIndex = 79;
             this.dataGridView1.Tag = "tbl_tipo_cuenta";
             // 
@@ -55,7 +55,7 @@ namespace CapaVista_SisB
             this.txt_cuenta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cuenta.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.txt_cuenta.Location = new System.Drawing.Point(61, 172);
-            this.txt_cuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cuenta.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cuenta.Multiline = true;
             this.txt_cuenta.Name = "txt_cuenta";
             this.txt_cuenta.Size = new System.Drawing.Size(335, 34);
@@ -94,7 +94,7 @@ namespace CapaVista_SisB
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_cuenta);
             this.Controls.Add(this.label4);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmTipoCuenta";
             this.Text = "frmTipoCuenta";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
