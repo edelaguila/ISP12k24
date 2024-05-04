@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace CapaVista_SisB
 {
-    public partial class Mantenimiento_AsignacionPerfilUsuario : Form
+    public partial class Mantenimiento_Tipo_Transaccion : Form
     {
-        public Mantenimiento_AsignacionPerfilUsuario()
+        public Mantenimiento_Tipo_Transaccion()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_asignacionesperfilsusuario", this, "9002");
+            navegador2.config("tbl_tipo_transaccion", this, "8003");
         }
     }
 }

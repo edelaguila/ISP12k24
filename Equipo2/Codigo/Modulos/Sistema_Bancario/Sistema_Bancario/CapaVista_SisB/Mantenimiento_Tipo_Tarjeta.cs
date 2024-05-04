@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace CapaVista_SisB
 {
-    public partial class frmEstado : Form
+    public partial class Mantenimiento_Tipo_Tarjeta : Form
     {
-        public frmEstado()
+        public Mantenimiento_Tipo_Tarjeta()
         {
             InitializeComponent();
+            navegador2.config("tbl_tipo_tarjeta", this, "8005");
         }
     }
 }

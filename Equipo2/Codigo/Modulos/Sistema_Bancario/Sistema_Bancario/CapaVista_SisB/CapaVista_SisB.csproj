@@ -66,23 +66,11 @@
     <Compile Include="frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCuenta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCuenta.Designer.cs">
-      <DependentUpon>frmCuenta.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmDeposito.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDeposito.Designer.cs">
       <DependentUpon>frmDeposito.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEstado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEstado.Designer.cs">
-      <DependentUpon>frmEstado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmHistorial.cs">
       <SubType>Form</SubType>
@@ -114,18 +102,6 @@
     <Compile Include="MantenimientoTransaccion.Designer.cs">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimiento_Aplicaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento_Aplicaciones.Designer.cs">
-      <DependentUpon>Mantenimiento_Aplicaciones.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Mantenimiento_AsignacionPerfilUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento_AsignacionPerfilUsuario.Designer.cs">
-      <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimiento_Cuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,23 +114,23 @@
     <Compile Include="Mantenimiento_Estado.Designer.cs">
       <DependentUpon>Mantenimiento_Estado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimiento_Modulos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimiento_Modulos.Designer.cs">
-      <DependentUpon>Mantenimiento_Modulos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimiento_Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Mantenimiento_Tarjeta.Designer.cs">
       <DependentUpon>Mantenimiento_Tarjeta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimiento_Usuarios.cs">
+    <Compile Include="Mantenimiento_Tipo_Tarjeta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mantenimiento_Usuarios.Designer.cs">
-      <DependentUpon>Mantenimiento_Usuarios.cs</DependentUpon>
+    <Compile Include="Mantenimiento_Tipo_Tarjeta.Designer.cs">
+      <DependentUpon>Mantenimiento_Tipo_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Transaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Transaccion.Designer.cs">
+      <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
@@ -188,14 +164,8 @@
     <EmbeddedResource Include="frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCuenta.resx">
-      <DependentUpon>frmCuenta.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmDeposito.resx">
       <DependentUpon>frmDeposito.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEstado.resx">
-      <DependentUpon>frmEstado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistorial.resx">
       <DependentUpon>frmHistorial.cs</DependentUpon>
@@ -212,26 +182,20 @@
     <EmbeddedResource Include="MantenimientoTransaccion.resx">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimiento_Aplicaciones.resx">
-      <DependentUpon>Mantenimiento_Aplicaciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimiento_AsignacionPerfilUsuario.resx">
-      <DependentUpon>Mantenimiento_AsignacionPerfilUsuario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento_Cuenta.resx">
       <DependentUpon>Mantenimiento_Cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento_Estado.resx">
       <DependentUpon>Mantenimiento_Estado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimiento_Modulos.resx">
-      <DependentUpon>Mantenimiento_Modulos.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Mantenimiento_Tarjeta.resx">
       <DependentUpon>Mantenimiento_Tarjeta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimiento_Usuarios.resx">
-      <DependentUpon>Mantenimiento_Usuarios.cs</DependentUpon>
+    <EmbeddedResource Include="Mantenimiento_Tipo_Tarjeta.resx">
+      <DependentUpon>Mantenimiento_Tipo_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Tipo_Transaccion.resx">
+      <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
