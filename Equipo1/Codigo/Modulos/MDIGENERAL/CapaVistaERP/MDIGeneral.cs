@@ -95,10 +95,10 @@ namespace CapaVistaERP
             // fh.StartPosition = FormStartPosition.CenterParent; 
             //carlos enrique guzman cabrera (hace que las formas esten centradas)
             // Calcular la posición para centrar la forma en el panel
-            int x = (this.panelMDI.Width - fh.Width) / 2;
-            int y = (this.panelMDI.Height - fh.Height) / 2;
+           /* int x = (this.panelMDI.Width - fh.Width) / 2;
+            int y = (this.panelMDI.Height - fh.Height) / 2;*/
             // Establecer la posición de la forma
-            fh.Location = new Point(x, y);
+           /* fh.Location = new Point(x, y);*/
             fh.Show();
         }
 
