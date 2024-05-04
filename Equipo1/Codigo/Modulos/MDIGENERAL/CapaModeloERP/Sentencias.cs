@@ -283,7 +283,7 @@ namespace CapaModeloERP
                 return null; 
             }
         }
-        //David Carrillo 0901-20-3201 
+        //David Carrillo   0901-20-3201 
        
         public string ObtenerUltimoDato(string dato, string tabla, string dato2)
         {
