@@ -49,6 +49,8 @@
     <Compile Include="Provider.cs" />
     <Compile Include="Sentencias.cs" />
     <Compile Include="Templates\Cliente.cs" />
+    <Compile Include="Templates\Cuenta.cs" />
+    <Compile Include="Templates\CuentaAmiga.cs" />
     <Compile Include="Templates\Moneda.cs" />
     <Compile Include="Templates\TipoCuenta.cs" />
   </ItemGroup>
