@@ -245,6 +245,7 @@ namespace Navegador2._0
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
+            
             Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
         }
         private void btn_refrescar_Click(object sender, EventArgs e)

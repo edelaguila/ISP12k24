@@ -16,3 +16,12 @@ C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CopyComplete
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ModelLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ModelLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.AssemblyReference.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CoreCompileInputs.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CopyComplete
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb

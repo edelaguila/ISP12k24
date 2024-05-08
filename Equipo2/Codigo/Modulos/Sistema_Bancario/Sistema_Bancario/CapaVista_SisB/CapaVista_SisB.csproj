@@ -37,7 +37,7 @@
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Navegador2.0.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Navegador2.0.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
