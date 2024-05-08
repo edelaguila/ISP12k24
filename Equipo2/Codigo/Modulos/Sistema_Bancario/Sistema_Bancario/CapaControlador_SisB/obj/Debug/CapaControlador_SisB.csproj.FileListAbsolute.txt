@@ -43,6 +43,17 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
+<<<<<<< HEAD
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.AssemblyReference.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CoreCompileInputs.cache
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.dll
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\Soporte\Documents\Profesional\Umg\Didactica2k24\is\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
+=======
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CoreCompileInputs.cache
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.pdb
@@ -61,3 +72,4 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.csproj.CopyComplete
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaControlador_SisB\obj\Debug\CapaControlador_SisB.pdb
+>>>>>>> 0ad6d5a99b8e312b692d125021160f630deded48
