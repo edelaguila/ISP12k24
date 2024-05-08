@@ -582,8 +582,8 @@ namespace CapaModeloERP
              "mb.fecha_movimientoBanco AS Fecha, " +
              "mb.monto_movimientoBanco AS Monto, " +
              "mb.efecto_movimientoBanco AS Efecto, " +
-             "mb.tipo_movimientoBanco AS IDCON, " +
-             "mb.cuenta_movimientoBanco AS IDCUE " +
+             "mb.tipo_movimientoBanco AS Codigo_movimiento, " +
+             "mb.cuenta_movimientoBanco AS Codigo_de_cuenta " +
              "FROM " + tabla + " mb " + // Agregamos un espacio después de tabla
              "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
              "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria";
