@@ -45,6 +45,7 @@ namespace CapaVista_SisB
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox7 = new System.Windows.Forms.TextBox();
+            this.cmb_tipo_tarjeta = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -167,11 +168,12 @@ namespace CapaVista_SisB
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(76, 200);
+            this.textBox6.Location = new System.Drawing.Point(293, 207);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(177, 20);
+            this.textBox6.Size = new System.Drawing.Size(38, 20);
             this.textBox6.TabIndex = 13;
             this.textBox6.Tag = "tar_tipo";
+            this.textBox6.Visible = false;
             // 
             // dataGridView1
             // 
@@ -190,12 +192,25 @@ namespace CapaVista_SisB
             this.textBox7.TabIndex = 15;
             this.textBox7.Tag = "tar_fecha_vencimiento";
             // 
+            // cmb_tipo_tarjeta
+            // 
+            this.cmb_tipo_tarjeta.FormattingEnabled = true;
+            this.cmb_tipo_tarjeta.Items.AddRange(new object[] {
+            "Debito",
+            "Credito"});
+            this.cmb_tipo_tarjeta.Location = new System.Drawing.Point(76, 204);
+            this.cmb_tipo_tarjeta.Name = "cmb_tipo_tarjeta";
+            this.cmb_tipo_tarjeta.Size = new System.Drawing.Size(121, 21);
+            this.cmb_tipo_tarjeta.TabIndex = 16;
+            this.cmb_tipo_tarjeta.SelectedIndexChanged += new System.EventHandler(this.cmb_tipo_tarjeta_SelectedIndexChanged);
+            // 
             // Mantenimiento_Tarjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmb_tipo_tarjeta);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox6);
@@ -238,5 +253,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox cmb_tipo_tarjeta;
     }
 }

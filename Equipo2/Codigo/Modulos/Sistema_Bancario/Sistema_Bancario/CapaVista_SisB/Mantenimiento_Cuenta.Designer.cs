@@ -39,6 +39,8 @@ namespace CapaVista_SisB
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.cmb_tipo_cuenta = new System.Windows.Forms.ComboBox();
+            this.cmb_tipo_moneda = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,19 +61,21 @@ namespace CapaVista_SisB
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(605, 173);
+            this.textBox2.Location = new System.Drawing.Point(604, 217);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(173, 20);
             this.textBox2.TabIndex = 2;
             this.textBox2.Tag = "cue_moneda";
+            this.textBox2.Visible = false;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 173);
+            this.textBox3.Location = new System.Drawing.Point(220, 217);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(173, 20);
             this.textBox3.TabIndex = 3;
             this.textBox3.Tag = "cue_tipo";
+            this.textBox3.Visible = false;
             // 
             // textBox4
             // 
@@ -126,12 +130,39 @@ namespace CapaVista_SisB
             this.label4.TabIndex = 9;
             this.label4.Text = "Moneda de Cuenta";
             // 
+            // cmb_tipo_cuenta
+            // 
+            this.cmb_tipo_cuenta.FormattingEnabled = true;
+            this.cmb_tipo_cuenta.Items.AddRange(new object[] {
+            "Cuenta Monetaria",
+            "Cuenta de Ahorro"});
+            this.cmb_tipo_cuenta.Location = new System.Drawing.Point(220, 173);
+            this.cmb_tipo_cuenta.Name = "cmb_tipo_cuenta";
+            this.cmb_tipo_cuenta.Size = new System.Drawing.Size(173, 21);
+            this.cmb_tipo_cuenta.TabIndex = 10;
+            this.cmb_tipo_cuenta.SelectedIndexChanged += new System.EventHandler(this.cmb_tipo_cuenta_SelectedIndexChanged);
+            // 
+            // cmb_tipo_moneda
+            // 
+            this.cmb_tipo_moneda.FormattingEnabled = true;
+            this.cmb_tipo_moneda.Items.AddRange(new object[] {
+            "Dolar Estadounidense",
+            "Euro",
+            "Quetzal"});
+            this.cmb_tipo_moneda.Location = new System.Drawing.Point(604, 172);
+            this.cmb_tipo_moneda.Name = "cmb_tipo_moneda";
+            this.cmb_tipo_moneda.Size = new System.Drawing.Size(173, 21);
+            this.cmb_tipo_moneda.TabIndex = 11;
+            this.cmb_tipo_moneda.SelectedIndexChanged += new System.EventHandler(this.cmb_tipo_moneda_SelectedIndexChanged);
+            // 
             // Mantenimiento_Cuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmb_tipo_moneda);
+            this.Controls.Add(this.cmb_tipo_cuenta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -162,5 +193,7 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmb_tipo_cuenta;
+        private System.Windows.Forms.ComboBox cmb_tipo_moneda;
     }
 }
