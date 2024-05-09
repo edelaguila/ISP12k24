@@ -245,8 +245,12 @@ namespace Navegador2._0
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
             Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
+=======
+            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
+>>>>>>> parent of 8f99553 (Integración de Mantenimientos al MDI)
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {

@@ -76,10 +76,10 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            //CapaVista_SisB.frmCuenta form = new CapaVista_SisB.frmCuenta();
-            //form.MdiParent = this;
-            //form.Show();
-            //hideSubMenu();
+            CapaVista_SisB.frmCliente form = new CapaVista_SisB.frmCliente();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
         }
         //Método que muestra el formulario indicado
 

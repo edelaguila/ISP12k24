@@ -7,6 +7,7 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CopyComplete
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb
+<<<<<<< HEAD
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.pdb
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ModelLayer.dll
@@ -25,3 +26,5 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Nav
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CopyComplete
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb
+=======
+>>>>>>> parent of 8f99553 (Integración de Mantenimientos al MDI)
