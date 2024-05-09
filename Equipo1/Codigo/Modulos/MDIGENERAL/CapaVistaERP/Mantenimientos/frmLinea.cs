@@ -15,7 +15,7 @@ namespace CapaVistaERP.Mantenimientos
         public frmLinea()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_lineas", this, "8005");
+            this.navegador1.config("tbl_lineas", this, "8023");
         }
     }
 }
