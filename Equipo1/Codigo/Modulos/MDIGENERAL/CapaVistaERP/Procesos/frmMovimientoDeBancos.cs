@@ -214,9 +214,22 @@ namespace CapaVistaERP.Procesos
 
         private void btn_realizarMovimiento_Click_1(object sender, EventArgs e)
         {
-            GuardarDatos();
-            ActualizarSaldoCuentaBancaria();
-            MessageBox.Show("Datos guadaddos y saldos actualizados exitosamente");
+
+            DialogResult resultado = MessageBox.Show("¿Estás seguro de que deseas continuar, verifica antes los datos ingresados?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            // Verificar la respuesta del usuario
+            if (resultado == DialogResult.Yes)
+            {
+                // El usuario confirmó, ejecutar el código
+                GuardarDatos();
+                ActualizarSaldoCuentaBancaria();
+                MessageBox.Show("Datos guadaddos y saldos actualizados exitosamente");
+            }
+            else
+            {
+                // El usuario canceló, mostrar un mensaje
+                MessageBox.Show("Operación cancelada por el usuario");
+            }
         }
 
         private void btn_salir_Click(object sender, EventArgs e)

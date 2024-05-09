@@ -87,9 +87,10 @@ namespace CapaVistaERP.Procesos
             // txt_estadoCuenta
             // 
             this.txt_estadoCuenta.Enabled = false;
+            this.txt_estadoCuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_estadoCuenta.Location = new System.Drawing.Point(566, 52);
             this.txt_estadoCuenta.Name = "txt_estadoCuenta";
-            this.txt_estadoCuenta.Size = new System.Drawing.Size(106, 23);
+            this.txt_estadoCuenta.Size = new System.Drawing.Size(106, 26);
             this.txt_estadoCuenta.TabIndex = 21;
             // 
             // label7
@@ -104,9 +105,10 @@ namespace CapaVistaERP.Procesos
             // txt_tipoCuenta
             // 
             this.txt_tipoCuenta.Enabled = false;
+            this.txt_tipoCuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_tipoCuenta.Location = new System.Drawing.Point(419, 52);
             this.txt_tipoCuenta.Name = "txt_tipoCuenta";
-            this.txt_tipoCuenta.Size = new System.Drawing.Size(119, 23);
+            this.txt_tipoCuenta.Size = new System.Drawing.Size(119, 26);
             this.txt_tipoCuenta.TabIndex = 20;
             // 
             // label8
@@ -121,9 +123,10 @@ namespace CapaVistaERP.Procesos
             // txt_noCuenta
             // 
             this.txt_noCuenta.Enabled = false;
+            this.txt_noCuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_noCuenta.Location = new System.Drawing.Point(218, 52);
             this.txt_noCuenta.Name = "txt_noCuenta";
-            this.txt_noCuenta.Size = new System.Drawing.Size(172, 23);
+            this.txt_noCuenta.Size = new System.Drawing.Size(172, 26);
             this.txt_noCuenta.TabIndex = 19;
             // 
             // label9
@@ -138,9 +141,10 @@ namespace CapaVistaERP.Procesos
             // txt_nombreCuenta
             // 
             this.txt_nombreCuenta.Enabled = false;
+            this.txt_nombreCuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombreCuenta.Location = new System.Drawing.Point(18, 52);
             this.txt_nombreCuenta.Name = "txt_nombreCuenta";
-            this.txt_nombreCuenta.Size = new System.Drawing.Size(172, 23);
+            this.txt_nombreCuenta.Size = new System.Drawing.Size(172, 26);
             this.txt_nombreCuenta.TabIndex = 18;
             // 
             // label10
@@ -170,18 +174,20 @@ namespace CapaVistaERP.Procesos
             // 
             // cb_cuenta
             // 
+            this.cb_cuenta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_cuenta.FormattingEnabled = true;
             this.cb_cuenta.Location = new System.Drawing.Point(156, 35);
             this.cb_cuenta.Name = "cb_cuenta";
-            this.cb_cuenta.Size = new System.Drawing.Size(200, 25);
+            this.cb_cuenta.Size = new System.Drawing.Size(200, 28);
             this.cb_cuenta.TabIndex = 10;
             this.cb_cuenta.SelectedIndexChanged += new System.EventHandler(this.cb_cuenta_SelectedIndexChanged);
             // 
             // dtp_fecha
             // 
+            this.dtp_fecha.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtp_fecha.Location = new System.Drawing.Point(156, 121);
             this.dtp_fecha.Name = "dtp_fecha";
-            this.dtp_fecha.Size = new System.Drawing.Size(200, 23);
+            this.dtp_fecha.Size = new System.Drawing.Size(200, 26);
             this.dtp_fecha.TabIndex = 12;
             this.dtp_fecha.Value = new System.DateTime(2024, 4, 11, 0, 0, 0, 0);
             // 
@@ -214,9 +220,10 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_monto
             // 
+            this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_monto.Location = new System.Drawing.Point(156, 76);
             this.txt_monto.Name = "txt_monto";
-            this.txt_monto.Size = new System.Drawing.Size(200, 23);
+            this.txt_monto.Size = new System.Drawing.Size(200, 26);
             this.txt_monto.TabIndex = 7;
             // 
             // groupBox1
@@ -254,9 +261,10 @@ namespace CapaVistaERP.Procesos
             // txt_concepto
             // 
             this.txt_concepto.Enabled = false;
+            this.txt_concepto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_concepto.Location = new System.Drawing.Point(13, 76);
             this.txt_concepto.Name = "txt_concepto";
-            this.txt_concepto.Size = new System.Drawing.Size(143, 23);
+            this.txt_concepto.Size = new System.Drawing.Size(143, 26);
             this.txt_concepto.TabIndex = 2;
             // 
             // label2
@@ -270,11 +278,11 @@ namespace CapaVistaERP.Procesos
             // 
             // cb_movimiento
             // 
-            this.cb_movimiento.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_movimiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_movimiento.FormattingEnabled = true;
-            this.cb_movimiento.Location = new System.Drawing.Point(29, 63);
+            this.cb_movimiento.Location = new System.Drawing.Point(41, 63);
             this.cb_movimiento.Name = "cb_movimiento";
-            this.cb_movimiento.Size = new System.Drawing.Size(172, 25);
+            this.cb_movimiento.Size = new System.Drawing.Size(144, 28);
             this.cb_movimiento.TabIndex = 26;
             this.cb_movimiento.SelectedIndexChanged += new System.EventHandler(this.cb_movimiento_SelectedIndexChanged);
             // 
@@ -282,7 +290,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 26);
+            this.label1.Location = new System.Drawing.Point(38, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 19);
             this.label1.TabIndex = 25;
@@ -330,7 +338,7 @@ namespace CapaVistaERP.Procesos
             this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_salir.Location = new System.Drawing.Point(192, 13);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(84, 71);
+            this.btn_salir.Size = new System.Drawing.Size(97, 71);
             this.btn_salir.TabIndex = 6;
             this.btn_salir.Text = "Regresar";
             this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -345,7 +353,7 @@ namespace CapaVistaERP.Procesos
             this.btn_ayudas.ForeColor = System.Drawing.Color.Snow;
             this.btn_ayudas.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayudas.Image")));
             this.btn_ayudas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ayudas.Location = new System.Drawing.Point(282, 13);
+            this.btn_ayudas.Location = new System.Drawing.Point(295, 13);
             this.btn_ayudas.Name = "btn_ayudas";
             this.btn_ayudas.Size = new System.Drawing.Size(84, 71);
             this.btn_ayudas.TabIndex = 5;
