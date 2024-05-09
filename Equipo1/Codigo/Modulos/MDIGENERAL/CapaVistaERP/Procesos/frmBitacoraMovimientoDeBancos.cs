@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+
 namespace CapaVistaERP.Procesos
 {
     public partial class frmBitacoraMovimientoDeBancos : Form
@@ -59,24 +60,57 @@ namespace CapaVistaERP.Procesos
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
+
+            // Verificar si hay una fila seleccionada
+            //    if (dtTabla.SelectedRows.Count > 0)
+            //  {
+            // Obtener el ID de la fila seleccionada
+            //    int idSeleccionado = Convert.ToInt32(dtTabla.SelectedRows[0].Cells["ID"].Value);
+
+            // Llamar al método EliminarMovimiento del controlador con el ID seleccionado
+            //  bool eliminado = cn.EliminarMovimiento(idSeleccionado);
+
+            //if (eliminado)
+            //{
+            //  MessageBox.Show("Registro eliminado correctamente.");
+            // Actualizar el DataGridView después de la eliminación
+            //actualizardatagriew();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("No se pudo eliminar el registro. Verifique el ID del movimiento.");
+            //}
+            //   }
+            // else
+            //{
+            //    MessageBox.Show("Seleccione una fila para eliminar.");
+            //}
+
             // Verificar si hay una fila seleccionada
             if (dtTabla.SelectedRows.Count > 0)
             {
-                // Obtener el ID de la fila seleccionada
-                int idSeleccionado = Convert.ToInt32(dtTabla.SelectedRows[0].Cells["ID"].Value);
+                // Mostrar un cuadro de diálogo de confirmación
+                DialogResult resultado = MessageBox.Show("¿Está seguro de que desea eliminar el registro?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                // Llamar al método EliminarMovimiento del controlador con el ID seleccionado
-                bool eliminado = cn.EliminarMovimiento(idSeleccionado);
+                // Verificar la respuesta del usuario
+                if (resultado == DialogResult.Yes)
+                {
+                    // Obtener el ID de la fila seleccionada
+                    int idSeleccionado = Convert.ToInt32(dtTabla.SelectedRows[0].Cells["ID"].Value);
 
-                if (eliminado)
-                {
-                    MessageBox.Show("Registro eliminado correctamente.");
-                    // Actualizar el DataGridView después de la eliminación
-                    actualizardatagriew();
-                }
-                else
-                {
-                    MessageBox.Show("No se pudo eliminar el registro. Verifique el ID del movimiento.");
+                    // Llamar al método EliminarMovimiento del controlador con el ID seleccionado
+                    bool eliminado = cn.EliminarMovimiento(idSeleccionado);
+
+                    if (eliminado)
+                    {
+                        MessageBox.Show("Registro eliminado correctamente.");
+                        // Actualizar el DataGridView después de la eliminación
+                        actualizardatagriew();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se pudo eliminar el registro. Verifique el ID del movimiento.");
+                    }
                 }
             }
             else
@@ -129,8 +163,8 @@ namespace CapaVistaERP.Procesos
             form2.cb_cuenta.Text = filaSeleccionada.Cells["Cuenta"].Value.ToString();
             form2.txt_monto.Text = filaSeleccionada.Cells["Monto"].Value.ToString();
             form2.dtp_fecha.Value = Convert.ToDateTime(filaSeleccionada.Cells["Fecha"].Value);
-            form2.txt_IDmovimiento.Text = filaSeleccionada.Cells["IDCON"].Value.ToString();
-            form2.txt_IDCUENTAB.Text = filaSeleccionada.Cells["IDCUE"].Value.ToString();
+            form2.txt_IDmovimiento.Text = filaSeleccionada.Cells["Codigo_movimiento"].Value.ToString();
+            form2.txt_IDCUENTAB.Text = filaSeleccionada.Cells["Codigo_de_cuenta"].Value.ToString();
 
             //inabilita los controles de la form 2
 
@@ -153,6 +187,12 @@ namespace CapaVistaERP.Procesos
         private void btn_ayudas_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            Reportes.frmReportesDeMovimientosDeBancos Reporte = new Reportes.frmReportesDeMovimientosDeBancos();
+            Reporte.ShowDialog();
         }
     }
 }

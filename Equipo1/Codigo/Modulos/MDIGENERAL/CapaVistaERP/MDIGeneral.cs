@@ -8,11 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Seguridad_Controlador;
 namespace CapaVistaERP
 {
     public partial class MDIGeneral : Form
     {
+        Controlador cn = new Controlador();
         //VARIABLES ANDREA CORADO
         private string idmovpro = "";
         private string namemovpro = "";
@@ -271,6 +272,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.AutorizacionOrdenDeCompra());
             hideSubMenu();
+            cn.setBtitacora("8020", "Pro. Autorizacion Ordenes");
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -307,6 +309,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.frmBitacoraMovimientoDeBancos());
             hideSubMenu();
+            cn.setBtitacora("8031", "Pro. Bitacora de movimiento de bancos");
         }
 
 

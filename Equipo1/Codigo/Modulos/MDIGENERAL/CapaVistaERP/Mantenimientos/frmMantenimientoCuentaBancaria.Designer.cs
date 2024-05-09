@@ -303,7 +303,7 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label1);
             this.Name = "frmMantenimientoCuentaBancaria";
-            this.Text = "frmMantenimientoCuentaBancaria";
+            this.Text = "8031: frmMantenimientoCuentaBancaria";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
