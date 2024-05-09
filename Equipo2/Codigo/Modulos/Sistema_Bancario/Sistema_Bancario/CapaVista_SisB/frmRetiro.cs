@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Seguridad_Controlador;
 
 namespace CapaVista_SisB
 {
     public partial class frmRetiro : Form
     {
+        Controlador cn = new Controlador();
         public frmRetiro()
         {
             InitializeComponent();
@@ -36,6 +38,7 @@ namespace CapaVista_SisB
 
 
                     lbl_codigoSeguridad.Text = codigo.ToString();
+                    cn.setBtitacora("9000", "Generando codigo de seguridad");
 
                     // Limpiar los textbox
                     txt_cuenta.Text = "";

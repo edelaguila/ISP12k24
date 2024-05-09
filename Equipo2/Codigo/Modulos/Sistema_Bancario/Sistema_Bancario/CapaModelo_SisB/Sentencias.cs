@@ -72,7 +72,7 @@ namespace CapaModelo_SisB
             this.con.myconn.Close();
         }
 
-        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string estado)
         {
             using (OdbcConnection connection = this.con.connection())
             {
@@ -82,15 +82,13 @@ namespace CapaModelo_SisB
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_movimientosBancarios (pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, movban_movban_num_cuenta_debito, movban_movban_num_cuenta_credito, fk_movban_tipo_transaccion, fk_movban_valorTrans, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_movimientosBancarios ( movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@movban_valor_transaccion", valorMovimiento);
                                 cmd.Parameters.AddWithValue("@movban_descripcion_transaccion", descripcionMovimiento);
                                 cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_debito", numCuentaDeb);
                                 cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_credito", numCuentaCred);
-                                cmd.Parameters.AddWithValue("@fk_movban_tipo_transaccion", tipoTransaccion);
-                                cmd.Parameters.AddWithValue("@fk_movban_valorTrans", valorTrans);
                                 cmd.Parameters.AddWithValue("@movban_status", estado);
                                 cmd.Parameters.AddWithValue("@movban_fecha_de_ingreso", DateTime.Now);
 
@@ -116,7 +114,7 @@ namespace CapaModelo_SisB
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, movban_movban_num_cuenta_debito, movban_movban_num_cuenta_credito, fk_movban_tipo_transaccion, fk_movban_valorTrans, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
+                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
