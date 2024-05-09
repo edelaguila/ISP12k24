@@ -181,7 +181,8 @@ namespace CapaVistaERP.Procesos
 
         private void btn_numorden_Click(object sender, EventArgs e)
         {
-            BuscarCompras BuscarCompras = new BuscarCompras(this);
+            FacturaporPagarModi facturaporPagarModi = new FacturaporPagarModi();
+            BuscarCompras BuscarCompras = new BuscarCompras(this, facturaporPagarModi);
             BuscarCompras.Show();
         }
 

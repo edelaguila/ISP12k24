@@ -15,13 +15,15 @@ namespace CapaVistaERP.Procesos
     public partial class BuscarProveedor : Form
     {
         private OrdenesdeCompra OrdendeCompra;
+        private OrdendeCompraModi OrdendeCompraModi;
         String tabla1 = "tbl_proveedor";
         Controlador cn = new Controlador();
-        public BuscarProveedor(OrdenesdeCompra ordenesdeCompra)
+        public BuscarProveedor(OrdenesdeCompra ordenesdeCompra, OrdendeCompraModi ordendeCompraModi)
         {
             InitializeComponent();
             actualizardatagridview();
             OrdendeCompra = ordenesdeCompra;
+            OrdendeCompraModi = ordendeCompraModi;
         }
         public void actualizardatagridview()
         {
@@ -76,6 +78,7 @@ namespace CapaVistaERP.Procesos
                 string telefono = filaSeleccionada.Cells["telefono_prov"].Value.ToString();
 
                 OrdendeCompra.RecibirDatosDesdeBuscarProveedor(id, nombre, domicilio, telefono);
+                OrdendeCompraModi.RecibirDatosDesdeBuscarProveedor(id, nombre, domicilio, telefono);
                 this.Close();
             }
             else

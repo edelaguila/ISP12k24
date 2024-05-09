@@ -1579,7 +1579,517 @@ namespace CapaModeloERP
                 }
             }
         }
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenesCompraPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtOrdenesCompra = new DataTable();
 
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT oc.id_OrdComp AS ID, " +
+                                  "oc.fechaSolicitid_OrdComp AS FechaSolicitud, " +
+                                  "oc.fechaEntrega_OrdComp AS FechaEntrega, " +
+                                  "oc.deptoSolicitante_OrdComp AS DepartamentoSolicitante, " +
+                                  "oc.subTotal_OrdComp AS SubTotal, " +
+                                  "oc.iva_OrdComp AS IVA, " +
+                                  "oc.totalOrden_OrdComp AS TotalOrden, " +
+                                  "oc.notas_OrdComp AS Notas, " +
+                                  "oc.tbl_proveedor_id_prov AS IDProveedor " +
+                                  "FROM tbl_ordenescompra oc " +
+                                  "WHERE oc.fechaSolicitid_OrdComp BETWEEN ? AND ? " +
+                                  "ORDER BY oc.fechaSolicitid_OrdComp DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtOrdenesCompra);
+                }
+            }
+
+            return dtOrdenesCompra;
+        }
+        // Carol Chuy Compras
+        public DataTable ObtenerComprasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtCompras = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT c.id_EncComp AS ID, " +
+                                  "c.fechaSolicitid_EncComp AS FechaSolicitud, " +
+                                  "c.fechaEntrega_OrdComp AS FechaEntrega, " +
+                                  "c.deptoSolicitante_EncComp AS DepartamentoSolicitante, " +
+                                  "c.subTotal_EncComp AS SubTotal, " +
+                                  "c.iva_EncComp AS IVA, " +
+                                  "c.totalOrden_EncComp AS TotalOrden, " +
+                                  "c.notas_EncComp AS Notas, " +
+                                  "c.tbl_proveedor_id_prov AS IDProveedor, " +
+                                  "c.recibidoIgualSolicitado_EncComp AS RecibidoIgualSolicitado, " +
+                                  "c.fechaVencimientoPago_EncComp AS FechaVencimientoPago, " +
+                                  "c.id_OrdComp AS IDOrdenCompra " +
+                                  "FROM tbl_compras c " +
+                                  "WHERE c.fechaSolicitid_EncComp BETWEEN ? AND ? " +
+                                  "ORDER BY c.fechaSolicitid_EncComp DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtCompras);
+                }
+            }
+
+            return dtCompras;
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerFacturasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtFacturas = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT f.NoFactura AS NoFactura, " +
+                                  "f.nombreprov_facxpag AS NombreProveedor, " +
+                                  "f.nitprov_facxpag AS NITProveedor, " +
+                                  "f.fechavenc_facxpag AS FechaVencimiento, " +
+                                  "f.fecha_abono AS FechaAbono, " +
+                                  "f.subtotal_facxpag AS Subtotal, " +
+                                  "f.iva_facxpag AS IVA, " +
+                                  "f.totalfac_facxpag AS TotalFactura, " +
+                                  "f.estado_facxpag AS Estado, " +
+                                  "f.notas_facxpag AS Notas, " +
+                                  "f.tbl_Encabezado_Compras_id_EncComp AS IDEncabezadoCompra " +
+                                  "FROM tbl_facturaxpagar f " +
+                                  "WHERE f.fecha_abono BETWEEN ? AND ? " +
+                                  "ORDER BY f.fecha_abono DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtFacturas);
+                }
+            }
+
+            return dtFacturas;
+        }
+        //Carol Chuy Compras
+        public void EliminarOrdenCompra(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_ordenescompra WHERE id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@id_OrdComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleOrdenCompra(int codigoOrden)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detalleordenescompra WHERE OrdenesCompra_id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@OrdenesCompra_id_OrdComp", codigoOrden);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarCompra(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_compras WHERE id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@id_EncComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleCompra(int codigoCompra)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detallecompras WHERE tbl_Encabezado_Compras_id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", codigoCompra);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarFactura(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_facturaxpagar WHERE NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@NoFactura", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleFactura(int codigoFactura)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detallefacturaxpagar WHERE tbl_facturaXPagar_NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@tbl_facturaXPagar_NoFactura", codigoFactura);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        public string ObtenerIdProd(string nit)
+        {
+            string nitr = string.Empty;
+            using (OdbcConnection conn = con.connection())
+            {
+                string query = "SELECT id_prov FROM tbl_proveedor WHERE nit_prov = " + nit + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("nit_prov", nit);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        nitr = result.ToString();
+                    }
+                }
+            }
+            return nitr;
+        }
+        public void ActualizarOrdenCompra(int idOrdenCompra, string fechaSolicitud, string fechaEntrega, string deptoSolicitante, double subtotal, double iva, double total, string notas, int idProveedor)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_ordenescompra SET fechaSolicitid_OrdComp = ?, fechaEntrega_OrdComp = ?, deptoSolicitante_OrdComp = ?, subTotal_OrdComp = ?, iva_OrdComp = ?, totalOrden_OrdComp = ?, notas_OrdComp = ?, tbl_proveedor_id_prov = ? WHERE id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@fechaSolicitud", fechaSolicitud);
+                        cmd.Parameters.AddWithValue("@fechaEntrega", fechaEntrega);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante", deptoSolicitante);
+                        cmd.Parameters.AddWithValue("@subtotal", subtotal);
+                        cmd.Parameters.AddWithValue("@iva", iva);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@notas", notas);
+                        cmd.Parameters.AddWithValue("@idProveedor", idProveedor);
+                        cmd.Parameters.AddWithValue("@idOrdenCompra", idOrdenCompra);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleOrdenCompra(int codigodetalle, int idOrden, int cantidad, double total, int idprod)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detalleordenescompra SET cantidad_det = ?, totalProducto_det = ?, tbl_Producto_cod_producto = ? WHERE OrdenesCompra_id_OrdComp = ? AND id_detalle=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idOrden);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la orden de compra: AA" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, int recibidoigual, string fechav, int idorden)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_compras SET fechaSolicitid_EncComp = ?, fechaEntrega_OrdComp = ?, deptoSolicitante_EncComp = ?, subTotal_EncComp = ?, iva_EncComp = ?, totalOrden_EncComp = ?, notas_EncComp = ?, tbl_proveedor_id_prov = ?, recibidoIgualSolicitado_EncComp = ?,fechaVencimientoPago_EncComp = ?,id_OrdComp = ? WHERE id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@fechaSolicitid_EncComp", fechasolicitud);
+                        cmd.Parameters.AddWithValue("@fechaEntrega_OrdComp", fechaentrega);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante_EncComp", depa);
+                        cmd.Parameters.AddWithValue("@subTotal_EncComp", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_EncComp", iva);
+                        cmd.Parameters.AddWithValue("@totalOrden_EncComp", total);
+                        cmd.Parameters.AddWithValue("@notas_EncComp", notas);
+                        cmd.Parameters.AddWithValue("@tbl_proveedor_id_prov", codProv);
+                        cmd.Parameters.AddWithValue("@recibidoIgualSolicitado_EncComp", recibidoigual);
+                        cmd.Parameters.AddWithValue("@fechaVencimientoPago_EncComp", fechav);
+                        cmd.Parameters.AddWithValue("@id_OrdComp", idorden);
+                        cmd.Parameters.AddWithValue("@id_EncComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la de compra: MAL ENCABEZADO" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleCompra(int codigodetalle, int cantidad, double total, int idprod, int idCompra)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detallecompras SET cantidad_compra_det = ?, totalPorProducto_det = ?, tbl_Producto_cod_producto = ? WHERE tbl_Encabezado_Compras_id_EncComp = ? AND id_detalleCompra=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idCompra);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la compra: DETALLE" + ex.Message);
+                    }
+                }
+            }
+        }
+
+        public void ActualizarFactura(int codigo, string nomprov, string nitprov, string fechav, string fechaa, double subtotal, double iva, double total, string notas, int idcomp)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_facturaxpagar SET nombreprov_facxpag = ?, nitprov_facxpag = ?, fechavenc_facxpag = ?,fecha_abono = ?, subtotal_facxpag = ?, iva_facxpag = ?, totalfac_facxpag = ?, notas_facxpag = ?, tbl_Encabezado_Compras_id_EncComp = ? WHERE NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@nombreprov_facxpag", nomprov);
+                        cmd.Parameters.AddWithValue("@nitprov_facxpag", nitprov);
+                        cmd.Parameters.AddWithValue("@fechavenc_facxpag", fechav);
+                        cmd.Parameters.AddWithValue("@fecha_abono", fechaa);
+                        cmd.Parameters.AddWithValue("@subtotal_facxpag", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_facxpag", iva);
+                        cmd.Parameters.AddWithValue("@totalfac_facxpag", total);
+                        cmd.Parameters.AddWithValue("@notas_facxpag", notas);
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", idcomp);
+                        cmd.Parameters.AddWithValue("@NoFactura", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la factura: MAL ENCABEZADO" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleFactura(int codigodetalle, int cantidad, double total, int idFactura, int idprod)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detallefacturaxpagar SET cantidad_detalleFac = ?, totalPorProducto_detalleFac = ?, tbl_Producto_cod_producto = ? WHERE tbl_facturaXPagar_NoFactura = ? AND id_detalleFac=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idFactura);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la factura: DETALLE" + ex.Message);
+                    }
+                }
+            }
+        }
 
 
     }
