@@ -493,12 +493,28 @@ namespace CapaControladorERP
         {
             return sn.ObtenerFactPorID(id);
         }
+
+
+        //Diego Marroquin 
+
+        public DataTable llenartablabitacoradispodiaria(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablabitacoradispodiaria(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+        public bool EliminarDisponibilidadDiaria(int idMovimiento)
+        {
+            return sn.EliminarDisponibilidadDiaria(idMovimiento);
+        }
     }
 
-
-
-
-
+    
 }
+
+
 
 
