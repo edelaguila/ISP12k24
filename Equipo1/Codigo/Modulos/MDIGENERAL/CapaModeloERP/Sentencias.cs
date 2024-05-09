@@ -1539,6 +1539,45 @@ namespace CapaModeloERP
             }
 
             return ordenData;
+
+
+
+
+        }
+        // DIego MArroquin 
+                              
+        public OdbcDataAdapter llenartablabitacoradispodiaria(string tabla)
+        {
+            // Construye la consulta SQL para obtener los datos de la tabla tbl_disponibilidaddiaria
+            string sql = "SELECT dd.id_disponibilidad AS ID, " +
+                         "cb.nombre_empresa AS Cuenta, " +
+                         "ba.nombre_banco AS Banco, " +
+                         "dd.saldo_disponible AS 'Saldo Disponible', " +
+                         "dd.saldo_consumido AS 'Saldo Consumido', " +
+                         "dd.saldo_actual AS 'Saldo Actual', " +
+                         "dd.fecha_DisponibilidadDiaria AS 'Fecha' " +
+                         "FROM " + tabla + " dd " +
+                         "INNER JOIN tbl_cuentaBancaria cb ON dd.id_cuentaDisponibilidad = cb.id_cuentaBancaria " +
+                         "INNER JOIN tbl_banco ba ON dd.id_bancoActual = ba.id_banco";
+
+            // Crea un objeto OdbcDataAdapter y le pasa la consulta SQL y la conexión
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+
+            // Retorna el objeto OdbcDataAdapter con los datos obtenidos
+            return dataTable;
+        }
+        public bool EliminarDisponibilidadDiaria(int idDisponibilidad)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_disponibilidaddiaria WHERE id_disponibilidad = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("idDisponibilidad", idDisponibilidad); // Usa el nombre correcto del parámetro
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
         }
 
 

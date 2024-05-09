@@ -112,6 +112,12 @@
     <Compile Include="Mantenimientos\frm_Mant_TransProveedores.Designer.cs">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\bitacoradispo_diaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\bitacoradispo_diaria.Designer.cs">
+      <DependentUpon>bitacoradispo_diaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\BuscarCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\frm_Mant_TransProveedores.resx">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\bitacoradispo_diaria.resx">
+      <DependentUpon>bitacoradispo_diaria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarCompras.resx">
       <DependentUpon>BuscarCompras.cs</DependentUpon>

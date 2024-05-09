@@ -129,11 +129,12 @@ namespace CapaVistaERP.Procesos
 
         private void cb_cuenta_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (cb_cuenta.SelectedItem != null)
             {
                 // Si se selecciona algo en el ComboBox, habilita el Label y el botón
                 label4.Visible = true;
-               
+                verdispo.Visible = true;
                 Registrar.Visible = true;
                 Cancelar.Visible = true;
             }
@@ -141,9 +142,10 @@ namespace CapaVistaERP.Procesos
             {
                 // Si no se selecciona nada en el ComboBox, deshabilita el Label y el botón
                 label4.Visible = false;
-                
+
                 Registrar.Visible = false;
                 Cancelar.Visible = false;
+                verdispo.Visible = false;
             }
 
             BuscarDetalleCuentas();
@@ -232,6 +234,12 @@ namespace CapaVistaERP.Procesos
         private void txtIdBanco_SelectedIndexChanged(object sender, EventArgs e)
         {
             BuscarDetalleBanco();
+        }
+
+        private void verdispo_Click(object sender, EventArgs e)
+        {
+            bitacoradispo_diaria segundoForm = new bitacoradispo_diaria();
+            segundoForm.Show();
         }
     }
 

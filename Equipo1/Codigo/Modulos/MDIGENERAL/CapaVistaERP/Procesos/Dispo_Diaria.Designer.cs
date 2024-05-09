@@ -32,6 +32,8 @@ namespace CapaVistaERP.Procesos
             this.Cancelar = new System.Windows.Forms.Button();
             this.Registrar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.fondosIgresados = new System.Windows.Forms.TextBox();
             this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,6 +46,7 @@ namespace CapaVistaERP.Procesos
             this.txtFondoRetiro = new System.Windows.Forms.TextBox();
             this.textsaldoactual = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txt_IDBanco = new System.Windows.Forms.TextBox();
             this.txtIdBanco = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,9 +70,7 @@ namespace CapaVistaERP.Procesos
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.cb_cuenta = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.fondosIgresados = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.verdispo = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -78,7 +79,7 @@ namespace CapaVistaERP.Procesos
             // 
             // Cancelar
             // 
-            this.Cancelar.Location = new System.Drawing.Point(407, 803);
+            this.Cancelar.Location = new System.Drawing.Point(279, 803);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(246, 31);
             this.Cancelar.TabIndex = 153;
@@ -89,7 +90,7 @@ namespace CapaVistaERP.Procesos
             // 
             // Registrar
             // 
-            this.Registrar.Location = new System.Drawing.Point(97, 803);
+            this.Registrar.Location = new System.Drawing.Point(26, 803);
             this.Registrar.Name = "Registrar";
             this.Registrar.Size = new System.Drawing.Size(234, 31);
             this.Registrar.TabIndex = 152;
@@ -119,6 +120,23 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.TabIndex = 151;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Saldos";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(250, 126);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(121, 17);
+            this.label14.TabIndex = 150;
+            this.label14.Text = "Fondos Igresados";
+            // 
+            // fondosIgresados
+            // 
+            this.fondosIgresados.Enabled = false;
+            this.fondosIgresados.Location = new System.Drawing.Point(253, 146);
+            this.fondosIgresados.Name = "fondosIgresados";
+            this.fondosIgresados.Size = new System.Drawing.Size(172, 22);
+            this.fondosIgresados.TabIndex = 149;
             // 
             // dtp_fecha
             // 
@@ -234,6 +252,16 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.TabIndex = 150;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Banco";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(68, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.TabIndex = 154;
+            this.label4.Text = "Selecionar Banco";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_IDBanco
             // 
@@ -451,38 +479,23 @@ namespace CapaVistaERP.Procesos
             this.cb_cuenta.TabIndex = 149;
             this.cb_cuenta.SelectedIndexChanged += new System.EventHandler(this.cb_cuenta_SelectedIndexChanged);
             // 
-            // label14
+            // verdispo
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(250, 126);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 17);
-            this.label14.TabIndex = 150;
-            this.label14.Text = "Fondos Igresados";
-            // 
-            // fondosIgresados
-            // 
-            this.fondosIgresados.Enabled = false;
-            this.fondosIgresados.Location = new System.Drawing.Point(253, 146);
-            this.fondosIgresados.Name = "fondosIgresados";
-            this.fondosIgresados.Size = new System.Drawing.Size(172, 22);
-            this.fondosIgresados.TabIndex = 149;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 45);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
-            this.label4.TabIndex = 154;
-            this.label4.Text = "Selecionar Banco";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.verdispo.Location = new System.Drawing.Point(539, 803);
+            this.verdispo.Name = "verdispo";
+            this.verdispo.Size = new System.Drawing.Size(234, 31);
+            this.verdispo.TabIndex = 155;
+            this.verdispo.Text = "Ver disponibilidad";
+            this.verdispo.UseVisualStyleBackColor = true;
+            this.verdispo.Visible = false;
+            this.verdispo.Click += new System.EventHandler(this.verdispo_Click);
             // 
             // Dispo_Diaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(807, 859);
+            this.Controls.Add(this.verdispo);
             this.Controls.Add(this.Cancelar);
             this.Controls.Add(this.Registrar);
             this.Controls.Add(this.groupBox3);
@@ -549,5 +562,6 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox fondosIgresados;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button verdispo;
     }
 }
