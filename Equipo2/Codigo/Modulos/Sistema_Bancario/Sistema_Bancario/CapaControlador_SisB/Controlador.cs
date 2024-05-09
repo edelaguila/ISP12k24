@@ -15,9 +15,9 @@ namespace CapaControlador_SisB
     {
         private Sentencias sentencias;
 
-        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string estado)
         {
-            sentencias.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuentaDeb, numCuentaCred, tipoTransaccion, estado, valorTrans, estadoConciliacion);
+            sentencias.InsertarMovimiento(valorMovimiento, descripcionMovimiento, numCuentaDeb, numCuentaCred, estado);
         }
         public DataTable llenarTbl(string tabla)
         {
