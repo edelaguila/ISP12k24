@@ -16,7 +16,7 @@ namespace Navegador2._0
     {
 
         public Reporteador.Reportes reporte = new Reporteador.Reportes();
-        
+
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
         public string tabla = "";
@@ -36,7 +36,7 @@ namespace Navegador2._0
             this.cambiarEstado(false);
             //string encriptado = this.SetHash("12345");
             //bool login = ctrl_seguridad.validarLogin("admin", encriptado);
-            
+
         }
 
         public string SetHash(string inputString)
@@ -94,7 +94,7 @@ namespace Navegador2._0
 
         public void config(string tabla, Form parent, string _id = "1000")
         {
-            
+
             this.idApp = _id;
             this.tabla = tabla;
             this.tabla_cmb = "";
@@ -250,12 +250,12 @@ namespace Navegador2._0
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
-//HEAD
-            
+            //HEAD
+
             Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
 
-           
-// parent of 8f99553 (Integración de Mantenimientos al MDI)
+
+            // parent of 8f99553 (Integración de Mantenimientos al MDI)
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
@@ -419,6 +419,13 @@ namespace Navegador2._0
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
+            DataGridView dt = this.GetDGV(this.parent);
+            if (dt == null)
+            {
+                MessageBox.Show("No hay ningun origen de datos(DataGridView)");
+                return;
+            }
+            this.reporte.setTable((DataTable)dt.DataSource);
             this.reporte.Show();
         }
     }
