@@ -147,7 +147,7 @@ namespace CapaVistaERP.Procesos
 
 
 
-            cn.InsertarFactura(total, limite, estado, idVenta, cl);
+           // cn.InsertarFactura(total, limite, estado, idVenta, cl);
             // MessageBox.Show("Datos a guarddar"+total+limite+estado+idVenta+cl);
             MessageBox.Show("Datos Guardados Correctamente");
 
