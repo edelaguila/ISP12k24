@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using CapaControlador;
+using CrystalDecisions.CrystalReports.Engine;
 
 
 namespace Reporteador
@@ -28,12 +29,13 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
     {
         private List<string> ruta = new List<string>(); // Lista para almacenar las rutas JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910
         Controlador cn = new Controlador();
-        string rep = "tbl_reportes";
+        public DataTable _table;
         public string tabla;
+        public string rep = "tbl_reportes";
         private string rutaInformeSeleccionado;
         public Reportes()
         {
-            tabla = "";   
+            tabla = "";
             InitializeComponent();
             actualizardatagriew();
             dgv_reportes.Columns[0].HeaderText = "ID";
@@ -43,13 +45,19 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             dgv_reportes.Columns[4].HeaderText = "Ruta de archivo";
             dgv_reportes.Columns[5].HeaderText = "Fecha de ingreso";
             dgv_reportes.Columns[6].HeaderText = "Fecha de Modificacion";
-
+            this._table = new DataTable();
         }
+
+        public void setTable(DataTable dt)
+        {
+            this._table = dt;
+        }
+
         public void actualizardatagriew()
         {
-            
+
             DataTable dt = cn.llenarTbl(rep);
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("Sin datos");
             }
@@ -57,7 +65,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
         }
 
-        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -68,7 +76,21 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
         }
 
-        
+        public void generateReport()
+        {
+            ReportDocument report = new ReportDocument();
+            report.SetDataSource(this._table);
+
+            using (MemoryStream memoryStream = (MemoryStream)report.ExportToStream(CrystalDecisions.Shared.ExportFormatType.CrystalReport))
+            {
+                using (FileStream fileStream = new FileStream("informe.rpt", FileMode.Create))
+                {
+                    memoryStream.CopyTo(fileStream);
+                }
+            }
+            report.Close();
+        }
+
         private void btn_ruta_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
@@ -126,7 +148,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
                     correlativoTextBox.Clear();
                     estadoTextBox.Clear();
                     correlativoTextBox.Enabled = false;
-                   
+
 
                     // Mostrar un mensaje de éxito
                     MessageBox.Show("Reporte agregado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);//OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
@@ -190,7 +212,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             correlativoTextBox.Enabled = false;
         }
 
-        
+
         private void dgv_reportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -218,7 +240,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
 
                     // Mostrar un mensaje de confirmación
                     MessageBox.Show("Reporte eliminado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
+
                     estadoTextBox.Clear();
                     txt_ruta.Clear();
                 }
@@ -227,7 +249,7 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
             else
             {
                 MessageBox.Show("Por favor, seleccione un reporte para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-  
+
                 estadoTextBox.Clear();
                 txt_ruta.Clear();
             }
@@ -283,9 +305,13 @@ JULIA RASHELL LOPEZ CIFUENTES 0901-20-5910*/
         {
 
         }
+
+        private void btn_generar_Click(object sender, EventArgs e)
+        {
+            this.generateReport();
+        }
     }
 
 
 }
-    
-   
+
