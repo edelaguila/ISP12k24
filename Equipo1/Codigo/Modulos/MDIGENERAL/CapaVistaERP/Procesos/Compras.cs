@@ -278,7 +278,8 @@ namespace CapaVistaERP.Procesos
 
         private void btn_numorden_Click(object sender, EventArgs e)
         {
-            BuscarOrdenCompra BuscarOrdenCompra = new BuscarOrdenCompra(this);
+            ComprasModi comprasModi = new ComprasModi();
+            BuscarOrdenCompra BuscarOrdenCompra = new BuscarOrdenCompra(this, comprasModi);
             BuscarOrdenCompra.Show();
         }
 

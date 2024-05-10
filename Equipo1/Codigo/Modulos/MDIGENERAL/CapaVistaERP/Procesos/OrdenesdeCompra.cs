@@ -122,7 +122,8 @@ namespace CapaVistaERP.Procesos
         private void btn_buscarProveedor_Click(object sender, EventArgs e)
         {
             //instrucciones para mostrar un formulario que esta dentro de la misma carpeta que este form
-            BuscarProveedor BuscarProveedor = new BuscarProveedor(this);
+            OrdendeCompraModi ordendeCompraModi = new OrdendeCompraModi();
+            BuscarProveedor BuscarProveedor = new BuscarProveedor(this, ordendeCompraModi);
             BuscarProveedor.Show();
         }
 
