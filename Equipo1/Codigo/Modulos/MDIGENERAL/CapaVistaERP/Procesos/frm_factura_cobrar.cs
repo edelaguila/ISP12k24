@@ -11,6 +11,7 @@ using CapaControladorERP;
 
 namespace CapaVistaERP.Procesos
 {
+    //David Carrillo
     public partial class frm_factura_cobrar : Form
     {
         Controlador cn=new Controlador();
