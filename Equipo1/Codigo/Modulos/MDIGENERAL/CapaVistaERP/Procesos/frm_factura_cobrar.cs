@@ -11,7 +11,7 @@ using CapaControladorERP;
 
 namespace CapaVistaERP.Procesos
 {
-    //David Carrillo
+    //David Carrillo 0901-20-3201
     public partial class frm_factura_cobrar : Form
     {
         Controlador cn=new Controlador();
