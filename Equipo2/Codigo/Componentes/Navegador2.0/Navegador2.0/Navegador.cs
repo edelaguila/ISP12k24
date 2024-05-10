@@ -14,6 +14,9 @@ namespace Navegador2._0
 {
     public partial class Navegador : UserControl
     {
+
+        public Reporteador.Reportes reporte = new Reporteador.Reportes();
+        
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
         public string tabla = "";
@@ -31,8 +34,9 @@ namespace Navegador2._0
             this.parent = new Form();
             this.utilConsultasI = new utilidadesConsultasI();
             this.cambiarEstado(false);
-            string encriptado = this.SetHash("12345");
-            bool login = ctrl_seguridad.validarLogin("admin", encriptado);
+            //string encriptado = this.SetHash("12345");
+            //bool login = ctrl_seguridad.validarLogin("admin", encriptado);
+            
         }
 
         public string SetHash(string inputString)
@@ -90,6 +94,7 @@ namespace Navegador2._0
 
         public void config(string tabla, Form parent, string _id = "1000")
         {
+            
             this.idApp = _id;
             this.tabla = tabla;
             this.tabla_cmb = "";
@@ -245,12 +250,12 @@ namespace Navegador2._0
         }
         private void btn_ayuda_Click_1(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+//HEAD
             
             Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
-=======
-            Help.ShowHelp(this, "Ayudas/AyudaSO2.chm", "NavAyuda.html");
->>>>>>> parent of 8f99553 (Integración de Mantenimientos al MDI)
+
+           
+// parent of 8f99553 (Integración de Mantenimientos al MDI)
         }
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
@@ -410,6 +415,11 @@ namespace Navegador2._0
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             this.identificarFormulario(this.parent, "e");
+        }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+            this.reporte.Show();
         }
     }
 }

@@ -617,3 +617,10 @@ C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll.config
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
