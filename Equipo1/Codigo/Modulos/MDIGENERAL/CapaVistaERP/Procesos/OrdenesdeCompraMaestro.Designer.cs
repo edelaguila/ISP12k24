@@ -30,9 +30,7 @@ namespace CapaVistaERP.Procesos
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrdenesdeCompraMaestro));
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dt_datos = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_ayudas = new System.Windows.Forms.Button();
@@ -41,37 +39,23 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_nueva = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.cb_año = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cb_filtro = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_datos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // dt_datos
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(115, 147);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 7;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 191);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1057, 372);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 147);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 19);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Filtrar por:";
+            this.dt_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dt_datos.Location = new System.Drawing.Point(24, 191);
+            this.dt_datos.Name = "dt_datos";
+            this.dt_datos.RowHeadersWidth = 51;
+            this.dt_datos.RowTemplate.Height = 24;
+            this.dt_datos.Size = new System.Drawing.Size(1057, 372);
+            this.dt_datos.TabIndex = 6;
             // 
             // panel1
             // 
@@ -169,6 +153,7 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_eliminar.UseVisualStyleBackColor = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_modificar
             // 
@@ -185,6 +170,7 @@ namespace CapaVistaERP.Procesos
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_nueva
             // 
@@ -203,19 +189,80 @@ namespace CapaVistaERP.Procesos
             this.btn_nueva.UseVisualStyleBackColor = false;
             this.btn_nueva.Click += new System.EventHandler(this.btn_nueva_Click);
             // 
+            // cb_año
+            // 
+            this.cb_año.FormattingEnabled = true;
+            this.cb_año.Items.AddRange(new object[] {
+            "2024",
+            "2023",
+            "2022",
+            "2021",
+            "2020",
+            "2019",
+            "2018",
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
+            this.cb_año.Location = new System.Drawing.Point(71, 146);
+            this.cb_año.Name = "cb_año";
+            this.cb_año.Size = new System.Drawing.Size(121, 24);
+            this.cb_año.TabIndex = 13;
+            this.cb_año.Text = "Selecciona";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 149);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 19);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Año:";
+            // 
+            // cb_filtro
+            // 
+            this.cb_filtro.FormattingEnabled = true;
+            this.cb_filtro.Items.AddRange(new object[] {
+            "Diario",
+            "Semanal",
+            "Mensual"});
+            this.cb_filtro.Location = new System.Drawing.Point(292, 146);
+            this.cb_filtro.Name = "cb_filtro";
+            this.cb_filtro.Size = new System.Drawing.Size(121, 24);
+            this.cb_filtro.TabIndex = 11;
+            this.cb_filtro.Text = "Selecciona";
+            this.cb_filtro.SelectedIndexChanged += new System.EventHandler(this.cb_filtro_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(210, 146);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 19);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Filtrar por:";
+            // 
             // OrdenesdeCompraMaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1102, 585);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.cb_año);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cb_filtro);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.dt_datos);
             this.Controls.Add(this.panel1);
             this.Name = "OrdenesdeCompraMaestro";
             this.Text = "OrdenesdeCompraMaestro";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dt_datos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -223,10 +270,7 @@ namespace CapaVistaERP.Procesos
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dt_datos;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_ayudas;
@@ -235,5 +279,9 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_nueva;
+        private System.Windows.Forms.ComboBox cb_año;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cb_filtro;
+        private System.Windows.Forms.Label label1;
     }
 }

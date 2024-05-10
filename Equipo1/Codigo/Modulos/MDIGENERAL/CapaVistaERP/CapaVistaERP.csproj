@@ -112,6 +112,12 @@
     <Compile Include="Mantenimientos\frm_Mant_TransProveedores.Designer.cs">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\bitacoradispo_diaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\bitacoradispo_diaria.Designer.cs">
+      <DependentUpon>bitacoradispo_diaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\BuscarCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,11 +148,23 @@
     <Compile Include="Procesos\Compras.Designer.cs">
       <DependentUpon>Compras.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\ComprasEli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ComprasEli.Designer.cs">
+      <DependentUpon>ComprasEli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\ComprasMaestro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procesos\ComprasMaestro.Designer.cs">
       <DependentUpon>ComprasMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ComprasModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ComprasModi.Designer.cs">
+      <DependentUpon>ComprasModi.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\Dispo_Diaria.cs">
       <SubType>Form</SubType>
@@ -208,11 +226,23 @@
     <Compile Include="Procesos\CajaProveedor.Designer.cs">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\FacturaporPagarEli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FacturaporPagarEli.Designer.cs">
+      <DependentUpon>FacturaporPagarEli.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\FacturaporPagarMaestro.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procesos\FacturaporPagarMaestro.Designer.cs">
       <DependentUpon>FacturaporPagarMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\FacturaporPagarModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\FacturaporPagarModi.Designer.cs">
+      <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
       <SubType>Form</SubType>
@@ -238,11 +268,41 @@
     <Compile Include="Procesos\frm_pedidos.Designer.cs">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\ModificarDetalleCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ModificarDetalleCompras.Designer.cs">
+      <DependentUpon>ModificarDetalleCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ModificarDetalleFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ModificarDetalleFactura.Designer.cs">
+      <DependentUpon>ModificarDetalleFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\ModificarDetalleOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\ModificarDetalleOrdenes.Designer.cs">
+      <DependentUpon>ModificarDetalleOrdenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\MovimientoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Procesos\MovimientoProveedores.Designer.cs">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\OrdendeCompraEli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OrdendeCompraEli.Designer.cs">
+      <DependentUpon>OrdendeCompraEli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\OrdendeCompraModi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OrdendeCompraModi.Designer.cs">
+      <DependentUpon>OrdendeCompraModi.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\OrdenesdeCompra.cs">
       <SubType>Form</SubType>
@@ -309,6 +369,9 @@
     <EmbeddedResource Include="Mantenimientos\frm_Mant_TransProveedores.resx">
       <DependentUpon>frm_Mant_TransProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\bitacoradispo_diaria.resx">
+      <DependentUpon>bitacoradispo_diaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\BuscarCompras.resx">
       <DependentUpon>BuscarCompras.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,8 +387,14 @@
     <EmbeddedResource Include="Procesos\Compras.resx">
       <DependentUpon>Compras.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ComprasEli.resx">
+      <DependentUpon>ComprasEli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\ComprasMaestro.resx">
       <DependentUpon>ComprasMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ComprasModi.resx">
+      <DependentUpon>ComprasModi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\Dispo_Diaria.resx">
       <DependentUpon>Dispo_Diaria.cs</DependentUpon>
@@ -357,8 +426,14 @@
     <EmbeddedResource Include="Procesos\CajaProveedor.resx">
       <DependentUpon>CajaProveedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FacturaporPagarEli.resx">
+      <DependentUpon>FacturaporPagarEli.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\FacturaporPagarMaestro.resx">
       <DependentUpon>FacturaporPagarMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\FacturaporPagarModi.resx">
+      <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
       <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
@@ -372,8 +447,23 @@
     <EmbeddedResource Include="Procesos\frm_pedidos.resx">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ModificarDetalleCompras.resx">
+      <DependentUpon>ModificarDetalleCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ModificarDetalleFactura.resx">
+      <DependentUpon>ModificarDetalleFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\ModificarDetalleOrdenes.resx">
+      <DependentUpon>ModificarDetalleOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\MovimientoProveedores.resx">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\OrdendeCompraEli.resx">
+      <DependentUpon>OrdendeCompraEli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\OrdendeCompraModi.resx">
+      <DependentUpon>OrdendeCompraModi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\OrdenesdeCompra.resx">
       <DependentUpon>OrdenesdeCompra.cs</DependentUpon>

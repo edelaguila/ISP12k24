@@ -15,13 +15,15 @@ namespace CapaVistaERP.Procesos
     public partial class BuscarOrdenCompra : Form
     {
         private Compras Compras;
+        private ComprasModi ComprasModi;
         String tabla1 = "tbl_ordenescompra";
         Controlador cn = new Controlador();
-        public BuscarOrdenCompra(Compras compra)
+        public BuscarOrdenCompra(Compras compra, ComprasModi comprasModi)
         {
             InitializeComponent();
             actualizardatagridview();
             Compras = compra;
+            ComprasModi = comprasModi;
         }
         public void actualizardatagridview()
         {
@@ -40,6 +42,7 @@ namespace CapaVistaERP.Procesos
                 string solicitante = filaSeleccionada.Cells["deptoSolicitante_OrdComp"].Value.ToString();
                 string proveedor = filaSeleccionada.Cells["tbl_proveedor_id_prov"].Value.ToString();
                 Compras.RecibirDatosDesdeBuscarOrdenes(id, fechaS, fechaE, solicitante, proveedor);
+                ComprasModi.RecibirDatosDesdeBuscarOrdenes(id, fechaS, fechaE, solicitante, proveedor);
                 this.Close();
             }
             else
