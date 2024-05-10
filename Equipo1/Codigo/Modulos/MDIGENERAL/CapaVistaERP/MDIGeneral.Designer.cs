@@ -1126,7 +1126,7 @@ namespace CapaVistaERP
             this.Controls.Add(this.panelMDI);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "MDIGeneral";
-            this.Text = "ERP COMERCIAL";
+            this.Text = "8000-ERP COMERCIAL";
             this.panelMDI.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MDI)).EndInit();
             this.panelSideMenu.ResumeLayout(false);

@@ -8,6 +8,7 @@ using System.Data.Odbc;
 using CapaModeloERP;
 using System.Windows.Forms;
 using CapaModeloERP.clases;
+using System.Data.SqlTypes;
 
 namespace CapaControladorERP
 {
@@ -31,9 +32,9 @@ namespace CapaControladorERP
             return table;
         }
         //Andrea Corado 0901-20-2841
-        public DataTable filtrardatos(string tabla, string columna, string dato)
+        public DataTable filtrardatos(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
+            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato, columna2,dato2);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -44,7 +45,11 @@ namespace CapaControladorERP
             sn.guardarDatos(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
         }
 
-
+        //Andrea Corado 0901-20-2841
+        public DataTable Actualizap(string tabla, string columna, string dato1, string columna2, int igualA)
+        {
+            return sn.ActualizarDatos(tabla, columna,dato1,columna2, igualA);
+        }
 
 
         //David Carrillo 0901-20-3201 
