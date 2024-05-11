@@ -15,7 +15,7 @@ namespace CapaVistaERP.Mantenimientos
         public frmSucursales()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_sucursales", this, "8002");
+            this.navegador1.config("tbl_sucursales", this, "8024");
         }
     }
 }

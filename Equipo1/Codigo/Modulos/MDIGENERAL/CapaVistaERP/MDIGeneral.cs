@@ -303,7 +303,7 @@ namespace CapaVistaERP
 
         private void button22_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.TrasladoDeProducto());
+            Abrir(new Procesos.TrasladoDeProductoMaestro());
             hideSubMenu();
         }
 

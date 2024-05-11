@@ -1275,6 +1275,7 @@ namespace CapaModeloERP
             }
         }
 
+        // Jimena Tobías - Logística
         public List<ProductoM> ObtenerProductos()
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -1307,6 +1308,7 @@ namespace CapaModeloERP
             return productos;
         }
 
+        // Jimena Tobías - Logística
         public List<Sucursal> ObtenerSucursales()
         {
             List<Sucursal> sucursales = new List<Sucursal>();
@@ -1336,6 +1338,7 @@ namespace CapaModeloERP
             return sucursales;
         }
 
+        // Jimena Tobías - Logística
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             using (OdbcConnection connection = con.connection())

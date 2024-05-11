@@ -771,3 +771,14 @@ C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ModificarDetalleOrdenes.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdendeCompraEli.resources
 C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdendeCompraModi.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.bitacoradispo_diaria.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ComprasEli.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ComprasModi.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.FacturaporPagarEli.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.FacturaporPagarModi.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ModificarDetalleCompras.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ModificarDetalleFactura.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.ModificarDetalleOrdenes.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdendeCompraEli.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.OrdendeCompraModi.resources
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaVistaERP\obj\Debug\CapaVistaERP.Procesos.TrasladoDeProductoMaestro.resources

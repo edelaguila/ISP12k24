@@ -42,30 +42,30 @@ namespace CapaVistaERP.Mantenimientos
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(381, 160);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(268, 29);
+            this.label6.Size = new System.Drawing.Size(230, 28);
             this.label6.TabIndex = 45;
             this.label6.Text = "REGISTRO DE LÍNEA";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F);
             this.label1.Location = new System.Drawing.Point(195, 253);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 20);
+            this.label1.Size = new System.Drawing.Size(33, 21);
             this.label1.TabIndex = 46;
             this.label1.Text = "ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(566, 253);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label2.Location = new System.Drawing.Point(557, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 47;
             this.label2.Text = "Nombre:";
             // 
