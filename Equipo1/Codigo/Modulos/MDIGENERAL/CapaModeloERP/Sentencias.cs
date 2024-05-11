@@ -39,7 +39,7 @@ namespace CapaModeloERP
             return datos;
         }
 
-        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato, string columna2, string dato2)
+        public OdbcDataAdapter filtrarDatosp(string tabla, string columna, string dato, string columna2, string dato2)
         {
             string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}' AND {columna2} <> {dato2};";
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
@@ -683,6 +683,13 @@ namespace CapaModeloERP
             }
             catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo"); }
             return Campos;
+        }
+
+        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}';";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+            return datos;
         }
 
         //Carol Chuy Modulo de Compras

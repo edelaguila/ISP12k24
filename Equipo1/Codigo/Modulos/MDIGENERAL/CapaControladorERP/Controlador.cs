@@ -31,10 +31,10 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
-        //Andrea Corado 0901-20-2841
-        public DataTable filtrardatos(string tabla, string columna, string dato, string columna2, string dato2)
+        //Andrea Corado 0901-20-2841  
+        public DataTable filtrardatosp(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato, columna2,dato2);
+            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2,dato2);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -492,6 +492,13 @@ namespace CapaControladorERP
             sn.InsertarFactura(codigo, nombrep, nitp, fechaV, fechaA, subtotal, iva, totalCompra, estado, notas, codcompra);
         }
         //Carol Chuy Compras
+        public DataTable filtrardatos(string tabla, string columna, string dato)
+        {
+            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
         public void InsertarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
         {
             sn.InsertarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
