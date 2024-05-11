@@ -205,7 +205,7 @@
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frm_Mant_TransProveedores";
-            this.Text = "frm_Mant_TransProveedores";
+            this.Text = "8002-Mant. Transaciones Proveedor";
             this.Load += new System.EventHandler(this.frm_Mant_TransProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

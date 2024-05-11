@@ -180,7 +180,7 @@
             this.ClientSize = new System.Drawing.Size(1099, 459);
             this.Controls.Add(this.groupBox1);
             this.Name = "MovimientoProveedores";
-            this.Text = "MovimientoProveedores";
+            this.Text = "Proveedores";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedores)).EndInit();

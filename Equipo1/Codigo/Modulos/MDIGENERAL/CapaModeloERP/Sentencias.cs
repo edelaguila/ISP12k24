@@ -39,9 +39,9 @@ namespace CapaModeloERP
             return datos;
         }
 
-        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato)
+        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}';";
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}' AND {columna2} <> {dato2};";
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
             return datos;
         }
@@ -92,8 +92,17 @@ namespace CapaModeloERP
 
         }
 
+        //Andrea Corado 0901-20-2841
+        public DataTable ActualizarDatos( string tabla, string columna,string dato1,string columna2, int igualA)
+        {
+            string consulta = $"UPDATE {tabla} SET {columna} = {dato1} WHERE {columna2} = {igualA};";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
 
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
 
+            return dt;
+        }
 
 
         //David Carrillo 0901-20-3201 

@@ -37,12 +37,10 @@ namespace CapaVistaERP.Procesos
         public void filtrodata()
         {
             string filtro = txt_nit.Text;
-            DataTable dt = cn.filtrardatos(tabla1, "nitprov_facxpag", filtro);
+            string data = "0";
+            DataTable dt = cn.filtrardatos(tabla1, "nitprov_facxpag", filtro, "estado_facxpag", data);
             dgv_pagoproveedor.DataSource = dt;
         }
-
-
-    
 
         public void Combo()
         {
@@ -102,6 +100,8 @@ namespace CapaVistaERP.Procesos
            // dgv_pagoproveedor.DataBindingComplete += dgv_pagoproveedor_DataBindingComplete;
 
             filtrodata();
+
+
         }
 
         double sumaTotal = 0;
@@ -196,17 +196,31 @@ namespace CapaVistaERP.Procesos
 
         private void btn_pagar_Click(object sender, EventArgs e)
         {
-            string idp = txt_idprov.Text;
-            string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
-            string totalmov = txt_totalapagar.Text;
-            string nofact = txtNoFactura.Text;
-            string banmov = txt_bancos.Text;
-            string tipomov = txt_tipomovpro.Text;
-            string numov = txt_numero.Text;
-            string conceptomov = txt_concepto.Text;
-            cn.Guardarmovpro(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
-            MessageBox.Show("Pago Realizado con Exito");
-            LimpiarCampos();
+            try
+            {
+                string idp = txt_idprov.Text;
+                string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
+                string totalmov = txt_totalapagar.Text;
+                string nofact = txtNoFactura.Text;
+                string banmov = txt_bancos.Text;
+                string tipomov = txt_tipomovpro.Text;
+                string numov = txt_numero.Text;
+                string conceptomov = txt_concepto.Text;
+
+                cn.Guardarmovpro(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+
+                int num;
+                int.TryParse(nofact, out num);
+                string dato = "0";
+
+                cn.Actualizap(tabla1, "estado_facxpag", dato, "NoFactura", num);
+                MessageBox.Show("Pago Realizado con Éxito");
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al procesar el pago: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
         }
         private void LimpiarCampos()
@@ -222,6 +236,8 @@ namespace CapaVistaERP.Procesos
             txt_numero.Clear();
             dt_fechaabono.Value = DateTime.Now; // Restablece la fecha actual
             txt_concepto.Clear();
+            sumaTotal = 0;
+            totalFacturasAcumulado = 0;
         }
 
         private void txt_tipomovpro_TextChanged(object sender, EventArgs e)

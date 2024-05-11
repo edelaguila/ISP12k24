@@ -193,7 +193,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dg_prov);
             this.Name = "frm_Mant_Proveedor";
-            this.Text = "frm_Mant_Proveedor";
+            this.Text = "8001-Mant. Proveedores";
             ((System.ComponentModel.ISupportInitialize)(this.dg_prov)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -451,7 +451,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1088, 198);
+            this.groupBox2.Size = new System.Drawing.Size(1119, 198);
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -542,7 +542,7 @@
             this.Controls.Add(this.cmb_tipo);
             this.Controls.Add(this.groupBox1);
             this.Name = "CajaProveedor";
-            this.Text = "OperacionesProveedor";
+            this.Text = "8013-Operaciones Proveedor";
             this.cmb_tipo.ResumeLayout(false);
             this.cmb_tipo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
