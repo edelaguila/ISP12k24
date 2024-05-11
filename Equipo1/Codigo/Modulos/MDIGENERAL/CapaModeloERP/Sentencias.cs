@@ -910,6 +910,25 @@ namespace CapaModeloERP
                 }
             }
         }
+        public OdbcDataAdapter llenartablatipodecambio(string tabla)
+        {
+            // Construye la consulta SQL para obtener los datos de la tabla tbl_tipocambio
+            string sql = "SELECT tc.id_tipo_cambio AS ID, " +
+                         "tc.moneda_origen AS 'Moneda Origen', " +
+                         "tc.moneda_destino AS 'Moneda Destino', " +
+                         "tc.cantidad AS 'Cantidad', " +
+                         "tc.valor_calculado AS 'Valor Calculado', " +
+                         "tc.total_calculado AS 'Total Calculado', " +
+                         "tc.fecha AS 'Fecha' " +
+                         "FROM " + tabla + " tc";
+
+            // Crea un objeto OdbcDataAdapter y le pasa la consulta SQL y la conexión
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+
+            // Retorna el objeto OdbcDataAdapter con los datos obtenidos
+            return dataTable;
+        }
+
 
         public decimal CalcularSaldoTotal()
         {
