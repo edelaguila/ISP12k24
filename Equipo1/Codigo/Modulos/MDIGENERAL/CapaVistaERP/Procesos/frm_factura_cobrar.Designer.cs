@@ -31,7 +31,7 @@ namespace CapaVistaERP.Procesos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_factura_cobrar));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_enviarFact = new System.Windows.Forms.Button();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.txt_iva = new System.Windows.Forms.TextBox();
             this.txt_subtotal = new System.Windows.Forms.TextBox();
@@ -39,9 +39,11 @@ namespace CapaVistaERP.Procesos
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_Pagar = new System.Windows.Forms.Button();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_facturaestado = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.txt_idcliente = new System.Windows.Forms.TextBox();
             this.txt_numPedido = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@ namespace CapaVistaERP.Procesos
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonocl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txt_facturaestado = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -76,7 +76,7 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button4);
+            this.groupBox3.Controls.Add(this.btn_enviarFact);
             this.groupBox3.Controls.Add(this.txt_total);
             this.groupBox3.Controls.Add(this.txt_iva);
             this.groupBox3.Controls.Add(this.txt_subtotal);
@@ -93,15 +93,15 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
             // 
-            // button4
+            // btn_enviarFact
             // 
-            this.button4.Location = new System.Drawing.Point(948, 43);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 53);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Enviar Factura";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_enviarFact.Location = new System.Drawing.Point(948, 43);
+            this.btn_enviarFact.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_enviarFact.Name = "btn_enviarFact";
+            this.btn_enviarFact.Size = new System.Drawing.Size(85, 53);
+            this.btn_enviarFact.TabIndex = 29;
+            this.btn_enviarFact.Text = "Enviar Factura";
+            this.btn_enviarFact.UseVisualStyleBackColor = true;
             // 
             // txt_total
             // 
@@ -165,7 +165,7 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btn_agregar);
+            this.groupBox2.Controls.Add(this.btn_Pagar);
             this.groupBox2.Controls.Add(this.dgv_detalle);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(13, 325);
@@ -175,17 +175,18 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.Size = new System.Drawing.Size(1071, 251);
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Descripción de la factura";
+            this.groupBox2.Text = "Detalle de la factura";
             // 
-            // btn_agregar
+            // btn_Pagar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(934, 64);
-            this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(99, 39);
-            this.btn_agregar.TabIndex = 17;
-            this.btn_agregar.Text = "PAGAR";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_Pagar.Location = new System.Drawing.Point(934, 64);
+            this.btn_Pagar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Pagar.Name = "btn_Pagar";
+            this.btn_Pagar.Size = new System.Drawing.Size(99, 39);
+            this.btn_Pagar.TabIndex = 17;
+            this.btn_Pagar.Text = "PAGAR";
+            this.btn_Pagar.UseVisualStyleBackColor = true;
+            this.btn_Pagar.Click += new System.EventHandler(this.btn_Pagar_Click);
             // 
             // dgv_detalle
             // 
@@ -234,6 +235,26 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la factura";
+            // 
+            // txt_facturaestado
+            // 
+            this.txt_facturaestado.Enabled = false;
+            this.txt_facturaestado.Location = new System.Drawing.Point(694, 220);
+            this.txt_facturaestado.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_facturaestado.Name = "txt_facturaestado";
+            this.txt_facturaestado.Size = new System.Drawing.Size(169, 28);
+            this.txt_facturaestado.TabIndex = 40;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(553, 222);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(118, 20);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Estado Factura";
             // 
             // txt_idcliente
             // 
@@ -329,10 +350,10 @@ namespace CapaVistaERP.Procesos
             this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
             this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar.Location = new System.Drawing.Point(490, 38);
+            this.btn_Buscar.Location = new System.Drawing.Point(490, 40);
             this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(33, 30);
+            this.btn_Buscar.Size = new System.Drawing.Size(33, 28);
             this.btn_Buscar.TabIndex = 21;
             this.btn_Buscar.UseVisualStyleBackColor = false;
             this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
@@ -475,26 +496,6 @@ namespace CapaVistaERP.Procesos
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(553, 222);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 20);
-            this.label10.TabIndex = 39;
-            this.label10.Text = "Estado Factura";
-            // 
-            // txt_facturaestado
-            // 
-            this.txt_facturaestado.Enabled = false;
-            this.txt_facturaestado.Location = new System.Drawing.Point(694, 220);
-            this.txt_facturaestado.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_facturaestado.Name = "txt_facturaestado";
-            this.txt_facturaestado.Size = new System.Drawing.Size(169, 28);
-            this.txt_facturaestado.TabIndex = 40;
-            // 
             // frm_factura_cobrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -518,7 +519,7 @@ namespace CapaVistaERP.Procesos
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_enviarFact;
         private System.Windows.Forms.TextBox txt_total;
         private System.Windows.Forms.TextBox txt_iva;
         private System.Windows.Forms.TextBox txt_subtotal;
@@ -526,7 +527,7 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Button btn_Pagar;
         private System.Windows.Forms.DataGridView dgv_detalle;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_coreocl;

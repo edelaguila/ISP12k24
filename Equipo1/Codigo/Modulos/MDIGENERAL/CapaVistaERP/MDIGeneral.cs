@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaVistaERP.Procesos;
+
 namespace CapaVistaERP
 {
     public partial class MDIGeneral : Form
@@ -210,19 +212,25 @@ namespace CapaVistaERP
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.OrdenesdeCompraMaestro());
+            OrdendeCompraEli ordendeCompraNav = new OrdendeCompraEli(); // Crear una instancia de OrdendeCompraNav
+            OrdendeCompraModi ordendeCompraModi = new OrdendeCompraModi();
+            Abrir(new Procesos.OrdenesdeCompraMaestro(ordendeCompraNav, ordendeCompraModi));
             hideSubMenu();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.ComprasMaestro());
+            ComprasEli comprasEli = new ComprasEli();
+            ComprasModi comprasModi = new ComprasModi();
+            Abrir(new Procesos.ComprasMaestro(comprasEli, comprasModi));
             hideSubMenu();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.FacturaporPagarMaestro());
+            FacturaporPagarEli facturaporPagarEli = new FacturaporPagarEli();
+            FacturaporPagarModi facturaporPagarModi = new FacturaporPagarModi();
+            Abrir(new Procesos.FacturaporPagarMaestro(facturaporPagarEli, facturaporPagarModi));
             hideSubMenu();
         }
 
@@ -295,7 +303,7 @@ namespace CapaVistaERP
 
         private void button22_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.TrasladoDeProducto());
+            Abrir(new Procesos.TrasladoDeProductoMaestro());
             hideSubMenu();
         }
 

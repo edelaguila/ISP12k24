@@ -11,6 +11,7 @@ using CapaControladorERP;
 
 namespace CapaVistaERP.Procesos
 {
+    //David Carrillo 0901-20-3201
     public partial class frm_factura_cobrar : Form
     {
         Controlador cn=new Controlador();
@@ -25,6 +26,7 @@ namespace CapaVistaERP.Procesos
             DateTime fechaSeleccionada = dgvFactura.Value;
             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
             dgvVencimiento.Value = nuevaFecha;
+            UltimaFact();
         }
         private void obtenerNoFact()
         {
@@ -95,21 +97,21 @@ namespace CapaVistaERP.Procesos
 
             string ped = txt_numPedido.Text;
             MessageBox.Show("pedido " + ped);
-            DataTable facno = cn.Buscar("tbl_facturaxcobrar", "tbl_Ventas_detalle_id_ventas_det", ped);
-            if (facno.Rows.Count > 0)
-            {
+            /* DataTable facno = cn.Buscar("tbl_facturaxcobrar", "tbl_Ventas_detalle_id_ventas_det", ped);
+             if (facno.Rows.Count > 0)
+             {
 
-                DataRow row = facno.Rows[0];
-                txt_numfactura.Text = row["NoFactura"].ToString();
-                MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
-            }
-            else
-            {
-                MessageBox.Show("nnno hay nada");
-            }
+                 DataRow row = facno.Rows[0];
+                 txt_numfactura.Text = row["NoFactura"].ToString();
+                 MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
+             }
+             else
+             {
+                 MessageBox.Show("nnno hay nada");
+             }*/
 
 
-
+            /*
             int idFact = Convert.ToInt32(txt_numfactura.Text);
             DataTable dt2 = cn.Buscar("tbl_facturaxcobrar", "NoFactura", idFact.ToString());
             if (dt2.Rows.Count > 0)
@@ -131,7 +133,30 @@ namespace CapaVistaERP.Procesos
             else
             {
                 MessageBox.Show(" no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+
+            string idCoti = txt_numcoti.Text;
+            DataTable detalleCoti = cn.Buscar("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", idCoti);
+            if (detalleCoti.Rows.Count > 0)
+            {
+
+                DataRow row = detalleCoti.Rows[0];
+                txt_total.Text = row["total_detCoti"].ToString();
+                txt_facturaestado.Text = "Por Pagar";
+                txt_nombrecl.Text = row["tbl_Clientes_id_cliente"].ToString();
+                txt_idcliente.Text = txt_nombrecl.Text;
+                DataTable nombre_cl = cn.BuscarDato("nombre_cl", "tbl_clientes", "id_cliente", Convert.ToInt32(txt_nombrecl.Text));
+                if (nombre_cl.Rows.Count > 0)
+                {
+                    txt_nombrecl.Text = nombre_cl.Rows[0]["nombre_cl"].ToString();
+                }
+
             }
+            else
+            {
+                MessageBox.Show(" no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
             int idcl = Convert.ToInt32(txt_idcliente.Text);
             DataTable dt3 = cn.Buscar("tbl_clientes", "id_cliente", idcl.ToString());
@@ -155,7 +180,7 @@ namespace CapaVistaERP.Procesos
             string coti = txt_numcoti.Text;
             //Metodo buscar creditos a Carlos Guzman
 
-            DataTable detalleCoti = cn.Buscar("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", coti);
+            DataTable detalleCotis = cn.Buscar("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", coti);
 
 
             dgv_detalle.Rows.Clear();
@@ -177,9 +202,9 @@ namespace CapaVistaERP.Procesos
 
 
 
-            if (detalleCoti.Rows.Count > 0)
+            if (detalleCotis.Rows.Count > 0)
             {
-                foreach (DataRow row in detalleCoti.Rows)
+                foreach (DataRow row in detalleCotis.Rows)
                 {
                     List<object> rowData = new List<object>();
 
@@ -192,12 +217,10 @@ namespace CapaVistaERP.Procesos
 
                             if (column.ColumnName == "total_detCoti")
                             {
-                                // Obtener el ID del producto
                                 int productId = Convert.ToInt32(row["tbl_producto_cod_producto"]);
 
-                                // Buscar el precio unitario del producto
                                 DataTable result = cn.BuscarDato("precioUnitario_prod", "tbl_producto", "cod_producto", productId);
-                                double precioUnitario = 0.0; // Precio unitario predeterminado
+                                double precioUnitario = 0.0; 
 
                                 if (result.Rows.Count > 0)
                                 {
@@ -230,6 +253,21 @@ namespace CapaVistaERP.Procesos
                     dgv_detalle.Rows.Add(rowData.ToArray());
                 }
             }
+
+           
+        }
+
+        private void btn_Pagar_Click(object sender, EventArgs e)
+        {
+            double total = Convert.ToDouble(txt_total.Text);
+            string limite = dgvVencimiento.Text;
+            string estado = txt_facturaestado.Text;
+            int idVenta = Convert.ToInt32(txt_numPedido.Text);
+            int cl = Convert.ToInt32(txt_idcliente.Text);
+
+            cn.InsertarFactura(total, limite, estado, idVenta, cl);
+
+            MessageBox.Show("Factura Guardada con exito");
         }
     }
 }

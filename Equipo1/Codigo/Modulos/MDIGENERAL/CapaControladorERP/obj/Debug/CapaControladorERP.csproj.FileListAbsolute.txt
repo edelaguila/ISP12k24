@@ -124,3 +124,12 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CopyComplete
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaControladorERP.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.csproj.CopyComplete
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaControladorERP\obj\Debug\CapaControladorERP.pdb

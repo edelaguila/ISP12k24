@@ -26,7 +26,7 @@ namespace CapaVistaERP.Procesos
         {
             string coti = txt_NoCoti.Text;
             //Metodo buscar creditos a Carlos Guzman
-            DataTable cotizaciones = cn.Buscar("tbl_cotizaciones", "No_Cotizacion", coti);
+            DataTable cotizaciones = cn.Buscar("vista_cotizaciones", "NoCotizacion", coti);
             DataTable detalleCoti = cn.Buscar("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", coti);
 
             dataGridView1.Rows.Clear();

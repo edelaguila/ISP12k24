@@ -423,7 +423,7 @@ namespace CapaControladorERP
             return dt;
         }
 
-
+        // Jimena Tobías - Logística
         public ProductoM ObtenerProducto(string codigo)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -443,6 +443,7 @@ namespace CapaControladorERP
             return null;
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboSucursal(ComboBox cmb)
         {
             List<Sucursal> sucursales = new List<Sucursal>();
@@ -453,6 +454,7 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboProducto(ComboBox cmb)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -463,6 +465,7 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             sn.TrasladoProducto(idOrigen, idDestino, idProducto, cantidad);
@@ -514,6 +517,161 @@ namespace CapaControladorERP
         public bool EliminarDisponibilidadDiaria(int idMovimiento)
         {
             return sn.EliminarDisponibilidadDiaria(idMovimiento);
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenesCompraPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerOrdenesCompraPorFecha(fechaInicio, fechaFin);
+        }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerComprasPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerComprasPorFecha(fechaInicio, fechaFin);
+        }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerFacturasPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerFacturasPorFecha(fechaInicio, fechaFin);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarOrdenCompra(int codigo)
+        {
+            sn.EliminarOrdenCompra(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleOrdenCompra(int codDetalle)
+        {
+            sn.EliminarDetalleOrdenCompra(codDetalle);
+        }
+        public void EliminarCompra(int codigo)
+        {
+            sn.EliminarCompra(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleCompra(int codDetalle)
+        {
+            sn.EliminarDetalleCompra(codDetalle);
+        }
+        public void EliminarFactura(int codigo)
+        {
+            sn.EliminarFactura(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleFactura(int codDetalle)
+        {
+            sn.EliminarDetalleFactura(codDetalle);
+        }
+        public string ObtenerIdProd(string nit)
+        {
+            string nitr = sn.ObtenerIdProd(nit);
+            return nitr;
+        }
+        public void ActualizarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv)
+        {
+            sn.ActualizarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv);
+        }
+        //Carol Chuy Modulo Compras
+        public void ActualizarDetalleOrdenCompra(int codigodetalle, int codigo, int cantidad, double totalfila, int idprod)
+        {
+            sn.ActualizarDetalleOrdenCompra(codigodetalle, codigo, cantidad, totalfila, idprod);
+        }
+        public void ActualizarCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, int recibidoigual, string fechav, int idorden)
+        {
+            sn.ActualizarCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv, recibidoigual, fechav, idorden);
+        }
+        //Carol Chuy Modulo Compras
+        public void ActualizarDetalleCompra(int codigodetalle, int cantidad, double totalfila, int idprod, int codigo)
+        {
+            sn.ActualizarDetalleCompra(codigodetalle, cantidad, totalfila, idprod, codigo);
+        }
+        public void ActualizarFactura(int codigo, string nombrep, string nitp, string fechaV, string fechaA, double subtotal, double iva, double totalCompra, string notas, int codcompra)
+        {
+            sn.ActualizarFactura(codigo, nombrep, nitp, fechaV, fechaA, subtotal, iva, totalCompra, notas, codcompra);
+        }
+        //Carol Chuy Compras
+        public void ActualizarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
+        {
+            sn.ActualizarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
         }
     }
 
