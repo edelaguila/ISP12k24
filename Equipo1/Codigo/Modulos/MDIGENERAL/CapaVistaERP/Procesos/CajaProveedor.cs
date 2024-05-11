@@ -38,7 +38,7 @@ namespace CapaVistaERP.Procesos
         {
             string filtro = txt_nit.Text;
             string data = "0";
-            DataTable dt = cn.filtrardatos(tabla1, "nitprov_facxpag", filtro, "estado_facxpag", data);
+            DataTable dt = cn.filtrardatosp(tabla1, "nitprov_facxpag", filtro, "estado_facxpag", data);
             dgv_pagoproveedor.DataSource = dt;
         }
 
