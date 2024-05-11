@@ -344,5 +344,11 @@ namespace CapaVistaERP
             Abrir(new Mantenimientos.frmSucursales());
             hideSubMenu();
         }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.tipodecombio());
+            hideSubMenu();
+        }
     }
 }

@@ -88,6 +88,7 @@ namespace CapaVistaERP
             this.btninicio = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button28 = new System.Windows.Forms.Button();
             this.panelMDI.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MDI)).BeginInit();
             this.panelSideMenu.SuspendLayout();
@@ -277,6 +278,7 @@ namespace CapaVistaERP
             // submenuprocesosbancos
             // 
             this.submenuprocesosbancos.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.submenuprocesosbancos.Controls.Add(this.button28);
             this.submenuprocesosbancos.Controls.Add(this.button29);
             this.submenuprocesosbancos.Controls.Add(this.button24);
             this.submenuprocesosbancos.Controls.Add(this.button27);
@@ -730,7 +732,7 @@ namespace CapaVistaERP
             this.button12.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
             this.button12.Size = new System.Drawing.Size(348, 43);
             this.button12.TabIndex = 19;
-            this.button12.Text = "TIPO DE CAMBIO";
+            this.button12.Text = "MONEDA";
             this.button12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
@@ -1117,6 +1119,25 @@ namespace CapaVistaERP
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
+            // button28
+            // 
+            this.button28.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button28.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button28.FlatAppearance.BorderSize = 0;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button28.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button28.Location = new System.Drawing.Point(0, 136);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
+            this.button28.Name = "button28";
+            this.button28.Padding = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.button28.Size = new System.Drawing.Size(348, 50);
+            this.button28.TabIndex = 42;
+            this.button28.Text = "TIPO DE MONEDA";
+            this.button28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button28.UseVisualStyleBackColor = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
             // MDIGeneral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1207,5 +1228,6 @@ namespace CapaVistaERP
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button28;
     }
 }
