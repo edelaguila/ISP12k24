@@ -322,6 +322,12 @@
     <Compile Include="Procesos\TrasladoDeProducto.Designer.cs">
       <DependentUpon>TrasladoDeProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\TrasladoDeProductoMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\TrasladoDeProductoMaestro.Designer.cs">
+      <DependentUpon>TrasladoDeProductoMaestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -473,6 +479,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\TrasladoDeProducto.resx">
       <DependentUpon>TrasladoDeProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\TrasladoDeProductoMaestro.resx">
+      <DependentUpon>TrasladoDeProductoMaestro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

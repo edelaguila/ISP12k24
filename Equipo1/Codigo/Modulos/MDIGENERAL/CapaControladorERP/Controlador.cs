@@ -418,7 +418,7 @@ namespace CapaControladorERP
             return dt;
         }
 
-
+        // Jimena Tobías - Logística
         public ProductoM ObtenerProducto(string codigo)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -438,6 +438,7 @@ namespace CapaControladorERP
             return null;
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboSucursal(ComboBox cmb)
         {
             List<Sucursal> sucursales = new List<Sucursal>();
@@ -448,6 +449,7 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboProducto(ComboBox cmb)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -458,6 +460,7 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             sn.TrasladoProducto(idOrigen, idDestino, idProducto, cantidad);
