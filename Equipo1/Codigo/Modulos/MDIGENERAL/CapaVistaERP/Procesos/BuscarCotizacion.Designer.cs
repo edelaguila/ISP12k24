@@ -49,24 +49,24 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(578, 98);
+            this.dataGridView1.Size = new System.Drawing.Size(600, 98);
             this.dataGridView1.TabIndex = 0;
             // 
             // txt_NoCoti
             // 
-            this.txt_NoCoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NoCoti.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NoCoti.Location = new System.Drawing.Point(188, 50);
             this.txt_NoCoti.Name = "txt_NoCoti";
-            this.txt_NoCoti.Size = new System.Drawing.Size(210, 30);
+            this.txt_NoCoti.Size = new System.Drawing.Size(210, 32);
             this.txt_NoCoti.TabIndex = 11;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(21, 50);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(126, 22);
+            this.label12.Size = new System.Drawing.Size(155, 23);
             this.label12.TabIndex = 13;
             this.label12.Text = "No.Cotizacion:";
             // 
@@ -87,14 +87,15 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(578, 274);
+            this.dataGridView2.Size = new System.Drawing.Size(599, 274);
             this.dataGridView2.TabIndex = 28;
             // 
             // btn_Hacer_pedido
             // 
+            this.btn_Hacer_pedido.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Hacer_pedido.Location = new System.Drawing.Point(237, 559);
             this.btn_Hacer_pedido.Name = "btn_Hacer_pedido";
-            this.btn_Hacer_pedido.Size = new System.Drawing.Size(145, 59);
+            this.btn_Hacer_pedido.Size = new System.Drawing.Size(184, 59);
             this.btn_Hacer_pedido.TabIndex = 29;
             this.btn_Hacer_pedido.Text = "HACER PEDIDO";
             this.btn_Hacer_pedido.UseVisualStyleBackColor = true;
@@ -106,7 +107,7 @@
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.txt_NoCoti);
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(23, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(612, 196);
@@ -117,7 +118,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(9, 214);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(626, 339);

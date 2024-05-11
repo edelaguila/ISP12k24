@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaVistaERP.Procesos
 {
@@ -22,11 +23,40 @@ namespace CapaVistaERP.Procesos
             dgvFactura.CustomFormat = "yyyy-MM-dd";
             dgvVencimiento.Format = DateTimePickerFormat.Custom;
             dgvVencimiento.CustomFormat = "yyyy-MM-dd";
+            diasEnpagar();
 
-            DateTime fechaSeleccionada = dgvFactura.Value;
-            DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
-            dgvVencimiento.Value = nuevaFecha;
+
+            /* DateTime fechaSeleccionada = dgvFactura.Value;
+             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
+             dgvVencimiento.Value = nuevaFecha;*/
+            cmb_diaspagar.SelectedIndexChanged += cmb_diaspagar_SelectedIndexChanged;
+
+
             UltimaFact();
+        }
+
+
+        public void diasEnpagar()
+        {
+            cmb_diaspagar.Items.Add("7");
+            cmb_diaspagar.Items.Add("15");
+            cmb_diaspagar.Items.Add("22");
+        }
+
+
+        public void fechaVencimiento()
+        {
+            DateTime fechaSeleccionada = dgvFactura.Value;
+            int diasAPagar = 0;
+            if (int.TryParse(cmb_diaspagar.SelectedItem?.ToString(), out diasAPagar))
+            {
+                DateTime nuevaFecha = fechaSeleccionada.AddDays(diasAPagar);
+                dgvVencimiento.Value = nuevaFecha;
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
         }
         private void obtenerNoFact()
         {
@@ -268,6 +298,11 @@ namespace CapaVistaERP.Procesos
             cn.InsertarFactura(total, limite, estado, idVenta, cl);
 
             MessageBox.Show("Factura Guardada con exito");
+        }
+
+        private void cmb_diaspagar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fechaVencimiento();
         }
     }
 }
