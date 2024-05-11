@@ -68,6 +68,8 @@ namespace CapaVistaERP.Procesos
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonocl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.cmb_diaspagar = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -200,6 +202,8 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.cmb_diaspagar);
             this.groupBox1.Controls.Add(this.txt_facturaestado);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txt_idcliente);
@@ -496,6 +500,26 @@ namespace CapaVistaERP.Procesos
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
             // 
+            // cmb_diaspagar
+            // 
+            this.cmb_diaspagar.FormattingEnabled = true;
+            this.cmb_diaspagar.Location = new System.Drawing.Point(897, 266);
+            this.cmb_diaspagar.Name = "cmb_diaspagar";
+            this.cmb_diaspagar.Size = new System.Drawing.Size(124, 29);
+            this.cmb_diaspagar.TabIndex = 41;
+            this.cmb_diaspagar.SelectedIndexChanged += new System.EventHandler(this.cmb_diaspagar_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(902, 243);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 20);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Dias en Pagar";
+            // 
             // frm_factura_cobrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -556,5 +580,7 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.TextBox txt_idcliente;
         private System.Windows.Forms.TextBox txt_facturaestado;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cmb_diaspagar;
     }
 }
