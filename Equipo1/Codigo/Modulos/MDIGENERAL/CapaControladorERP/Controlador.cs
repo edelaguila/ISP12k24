@@ -520,6 +520,18 @@ namespace CapaControladorERP
             return table;
         }
 
+        public DataTable llenartablatipodecambio(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablatipodecambio(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+
+
+
 
         public bool EliminarDisponibilidadDiaria(int idMovimiento)
         {
