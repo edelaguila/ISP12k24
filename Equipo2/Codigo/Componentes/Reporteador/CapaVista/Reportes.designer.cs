@@ -43,7 +43,6 @@ namespace Reporteador
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.correlativoTextBox = new System.Windows.Forms.TextBox();
-            this.btn_generar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -216,30 +215,11 @@ namespace Reporteador
             this.correlativoTextBox.Size = new System.Drawing.Size(332, 20);
             this.correlativoTextBox.TabIndex = 8;
             // 
-            // btn_generar
-            // 
-            this.btn_generar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            this.btn_generar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btn_generar.FlatAppearance.BorderSize = 2;
-            this.btn_generar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_generar.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold);
-            this.btn_generar.ForeColor = System.Drawing.Color.Black;
-            this.btn_generar.Image = ((System.Drawing.Image)(resources.GetObject("btn_generar.Image")));
-            this.btn_generar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_generar.Location = new System.Drawing.Point(546, 44);
-            this.btn_generar.Name = "btn_generar";
-            this.btn_generar.Size = new System.Drawing.Size(205, 36);
-            this.btn_generar.TabIndex = 15;
-            this.btn_generar.Text = "Generar Reporte";
-            this.btn_generar.UseVisualStyleBackColor = false;
-            this.btn_generar.Click += new System.EventHandler(this.btn_generar_Click);
-            // 
             // Reportes
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(235)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_generar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -277,6 +257,5 @@ namespace Reporteador
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox correlativoTextBox;
-        private System.Windows.Forms.Button btn_generar;
     }
 }

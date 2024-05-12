@@ -9,13 +9,13 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Reporteador;
 
 namespace Navegador2._0
 {
     public partial class Navegador : UserControl
     {
 
-        public Reporteador.Reportes reporte = new Reporteador.Reportes();
 
         private utilidadesConsultasI utilConsultasI;
         public string operacion = "";
@@ -419,14 +419,8 @@ namespace Navegador2._0
 
         private void btn_imprimir_Click(object sender, EventArgs e)
         {
-            DataGridView dt = this.GetDGV(this.parent);
-            if (dt == null)
-            {
-                MessageBox.Show("No hay ningun origen de datos(DataGridView)");
-                return;
-            }
-            this.reporte.setTable((DataTable)dt.DataSource);
-            this.reporte.Show();
+            Reportes reporte = new Reportes();
+            reporte.Show();
         }
     }
 }
