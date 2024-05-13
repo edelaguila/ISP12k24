@@ -2130,6 +2130,17 @@ namespace CapaModeloERP
         }
 
 
+        public DataTable selectTable(string table, string query = "")
+        {
+            string sql = query.Equals("") ? "select * from " + table : query;
+            OdbcDataAdapter adapter = new OdbcDataAdapter(sql, this.con.connection());
+            DataTable tbl = new DataTable();
+            adapter.Fill(tbl);
+            return tbl;
+        }
+
+
+
     }
 
 }

@@ -27,6 +27,7 @@ namespace CapaVistaERP.Procesos
             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
             dateTimePicker2.Value = nuevaFecha;
             UltimaVenta();
+            this.fillData();
            
         }
 
@@ -151,6 +152,22 @@ namespace CapaVistaERP.Procesos
             // MessageBox.Show("Datos a guarddar"+total+limite+estado+idVenta+cl);
             MessageBox.Show("Datos Guardados Correctamente");
 
+        }
+
+        public void fillData()
+        {
+            this.data_cotizaciones.DataSource = this.cn.ObtenerCotizaciones();
+        }
+
+        public void updateProductTable(int Id)
+        {
+            this.data_products.DataSource = this.cn.ObtenerProductosPorCotizacion(Id);
+        }
+
+        private void data_cotizaciones_Click(object sender, EventArgs e)
+        {
+            int Selected = Convert.ToInt32(data_cotizaciones.SelectedRows[0].Cells[0].Value);
+            this.updateProductTable(Selected);
         }
     }
 }
