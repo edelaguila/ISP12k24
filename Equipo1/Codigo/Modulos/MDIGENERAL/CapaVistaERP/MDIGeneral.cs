@@ -323,7 +323,7 @@ namespace CapaVistaERP
 
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.BuscarCotizacion());
+            Abrir(new Procesos.GestionCotizaciones());
             hideSubMenu();
         }
 

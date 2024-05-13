@@ -692,6 +692,19 @@ namespace CapaControladorERP
         {
             sn.ActualizarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
         }
+
+        public DataTable ObtenerCotizaciones()
+        {
+            return sn.selectTable("", "SELECT * FROM tbl_cotizaciones WHERE No_Cotizacion NOT IN (SELECT tbl_cotizaciones_No_Cotizacion FROM tbl_ventaspedido)");
+        }
+
+        public DataTable ObtenerProductosPorCotizacion(int Id)
+        {
+            string sql = "SELECT cod_producto, nombre_prod, descripcion_prod, precioUnitario_prod FROM tbl_detalle_cotizacion ";
+            sql+= "inner join tbl_cotizaciones on No_Cotizacion = tbl_cotizaciones_No_Cotizacion ";
+            sql += "inner join tbl_producto on tbl_producto_cod_producto = cod_producto where tbl_cotizaciones_No_Cotizacion = '"+Id+"';";
+            return this.sn.selectTable("", sql);
+        }
     }
 
     

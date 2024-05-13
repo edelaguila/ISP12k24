@@ -268,6 +268,12 @@
     <Compile Include="Procesos\frm_pedidos.Designer.cs">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\GestionCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\GestionCotizaciones.Designer.cs">
+      <DependentUpon>GestionCotizaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\ModificarDetalleCompras.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -458,6 +464,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frm_pedidos.resx">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\GestionCotizaciones.resx">
+      <DependentUpon>GestionCotizaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\ModificarDetalleCompras.resx">
       <DependentUpon>ModificarDetalleCompras.cs</DependentUpon>
