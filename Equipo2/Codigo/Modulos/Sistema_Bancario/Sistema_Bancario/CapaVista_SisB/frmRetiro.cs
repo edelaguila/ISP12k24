@@ -8,24 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Seguridad_Controlador;
+using CapaModelo_SisB.Templates;
+using CapaModelo_SisB.Libraries;
 
 namespace CapaVista_SisB
 {
     public partial class frmRetiro : Form
     {
-        Controlador cn = new Controlador();
+        public Controlador cn = new Controlador();
+        public CapaControlador_SisB.Controlador ctrl;
+        AccountTransactions transaction;
         public frmRetiro()
         {
             InitializeComponent();
             //Limpiando los textbox cuando cargue el form
             textBox3.Clear();
-            txt_cuenta.Clear();
+            txt_monto.Clear();
+            this.ctrl = new CapaControlador_SisB.Controlador();
+            int accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
+            Cuenta account = this.ctrl.getCurrentAccount(accId);
+            transaction = new AccountTransactions(account.id, account.nombre, account.numero, account.saldo);
         }
 
         private void btn_genCodigo_Click(object sender, EventArgs e)
         {
+            this.transaction.makeWithdrawal(Convert.ToDouble(txt_monto.Text));
+            MessageBox.Show("Retiro Realizado!");
+            return;
             //codigo escrito por Luis Franco
-            if (txt_cuenta.Text != "" && textBox3.Text != "")
+            if (txt_monto.Text != "" && textBox3.Text != "")
             {
 
                 DialogResult result = MessageBox.Show("¿Desea generar un código de seguridad?", "Generar Código", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -41,7 +52,7 @@ namespace CapaVista_SisB
                     cn.setBtitacora("9000", "Generando codigo de seguridad");
 
                     // Limpiar los textbox
-                    txt_cuenta.Text = "";
+                    txt_monto.Text = "";
                     textBox3.Text = "";
                 }
             }
@@ -54,7 +65,7 @@ namespace CapaVista_SisB
         //codigo escrito por Luis Franco
         private void VerificarCampos()
         {
-            if (textBox3.Text != "" && txt_cuenta.Text != "")
+            if (textBox3.Text != "" && txt_monto.Text != "")
             {
                 btn_genCodigo.Enabled = true;
             }
