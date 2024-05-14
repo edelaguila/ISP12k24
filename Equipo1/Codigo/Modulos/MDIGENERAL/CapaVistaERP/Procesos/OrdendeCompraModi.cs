@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
@@ -17,7 +18,8 @@ namespace CapaVistaERP.Procesos
         private string nombre = "";
         private string domicilio = "";
         private string telefono = "";
-        Controlador cn = new Controlador();
+        CapaControladorERP.Controlador cn = new CapaControladorERP.Controlador();
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public OrdendeCompraModi()
         {
             InitializeComponent();
@@ -206,6 +208,7 @@ namespace CapaVistaERP.Procesos
                         }
                     }
                     MessageBox.Show("Orden de compra modificada correctamente.");
+                    this.ctrl_seguridad.setBtitacora("8010", "Se modificó una órden de compra");
                     Limpiar();
                     this.Close();
                 }
