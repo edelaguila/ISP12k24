@@ -44,6 +44,7 @@ namespace CapaVista_SisB
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.navegador2 = new Navegador2._0.Navegador();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,10 +176,20 @@ namespace CapaVista_SisB
             // navegador2
             // 
             this.navegador2.Location = new System.Drawing.Point(37, 56);
-            this.navegador2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.navegador2.Margin = new System.Windows.Forms.Padding(4);
             this.navegador2.Name = "navegador2";
             this.navegador2.Size = new System.Drawing.Size(751, 78);
             this.navegador2.TabIndex = 53;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(701, 251);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 54;
+            this.button1.Text = "Reporteador";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Cheques
             // 
@@ -186,6 +197,7 @@ namespace CapaVista_SisB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(828, 656);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.navegador2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
@@ -227,5 +239,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
         private Navegador2._0.Navegador navegador2;
+        private System.Windows.Forms.Button button1;
     }
 }

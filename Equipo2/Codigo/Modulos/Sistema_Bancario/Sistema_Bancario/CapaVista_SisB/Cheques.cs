@@ -47,5 +47,11 @@ namespace CapaVista_SisB
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Reporteador.Reportes form = new Reporteador.Reportes();
+            form.Show(); 
+        }
     }
 }
