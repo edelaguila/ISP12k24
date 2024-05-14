@@ -15,19 +15,16 @@ namespace CapaVistaERP.Procesos
     //Andrea Corado 0901-20-2841
     public partial class MovimientoProveedores : Form
     {
-        
+        private CajaProveedor OperacionesProv;
         private Controlador cn;
-        string tabla1 = "tbl_proveedor";
+        string tabla1 = "vista_operacionesprov";
         
-        public MovimientoProveedores(string idprov, string nombreprov, string nitprov)
+        public MovimientoProveedores(CajaProveedor operacionesProv)
         {
             InitializeComponent();
             cn = new Controlador();
+            OperacionesProv = operacionesProv;
             tabla();
-            txt_Idprov.Text = idprov;
-            txt_nombreprov.Text = nombreprov;
-            txt_nitprov.Text = nitprov;
-            
         }
         public void tabla()
         {
@@ -52,15 +49,16 @@ namespace CapaVistaERP.Procesos
 
         private void btn_pagoproveedor_Click(object sender, EventArgs e)
         {
-            string idprove = txt_Idprov.Text;
-            string nombreprov = txt_nombreprov.Text;
-            string nitprove = txt_nitprov.Text;
+            if (dgv_proveedores.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgv_proveedores.SelectedRows[0];
+                string idProv = dgv_proveedores.SelectedRows[0].Cells["id_prov"].Value.ToString();
+                string nomProv = dgv_proveedores.SelectedRows[0].Cells["nombre_prov"].Value.ToString();
+                string NitProv = dgv_proveedores.SelectedRows[0].Cells["nit_prov"].Value.ToString();
 
-            CajaProveedor CajaProveedor = new CajaProveedor(idprove,nombreprov,nitprove);
-            CajaProveedor.txt_Idprov.Text = idprove.ToString();
-            CajaProveedor.txt_nombre.Text = nombreprov.ToString();
-            CajaProveedor.txt_nitprov.Text = nitprove.ToString();
-            CajaProveedor.Show();
+                OperacionesProv.datosProv(idProv, nomProv, NitProv);
+                this.Close();
+            }
         }
 
         private void dgv_proveedores_SelectionChanged(object sender, EventArgs e)

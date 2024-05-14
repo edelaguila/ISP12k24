@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.cb_estado = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txt_estado = new System.Windows.Forms.TextBox();
@@ -40,16 +39,9 @@ namespace CapaVistaERP.Mantenimientos
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 27);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 20;
             // 
             // cb_estado
             // 
@@ -146,11 +138,20 @@ namespace CapaVistaERP.Mantenimientos
             this.label1.TabIndex = 21;
             this.label1.Text = "Nombre del Banco";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(23, 25);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 31;
+            // 
             // frmMantenimientoBanco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1037, 563);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txt_estado);
@@ -161,7 +162,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmMantenimientoBanco";
             this.Text = "frmMantenimientoBanco";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -171,7 +171,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.ComboBox cb_estado;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txt_estado;
@@ -182,5 +181,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private CapaVista.Navegador navegador1;
     }
 }

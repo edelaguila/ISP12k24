@@ -37,10 +37,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.navegador1 = new CapaVista.Navegador();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,14 +144,6 @@
             this.textBox6.TabIndex = 33;
             this.textBox6.Tag = "nombre_transprov";
             // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(14, 14);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 102);
-            this.navegador1.TabIndex = 54;
-            // 
             // comboBox1
             // 
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -185,15 +177,23 @@
             this.comboBox3.TabIndex = 57;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(25, 22);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 58;
+            // 
             // frm_Mant_TransProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1051, 606);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.estado_transprov);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tipo_transprov);
@@ -205,7 +205,7 @@
             this.Controls.Add(this.label4);
             this.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frm_Mant_TransProveedores";
-            this.Text = "frm_Mant_TransProveedores";
+            this.Text = "8002-Mant. Transaciones Proveedor";
             this.Load += new System.EventHandler(this.frm_Mant_TransProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -224,9 +224,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox6;
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
+        private CapaVista.Navegador navegador1;
     }
 }

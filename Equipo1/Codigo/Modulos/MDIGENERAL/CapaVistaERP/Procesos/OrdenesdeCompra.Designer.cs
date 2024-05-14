@@ -62,6 +62,7 @@ namespace CapaVistaERP.Procesos
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmb_deptosolicitante = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.cmb_orden = new System.Windows.Forms.ComboBox();
             this.txt_numeroorden = new System.Windows.Forms.TextBox();
@@ -69,19 +70,16 @@ namespace CapaVistaERP.Procesos
             this.btn_buscarProveedor = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_nombreProv = new System.Windows.Forms.TextBox();
-            this.txt_entregara = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_idProv = new System.Windows.Forms.TextBox();
             this.dateTimePickerEntrega = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_domicilioProv = new System.Windows.Forms.TextBox();
             this.dateTimePickerPedido = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonoProv = new System.Windows.Forms.TextBox();
-            this.txt_departamentos = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -101,7 +99,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(37, 765);
+            this.groupBox3.Location = new System.Drawing.Point(13, 678);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -112,13 +110,15 @@ namespace CapaVistaERP.Procesos
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.Location = new System.Drawing.Point(939, 69);
             this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(85, 53);
             this.button4.TabIndex = 13;
             this.button4.Text = "Enviar Órden";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // txt_nota
@@ -217,7 +217,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(37, 422);
+            this.groupBox2.Location = new System.Drawing.Point(13, 334);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -228,13 +228,15 @@ namespace CapaVistaERP.Procesos
             // 
             // btn_confirmar
             // 
+            this.btn_confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_confirmar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_confirmar.Location = new System.Drawing.Point(925, 257);
             this.btn_confirmar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_confirmar.Name = "btn_confirmar";
             this.btn_confirmar.Size = new System.Drawing.Size(99, 38);
             this.btn_confirmar.TabIndex = 13;
             this.btn_confirmar.Text = "Confirmar";
-            this.btn_confirmar.UseVisualStyleBackColor = true;
+            this.btn_confirmar.UseVisualStyleBackColor = false;
             this.btn_confirmar.Click += new System.EventHandler(this.btn_confirmar_Click);
             // 
             // cmb_productos
@@ -260,24 +262,28 @@ namespace CapaVistaERP.Procesos
             // 
             // btn_eliminar
             // 
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_eliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_eliminar.Location = new System.Drawing.Point(925, 199);
             this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(99, 38);
             this.btn_eliminar.TabIndex = 10;
             this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.UseVisualStyleBackColor = false;
             this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_agregar
             // 
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_agregar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_agregar.Location = new System.Drawing.Point(925, 140);
             this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(99, 38);
             this.btn_agregar.TabIndex = 9;
             this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // dgv_detalle
@@ -341,6 +347,7 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_totalfila
             // 
+            this.txt_totalfila.Enabled = false;
             this.txt_totalfila.Location = new System.Drawing.Point(655, 80);
             this.txt_totalfila.Margin = new System.Windows.Forms.Padding(4);
             this.txt_totalfila.Name = "txt_totalfila";
@@ -349,6 +356,7 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_preciou
             // 
+            this.txt_preciou.Enabled = false;
             this.txt_preciou.Location = new System.Drawing.Point(536, 80);
             this.txt_preciou.Margin = new System.Windows.Forms.Padding(4);
             this.txt_preciou.Name = "txt_preciou";
@@ -357,6 +365,7 @@ namespace CapaVistaERP.Procesos
             // 
             // txt_descripcion
             // 
+            this.txt_descripcion.Enabled = false;
             this.txt_descripcion.Location = new System.Drawing.Point(272, 80);
             this.txt_descripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_descripcion.Name = "txt_descripcion";
@@ -417,6 +426,7 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmb_deptosolicitante);
             this.groupBox1.Controls.Add(this.label17);
             this.groupBox1.Controls.Add(this.cmb_orden);
             this.groupBox1.Controls.Add(this.txt_numeroorden);
@@ -424,29 +434,34 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.btn_buscarProveedor);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txt_nombreProv);
-            this.groupBox1.Controls.Add(this.txt_entregara);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txt_idProv);
             this.groupBox1.Controls.Add(this.dateTimePickerEntrega);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_domicilioProv);
             this.groupBox1.Controls.Add(this.dateTimePickerPedido);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.txt_telefonoProv);
-            this.groupBox1.Controls.Add(this.txt_departamentos);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(37, 23);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1057, 391);
+            this.groupBox1.Size = new System.Drawing.Size(1057, 313);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de la órden";
+            // 
+            // cmb_deptosolicitante
+            // 
+            this.cmb_deptosolicitante.FormattingEnabled = true;
+            this.cmb_deptosolicitante.Location = new System.Drawing.Point(688, 231);
+            this.cmb_deptosolicitante.Name = "cmb_deptosolicitante";
+            this.cmb_deptosolicitante.Size = new System.Drawing.Size(168, 27);
+            this.cmb_deptosolicitante.TabIndex = 30;
             // 
             // label17
             // 
@@ -523,14 +538,6 @@ namespace CapaVistaERP.Procesos
             this.txt_nombreProv.Size = new System.Drawing.Size(565, 24);
             this.txt_nombreProv.TabIndex = 10;
             // 
-            // txt_entregara
-            // 
-            this.txt_entregara.Location = new System.Drawing.Point(291, 323);
-            this.txt_entregara.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_entregara.Name = "txt_entregara";
-            this.txt_entregara.Size = new System.Drawing.Size(565, 24);
-            this.txt_entregara.TabIndex = 18;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -570,17 +577,6 @@ namespace CapaVistaERP.Procesos
             this.dateTimePickerEntrega.Name = "dateTimePickerEntrega";
             this.dateTimePickerEntrega.Size = new System.Drawing.Size(160, 24);
             this.dateTimePickerEntrega.TabIndex = 17;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(133, 327);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 20);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Entregar a: ";
             // 
             // label3
             // 
@@ -639,14 +635,6 @@ namespace CapaVistaERP.Procesos
             this.txt_telefonoProv.Name = "txt_telefonoProv";
             this.txt_telefonoProv.Size = new System.Drawing.Size(132, 24);
             this.txt_telefonoProv.TabIndex = 13;
-            // 
-            // txt_departamentos
-            // 
-            this.txt_departamentos.Location = new System.Drawing.Point(617, 230);
-            this.txt_departamentos.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_departamentos.Name = "txt_departamentos";
-            this.txt_departamentos.Size = new System.Drawing.Size(239, 24);
-            this.txt_departamentos.TabIndex = 14;
             // 
             // label5
             // 
@@ -722,19 +710,17 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button btn_buscarProveedor;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_nombreProv;
-        private System.Windows.Forms.TextBox txt_entregara;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_idProv;
         private System.Windows.Forms.DateTimePicker dateTimePickerEntrega;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_domicilioProv;
         private System.Windows.Forms.DateTimePicker dateTimePickerPedido;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_telefonoProv;
-        private System.Windows.Forms.TextBox txt_departamentos;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmb_deptosolicitante;
     }
 }

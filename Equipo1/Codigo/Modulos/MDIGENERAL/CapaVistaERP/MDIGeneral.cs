@@ -8,28 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Seguridad_Controlador;
+using CapaVistaERP.Procesos;
 
 namespace CapaVistaERP
 {
     public partial class MDIGeneral : Form
     {
+        Controlador cn = new Controlador();
         //VARIABLES ANDREA CORADO
         private string idmovpro = "";
         private string namemovpro = "";
         private string nitmovpro = "";
-        //Variables Carol Chuy Compras
-        private string id = "";
-        private string nombre = "";
-        private string domicilio = "";
-        private string telefono = "";
-        private string idord = "";
-        private string fechaS = "";
-        private string fechaE = "";
-        private string solicitante = "";
-        private string proveedor = "";
-        private string idcompra = "";
-        private string fechaV = "";
-        private string proveedorfact = "";
 
         public MDIGeneral()
         {
@@ -105,6 +95,13 @@ namespace CapaVistaERP
             fh.Dock = DockStyle.None;
             this.panelMDI.Controls.Add(fh);
             this.panelMDI.Tag = fh;
+            // fh.StartPosition = FormStartPosition.CenterParent; 
+            //carlos enrique guzman cabrera (hace que las formas esten centradas)
+            // Calcular la posición para centrar la forma en el panel
+           /* int x = (this.panelMDI.Width - fh.Width) / 2;
+            int y = (this.panelMDI.Height - fh.Height) / 2;*/
+            // Establecer la posición de la forma
+           /* fh.Location = new Point(x, y);*/
             fh.Show();
         }
 
@@ -212,33 +209,34 @@ namespace CapaVistaERP
             hideSubMenu();
         }
 
-        private void button28_Click(object sender, EventArgs e)
-        {
-            Abrir(new Procesos.Mov_bancario());
-            hideSubMenu();
-        }
 
         private void button26_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.OrdenesdeCompra(id, nombre, domicilio, telefono));
+            OrdendeCompraEli ordendeCompraNav = new OrdendeCompraEli(); // Crear una instancia de OrdendeCompraNav
+            OrdendeCompraModi ordendeCompraModi = new OrdendeCompraModi();
+            Abrir(new Procesos.OrdenesdeCompraMaestro(ordendeCompraNav, ordendeCompraModi));
             hideSubMenu();
         }
 
         private void button25_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.Compras(idord, fechaS, fechaE, solicitante, proveedor));
+            ComprasEli comprasEli = new ComprasEli();
+            ComprasModi comprasModi = new ComprasModi();
+            Abrir(new Procesos.ComprasMaestro(comprasEli, comprasModi));
             hideSubMenu();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.FacturaporPagar(idcompra, fechaV, proveedorfact));
+            FacturaporPagarEli facturaporPagarEli = new FacturaporPagarEli();
+            FacturaporPagarModi facturaporPagarModi = new FacturaporPagarModi();
+            Abrir(new Procesos.FacturaporPagarMaestro(facturaporPagarEli, facturaporPagarModi));
             hideSubMenu();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.MovimientoProveedores(idmovpro, namemovpro, nitmovpro));
+            Abrir(new Procesos.CajaProveedor(idmovpro, namemovpro, nitmovpro));
             hideSubMenu();
         }
 
@@ -282,6 +280,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.AutorizacionOrdenDeCompra());
             hideSubMenu();
+            cn.setBtitacora("8020", "Pro. Autorizacion Ordenes");
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -304,7 +303,7 @@ namespace CapaVistaERP
 
         private void button22_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.TrasladoDeProducto());
+            Abrir(new Procesos.TrasladoDeProductoMaestro());
             hideSubMenu();
         }
 
@@ -316,19 +315,15 @@ namespace CapaVistaERP
 
         private void button29_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.frmMovimientoDeBancos());
+            Abrir(new Procesos.frmBitacoraMovimientoDeBancos());
             hideSubMenu();
+            cn.setBtitacora("8031", "Pro. Bitacora de movimiento de bancos");
         }
 
-        private void button30_Click(object sender, EventArgs e)
-        {
-            Abrir(new Mantenimientos.frm_mant_agregar_cuenta());
-            hideSubMenu();
-        }
 
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.BuscarCotizacion());
+            Abrir(new Procesos.GestionCotizaciones());
             hideSubMenu();
         }
 
@@ -347,6 +342,12 @@ namespace CapaVistaERP
         private void button33_Click(object sender, EventArgs e)
         {
             Abrir(new Mantenimientos.frmSucursales());
+            hideSubMenu();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.tipodecombio());
             hideSubMenu();
         }
     }

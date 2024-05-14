@@ -8,13 +8,14 @@ using System.Data.Odbc;
 using CapaModeloERP;
 using System.Windows.Forms;
 using CapaModeloERP.clases;
+using System.Data.SqlTypes;
 
 namespace CapaControladorERP
 {
     public class Controlador
     {
         Sentencias sn = new Sentencias();
-        //Andrea Corado 0901-20-2841
+        //Andrea Corado  0901-20-2841
         public DataTable llenarTablas(string tabla)
         {
             OdbcDataAdapter dt = sn.CargarDatos(tabla);
@@ -30,14 +31,26 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
-
-        public DataTable filtrardatos(string tabla, string columna, string dato) 
-        { 
-            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
+        //Andrea Corado 0901-20-2841  
+        public DataTable filtrardatosp(string tabla, string columna, string dato, string columna2, string dato2)
+        {
+            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2,dato2);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
         }
+        //Andrea Corado 0901-20-2841
+        public void Guardarmovpro(string idp, string fechamov, string totalmov, string nofact, string banmov, string tipomov, string numov, string conceptomov)
+        {
+            sn.guardarDatos(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+        }
+
+        //Andrea Corado 0901-20-2841
+        public DataTable Actualizap(string tabla, string columna, string dato1, string columna2, int igualA)
+        {
+            return sn.ActualizarDatos(tabla, columna,dato1,columna2, igualA);
+        }
+
 
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
@@ -56,27 +69,45 @@ namespace CapaControladorERP
             sn.InsertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
         }
         //David Carrillo 0901-20-3201 
+        public void INSVentasPedido(int id_vendedor, int tbl_detalle_cotizacion_id)
+        {
+            sn.INSVentasPedido(id_vendedor, tbl_detalle_cotizacion_id);
+        }
+        //David Carrillo 0901-20-3201 
         public string obtenerCliente(string nombreCliente)
         {
-           
+
             string nombrecl = sn.ObtenerCliente(nombreCliente);
             return nombrecl;
         }
         //David Carrillo 0901-20-3201 
-        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
+        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti, string Solicitud)
         {
-            sn.InsertarCoti(No_Cotizacion,fecha_coti,fechaFinal_coti);
+            sn.InsertarCoti(No_Cotizacion, fecha_coti, fechaFinal_coti, Solicitud);
         }
         //David Carrillo 0901-20-3201 
         public void InsertarDetalleCoti(int id_cliente, int cantidad_coti, int No_Cotizacion, int cod_producto, double total_detCoti)
         {
-            sn.InsertarDetalleCoti(id_cliente,cantidad_coti,No_Cotizacion,cod_producto,total_detCoti);
+            sn.InsertarDetalleCoti(id_cliente, cantidad_coti, No_Cotizacion, cod_producto, total_detCoti);
         }
         //David Carrillo 0901-20-3201 
-        public string ObtenerUltimoIdCoti()
+        public void ActCoti(int No_Cotizacion)
         {
-          return  sn.ObtenerUltimoIdCoti();
+            sn.ActCoti(No_Cotizacion);
         }
+        //David Carrillo 0901-20-3201 
+
+        public string ObtenerUltimoDato(string dato, string tabla, string dato2)
+        {
+            return sn.ObtenerUltimoDato(dato, tabla, dato2);
+        }
+
+        //David Carrillo
+        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        {
+            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+        }
+
         //David Carrillo 0901-20-3201 
         public int ObtenerCodigoProducto(string nombreProducto)
         {
@@ -85,7 +116,7 @@ namespace CapaControladorERP
         //David Carrillo 0901-20-3201 
         public DataTable BuscarDato(string dato, string tabla, string DatoABuscar, int igualA)
         {
-            return sn.BuscarDato(dato,tabla,DatoABuscar,igualA);
+            return sn.BuscarDato(dato, tabla, DatoABuscar, igualA);
         }
 
         // carlos enrique modulo bancos
@@ -135,6 +166,46 @@ namespace CapaControladorERP
         public DataTable BuscarMB(string strfiltro)
         {
             return sn.BuscarMB(strfiltro);
+        }
+
+        // carlos enrique guzman cabrera
+        public bool EliminarMovimiento(int idMovimiento)
+        {
+            return sn.EliminarMovimiento(idMovimiento);
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
+        {
+
+
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerRegistrosPorFecha(fechaInicio, fechaFin);
         }
 
         //Carol Chuy Modulo Compras
@@ -301,9 +372,9 @@ namespace CapaControladorERP
             return sn.ObtenerProveedorPorID(id);
         }
         //Carol Chuy Modulo Compras
-        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, string entregara, double subtotal, double iva, double total, string notas, int codProv)
+        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv)
         {
-            sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, entregara, subtotal, iva, total, notas, codProv);
+            sn.InsertarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv);
         }
         //Carol Chuy Modulo Compras
         public void InsertarDetalleOrdenCompra(int codDetalle, int codigo, int cantidad, double totalfila, int idproducto)
@@ -352,7 +423,7 @@ namespace CapaControladorERP
             return dt;
         }
 
-
+        // Jimena Tobías - Logística
         public ProductoM ObtenerProducto(string codigo)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -372,6 +443,7 @@ namespace CapaControladorERP
             return null;
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboSucursal(ComboBox cmb)
         {
             List<Sucursal> sucursales = new List<Sucursal>();
@@ -382,6 +454,7 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void llenarComboProducto(ComboBox cmb)
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -392,16 +465,251 @@ namespace CapaControladorERP
             }
         }
 
+        // Jimena Tobías - Logística
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             sn.TrasladoProducto(idOrigen, idDestino, idProducto, cantidad);
         }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenPorID(int id)
+        {
+            return sn.ObtenerOrdenPorID(id);
+        }
+        //Carol Chuy Compras
+        public void InsertarCompra(int codigo, string fechas, string fechae, string depa, double subtotal, double iva, double totalCompra, string notas, int codigoprov, int estadoCompra, string fechap, int codorden)
+        {
+            sn.InsertarCompra(codigo, fechas, fechae, depa, subtotal, iva, totalCompra, notas, codigoprov, estadoCompra, fechap, codorden);
+        }
+        //Carol Chuy Compras
+        public void InsertarDetalleCompra(int codDetalle, int cantidad, double totalfila, int idprod, int codigo)
+        {
+            sn.InsertarDetalleCompra(codDetalle, cantidad, totalfila, idprod, codigo);
+        }
+        //Carol Chuy Compras
+        public void InsertarFactura(int codigo, string nombrep, string nitp, string fechaV, string fechaA, double subtotal, double iva, double totalCompra, int estado, string notas, int codcompra)
+        {
+            sn.InsertarFactura(codigo, nombrep, nitp, fechaV, fechaA, subtotal, iva, totalCompra, estado, notas, codcompra);
+        }
+        //Carol Chuy Compras
+        public DataTable filtrardatos(string tabla, string columna, string dato)
+        {
+            OdbcDataAdapter dt = sn.filtrarDatos(tabla, columna, dato);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+        public void InsertarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
+        {
+            sn.InsertarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerFactPorID(int id)
+        {
+            return sn.ObtenerFactPorID(id);
+        }
+
+
+        //Diego Marroquin 
+
+        public DataTable llenartablabitacoradispodiaria(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablabitacoradispodiaria(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+        public DataTable llenartablatipodecambio(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablatipodecambio(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+
+
+
+
+        public bool EliminarDisponibilidadDiaria(int idMovimiento)
+        {
+            return sn.EliminarDisponibilidadDiaria(idMovimiento);
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenesCompraPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerOrdenesCompraPorFecha(fechaInicio, fechaFin);
+        }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerComprasPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerComprasPorFecha(fechaInicio, fechaFin);
+        }
+
+        //Carol Chuy Compras
+        public DataTable ObtenerFacturasPorFecha(int año, string tipoFiltro)
+        {
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerFacturasPorFecha(fechaInicio, fechaFin);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarOrdenCompra(int codigo)
+        {
+            sn.EliminarOrdenCompra(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleOrdenCompra(int codDetalle)
+        {
+            sn.EliminarDetalleOrdenCompra(codDetalle);
+        }
+        public void EliminarCompra(int codigo)
+        {
+            sn.EliminarCompra(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleCompra(int codDetalle)
+        {
+            sn.EliminarDetalleCompra(codDetalle);
+        }
+        public void EliminarFactura(int codigo)
+        {
+            sn.EliminarFactura(codigo);
+        }
+        //Carol Chuy Modulo Compras
+        public void EliminarDetalleFactura(int codDetalle)
+        {
+            sn.EliminarDetalleFactura(codDetalle);
+        }
+        public string ObtenerIdProd(string nit)
+        {
+            string nitr = sn.ObtenerIdProd(nit);
+            return nitr;
+        }
+        public void ActualizarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv)
+        {
+            sn.ActualizarOrdenCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv);
+        }
+        //Carol Chuy Modulo Compras
+        public void ActualizarDetalleOrdenCompra(int codigodetalle, int codigo, int cantidad, double totalfila, int idprod)
+        {
+            sn.ActualizarDetalleOrdenCompra(codigodetalle, codigo, cantidad, totalfila, idprod);
+        }
+        public void ActualizarCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, int recibidoigual, string fechav, int idorden)
+        {
+            sn.ActualizarCompra(codigo, fechasolicitud, fechaentrega, depa, subtotal, iva, total, notas, codProv, recibidoigual, fechav, idorden);
+        }
+        //Carol Chuy Modulo Compras
+        public void ActualizarDetalleCompra(int codigodetalle, int cantidad, double totalfila, int idprod, int codigo)
+        {
+            sn.ActualizarDetalleCompra(codigodetalle, cantidad, totalfila, idprod, codigo);
+        }
+        public void ActualizarFactura(int codigo, string nombrep, string nitp, string fechaV, string fechaA, double subtotal, double iva, double totalCompra, string notas, int codcompra)
+        {
+            sn.ActualizarFactura(codigo, nombrep, nitp, fechaV, fechaA, subtotal, iva, totalCompra, notas, codcompra);
+        }
+        //Carol Chuy Compras
+        public void ActualizarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
+        {
+            sn.ActualizarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
+        }
+
+        public DataTable ObtenerCotizaciones()
+        {
+            return sn.selectTable("", "SELECT * FROM tbl_cotizaciones WHERE No_Cotizacion NOT IN (SELECT tbl_cotizaciones_No_Cotizacion FROM tbl_ventaspedido)");
+        }
+
+        public DataTable ObtenerProductosPorCotizacion(int Id)
+        {
+            string sql = "SELECT cod_producto, nombre_prod, descripcion_prod, precioUnitario_prod FROM tbl_detalle_cotizacion ";
+            sql+= "inner join tbl_cotizaciones on No_Cotizacion = tbl_cotizaciones_No_Cotizacion ";
+            sql += "inner join tbl_producto on tbl_producto_cod_producto = cod_producto where tbl_cotizaciones_No_Cotizacion = '"+Id+"';";
+            return this.sn.selectTable("", sql);
+        }
     }
 
-
-
-
-
+    
 }
+
+
 
 

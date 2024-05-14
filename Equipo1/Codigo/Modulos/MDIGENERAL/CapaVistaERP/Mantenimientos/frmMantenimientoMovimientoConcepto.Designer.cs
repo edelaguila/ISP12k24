@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.txt_efecto = new System.Windows.Forms.TextBox();
             this.cb_estado = new System.Windows.Forms.ComboBox();
             this.cb_efecto = new System.Windows.Forms.ComboBox();
@@ -39,16 +38,9 @@ namespace CapaVistaERP.Mantenimientos
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 21);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 31;
             // 
             // txt_efecto
             // 
@@ -143,11 +135,20 @@ namespace CapaVistaERP.Mantenimientos
             this.label1.TabIndex = 35;
             this.label1.Text = "Concepto del movimiento";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(22, 26);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 44;
+            // 
             // frmMantenimientoMovimientoConcepto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 576);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_efecto);
             this.Controls.Add(this.cb_estado);
             this.Controls.Add(this.cb_efecto);
@@ -157,7 +158,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmMantenimientoMovimientoConcepto";
             this.Text = "frmMantenimientoMovimientoConcepto";
             this.Load += new System.EventHandler(this.frmMantenimientoMovimientoConcepto_Load);
@@ -168,7 +168,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_efecto;
         private System.Windows.Forms.ComboBox cb_estado;
         private System.Windows.Forms.ComboBox cb_efecto;
@@ -178,5 +177,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private CapaVista.Navegador navegador1;
     }
 }
