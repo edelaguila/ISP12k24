@@ -232,10 +232,15 @@ namespace CapaModelo_SisB
         {
             try
             {
-                string query = "SELECT * FROM tbl_cuenta where cue_usuario = '" + Id + "';";
+                string query = "select cue_id, cue_cliente, cue_tipo, cue_saldo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_usuario='" + Id + "'";
+                Console.WriteLine(query);
                 OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
                 OdbcDataReader reader = cmd.ExecuteReader();
-                return new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6));
+                if (reader.Read())
+                    return new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6), reader.GetString(7));
+                else
+                    Console.WriteLine("No hay nada");
+                return null;
             }
             catch (Exception e)
             {

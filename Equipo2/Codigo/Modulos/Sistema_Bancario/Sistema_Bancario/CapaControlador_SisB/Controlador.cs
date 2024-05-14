@@ -71,6 +71,11 @@ namespace CapaControlador_SisB
             return -1;
         }
 
+        public Cuenta getCurrentAccount(int Id)
+        {
+            return this.sentencias.getCurrentAccount(Id);
+        }
+
         public void makeTransaction(string code, int origen, double mont)
         {
             int dest = getAccount(code, origen);

@@ -43,15 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account.cs" />
+    <Compile Include="API\Account.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="DataProvider.cs" />
-    <Compile Include="Invoice.cs" />
-    <Compile Include="InvoiceSentence.cs" />
+    <Compile Include="API\Invoice.cs" />
+    <Compile Include="API\InvoiceSentence.cs" />
+    <Compile Include="Libraries\AccountTransactions.cs" />
+    <Compile Include="Libraries\TransactionSentences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider.cs" />
     <Compile Include="Sentencias.cs" />
-    <Compile Include="AccountSentence.cs" />
+    <Compile Include="API\AccountSentence.cs" />
     <Compile Include="Templates\Cliente.cs" />
     <Compile Include="Templates\Cuenta.cs" />
     <Compile Include="Templates\CuentaAmiga.cs" />
