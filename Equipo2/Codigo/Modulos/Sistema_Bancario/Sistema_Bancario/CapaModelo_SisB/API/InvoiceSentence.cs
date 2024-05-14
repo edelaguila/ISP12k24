@@ -51,6 +51,34 @@ namespace CapaModelo_SisB
                 Console.WriteLine(e.Message);
             }
         }
+
+        public List<Invoice> GetInvoicesByAccountNit(string accountNit)
+        {
+            List<Invoice> invoices = new List<Invoice>();
+
+            string sql = "SELECT fac_id, fac_servicio, cli_nit, fac_monto, fac_estado FROM tbl_factura WHERE cli_nit = ?";
+            using (OdbcCommand cmd = new OdbcCommand(sql, this.con.connection()))
+            {
+                cmd.Parameters.AddWithValue("@AccountNit", accountNit);
+                using (OdbcDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Invoice invoice = new Invoice(
+                            reader.GetInt32(0),  // fac_id
+                            reader.GetInt32(1),  // fac_servicio
+                            "EmpresaX",          // serviceName - Asignamos un valor predeterminado ya que no está en la consulta
+                            reader.GetString(2), // cli_nit
+                            reader.GetDouble(3)  // fac_monto
+                        );
+                        invoice.status = reader.GetBoolean(4); // fac_estado
+                        invoices.Add(invoice);
+                    }
+                }
+            }
+
+            return invoices;
+        }
     }
 
    
