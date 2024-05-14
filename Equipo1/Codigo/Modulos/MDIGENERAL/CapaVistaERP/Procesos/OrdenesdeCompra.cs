@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
-
+using Seguridad_Controlador;
 //Programado por: Carol Chuy
 
 namespace CapaVistaERP.Procesos
 {
     public partial class OrdenesdeCompra : Form
     {
-        private Controlador controller;
+        private CapaControladorERP.Controlador controller;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public OrdenesdeCompra(string id, string nombre, string domicilio, string telefono)
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new CapaControladorERP.Controlador();
             llenarprod();
             controller.CargarOpcionesOrden(cmb_orden);
             iniciarcombodepartamento();
@@ -334,6 +335,7 @@ namespace CapaVistaERP.Procesos
                     }
 
                     MessageBox.Show("Orden de compra enviada correctamente.");
+                    this.ctrl_seguridad.setBtitacora("8010", "Se ingresó una órden de compra");
                     LimpiarCampos();
                 }
                 catch (Exception ex)

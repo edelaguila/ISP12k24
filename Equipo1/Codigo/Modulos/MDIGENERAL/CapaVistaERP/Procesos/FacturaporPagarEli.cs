@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
     public partial class FacturaporPagarEli : Form
     {
-        private Controlador controller;
+        private CapaControladorERP.Controlador controller;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public FacturaporPagarEli()
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new CapaControladorERP.Controlador();
         }
         public void RecibirDatosDesdeFacturasEli(string id)
         {
@@ -141,6 +143,7 @@ namespace CapaVistaERP.Procesos
                     controller.EliminarDetalleFactura(codigo);
                     controller.EliminarFactura(codigo);
                     MessageBox.Show("Factura eliminada correctamente");
+                    this.ctrl_seguridad.setBtitacora("8012", "Se eliminó una factura");
                     Limpiar();
                 }
                 catch (Exception ex)

@@ -9,17 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 { 
     //Programado por: Carol Chuy
     public partial class FacturaporPagar : Form
     {
-        private Controlador controller;
+        private CapaControladorERP.Controlador controller;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public FacturaporPagar(string idcompra, string fechaV, string proveedorfact)
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new CapaControladorERP.Controlador();
             llenarprod();
             controller.CargarOpcionesOrden(cmb_orden);
             txt_numcompra.Text = idcompra;
@@ -388,6 +390,7 @@ namespace CapaVistaERP.Procesos
                             }
 
                             MessageBox.Show("Factura registrada correctamente.");
+                            this.ctrl_seguridad.setBtitacora("8012", "Se ingresó una factura");
                             LimpiarCampos();
                         }
                         catch (Exception ex)
