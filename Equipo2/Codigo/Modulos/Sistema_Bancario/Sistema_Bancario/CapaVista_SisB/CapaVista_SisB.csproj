@@ -217,5 +217,11 @@
   <ItemGroup>
     <None Include="img\qr-code.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaModelo_SisB\CapaModelo_SisB.csproj">
+      <Project>{d89cfdc0-9e9f-4b5a-bd77-a74e3227266a}</Project>
+      <Name>CapaModelo_SisB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
