@@ -31,11 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
+    </Reference>
     <Reference Include="CapaControlador_SisB">
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaModelo\bin\Debug\CapaModelo.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista">
-      <HintPath>..\..\..\..\..\..\..\..\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -222,6 +228,9 @@
       <Project>{d89cfdc0-9e9f-4b5a-bd77-a74e3227266a}</Project>
       <Name>CapaModelo_SisB</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
