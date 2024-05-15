@@ -35,7 +35,7 @@
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
     </Reference>
     <Reference Include="CapaVista">
-      <HintPath>..\..\..\..\..\..\..\..\Reporteador\proyectoads22023\Codigo\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Release\CapaVista.dll</HintPath>
     </Reference>
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -135,6 +135,12 @@
     <Compile Include="Mantenimiento_Tipo_Transaccion.Designer.cs">
       <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrototipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrototipo.designer.cs">
+      <DependentUpon>MenuPrototipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     <EmbeddedResource Include="Mantenimiento_Tipo_Transaccion.resx">
       <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrototipo.resx">
+      <DependentUpon>MenuPrototipo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +231,9 @@
       <Project>{d89cfdc0-9e9f-4b5a-bd77-a74e3227266a}</Project>
       <Name>CapaModelo_SisB</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\banco %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

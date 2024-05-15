@@ -53,6 +53,7 @@ namespace Vista_PrototipoMenu
             this.button8 = new System.Windows.Forms.Button();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.panelayuda = new System.Windows.Forms.Panel();
+            this.btn_mant_tipo_trans = new System.Windows.Forms.Button();
             this.btn_mant_transaccion = new System.Windows.Forms.Button();
             this.btn_mant_tipo_tarjeta = new System.Windows.Forms.Button();
             this.btn_mant_tarjeta = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_mant_tipo_trans = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -111,7 +111,7 @@ namespace Vista_PrototipoMenu
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::Vista_PrototipoMenu.Properties.Resources.banco__1_;
+            this.pictureBox1.Image = global::CapaVista_SisB.Properties.Resources.banco__1_;
             this.pictureBox1.Location = new System.Drawing.Point(24, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 113);
@@ -448,6 +448,22 @@ namespace Vista_PrototipoMenu
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
             // 
+            // btn_mant_tipo_trans
+            // 
+            this.btn_mant_tipo_trans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_tipo_trans.FlatAppearance.BorderSize = 0;
+            this.btn_mant_tipo_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_tipo_trans.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_tipo_trans.Location = new System.Drawing.Point(0, 408);
+            this.btn_mant_tipo_trans.Name = "btn_mant_tipo_trans";
+            this.btn_mant_tipo_trans.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_tipo_trans.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_tipo_trans.TabIndex = 17;
+            this.btn_mant_tipo_trans.Text = "MANTENIMIENTO TIPO TRANSACCION";
+            this.btn_mant_tipo_trans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_tipo_trans.UseVisualStyleBackColor = true;
+            this.btn_mant_tipo_trans.Click += new System.EventHandler(this.btn_mant_tipo_trans_Click);
+            // 
             // btn_mant_transaccion
             // 
             this.btn_mant_transaccion.Dock = System.Windows.Forms.DockStyle.Top;
@@ -636,22 +652,6 @@ namespace Vista_PrototipoMenu
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // btn_mant_tipo_trans
-            // 
-            this.btn_mant_tipo_trans.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_mant_tipo_trans.FlatAppearance.BorderSize = 0;
-            this.btn_mant_tipo_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_mant_tipo_trans.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_mant_tipo_trans.Location = new System.Drawing.Point(0, 408);
-            this.btn_mant_tipo_trans.Name = "btn_mant_tipo_trans";
-            this.btn_mant_tipo_trans.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btn_mant_tipo_trans.Size = new System.Drawing.Size(415, 51);
-            this.btn_mant_tipo_trans.TabIndex = 17;
-            this.btn_mant_tipo_trans.Text = "MANTENIMIENTO TIPO TRANSACCION";
-            this.btn_mant_tipo_trans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_mant_tipo_trans.UseVisualStyleBackColor = true;
-            this.btn_mant_tipo_trans.Click += new System.EventHandler(this.btn_mant_tipo_trans_Click);
             // 
             // MenuPrototipo
             // 
