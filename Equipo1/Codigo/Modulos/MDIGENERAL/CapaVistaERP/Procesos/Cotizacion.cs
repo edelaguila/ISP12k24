@@ -35,8 +35,8 @@ namespace CapaVistaERP.Procesos
 
         private void obtIDCoti()
         {
-            string idcoti = cn.ObtenerUltimoIdCoti();
-            if (idcoti == "No hay cotizaciones registradas.")
+            string idcoti = cn.ObtenerUltimoDato("No_Cotizacion", "tbl_cotizaciones", "No_Cotizacion");
+            if (idcoti == "No hay dato registrado")
             {
                 idcoti = "0";
                 lblNoCoti.Text = idcoti;
@@ -196,6 +196,7 @@ namespace CapaVistaERP.Procesos
             string direccion_cl = txt_direccion_cl.Text;
             string correo_cl = txt_correo_cl.Text;
             string telefono_cl = txt_telefono_cl.Text;
+            string Solicitud = "Cotizacion";
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
             MessageBox.Show("Datos Guardados prosiga con su cotizacion");
@@ -207,7 +208,7 @@ namespace CapaVistaERP.Procesos
             string fechaini = dateTimePicker1.Text;
             string fechafin=dateTimePicker2.Text;
 
-            cn.InsertarCoti(no_coti, fechaini, fechafin);
+            cn.InsertarCoti(no_coti, fechaini, fechafin, Solicitud);
             MessageBox.Show("Cotizacion Guardada");
             if (string.IsNullOrEmpty(label16.Text))
             {
@@ -263,6 +264,11 @@ namespace CapaVistaERP.Procesos
             {
                 MessageBox.Show("Seleccione una fila valida para eliminar");
             }
+        }
+
+        private void lblNoCoti_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

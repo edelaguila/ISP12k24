@@ -31,11 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
+    </Reference>
     <Reference Include="CapaControlador_SisB">
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
     </Reference>
+    <Reference Include="CapaModelo">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaModelo\bin\Debug\CapaModelo.dll</HintPath>
+    </Reference>
     <Reference Include="CapaVista">
+<<<<<<< HEAD
       <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Release\CapaVista.dll</HintPath>
+=======
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
+>>>>>>> ecfa87fd06fa2a66c785ef7413aaaeb05befa92d
     </Reference>
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -233,7 +243,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="img\banco %281%29.png" />
+=======
+    <WCFMetadata Include="Connected Services\" />
+>>>>>>> ecfa87fd06fa2a66c785ef7413aaaeb05befa92d
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

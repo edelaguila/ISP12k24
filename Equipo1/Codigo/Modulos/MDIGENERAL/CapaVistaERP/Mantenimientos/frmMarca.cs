@@ -15,7 +15,7 @@ namespace CapaVistaERP.Mantenimientos
         public frmMarca()
         {
             InitializeComponent();
-            this.navegador1.config("tbl_marcas", this, "8005");
+            this.navegador1.config("tbl_marcas", this, "8022");
         }
     }
 }

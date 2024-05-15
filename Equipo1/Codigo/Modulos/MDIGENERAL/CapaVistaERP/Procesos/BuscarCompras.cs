@@ -15,13 +15,15 @@ namespace CapaVistaERP.Procesos
     public partial class BuscarCompras : Form
     {
         private FacturaporPagar FacturaporPagar;
+        private FacturaporPagarModi FacturaporPagarModi;
         String tabla1 = "tbl_compras";
         Controlador cn = new Controlador();
-        public BuscarCompras(FacturaporPagar facturaporpagar)
+        public BuscarCompras(FacturaporPagar facturaporpagar, FacturaporPagarModi facturaporPagarModi)
         {
             InitializeComponent();
             actualizardatagridview();
             FacturaporPagar = facturaporpagar;
+            FacturaporPagarModi = facturaporPagarModi;
         }
         public void actualizardatagridview()
         {
@@ -37,7 +39,11 @@ namespace CapaVistaERP.Procesos
                 string idcompra = filaSeleccionada.Cells["id_EncComp"].Value.ToString();
                 string fechaV = filaSeleccionada.Cells["fechaVencimientoPago_EncComp"].Value.ToString();
                 string proveedorfact = filaSeleccionada.Cells["tbl_proveedor_id_prov"].Value.ToString();
-                FacturaporPagar.RecibirDatosDesdeBuscarOrdenes(idcompra, fechaV, proveedorfact);
+                string subtotalfact = filaSeleccionada.Cells["subTotal_EncComp"].Value.ToString();
+                string ivafact = filaSeleccionada.Cells["iva_EncComp"].Value.ToString();
+                string total = filaSeleccionada.Cells["totalOrden_EncComp"].Value.ToString();
+                FacturaporPagar.RecibirDatosDesdeBuscarOrdenes(idcompra, fechaV, proveedorfact, subtotalfact, ivafact, total);
+                FacturaporPagarModi.RecibirDatosDesdeBuscarCompras(idcompra, fechaV, proveedorfact, subtotalfact, ivafact, total);
                 this.Close();
             }
             else

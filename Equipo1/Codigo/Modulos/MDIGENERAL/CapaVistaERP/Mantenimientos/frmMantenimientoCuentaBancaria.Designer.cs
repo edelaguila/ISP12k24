@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.txt_moneda = new System.Windows.Forms.TextBox();
             this.cb_moneda = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -51,16 +50,9 @@ namespace CapaVistaERP.Mantenimientos
             this.cb_banco = new System.Windows.Forms.ComboBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(57, 36);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 0;
             // 
             // txt_moneda
             // 
@@ -275,11 +267,20 @@ namespace CapaVistaERP.Mantenimientos
             this.label1.TabIndex = 23;
             this.label1.Text = "Nombre de la cuenta";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(61, 34);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 44;
+            // 
             // frmMantenimientoCuentaBancaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1105, 612);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_moneda);
             this.Controls.Add(this.cb_moneda);
             this.Controls.Add(this.label8);
@@ -301,9 +302,8 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.cb_banco);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmMantenimientoCuentaBancaria";
-            this.Text = "frmMantenimientoCuentaBancaria";
+            this.Text = "8031: frmMantenimientoCuentaBancaria";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -311,8 +311,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.TextBox txt_moneda;
         private System.Windows.Forms.ComboBox cb_moneda;
         private System.Windows.Forms.Label label8;
@@ -334,5 +332,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.ComboBox cb_banco;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Label label1;
+        private CapaVista.Navegador navegador1;
     }
 }
