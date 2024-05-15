@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CapaVista">
-      <HintPath>..\..\Reporteador\CapaVista\bin\Release\CapaVista.dll</HintPath>
+      <HintPath>..\..\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\..\..\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>

@@ -225,20 +225,14 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.AssemblyReference.cache
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Cheques.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCliente.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCuenta.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmDeposito.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmEstado.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmHistorial.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmMoneda.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmRetiro.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmTipoCuenta.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MantenimientoTransaccion.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Aplicaciones.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_AsignacionPerfilUsuario.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Estado.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Modulos.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Tarjeta.resources
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Usuarios.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.MovimientosBancarios.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.PagoServicios.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Properties.Resources.resources
@@ -390,3 +384,34 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equi
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ModelLayer.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Tipo_Tarjeta.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimiento_Tipo_Transaccion.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\Vista_PrototipoMenu.MenuPrototipo.resources
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\Navegador2.0.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.Shared.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\AxShockwaveFlashObjects.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\ShockwaveFlashObjects.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\stdole.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaModelo.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaVista.dll.config
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Mantenimientos.FrmCuentaAmiga.resources

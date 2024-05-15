@@ -65,6 +65,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -432,6 +433,7 @@ namespace Vista_PrototipoMenu
             // panelayuda
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelayuda.Controls.Add(this.button1);
             this.panelayuda.Controls.Add(this.btn_mant_tipo_trans);
             this.panelayuda.Controls.Add(this.btn_mant_transaccion);
             this.panelayuda.Controls.Add(this.btn_mant_tipo_tarjeta);
@@ -653,6 +655,22 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.button1.Location = new System.Drawing.Point(0, 459);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(415, 51);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "MANTENIMIENTO CUENTA AMIGA";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -714,5 +732,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btn_mant_tipo_tarjeta;
         private System.Windows.Forms.Button btn_mant_transaccion;
         private System.Windows.Forms.Button btn_mant_tipo_trans;
+        private System.Windows.Forms.Button button1;
     }
 }
