@@ -253,5 +253,13 @@ namespace Vista_PrototipoMenu
             form.Show();
             hideSubMenu();
         }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimientos.FrmCuentaAmiga form = new CapaVista_SisB.Mantenimientos.FrmCuentaAmiga();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
     }
 }
