@@ -103,9 +103,15 @@ namespace CapaControladorERP
         }
 
         //David Carrillo
-        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura)
         {
-            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura);
+        }
+
+        //David Carrillo
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT)
+        {
+            sn.InsertarPagoFacXCobrar(noFactura,cliente, banco, concepto, monto_pago,extra_pago, fecha_pago, NIT);
         }
 
         //David Carrillo 0901-20-3201 

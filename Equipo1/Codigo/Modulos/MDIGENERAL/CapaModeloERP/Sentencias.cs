@@ -361,6 +361,44 @@ namespace CapaModeloERP
                 }
             }
         }
+        //David Carrillo
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_pagofact (noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@noFactura", noFactura);
+                                cmd.Parameters.AddWithValue("@cliente", cliente);
+                                cmd.Parameters.AddWithValue("@banco", banco);
+                                cmd.Parameters.AddWithValue("@concepto", concepto);
+                                cmd.Parameters.AddWithValue("@monto_pago", monto_pago);
+                                cmd.Parameters.AddWithValue("@extra_pago", extra_pago);
+                                cmd.Parameters.AddWithValue("@fecha_pago", fecha_pago);
+                                cmd.Parameters.AddWithValue("@NIT", NIT);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar el pago de la factura: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
         //David Carrillo 0901-20-3201
         public void ActCoti(int No_Cotizacion)
         {
@@ -441,7 +479,7 @@ namespace CapaModeloERP
         }
 
         //David Carrillo 0901-20-3201
-        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -451,7 +489,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente) VALUES ( ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura) VALUES ( ?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@total_facxcob", total_facxcob);
@@ -459,7 +497,7 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@estado_facxcob", estado_facxcob);
                                 cmd.Parameters.AddWithValue("@tbl_Ventas_detalle_id_ventas_det", tbl_Ventas_detalle_id_ventas_det);
                                 cmd.Parameters.AddWithValue("@tbl_Clientes_id_cliente", tbl_Clientes_id_cliente);
-
+                                cmd.Parameters.AddWithValue("@fecha_factura", fecha_factura);
                                 cmd.ExecuteNonQuery();
                             }
 

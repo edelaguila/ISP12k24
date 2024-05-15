@@ -31,6 +31,7 @@ namespace CapaVistaERP.Procesos
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_factura_cobrar));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_Pagar = new System.Windows.Forms.Button();
             this.txt_total = new System.Windows.Forms.TextBox();
             this.txt_iva = new System.Windows.Forms.TextBox();
             this.txt_subtotal = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@ namespace CapaVistaERP.Procesos
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_Pagar = new System.Windows.Forms.Button();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -54,7 +54,6 @@ namespace CapaVistaERP.Procesos
             this.label21 = new System.Windows.Forms.Label();
             this.txt_numfactura = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.btn_Buscar = new System.Windows.Forms.Button();
             this.txt_numcoti = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -69,6 +68,7 @@ namespace CapaVistaERP.Procesos
             this.label4 = new System.Windows.Forms.Label();
             this.txt_telefonocl = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btn_Buscar = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
@@ -93,6 +93,17 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.TabIndex = 44;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Totales";
+            // 
+            // btn_Pagar
+            // 
+            this.btn_Pagar.Location = new System.Drawing.Point(920, 41);
+            this.btn_Pagar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Pagar.Name = "btn_Pagar";
+            this.btn_Pagar.Size = new System.Drawing.Size(129, 76);
+            this.btn_Pagar.TabIndex = 17;
+            this.btn_Pagar.Text = "GUARDAR FACTURA";
+            this.btn_Pagar.UseVisualStyleBackColor = true;
+            this.btn_Pagar.Click += new System.EventHandler(this.btn_Pagar_Click);
             // 
             // txt_total
             // 
@@ -166,17 +177,6 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Detalle de la factura";
-            // 
-            // btn_Pagar
-            // 
-            this.btn_Pagar.Location = new System.Drawing.Point(920, 41);
-            this.btn_Pagar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Pagar.Name = "btn_Pagar";
-            this.btn_Pagar.Size = new System.Drawing.Size(129, 76);
-            this.btn_Pagar.TabIndex = 17;
-            this.btn_Pagar.Text = "GUARDAR FACTURA";
-            this.btn_Pagar.UseVisualStyleBackColor = true;
-            this.btn_Pagar.Click += new System.EventHandler(this.btn_Pagar_Click);
             // 
             // dgv_detalle
             // 
@@ -356,20 +356,6 @@ namespace CapaVistaERP.Procesos
             this.label20.TabIndex = 30;
             this.label20.Text = "Numero de factura";
             // 
-            // btn_Buscar
-            // 
-            this.btn_Buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
-            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar.Location = new System.Drawing.Point(490, 40);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(33, 28);
-            this.btn_Buscar.TabIndex = 21;
-            this.btn_Buscar.UseVisualStyleBackColor = false;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
-            // 
             // txt_numcoti
             // 
             this.txt_numcoti.Location = new System.Drawing.Point(286, 40);
@@ -377,6 +363,7 @@ namespace CapaVistaERP.Procesos
             this.txt_numcoti.Name = "txt_numcoti";
             this.txt_numcoti.Size = new System.Drawing.Size(237, 28);
             this.txt_numcoti.TabIndex = 9;
+            this.txt_numcoti.TextChanged += new System.EventHandler(this.txt_numcoti_TextChanged);
             // 
             // label1
             // 
@@ -388,6 +375,7 @@ namespace CapaVistaERP.Procesos
             this.label1.Size = new System.Drawing.Size(173, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Numero de Cotizacion";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label9
             // 
@@ -507,6 +495,20 @@ namespace CapaVistaERP.Procesos
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "Teléfono";
+            // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Buscar.BackgroundImage")));
+            this.btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Location = new System.Drawing.Point(490, 40);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(33, 28);
+            this.btn_Buscar.TabIndex = 21;
+            this.btn_Buscar.UseVisualStyleBackColor = false;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
             // 
             // frm_factura_cobrar
             // 
