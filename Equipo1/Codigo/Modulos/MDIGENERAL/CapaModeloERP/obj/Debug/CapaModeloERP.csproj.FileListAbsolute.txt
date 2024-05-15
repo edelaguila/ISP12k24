@@ -70,3 +70,27 @@ C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\M
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
 C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta (3)\71%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
+C:\Users\jimen\OneDrive\Escritorio\ProyectoMigracion_G1\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\bin\Debug\CapaModeloERP.pdb
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
+C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\81%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb

@@ -48,8 +48,8 @@ namespace CapaVistaERP.Procesos
             this.label17 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_idCliente = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -67,13 +67,18 @@ namespace CapaVistaERP.Procesos
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_nombre = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.txt_venta = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.data_products = new System.Windows.Forms.DataGridView();
+            this.data_cotizaciones = new System.Windows.Forms.DataGridView();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_products)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_cotizaciones)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -273,18 +278,9 @@ namespace CapaVistaERP.Procesos
             this.label9.TabIndex = 147;
             this.label9.Text = "Fecha Pedido";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(276, 711);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(875, 322);
-            this.dataGridView1.TabIndex = 148;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txt_idCliente);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button1);
@@ -302,7 +298,6 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.txt_nombre);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Location = new System.Drawing.Point(49, 375);
             this.groupBox1.Name = "groupBox1";
@@ -310,6 +305,16 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.TabIndex = 149;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // txt_idCliente
+            // 
+            this.txt_idCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_idCliente.Location = new System.Drawing.Point(331, 183);
+            this.txt_idCliente.Name = "txt_idCliente";
+            this.txt_idCliente.ReadOnly = true;
+            this.txt_idCliente.Size = new System.Drawing.Size(234, 34);
+            this.txt_idCliente.TabIndex = 152;
+            this.txt_idCliente.Tag = "";
             // 
             // dateTimePicker2
             // 
@@ -478,16 +483,6 @@ namespace CapaVistaERP.Procesos
             this.label23.TabIndex = 91;
             this.label23.Text = "No. Pedido";
             // 
-            // txt_nombre
-            // 
-            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(326, 180);
-            this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.ReadOnly = true;
-            this.txt_nombre.Size = new System.Drawing.Size(234, 34);
-            this.txt_nombre.TabIndex = 90;
-            this.txt_nombre.Tag = "emp_nombre";
-            // 
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -497,6 +492,16 @@ namespace CapaVistaERP.Procesos
             this.textBox10.TabIndex = 89;
             this.textBox10.Tag = "Pk_id_empleado";
             // 
+            // txt_nombre
+            // 
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(36, 858);
+            this.txt_nombre.Name = "txt_nombre";
+            this.txt_nombre.ReadOnly = true;
+            this.txt_nombre.Size = new System.Drawing.Size(73, 34);
+            this.txt_nombre.TabIndex = 90;
+            this.txt_nombre.Tag = "emp_nombre";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(1270, 478);
@@ -505,6 +510,7 @@ namespace CapaVistaERP.Procesos
             this.button2.TabIndex = 150;
             this.button2.Text = "Generar Pedido";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -515,29 +521,79 @@ namespace CapaVistaERP.Procesos
             this.button3.Text = "Limpiar";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // txt_venta
+            // 
+            this.txt_venta.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_venta.Location = new System.Drawing.Point(36, 913);
+            this.txt_venta.Name = "txt_venta";
+            this.txt_venta.ReadOnly = true;
+            this.txt_venta.Size = new System.Drawing.Size(61, 34);
+            this.txt_venta.TabIndex = 148;
+            this.txt_venta.Tag = "";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(26, 1009);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(62, 34);
+            this.textBox1.TabIndex = 148;
+            this.textBox1.Tag = "";
+            // 
+            // data_products
+            // 
+            this.data_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_products.Location = new System.Drawing.Point(784, 713);
+            this.data_products.Name = "data_products";
+            this.data_products.ReadOnly = true;
+            this.data_products.RowHeadersWidth = 51;
+            this.data_products.RowTemplate.Height = 24;
+            this.data_products.Size = new System.Drawing.Size(656, 330);
+            this.data_products.TabIndex = 153;
+            // 
+            // data_cotizaciones
+            // 
+            this.data_cotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_cotizaciones.Location = new System.Drawing.Point(122, 713);
+            this.data_cotizaciones.Name = "data_cotizaciones";
+            this.data_cotizaciones.ReadOnly = true;
+            this.data_cotizaciones.RowHeadersVisible = false;
+            this.data_cotizaciones.RowHeadersWidth = 51;
+            this.data_cotizaciones.RowTemplate.Height = 24;
+            this.data_cotizaciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.data_cotizaciones.Size = new System.Drawing.Size(656, 330);
+            this.data_cotizaciones.TabIndex = 152;
+            this.data_cotizaciones.Click += new System.EventHandler(this.data_cotizaciones_Click);
+            // 
             // frm_pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 1055);
+            this.Controls.Add(this.data_products);
+            this.Controls.Add(this.data_cotizaciones);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_venta);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_nombre);
             this.Name = "frm_pedidos";
             this.Text = "frm_pedidos";
             this.Load += new System.EventHandler(this.frm_pedidos_Load);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data_products)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_cotizaciones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -561,7 +617,6 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
@@ -586,5 +641,10 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txt_apellido_vendedor;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_venta;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_idCliente;
+        private System.Windows.Forms.DataGridView data_products;
+        private System.Windows.Forms.DataGridView data_cotizaciones;
     }
 }

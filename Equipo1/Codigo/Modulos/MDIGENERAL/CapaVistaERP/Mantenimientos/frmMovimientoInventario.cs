@@ -46,5 +46,15 @@ namespace CapaVistaERP.Mantenimientos
         {
             txt_Producto.Text = (cb_Producto.SelectedIndex + 1).ToString();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMovimientoInventario_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

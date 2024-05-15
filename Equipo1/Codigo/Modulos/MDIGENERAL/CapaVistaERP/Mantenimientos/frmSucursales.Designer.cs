@@ -29,7 +29,6 @@ namespace CapaVistaERP.Mantenimientos
         /// </summary>
         private void InitializeComponent()
         {
-            this.navegador1 = new CapaVista.Navegador();
             this.label6 = new System.Windows.Forms.Label();
             this.dgv_Sucursal = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,24 +41,17 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_DireccionSuc = new System.Windows.Forms.TextBox();
             this.txt_TelefonoSuc = new System.Windows.Forms.TextBox();
             this.txt_CorreoSuc = new System.Windows.Forms.TextBox();
+            this.navegador1 = new CapaVista.Navegador();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursal)).BeginInit();
             this.SuspendLayout();
-            // 
-            // navegador1
-            // 
-            this.navegador1.Location = new System.Drawing.Point(13, 13);
-            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
-            this.navegador1.Name = "navegador1";
-            this.navegador1.Size = new System.Drawing.Size(1001, 96);
-            this.navegador1.TabIndex = 33;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(323, 139);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(365, 29);
+            this.label6.Size = new System.Drawing.Size(304, 28);
             this.label6.TabIndex = 45;
             this.label6.Text = "REGISTRO DE SUCURSALES";
             // 
@@ -77,50 +69,50 @@ namespace CapaVistaERP.Mantenimientos
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(90, 214);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label1.Location = new System.Drawing.Point(83, 213);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 20);
+            this.label1.Size = new System.Drawing.Size(33, 21);
             this.label1.TabIndex = 47;
             this.label1.Text = "ID:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 267);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label2.Location = new System.Drawing.Point(41, 266);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(82, 21);
             this.label2.TabIndex = 48;
             this.label2.Text = "Nombre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(397, 214);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label3.Location = new System.Drawing.Point(390, 213);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 20);
+            this.label3.Size = new System.Drawing.Size(93, 21);
             this.label3.TabIndex = 49;
             this.label3.Text = "Dirección:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(405, 267);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label4.Location = new System.Drawing.Point(398, 266);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 20);
+            this.label4.Size = new System.Drawing.Size(85, 21);
             this.label4.TabIndex = 50;
             this.label4.Text = "Teléfono:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(728, 245);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.2F);
+            this.label5.Location = new System.Drawing.Point(721, 244);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 20);
+            this.label5.Size = new System.Drawing.Size(72, 21);
             this.label5.TabIndex = 51;
             this.label5.Text = "Correo:";
             // 
@@ -164,11 +156,20 @@ namespace CapaVistaERP.Mantenimientos
             this.txt_CorreoSuc.TabIndex = 56;
             this.txt_CorreoSuc.Tag = "correo_sucursal";
             // 
+            // navegador1
+            // 
+            this.navegador1.Location = new System.Drawing.Point(15, 26);
+            this.navegador1.Margin = new System.Windows.Forms.Padding(4);
+            this.navegador1.Name = "navegador1";
+            this.navegador1.Size = new System.Drawing.Size(1001, 96);
+            this.navegador1.TabIndex = 57;
+            // 
             // frmSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 521);
+            this.Controls.Add(this.navegador1);
             this.Controls.Add(this.txt_CorreoSuc);
             this.Controls.Add(this.txt_TelefonoSuc);
             this.Controls.Add(this.txt_DireccionSuc);
@@ -181,7 +182,6 @@ namespace CapaVistaERP.Mantenimientos
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_Sucursal);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.navegador1);
             this.Name = "frmSucursales";
             this.Text = "frmSucursales";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Sucursal)).EndInit();
@@ -191,8 +191,6 @@ namespace CapaVistaERP.Mantenimientos
         }
 
         #endregion
-
-        private CapaVista.Navegador navegador1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_Sucursal;
         private System.Windows.Forms.Label label1;
@@ -205,5 +203,6 @@ namespace CapaVistaERP.Mantenimientos
         private System.Windows.Forms.TextBox txt_DireccionSuc;
         private System.Windows.Forms.TextBox txt_TelefonoSuc;
         private System.Windows.Forms.TextBox txt_CorreoSuc;
+        private CapaVista.Navegador navegador1;
     }
 }

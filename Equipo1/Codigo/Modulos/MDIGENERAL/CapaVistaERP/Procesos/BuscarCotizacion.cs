@@ -25,7 +25,8 @@ namespace CapaVistaERP.Procesos
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {
             string coti = txt_NoCoti.Text;
-            DataTable cotizaciones = cn.Buscar("tbl_cotizaciones", "No_Cotizacion", coti);
+            //Metodo buscar creditos a Carlos Guzman
+            DataTable cotizaciones = cn.Buscar("vista_cotizaciones", "NoCotizacion", coti);
             DataTable detalleCoti = cn.Buscar("tbl_detalle_cotizacion", "tbl_cotizaciones_No_Cotizacion", coti);
 
             dataGridView1.Rows.Clear();
@@ -98,6 +99,14 @@ namespace CapaVistaERP.Procesos
                     dataGridView2.Rows.Add(rowData.ToArray());
                 }
             }
+        }
+
+        private void btn_Hacer_pedido_Click(object sender, EventArgs e)
+        {
+            int idCoti = Convert.ToInt32(txt_NoCoti.Text);
+
+            cn.ActCoti(idCoti);
+            MessageBox.Show("Pedido realizado");
         }
     }
 }

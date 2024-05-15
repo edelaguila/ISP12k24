@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.Odbc;
 using System.Security.Policy;
 using CapaModeloERP.clases;
+
 namespace CapaModeloERP
 {
     //David Carrillo  0901-20-3201 
@@ -29,7 +30,7 @@ namespace CapaModeloERP
            OdbcDataAdapter data = new OdbcDataAdapter(query, con.connection());
            return data;
         }
-        //Andrea Corado 0901-20-2841
+        //Andrea Corado    0901-20-2841
 
         public OdbcDataAdapter BuscarProv(string tabla, string columna, string dato, string columna2, string dato2, string columna3, string dato3)
         {
@@ -38,12 +39,71 @@ namespace CapaModeloERP
             return datos;
         }
 
-        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato)
+        public OdbcDataAdapter filtrarDatosp(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}';";
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}' AND {columna2} <> {dato2};";
             OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
             return datos;
         }
+
+        //Andrea Corado    0901-20-2841
+        public void guardarDatos(string idp,string fechamov,string totalmov,string nofact,string banmov,string tipomov,string numov,string conceptomov)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la primera tabla 
+                            string insertQuery1 = "INSERT INTO tbl_encabezadomovpro (id_prove,fecha_MovPro,total_MovPro) VALUES (?,?,?)";
+                            using (OdbcCommand cmd1 = new OdbcCommand(insertQuery1, connection, transaction))
+                            {
+                                cmd1.Parameters.AddWithValue("@id_prove", idp);
+                                cmd1.Parameters.AddWithValue("@fecha_MovPro", fechamov);
+                                cmd1.Parameters.AddWithValue("@itotal_MovPro", totalmov);
+                                cmd1.ExecuteNonQuery();
+                            }
+
+                            // Insertar en la segunda tabla 
+                            string insertQuery2 = "INSERT INTO tbl_detallemovpro (noFactura,banco_MovP,tipo_MovP,numero_MovP,concepto_MovP)VALUES (?,?,?,?,?)";
+                            using (OdbcCommand cmd2 = new OdbcCommand(insertQuery2, connection, transaction))
+                            {
+                                cmd2.Parameters.AddWithValue("@noFactura", nofact);
+                                cmd2.Parameters.AddWithValue("@banco_MovP", banmov);
+                                cmd2.Parameters.AddWithValue("@tipo_MovP", tipomov);
+                                cmd2.Parameters.AddWithValue("@numero_MovP", numov);
+                                cmd2.Parameters.AddWithValue("@concepto_MovP", conceptomov);
+                                cmd2.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar los datos: {ex.Message}");
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //Andrea Corado 0901-20-2841
+        public DataTable ActualizarDatos( string tabla, string columna,string dato1,string columna2, int igualA)
+        {
+            string consulta = $"UPDATE {tabla} SET {columna} = {dato1} WHERE {columna2} = {igualA};";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+
+            DataTable dt = new DataTable();
+            datos.Fill(dt);
+
+            return dt;
+        }
+
 
         //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
@@ -80,7 +140,7 @@ namespace CapaModeloERP
             }
         }
         //David Carrillo 0901-20-3201 
-        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti)
+        public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti, string Solicitud)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -90,13 +150,13 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti) VALUES (?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_cotizaciones (No_Cotizacion, fecha_coti, fechaFinal_coti,Solicitud) VALUES (?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
                                 cmd.Parameters.AddWithValue("@fecha_coti", fecha_coti);
                                 cmd.Parameters.AddWithValue("@fechaFinal_coti", fechaFinal_coti);
-
+                                cmd.Parameters.AddWithValue("@Solicitud",  Solicitud);
                                 cmd.ExecuteNonQuery();
                             }
 
@@ -112,6 +172,37 @@ namespace CapaModeloERP
             }
         }
 
+
+        public void INSVentasPedido(int id_vendedor, int tbl_detalle_cotizacion_id)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_ventaspedido (id_vendedor, tbl_cotizaciones_No_Cotizacion) VALUES (?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@id_vendedor", id_vendedor);
+                                cmd.Parameters.AddWithValue("@tbl_cotizaciones_No_Cotizacion", tbl_detalle_cotizacion_id);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al guardar el pedido: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
         //David Carrillo 0901-20-3201 
         public List<string> ComboFill(string columna, string tabla)
         {
@@ -201,8 +292,9 @@ namespace CapaModeloERP
                 return null; 
             }
         }
-        //David Carrillo 0901-20-3201 
-        public string ObtenerUltimoIdCoti()
+        //David Carrillo   0901-20-3201 
+       
+        public string ObtenerUltimoDato(string dato, string tabla, string dato2)
         {
             try
             {
@@ -213,7 +305,7 @@ namespace CapaModeloERP
                         connection.Open();
                     }
 
-                    using (OdbcCommand cmd = new OdbcCommand("SELECT No_Cotizacion FROM tbl_cotizaciones ORDER BY No_Cotizacion DESC LIMIT 1", connection))
+                    using (OdbcCommand cmd = new OdbcCommand($"SELECT {dato} FROM {tabla} ORDER BY {dato2} DESC LIMIT 1", connection))
                     {
                         object result = cmd.ExecuteScalar();
                         if (result != null)
@@ -223,7 +315,7 @@ namespace CapaModeloERP
                         }
                         else
                         {
-                            return "No hay cotizaciones registradas.";
+                            return $"No hay dato registrado";
                         }
                     }
                 }
@@ -254,7 +346,7 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
                                 cmd.Parameters.AddWithValue("@cod_producto", cod_producto);
                                 cmd.Parameters.AddWithValue("@total_detCoti", total_detCoti);
-
+                               
                                 cmd.ExecuteNonQuery();
                             }
 
@@ -264,6 +356,38 @@ namespace CapaModeloERP
                         {
                             transaction.Rollback();
                             Console.WriteLine($"Error al guardar el detalle de la cotización: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+        //David Carrillo 0901-20-3201
+        public void ActCoti(int No_Cotizacion)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string updateQuery = "UPDATE tbl_cotizaciones SET Solicitud = ? WHERE No_Cotizacion = ?";
+                            using (OdbcCommand cmd = new OdbcCommand(updateQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@Solicitud", "Pedido");
+                                cmd.Parameters.AddWithValue("@No_Cotizacion", No_Cotizacion);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                            
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al actualizar el detalle de la cotización: {ex.Message}");
                         }
                     }
                 }
@@ -314,6 +438,41 @@ namespace CapaModeloERP
             datos.Fill(dt);
 
             return dt; 
+        }
+
+        //David Carrillo 0901-20-3201
+        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente) VALUES ( ?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@total_facxcob", total_facxcob);
+                                cmd.Parameters.AddWithValue("@tiempoPago_facxcob", tiempoPago_facxcob);
+                                cmd.Parameters.AddWithValue("@estado_facxcob", estado_facxcob);
+                                cmd.Parameters.AddWithValue("@tbl_Ventas_detalle_id_ventas_det", tbl_Ventas_detalle_id_ventas_det);
+                                cmd.Parameters.AddWithValue("@tbl_Clientes_id_cliente", tbl_Clientes_id_cliente);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar factura: {ex.Message}");
+                        }
+                    }
+                }
+            }
         }
 
         // Otto Adrian Lopez Ventura
@@ -424,7 +583,21 @@ namespace CapaModeloERP
         public OdbcDataAdapter llenartablabitacoraMB(string tabla)// metodo  que obtinene el contenio de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
-            string sql = "SELECT * FROM " + tabla + "  ;";
+            //string sql = "SELECT * FROM " + tabla + "  ;";
+
+            string sql = "SELECT mb.id_movimientoBanco AS ID, " +
+             "cm.concepto_movimientoBanco AS Concepto, " +
+             "cb.nombre_empresa AS Cuenta, " +
+             "mb.fecha_movimientoBanco AS Fecha, " +
+             "mb.monto_movimientoBanco AS Monto, " +
+             "mb.efecto_movimientoBanco AS Efecto, " +
+             "mb.tipo_movimientoBanco AS Codigo_movimiento, " +
+             "mb.cuenta_movimientoBanco AS Codigo_de_cuenta " +
+             "FROM " + tabla + " mb " + // Agregamos un espacio después de tabla
+             "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
+             "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria";
+
+
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
             return dataTable;
         }
@@ -438,6 +611,56 @@ namespace CapaModeloERP
             datos.Fill(dt);
 
             return dt;
+        }
+
+        // carlos enrique guzman cabrera
+        public bool EliminarMovimiento(int idMovimiento)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_movimientoDeBancos WHERE id_movimientoBanco = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("idMovimiento", idMovimiento);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable ObtenerRegistrosPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtRegistros = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                //string consulta = "SELECT * FROM tbl_movimientoDeBancos WHERE fecha_movimientoBanco BETWEEN ? AND ? ORDER BY fecha_movimientoBanco DESC";
+
+                string consulta = "SELECT mb.id_movimientoBanco AS ID, " +
+                  "cm.concepto_movimientoBanco AS Concepto, " +
+                  "cb.nombre_empresa AS Cuenta, " +
+                  "mb.fecha_movimientoBanco AS Fecha, " +
+                  "mb.monto_movimientoBanco AS Monto, " +
+                  "mb.efecto_movimientoBanco AS Efecto, " +
+                  "mb.tipo_movimientoBanco AS Codigo_movimiento, " +
+                  "mb.cuenta_movimientoBanco AS Codigo_de_cuenta " +
+                  "FROM tbl_movimientoDeBancos mb " +
+                  "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
+                  "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria " +
+                  "WHERE mb.fecha_movimientoBanco BETWEEN ? AND ? " +
+                  "ORDER BY mb.fecha_movimientoBanco DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtRegistros);
+                }
+            }
+
+            return dtRegistros;
         }
 
         //Carol Chuy Modulo de Compras
@@ -460,6 +683,13 @@ namespace CapaModeloERP
             }
             catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo"); }
             return Campos;
+        }
+
+        public OdbcDataAdapter filtrarDatos(string tabla, string columna, string dato)
+        {
+            string consulta = $"SELECT * FROM {tabla} WHERE {columna} = '{dato}';";
+            OdbcDataAdapter datos = new OdbcDataAdapter(consulta, con.connection());
+            return datos;
         }
 
         //Carol Chuy Modulo de Compras
@@ -680,6 +910,25 @@ namespace CapaModeloERP
                 }
             }
         }
+        public OdbcDataAdapter llenartablatipodecambio(string tabla)
+        {
+            // Construye la consulta SQL para obtener los datos de la tabla tbl_tipocambio
+            string sql = "SELECT tc.id_tipo_cambio AS ID, " +
+                         "tc.moneda_origen AS 'Moneda Origen', " +
+                         "tc.moneda_destino AS 'Moneda Destino', " +
+                         "tc.cantidad AS 'Cantidad', " +
+                         "tc.valor_calculado AS 'Valor Calculado', " +
+                         "tc.total_calculado AS 'Total Calculado', " +
+                         "tc.fecha AS 'Fecha' " +
+                         "FROM " + tabla + " tc";
+
+            // Crea un objeto OdbcDataAdapter y le pasa la consulta SQL y la conexión
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+
+            // Retorna el objeto OdbcDataAdapter con los datos obtenidos
+            return dataTable;
+        }
+
 
         public decimal CalcularSaldoTotal()
         {
@@ -946,7 +1195,7 @@ namespace CapaModeloERP
             return proveedorData;
         }
         //Carol Chuy Modulo Compras
-        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, string entregara, double subtotal, double iva, double total, string notas, int codProv)
+        public void InsertarOrdenCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv)
         {
             using (OdbcConnection conn = con.connection())
             {
@@ -960,12 +1209,11 @@ namespace CapaModeloERP
                     try
                     {
                         // Se inserta la orden de compra
-                        cmd.CommandText = "INSERT INTO tbl_ordenescompra(id_OrdComp,fechaSolicitid_OrdComp,fechaEntrega_OrdComp,deptoSolicitante_OrdComp,entregar_a_OrdComp,subTotal_OrdComp,iva_OrdComp,totalOrden_OrdComp,notas_OrdComp,tbl_proveedor_id_prov) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                        cmd.CommandText = "INSERT INTO tbl_ordenescompra(id_OrdComp,fechaSolicitid_OrdComp,fechaEntrega_OrdComp,deptoSolicitante_OrdComp,subTotal_OrdComp,iva_OrdComp,totalOrden_OrdComp,notas_OrdComp,tbl_proveedor_id_prov) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?)";
                         cmd.Parameters.AddWithValue("@id_OrdComp", codigo);
                         cmd.Parameters.AddWithValue("@fechaSolicitid_OrdComp", fechasolicitud);
                         cmd.Parameters.AddWithValue("@fechaEntrega_OrdComp", fechaentrega);
                         cmd.Parameters.AddWithValue("@deptoSolicitante_OrdComp", depa);
-                        cmd.Parameters.AddWithValue("@entregar_a_OrdComp", entregara);
                         cmd.Parameters.AddWithValue("@subTotal_OrdComp", subtotal);
                         cmd.Parameters.AddWithValue("@iva_OrdComp", iva);
                         cmd.Parameters.AddWithValue("@totalOrden_OrdComp", total);
@@ -1062,6 +1310,7 @@ namespace CapaModeloERP
             }
         }
 
+        // Jimena Tobías - Logística
         public List<ProductoM> ObtenerProductos()
         {
             List<ProductoM> productos = new List<ProductoM>();
@@ -1094,6 +1343,7 @@ namespace CapaModeloERP
             return productos;
         }
 
+        // Jimena Tobías - Logística
         public List<Sucursal> ObtenerSucursales()
         {
             List<Sucursal> sucursales = new List<Sucursal>();
@@ -1123,6 +1373,7 @@ namespace CapaModeloERP
             return sucursales;
         }
 
+        // Jimena Tobías - Logística
         public void TrasladoProducto(int idOrigen, int idDestino, int idProducto, int cantidad)
         {
             using (OdbcConnection connection = con.connection())
@@ -1140,7 +1391,753 @@ namespace CapaModeloERP
             }
         }
 
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenPorID(int id)
+        {
+            DataTable ordenData = new DataTable();
 
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT fechaSolicitid_OrdComp, fechaEntrega_OrdComp,deptoSolicitante_OrdComp,tbl_proveedor_id_prov FROM tbl_ordenescompra WHERE id_OrdComp = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (OdbcDataAdapter adapter = new OdbcDataAdapter(cmd))
+                    {
+                        adapter.Fill(ordenData);
+                    }
+                }
+            }
+
+            return ordenData;
+        }
+        //Carol Chuy Compras
+        public void InsertarCompra(int codigo, string fechas, string fechae, string depa, double subtotal, double iva, double totalCompra, string notas, int codigoprov, int estadoCompra, string fechap, int codorden)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se inserta la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_compras(id_EncComp,fechaSolicitid_EncComp,fechaEntrega_OrdComp,deptoSolicitante_EncComp,subTotal_EncComp,iva_EncComp,totalOrden_EncComp,notas_EncComp,tbl_proveedor_id_prov,recibidoIgualSolicitado_EncComp,fechaVencimientoPago_EncComp,id_OrdComp) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?,?, ?, ?)";
+                        cmd.Parameters.AddWithValue("@id_EncComp", codigo);
+                        cmd.Parameters.AddWithValue("@fechaSolicitid_EncComp", fechas);
+                        cmd.Parameters.AddWithValue("@fechaEntrega_OrdComp", fechae);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante_EncComp", depa);
+                        cmd.Parameters.AddWithValue("@subTotal_EncComp", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_EncComp", iva);
+                        cmd.Parameters.AddWithValue("@totalOrden_EncComp", totalCompra);
+                        cmd.Parameters.AddWithValue("@notas_EncComp", notas);
+                        cmd.Parameters.AddWithValue("@tbl_proveedor_id_prov", codigoprov);
+                        cmd.Parameters.AddWithValue("@recibidoIgualSolicitado_EncComp", estadoCompra);
+                        cmd.Parameters.AddWithValue("@fechaVencimientoPago_EncComp", fechap);
+                        cmd.Parameters.AddWithValue("@id_OrdComp", codorden);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void InsertarDetalleCompra(int codDetalle, int cantidad, double totalfila, int idprod, int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se inserta el detalle de la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_detallecompras(id_detalleCompra,cantidad_compra_det,totalPorProducto_det,tbl_Producto_cod_producto,tbl_Encabezado_Compras_id_EncComp) VALUES (?,?, ?, ?, ?)";
+                        cmd.Parameters.AddWithValue("@id_detalleCompra", codDetalle);
+                        cmd.Parameters.AddWithValue("@cantidad_compra_det", cantidad);
+                        cmd.Parameters.AddWithValue("@totalPorProducto_det", totalfila);
+                        cmd.Parameters.AddWithValue("@tbl_Producto_cod_producto", idprod);
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar el detalle de la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void InsertarFactura(int codigo, string nombrep, string nitp, string fechaV, string fechaA, double subtotal, double iva, double totalCompra, int estado, string notas, int codcompra)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se inserta la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_facturaxpagar(NoFactura,nombreprov_facxpag,nitprov_facxpag,fechavenc_facxpag,fecha_abono,subtotal_facxpag,iva_facxpag,totalfac_facxpag,estado_facxpag,notas_facxpag,tbl_Encabezado_Compras_id_EncComp) VALUES (?,?, ?, ?, ?, ?, ?, ?, ?,?, ?)";
+                        cmd.Parameters.AddWithValue("@NoFactura", codigo);
+                        cmd.Parameters.AddWithValue("@nombreprov_facxpag", nombrep);
+                        cmd.Parameters.AddWithValue("@nitprov_facxpag", nitp);
+                        cmd.Parameters.AddWithValue("@fechavenc_facxpag", fechaV);
+                        cmd.Parameters.AddWithValue("@fecha_abono", fechaA);
+                        cmd.Parameters.AddWithValue("@subtotal_facxpag", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_facxpag", iva);
+                        cmd.Parameters.AddWithValue("@totalfac_facxpag", totalCompra);
+                        cmd.Parameters.AddWithValue("@estado_facxpag", estado);
+                        cmd.Parameters.AddWithValue("@notas_facxpag", notas);
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", codcompra);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void InsertarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se inserta el detalle de la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_detallefacturaxpagar(id_detalleFac,cantidad_detalleFac,totalPorProducto_detalleFac,tbl_facturaXPagar_NoFactura,tbl_Producto_cod_producto) VALUES (?,?, ?, ?, ?)";
+                        cmd.Parameters.AddWithValue("@id_detalleFac", codDetalle);
+                        cmd.Parameters.AddWithValue("@cantidad_detalleFac", cantidad);
+                        cmd.Parameters.AddWithValue("@totalPorProducto_detalleFac", totalfila);
+                        cmd.Parameters.AddWithValue("@tbl_facturaXPagar_NoFacturao", codigo);
+                        cmd.Parameters.AddWithValue("@tbl_Producto_cod_producto", idprod);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar el detalle de la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerFactPorID(int id)
+        {
+            DataTable ordenData = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT fechaVencimientoPago_EncComp FROM tbl_compras WHERE id_EncComp = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (OdbcDataAdapter adapter = new OdbcDataAdapter(cmd))
+                    {
+                        adapter.Fill(ordenData);
+                    }
+                }
+            }
+
+            return ordenData;
+
+
+
+
+        }
+        // DIego MArroquin 
+                              
+        public OdbcDataAdapter llenartablabitacoradispodiaria(string tabla)
+        {
+            // Construye la consulta SQL para obtener los datos de la tabla tbl_disponibilidaddiaria
+            string sql = "SELECT dd.id_disponibilidad AS ID, " +
+                         "cb.nombre_empresa AS Cuenta, " +
+                         "ba.nombre_banco AS Banco, " +
+                         "dd.saldo_disponible AS 'Saldo Disponible', " +
+                         "dd.saldo_consumido AS 'Saldo Consumido', " +
+                         "dd.saldo_actual AS 'Saldo Actual', " +
+                         "dd.fecha_DisponibilidadDiaria AS 'Fecha' " +
+                         "FROM " + tabla + " dd " +
+                         "INNER JOIN tbl_cuentaBancaria cb ON dd.id_cuentaDisponibilidad = cb.id_cuentaBancaria " +
+                         "INNER JOIN tbl_banco ba ON dd.id_bancoActual = ba.id_banco";
+
+            // Crea un objeto OdbcDataAdapter y le pasa la consulta SQL y la conexión
+            OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
+
+            // Retorna el objeto OdbcDataAdapter con los datos obtenidos
+            return dataTable;
+        }
+        public bool EliminarDisponibilidadDiaria(int idDisponibilidad)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_disponibilidaddiaria WHERE id_disponibilidad = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("idDisponibilidad", idDisponibilidad); // Usa el nombre correcto del parámetro
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerOrdenesCompraPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtOrdenesCompra = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT oc.id_OrdComp AS ID, " +
+                                  "oc.fechaSolicitid_OrdComp AS FechaSolicitud, " +
+                                  "oc.fechaEntrega_OrdComp AS FechaEntrega, " +
+                                  "oc.deptoSolicitante_OrdComp AS DepartamentoSolicitante, " +
+                                  "oc.subTotal_OrdComp AS SubTotal, " +
+                                  "oc.iva_OrdComp AS IVA, " +
+                                  "oc.totalOrden_OrdComp AS TotalOrden, " +
+                                  "oc.notas_OrdComp AS Notas, " +
+                                  "oc.tbl_proveedor_id_prov AS IDProveedor " +
+                                  "FROM tbl_ordenescompra oc " +
+                                  "WHERE oc.fechaSolicitid_OrdComp BETWEEN ? AND ? " +
+                                  "ORDER BY oc.fechaSolicitid_OrdComp DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtOrdenesCompra);
+                }
+            }
+
+            return dtOrdenesCompra;
+        }
+        // Carol Chuy Compras
+        public DataTable ObtenerComprasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtCompras = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT c.id_EncComp AS ID, " +
+                                  "c.fechaSolicitid_EncComp AS FechaSolicitud, " +
+                                  "c.fechaEntrega_OrdComp AS FechaEntrega, " +
+                                  "c.deptoSolicitante_EncComp AS DepartamentoSolicitante, " +
+                                  "c.subTotal_EncComp AS SubTotal, " +
+                                  "c.iva_EncComp AS IVA, " +
+                                  "c.totalOrden_EncComp AS TotalOrden, " +
+                                  "c.notas_EncComp AS Notas, " +
+                                  "c.tbl_proveedor_id_prov AS IDProveedor, " +
+                                  "c.recibidoIgualSolicitado_EncComp AS RecibidoIgualSolicitado, " +
+                                  "c.fechaVencimientoPago_EncComp AS FechaVencimientoPago, " +
+                                  "c.id_OrdComp AS IDOrdenCompra " +
+                                  "FROM tbl_compras c " +
+                                  "WHERE c.fechaSolicitid_EncComp BETWEEN ? AND ? " +
+                                  "ORDER BY c.fechaSolicitid_EncComp DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtCompras);
+                }
+            }
+
+            return dtCompras;
+        }
+        //Carol Chuy Compras
+        public DataTable ObtenerFacturasPorFecha(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtFacturas = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT f.NoFactura AS NoFactura, " +
+                                  "f.nombreprov_facxpag AS NombreProveedor, " +
+                                  "f.nitprov_facxpag AS NITProveedor, " +
+                                  "f.fechavenc_facxpag AS FechaVencimiento, " +
+                                  "f.fecha_abono AS FechaAbono, " +
+                                  "f.subtotal_facxpag AS Subtotal, " +
+                                  "f.iva_facxpag AS IVA, " +
+                                  "f.totalfac_facxpag AS TotalFactura, " +
+                                  "f.estado_facxpag AS Estado, " +
+                                  "f.notas_facxpag AS Notas, " +
+                                  "f.tbl_Encabezado_Compras_id_EncComp AS IDEncabezadoCompra " +
+                                  "FROM tbl_facturaxpagar f " +
+                                  "WHERE f.fecha_abono BETWEEN ? AND ? " +
+                                  "ORDER BY f.fecha_abono DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtFacturas);
+                }
+            }
+
+            return dtFacturas;
+        }
+        //Carol Chuy Compras
+        public void EliminarOrdenCompra(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_ordenescompra WHERE id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@id_OrdComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleOrdenCompra(int codigoOrden)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detalleordenescompra WHERE OrdenesCompra_id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@OrdenesCompra_id_OrdComp", codigoOrden);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarCompra(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_compras WHERE id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@id_EncComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleCompra(int codigoCompra)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detallecompras WHERE tbl_Encabezado_Compras_id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", codigoCompra);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarFactura(int codigo)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se elimina la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_facturaxpagar WHERE NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@NoFactura", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        //Carol Chuy Compras
+        public void EliminarDetalleFactura(int codigoFactura)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Se elimina el detalle de la orden de compra
+                        cmd.CommandText = "DELETE FROM tbl_detallefacturaxpagar WHERE tbl_facturaXPagar_NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@tbl_facturaXPagar_NoFactura", codigoFactura);
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al eliminar el detalle de la factura: " + ex.Message);
+                    }
+                }
+            }
+        }
+        public string ObtenerIdProd(string nit)
+        {
+            string nitr = string.Empty;
+            using (OdbcConnection conn = con.connection())
+            {
+                string query = "SELECT id_prov FROM tbl_proveedor WHERE nit_prov = " + nit + ";";
+                using (OdbcCommand cmd = new OdbcCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("nit_prov", nit);
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value)
+                    {
+                        nitr = result.ToString();
+                    }
+                }
+            }
+            return nitr;
+        }
+        public void ActualizarOrdenCompra(int idOrdenCompra, string fechaSolicitud, string fechaEntrega, string deptoSolicitante, double subtotal, double iva, double total, string notas, int idProveedor)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_ordenescompra SET fechaSolicitid_OrdComp = ?, fechaEntrega_OrdComp = ?, deptoSolicitante_OrdComp = ?, subTotal_OrdComp = ?, iva_OrdComp = ?, totalOrden_OrdComp = ?, notas_OrdComp = ?, tbl_proveedor_id_prov = ? WHERE id_OrdComp = ?";
+                        cmd.Parameters.AddWithValue("@fechaSolicitud", fechaSolicitud);
+                        cmd.Parameters.AddWithValue("@fechaEntrega", fechaEntrega);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante", deptoSolicitante);
+                        cmd.Parameters.AddWithValue("@subtotal", subtotal);
+                        cmd.Parameters.AddWithValue("@iva", iva);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@notas", notas);
+                        cmd.Parameters.AddWithValue("@idProveedor", idProveedor);
+                        cmd.Parameters.AddWithValue("@idOrdenCompra", idOrdenCompra);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleOrdenCompra(int codigodetalle, int idOrden, int cantidad, double total, int idprod)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detalleordenescompra SET cantidad_det = ?, totalProducto_det = ?, tbl_Producto_cod_producto = ? WHERE OrdenesCompra_id_OrdComp = ? AND id_detalle=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idOrden);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la orden de compra: AA" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarCompra(int codigo, string fechasolicitud, string fechaentrega, string depa, double subtotal, double iva, double total, string notas, int codProv, int recibidoigual, string fechav, int idorden)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_compras SET fechaSolicitid_EncComp = ?, fechaEntrega_OrdComp = ?, deptoSolicitante_EncComp = ?, subTotal_EncComp = ?, iva_EncComp = ?, totalOrden_EncComp = ?, notas_EncComp = ?, tbl_proveedor_id_prov = ?, recibidoIgualSolicitado_EncComp = ?,fechaVencimientoPago_EncComp = ?,id_OrdComp = ? WHERE id_EncComp = ?";
+                        cmd.Parameters.AddWithValue("@fechaSolicitid_EncComp", fechasolicitud);
+                        cmd.Parameters.AddWithValue("@fechaEntrega_OrdComp", fechaentrega);
+                        cmd.Parameters.AddWithValue("@deptoSolicitante_EncComp", depa);
+                        cmd.Parameters.AddWithValue("@subTotal_EncComp", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_EncComp", iva);
+                        cmd.Parameters.AddWithValue("@totalOrden_EncComp", total);
+                        cmd.Parameters.AddWithValue("@notas_EncComp", notas);
+                        cmd.Parameters.AddWithValue("@tbl_proveedor_id_prov", codProv);
+                        cmd.Parameters.AddWithValue("@recibidoIgualSolicitado_EncComp", recibidoigual);
+                        cmd.Parameters.AddWithValue("@fechaVencimientoPago_EncComp", fechav);
+                        cmd.Parameters.AddWithValue("@id_OrdComp", idorden);
+                        cmd.Parameters.AddWithValue("@id_EncComp", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la de compra: MAL ENCABEZADO" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleCompra(int codigodetalle, int cantidad, double total, int idprod, int idCompra)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detallecompras SET cantidad_compra_det = ?, totalPorProducto_det = ?, tbl_Producto_cod_producto = ? WHERE tbl_Encabezado_Compras_id_EncComp = ? AND id_detalleCompra=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idCompra);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la compra: DETALLE" + ex.Message);
+                    }
+                }
+            }
+        }
+
+        public void ActualizarFactura(int codigo, string nomprov, string nitprov, string fechav, string fechaa, double subtotal, double iva, double total, string notas, int idcomp)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Actualizar la orden de compra
+                        cmd.CommandText = "UPDATE tbl_facturaxpagar SET nombreprov_facxpag = ?, nitprov_facxpag = ?, fechavenc_facxpag = ?,fecha_abono = ?, subtotal_facxpag = ?, iva_facxpag = ?, totalfac_facxpag = ?, notas_facxpag = ?, tbl_Encabezado_Compras_id_EncComp = ? WHERE NoFactura = ?";
+                        cmd.Parameters.AddWithValue("@nombreprov_facxpag", nomprov);
+                        cmd.Parameters.AddWithValue("@nitprov_facxpag", nitprov);
+                        cmd.Parameters.AddWithValue("@fechavenc_facxpag", fechav);
+                        cmd.Parameters.AddWithValue("@fecha_abono", fechaa);
+                        cmd.Parameters.AddWithValue("@subtotal_facxpag", subtotal);
+                        cmd.Parameters.AddWithValue("@iva_facxpag", iva);
+                        cmd.Parameters.AddWithValue("@totalfac_facxpag", total);
+                        cmd.Parameters.AddWithValue("@notas_facxpag", notas);
+                        cmd.Parameters.AddWithValue("@tbl_Encabezado_Compras_id_EncComp", idcomp);
+                        cmd.Parameters.AddWithValue("@NoFactura", codigo);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar la factura: MAL ENCABEZADO" + ex.Message);
+                    }
+                }
+            }
+        }
+        public void ActualizarDetalleFactura(int codigodetalle, int cantidad, double total, int idFactura, int idprod)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Iniciar una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        // Crea el comando SQL de actualización
+                        cmd.CommandText = "UPDATE tbl_detallefacturaxpagar SET cantidad_detalleFac = ?, totalPorProducto_detalleFac = ?, tbl_Producto_cod_producto = ? WHERE tbl_facturaXPagar_NoFactura = ? AND id_detalleFac=?";
+
+                        // Asigna los parámetros de la consulta
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@total", total);
+                        cmd.Parameters.AddWithValue("@producto", idprod);
+                        cmd.Parameters.AddWithValue("@idOrden", idFactura);
+                        cmd.Parameters.AddWithValue("@idDetalle", codigodetalle);
+                        cmd.ExecuteNonQuery();
+
+                        // Confirmar la transacción
+                        transaction.Commit();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        // Si ocurre un error, hacer rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al actualizar el detalle de la factura: DETALLE" + ex.Message);
+                    }
+                }
+            }
+        }
+
+
+        public DataTable selectTable(string table, string query = "")
+        {
+            string sql = query.Equals("") ? "select * from " + table : query;
+            OdbcDataAdapter adapter = new OdbcDataAdapter(sql, this.con.connection());
+            DataTable tbl = new DataTable();
+            adapter.Fill(tbl);
+            return tbl;
+        }
 
 
 
