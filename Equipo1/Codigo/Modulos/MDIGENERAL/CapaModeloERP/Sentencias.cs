@@ -599,6 +599,28 @@ namespace CapaModeloERP
 
 
         }
+
+        public bool ActualizarC(string tabla, Dictionary<string, object> valores, string condicion)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string setClause = string.Join(", ", valores.Keys.Select(key => $"{key} = ?"));
+                string consulta = $"UPDATE {tabla} SET {setClause} WHERE {condicion}";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    foreach (var kvp in valores)
+                    {
+                        cmd.Parameters.AddWithValue(kvp.Key, kvp.Value);
+                    }
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+
         // carlos enrique modulo bancos
         public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
         {
@@ -617,28 +639,18 @@ namespace CapaModeloERP
                 }
             }
         }
+
         // carlos enrique guzman cabrera
-        public OdbcDataAdapter llenartablabitacoraMB(string tabla)// metodo  que obtinene el contenio de una tabla
+        public OdbcDataAdapter llenartablabitacoraMB(string consulta)// metodo  que obtinene el contenio de una tabla
         {
             //string para almacenar los campos de OBTENERCAMPOS y utilizar el 1ro
             //string sql = "SELECT * FROM " + tabla + "  ;";
-
-            string sql = "SELECT mb.id_movimientoBanco AS ID, " +
-             "cm.concepto_movimientoBanco AS Concepto, " +
-             "cb.nombre_empresa AS Cuenta, " +
-             "mb.fecha_movimientoBanco AS Fecha, " +
-             "mb.monto_movimientoBanco AS Monto, " +
-             "mb.efecto_movimientoBanco AS Efecto, " +
-             "mb.tipo_movimientoBanco AS Codigo_movimiento, " +
-             "mb.cuenta_movimientoBanco AS Codigo_de_cuenta " +
-             "FROM " + tabla + " mb " + // Agregamos un espacio después de tabla
-             "INNER JOIN tbl_conceptoMovimientoDeBancos cm ON mb.tipo_movimientoBanco = cm.id_conceptoMovimiento " +
-             "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria";
-
+            string sql = consulta;
 
             OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, con.connection());
             return dataTable;
         }
+
         // carlos enrique guzman cabrera
         public DataTable BuscarMB(string strfiltro)
         {
@@ -667,6 +679,21 @@ namespace CapaModeloERP
         }
 
         // carlos enrique guzman cabrera
+        public bool EliminarRegistroAO(int idRegistro)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_autorizacionordenescompra WHERE id_numeroDeAutorizacion = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id_numeroDeAutorizacion", idRegistro);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        // carlos enrique guzman cabrera
         public DataTable ObtenerRegistrosPorFecha(DateTime fechaInicio, DateTime fechaFin)
         {
             DataTable dtRegistros = new DataTable();
@@ -688,6 +715,42 @@ namespace CapaModeloERP
                   "INNER JOIN tbl_cuentaBancaria cb ON mb.cuenta_movimientoBanco = cb.id_cuentaBancaria " +
                   "WHERE mb.fecha_movimientoBanco BETWEEN ? AND ? " +
                   "ORDER BY mb.fecha_movimientoBanco DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaInicio", fechaInicio);
+                    cmd.Parameters.AddWithValue("fechaFin", fechaFin);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtRegistros);
+                }
+            }
+
+            return dtRegistros;
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable ObtenerRegistrosPorFechaAO(DateTime fechaInicio, DateTime fechaFin)
+        {
+            DataTable dtRegistros = new DataTable();
+
+            using (OdbcConnection conn = con.connection())
+            {
+                //string consulta = "SELECT * FROM tbl_movimientoDeBancos WHERE fecha_movimientoBanco BETWEEN ? AND ? ORDER BY fecha_movimientoBanco DESC";
+
+                string consulta = "SELECT ao.id_numeroDeAutorizacion AS ID, " +
+                   "ao.tbl_OrdenesCompra_id_OrdComp AS Codigo_orden, " +
+                   "ao.estadoOrden AS Estado, " +
+                   "ao.conceptoDeAutorizacion AS Observaciones, " +
+                   "ao.fechaAutorizacion AS Fecha, " +
+                   "ao.subTotal AS Subtotal, " +
+                   "ao.iva AS IVA, " +
+                   "ao.totalOrden AS Total, " +
+                   "cb.nombre_empresa AS Cuenta_asociada " +
+                   "FROM tbl_AutorizacionOrdenesCompra ao " +
+                   "INNER JOIN tbl_cuentaBancaria cb ON ao.cuentaAsociada = cb.id_cuentaBancaria " + // Aquí añadí un espacio después de 'id_cuentaBancaria'
+                   "WHERE ao.fechaAutorizacion BETWEEN ? AND ? " + // Corregí el WHERE clause
+                   "ORDER BY ao.fechaAutorizacion DESC"; // Corregí el ORDER BY clause
+
 
                 using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
                 {

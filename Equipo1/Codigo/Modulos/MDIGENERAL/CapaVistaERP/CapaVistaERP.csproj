@@ -244,11 +244,17 @@
     <Compile Include="Procesos\FacturaporPagarModi.Designer.cs">
       <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
+    <Compile Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.Designer.cs">
-      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    <Compile Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.Designer.cs">
+      <DependentUpon>frmBitacoraAutorizacionOrdenesCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBanco.Designer.cs">
+      <DependentUpon>frmBitacoraMovimientoDeBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\frmMovimientoDeBancos.cs">
       <SubType>Form</SubType>
@@ -459,8 +465,11 @@
     <EmbeddedResource Include="Procesos\FacturaporPagarModi.resx">
       <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
-      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    <EmbeddedResource Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.resx">
+      <DependentUpon>frmBitacoraAutorizacionOrdenesCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBanco.resx">
+      <DependentUpon>frmBitacoraMovimientoDeBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
       <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>
