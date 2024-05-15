@@ -17,7 +17,7 @@ namespace CapaVistaERP.Procesos
     {
         private CajaProveedor OperacionesProv;
         private Controlador cn;
-        string tabla1 = "vista_operacionesprov";
+        string tabla1 = "tbl_proveedor";
         
         public MovimientoProveedores(CajaProveedor operacionesProv)
         {

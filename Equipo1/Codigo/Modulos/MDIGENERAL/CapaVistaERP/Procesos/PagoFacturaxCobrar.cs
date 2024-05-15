@@ -8,87 +8,54 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CapaVistaERP.Procesos
 {
-    //David Carrillo 0901-20-3201
-    public partial class frm_factura_cobrar : Form
+
+    public partial class PagoFacturaxCobrar : Form
     {
-        Controlador cn=new Controlador();
-        public frm_factura_cobrar()
+        Controlador cn = new Controlador();
+        public PagoFacturaxCobrar()
         {
             InitializeComponent();
-            dgvFactura.Format = DateTimePickerFormat.Custom;
-            dgvFactura.CustomFormat = "yyyy-MM-dd";
-            dgvVencimiento.Format = DateTimePickerFormat.Custom;
-            dgvVencimiento.CustomFormat = "yyyy-MM-dd";
-            diasEnpagar();
-
-
-            /* DateTime fechaSeleccionada = dgvFactura.Value;
-             DateTime nuevaFecha = fechaSeleccionada.AddDays(15);
-             dgvVencimiento.Value = nuevaFecha;*/
-            cmb_diaspagar.SelectedIndexChanged += cmb_diaspagar_SelectedIndexChanged;
-
-
-            UltimaFact();
+            dt_fechaPago.Format = DateTimePickerFormat.Custom;
+            dt_fechaPago.CustomFormat = "dd/MM/yyy";
+            Combo();
         }
-
-
-        public void diasEnpagar()
+        public void Combo()
         {
-            cmb_diaspagar.Items.Add("7");
-            cmb_diaspagar.Items.Add("15");
-            cmb_diaspagar.Items.Add("22");
-        }
-
-
-        public void fechaVencimiento()
-        {
-            DateTime fechaSeleccionada = dgvFactura.Value;
-            int diasAPagar = 0;
-            if (int.TryParse(cmb_diaspagar.SelectedItem?.ToString(), out diasAPagar))
+            try
             {
-                DateTime nuevaFecha = fechaSeleccionada.AddDays(diasAPagar);
-                dgvVencimiento.Value = nuevaFecha;
+                List<string> producto = cn.ComboFill("nombre_banco", "tbl_banco");
+                cmb_banco.Items.Clear();
+                cmb_banco.Items.AddRange(producto.ToArray());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("error" + e);
+            }
+        }
+        private void cmb_banco_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txt_bancos.Text = cmb_banco.SelectedItem.ToString();
+        }
+        public void PagoExtra()
+        {
+            DateTime fecha1 = dgvVencimiento.Value;
+            DateTime fecha2 = dt_fechaPago.Value;
+
+            double total = Convert.ToDouble(txt_total.Text);
+
+            if (fecha1 < fecha2)
+            {
+                double pagoExtra = total * 0.15;
+                txt_pagoExtra.Text = pagoExtra.ToString("F2");
             }
             else
             {
-                MessageBox.Show("error");
+                txt_pagoExtra.Text = "0.00";
             }
         }
-        private void obtenerNoFact()
-        {
-            string ped= txt_numPedido.Text;
-            DataTable facno = cn.Buscar("tbl_facturaxcobrar", "tbl_Ventas_detalle_id_ventas_det", ped);
-            if (facno.Rows.Count > 0)
-            {
-
-                DataRow row = facno.Rows[0];
-               txt_numfactura.Text = row["NoFactura"].ToString();
-                MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
-            }
-
-        }
-        private void UltimaFact()
-        {
-            string idFact = cn.ObtenerUltimoDato("NoFactura", "tbl_facturaxcobrar", "NoFactura");
-            if (idFact == "No hay dato registrado")
-            {
-                idFact = "0";
-                txt_numfactura.Text = idFact;
-            }
-            else
-            {
-                int Fact= Convert.ToInt32(idFact) ;
-                int NoFact = Fact + 1;
-                Console.WriteLine("NFactura " + Fact);
-                txt_numfactura.Text = Fact.ToString();
-                Console.WriteLine("id ultima Factura " + idFact);
-            }
-        }
-
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
             int idcoti;
@@ -104,21 +71,14 @@ namespace CapaVistaERP.Procesos
 
         private void buscar(int idcoti)
         {
-           
+
             DataTable dt = cn.Buscar("tbl_ventaspedido", "tbl_cotizaciones_No_Cotizacion", idcoti.ToString());
-            
+
             if (dt.Rows.Count > 0)
             {
 
                 DataRow row = dt.Rows[0];
                 txt_numPedido.Text = row["id_ventas_ped"].ToString();
-                txt_vend.Text= row["id_vendedor"].ToString();
-                DataTable nombre_vend = cn.BuscarDato("nombre_vend", "tbl_vendedor", "id_vendedor", Convert.ToInt32(txt_vend.Text));
-                if (nombre_vend.Rows.Count > 0)
-                {
-                    txt_vend.Text = nombre_vend.Rows[0]["nombre_vend"].ToString();
-                }
-              
             }
             else
             {
@@ -128,18 +88,21 @@ namespace CapaVistaERP.Procesos
 
             string ped = txt_numPedido.Text;
             MessageBox.Show("pedido " + ped);
-            /* DataTable facno = cn.Buscar("tbl_facturaxcobrar", "tbl_Ventas_detalle_id_ventas_det", ped);
+
+            DataTable facno = cn.Buscar("tbl_facturaxcobrar", "tbl_Ventas_detalle_id_ventas_det", ped);
              if (facno.Rows.Count > 0)
              {
 
                  DataRow row = facno.Rows[0];
                  txt_numfactura.Text = row["NoFactura"].ToString();
-                 MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
+                 dgvFactura.Text = row["fecha_factura"].ToString();
+                dgvVencimiento.Text = row["tiempoPago_facxcob"].ToString();
+                MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
              }
              else
              {
                  MessageBox.Show("nnno hay nada");
-             }*/
+             }
 
 
             /*
@@ -173,7 +136,7 @@ namespace CapaVistaERP.Procesos
 
                 DataRow row = detalleCoti.Rows[0];
                 txt_total.Text = row["total_detCoti"].ToString();
-                txt_facturaestado.Text = "Por Pagar";
+               // txt_facturaestado.Text = "Por Pagar";
                 txt_nombrecl.Text = row["tbl_Clientes_id_cliente"].ToString();
                 txt_idcliente.Text = txt_nombrecl.Text;
                 DataTable nombre_cl = cn.BuscarDato("nombre_cl", "tbl_clientes", "id_cliente", Convert.ToInt32(txt_nombrecl.Text));
@@ -197,11 +160,7 @@ namespace CapaVistaERP.Procesos
                 DataRow row = dt3.Rows[0];
                 txt_apellidocl.Text = row["apellido_cl"].ToString();
                 txt_direccioncl.Text = row["direccion_cl"].ToString();
-                txt_coreocl.Text = row["correo_cl"].ToString();
-                txt_telefonocl.Text = row["telefono_cl"].ToString();
-
-               
-                
+                //txt_telefonocl.Text = row["telefono_cl"].ToString();
             }
             else
             {
@@ -251,7 +210,7 @@ namespace CapaVistaERP.Procesos
                                 int productId = Convert.ToInt32(row["tbl_producto_cod_producto"]);
 
                                 DataTable result = cn.BuscarDato("precioUnitario_prod", "tbl_producto", "cod_producto", productId);
-                                double precioUnitario = 0.0; 
+                                double precioUnitario = 0.0;
 
                                 if (result.Rows.Count > 0)
                                 {
@@ -277,59 +236,30 @@ namespace CapaVistaERP.Procesos
                             {
                                 rowData.Add(row[column.ColumnName]);
                             }
-             
+
 
                         }
                     }
                     dgv_detalle.Rows.Add(rowData.ToArray());
                 }
             }
-
-           
-        }
-
-        private void btn_Pagar_Click(object sender, EventArgs e)
-        {
-            double total = Convert.ToDouble(txt_total.Text);
-            string fechaFact = dgvFactura.Text;
-            string limite = dgvVencimiento.Text;
-            string estado = txt_facturaestado.Text;
-            int idVenta = Convert.ToInt32(txt_numPedido.Text);
-            int cl = Convert.ToInt32(txt_idcliente.Text);
-
-            cn.InsertarFactura(total, limite, estado, idVenta, cl, fechaFact);
-
-            MessageBox.Show("Factura Guardada con exito");
-
-            DialogResult result = MessageBox.Show("¿Desea pagar su factura?", "Confirmación de Pago", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                
-                PagoFacturaxCobrar form1 = new PagoFacturaxCobrar();
-                form1.Show();
-                
-            }
-            else if (result == DialogResult.No)
-            {
-                
-                this.Close(); 
-            }
-        }
-
-        private void cmb_diaspagar_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            fechaVencimiento();
-        }
-
-        private void txt_numcoti_TextChanged(object sender, EventArgs e)
-        {
+            PagoExtra();
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btn_pagar_Click(object sender, EventArgs e)
         {
+            string noFactura=txt_numfactura.Text;
+            int cliente = Convert.ToInt32(txt_idcliente.Text);
+            string banco=txt_bancos.Text;
+            string concepto= txt_concepto.Text;
+            double monto_pago=Convert.ToDouble(txt_aPagar.Text);
+            double extra_pago=Convert.ToDouble(txt_pagoExtra.Text);
+            string fecha_pago=dt_fechaPago.Text;
+            string NIT=txt_nit.Text;
 
+
+            cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT);
         }
     }
 }

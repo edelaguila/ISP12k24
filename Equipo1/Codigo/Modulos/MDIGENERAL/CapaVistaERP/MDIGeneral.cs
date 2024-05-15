@@ -323,7 +323,8 @@ namespace CapaVistaERP
 
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.GestionCotizaciones());
+            // Abrir(new Procesos.GestionCotizaciones());
+            Abrir(new Procesos.BuscarCotizacion());
             hideSubMenu();
         }
 
@@ -348,6 +349,12 @@ namespace CapaVistaERP
         private void button28_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.tipodecombio());
+            hideSubMenu();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.PagoFacturaxCobrar());
             hideSubMenu();
         }
     }
