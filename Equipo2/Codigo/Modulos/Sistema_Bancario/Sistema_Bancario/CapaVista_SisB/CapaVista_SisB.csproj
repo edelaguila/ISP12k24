@@ -31,13 +31,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaControlador">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaControlador\bin\Debug\CapaControlador.dll</HintPath>
+    </Reference>
     <Reference Include="CapaControlador_SisB">
       <HintPath>..\CapaControlador_SisB\bin\Debug\CapaControlador_SisB.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaModelo">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaModelo\bin\Debug\CapaModelo.dll</HintPath>
+    </Reference>
+    <Reference Include="CapaVista">
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Navegador2.0.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Navegador2.0\Navegador2.0\bin\Debug\Navegador2.0.dll</HintPath>
     </Reference>
     <Reference Include="Seguridad_Controlador">
       <HintPath>C:\Program Files\UMG\Instalador General HSC\Seguridad_Controlador.dll</HintPath>
@@ -60,11 +69,11 @@
     <Compile Include="Cheques.Designer.cs">
       <DependentUpon>Cheques.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCuenta.cs">
+    <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCuenta.Designer.cs">
-      <DependentUpon>frmCuenta.cs</DependentUpon>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDeposito.cs">
       <SubType>Form</SubType>
@@ -72,17 +81,17 @@
     <Compile Include="frmDeposito.Designer.cs">
       <DependentUpon>frmDeposito.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEstado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEstado.Designer.cs">
-      <DependentUpon>frmEstado.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHistorial.Designer.cs">
       <DependentUpon>frmHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMoneda.Designer.cs">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
     </Compile>
     <Compile Include="frmRetiro.cs">
       <SubType>Form</SubType>
@@ -101,6 +110,36 @@
     </Compile>
     <Compile Include="MantenimientoTransaccion.Designer.cs">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Cuenta.Designer.cs">
+      <DependentUpon>Mantenimiento_Cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Estado.Designer.cs">
+      <DependentUpon>Mantenimiento_Estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Tarjeta.Designer.cs">
+      <DependentUpon>Mantenimiento_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Tarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Tarjeta.Designer.cs">
+      <DependentUpon>Mantenimiento_Tipo_Tarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Transaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento_Tipo_Transaccion.Designer.cs">
+      <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </Compile>
     <Compile Include="MovimientosBancarios.cs">
       <SubType>Form</SubType>
@@ -131,17 +170,17 @@
     <EmbeddedResource Include="Cheques.resx">
       <DependentUpon>Cheques.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCuenta.resx">
-      <DependentUpon>frmCuenta.cs</DependentUpon>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeposito.resx">
       <DependentUpon>frmDeposito.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmEstado.resx">
-      <DependentUpon>frmEstado.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmHistorial.resx">
       <DependentUpon>frmHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMoneda.resx">
+      <DependentUpon>frmMoneda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRetiro.resx">
       <DependentUpon>frmRetiro.cs</DependentUpon>
@@ -151,6 +190,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoTransaccion.resx">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Cuenta.resx">
+      <DependentUpon>Mantenimiento_Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Estado.resx">
+      <DependentUpon>Mantenimiento_Estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Tarjeta.resx">
+      <DependentUpon>Mantenimiento_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Tipo_Tarjeta.resx">
+      <DependentUpon>Mantenimiento_Tipo_Tarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento_Tipo_Transaccion.resx">
+      <DependentUpon>Mantenimiento_Tipo_Transaccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MovimientosBancarios.resx">
       <DependentUpon>MovimientosBancarios.cs</DependentUpon>
@@ -168,6 +222,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\qr-code.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaModelo_SisB\CapaModelo_SisB.csproj">
+      <Project>{d89cfdc0-9e9f-4b5a-bd77-a74e3227266a}</Project>
+      <Name>CapaModelo_SisB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

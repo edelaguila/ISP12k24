@@ -179,6 +179,7 @@ namespace Navegador2._0
             this.btn_imprimir.Text = "Imprimir";
             this.btn_imprimir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_imprimir.UseVisualStyleBackColor = false;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // btn_eliminar
             // 

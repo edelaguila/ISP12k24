@@ -80,6 +80,16 @@ namespace CapaModelo_SisB
             return null;
         }
 
+        public List<string> getSingleRowValues(string table)
+        {
+            OdbcDataReader reader = this._get(table);
+            List<string> rows = new List<string>();
+            while (reader.Read())
+            {
+                rows.Add(reader.GetString(1));
+            }
+            return rows;
+        }
 
     }
 }
