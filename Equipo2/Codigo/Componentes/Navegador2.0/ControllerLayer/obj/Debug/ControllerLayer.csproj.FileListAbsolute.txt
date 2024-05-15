@@ -28,3 +28,12 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Nav
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb
 =======
 >>>>>>> parent of 8f99553 (Integración de Mantenimientos al MDI)
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ControllerLayer.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ModelLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\bin\Debug\ModelLayer.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.AssemblyReference.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CoreCompileInputs.cache
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.csproj.CopyComplete
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ControllerLayer\obj\Debug\ControllerLayer.pdb

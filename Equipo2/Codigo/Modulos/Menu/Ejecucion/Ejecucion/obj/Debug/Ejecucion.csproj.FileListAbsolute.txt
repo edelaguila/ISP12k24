@@ -759,6 +759,7 @@ C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\E
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll.config
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
+<<<<<<< HEAD
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.dll
@@ -766,3 +767,12 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ej
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll.config
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
+=======
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll.config
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo.pdb
+>>>>>>> 2a05c230fbbe4843bc7d6d3a6b66b6c1c6fe8113

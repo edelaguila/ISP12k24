@@ -16,7 +16,7 @@ namespace CapaVista_SisB
     public partial class frmRetiro : Form
     {
         public Controlador cn = new Controlador();
-        public CapaControlador_SisB.Controlador ctrl;
+        public CapaControlador_SisB.AccountControler ctrl;
         AccountTransactions transaction;
         public frmRetiro()
         {
@@ -24,9 +24,9 @@ namespace CapaVista_SisB
             //Limpiando los textbox cuando cargue el form
             textBox3.Clear();
             txt_monto.Clear();
-            this.ctrl = new CapaControlador_SisB.Controlador();
+            this.ctrl = new CapaControlador_SisB.AccountControler();
             int accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
-            Cuenta account = this.ctrl.getCurrentAccount(accId);
+            Cuenta account = this.ctrl.getAccountsFromUser(accId)[0];
             transaction = new AccountTransactions(account.id, account.nombre, account.numero, account.saldo);
         }
 

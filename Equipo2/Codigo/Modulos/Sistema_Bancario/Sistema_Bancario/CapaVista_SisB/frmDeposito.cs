@@ -17,16 +17,16 @@ namespace CapaVista_SisB
     public partial class frmDeposito : Form
     {
         CapaControlador_SisB.WidgetHelper whelper;
-        CapaControlador_SisB.Controlador ctrl;
+        CapaControlador_SisB.AccountControler ctrl;
         public int accId;
         public AccountTransactions transaction;
         public frmDeposito()
         {
             InitializeComponent();
             this.whelper = new WidgetHelper();
-            this.ctrl = new CapaControlador_SisB.Controlador();
+            this.ctrl = new CapaControlador_SisB.AccountControler();
             accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
-            Cuenta account = this.ctrl.getCurrentAccount(accId);
+            Cuenta account = this.ctrl.getAccountsFromUser(accId)[0];
             transaction = new AccountTransactions(account.id, account.nombre, account.numero, account.saldo);
             this.fillCmb();
         }

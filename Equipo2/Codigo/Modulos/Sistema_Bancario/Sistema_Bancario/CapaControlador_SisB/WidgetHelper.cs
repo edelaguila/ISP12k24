@@ -29,18 +29,7 @@ namespace CapaControlador_SisB
         }
 
 
-        public void fillAccountsCmb(ComboBox cmb, int ID)
-        {
-            List<CuentaAmiga> accounts = this.sentence.getFriendAccount(ID);
-            if (accounts.Count > 0)
-            {
-                foreach (CuentaAmiga acc in accounts)
-                {
-                    cmb.Items.Add(acc.numero + "-" + acc.cliente);
-                }
-            }
-            return;
-        }
+       
 
 
 

@@ -498,12 +498,8 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\ModelLayer.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_MG2.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\eCryptography.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_PrototipoMenu.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaNav.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador_MG2.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo_MG2.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.Windows.Forms.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.Shared.dll
@@ -511,7 +507,6 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\b
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Modelo_Seguridad.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorVista.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_SisB.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorNav.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\AxShockwaveFlashObjects.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
@@ -528,7 +523,6 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\b
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_VistaConsultas.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Navegador2.0.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador_SisB.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloNav.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\ShockwaveFlashObjects.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.dll
@@ -541,17 +535,11 @@ D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\b
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Capa_Modelo.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\ModelLayer.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.dll
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_MG2.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaNav.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador_MG2.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo_MG2.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_SisB.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorNav.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorControlador.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Navegador2.0.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
-D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloNav.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.dll.config
@@ -807,3 +795,10 @@ C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\E
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
+D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
