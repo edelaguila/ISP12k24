@@ -9,18 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
     //Programado por: Carol Chuy
     public partial class Compras : Form
     {
-        private Controlador controller;
+        private CapaControladorERP.Controlador controller;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         int estadoCompra;
         public Compras(string idord, string fechaS, string fechaE, string solicitante, string proveedor)
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new CapaControladorERP.Controlador();
             llenarprod();
             controller.CargarOpcionesOrden(cmb_orden);
             cmb_igualsolicitado.Items.Add("Completa");
@@ -352,6 +354,7 @@ namespace CapaVistaERP.Procesos
                             }
 
                             MessageBox.Show("Compra registrada correctamente.");
+                            this.ctrl_seguridad.setBtitacora("8011", "Se ingresó una compra");
                             LimpiarCampos();
                         }
                         catch (Exception ex)

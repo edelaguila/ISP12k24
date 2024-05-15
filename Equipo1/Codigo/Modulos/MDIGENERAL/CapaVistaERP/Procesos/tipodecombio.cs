@@ -114,8 +114,12 @@ namespace CapaVistaERP.Procesos
             BuscarDetallemoneda();
         }
 
+
         private void btn_nueva_Click(object sender, EventArgs e)
         {
+
+
+
             string contenido1 = cantidad1.Text;
             string contenido2 = valor.Text;
 
@@ -180,9 +184,90 @@ namespace CapaVistaERP.Procesos
             actualizardatagriew();
         }
 
+        
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+
             BuscarDetallemoneda1();
+            // Obtener los valores seleccionados en los ComboBox
+            string monedaOrigen = cb_cuenta.SelectedItem?.ToString();
+            string monedaDestino = comboBox1.SelectedItem?.ToString();
+
+            // Verificar si los valores seleccionados son válidos
+            if (!string.IsNullOrEmpty(monedaOrigen) && !string.IsNullOrEmpty(monedaDestino))
+            {
+                // Realizar la búsqueda del detalle de la moneda de origen
+              
+
+                // Asignar automáticamente el valor según las selecciones de moneda
+                if (monedaOrigen == "Dólar" && monedaDestino == "Quetzales")
+                {
+                    // Asignar el valor 7.77 al TextBox "valor"
+                    valor.Text = "7.77";
+                }
+                else if (monedaOrigen == "Euros" && monedaDestino == "Quetzales")
+                {
+                    // Asignar el valor 8.41 al TextBox "valor"
+                    valor.Text = "8.41";
+                }
+                else if (monedaOrigen == "Quetzales" && monedaDestino == "Dólar")
+                {
+                    // Asignar el valor 0.13 al TextBox "valor"
+                    valor.Text = "0.13";
+                }
+                else if (monedaOrigen == "Quetzales" && monedaDestino == "Euros")
+                {
+                    // Asignar el valor 0.12 al TextBox "valor"
+                    valor.Text = "0.12";
+                }
+                else if (monedaOrigen == "Euros" && monedaDestino == "Dólar")
+                {
+                    // Asignar el valor 1.08 al TextBox "valor"
+                    valor.Text = "1.08";
+                }
+                else if (monedaOrigen == "Dólar" && monedaDestino == "Euros")
+                {
+                    // Asignar el valor 0.93 al TextBox "valor"
+                    valor.Text = "0.93";
+                }
+                else
+                {
+                    // Limpiar el TextBox "valor" si no se cumple ninguna condición
+                    valor.Text = string.Empty;
+                }
+
+                // Realizar el cálculo si es necesario y mostrar el resultado
+
+            }
+            else
+            {
+                MessageBox.Show("Selecciona las monedas de origen y destino para realizar la conversión.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
+
+        private void cb_cuenta_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            BuscarDetallemoneda();
+                // Verificar si el elemento seleccionado en cb_cuenta es "Dolar"
+                if (cb_cuenta.SelectedItem?.ToString() == "Dólar")
+                {
+                // Asignar automáticamente el valor 7.77 al TextBox "valor"
+                cantidad1.Text = "1";
+                }
+            if (cb_cuenta.SelectedItem?.ToString() == "Quetzales")
+            {
+                // Asignar automáticamente el valor 7.77 al TextBox "valor"
+                cantidad1.Text = "1";
+            }
+            if (cb_cuenta.SelectedItem?.ToString() == "Euros")
+            {
+                // Asignar automáticamente el valor 7.77 al TextBox "valor"
+                cantidad1.Text = "1";
+            }
+
         }
     }
 }

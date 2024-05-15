@@ -58,9 +58,11 @@ namespace CapaVistaERP.Procesos
             this.btn_ayudas = new System.Windows.Forms.Button();
             this.btn_reporte = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dtp_fecha
@@ -133,6 +135,7 @@ namespace CapaVistaERP.Procesos
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.lblResultado);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.button2);
@@ -244,7 +247,7 @@ namespace CapaVistaERP.Procesos
             this.cb_cuenta.Name = "cb_cuenta";
             this.cb_cuenta.Size = new System.Drawing.Size(215, 24);
             this.cb_cuenta.TabIndex = 174;
-            this.cb_cuenta.SelectedIndexChanged += new System.EventHandler(this.cb_cuenta_SelectedIndexChanged);
+            this.cb_cuenta.SelectedIndexChanged += new System.EventHandler(this.cb_cuenta_SelectedIndexChanged_1);
             // 
             // panel1
             // 
@@ -376,6 +379,18 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_eliminar.UseVisualStyleBackColor = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::CapaVistaERP.Properties.Resources.tipo_de_cambio__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(47, 48);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(255, 110);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 155;
+            this.pictureBox2.TabStop = false;
+            // 
             // tipodecombio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,6 +420,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,5 +456,6 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Button btn_ayudas;
         private System.Windows.Forms.Button btn_reporte;
         private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

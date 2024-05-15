@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
     public partial class ComprasEli : Form
     {
-        private Controlador controller;
+        private CapaControladorERP.Controlador controller;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public ComprasEli()
         {
             InitializeComponent();
-            controller = new Controlador();
+            controller = new CapaControladorERP.Controlador();
         }
         public void RecibirDatosDesdeComprasEli(string id)
         {
@@ -142,6 +144,7 @@ namespace CapaVistaERP.Procesos
                     controller.EliminarDetalleCompra(codigo);
                     controller.EliminarCompra(codigo);
                     MessageBox.Show("Compra eliminada correctamente");
+                    this.ctrl_seguridad.setBtitacora("8011", "Se eliminó una compra");
                     Limpiar();
                 }
                 catch (Exception ex)
