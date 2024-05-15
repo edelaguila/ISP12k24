@@ -155,15 +155,20 @@ namespace CapaControladorERP
         {
             return sn.Guardar(tabla, valores);
         }
+        public bool ActualizarDatosC(string tabla, Dictionary<string, object> valores, string condicion)
+        {
+            return sn.ActualizarC(tabla, valores, condicion);
+        }
+
         // carlos enrique modulo bancos
         public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
         // carlos enrique guzman cabrera
-        public DataTable llenartablabitacoraMB(string tabla)
+        public DataTable llenartablabitacoraMB(string consulta)
         {
-            OdbcDataAdapter dt = sn.llenartablabitacoraMB(tabla);
+            OdbcDataAdapter dt = sn.llenartablabitacoraMB(consulta);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -179,7 +184,11 @@ namespace CapaControladorERP
         {
             return sn.EliminarMovimiento(idMovimiento);
         }
-
+        // carlos enrique guzman cabrera
+        public bool EliminarRegistroAO(int idRegistro)
+        {
+            return sn.EliminarRegistroAO(idRegistro);
+        }
         // carlos enrique guzman cabrera
         public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
         {
@@ -212,6 +221,40 @@ namespace CapaControladorERP
             }
 
             return sn.ObtenerRegistrosPorFecha(fechaInicio, fechaFin);
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable FiltrarRegistrosPorFechaAO(int año, string tipoFiltro)
+        {
+
+
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerRegistrosPorFechaAO(fechaInicio, fechaFin);
         }
 
         //Carol Chuy Modulo Compras

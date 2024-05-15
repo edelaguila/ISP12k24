@@ -13,6 +13,8 @@ namespace CapaVistaERP.Procesos
     public partial class AutorizacionOrdenDeCompra : Form
     {
         Controlador cn = new Controlador();
+        private bool controlesHabilitados = false;  // Para rastrear si los controles están habilitados
+
         public AutorizacionOrdenDeCompra()
         {
             InitializeComponent();
@@ -46,8 +48,6 @@ namespace CapaVistaERP.Procesos
 
                 // Llenamos los controles con los valores del resultado
                 txt_departamentoSolicitante.Text = row["deptoSolicitante_OrdComp"].ToString();
-                txt_entregarPersona.Text = row["entregar_a_OrdComp"].ToString();
-                txt_fechaSolicitud.Text = row["fechaSolicitid_OrdComp"].ToString();
                 txt_fechaEntrega.Text = row["fechaEntrega_OrdComp"].ToString();
                 txt_subTotal.Text = row["subTotal_OrdComp"].ToString();
                 txt_iva.Text = row["iva_OrdComp"].ToString();
@@ -116,45 +116,52 @@ namespace CapaVistaERP.Procesos
             //MessageBox.Show("Datos guardados");
         }
 
+        public void ActualizarDatos()
+        {
+            string tabla = "tbl_autorizacionordenescompra";
+            Dictionary<string, object> valores = new Dictionary<string, object>();
+
+            valores.Add("estadoOrden", cb_estado.SelectedItem.ToString());
+            valores.Add("conceptoDeAutorizacion", txt_Descripcion.Text + " [modificado]");
+            valores.Add("fechaAutorizacion", dtp_fechaAutorizacion.Value);
+            valores.Add("subTotal", double.Parse(txt_subTotal.Text));
+            valores.Add("iva", double.Parse(txt_iva.Text));
+            valores.Add("totalOrden", double.Parse(txt_totalOrden.Text));
+            valores.Add("cuentaAsociada", int.Parse(txt_IDCUENTA.Text));
+            valores.Add("tbl_OrdenesCompra_id_OrdComp", cb_numeroOrden.SelectedItem);
+
+            // Suponiendo que tienes un campo txt_ID para el ID del registro que quieres actualizar.
+            string condicion = $"id_numeroDeAutorizacion = {int.Parse(txt_IDAOC.Text)}";
+
+            cn.ActualizarDatosC(tabla, valores, condicion);
+
+            // MessageBox.Show("Datos actualizados");
+        }
+
+        private void HabilitarControles()
+        {
+            cb_numeroOrden.Enabled = true;
+            cb_cuenta.Enabled = true;
+            txt_Descripcion.Enabled = true;
+            cb_estado.Enabled = true;
+            dtp_fechaAutorizacion.Enabled = true;
+        }
+
+        private void DeshabilitarControles()
+        {
+            cb_numeroOrden.Enabled = false;
+            cb_cuenta.Enabled = false;
+            txt_Descripcion.Enabled = false;
+            cb_estado.Enabled = false;
+            dtp_fechaAutorizacion.Enabled = false;
+        }
+
+
+
+
         private void AutorizacionOrdenDeCompra_Load(object sender, EventArgs e)
         {
             espera.Visible = true;
-        }
-
-        private void cb_cuenta_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            BuscarDetalleCuentas();
-        }
-        private void cb_numeroOrden_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            BuscarDetalleOrden();
-        }
-
-
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_fechaEntrega_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_fechaSolicitud_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
       
@@ -173,8 +180,7 @@ namespace CapaVistaERP.Procesos
             if (result == DialogResult.Yes)
             {
                 txt_departamentoSolicitante.Clear();
-                txt_entregarPersona.Clear();
-                txt_fechaSolicitud.Clear();
+
                 txt_fechaEntrega.Clear();
                 txt_subTotal.Clear();
                 txt_iva.Clear();
@@ -193,7 +199,9 @@ namespace CapaVistaERP.Procesos
                 espera.Visible = true;
                 lb_respuesta.Text = "Esperando...";
 
-            } else if (result == DialogResult.No) {
+            }
+            else if (result == DialogResult.No)
+            {
                 MessageBox.Show("no se limpiaron las casillas");
             }
         }
@@ -210,7 +218,7 @@ namespace CapaVistaERP.Procesos
 
         private void btn_verificar_Click(object sender, EventArgs e)
         {
-         
+
             // Verificar si los TextBox están vacíos
             if (string.IsNullOrEmpty(txt_totalOrden.Text) || string.IsNullOrEmpty(txt_saldoDisponible.Text))
             {
@@ -229,7 +237,8 @@ namespace CapaVistaERP.Procesos
                     positivo.Visible = true;
                     negativo.Visible = false;
                     espera.Visible = false;
-                    lb_respuesta.Text = "El saldo cubre\nla orden";
+                    lb_respuesta.Text = "Orden cubierta";
+                    txt_Descripcion.Text = "El saldo de la cuenta cubre el total de la orden";
                 }
                 else if (totalOrden > saldoDisponible)
                 {
@@ -237,16 +246,60 @@ namespace CapaVistaERP.Procesos
                     positivo.Visible = false;
                     negativo.Visible = true;
                     espera.Visible = false;
-                    lb_respuesta.Text = "El saldo no cubre\nla orden";
+                    lb_respuesta.Text = "Orden no\ncubierta";
+                    txt_Descripcion.Text = "El saldo de la cuenta no cubre el total de la orden";
                 }
             }
-
 
         }
 
         private void espera_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void cb_numeroOrden_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            BuscarDetalleOrden();
+        }
+
+        private void cb_cuenta_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            BuscarDetalleCuentas();
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            if (!controlesHabilitados)
+            {
+                // Mostrar mensaje de confirmación para habilitar los controles
+                DialogResult result = MessageBox.Show("¿Deseas modificar?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    HabilitarControles();
+                    controlesHabilitados = true;  // Marcar que los controles están habilitados
+                }
+                else
+                {
+                    MessageBox.Show("Operación cancelada", "Cancelación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                // Mostrar mensaje de confirmación para realizar la actualización
+                DialogResult result = MessageBox.Show("¿Deseas guardar los cambios?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    ActualizarDatos();
+                    MessageBox.Show("Modificación exitosa", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    controlesHabilitados = false;  // Marcar que los controles están deshabilitados después de la actualización
+                    DeshabilitarControles();
+                }
+                else
+                {
+                    MessageBox.Show("Operación cancelada", "Cancelación", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
     }
