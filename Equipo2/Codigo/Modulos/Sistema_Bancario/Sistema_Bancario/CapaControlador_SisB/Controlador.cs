@@ -7,12 +7,11 @@ using CapaModelo_SisB;
 using CapaModelo_SisB.Templates;
 using System.Data;
 
-
-
 namespace CapaControlador_SisB
 {
     public class Controlador
     {
+
         private Sentencias sentencias;
 
         public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string estado)
@@ -23,10 +22,38 @@ namespace CapaControlador_SisB
         {
             return sentencias.llenarTblMov(tabla);
         }
+
+        public DataTable llenarHistorial(string tabla, int id)
+        {
+            return sentencias.llenarHistorial(tabla, id);
+            
+            
+        }
         public Controlador()
         {
             sentencias = new Sentencias();
 
+        }
+
+        public string[] items(string tabla, string campo1, string campo2, int id)
+        {
+            string[] Items = sentencias.llenarCmb(tabla, campo1, campo2, id);
+
+            return Items;
+
+
+        }
+
+        ///Controlador 2///
+
+        public DataTable enviar(string tabla, string campo1, string campo2, int id)
+        {
+
+
+
+            var dt1 = sentencias.obtener(tabla, campo1, campo2, id);
+
+            return dt1;
         }
 
         public DataTable ObtenerTipoDeTransacciones()

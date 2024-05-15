@@ -41,7 +41,7 @@
       <HintPath>..\..\..\..\Componentes\Reporteador\CapaModelo\bin\Debug\CapaModelo.dll</HintPath>
     </Reference>
     <Reference Include="CapaVista">
-      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Release\CapaVista.dll</HintPath>
+      <HintPath>..\..\..\..\Componentes\Reporteador\CapaVista\bin\Debug\CapaVista.dll</HintPath>
     </Reference>
     <Reference Include="ControllerLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
     <Reference Include="Navegador2.0, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

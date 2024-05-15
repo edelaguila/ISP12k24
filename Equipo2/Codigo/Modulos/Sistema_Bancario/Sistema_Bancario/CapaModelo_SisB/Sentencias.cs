@@ -22,6 +22,42 @@ namespace CapaModelo_SisB
             baseDatos = this.con.myconn.Database;
             this.con.myconn.Close();
         }
+        public string[] llenarCmb(string tabla, string campo1, string campo2, int id)
+        {
+            string[] Campos = new string[300];
+            string[] auto = new string[300];
+            int i = 0;
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM " + tabla + " where cue_usuario =" + id + ";";
+
+            try
+            {
+                OdbcCommand command = new OdbcCommand(sql, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Campos[i] = reader.GetValue(0).ToString() + "-" + reader.GetValue(1).ToString();
+                    i++;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo, revise los parametros \n -" + tabla + "\n -" + campo1); }
+            return Campos;
+        }
+
+        /// Modelo 2 //
+
+        public DataTable obtener(string tabla, string campo1, string campo2, int id)
+        {
+
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM " + tabla + " where cue_usuario =" + id +  ";";
+
+            OdbcCommand command = new OdbcCommand(sql, con.connection());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+
+
+            return dt;
+        }
         public OdbcDataAdapter llenarTbl(string tabla)// metodo  que obtinene el contenio de una tabla
         {
 
@@ -32,8 +68,27 @@ namespace CapaModelo_SisB
             //this.con.myconn.Open();
             return dataTable;
         }
+        public DataTable llenarHistorial(string tabla, int id) 
+        {
+            using (OdbcConnection connection = this.con.connection())
+            {
+                if (connection != null)
+                {
+                    string sql = " SELECT * FROM " + tabla + " where htr_id = " + id + " ;";
+                    OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
+                    DataTable table = new DataTable();
+                    dataTable.Fill(table);
+                    return table;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
 
 
+        
 
         public OdbcDataReader getByParam<T>(string param, string secondParam, string table, int mode = 0, T reference = default, T secondRef = default)
         {
