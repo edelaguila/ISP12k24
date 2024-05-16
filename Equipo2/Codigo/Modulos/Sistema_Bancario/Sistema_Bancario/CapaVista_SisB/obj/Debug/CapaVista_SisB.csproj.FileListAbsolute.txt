@@ -486,9 +486,7 @@ C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equi
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.csproj.CopyComplete
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.Reports.ReporteMoneda.resources
 >>>>>>> 270aa34a74cf2ad1862e12a29023953ee03dbf4d
-<<<<<<< HEAD
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll
-=======
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmCheques.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\obj\Debug\CapaVista_SisB.frmTransferencia.resources
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaVista_SisB\bin\Debug\CapaControlador_SisB.dll

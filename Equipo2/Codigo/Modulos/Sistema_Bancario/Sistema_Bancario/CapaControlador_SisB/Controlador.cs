@@ -27,8 +27,8 @@ namespace CapaControlador_SisB
         public DataTable llenarHistorial(string tabla, int id)
         {
             return sentencias.llenarHistorial(tabla, id);
-            
-            
+
+
         }
         public Controlador()
         {
