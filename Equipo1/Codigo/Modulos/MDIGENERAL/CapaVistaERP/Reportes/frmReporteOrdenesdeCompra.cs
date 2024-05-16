@@ -48,10 +48,8 @@ namespace CapaVistaERP.Reportes
             }
             else
             {
-                // Manejar caso no válido
-                // Aquí podrías lanzar una excepción o asignar un valor predeterminado
-                fechaInicio = DateTime.Today;
-                fechaFin = DateTime.Today;
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
             }
 
             // Configurar los parámetros de fecha en el informe

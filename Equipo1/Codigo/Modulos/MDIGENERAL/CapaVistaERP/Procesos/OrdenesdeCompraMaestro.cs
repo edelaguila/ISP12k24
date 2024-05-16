@@ -116,7 +116,23 @@ namespace CapaVistaERP.Procesos
 
         private void btn_reporte_Click(object sender, EventArgs e)
         {
-            report.ShowDialog();
+                // Verificar si se ha seleccionado un año y un método de filtrado
+                if (cb_año.SelectedItem == null || cb_filtro.SelectedItem == null)
+                {
+                    int añoActual = DateTime.Today.Year;
+                    Reportes.frmReporteOrdenesdeCompra repo = new Reportes.frmReporteOrdenesdeCompra();
+                    repo.MostrarReporte("Mensual", añoActual);
+                    repo.ShowDialog();
+                }
+                else
+                {
+                    report.ShowDialog();
+                }
+        }
+
+        private void dt_datos_SelectionChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
