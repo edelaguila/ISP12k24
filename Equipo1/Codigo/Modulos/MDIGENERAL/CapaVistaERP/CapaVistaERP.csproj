@@ -575,5 +575,6 @@
   <ItemGroup>
     <None Include="Resources\tipo-de-cambio %282%29.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
