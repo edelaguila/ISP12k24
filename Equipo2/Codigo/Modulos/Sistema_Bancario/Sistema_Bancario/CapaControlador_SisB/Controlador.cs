@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using CapaModelo_SisB;
 using CapaModelo_SisB.Templates;
 using System.Data;
+using CapaModelo_SisB.Libraries;
 
 namespace CapaControlador_SisB
 {
@@ -71,6 +72,14 @@ namespace CapaControlador_SisB
         public int ObtenerValorTransaccion(string tipoTransaccion)
         {
             return sentencias.ObtenerValorTransaccion(tipoTransaccion);
+        }
+
+        public void MakeDeposit(string numeroCuenta, double amount)
+        {
+            Cuenta cuenta = sentencias.getAccountByNumber(numeroCuenta);
+            Console.WriteLine(cuenta.id);
+            Console.WriteLine(cuenta.saldo);
+            TransactionSentences.updateBalanceFromAccount(cuenta.id, amount);
         }
 
 
