@@ -124,12 +124,13 @@ namespace CapaVistaERP.Procesos
 
         private void btn_reporte_Click(object sender, EventArgs e)
         {
-
+            Reportes.frmReporteDeAutorizacionOrdenDeCompra Reporte = new Reportes.frmReporteDeAutorizacionOrdenDeCompra();
+            Reporte.ShowDialog();
         }
 
         private void btn_ayudas_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("De momento no disponible");
         }
 
         private void button1_Click(object sender, EventArgs e)
