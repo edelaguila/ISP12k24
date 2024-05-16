@@ -358,17 +358,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteMovimientosDeBancos.cs">
+    <Compile Include="Reportes\ReporteAutorizacionOrdenesCompra.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteMovimientosDeBancos.rpt</DependentUpon>
+      <DependentUpon>ReporteAutorizacionOrdenesCompra.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.Designer.cs">
+      <DependentUpon>frmReporteDeAutorizacionOrdenDeCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmReportesDeMovimientosDeBancos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\frmReportesDeMovimientosDeBancos.Designer.cs">
       <DependentUpon>frmReportesDeMovimientosDeBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteMovimientosDeBancos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteMovimientosDeBancos.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -523,12 +535,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteMovimientosDeBancos.rpt">
+    <EmbeddedResource Include="Reportes\ReporteAutorizacionOrdenesCompra.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteMovimientosDeBancos.cs</LastGenOutput>
+      <LastGenOutput>ReporteAutorizacionOrdenesCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.resx">
+      <DependentUpon>frmReporteDeAutorizacionOrdenDeCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmReportesDeMovimientosDeBancos.resx">
       <DependentUpon>frmReportesDeMovimientosDeBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteMovimientosDeBancos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteMovimientosDeBancos.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

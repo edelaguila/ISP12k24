@@ -138,7 +138,7 @@ namespace CapaVistaERP.Procesos
 
         private void btn_ayudas_Click(object sender, EventArgs e)
         {
-            //aun no realizado
+            MessageBox.Show("De momento no disponible");
         }
 
         private void button1_Click(object sender, EventArgs e)
