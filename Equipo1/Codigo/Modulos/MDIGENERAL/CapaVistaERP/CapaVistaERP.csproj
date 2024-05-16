@@ -358,6 +358,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReporteOrdenesdeCompra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteOrdenesdeCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteOrdenesdeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteOrdenesdeCompra.Designer.cs">
+      <DependentUpon>frmReporteOrdenesdeCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReporteAutorizacionOrdenesCompra.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -534,6 +546,13 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteOrdenesdeCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteOrdenesdeCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteOrdenesdeCompra.resx">
+      <DependentUpon>frmReporteOrdenesdeCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteAutorizacionOrdenesCompra.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
