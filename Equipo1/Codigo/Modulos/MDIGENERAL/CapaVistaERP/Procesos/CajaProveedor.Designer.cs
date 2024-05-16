@@ -72,6 +72,7 @@
             this.NoFacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechadeVen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Totalfacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brn_confirmar = new System.Windows.Forms.Button();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -101,7 +102,7 @@
             this.cmb_tipo.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_tipo.Name = "cmb_tipo";
             this.cmb_tipo.Padding = new System.Windows.Forms.Padding(4);
-            this.cmb_tipo.Size = new System.Drawing.Size(1118, 308);
+            this.cmb_tipo.Size = new System.Drawing.Size(923, 308);
             this.cmb_tipo.TabIndex = 45;
             this.cmb_tipo.TabStop = false;
             this.cmb_tipo.Tag = "";
@@ -130,17 +131,19 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(962, 126);
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_cancelar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_cancelar.Location = new System.Drawing.Point(756, 140);
             this.btn_cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(148, 46);
             this.btn_cancelar.TabIndex = 54;
             this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             // 
             // txt_concepto
             // 
-            this.txt_concepto.Location = new System.Drawing.Point(16, 174);
+            this.txt_concepto.Location = new System.Drawing.Point(-1, 254);
             this.txt_concepto.Margin = new System.Windows.Forms.Padding(4);
             this.txt_concepto.Multiline = true;
             this.txt_concepto.Name = "txt_concepto";
@@ -152,7 +155,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(282, 139);
+            this.label9.Location = new System.Drawing.Point(265, 219);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 20);
@@ -161,13 +164,15 @@
             // 
             // btn_pagar
             // 
-            this.btn_pagar.Location = new System.Drawing.Point(962, 56);
+            this.btn_pagar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_pagar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_pagar.Location = new System.Drawing.Point(756, 70);
             this.btn_pagar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_pagar.Name = "btn_pagar";
             this.btn_pagar.Size = new System.Drawing.Size(148, 46);
             this.btn_pagar.TabIndex = 49;
             this.btn_pagar.Text = "Pagar";
-            this.btn_pagar.UseVisualStyleBackColor = true;
+            this.btn_pagar.UseVisualStyleBackColor = false;
             this.btn_pagar.Click += new System.EventHandler(this.btn_pagar_Click);
             // 
             // dt_fechaabono
@@ -253,6 +258,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.brn_confirmar);
             this.groupBox1.Controls.Add(this.cb_nofact);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label10);
@@ -272,10 +278,11 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1118, 509);
+            this.groupBox1.Size = new System.Drawing.Size(924, 509);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Movimientos";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label15
             // 
@@ -328,24 +335,28 @@
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Location = new System.Drawing.Point(1001, 306);
+            this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_eliminar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_eliminar.Location = new System.Drawing.Point(757, 275);
             this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(99, 38);
             this.btn_eliminar.TabIndex = 43;
             this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.UseVisualStyleBackColor = false;
             this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(1001, 247);
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_agregar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_agregar.Location = new System.Drawing.Point(757, 216);
             this.btn_agregar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(99, 38);
             this.btn_agregar.TabIndex = 42;
             this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_buscarFactura
@@ -364,7 +375,8 @@
             // 
             // txt_totalapagar
             // 
-            this.txt_totalapagar.Location = new System.Drawing.Point(790, 460);
+            this.txt_totalapagar.Enabled = false;
+            this.txt_totalapagar.Location = new System.Drawing.Point(535, 447);
             this.txt_totalapagar.Margin = new System.Windows.Forms.Padding(4);
             this.txt_totalapagar.Name = "txt_totalapagar";
             this.txt_totalapagar.Size = new System.Drawing.Size(184, 24);
@@ -375,7 +387,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(666, 462);
+            this.label1.Location = new System.Drawing.Point(422, 451);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 20);
@@ -414,7 +426,7 @@
             this.dgv_pagoproveedor.Name = "dgv_pagoproveedor";
             this.dgv_pagoproveedor.RowHeadersWidth = 51;
             this.dgv_pagoproveedor.RowTemplate.Height = 24;
-            this.dgv_pagoproveedor.Size = new System.Drawing.Size(943, 293);
+            this.dgv_pagoproveedor.Size = new System.Drawing.Size(688, 271);
             this.dgv_pagoproveedor.TabIndex = 38;
             this.dgv_pagoproveedor.Tag = "tbl_facturaxpagar";
             this.dgv_pagoproveedor.SelectionChanged += new System.EventHandler(this.dgv_pagoproveedor_SelectionChanged);
@@ -431,7 +443,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1119, 198);
+            this.groupBox2.Size = new System.Drawing.Size(924, 198);
             this.groupBox2.TabIndex = 46;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -524,7 +536,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(765, 89);
+            this.label8.Location = new System.Drawing.Point(147, 168);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 19);
             this.label8.TabIndex = 57;
@@ -532,7 +544,7 @@
             // 
             // txt_Sumadefacturas
             // 
-            this.txt_Sumadefacturas.Location = new System.Drawing.Point(769, 126);
+            this.txt_Sumadefacturas.Location = new System.Drawing.Point(258, 168);
             this.txt_Sumadefacturas.Name = "txt_Sumadefacturas";
             this.txt_Sumadefacturas.Size = new System.Drawing.Size(154, 24);
             this.txt_Sumadefacturas.TabIndex = 58;
@@ -558,12 +570,25 @@
             this.Totalfacturas.Name = "Totalfacturas";
             this.Totalfacturas.Width = 125;
             // 
+            // brn_confirmar
+            // 
+            this.brn_confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.brn_confirmar.ForeColor = System.Drawing.SystemColors.Control;
+            this.brn_confirmar.Location = new System.Drawing.Point(757, 345);
+            this.brn_confirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.brn_confirmar.Name = "brn_confirmar";
+            this.brn_confirmar.Size = new System.Drawing.Size(99, 38);
+            this.brn_confirmar.TabIndex = 54;
+            this.brn_confirmar.Text = "Confirmar";
+            this.brn_confirmar.UseVisualStyleBackColor = false;
+            this.brn_confirmar.Click += new System.EventHandler(this.brn_confirmar_Click);
+            // 
             // CajaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1143, 1055);
+            this.ClientSize = new System.Drawing.Size(949, 1055);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.cmb_tipo);
             this.Controls.Add(this.groupBox1);
@@ -625,5 +650,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NoFacturas;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechadeVen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Totalfacturas;
+        private System.Windows.Forms.Button brn_confirmar;
     }
 }

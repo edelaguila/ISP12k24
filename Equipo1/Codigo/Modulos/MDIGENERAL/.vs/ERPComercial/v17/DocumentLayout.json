@@ -15,12 +15,12 @@
       "RelativeMoniker": "D:0:0:{437C9F5C-5C24-4912-87E6-9417DE3F13D8}|CapaVistaERP\\CapaVistaERP.csproj|solutionrelative:capavistaerp\\procesos\\ordenesdecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFB409E9-2AD4-4340-B3E8-C85FEA31B68D}|CapaControladorERP\\CapaControladorERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capacontroladorerp\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CFB409E9-2AD4-4340-B3E8-C85FEA31B68D}|CapaControladorERP\\CapaControladorERP.csproj|solutionrelative:capacontroladorerp\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0EF59815-3027-4A19-A879-124E43022DF6}|CapaModeloERP\\CapaModeloERP.csproj|c:\\users\\usuario\\documents\\github\\proyecto actual\\proyectomigracion_g1\\equipo1\\codigo\\modulos\\mdigeneral\\capamodeloerp\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0EF59815-3027-4A19-A879-124E43022DF6}|CapaModeloERP\\CapaModeloERP.csproj|solutionrelative:capamodeloerp\\sentencias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFB409E9-2AD4-4340-B3E8-C85FEA31B68D}|CapaControladorERP\\CapaControladorERP.csproj|C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\capacontroladorerp\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CFB409E9-2AD4-4340-B3E8-C85FEA31B68D}|CapaControladorERP\\CapaControladorERP.csproj|solutionrelative:capacontroladorerp\\controlador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "CapaVistaERP\\Procesos\\OrdenesdeCompra.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\OrdenesdeCompra.cs",
               "RelativeToolTip": "CapaVistaERP\\Procesos\\OrdenesdeCompra.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAqwL0AAAAoAAAA",
+              "ViewState": "AQIAAPYAAAAAAAAAAAAqwAsBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T22:52:21.184Z",
               "EditorCaption": ""
@@ -65,33 +65,33 @@
               "RelativeDocumentMoniker": "CapaVistaERP\\Procesos\\CajaProveedor.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaVistaERP\\Procesos\\CajaProveedor.cs",
               "RelativeToolTip": "CapaVistaERP\\Procesos\\CajaProveedor.cs",
-              "ViewState": "AQIAAOsAAAAAAAAAAAAAAOoAAAAbAAAA",
+              "ViewState": "AQIAAEsBAAAAAAAAAAAiwF8BAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T18:48:49.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Controlador.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaControladorERP\\Controlador.cs",
               "RelativeDocumentMoniker": "CapaControladorERP\\Controlador.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaControladorERP\\Controlador.cs",
               "RelativeToolTip": "CapaControladorERP\\Controlador.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAA5wD0AAAAwAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAiwCwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T23:21:14.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Sentencias.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaModeloERP\\Sentencias.cs",
               "RelativeDocumentMoniker": "CapaModeloERP\\Sentencias.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\GitHub\\Proyecto actual\\ProyectoMigracion_G1\\Equipo1\\Codigo\\Modulos\\MDIGENERAL\\CapaModeloERP\\Sentencias.cs",
               "RelativeToolTip": "CapaModeloERP\\Sentencias.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAcwLkAAAA5AAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAqwDEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T23:58:52.043Z",
               "EditorCaption": ""

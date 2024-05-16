@@ -309,5 +309,47 @@ namespace CapaVistaERP.Procesos
         {
             
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void brn_confirmar_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Está seguro que desea confirmar la orden?", "Confirmación de orden", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                dgv_pagoproveedor.Enabled = false;
+                cb_nofact.Enabled = false;
+
+                double subtotal = 0;
+
+                foreach (DataGridViewRow fila in dgv_pagoproveedor.Rows)
+                {
+                    // Verifica que la fila no sea la nueva fila (que sería el encabezado).
+                    if (!fila.IsNewRow)
+                    {
+                        // Obtiene el valor de la última celda de la fila.
+                        double valorCelda;
+                        if (double.TryParse(fila.Cells[dgv_pagoproveedor.ColumnCount - 1].Value.ToString(), out valorCelda))
+                        {
+                            // Suma el valor al subtotal.
+                            subtotal += valorCelda;
+                        }
+                    }
+                }
+
+                // Asigna el subtotal al TextBox txt_Sumadefacturas
+                txt_Sumadefacturas.Text = subtotal.ToString("F2");
+
+                // Obtén el valor del TextBox txt_totalapagar
+                string totalText = txt_totalapagar.Text;
+
+                // Asigna ese valor al TextBox txt_Sumadefacturas
+                txt_totalapagar.Text = subtotal.ToString("F2");
+            }
+        }
     }
 }
