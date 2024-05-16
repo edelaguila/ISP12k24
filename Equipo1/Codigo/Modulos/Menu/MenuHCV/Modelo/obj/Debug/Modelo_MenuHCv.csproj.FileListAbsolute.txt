@@ -61,3 +61,9 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\80%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb

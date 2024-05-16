@@ -25,6 +25,8 @@ namespace CapaVistaERP.Procesos
             cn = new Controlador();
             Combo();
             Combo2();
+            txt_nit.TextChanged += txt_nombre_TextChanged;
+            
         }
 
         public void tabla()
@@ -34,13 +36,13 @@ namespace CapaVistaERP.Procesos
         }
 
 
-        public void filtrodata()
+        /*public void filtrodata()
         {
             string filtro = txt_nit.Text;
             string data = "0";
             DataTable dt = cn.filtrardatosp(tabla1, "nitprov_facxpag", filtro, "estado_facxpag", data);
             dgv_pagoproveedor.DataSource = dt;
-        }
+        }*/
 
         public void Combo()
         {
@@ -70,6 +72,44 @@ namespace CapaVistaERP.Procesos
             }
         }
 
+        public void Combodefacturas()
+        {
+            try
+            {
+                List<string> producto = cn.ComboFillfactura("NoFactura", "tbl_facturaxpagar", "nitprov_facxpag", txt_nit.Text, "estado_facxpag");
+                cb_nofact.Items.Clear();
+                cb_nofact.Items.AddRange(producto.ToArray());
+
+                // Suscribir el evento SelectedIndexChanged del ComboBox
+                cb_nofact.SelectedIndexChanged += (sender, e) => {
+                    // Obtener el número de factura seleccionado
+                    string noFacturaSeleccionada = cb_nofact.SelectedItem.ToString();
+                    // Obtener los datos de la factura seleccionada y llenar los campos
+                    LlenarCamposFactura(noFacturaSeleccionada);
+                };
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("error" + e);
+            }
+        }
+
+        public void LlenarCamposFactura(string noFactura)
+        {
+            (DateTime fechaVencimiento, decimal total) = cn.ObtenerFechaVYTotal(noFactura);
+            try
+            {
+                // Llenar los campos de texto con los datos obtenidos
+                txt_FechaV.Text = fechaVencimiento.ToString(); // Ajusta el formato según sea necesario
+                txt_factotal.Text = total.ToString(); // Ajusta el formato según sea necesario
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error al llenar los campos de la factura: " + e.Message);
+            }
+        }
+
         private void cmb_banco_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_bancos.Text = cmb_banco.SelectedItem.ToString();
@@ -77,9 +117,10 @@ namespace CapaVistaERP.Procesos
 
         private void txt_nombre_TextChanged(object sender, EventArgs e)
         {
-
+            //ActualizarComboBoxFacturas(txt_nit.Text);
         }
 
+       
         private void btn_buscar_Click(object sender, EventArgs e)
         {
             MovimientoProveedores proveedor = new MovimientoProveedores(this);
@@ -97,17 +138,56 @@ namespace CapaVistaERP.Procesos
 
         private void btn_buscarFactura_Click(object sender, EventArgs e)
         {
-           // dgv_pagoproveedor.DataBindingComplete += dgv_pagoproveedor_DataBindingComplete;
-
-            filtrodata();
-
-
+            //filtrodata();
+            Combodefacturas();
         }
 
         double sumaTotal = 0;
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            // Verificar si el contenido del TextBox es un número válido
+
+           /* double precioU = 0;
+            double cantidad = 0;
+            double totalprod = 0;
+
+            // Obtener el precio unitario desde el textbox
+            if (double.TryParse(txt_preciou.Text, out precioU))
+            {
+                // Obtener la cantidad desde el textbox
+                if (double.TryParse(txt_cantidad.Text, out cantidad))
+                {
+                    // Calcular el total del producto
+                    totalprod = precioU * cantidad;
+
+                    // Obtener el ID del producto seleccionado en el ComboBox
+                    string productoSeleccionado = cmb_productos.SelectedItem.ToString();
+                    string[] parts = productoSeleccionado.Split('-');
+                    string idProducto = parts[0].Trim();
+                    //Obtener el nombre del producto
+                    string nomProducto = parts[1].Trim();
+                    //Obtener la descripcion del producto
+                    string descripcion = txt_descripcion.Text;
+                    // Agregar una fila al DataGridView con los detalles
+                    dgv_detalle.Rows.Add(cantidad, idProducto, nomProducto, descripcion, precioU, totalprod);
+                    //Limpiar los textbox para poder ingresar uno nuevo
+                    txt_cantidad.Text = "";
+                    cmb_productos.Text = "";
+                    txt_descripcion.Text = "";
+                    txt_preciou.Text = "";
+                    txt_totalfila.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese una cantidad válida.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un precio unitario válido.");
+            }
+
+
+            /* Verificar si el contenido del TextBox es un número válido
             if (double.TryParse(txt_factotal.Text, out double valor))
             {
                 // Sumar el valor al total acumulado
@@ -125,7 +205,7 @@ namespace CapaVistaERP.Procesos
             else
             {
                 MessageBox.Show("Por favor, ingrese un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
         }
 
         private void dgv_pagoproveedor_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -146,18 +226,6 @@ namespace CapaVistaERP.Procesos
         private void dgv_pagoproveedor_SelectionChanged(object sender, EventArgs e)
         {
 
-            // Verificar si hay alguna fila seleccionada
-            if (dgv_pagoproveedor.SelectedRows.Count > 0)
-            {
-                DataGridViewRow filaSeleccionada = dgv_pagoproveedor.SelectedRows[0];
-
-                // Obtener los valores de las celdas y asignarlos a los TextBoxes
-                txtNoFactura.Text = filaSeleccionada.Cells["NoFactura"].Value.ToString();
-                    txt_FechaV.Text = filaSeleccionada.Cells["fechavenc_facxpag"].Value.ToString();
-                    txt_facSub.Text = filaSeleccionada.Cells["subtotal_facxpag"].Value.ToString();
-                    txt_factotal.Text = filaSeleccionada.Cells["totalfac_facxpag"].Value.ToString();
-               
-            }
         }
 
 
@@ -196,7 +264,7 @@ namespace CapaVistaERP.Procesos
 
         private void btn_pagar_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 string idp = txt_idprov.Text;
                 string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
@@ -220,7 +288,7 @@ namespace CapaVistaERP.Procesos
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error al procesar el pago: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            }*/
 
         }
         private void LimpiarCampos()
@@ -229,7 +297,7 @@ namespace CapaVistaERP.Procesos
             txt_nombreprov.Clear();
             txt_nitprov.Clear();
             txt_nit.Clear();
-            txtNoFactura.Clear();
+            //txtNoFactura.Clear();
             txt_totalapagar.Clear();
             txt_bancos.Clear();
             txt_tipomovpro.Clear();
@@ -248,6 +316,11 @@ namespace CapaVistaERP.Procesos
         private void cb_tipotransa_SelectedIndexChanged(object sender, EventArgs e)
         {
             txt_tipomovpro.Text = cb_tipotransa.SelectedItem.ToString();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

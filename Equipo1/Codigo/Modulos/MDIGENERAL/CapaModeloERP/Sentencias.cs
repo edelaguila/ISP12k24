@@ -104,6 +104,97 @@ namespace CapaModeloERP
             return dt;
         }
 
+        //Andrea Corado 0901-20-2841
+        public DataTable obtenerfac()
+        {
+
+            string sql = "SELECT NoFactura FROM tbl_facturaxpagar;";
+
+            OdbcCommand command = new OdbcCommand(sql, con.connection());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+            return dt;
+        }
+
+        //Andrea Corado 0901-20-2841
+        public List<string> ComboFillfactura(string columna, string tabla,string nit, string dato, string estadofact)
+        {
+            List<string> datos = new List<string>();
+            try
+            {
+
+                string consulta = $"SELECT {columna} FROM {tabla} WHERE {nit}={dato} AND {estadofact}=0";
+
+                OdbcCommand command = new OdbcCommand(consulta, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    string ID = reader[columna].ToString();
+                    datos.Add(ID);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            return datos;
+        }
+
+        //Andrea Corado 0901-20-2841
+        public DateTime ObtenerFechaV(string dato)
+        {
+            string sql = $"SELECT fechavenc_facxpag FROM tbl_facturaxpagar WHERE NoFactura = {dato};";
+
+            using (OdbcConnection connection = con.connection())
+            {
+                connection.Open();
+
+                using (OdbcCommand command = new OdbcCommand(sql, connection))
+                {
+                    object result = command.ExecuteScalar();
+
+                    if (result != null && result != DBNull.Value)
+                    {
+                        // Convertir el resultado a DateTime y devolverlo
+                        return Convert.ToDateTime(result);
+                    }
+                    else
+                    {
+                        throw new Exception("No se encontró la fecha de vencimiento para la factura especificada.");
+                    }
+                }
+            }
+        }
+
+        //andrea corado 0901-20-2841
+        public (DateTime, decimal) ObtenerFechaVYTotal(string dato)
+        {
+            string sql = $"SELECT fechavenc_facxpag, totalfac_facxpag FROM tbl_facturaxpagar WHERE NoFactura = {dato};";
+            DateTime fechaVencimiento;
+            decimal total;
+
+            using (OdbcConnection connection = con.connection())
+            {
+                using (OdbcCommand command = new OdbcCommand(sql, connection))
+                {
+                    using (OdbcDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            fechaVencimiento = reader.GetDateTime(0);
+                            total = reader.GetDecimal(1);
+                            return (fechaVencimiento, total);
+                        }
+                        else
+                        {
+                            throw new Exception("No se encontró la factura especificada.");
+                        }
+                    }
+                }
+            }
+        }
+
 
         //David Carrillo 0901-20-3201 
         public void InsertarCliente(string nombre_cl, string apellido_cl, string direccion_cl, string correo_cl, string telefono_cl)
