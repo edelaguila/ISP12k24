@@ -30,39 +30,44 @@ namespace CapaVista_SisB
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txt_monto = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.txt_cuenta2 = new System.Windows.Forms.TextBox();
+            this.btn_cobro2 = new System.Windows.Forms.Button();
+            this.txt_monto2 = new System.Windows.Forms.TextBox();
+            this.lbl_debitar = new System.Windows.Forms.Label();
+            this.lbl_destino = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txt_cuenta = new System.Windows.Forms.TextBox();
+            this.btn_cobro1 = new System.Windows.Forms.Button();
+            this.txt_cheque = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_fill = new System.Windows.Forms.Label();
+            this.btn_fill = new System.Windows.Forms.Button();
+            this.txt_cant1 = new System.Windows.Forms.TextBox();
+            this.ch_retiro = new System.Windows.Forms.CheckBox();
+            this.ch_deposito = new System.Windows.Forms.CheckBox();
+            this.txt_monto1 = new System.Windows.Forms.TextBox();
+            this.lbl_cheque = new System.Windows.Forms.Label();
+            this.lbl_monto = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_check = new System.Windows.Forms.Button();
+            this.txt_cheque2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(57)))));
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.txt_monto);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.txt_cheque2);
+            this.panel2.Controls.Add(this.txt_cuenta2);
+            this.panel2.Controls.Add(this.btn_cobro2);
+            this.panel2.Controls.Add(this.txt_monto2);
+            this.panel2.Controls.Add(this.lbl_debitar);
+            this.panel2.Controls.Add(this.lbl_destino);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(379, 22);
@@ -70,56 +75,70 @@ namespace CapaVista_SisB
             this.panel2.Size = new System.Drawing.Size(410, 456);
             this.panel2.TabIndex = 56;
             // 
-            // button2
+            // txt_cuenta2
             // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(62, 278);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 28);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "Cobrar cheque";
-            this.button2.UseVisualStyleBackColor = false;
+            this.txt_cuenta2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_cuenta2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cuenta2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_cuenta2.Location = new System.Drawing.Point(63, 227);
+            this.txt_cuenta2.Multiline = true;
+            this.txt_cuenta2.Name = "txt_cuenta2";
+            this.txt_cuenta2.Size = new System.Drawing.Size(252, 24);
+            this.txt_cuenta2.TabIndex = 60;
+            this.txt_cuenta2.Tag = "Cantidad_a_retirar";
+            this.txt_cuenta2.Text = " Número de cuenta";
             // 
-            // txt_monto
+            // btn_cobro2
             // 
-            this.txt_monto.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_monto.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_monto.Location = new System.Drawing.Point(63, 219);
-            this.txt_monto.Multiline = true;
-            this.txt_monto.Name = "txt_monto";
-            this.txt_monto.Size = new System.Drawing.Size(252, 26);
-            this.txt_monto.TabIndex = 50;
-            this.txt_monto.Tag = "Cantidad_a_retirar";
-            this.txt_monto.Text = "Q. 100";
+            this.btn_cobro2.BackColor = System.Drawing.Color.SlateGray;
+            this.btn_cobro2.FlatAppearance.BorderSize = 0;
+            this.btn_cobro2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cobro2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cobro2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_cobro2.Location = new System.Drawing.Point(62, 368);
+            this.btn_cobro2.Name = "btn_cobro2";
+            this.btn_cobro2.Size = new System.Drawing.Size(126, 28);
+            this.btn_cobro2.TabIndex = 53;
+            this.btn_cobro2.Text = "Cobrar cheque";
+            this.btn_cobro2.UseVisualStyleBackColor = false;
+            this.btn_cobro2.Click += new System.EventHandler(this.btn_cobro2_Click);
             // 
-            // label7
+            // txt_monto2
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(60, 198);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 13);
-            this.label7.TabIndex = 49;
-            this.label7.Text = "Monto a debitar";
+            this.txt_monto2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_monto2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_monto2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_monto2.Location = new System.Drawing.Point(63, 309);
+            this.txt_monto2.Multiline = true;
+            this.txt_monto2.Name = "txt_monto2";
+            this.txt_monto2.Size = new System.Drawing.Size(252, 26);
+            this.txt_monto2.TabIndex = 50;
+            this.txt_monto2.Tag = "Cantidad_a_retirar";
+            this.txt_monto2.Text = "Q. 100";
             // 
-            // label6
+            // lbl_debitar
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(60, 118);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 13);
-            this.label6.TabIndex = 45;
-            this.label6.Text = "Cuenta destino";
+            this.lbl_debitar.AutoSize = true;
+            this.lbl_debitar.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_debitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_debitar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lbl_debitar.Location = new System.Drawing.Point(60, 288);
+            this.lbl_debitar.Name = "lbl_debitar";
+            this.lbl_debitar.Size = new System.Drawing.Size(96, 13);
+            this.lbl_debitar.TabIndex = 49;
+            this.lbl_debitar.Text = "Monto a debitar";
+            // 
+            // lbl_destino
+            // 
+            this.lbl_destino.AutoSize = true;
+            this.lbl_destino.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_destino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_destino.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.lbl_destino.Location = new System.Drawing.Point(60, 208);
+            this.lbl_destino.Name = "lbl_destino";
+            this.lbl_destino.Size = new System.Drawing.Size(92, 13);
+            this.lbl_destino.TabIndex = 45;
+            this.lbl_destino.Text = "Cuenta destino";
             // 
             // panel3
             // 
@@ -142,32 +161,33 @@ namespace CapaVista_SisB
             this.label5.TabIndex = 2;
             this.label5.Text = "Transaccion";
             // 
-            // button1
+            // btn_cobro1
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(59, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(263, 28);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "Cobrar Cheque";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_cobro1.BackColor = System.Drawing.Color.SlateGray;
+            this.btn_cobro1.FlatAppearance.BorderSize = 0;
+            this.btn_cobro1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cobro1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cobro1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_cobro1.Location = new System.Drawing.Point(59, 450);
+            this.btn_cobro1.Name = "btn_cobro1";
+            this.btn_cobro1.Size = new System.Drawing.Size(263, 28);
+            this.btn_cobro1.TabIndex = 55;
+            this.btn_cobro1.Text = "Cobrar Cheque";
+            this.btn_cobro1.UseVisualStyleBackColor = false;
+            this.btn_cobro1.Click += new System.EventHandler(this.btn_cobro1_Click);
             // 
-            // txt_cuenta
+            // txt_cheque
             // 
-            this.txt_cuenta.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txt_cuenta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cuenta.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_cuenta.Location = new System.Drawing.Point(59, 308);
-            this.txt_cuenta.Multiline = true;
-            this.txt_cuenta.Name = "txt_cuenta";
-            this.txt_cuenta.Size = new System.Drawing.Size(160, 25);
-            this.txt_cuenta.TabIndex = 54;
-            this.txt_cuenta.Tag = "Cantidad_a_retirar";
-            this.txt_cuenta.Text = "31573015";
+            this.txt_cheque.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_cheque.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cheque.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_cheque.Location = new System.Drawing.Point(54, 314);
+            this.txt_cheque.Multiline = true;
+            this.txt_cheque.Name = "txt_cheque";
+            this.txt_cheque.Size = new System.Drawing.Size(134, 25);
+            this.txt_cheque.TabIndex = 54;
+            this.txt_cheque.Tag = "Cantidad_a_retirar";
+            this.txt_cheque.Text = "31573015";
             // 
             // label2
             // 
@@ -192,7 +212,7 @@ namespace CapaVista_SisB
             this.textBox1.Size = new System.Drawing.Size(161, 30);
             this.textBox1.TabIndex = 59;
             this.textBox1.Tag = "Cantidad_a_retirar";
-            this.textBox1.Text = " Número de cuenta";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -214,114 +234,104 @@ namespace CapaVista_SisB
             this.panel4.Size = new System.Drawing.Size(220, 4);
             this.panel4.TabIndex = 61;
             // 
-            // label9
+            // lbl_fill
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Silver;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label9.Location = new System.Drawing.Point(78, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 13);
-            this.label9.TabIndex = 62;
-            this.label9.Text = "Chequera sin cheques";
+            this.lbl_fill.AutoSize = true;
+            this.lbl_fill.BackColor = System.Drawing.Color.Silver;
+            this.lbl_fill.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_fill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.lbl_fill.Location = new System.Drawing.Point(78, 139);
+            this.lbl_fill.Name = "lbl_fill";
+            this.lbl_fill.Size = new System.Drawing.Size(133, 13);
+            this.lbl_fill.TabIndex = 62;
+            this.lbl_fill.Text = "Chequera sin cheques";
             // 
-            // button3
+            // btn_fill
             // 
-            this.button3.BackColor = System.Drawing.Color.SeaGreen;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(199, 173);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(111, 30);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Llenar Chequera";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_fill.BackColor = System.Drawing.Color.SeaGreen;
+            this.btn_fill.FlatAppearance.BorderSize = 0;
+            this.btn_fill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_fill.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_fill.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_fill.Location = new System.Drawing.Point(199, 173);
+            this.btn_fill.Name = "btn_fill";
+            this.btn_fill.Size = new System.Drawing.Size(111, 30);
+            this.btn_fill.TabIndex = 63;
+            this.btn_fill.Text = "Llenar Chequera";
+            this.btn_fill.UseVisualStyleBackColor = false;
+            this.btn_fill.Click += new System.EventHandler(this.btn_fill_Click);
             // 
-            // textBox3
+            // txt_cant1
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox3.Location = new System.Drawing.Point(59, 177);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 25);
-            this.textBox3.TabIndex = 64;
-            this.textBox3.Tag = "Cantidad_a_retirar";
-            this.textBox3.Text = "Cantidad";
+            this.txt_cant1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_cant1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cant1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_cant1.Location = new System.Drawing.Point(54, 177);
+            this.txt_cant1.Multiline = true;
+            this.txt_cant1.Name = "txt_cant1";
+            this.txt_cant1.Size = new System.Drawing.Size(134, 25);
+            this.txt_cant1.TabIndex = 64;
+            this.txt_cant1.Tag = "Cantidad_a_retirar";
+            this.txt_cant1.Text = "Cantidad cheques";
             // 
-            // checkBox1
+            // ch_retiro
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(81, 241);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(54, 17);
-            this.checkBox1.TabIndex = 66;
-            this.checkBox1.Text = "Retiro";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ch_retiro.AutoSize = true;
+            this.ch_retiro.Location = new System.Drawing.Point(81, 241);
+            this.ch_retiro.Name = "ch_retiro";
+            this.ch_retiro.Size = new System.Drawing.Size(54, 17);
+            this.ch_retiro.TabIndex = 66;
+            this.ch_retiro.Text = "Retiro";
+            this.ch_retiro.UseVisualStyleBackColor = true;
+            this.ch_retiro.CheckedChanged += new System.EventHandler(this.ch_retiro_CheckedChanged);
             // 
-            // checkBox2
+            // ch_deposito
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(221, 241);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(68, 17);
-            this.checkBox2.TabIndex = 67;
-            this.checkBox2.Text = "Deposito";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ch_deposito.AutoSize = true;
+            this.ch_deposito.Location = new System.Drawing.Point(221, 241);
+            this.ch_deposito.Name = "ch_deposito";
+            this.ch_deposito.Size = new System.Drawing.Size(68, 17);
+            this.ch_deposito.TabIndex = 67;
+            this.ch_deposito.Text = "Deposito";
+            this.ch_deposito.UseVisualStyleBackColor = true;
+            this.ch_deposito.CheckedChanged += new System.EventHandler(this.ch_deposito_CheckedChanged);
             // 
-            // textBox4
+            // txt_monto1
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox4.Location = new System.Drawing.Point(63, 137);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 24);
-            this.textBox4.TabIndex = 60;
-            this.textBox4.Tag = "Cantidad_a_retirar";
-            this.textBox4.Text = " Número de cuenta";
+            this.txt_monto1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_monto1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_monto1.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_monto1.Location = new System.Drawing.Point(54, 384);
+            this.txt_monto1.Multiline = true;
+            this.txt_monto1.Name = "txt_monto1";
+            this.txt_monto1.Size = new System.Drawing.Size(134, 25);
+            this.txt_monto1.TabIndex = 68;
+            this.txt_monto1.Tag = "Cantidad_a_retirar";
+            this.txt_monto1.Text = "Q. 100";
             // 
-            // textBox5
+            // lbl_cheque
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(59, 378);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(160, 25);
-            this.textBox5.TabIndex = 68;
-            this.textBox5.Tag = "Cantidad_a_retirar";
-            this.textBox5.Text = "Q. 100";
+            this.lbl_cheque.AutoSize = true;
+            this.lbl_cheque.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_cheque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_cheque.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.lbl_cheque.Location = new System.Drawing.Point(51, 297);
+            this.lbl_cheque.Name = "lbl_cheque";
+            this.lbl_cheque.Size = new System.Drawing.Size(74, 13);
+            this.lbl_cheque.TabIndex = 70;
+            this.lbl_cheque.Text = "No. Cheque";
             // 
-            // label10
+            // lbl_monto
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label10.Location = new System.Drawing.Point(56, 291);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 13);
-            this.label10.TabIndex = 70;
-            this.label10.Text = "Endoso/DPI";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
-            this.label11.Location = new System.Drawing.Point(56, 362);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 13);
-            this.label11.TabIndex = 71;
-            this.label11.Text = "Monto";
+            this.lbl_monto.AutoSize = true;
+            this.lbl_monto.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_monto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_monto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.lbl_monto.Location = new System.Drawing.Point(51, 368);
+            this.lbl_monto.Name = "lbl_monto";
+            this.lbl_monto.Size = new System.Drawing.Size(42, 13);
+            this.lbl_monto.TabIndex = 71;
+            this.lbl_monto.Text = "Monto";
             // 
             // panel1
             // 
@@ -331,28 +341,69 @@ namespace CapaVista_SisB
             this.panel1.Size = new System.Drawing.Size(372, 2);
             this.panel1.TabIndex = 72;
             // 
+            // btn_check
+            // 
+            this.btn_check.BackColor = System.Drawing.Color.Transparent;
+            this.btn_check.FlatAppearance.BorderSize = 0;
+            this.btn_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_check.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_check.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_check.Image = global::CapaVista_SisB.Properties.Resources.checkIcon;
+            this.btn_check.Location = new System.Drawing.Point(253, 39);
+            this.btn_check.Name = "btn_check";
+            this.btn_check.Size = new System.Drawing.Size(36, 30);
+            this.btn_check.TabIndex = 73;
+            this.btn_check.UseVisualStyleBackColor = false;
+            this.btn_check.Click += new System.EventHandler(this.btn_check_Click);
+            // 
+            // txt_cheque2
+            // 
+            this.txt_cheque2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_cheque2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cheque2.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_cheque2.Location = new System.Drawing.Point(63, 146);
+            this.txt_cheque2.Multiline = true;
+            this.txt_cheque2.Name = "txt_cheque2";
+            this.txt_cheque2.Size = new System.Drawing.Size(134, 25);
+            this.txt_cheque2.TabIndex = 71;
+            this.txt_cheque2.Tag = "Cantidad_a_retirar";
+            this.txt_cheque2.Text = "31573015";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.label4.Location = new System.Drawing.Point(64, 117);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 13);
+            this.label4.TabIndex = 73;
+            this.label4.Text = "No. Cheque";
+            // 
             // frmCheques
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(801, 504);
+            this.Controls.Add(this.btn_check);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lbl_monto);
+            this.Controls.Add(this.lbl_cheque);
+            this.Controls.Add(this.txt_monto1);
+            this.Controls.Add(this.ch_deposito);
+            this.Controls.Add(this.ch_retiro);
+            this.Controls.Add(this.txt_cant1);
+            this.Controls.Add(this.btn_fill);
+            this.Controls.Add(this.lbl_fill);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_cuenta);
+            this.Controls.Add(this.btn_cobro1);
+            this.Controls.Add(this.txt_cheque);
             this.Name = "frmCheques";
             this.Text = "frmCheques";
             this.Load += new System.EventHandler(this.frmCheques_Load);
@@ -366,27 +417,30 @@ namespace CapaVista_SisB
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txt_monto;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_cobro2;
+        private System.Windows.Forms.TextBox txt_monto2;
+        private System.Windows.Forms.Label lbl_debitar;
+        private System.Windows.Forms.Label lbl_destino;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_cuenta;
+        private System.Windows.Forms.Button btn_cobro1;
+        private System.Windows.Forms.TextBox txt_cheque;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_fill;
+        private System.Windows.Forms.Button btn_fill;
+        private System.Windows.Forms.TextBox txt_cant1;
+        private System.Windows.Forms.CheckBox ch_retiro;
+        private System.Windows.Forms.CheckBox ch_deposito;
+        private System.Windows.Forms.TextBox txt_cuenta2;
+        private System.Windows.Forms.TextBox txt_monto1;
+        private System.Windows.Forms.Label lbl_cheque;
+        private System.Windows.Forms.Label lbl_monto;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_check;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_cheque2;
     }
 }

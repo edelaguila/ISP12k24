@@ -16,11 +16,18 @@ namespace CapaVista_SisB
 {
     public partial class frmDeposito : Form
     {
+<<<<<<< HEAD
+        public frmDeposito()
+        {
+            InitializeComponent();
+
+=======
         CapaControlador_SisB.Controlador ctrl = new CapaControlador_SisB.Controlador();
 
         public frmDeposito()
         {
             InitializeComponent();
+>>>>>>> f247e84db4fed5409b5c43bdabf2d38082bfadf9
         }
 
         public void fillCmb()
@@ -34,13 +41,15 @@ namespace CapaVista_SisB
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
             ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
             MessageBox.Show("Desposito realizado");
+>>>>>>> f247e84db4fed5409b5c43bdabf2d38082bfadf9
         }
 
         private void txt_cuenta_Enter(object sender, EventArgs e)
         {
-            txt_cuenta.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)

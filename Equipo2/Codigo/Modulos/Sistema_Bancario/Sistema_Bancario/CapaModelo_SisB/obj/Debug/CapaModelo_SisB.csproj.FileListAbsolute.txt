@@ -46,12 +46,6 @@ C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.AssemblyReference.cache
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.pdb
 C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Proyecto Avanzado\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.AssemblyReference.cache
@@ -64,9 +58,18 @@ C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equi
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
+<<<<<<< HEAD
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.AssemblyReference.cache
+=======
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\bin\Debug\CapaModelo_SisB.pdb
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.AssemblyReference.cache
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.csproj.CoreCompileInputs.cache
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.dll
 D:\Escritorio\ISP12k24\ISP12k24\Equipo2\Codigo\Modulos\Sistema_Bancario\Sistema_Bancario\CapaModelo_SisB\obj\Debug\CapaModelo_SisB.pdb
+>>>>>>> f247e84db4fed5409b5c43bdabf2d38082bfadf9
