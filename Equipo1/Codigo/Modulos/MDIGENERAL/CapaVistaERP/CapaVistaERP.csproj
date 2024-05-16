@@ -556,8 +556,6 @@
   <ItemGroup>
     <None Include="Resources\tipo-de-cambio %282%29.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Pruebas %28test%29\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
