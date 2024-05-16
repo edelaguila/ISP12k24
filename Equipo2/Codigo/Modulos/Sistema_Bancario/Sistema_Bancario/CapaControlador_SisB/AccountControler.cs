@@ -19,7 +19,7 @@ namespace CapaControlador_SisB
             this.sn = new Sentencias();
         }
 
-        public List<Cuenta>getAccountsFromUser(int IdUser)
+        public List<Cuenta> getAccountsFromUser(int IdUser)
         {
             return this.sn.getUserAccounts(IdUser);
         }

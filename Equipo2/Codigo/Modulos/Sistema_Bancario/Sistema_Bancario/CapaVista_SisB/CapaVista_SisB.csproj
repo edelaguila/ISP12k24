@@ -184,18 +184,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ReportMoneda.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReportMoneda.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\ReporteMoneda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\ReporteMoneda.Designer.cs">
-      <DependentUpon>ReporteMoneda.cs</DependentUpon>
-    </Compile>
     <Compile Include="TarjetasCreditoDebito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,13 +250,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReportMoneda.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReportMoneda.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\ReporteMoneda.resx">
-      <DependentUpon>ReporteMoneda.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="TarjetasCreditoDebito.resx">
       <DependentUpon>TarjetasCreditoDebito.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +269,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\checkIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

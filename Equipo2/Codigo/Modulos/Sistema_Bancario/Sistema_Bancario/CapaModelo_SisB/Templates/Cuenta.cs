@@ -17,6 +17,7 @@ namespace CapaModelo_SisB.Templates
         public string numero;
         public int idUsuario;
         public List<Cuenta> friend_accounts = new List<Cuenta>();
+        public Chequera chequera;
 
 
         public Cuenta(int id, int idCliente, double saldo, int idTipo, int idMoneda, string numero, int idUsuario, string nombre)

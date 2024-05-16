@@ -52,8 +52,12 @@
     <Compile Include="Libraries\TransactionSentences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider.cs" />
+    <Compile Include="Sentences\CheckSentence.cs" />
+    <Compile Include="Templates\Check.cs" />
+    <Compile Include="Sentences\CheckbookSentence.cs" />
     <Compile Include="Sentencias.cs" />
     <Compile Include="API\AccountSentence.cs" />
+    <Compile Include="Templates\Chequera.cs" />
     <Compile Include="Templates\Cliente.cs" />
     <Compile Include="Templates\Cuenta.cs" />
     <Compile Include="Templates\CuentaAmiga.cs" />

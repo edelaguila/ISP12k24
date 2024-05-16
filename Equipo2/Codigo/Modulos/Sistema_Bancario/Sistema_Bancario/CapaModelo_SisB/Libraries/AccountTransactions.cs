@@ -100,10 +100,17 @@ namespace CapaModelo_SisB.Libraries
 
         public void deleteFriendAccount(int AccountReference, int FriendAccount)
         {
-            string sql = "delete from tbl_cuentaamiga where id_cuenta_principal='" + AccountReference + "' and id_cuenta_amiga='"+FriendAccount+"'";
+            string sql = "delete from tbl_cuentaamiga where id_cuenta_principal='" + AccountReference + "' and id_cuenta_amiga='" + FriendAccount + "'";
             OdbcCommand cmd = new OdbcCommand(sql, this.conn.connection());
             cmd.ExecuteNonQuery();
             this.getFriendAccounts();
         }
     }
 }
+
+
+
+
+
+
+
