@@ -69,6 +69,9 @@
             this.cb_nofact = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_Sumadefacturas = new System.Windows.Forms.TextBox();
+            this.NoFacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechadeVen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Totalfacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -403,6 +406,10 @@
             // dgv_pagoproveedor
             // 
             this.dgv_pagoproveedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_pagoproveedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NoFacturas,
+            this.FechadeVen,
+            this.Totalfacturas});
             this.dgv_pagoproveedor.Location = new System.Drawing.Point(31, 160);
             this.dgv_pagoproveedor.Name = "dgv_pagoproveedor";
             this.dgv_pagoproveedor.RowHeadersWidth = 51;
@@ -530,6 +537,27 @@
             this.txt_Sumadefacturas.Size = new System.Drawing.Size(154, 24);
             this.txt_Sumadefacturas.TabIndex = 58;
             // 
+            // NoFacturas
+            // 
+            this.NoFacturas.HeaderText = "No. de Factura";
+            this.NoFacturas.MinimumWidth = 6;
+            this.NoFacturas.Name = "NoFacturas";
+            this.NoFacturas.Width = 125;
+            // 
+            // FechadeVen
+            // 
+            this.FechadeVen.HeaderText = "Fecha de Vencimiento";
+            this.FechadeVen.MinimumWidth = 6;
+            this.FechadeVen.Name = "FechadeVen";
+            this.FechadeVen.Width = 125;
+            // 
+            // Totalfacturas
+            // 
+            this.Totalfacturas.HeaderText = "Total de Facturas";
+            this.Totalfacturas.MinimumWidth = 6;
+            this.Totalfacturas.Name = "Totalfacturas";
+            this.Totalfacturas.Width = 125;
+            // 
             // CajaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -594,5 +622,8 @@
         private System.Windows.Forms.ComboBox cb_nofact;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_Sumadefacturas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NoFacturas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechadeVen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Totalfacturas;
     }
 }

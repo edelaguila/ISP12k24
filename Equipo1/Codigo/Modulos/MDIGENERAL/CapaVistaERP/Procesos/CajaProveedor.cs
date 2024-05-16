@@ -97,9 +97,10 @@ namespace CapaVistaERP.Procesos
 
         public void LlenarCamposFactura(string noFactura)
         {
-            (DateTime fechaVencimiento, decimal total) = cn.ObtenerFechaVYTotal(noFactura);
+            
             try
             {
+                (DateTime fechaVencimiento, decimal total) = cn.ObtenerFechaVYTotal(noFactura);
                 // Llenar los campos de texto con los datos obtenidos
                 txt_FechaV.Text = fechaVencimiento.ToString(); // Ajusta el formato según sea necesario
                 txt_factotal.Text = total.ToString(); // Ajusta el formato según sea necesario
@@ -145,45 +146,39 @@ namespace CapaVistaERP.Procesos
         double sumaTotal = 0;
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-
-           /* double precioU = 0;
-            double cantidad = 0;
-            double totalprod = 0;
-
-            // Obtener el precio unitario desde el textbox
-            if (double.TryParse(txt_preciou.Text, out precioU))
+            try
             {
-                // Obtener la cantidad desde el textbox
-                if (double.TryParse(txt_cantidad.Text, out cantidad))
-                {
-                    // Calcular el total del producto
-                    totalprod = precioU * cantidad;
+                // Obtener el número de factura seleccionado
+                string noFacturaSeleccionada = cb_nofact.SelectedItem.ToString();
 
-                    // Obtener el ID del producto seleccionado en el ComboBox
-                    string productoSeleccionado = cmb_productos.SelectedItem.ToString();
-                    string[] parts = productoSeleccionado.Split('-');
-                    string idProducto = parts[0].Trim();
-                    //Obtener el nombre del producto
-                    string nomProducto = parts[1].Trim();
-                    //Obtener la descripcion del producto
-                    string descripcion = txt_descripcion.Text;
-                    // Agregar una fila al DataGridView con los detalles
-                    dgv_detalle.Rows.Add(cantidad, idProducto, nomProducto, descripcion, precioU, totalprod);
-                    //Limpiar los textbox para poder ingresar uno nuevo
-                    txt_cantidad.Text = "";
-                    cmb_productos.Text = "";
-                    txt_descripcion.Text = "";
-                    txt_preciou.Text = "";
-                    txt_totalfila.Text = "";
+                // Obtener los datos de la factura seleccionada
+                (DateTime fechaVencimiento, decimal total) = cn.ObtenerFechaVYTotal(noFacturaSeleccionada);
+
+                // Agregar una nueva fila al DataGridView
+                dgv_pagoproveedor.Rows.Add(noFacturaSeleccionada, fechaVencimiento.ToString(), total.ToString());
+
+                if (double.TryParse(txt_factotal.Text, out double valor))
+                {
+                    // Sumar el valor al total acumulado
+                    sumaTotal += valor;
+
+                    // Mostrar la suma total en el otro TextBox
+                    txt_totalapagar.Text = sumaTotal.ToString();
+
+                    //txtNoFactura.Text = "";
+                    txt_FechaV.Text = "";
+                    txt_factotal.Text = "";
+
                 }
                 else
                 {
-                    MessageBox.Show("Ingrese una cantidad válida.");
+                    MessageBox.Show("Por favor, ingrese un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Ingrese un precio unitario válido.");
+                MessageBox.Show("Error al agregar la factura al DataGridView: " + ex.Message);
             }
 
 
@@ -230,36 +225,28 @@ namespace CapaVistaERP.Procesos
 
 
         private double totalFacturasAcumulado = 0;
+        private void ActualizarSubtotal()
+        {
+            double subtotal = 0.0;
+            foreach (DataGridViewRow row in dgv_pagoproveedor.Rows)
+            {
+                subtotal += Convert.ToDouble(row.Cells["Totalfacturas"].Value);
+            }
+            txt_totalapagar.Text = subtotal.ToString();
+        }
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
-            // Verificar si el contenido del TextBox es un número válido
-            if (double.TryParse(txt_factotal.Text, out double montoFactura))
+            if (dgv_pagoproveedor.SelectedRows.Count > 0)
             {
-                // Restar el monto de la factura del total acumulado de facturas
-                totalFacturasAcumulado -= montoFactura;
-
-                // Restar el monto de la factura de la suma total
-                sumaTotal -= montoFactura;
-
-                // Asegurarse de que el total acumulado no sea menor que cero
-                if (totalFacturasAcumulado < 0)
-                {
-                    totalFacturasAcumulado = 0;
-                }
-
-                // Asegurarse de que la suma total no sea menor que cero
-                if (sumaTotal < 0)
-                {
-                    sumaTotal = 0;
-                }
-
-                // Mostrar el nuevo total acumulado de facturas en el TextBox correspondiente
-                txt_totalapagar.Text = sumaTotal.ToString();
+                DataGridViewRow DGVfila = dgv_pagoproveedor.SelectedRows[0];
+                dgv_pagoproveedor.Rows.Remove(DGVfila);
+                ActualizarSubtotal();
             }
             else
             {
-                MessageBox.Show("Por favor, ingrese un monto de factura válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Seleccione una fila valida para eliminar");
             }
+
         }
 
         private void btn_pagar_Click(object sender, EventArgs e)
