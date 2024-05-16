@@ -63,11 +63,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cheques.cs">
+    <Compile Include="frmCheques.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cheques.Designer.cs">
-      <DependentUpon>Cheques.cs</DependentUpon>
+    <Compile Include="frmCheques.Designer.cs">
+      <DependentUpon>frmCheques.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
@@ -104,6 +104,12 @@
     </Compile>
     <Compile Include="frmTipoCuenta.Designer.cs">
       <DependentUpon>frmTipoCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTransferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTransferencia.Designer.cs">
+      <DependentUpon>frmTransferencia.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimientos\FrmCuentaAmiga.cs">
       <SubType>Form</SubType>
@@ -179,8 +185,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Cheques.resx">
-      <DependentUpon>Cheques.cs</DependentUpon>
+    <EmbeddedResource Include="frmCheques.resx">
+      <DependentUpon>frmCheques.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTipoCuenta.resx">
       <DependentUpon>frmTipoCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTransferencia.resx">
+      <DependentUpon>frmTransferencia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\FrmCuentaAmiga.resx">
       <DependentUpon>FrmCuentaAmiga.cs</DependentUpon>

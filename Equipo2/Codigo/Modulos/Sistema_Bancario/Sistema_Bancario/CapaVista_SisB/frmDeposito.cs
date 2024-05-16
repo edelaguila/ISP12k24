@@ -33,11 +33,7 @@ namespace CapaVista_SisB
 
         public void fillCmb()
         {
-            //this.cmb_cuenta.Items.Clear();
-            foreach (Cuenta acc in this.transaction.friend_accounts)
-            {
-                this.cmb_cuenta.Items.Add(acc.nombre);
-            }
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
@@ -58,14 +54,6 @@ namespace CapaVista_SisB
 
         private void button2_Click(object sender, EventArgs e)
         {
-            /*string selected = cmb_cuenta.SelectedText.Trim();
-            selected = selected.Split('-')[0];
-            Console.WriteLine(selected);
-            this.ctrl.makeTransaction(selected, accId, Convert.ToDouble(txt_monto.Text));
-            MessageBox.Show("Transaccion realizada")*/
-            double amount = Convert.ToDouble(txt_monto.Text);
-            this.transaction.makeTransactionWithFriendAccount(cmb_cuenta.SelectedIndex, amount);
-            MessageBox.Show("Deposito realizado correctamente!");
         }
     }
 }
