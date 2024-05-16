@@ -17,14 +17,14 @@ namespace CapaVista_SisB
     public partial class frmHistorial : Form
     {
         Controlador cn = new Controlador();
-        CapaControlador_SisB.Controlador ctrl;
+        CapaControlador_SisB.AccountControler ctrl;
         public int accId;
         public frmHistorial()
         {
             InitializeComponent();
-            this.ctrl = new CapaControlador_SisB.Controlador();
+            this.ctrl = new CapaControlador_SisB.AccountControler();
             accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
-            Cuenta account = this.ctrl.getCurrentAccount(accId);
+            Cuenta account = this.ctrl.getAccountsFromUser(accId)[0];
             cargarDatos();
         }
 
