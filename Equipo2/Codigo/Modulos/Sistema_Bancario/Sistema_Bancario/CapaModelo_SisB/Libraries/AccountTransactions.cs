@@ -50,6 +50,7 @@ namespace CapaModelo_SisB.Libraries
                 TransactionSentences.updateBalanceFromAccount(idAccount, amount * sign);
                 this.updateBalance(amount, -1);
                 this.saldo = this.saldo + (amount * sign);
+                Console.WriteLine("Deposito realizado");
                 return;
             }
             this.updateBalance(amount);

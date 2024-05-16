@@ -16,19 +16,11 @@ namespace CapaVista_SisB
 {
     public partial class frmDeposito : Form
     {
-        CapaControlador_SisB.WidgetHelper whelper;
-        CapaControlador_SisB.AccountControler ctrl;
-        public int accId;
-        public AccountTransactions transaction;
+        CapaControlador_SisB.Controlador ctrl = new CapaControlador_SisB.Controlador();
+
         public frmDeposito()
         {
             InitializeComponent();
-            this.whelper = new WidgetHelper();
-            this.ctrl = new CapaControlador_SisB.AccountControler();
-            accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
-            Cuenta account = this.ctrl.getAccountsFromUser(accId)[0];
-            transaction = new AccountTransactions(account.id, account.nombre, account.numero, account.saldo);
-            this.fillCmb();
         }
 
         public void fillCmb()
@@ -42,9 +34,8 @@ namespace CapaVista_SisB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.transaction.addFriendAccount(txt_cuenta.Text);
-            this.fillCmb();
-            MessageBox.Show("Cuenta amiga agregada!");
+            ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
+            MessageBox.Show("Desposito realizado");
         }
 
         private void txt_cuenta_Enter(object sender, EventArgs e)
