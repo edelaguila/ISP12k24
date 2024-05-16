@@ -142,7 +142,7 @@ namespace Vista_PrototipoMenu
 
         private void man_boleta_Click(object sender, EventArgs e)
         {
-            CapaVista_SisB.Cheques form = new CapaVista_SisB.Cheques();
+            CapaVista_SisB.frmCheques form = new CapaVista_SisB.frmCheques();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
