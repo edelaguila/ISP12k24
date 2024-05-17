@@ -16,7 +16,7 @@ namespace CapaControlador_SisB
         {
             Sentencias sn = new Sentencias();
             Cuenta account = sn.getAccountByNumber(accountNo);
-            TransactionSentences.updateBalanceFromAccount(account.id, amount);
+            TransactionSentences.updateBalanceFromAccount(account.id, amount * sign);
             HistorySentence.saveTransactionOnHistory(account.id, sign == 1 ? "Deposito" : "Retiro", amount);
         }
     }

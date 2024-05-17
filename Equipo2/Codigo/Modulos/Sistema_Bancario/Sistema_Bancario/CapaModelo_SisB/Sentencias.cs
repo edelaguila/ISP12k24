@@ -252,7 +252,7 @@ namespace CapaModelo_SisB
             List<Cuenta> accounts = new List<Cuenta>();
             try
             {
-                string query = "select cue_id, cue_cliente, cue_tipo, cue_saldo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_usuario='" + Id + "'";
+                string query = "select cue_id, cue_cliente, cue_saldo, cue_tipo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_usuario='" + Id + "'";
                 Console.WriteLine(query);
                 OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
                 OdbcDataReader reader = cmd.ExecuteReader();
@@ -289,7 +289,7 @@ namespace CapaModelo_SisB
         {
             try
             {
-                string query = "select cue_id, cue_cliente, cue_tipo, cue_saldo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_numero='" + accountNumber + "'";
+                string query = "select cue_id, cue_cliente, cue_saldo, cue_tipo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_numero='" + accountNumber + "'";
                 Console.WriteLine(query);
                 OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
                 OdbcDataReader reader = cmd.ExecuteReader();

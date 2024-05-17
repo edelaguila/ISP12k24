@@ -19,6 +19,7 @@ namespace CapaVista_SisB
         Controlador cn = new Controlador();
         CapaControlador_SisB.AccountControler ctrl;
         public int accId;
+        //DANNY PEREZ
         public frmHistorial()
         {
             InitializeComponent();

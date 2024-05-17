@@ -88,6 +88,12 @@ namespace CapaControlador_SisB
             return this.sentencias.getUserProfileById(userId);
         }
 
+        public static List<Cuenta> GetUserFriendAccount(Cuenta cuenta)
+        {
+            AccountTransactions ac = new AccountTransactions(cuenta.id, cuenta.nombre, cuenta.numero, cuenta.saldo);
+            return ac.friend_accounts;
+
+        }
 
     }
 }

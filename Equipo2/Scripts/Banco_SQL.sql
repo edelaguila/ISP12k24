@@ -1,10 +1,8 @@
-CREATE DATABASE  IF NOT EXISTS `bd_banco` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `bd_banco`;
--- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: bd_banco
 -- ------------------------------------------------------
--- Server version	8.3.0
+-- Server version	8.0.35
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -66,7 +64,7 @@ CREATE TABLE `tbl_asignacionesperfilsusuario` (
 
 LOCK TABLES `tbl_asignacionesperfilsusuario` WRITE;
 /*!40000 ALTER TABLE `tbl_asignacionesperfilsusuario` DISABLE KEYS */;
-INSERT INTO `tbl_asignacionesperfilsusuario` VALUES (1,1),(2,1);
+INSERT INTO `tbl_asignacionesperfilsusuario` VALUES (1,1),(2,1),(3,3);
 /*!40000 ALTER TABLE `tbl_asignacionesperfilsusuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -118,7 +116,7 @@ CREATE TABLE `tbl_bitacoradeeventos` (
   KEY `fk_id_aplicacion` (`fk_id_aplicacion`),
   CONSTRAINT `tbl_bitacoradeeventos_ibfk_1` FOREIGN KEY (`fk_id_usuario`) REFERENCES `tbl_usuarios` (`pk_id_usuario`),
   CONSTRAINT `tbl_bitacoradeeventos_ibfk_2` FOREIGN KEY (`fk_id_aplicacion`) REFERENCES `tbl_aplicaciones` (`pk_id_aplicacion`)
-) ENGINE=InnoDB AUTO_INCREMENT=65 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=217 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -127,8 +125,62 @@ CREATE TABLE `tbl_bitacoradeeventos` (
 
 LOCK TABLES `tbl_bitacoradeeventos` WRITE;
 /*!40000 ALTER TABLE `tbl_bitacoradeeventos` DISABLE KEYS */;
-INSERT INTO `tbl_bitacoradeeventos` VALUES (1,1,1,'2024-04-26','15:29:08','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(2,1,8000,'2024-04-26','15:30:03','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(3,1,1,'2024-04-26','15:31:32','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(4,1,8000,'2024-04-26','15:31:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(5,1,1,'2024-04-26','15:56:33','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(6,1,1,'2024-04-26','16:39:44','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(7,1,8000,'2024-04-26','16:39:46','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(8,1,1,'2024-04-26','16:41:29','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(9,1,8000,'2024-04-26','16:41:41','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(10,1,1,'2024-04-26','16:42:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(11,1,8000,'2024-04-26','16:42:37','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(12,1,1,'2024-04-26','16:44:04','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(13,1,8000,'2024-04-26','16:44:06','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(14,1,1,'2024-04-26','16:45:18','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(15,1,8000,'2024-04-26','16:45:20','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(16,1,1,'2024-04-28','17:15:41','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(17,1,8000,'2024-04-28','17:15:43','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(18,1,1,'2024-04-28','19:01:21','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(19,1,1000,'2024-04-28','19:01:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Seguridad'),(20,1,1001,'2024-04-28','19:02:11','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Guardar'),(21,2,1,'2024-04-28','19:02:32','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(22,2,999,'2024-04-28','19:02:34','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(23,2,1,'2024-04-28','19:02:40','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(24,2,1,'2024-04-28','19:04:42','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(25,2,8000,'2024-04-28','19:04:43','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(26,1,1,'2024-04-28','19:28:45','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(27,1,8000,'2024-04-28','19:28:50','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(28,1,999,'2024-04-28','19:29:01','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(29,1,1,'2024-04-28','19:41:27','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(30,1,8000,'2024-04-28','19:41:28','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(31,1,1,'2024-04-28','19:44:33','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(32,1,8000,'2024-04-28','19:44:34','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(33,1,1,'2024-04-28','20:11:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(34,1,8000,'2024-04-28','20:11:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(35,1,1,'2024-04-28','20:12:48','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(36,1,8000,'2024-04-28','20:12:48','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(37,1,999,'2024-04-28','20:12:59','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(38,1,1,'2024-04-28','20:13:45','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(39,1,8000,'2024-04-28','20:13:46','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(40,1,999,'2024-04-28','20:13:51','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(41,1,1,'2024-04-28','20:14:53','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(42,1,8000,'2024-04-28','20:14:55','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(43,1,999,'2024-04-28','20:15:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(44,1,1,'2024-04-28','21:21:00','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(45,1,8000,'2024-04-28','21:21:01','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(46,1,1,'2024-04-28','21:22:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(47,1,8000,'2024-04-28','21:22:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(48,1,1,'2024-04-28','21:23:40','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(49,1,8000,'2024-04-28','21:23:42','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(50,1,1,'2024-04-28','21:26:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(51,1,8000,'2024-04-28','21:26:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(52,1,1,'2024-04-28','21:29:09','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(53,1,8000,'2024-04-28','21:29:10','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(54,1,1,'2024-04-28','21:31:59','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(55,1,8000,'2024-04-28','21:32:00','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(56,1,1,'2024-04-30','08:57:01','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(57,1,8000,'2024-04-30','08:57:02','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(58,1,1,'2024-04-30','08:58:09','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(59,1,8000,'2024-04-30','08:58:11','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(60,1,1,'2024-05-03','13:04:48','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(61,1,8000,'2024-05-03','13:04:50','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(62,1,999,'2024-05-03','13:04:58','OLSTER','fe80::a328:23e5:7f78:af4f%13','Cerró Sesión'),(63,1,1,'2024-05-03','13:10:49','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(64,1,1000,'2024-05-03','13:10:52','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Seguridad');
+INSERT INTO `tbl_bitacoradeeventos` VALUES (1,1,1,'2024-04-26','15:29:08','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(2,1,8000,'2024-04-26','15:30:03','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(3,1,1,'2024-04-26','15:31:32','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(4,1,8000,'2024-04-26','15:31:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(5,1,1,'2024-04-26','15:56:33','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(6,1,1,'2024-04-26','16:39:44','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(7,1,8000,'2024-04-26','16:39:46','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(8,1,1,'2024-04-26','16:41:29','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(9,1,8000,'2024-04-26','16:41:41','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(10,1,1,'2024-04-26','16:42:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(11,1,8000,'2024-04-26','16:42:37','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(12,1,1,'2024-04-26','16:44:04','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(13,1,8000,'2024-04-26','16:44:06','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(14,1,1,'2024-04-26','16:45:18','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(15,1,8000,'2024-04-26','16:45:20','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(16,1,1,'2024-04-28','17:15:41','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(17,1,8000,'2024-04-28','17:15:43','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(18,1,1,'2024-04-28','19:01:21','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(19,1,1000,'2024-04-28','19:01:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Seguridad'),(20,1,1001,'2024-04-28','19:02:11','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Guardar'),(21,2,1,'2024-04-28','19:02:32','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(22,2,999,'2024-04-28','19:02:34','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(23,2,1,'2024-04-28','19:02:40','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(24,2,1,'2024-04-28','19:04:42','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(25,2,8000,'2024-04-28','19:04:43','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(26,1,1,'2024-04-28','19:28:45','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(27,1,8000,'2024-04-28','19:28:50','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(28,1,999,'2024-04-28','19:29:01','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(29,1,1,'2024-04-28','19:41:27','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(30,1,8000,'2024-04-28','19:41:28','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(31,1,1,'2024-04-28','19:44:33','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(32,1,8000,'2024-04-28','19:44:34','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(33,1,1,'2024-04-28','20:11:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(34,1,8000,'2024-04-28','20:11:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(35,1,1,'2024-04-28','20:12:48','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(36,1,8000,'2024-04-28','20:12:48','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(37,1,999,'2024-04-28','20:12:59','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(38,1,1,'2024-04-28','20:13:45','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(39,1,8000,'2024-04-28','20:13:46','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(40,1,999,'2024-04-28','20:13:51','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(41,1,1,'2024-04-28','20:14:53','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(42,1,8000,'2024-04-28','20:14:55','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(43,1,999,'2024-04-28','20:15:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(44,1,1,'2024-04-28','21:21:00','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(45,1,8000,'2024-04-28','21:21:01','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(46,1,1,'2024-04-28','21:22:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(47,1,8000,'2024-04-28','21:22:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(48,1,1,'2024-04-28','21:23:40','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(49,1,8000,'2024-04-28','21:23:42','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(50,1,1,'2024-04-28','21:26:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(51,1,8000,'2024-04-28','21:26:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(52,1,1,'2024-04-28','21:29:09','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(53,1,8000,'2024-04-28','21:29:10','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(54,1,1,'2024-04-28','21:31:59','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(55,1,8000,'2024-04-28','21:32:00','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(56,1,1,'2024-04-30','08:57:01','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(57,1,8000,'2024-04-30','08:57:02','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(58,1,1,'2024-04-30','08:58:09','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(59,1,8000,'2024-04-30','08:58:11','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(60,1,1,'2024-05-03','13:04:48','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(61,1,8000,'2024-05-03','13:04:50','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(62,1,999,'2024-05-03','13:04:58','OLSTER','fe80::a328:23e5:7f78:af4f%13','Cerró Sesión'),(63,1,1,'2024-05-03','13:10:49','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(64,1,1000,'2024-05-03','13:10:52','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Seguridad'),(65,1,1,'2024-05-10','12:34:00','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(66,1,8000,'2024-05-10','12:34:02','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(67,1,1,'2024-05-10','13:06:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(68,1,8000,'2024-05-10','13:06:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(69,1,1,'2024-05-10','13:06:55','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(70,1,8000,'2024-05-10','13:06:57','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(71,1,1,'2024-05-10','13:27:55','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(72,1,8000,'2024-05-10','13:27:56','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(73,1,1,'2024-05-10','13:49:54','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(74,1,8000,'2024-05-10','13:49:55','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(75,1,1,'2024-05-10','13:51:22','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(76,1,8000,'2024-05-10','13:51:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(77,1,1,'2024-05-10','13:58:02','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(78,1,8000,'2024-05-10','13:58:03','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(79,1,1,'2024-05-10','14:03:11','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(80,1,8000,'2024-05-10','14:03:12','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(81,1,1,'2024-05-10','14:05:03','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(82,1,8000,'2024-05-10','14:05:04','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(83,1,1,'2024-05-10','14:13:29','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(84,1,8000,'2024-05-10','14:13:29','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(85,1,1,'2024-05-10','14:15:31','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(86,1,8000,'2024-05-10','14:15:31','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(87,1,1,'2024-05-10','14:18:13','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(88,1,8000,'2024-05-10','14:18:14','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(89,1,1,'2024-05-10','14:26:25','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(90,1,8000,'2024-05-10','14:26:26','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(91,1,1,'2024-05-10','14:28:11','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(92,1,8000,'2024-05-10','14:28:12','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(93,1,1,'2024-05-12','00:48:15','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(94,1,8000,'2024-05-12','00:48:17','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(95,1,1,'2024-05-13','21:57:55','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(96,1,1000,'2024-05-13','21:57:57','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Seguridad'),(97,1,1001,'2024-05-13','21:58:49','OLSTER','fe80::a328:23e5:7f78:af4f%13','Guardar'),(98,1,1001,'2024-05-13','21:59:12','OLSTER','fe80::a328:23e5:7f78:af4f%13','Reportes'),(99,1,1,'2024-05-13','21:59:31','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(100,1,1000,'2024-05-13','21:59:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Seguridad'),(101,1,1003,'2024-05-13','22:00:09','OLSTER','fe80::a328:23e5:7f78:af4f%13','Guardar'),(102,3,1,'2024-05-13','22:07:32','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(103,3,8000,'2024-05-13','22:07:35','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(104,3,999,'2024-05-13','22:08:36','OLSTER','fe80::a328:23e5:7f78:af4f%13','Cerró Sesión'),(105,3,1,'2024-05-13','23:09:15','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(106,3,8000,'2024-05-13','23:09:16','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(107,1,1,'2024-05-13','23:18:04','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(108,1,8000,'2024-05-13','23:18:05','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(109,3,1,'2024-05-13','23:18:26','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(110,3,8000,'2024-05-13','23:18:27','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(111,3,1,'2024-05-13','23:20:33','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(112,3,8000,'2024-05-13','23:20:34','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(113,3,1,'2024-05-13','23:22:01','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(114,3,8000,'2024-05-13','23:22:02','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(115,3,1,'2024-05-13','23:25:23','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(116,3,8000,'2024-05-13','23:25:25','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(117,3,1,'2024-05-13','23:27:26','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(118,3,8000,'2024-05-13','23:27:27','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(119,3,1,'2024-05-13','23:29:13','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(120,3,8000,'2024-05-13','23:29:14','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(121,3,1,'2024-05-13','23:31:41','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(122,3,8000,'2024-05-13','23:31:43','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(123,3,1,'2024-05-13','23:33:14','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(124,3,8000,'2024-05-13','23:33:15','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(125,3,1,'2024-05-13','23:34:21','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(126,3,8000,'2024-05-13','23:34:23','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(127,3,1,'2024-05-13','23:34:59','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(128,3,8000,'2024-05-13','23:35:00','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(129,3,1,'2024-05-13','23:37:10','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(130,3,8000,'2024-05-13','23:37:12','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(131,3,999,'2024-05-13','23:37:33','OLSTER','fe80::a328:23e5:7f78:af4f%13','Cerró Sesión'),(132,3,1,'2024-05-13','23:48:00','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(133,3,8000,'2024-05-13','23:48:01','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(134,3,1,'2024-05-13','23:50:56','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(135,3,8000,'2024-05-13','23:50:57','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(136,3,1,'2024-05-13','23:53:37','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(137,3,8000,'2024-05-13','23:53:38','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(139,3,1,'2024-05-14','00:02:11','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(140,3,8000,'2024-05-14','00:02:12','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(141,3,1,'2024-05-14','09:54:39','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(142,3,8000,'2024-05-14','09:54:42','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(143,3,8000,'2024-05-14','09:54:52','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(144,3,1,'2024-05-14','09:56:28','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso Login'),(145,3,8000,'2024-05-14','09:56:30','OLSTER','fe80::a328:23e5:7f78:af4f%13','Ingreso a bancos'),(146,1,1,'2024-05-14','17:30:13','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(147,3,1,'2024-05-14','17:30:33','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(148,3,8000,'2024-05-14','17:30:35','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(149,3,1,'2024-05-14','17:34:11','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(150,3,8000,'2024-05-14','17:34:15','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(151,3,1,'2024-05-14','17:35:19','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(152,3,8000,'2024-05-14','17:35:21','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(153,3,999,'2024-05-14','17:39:47','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Cerró Sesión'),(154,1,1,'2024-05-14','17:39:51','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(155,1,8000,'2024-05-14','17:39:52','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso a bancos'),(156,3,1,'2024-05-14','21:17:03','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(157,3,1,'2024-05-14','21:18:38','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(158,3,1,'2024-05-15','22:49:34','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(159,1,1,'2024-05-15','23:02:53','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(160,1,1,'2024-05-15','23:05:31','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(161,1,1,'2024-05-15','23:11:48','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(162,1,1,'2024-05-15','23:21:27','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(163,1,1,'2024-05-15','23:22:17','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(164,1,1,'2024-05-15','23:23:18','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(165,1,1,'2024-05-15','23:24:33','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(166,1,1,'2024-05-15','23:26:30','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(167,1,1,'2024-05-15','23:29:24','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(168,1,1,'2024-05-15','23:30:53','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(169,1,1,'2024-05-15','23:40:47','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(170,1,1,'2024-05-15','23:41:59','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(171,1,1,'2024-05-15','23:43:23','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(172,1,1,'2024-05-15','23:45:56','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(173,1,1,'2024-05-16','00:02:22','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(174,1,1,'2024-05-16','00:22:19','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(175,1,1,'2024-05-16','00:35:29','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(176,1,1,'2024-05-16','00:39:18','OLSTER','fe80::8a8a:66cd:92ea:16ea%17','Ingreso Login'),(177,3,1,'2024-05-16','09:39:20','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(178,1,1,'2024-05-16','09:44:44','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(179,1,1,'2024-05-16','09:51:10','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(180,1,1,'2024-05-16','09:55:01','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(181,3,1,'2024-05-16','09:56:16','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(182,1,1,'2024-05-16','17:51:37','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(183,1,1,'2024-05-16','18:01:09','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(184,1,1,'2024-05-16','18:23:18','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(185,1,999,'2024-05-16','18:28:52','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Cerró Sesión'),(186,1,1,'2024-05-16','18:42:38','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(187,1,1,'2024-05-16','18:48:26','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(188,1,1,'2024-05-16','18:59:09','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(189,1,1,'2024-05-16','19:25:58','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(190,1,999,'2024-05-16','19:52:10','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Cerró Sesión'),(191,3,1,'2024-05-16','20:54:22','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(192,1,1,'2024-05-16','20:55:36','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(193,3,1,'2024-05-16','20:56:40','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(194,3,1,'2024-05-16','20:57:47','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(195,3,1,'2024-05-16','20:58:55','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(196,3,1,'2024-05-16','21:00:52','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(197,3,1,'2024-05-16','21:01:46','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(198,3,1,'2024-05-16','21:02:19','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(199,3,1,'2024-05-16','21:03:15','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(200,1,1,'2024-05-16','21:15:52','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(201,1,1,'2024-05-16','21:17:01','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(202,1,1,'2024-05-16','21:19:20','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(203,3,1,'2024-05-16','21:19:57','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(204,3,1,'2024-05-16','21:22:37','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(205,3,1,'2024-05-16','21:35:20','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(206,3,1,'2024-05-16','21:36:22','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(207,1,1,'2024-05-16','21:36:41','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(208,3,1,'2024-05-16','21:39:54','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(209,3,1,'2024-05-16','21:41:15','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(210,3,1,'2024-05-16','21:59:38','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(211,3,1,'2024-05-16','22:03:21','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(212,3,1,'2024-05-16','22:05:15','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(213,3,1,'2024-05-16','22:08:35','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(214,3,1,'2024-05-16','22:15:31','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(215,3,1,'2024-05-16','22:17:59','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login'),(216,3,1,'2024-05-16','22:22:13','DESKTOP-HCCDANL','fe80::b70e:a166:8795:9d60%17','Ingreso Login');
 /*!40000 ALTER TABLE `tbl_bitacoradeeventos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_chequera`
+--
+
+DROP TABLE IF EXISTS `tbl_chequera`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_chequera` (
+  `chqra_id` int NOT NULL AUTO_INCREMENT,
+  `chqra_cuenta` int NOT NULL,
+  PRIMARY KEY (`chqra_id`),
+  KEY `chqra_cuenta` (`chqra_cuenta`),
+  CONSTRAINT `tbl_chequera_ibfk_1` FOREIGN KEY (`chqra_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_chequera`
+--
+
+LOCK TABLES `tbl_chequera` WRITE;
+/*!40000 ALTER TABLE `tbl_chequera` DISABLE KEYS */;
+INSERT INTO `tbl_chequera` VALUES (2,2),(1,3);
+/*!40000 ALTER TABLE `tbl_chequera` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_cheques`
+--
+
+DROP TABLE IF EXISTS `tbl_cheques`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tbl_cheques` (
+  `ch_id` int NOT NULL AUTO_INCREMENT,
+  `ch_chequera` int NOT NULL,
+  `ch_monto` double NOT NULL,
+  `ch_estado` int NOT NULL,
+  PRIMARY KEY (`ch_id`),
+  KEY `fk_cheque1_idx` (`ch_chequera`),
+  CONSTRAINT `fk_cheque1` FOREIGN KEY (`ch_chequera`) REFERENCES `tbl_chequera` (`chqra_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_cheques`
+--
+
+LOCK TABLES `tbl_cheques` WRITE;
+/*!40000 ALTER TABLE `tbl_cheques` DISABLE KEYS */;
+INSERT INTO `tbl_cheques` VALUES (1,2,200,1),(2,2,500,1),(3,2,0,0),(4,2,0,0),(5,2,0,0),(6,2,0,0),(7,2,0,0),(8,2,0,0),(9,2,0,0),(10,2,0,0);
+/*!40000 ALTER TABLE `tbl_cheques` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -148,7 +200,7 @@ CREATE TABLE `tbl_cliente` (
   `cli_edad` int NOT NULL,
   `cli_nit` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`cli_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -157,7 +209,7 @@ CREATE TABLE `tbl_cliente` (
 
 LOCK TABLES `tbl_cliente` WRITE;
 /*!40000 ALTER TABLE `tbl_cliente` DISABLE KEYS */;
-INSERT INTO `tbl_cliente` VALUES (1,'Oliver','11 Av','olstertecn597@gmail.com','59621085','1351413484',21,'59621085'),(2,'Jose','10ma Av','otzunund@miumg.edu.gt','78945633','55548483114584',28,'59621095');
+INSERT INTO `tbl_cliente` VALUES (1,'Oliver','11 Av','olstertecn597@gmail.com','59621085','1351413484',21,'59621085'),(2,'Jose','10ma Av','otzunund@miumg.edu.gt','78945633','55548483114584',28,'59621095'),(3,'Danny','Mixco zona 11','dan@miumg.edu.gt','00912312','1351413484',22,'35493910');
 /*!40000 ALTER TABLE `tbl_cliente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -185,7 +237,7 @@ CREATE TABLE `tbl_cuenta` (
   CONSTRAINT `tbl_cuenta_ibfk_2` FOREIGN KEY (`cue_tipo`) REFERENCES `tbl_tipo_cuenta` (`tcu_id`),
   CONSTRAINT `tbl_cuenta_ibfk_3` FOREIGN KEY (`cue_moneda`) REFERENCES `tbl_moneda` (`mon_id`),
   CONSTRAINT `tbl_cuenta_ibfk_4` FOREIGN KEY (`cue_usuario`) REFERENCES `tbl_usuarios` (`pk_id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -194,7 +246,7 @@ CREATE TABLE `tbl_cuenta` (
 
 LOCK TABLES `tbl_cuenta` WRITE;
 /*!40000 ALTER TABLE `tbl_cuenta` DISABLE KEYS */;
-INSERT INTO `tbl_cuenta` VALUES (1,1,1,3600,1,'37575878',1),(2,2,1,1500,1,'59621085',1);
+INSERT INTO `tbl_cuenta` VALUES (1,1,1,3400,1,'37575878',1),(2,2,1,3500,1,'59621085',1),(3,3,1,3700,1,'11223344',3);
 /*!40000 ALTER TABLE `tbl_cuenta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -214,7 +266,7 @@ CREATE TABLE `tbl_cuentaamiga` (
   KEY `id_cuenta_amiga` (`id_cuenta_amiga`),
   CONSTRAINT `tbl_cuentaamiga_ibfk_1` FOREIGN KEY (`id_cuenta_principal`) REFERENCES `tbl_cuenta` (`cue_id`),
   CONSTRAINT `tbl_cuentaamiga_ibfk_2` FOREIGN KEY (`id_cuenta_amiga`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -223,7 +275,7 @@ CREATE TABLE `tbl_cuentaamiga` (
 
 LOCK TABLES `tbl_cuentaamiga` WRITE;
 /*!40000 ALTER TABLE `tbl_cuentaamiga` DISABLE KEYS */;
-INSERT INTO `tbl_cuentaamiga` VALUES (10,1,2);
+INSERT INTO `tbl_cuentaamiga` VALUES (10,1,2),(12,1,3),(15,1,2),(16,1,2),(19,3,2);
 /*!40000 ALTER TABLE `tbl_cuentaamiga` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,7 +319,7 @@ CREATE TABLE `tbl_factura` (
   `fac_estado` int NOT NULL,
   `fac_servicio` varchar(50) NOT NULL,
   PRIMARY KEY (`fac_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +328,7 @@ CREATE TABLE `tbl_factura` (
 
 LOCK TABLES `tbl_factura` WRITE;
 /*!40000 ALTER TABLE `tbl_factura` DISABLE KEYS */;
-INSERT INTO `tbl_factura` VALUES (1,'2024-05-08',59621085,200,1,'Luz'),(2,'2024-05-08',59621085,100,0,'Agua'),(3,'2024-05-08',59621085,100,0,'Agua');
+INSERT INTO `tbl_factura` VALUES (1,'2024-05-08',59621085,200,1,'Luz'),(2,'2024-05-08',59621085,100,0,'Agua'),(3,'2024-05-08',59621085,100,0,'Agua'),(4,'2024-05-10',59621085,200,1,'Pago de Telefono');
 /*!40000 ALTER TABLE `tbl_factura` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -290,15 +342,13 @@ DROP TABLE IF EXISTS `tbl_historial_transacciones`;
 CREATE TABLE `tbl_historial_transacciones` (
   `htr_id` int NOT NULL AUTO_INCREMENT,
   `htr_cuenta` int NOT NULL,
-  `htr_tipo` int NOT NULL,
+  `htr_tipo` varchar(45) NOT NULL,
   `htr_monto` double NOT NULL,
   `htr_fecha` date NOT NULL,
   PRIMARY KEY (`htr_id`),
-  KEY `htr_tipo` (`htr_tipo`),
   KEY `htr_cuenta` (`htr_cuenta`),
-  CONSTRAINT `tbl_historial_transacciones_ibfk_1` FOREIGN KEY (`htr_tipo`) REFERENCES `tbl_tipo_transaccion` (`ttr_id`),
   CONSTRAINT `tbl_historial_transacciones_ibfk_2` FOREIGN KEY (`htr_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,6 +357,7 @@ CREATE TABLE `tbl_historial_transacciones` (
 
 LOCK TABLES `tbl_historial_transacciones` WRITE;
 /*!40000 ALTER TABLE `tbl_historial_transacciones` DISABLE KEYS */;
+INSERT INTO `tbl_historial_transacciones` VALUES (1,2,'Deposito',200,'2024-05-16'),(2,3,'Retiro',200,'2024-05-16'),(3,2,'Deposito',100,'2024-05-16'),(4,3,'Retiro',100,'2024-05-16'),(5,2,'Deposito',200,'2024-05-16'),(6,3,'Retiro',200,'2024-05-16'),(7,2,'Deposito',100,'2024-05-16'),(8,3,'Retiro',100,'2024-05-16');
 /*!40000 ALTER TABLE `tbl_historial_transacciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -401,7 +452,7 @@ CREATE TABLE `tbl_perfiles` (
   `descripcion_perfil` varchar(150) NOT NULL,
   `estado_perfil` tinyint DEFAULT '0',
   PRIMARY KEY (`pk_id_perfil`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -410,7 +461,7 @@ CREATE TABLE `tbl_perfiles` (
 
 LOCK TABLES `tbl_perfiles` WRITE;
 /*!40000 ALTER TABLE `tbl_perfiles` DISABLE KEYS */;
-INSERT INTO `tbl_perfiles` VALUES (1,'ADMINISTRADOR','contiene todos los permisos del programa',1),(2,'SEGURIDAD','contiene todos los permisos de seguridad',1);
+INSERT INTO `tbl_perfiles` VALUES (1,'ADMINISTRADOR','contiene todos los permisos del programa',1),(2,'SEGURIDAD','contiene todos los permisos de seguridad',1),(3,'Usuario','Puede realizar operaciones de usuario xd',1);
 /*!40000 ALTER TABLE `tbl_perfiles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -473,7 +524,7 @@ CREATE TABLE `tbl_permisosaplicacionperfil` (
 
 LOCK TABLES `tbl_permisosaplicacionperfil` WRITE;
 /*!40000 ALTER TABLE `tbl_permisosaplicacionperfil` DISABLE KEYS */;
-INSERT INTO `tbl_permisosaplicacionperfil` VALUES (1,1000,1,1,1,1,1),(1,1001,1,1,1,1,1),(1,1002,1,1,1,1,1),(1,1003,1,1,1,1,1),(1,1004,1,1,1,1,1),(1,1101,1,1,1,1,1),(1,1102,1,1,1,1,1),(1,1103,1,1,1,1,1),(1,1201,1,1,1,1,1),(1,1301,1,1,1,1,1),(1,8000,1,1,1,1,1),(1,8001,1,1,1,1,1),(1,8002,1,1,1,1,1),(1,8003,1,1,1,1,1),(1,8004,1,1,1,1,1),(1,8005,1,1,1,1,1);
+INSERT INTO `tbl_permisosaplicacionperfil` VALUES (1,1000,1,1,1,1,1),(1,1001,1,1,1,1,1),(1,1002,1,1,1,1,1),(1,1003,1,1,1,1,1),(1,1004,1,1,1,1,1),(1,1101,1,1,1,1,1),(1,1102,1,1,1,1,1),(1,1103,1,1,1,1,1),(1,1201,1,1,1,1,1),(1,1301,1,1,1,1,1),(1,8000,1,1,1,1,1),(1,8001,1,1,1,1,1),(1,8002,1,1,1,1,1),(1,8003,1,1,1,1,1),(1,8004,1,1,1,1,1),(1,8005,1,1,1,1,1),(3,8000,1,1,1,1,1),(3,8002,1,1,1,1,1),(3,8003,1,1,1,1,1),(3,8004,1,1,1,1,1),(3,8005,1,1,1,1,1);
 /*!40000 ALTER TABLE `tbl_permisosaplicacionperfil` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -496,7 +547,7 @@ CREATE TABLE `tbl_reportes` (
   UNIQUE KEY `rep_correlativo` (`rep_correlativo`),
   KEY `fk_estado` (`fk_estado`),
   CONSTRAINT `tbl_reportes_ibfk_1` FOREIGN KEY (`fk_estado`) REFERENCES `tbl_estados` (`pk_id_estado`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -505,7 +556,7 @@ CREATE TABLE `tbl_reportes` (
 
 LOCK TABLES `tbl_reportes` WRITE;
 /*!40000 ALTER TABLE `tbl_reportes` DISABLE KEYS */;
-INSERT INTO `tbl_reportes` VALUES (10,10002,'planilssla.txt',1,NULL,NULL,NULL);
+INSERT INTO `tbl_reportes` VALUES (12,10003,'ReporteCuenta.rpt',1,'2024-05-16 18:24:01','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteCuenta.rpt',NULL),(13,10004,'ReporteCliente.rpt',1,'2024-05-16 18:59:56','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteCliente.rpt',NULL),(14,10005,'ReporteCuentaAmig.rpt',1,'2024-05-16 19:26:40','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteCuentaAmig.rpt',NULL),(15,10006,'ReporteEstado.rpt',1,'2024-05-16 19:27:14','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteEstado.rpt',NULL),(16,10007,'ReporteMoneda.rpt',1,'2024-05-16 19:27:42','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteMoneda.rpt',NULL),(18,10008,'ReporteTarjeta.rpt',1,'2024-05-16 19:31:48','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteTarjeta.rpt',NULL),(19,10009,'ReporteTipoTarj.rpt',1,'2024-05-16 19:33:27','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteTipoTarj.rpt',NULL),(20,10010,'ReporteTipoTransa.rpt',1,'2024-05-16 19:34:51','D:\\9NO_SEMESTRE\\INGENIERIA DE SOFTWARE I\\ISP12k24\\Equipo2\\Codigo\\Componentes\\Reporteador\\CapaVista\\ReporteTipoTransa.rpt',NULL);
 /*!40000 ALTER TABLE `tbl_reportes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -658,7 +709,7 @@ CREATE TABLE `tbl_usuarios` (
   `pregunta` varchar(50) NOT NULL,
   `respuesta` varchar(50) NOT NULL,
   PRIMARY KEY (`pk_id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -667,7 +718,7 @@ CREATE TABLE `tbl_usuarios` (
 
 LOCK TABLES `tbl_usuarios` WRITE;
 /*!40000 ALTER TABLE `tbl_usuarios` DISABLE KEYS */;
-INSERT INTO `tbl_usuarios` VALUES (1,'admin','admin','admin','HO0aGo4nM94=','esduardo@gmail.com',1,'COLOR FAVORITO','X9yc1/l1b2A='),(2,'Oliver','Jose','Oliver','jIM8RY7n0OdezrmUaQf3HA==','olstertecn597@gmail.com',1,'PRIMER MASCOTA','jIM8RY7n0OdezrmUaQf3HA==');
+INSERT INTO `tbl_usuarios` VALUES (1,'admin','admin','admin','HO0aGo4nM94=','esduardo@gmail.com',1,'COLOR FAVORITO','X9yc1/l1b2A='),(2,'Oliver','Jose','Oliver','jIM8RY7n0OdezrmUaQf3HA==','olstertecn597@gmail.com',1,'PRIMER MASCOTA','jIM8RY7n0OdezrmUaQf3HA=='),(3,'Danny','Perez','Danny','HO0aGo4nM94=','daanperz@gmail.com',1,'PRIMER MASCOTA','HO0aGo4nM94=');
 /*!40000 ALTER TABLE `tbl_usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -822,4 +873,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-09 20:05:15
+-- Dump completed on 2024-05-16 22:25:05

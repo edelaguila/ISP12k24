@@ -22,24 +22,49 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = { };
+            Button[] apps = {button2 };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.getAccesoApp(1002, apps[0]);
             CapaControlador_SisB.Controlador ctrl = new CapaControlador_SisB.Controlador();
-            int idUser = Convert.ToInt32(Seguridad_Controlador.Controlador.idUser);
-            this.privileges = ctrl.getUserProfile(idUser);
+            int accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
+            this.privileges = ctrl.getUserProfile(accId);
             if (this.privileges == 1) this.enableByAdmin();
             if (this.privileges == 3) this.enableByUser();
         }
 
+        //DANNY PEREZ
         public void enableByUser()
         {
-        }
+            button2.Enabled = true;
+            button3.Enabled = true;
+            button4.Enabled = true;
+            button8.Enabled = true;
 
+            button5.Enabled = false;
+            btnEC.Enabled = false;
+            man_boleta.Enabled = false;
+            button6.Enabled = false;
+            button7.Enabled = false;
+            button9.Enabled = false;
+            btnSeguridad.Enabled = false;
+        }
+        //DANNY PEREZ
         public void enableByAdmin()
         {
+            button5.Enabled = true;
+            btnEC.Enabled = true;
+            man_boleta.Enabled = true;
+            button6.Enabled = true;
+            button7.Enabled = true;
+            button9.Enabled = true;
+            btnSeguridad.Enabled = true;
+
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
+            button8.Enabled = false;
 
         }
 
@@ -183,7 +208,7 @@ namespace Vista_PrototipoMenu
 
         private void button4_Click_1(object sender, EventArgs e)
         {
-            CapaVista_SisB.MantenimientoTransaccion form = new CapaVista_SisB.MantenimientoTransaccion();
+            CapaVista_SisB.frmTransferencia form = new CapaVista_SisB.frmTransferencia();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -270,6 +295,14 @@ namespace Vista_PrototipoMenu
         }
 
         private void button1_Click_2(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimientos.FrmCuentaAmiga form = new CapaVista_SisB.Mantenimientos.FrmCuentaAmiga();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
         {
             CapaVista_SisB.Mantenimientos.FrmCuentaAmiga form = new CapaVista_SisB.Mantenimientos.FrmCuentaAmiga();
             form.MdiParent = this;

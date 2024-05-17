@@ -30,7 +30,7 @@ namespace CapaVista_SisB
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.cmb_cuenta = new System.Windows.Forms.ComboBox();
+            this.cmb_amigas = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,17 +40,19 @@ namespace CapaVista_SisB
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_cuenta = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmb_cuentas = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_saldo = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(57)))));
-            this.panel2.Controls.Add(this.cmb_cuenta);
+            this.panel2.Controls.Add(this.cmb_amigas);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.label8);
@@ -64,13 +66,14 @@ namespace CapaVista_SisB
             this.panel2.Size = new System.Drawing.Size(410, 456);
             this.panel2.TabIndex = 56;
             // 
-            // cmb_cuenta
+            // cmb_amigas
             // 
-            this.cmb_cuenta.FormattingEnabled = true;
-            this.cmb_cuenta.Location = new System.Drawing.Point(63, 143);
-            this.cmb_cuenta.Name = "cmb_cuenta";
-            this.cmb_cuenta.Size = new System.Drawing.Size(252, 21);
-            this.cmb_cuenta.TabIndex = 54;
+            this.cmb_amigas.FormattingEnabled = true;
+            this.cmb_amigas.Location = new System.Drawing.Point(63, 143);
+            this.cmb_amigas.Name = "cmb_amigas";
+            this.cmb_amigas.Size = new System.Drawing.Size(252, 21);
+            this.cmb_amigas.TabIndex = 54;
+            this.cmb_amigas.SelectedIndexChanged += new System.EventHandler(this.cmb_amigas_SelectedIndexChanged);
             // 
             // button2
             // 
@@ -85,6 +88,7 @@ namespace CapaVista_SisB
             this.button2.TabIndex = 53;
             this.button2.Text = "Depositar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
@@ -175,25 +179,12 @@ namespace CapaVista_SisB
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(47, 198);
+            this.button1.Location = new System.Drawing.Point(47, 243);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 28);
             this.button1.TabIndex = 55;
             this.button1.Text = "Agregar Cuenta";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // txt_cuenta
-            // 
-            this.txt_cuenta.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txt_cuenta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cuenta.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_cuenta.Location = new System.Drawing.Point(47, 137);
-            this.txt_cuenta.Multiline = true;
-            this.txt_cuenta.Name = "txt_cuenta";
-            this.txt_cuenta.Size = new System.Drawing.Size(252, 30);
-            this.txt_cuenta.TabIndex = 54;
-            this.txt_cuenta.Tag = "Cantidad_a_retirar";
-            this.txt_cuenta.Text = " Número de cuenta";
             // 
             // label4
             // 
@@ -227,15 +218,50 @@ namespace CapaVista_SisB
             this.label1.TabIndex = 51;
             this.label1.Text = "Cuenta";
             // 
+            // cmb_cuentas
+            // 
+            this.cmb_cuentas.FormattingEnabled = true;
+            this.cmb_cuentas.Location = new System.Drawing.Point(47, 145);
+            this.cmb_cuentas.Name = "cmb_cuentas";
+            this.cmb_cuentas.Size = new System.Drawing.Size(252, 21);
+            this.cmb_cuentas.TabIndex = 57;
+            this.cmb_cuentas.SelectedIndexChanged += new System.EventHandler(this.cmb_cuentas_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.label2.Location = new System.Drawing.Point(44, 197);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 16);
+            this.label2.TabIndex = 58;
+            this.label2.Text = "Saldo:";
+            // 
+            // lbl_saldo
+            // 
+            this.lbl_saldo.AutoSize = true;
+            this.lbl_saldo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_saldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_saldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.lbl_saldo.Location = new System.Drawing.Point(103, 200);
+            this.lbl_saldo.Name = "lbl_saldo";
+            this.lbl_saldo.Size = new System.Drawing.Size(11, 13);
+            this.lbl_saldo.TabIndex = 59;
+            this.lbl_saldo.Text = "-";
+            // 
             // frmTransferencia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_saldo);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cmb_cuentas);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_cuenta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -251,7 +277,7 @@ namespace CapaVista_SisB
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmb_cuenta;
+        private System.Windows.Forms.ComboBox cmb_amigas;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label8;
@@ -261,9 +287,11 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_cuenta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmb_cuentas;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_saldo;
     }
 }
