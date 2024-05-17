@@ -51,6 +51,7 @@ namespace CapaVistaERP.Procesos
             this.label5 = new System.Windows.Forms.Label();
             this.cb_cuenta = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btn_nueva = new System.Windows.Forms.Button();
             this.btn_refrescar = new System.Windows.Forms.Button();
@@ -58,7 +59,6 @@ namespace CapaVistaERP.Procesos
             this.btn_ayudas = new System.Windows.Forms.Button();
             this.btn_reporte = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -107,6 +107,7 @@ namespace CapaVistaERP.Procesos
             this.valor.Name = "valor";
             this.valor.Size = new System.Drawing.Size(100, 22);
             this.valor.TabIndex = 184;
+            this.valor.TextChanged += new System.EventHandler(this.valor_TextChanged);
             // 
             // cantidad1
             // 
@@ -264,6 +265,18 @@ namespace CapaVistaERP.Procesos
             this.panel1.Size = new System.Drawing.Size(637, 101);
             this.panel1.TabIndex = 171;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::CapaVistaERP.Properties.Resources.tipo_de_cambio__2_;
+            this.pictureBox2.Location = new System.Drawing.Point(47, 48);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(255, 110);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 155;
+            this.pictureBox2.TabStop = false;
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
@@ -362,6 +375,7 @@ namespace CapaVistaERP.Procesos
             this.btn_reporte.Text = "Reporte";
             this.btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_reporte.UseVisualStyleBackColor = false;
+            this.btn_reporte.Click += new System.EventHandler(this.btn_reporte_Click);
             // 
             // btn_eliminar
             // 
@@ -378,18 +392,7 @@ namespace CapaVistaERP.Procesos
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_eliminar.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::CapaVistaERP.Properties.Resources.tipo_de_cambio__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(47, 48);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(255, 110);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 155;
-            this.pictureBox2.TabStop = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // tipodecombio
             // 

@@ -797,10 +797,22 @@ namespace CapaControladorERP
             sql += "inner join tbl_producto on tbl_producto_cod_producto = cod_producto where tbl_cotizaciones_No_Cotizacion = '"+Id+"';";
             return this.sn.selectTable("", sql);
         }
-    }
 
-    
+        // DIEGO MARROQUIN 
+        public void InsertarTipoCambio(DateTime fecha, string monedaOrigen, string monedaDestino, double cantidad, double valorCalculado, double totalCalculado)
+        {
+            sn.InsertarTipoCambio(fecha, monedaOrigen, monedaDestino, cantidad, valorCalculado, totalCalculado);
+
+        }
+
+
+        public bool EliminarTipodecambio(int idTipodeCambio)
+        {
+            return sn.EliminarTipodecambio(idTipodeCambio);
+        }
+    }
 }
+ 
 
 
 
