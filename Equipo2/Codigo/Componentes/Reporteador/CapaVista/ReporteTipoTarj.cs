@@ -16,14 +16,14 @@ namespace CapaVista {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReporteCuentaAmiga : ReportClass {
+    public class ReporteTipoTarj : ReportClass {
         
-        public ReporteCuentaAmiga() {
+        public ReporteTipoTarj() {
         }
         
         public override string ResourceName {
             get {
-                return "ReporteCuentaAmiga.rpt";
+                return "ReporteTipoTarj.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaVista {
         
         public override string FullResourceName {
             get {
-                return "CapaVista.ReporteCuentaAmiga.rpt";
+                return "CapaVista.ReporteTipoTarj.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace CapaVista {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReporteCuentaAmiga : Component, ICachedReport {
+    public class CachedReporteTipoTarj : Component, ICachedReport {
         
-        public CachedReporteCuentaAmiga() {
+        public CachedReporteTipoTarj() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace CapaVista {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReporteCuentaAmiga rpt = new ReporteCuentaAmiga();
+            ReporteTipoTarj rpt = new ReporteTipoTarj();
             rpt.Site = this.Site;
             return rpt;
         }

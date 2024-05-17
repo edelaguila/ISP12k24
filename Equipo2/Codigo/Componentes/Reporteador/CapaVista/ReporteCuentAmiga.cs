@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaVista
 {
-    public partial class ReporteTipoTransaccion : Form
+    public partial class ReporteCuentAmiga : Form
     {
-        public ReporteTipoTransaccion()
+        public ReporteCuentAmiga()
         {
             InitializeComponent();
         }

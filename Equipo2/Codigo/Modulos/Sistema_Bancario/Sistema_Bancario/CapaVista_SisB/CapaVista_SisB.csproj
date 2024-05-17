@@ -70,12 +70,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CrystalClientesReporte.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalClientesReporte.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="frmCheques.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,12 +184,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ReportesSisB\ReporteClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ReportesSisB\ReporteClientes.Designer.cs">
-      <DependentUpon>ReporteClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="TarjetasCreditoDebito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,10 +192,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CrystalClientesReporte.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalClientesReporte.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCheques.resx">
       <DependentUpon>frmCheques.cs</DependentUpon>
     </EmbeddedResource>
@@ -265,9 +249,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ReportesSisB\ReporteClientes.resx">
-      <DependentUpon>ReporteClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TarjetasCreditoDebito.resx">
       <DependentUpon>TarjetasCreditoDebito.cs</DependentUpon>

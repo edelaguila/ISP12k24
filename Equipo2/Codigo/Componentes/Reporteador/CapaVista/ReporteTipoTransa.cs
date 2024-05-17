@@ -16,14 +16,14 @@ namespace CapaVista {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReporteTipoTransaccion : ReportClass {
+    public class ReporteTipoTransa : ReportClass {
         
-        public ReporteTipoTransaccion() {
+        public ReporteTipoTransa() {
         }
         
         public override string ResourceName {
             get {
-                return "ReporteTipoTransaccion.rpt";
+                return "ReporteTipoTransa.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaVista {
         
         public override string FullResourceName {
             get {
-                return "CapaVista.ReporteTipoTransaccion.rpt";
+                return "CapaVista.ReporteTipoTransa.rpt";
             }
             set {
                 // Do nothing
@@ -90,9 +90,9 @@ namespace CapaVista {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReporteTipoTransaccion : Component, ICachedReport {
+    public class CachedReporteTipoTransa : Component, ICachedReport {
         
-        public CachedReporteTipoTransaccion() {
+        public CachedReporteTipoTransa() {
         }
         
         [Browsable(false)]
@@ -129,7 +129,7 @@ namespace CapaVista {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReporteTipoTransaccion rpt = new ReporteTipoTransaccion();
+            ReporteTipoTransa rpt = new ReporteTipoTransa();
             rpt.Site = this.Site;
             return rpt;
         }
