@@ -2530,8 +2530,20 @@ namespace CapaModeloERP
                 }
             }
         }
+        public bool EliminarTipodecambio(int idTipodeCambio)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "DELETE FROM tbl_tipocambio WHERE  id_tipo_cambio = ?";
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("id_tipo_cambio", idTipodeCambio);
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
 
-
+            }
+        }
     }
 
 }

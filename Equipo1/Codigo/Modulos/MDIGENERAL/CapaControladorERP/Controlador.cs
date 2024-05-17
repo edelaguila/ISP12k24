@@ -804,10 +804,15 @@ namespace CapaControladorERP
             sn.InsertarTipoCambio(fecha, monedaOrigen, monedaDestino, cantidad, valorCalculado, totalCalculado);
 
         }
-    }
 
-    
+
+        public bool EliminarTipodecambio(int idTipodeCambio)
+        {
+            return sn.EliminarTipodecambio(idTipodeCambio);
+        }
+    }
 }
+ 
 
 
 

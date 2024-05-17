@@ -292,5 +292,37 @@ namespace CapaVistaERP.Procesos
             Reportes.frmReporteTipoCambio Reporte = new Reportes.frmReporteTipoCambio();
             Reporte.ShowDialog();
         }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            // Verificar si hay una fila seleccionada
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                // Obtener el ID de la fila seleccionada
+                int idSeleccionado = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
+
+                // Llamar al método EliminarMovimiento del controlador con el ID seleccionado
+                bool eliminado = cn.EliminarTipodecambio(idSeleccionado);
+
+                if (eliminado)
+                {
+                    MessageBox.Show("Registro eliminado correctamente.");
+                    // Actualizar el DataGridView después de la eliminación
+                    actualizardatagriew();
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar el registro. Verifique el ID del movimiento.");
+                }
+            }
+        }
+
+        private void valor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+} 
+
+
+
