@@ -138,7 +138,8 @@ namespace CapaVistaERP.Procesos
 
         private void btn_ayudas_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Ayudas/AyudasByTech.chm", "OrdenesdeCompra.html");
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "OrdenesdeCompra.html");
         }
     }
 }
