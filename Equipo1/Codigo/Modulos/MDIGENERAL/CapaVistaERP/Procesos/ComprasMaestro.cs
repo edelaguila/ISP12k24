@@ -131,5 +131,10 @@ namespace CapaVistaERP.Procesos
                 report.ShowDialog();
             }
         }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, "Ayudas/AyudasByTech.chm", "Compras.html");
+        }
     }
 }
