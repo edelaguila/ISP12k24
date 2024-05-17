@@ -73,3 +73,9 @@ C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equi
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
 C:\Users\rayju\OneDrive\Escritorio\Sistemas Bancarios Sin Compilar\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\bin\Debug\Modelo_MenuHCV.pdb
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.AssemblyReference.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.csproj.CoreCompileInputs.cache
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.dll
+C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Modelo\obj\Debug\Modelo_MenuHCV.pdb

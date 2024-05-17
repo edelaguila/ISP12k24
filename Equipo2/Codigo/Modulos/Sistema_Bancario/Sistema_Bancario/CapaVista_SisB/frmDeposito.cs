@@ -33,8 +33,7 @@ namespace CapaVista_SisB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
-            MessageBox.Show("Desposito realizado");
+
         }
 
         private void txt_cuenta_Enter(object sender, EventArgs e)
@@ -43,6 +42,12 @@ namespace CapaVista_SisB
 
         private void button2_Click(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
+            MessageBox.Show("Desposito realizado");
         }
     }
 }

@@ -95,7 +95,7 @@ namespace CapaVista_SisB
             string amount = txt_monto1.Text;
             CheckbookAndCheckController.updateCheck(Convert.ToInt32(checkNo), Convert.ToDouble(amount));
             TransactionController.makeTransaction(textBox1.Text, Convert.ToDouble(amount), -1);
-            MessageBox.Show("Cobro Relizado");
+            MessageBox.Show("Retiro Relizado");
         }
 
         private void btn_cobro2_Click(object sender, EventArgs e)

@@ -16,6 +16,7 @@ namespace CapaControlador_SisB
         {
             Sentencias sn = new Sentencias();
             Cuenta account = sn.getAccountByNumber(accountNo);
+            if (account == null) return -1;
             Console.WriteLine("Account ID");
             Console.WriteLine(account.id);
             Chequera ch = CheckbookSentence.getCheckbookAccount(account.id);
