@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CapaModelo_SisB.Libraries;
 using CapaModelo_SisB.Templates;
+using CapaModelo_SisB.Sentences;
 using CapaModelo_SisB;
 
 namespace CapaControlador_SisB
@@ -16,6 +17,7 @@ namespace CapaControlador_SisB
             Sentencias sn = new Sentencias();
             Cuenta account = sn.getAccountByNumber(accountNo);
             TransactionSentences.updateBalanceFromAccount(account.id, amount);
+            HistorySentence.saveTransactionOnHistory(account.id, sign == 1 ? "Deposito" : "Retiro", amount);
         }
     }
 }

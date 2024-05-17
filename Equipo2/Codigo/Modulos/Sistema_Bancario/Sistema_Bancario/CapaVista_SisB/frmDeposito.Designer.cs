@@ -81,7 +81,8 @@ namespace CapaVista_SisB
             this.txt_cuenta.Size = new System.Drawing.Size(252, 30);
             this.txt_cuenta.TabIndex = 48;
             this.txt_cuenta.Tag = "Cantidad_a_retirar";
-            this.txt_cuenta.Text = " Número de cuenta";            // 
+            this.txt_cuenta.Text = " Número de cuenta";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SlateGray;
@@ -95,6 +96,7 @@ namespace CapaVista_SisB
             this.button1.TabIndex = 49;
             this.button1.Text = "Realizar Deposito";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // textBox1
             // 

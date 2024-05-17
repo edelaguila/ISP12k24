@@ -48,7 +48,7 @@ namespace CapaModelo_SisB
         public DataTable obtener(string tabla, string campo1, string campo2, int id)
         {
 
-            string sql = "SELECT " + campo1 + "," + campo2 + " FROM " + tabla + " where cue_usuario =" + id +  ";";
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM " + tabla + " where cue_usuario =" + id + ";";
 
             OdbcCommand command = new OdbcCommand(sql, con.connection());
             OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
@@ -68,13 +68,13 @@ namespace CapaModelo_SisB
             //this.con.myconn.Open();
             return dataTable;
         }
-        public DataTable llenarHistorial(string tabla, int id) 
+        public DataTable llenarHistorial(string tabla, int id)
         {
             using (OdbcConnection connection = this.con.connection())
             {
                 if (connection != null)
                 {
-                    string sql = " SELECT * FROM " + tabla + " where htr_id = " + id + " ;";
+                    string sql = " SELECT * FROM " + tabla + " where htr_cuenta = " + id + " ;";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -88,7 +88,7 @@ namespace CapaModelo_SisB
         }
 
 
-        
+
 
         public OdbcDataReader getByParam<T>(string param, string secondParam, string table, int mode = 0, T reference = default, T secondRef = default)
         {
@@ -258,7 +258,7 @@ namespace CapaModelo_SisB
                 OdbcDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                     accounts.Add(new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6), reader.GetString(7)));
+                    accounts.Add(new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6), reader.GetString(7)));
                 }
                 return accounts;
             }
@@ -285,7 +285,7 @@ namespace CapaModelo_SisB
         }
 
 
-        public Cuenta getAccountByNumber(string accountNumber )
+        public Cuenta getAccountByNumber(string accountNumber)
         {
             try
             {
