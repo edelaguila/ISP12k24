@@ -142,6 +142,18 @@
       <DependentUpon>ReporteCuenta.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="ReporteCuentaAmig.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCuentaAmig.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteCuentAmiga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCuentAmiga.Designer.cs">
+      <DependentUpon>ReporteCuentAmiga.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteEstado1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,6 +176,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReporteTarjeta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteTipoTarj.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTipoTarj.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteTipoTarjeta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteTipoTarjeta1.Designer.cs">
+      <DependentUpon>ReporteTipoTarjeta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTipoTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteTipoTrans.Designer.cs">
+      <DependentUpon>ReporteTipoTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTipoTransa.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTipoTransa.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Vista de Reportes.cs">
@@ -227,6 +263,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteCuenta1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCuentaAmig.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCuentaAmig.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCuentAmiga.resx">
+      <DependentUpon>ReporteCuentAmiga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReporteEstado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteEstado1.cs</LastGenOutput>
@@ -241,6 +284,20 @@
     <EmbeddedResource Include="ReporteTarjeta.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteTarjeta1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTipoTarj.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTipoTarj.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTipoTarjeta1.resx">
+      <DependentUpon>ReporteTipoTarjeta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTipoTrans.resx">
+      <DependentUpon>ReporteTipoTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTipoTransa.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTipoTransa.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista de Reportes.resx">
       <DependentUpon>Vista de Reportes.cs</DependentUpon>
