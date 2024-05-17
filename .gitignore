@@ -433,3 +433,6 @@ FodyWeavers.xsd
 
 #archivo txt
 CapaVistaERP.csproj.FileListAbsolute.txt
+ControllerLayer.csproj.FileListAbsolute.txt
+ModelLayer.csproj.FileListAbsolute.txt
+ViewLayer.csproj.FileListAbsolute.txt
