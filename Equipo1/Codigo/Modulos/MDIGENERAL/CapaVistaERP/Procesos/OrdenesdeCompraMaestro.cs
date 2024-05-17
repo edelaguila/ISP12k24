@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -133,6 +134,12 @@ namespace CapaVistaERP.Procesos
         private void dt_datos_SelectionChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "OrdenesdeCompra.html");
         }
     }
 }

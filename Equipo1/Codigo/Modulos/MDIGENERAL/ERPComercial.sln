@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaModeloERP", "CapaModelo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaVistaERP", "CapaVistaERP\CapaVistaERP.csproj", "{437C9F5C-5C24-4912-87E6-9417DE3F13D8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pruebas (Test)", "Pruebas (Test)", "{64D5977C-B31A-446E-B77A-153E433CF125}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasBancosCarlos.Tests", "EliminacionMovimientoDeBancos.Tests\PruebasBancosCarlos.Tests.csproj", "{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,16 +27,9 @@ Global
 		{437C9F5C-5C24-4912-87E6-9417DE3F13D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{437C9F5C-5C24-4912-87E6-9417DE3F13D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{437C9F5C-5C24-4912-87E6-9417DE3F13D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{06FCC3F9-5D91-40AF-85D1-F0F0A2A442D2} = {64D5977C-B31A-446E-B77A-153E433CF125}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8FBB490F-9359-4992-B6CE-BC0B6BEC89EB}
