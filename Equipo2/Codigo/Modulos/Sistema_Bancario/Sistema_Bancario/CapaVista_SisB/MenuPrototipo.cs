@@ -22,7 +22,7 @@ namespace Vista_PrototipoMenu
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = {button2 };
+            Button[] apps = { button2 };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
@@ -305,6 +305,14 @@ namespace Vista_PrototipoMenu
         private void button1_Click_3(object sender, EventArgs e)
         {
             CapaVista_SisB.Mantenimientos.FrmCuentaAmiga form = new CapaVista_SisB.Mantenimientos.FrmCuentaAmiga();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmEstadoCuenta form = new CapaVista_SisB.frmEstadoCuenta();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();

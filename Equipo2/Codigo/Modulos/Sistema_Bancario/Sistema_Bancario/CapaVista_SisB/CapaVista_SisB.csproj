@@ -88,6 +88,12 @@
     <Compile Include="frmDeposito.Designer.cs">
       <DependentUpon>frmDeposito.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEstadoCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstadoCuenta.Designer.cs">
+      <DependentUpon>frmEstadoCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeposito.resx">
       <DependentUpon>frmDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstadoCuenta.resx">
+      <DependentUpon>frmEstadoCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmHistorial.resx">
       <DependentUpon>frmHistorial.cs</DependentUpon>

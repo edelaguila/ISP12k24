@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CapaModelo_SisB;
 using CapaModelo_SisB.Templates;
+using CapaModelo_SisB.Sentences;
 using CapaModelo_SisB.Libraries;
 
 
@@ -28,6 +29,12 @@ namespace CapaControlador_SisB
         {
             account.addFriendAccount(accountNo);
         }
+
+        public static double getAccountInitialBalance(int accountId)
+        {
+            return HistorySentence.getAccountInitialBalance(accountId);
+        }
+
     }
 }
 

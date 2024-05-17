@@ -13,7 +13,7 @@ using CapaModelo_SisB.Templates;
 
 namespace CapaVista_SisB
 {
-   
+
     public partial class frmHistorial : Form
     {
         Controlador cn = new Controlador();
@@ -32,7 +32,7 @@ namespace CapaVista_SisB
         public void llenardatagridView()
         {
             int id_cuenta = Convert.ToInt32(cmb_auto.Text.Split('-')[1]);
-            DataTable dt = cn.llenarHistorial("tbl_historial_transacciones",id_cuenta);
+            DataTable dt = cn.llenarHistorial("tbl_historial_transacciones", id_cuenta);
             dataGridView1.DataSource = dt;
 
         }
@@ -44,7 +44,7 @@ namespace CapaVista_SisB
             string cmp1 = campo1;
             string cmp2 = campo2;
             int ida = id;
-            
+
 
             cmb_auto.ValueMember = "cue_numero";
             cmb_auto.DisplayMember = "cue_usuario";
