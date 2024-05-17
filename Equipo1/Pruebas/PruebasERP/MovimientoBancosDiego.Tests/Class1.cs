@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PruebaComprasCarol
+namespace MovimientoBancosDiego.Tests
 {
     public class Class1
     {

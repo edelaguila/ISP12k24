@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Xunit;
 using CapaControladorERP;
 
-namespace EliminacionMovimientoDeBancos.Tests
-{// carlos enrique guzman cabrera
+namespace MovimientoBancosCarlos.Tests
+{
     public class MovimientoDeBanco
     {
         Controlador cn = new Controlador();
@@ -16,7 +16,7 @@ namespace EliminacionMovimientoDeBancos.Tests
         public void TestEliminarMovimiento()
         {
             // Arrange
-            int idMovimientoAEliminar = 5; // ID de movimiento que deseas eliminar
+            int idMovimientoAEliminar = 2; // ID de movimiento que deseas eliminar
 
             // Act
             bool eliminacionExitosa = cn.EliminarMovimiento(idMovimientoAEliminar);
@@ -29,7 +29,7 @@ namespace EliminacionMovimientoDeBancos.Tests
         public void TestEliminarMovimientoNoExistente()
         {
             // Arrange
-            int idMovimientoNoExistente = 999; // ID de un movimiento que sabemos que no existe
+            int idMovimientoNoExistente = 900; // ID de un movimiento que sabemos que no existe
 
             // Act
             bool eliminacionExitosa = cn.EliminarMovimiento(idMovimientoNoExistente);

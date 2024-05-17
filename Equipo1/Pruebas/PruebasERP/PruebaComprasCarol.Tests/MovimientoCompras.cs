@@ -8,7 +8,6 @@ using CapaControladorERP;
 
 namespace PruebaComprasCarol.Tests
 {
-    //Carol Chuy
     public class MovimientoCompras
     {
         Controlador con = new Controlador();
@@ -16,7 +15,7 @@ namespace PruebaComprasCarol.Tests
         public void EliminarDetalleOrdenCompra()
         {
             // Arrange
-            int idDetalleAEliminar = 1; // ID del detalle que deseas eliminar
+            int idDetalleAEliminar = 6; // ID del detalle que deseas eliminar
 
             // Act
             bool eliminacionExitosa; // Variable para almacenar el resultado
@@ -26,7 +25,7 @@ namespace PruebaComprasCarol.Tests
                 con.EliminarDetalleOrdenCompra(idDetalleAEliminar);
                 eliminacionExitosa = true; // Si la ejecución no genera excepciones, se considera exitosa
             }
-            catch (Exception ex)
+            catch
             {
                 eliminacionExitosa = false; // Si se produce una excepción, se considera fallida
             }
@@ -38,7 +37,7 @@ namespace PruebaComprasCarol.Tests
         public void EliminarDetalleCompra()
         {
             // Arrange
-            int idDetalleAEliminar = 1; // ID del detalle que deseas eliminar
+            int idDetalleAEliminar = 6; // ID del detalle que deseas eliminar
 
             // Act
             bool eliminacionExitosa; // Variable para almacenar el resultado
@@ -60,7 +59,7 @@ namespace PruebaComprasCarol.Tests
         public void EliminarDetalleFactura()
         {
             // Arrange
-            int idDetalleAEliminar = 1; // ID del detalle que deseas eliminar
+            int idDetalleAEliminar = 6; // ID del detalle que deseas eliminar
 
             // Act
             bool eliminacionExitosa; // Variable para almacenar el resultado
@@ -82,7 +81,7 @@ namespace PruebaComprasCarol.Tests
         public void InsertarCompra()
         {
             // Arrange
-            int codigo = 90;
+            int codigo = 70;
             string fechas = "2024-05-20";
             string fechae = "2024-05-21";
             string depa = "Compras";
@@ -103,7 +102,7 @@ namespace PruebaComprasCarol.Tests
                 con.InsertarCompra(codigo, fechas, fechae, depa, subtotal, iva, totalCompra, notas, codigoprov, estadoCompra, fechap, codorden);
                 insercionExitosa = true;
             }
-            catch (Exception ex)
+            catch 
             {
                 insercionExitosa = false;
             }
@@ -116,7 +115,7 @@ namespace PruebaComprasCarol.Tests
         public void InsertarOrdenCompra()
         {
             // Arrange
-            int codigo = 90;
+            int codigo = 70;
             string fechas = "2024-05-20";
             string fechae = "2024-05-21";
             string deptoSolicitante = "Departamento de Compras";
@@ -131,7 +130,7 @@ namespace PruebaComprasCarol.Tests
 
             try
             {
-                con.InsertarOrdenCompra(codigo,fechas, fechae, deptoSolicitante, subTotal, iva, totalOrden, notas, proveedorId);
+                con.InsertarOrdenCompra(codigo, fechas, fechae, deptoSolicitante, subTotal, iva, totalOrden, notas, proveedorId);
                 insercionExitosa = true;
             }
             catch
@@ -147,7 +146,7 @@ namespace PruebaComprasCarol.Tests
         public void InsertarFactura()
         {
             // Arrange
-            int noFactura = 90; // Replace with a unique invoice number
+            int noFactura = 70; // Replace with a unique invoice number
             string nombreProveedor = "Proveedor XYZ";
             string nitProveedor = "123456789012345";
             string fechav = "2024-05-20";
@@ -175,5 +174,6 @@ namespace PruebaComprasCarol.Tests
             // Assert
             Assert.True(insercionExitosa);
         }
+
     }
 }
