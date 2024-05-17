@@ -39,7 +39,6 @@ namespace CapaVista_SisB
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -86,7 +85,7 @@ namespace CapaVista_SisB
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(90, 28);
             this.button2.TabIndex = 53;
-            this.button2.Text = "Depositar";
+            this.button2.Text = "Realizar Transferencia";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -102,6 +101,7 @@ namespace CapaVista_SisB
             this.textBox2.TabIndex = 52;
             this.textBox2.Tag = "Cantidad_a_retirar";
             this.textBox2.Text = "Ingresa tu comentario...";
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             // 
             // label8
             // 
@@ -171,20 +171,6 @@ namespace CapaVista_SisB
             this.label5.Size = new System.Drawing.Size(164, 25);
             this.label5.TabIndex = 2;
             this.label5.Text = "Transferencia ";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(47, 243);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 28);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "Agregar Cuenta";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -261,7 +247,6 @@ namespace CapaVista_SisB
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmb_cuentas);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
@@ -286,7 +271,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

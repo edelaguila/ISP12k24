@@ -19,5 +19,10 @@ namespace CapaControlador_SisB
             TransactionSentences.updateBalanceFromAccount(account.id, amount * sign);
             HistorySentence.saveTransactionOnHistory(account.id, sign == 1 ? "Deposito" : "Retiro", amount);
         }
+
+        public static bool accountCanPay(int accountId, double amount)
+        {
+            return TransactionSentences.canPay(accountId, amount);
+        }
     }
 }
