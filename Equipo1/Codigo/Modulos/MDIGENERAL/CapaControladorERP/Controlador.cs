@@ -34,7 +34,7 @@ namespace CapaControladorERP
         //Andrea Corado 0901-20-2841  
         public DataTable filtrardatosp(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2,dato2);
+            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2, dato2);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -42,13 +42,39 @@ namespace CapaControladorERP
         //Andrea Corado 0901-20-2841
         public void Guardarmovpro(string idp, string fechamov, string totalmov, string nofact, string banmov, string tipomov, string numov, string conceptomov)
         {
-            sn.guardarDatos(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+            sn.guardarDatos( nofact, banmov, tipomov, numov, conceptomov);
         }
 
         //Andrea Corado 0901-20-2841
         public DataTable Actualizap(string tabla, string columna, string dato1, string columna2, int igualA)
         {
-            return sn.ActualizarDatos(tabla, columna,dato1,columna2, igualA);
+            return sn.ActualizarDatos(tabla, columna, dato1, columna2, igualA);
+        }
+
+        //Andrea Corado 0901-20-2841
+        public DateTime ObtenerFechaV(string nofactu)
+        {
+            var dt1 = sn.ObtenerFechaV(nofactu);
+            return dt1;
+        }
+        public (DateTime, decimal) ObtenerFechaVYTotal(string dato)
+        {
+            return sn.ObtenerFechaVYTotal(dato);
+        }
+        public List<string> ComboFillfactura(string columna, string tabla, string nit, string dato, string estadofact)
+        {
+            return sn.ComboFillfactura(columna, tabla,nit,dato,estadofact);
+        }
+
+        //Andrea Corado 0901-20-2841
+        public void InsertarOperacion(int id, string fechaabono, double totalapa)
+        {
+            sn.InsertarOperacion(id, fechaabono, totalapa);
+        }
+        //Andrea Corado 0901-20-2841
+        public void InsertarDetalleOperacionPro(int numfact, string banco, string tipomov, string numdoc, string concepto)
+        {
+            sn.InsertarDetalleOperacionPro(numfact, banco, tipomov, numdoc, concepto);
         }
 
 
