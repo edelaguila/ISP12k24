@@ -130,11 +130,41 @@
     <Compile Include="prueba2.Designer.cs">
       <DependentUpon>prueba2.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteCliente1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteCuenta1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteCuenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteEstado1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteEstado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReporteMoneda1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteMoneda.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes.designer.cs">
       <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteTarjeta1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTarjeta.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Vista de Reportes.cs">
       <SubType>Form</SubType>
@@ -189,8 +219,28 @@
     <EmbeddedResource Include="prueba2.resx">
       <DependentUpon>prueba2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCliente1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCuenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteCuenta1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteEstado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteEstado1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteMoneda.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteMoneda1.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteTarjeta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTarjeta1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista de Reportes.resx">
       <DependentUpon>Vista de Reportes.cs</DependentUpon>
