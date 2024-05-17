@@ -160,23 +160,40 @@ namespace CapaVistaERP.Procesos
 
         public void GuardarDatos()
         {
+            // Crear una instancia del controlador
+            Controlador cn = new Controlador();
+
+            // Definir el nombre de la tabla
             string tabla = "tbl_tipocambio";
+
+            // Crear un diccionario para almacenar los valores
             Dictionary<string, object> valores = new Dictionary<string, object>();
 
+            // Capturar los valores de los controles de la interfaz de usuario
             string monedaOrigen = txtnombre.Text;
             valores.Add("moneda_origen", monedaOrigen);
 
             string monedaDestino = txtnombre1.Text;
             valores.Add("moneda_destino", monedaDestino);
 
+            double valorCalculado = double.Parse(valor.Text);
+            valores.Add("valor_calculado", valorCalculado);
 
-            valores.Add("valor_calculado", double.Parse(valor.Text));
-            valores.Add("total_calculado", double.Parse(total.Text));
-            valores.Add("cantidad", double.Parse(cantidad1.Text));
-            valores.Add("fecha", dtp_fecha.Value);
-            cn.GuardarDatos(tabla, valores);
+            double totalCalculado = double.Parse(total.Text);
+            valores.Add("total_calculado", totalCalculado);
 
-            MessageBox.Show("Datos guardados");
+            double cantidad = double.Parse(cantidad1.Text);
+            valores.Add("cantidad", cantidad);
+
+            DateTime fecha = dtp_fecha.Value;
+            valores.Add("fecha", fecha);
+
+            // Llamar al método del controlador para guardar los datos
+            cn.InsertarTipoCambio(fecha, monedaOrigen, monedaDestino, cantidad, valorCalculado, totalCalculado);
+
+            // Mostrar mensaje de éxito
+            MessageBox.Show("Datos guardados exitosamente en la tabla tipo de cambio.");
+
         }
 
         private void btn_refrescar_Click(object sender, EventArgs e)
@@ -268,6 +285,12 @@ namespace CapaVistaERP.Procesos
                 cantidad1.Text = "1";
             }
 
+        }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            Reportes.frmReporteTipoCambio Reporte = new Reportes.frmReporteTipoCambio();
+            Reporte.ShowDialog();
         }
     }
 }

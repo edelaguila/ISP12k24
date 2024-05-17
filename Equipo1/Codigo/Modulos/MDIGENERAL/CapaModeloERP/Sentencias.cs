@@ -2479,7 +2479,7 @@ namespace CapaModeloERP
                 }
             }
         }
-
+       
 
         public DataTable selectTable(string table, string query = "")
         {
@@ -2490,6 +2490,46 @@ namespace CapaModeloERP
             return tbl;
         }
 
+        // DIEGO MAROOQUIN transacciones 
+
+        public void InsertarTipoCambio(DateTime fecha, string monedaOrigen, string monedaDestino, double cantidad, double valorCalculado, double totalCalculado)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la tabla tbl_tipocambio
+                            string insertQuery = "INSERT INTO tbl_tipocambio (fecha, moneda_origen, moneda_destino, cantidad, valor_calculado, total_calculado) " +
+                                                 "VALUES (?, ?, ?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@fecha", fecha);
+                                cmd.Parameters.AddWithValue("@moneda_origen", monedaOrigen);
+                                cmd.Parameters.AddWithValue("@moneda_destino", monedaDestino);
+                                cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                                cmd.Parameters.AddWithValue("@valor_calculado", valorCalculado);
+                                cmd.Parameters.AddWithValue("@total_calculado", totalCalculado);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            // Confirmar la transacción si la inserción fue exitosa
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            // Revertir la transacción si ocurre algún error
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar tipo de cambio: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
 
 
     }
