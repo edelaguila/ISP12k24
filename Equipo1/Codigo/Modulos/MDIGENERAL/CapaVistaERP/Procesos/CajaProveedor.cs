@@ -265,12 +265,9 @@ namespace CapaVistaERP.Procesos
                     // Recorrer las filas del DataGridView para insertar detalles y actualizar estados
                     foreach (DataGridViewRow fila in dgv_pagoproveedor.Rows)
                     {
-                        Console.WriteLine("EN EL FOREACH");
                         if (!fila.IsNewRow)
                         {
-                            Console.WriteLine("if de fila");
                             string nofactura = fila.Cells[0].Value?.ToString();
-                            Console.WriteLine(nofactura);
 
                             // Obtener valores de los TextBoxes (asumo que estos valores no cambian por fila)
                             string banco = txt_bancos.Text;
@@ -281,7 +278,6 @@ namespace CapaVistaERP.Procesos
                             // Validar y convertir el número de factura
                             if (!string.IsNullOrEmpty(nofactura) && int.TryParse(nofactura, out int numfact))
                             {
-                                Console.WriteLine("EN EL if de evaluar numero factura");
                                 // Insertar detalle de la operación en la base de datos
                                 cn.InsertarDetalleOperacionPro(numfact, banco, tipo, numero, concepto);
 
@@ -306,33 +302,6 @@ namespace CapaVistaERP.Procesos
                 MessageBox.Show("Ocurrió un error al realizar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-            /*try
-            {
-                string idp = txt_idprov.Text;
-                string fechamov = dt_fechaabono.Value.ToString("yyyy/MM/dd");
-                string totalmov = txt_totalapagar.Text;
-                string nofact = txtNoFactura.Text;
-                string banmov = txt_bancos.Text;
-                string tipomov = txt_tipomovpro.Text;
-                string numov = txt_numero.Text;
-                string conceptomov = txt_concepto.Text;
-
-                cn.Guardarmovpro(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
-
-                int num;
-                int.TryParse(nofact, out num);
-                string dato = "0";
-
-                cn.Actualizap(tabla1, "estado_facxpag", dato, "NoFactura", num);
-                MessageBox.Show("Pago Realizado con Éxito");
-                LimpiarCampos();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrió un error al procesar el pago: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-
         }
         private void LimpiarCampos()
         {
@@ -341,6 +310,7 @@ namespace CapaVistaERP.Procesos
             txt_nitprov.Clear();
             txt_nit.Clear();
             //txtNoFactura.Clear();
+            txt_Sumadefacturas.Clear();
             txt_totalapagar.Clear();
             txt_bancos.Clear();
             txt_tipomovpro.Clear();

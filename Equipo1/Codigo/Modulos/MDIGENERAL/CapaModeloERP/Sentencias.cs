@@ -235,16 +235,13 @@ namespace CapaModeloERP
         {
             using (OdbcConnection conn = con.connection())
             {
-                Console.WriteLine("odbcconection");
                 using (OdbcCommand cmd = conn.CreateCommand())
                 {
-                    Console.WriteLine("odbc comando");
                     // Se inicia una nueva transacción
                     OdbcTransaction transaction = conn.BeginTransaction();
                     cmd.Transaction = transaction;
                     try
                     {
-                        Console.WriteLine("try antes de insertar");
                         // Se inserta el detalle de la orden de compra
                         cmd.CommandText = "INSERT INTO tbl_detallemovpro(noFactura,banco_MovP,tipo_MovP,numero_MovP,concepto_MovP) VALUES (?,?,?,?,?)";
                         cmd.Parameters.AddWithValue("@noFactura", numfact);
@@ -253,7 +250,6 @@ namespace CapaModeloERP
                         cmd.Parameters.AddWithValue("@numero_MovP", numdoc);
                         cmd.Parameters.AddWithValue("@concepto_MovP", concepto);
                         cmd.ExecuteNonQuery();
-                        Console.WriteLine("Luego de insertar");
                         // Se confirma 
                         transaction.Commit();
                     }
