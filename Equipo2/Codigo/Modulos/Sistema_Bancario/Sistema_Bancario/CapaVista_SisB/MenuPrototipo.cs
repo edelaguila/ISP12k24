@@ -15,17 +15,32 @@ namespace Vista_PrototipoMenu
     {
 
         Controlador cn = new Controlador();
+        public int privileges = 0;
 
         //Método que guarda en un arreglo de tipo botón los botones que se tienen en el formulario. Se les da permiso a los diferentes botones de acuerdo a la función que realice este
         public MenuPrototipo()
         {
             InitializeComponent();
             //Control para habilitar opciones del menu
-            Button[] apps = { btnaplicaciones };
+            Button[] apps = { };
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.deshabilitarApps(apps);
             //Llamada metodo de libreria Controlador del modulo de Seguridad
             cn.getAccesoApp(1002, apps[0]);
+            CapaControlador_SisB.Controlador ctrl = new CapaControlador_SisB.Controlador();
+            int idUser = Convert.ToInt32(Seguridad_Controlador.Controlador.idUser);
+            this.privileges = ctrl.getUserProfile(idUser);
+            if (this.privileges == 1) this.enableByAdmin();
+            if (this.privileges == 3) this.enableByUser();
+        }
+
+        public void enableByUser()
+        {
+        }
+
+        public void enableByAdmin()
+        {
+
         }
 
         //Validaciones que si son visibles los panales los oculta

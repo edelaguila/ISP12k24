@@ -306,6 +306,18 @@ namespace CapaModelo_SisB
             return null;
         }
 
+        public int getUserProfileById(int userId)
+        {
+            string sql = "select * from tbl_asignacionesperfilsusuario where fk_id_usuario='" + userId + "' ";
+            OdbcCommand cmd = new OdbcCommand(sql, this.con.connection());
+            OdbcDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                return reader.GetInt32(1);
+            }
+            return -1;
+        }
+
 
     }
 }

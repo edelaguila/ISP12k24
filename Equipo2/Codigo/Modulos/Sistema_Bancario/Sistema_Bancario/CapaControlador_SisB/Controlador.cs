@@ -83,6 +83,10 @@ namespace CapaControlador_SisB
         }
 
 
+        public int getUserProfile(int userId)
+        {
+            return this.sentencias.getUserProfileById(userId);
+        }
 
 
     }
