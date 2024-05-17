@@ -109,9 +109,18 @@ namespace CapaControladorERP
         }
 
         //David Carrillo
-        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT)
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT, string num_recibo)
         {
-            sn.InsertarPagoFacXCobrar(noFactura,cliente, banco, concepto, monto_pago,extra_pago, fecha_pago, NIT);
+            sn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
+        }
+
+        public double CalcularPorPagar(string noFactura)
+        {
+            return sn.CalcularPorPagar(noFactura);
+        }
+        public bool FacturaExiste(string noFactura)
+        {
+            return sn.FacturaExiste(noFactura);
         }
 
         //David Carrillo 0901-20-3201 
@@ -124,7 +133,14 @@ namespace CapaControladorERP
         {
             return sn.BuscarDato(dato, tabla, DatoABuscar, igualA);
         }
-
+        public void ActualizarFaltantePago(string noFactura, double faltantePago)
+        {
+            sn.ActualizarFaltantePago(noFactura,faltantePago);
+        }
+        public void ActualizarExistencias(int idProducto, int cantidad)
+        {
+            sn.ActualizarExistencias(idProducto, cantidad);
+        }
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)
         {

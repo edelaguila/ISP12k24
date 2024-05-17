@@ -139,6 +139,8 @@ namespace CapaModeloERP
                 }
             }
         }
+
+        
         //David Carrillo 0901-20-3201 
         public void InsertarCoti(int No_Cotizacion, string fecha_coti, string fechaFinal_coti, string Solicitud)
         {
@@ -362,17 +364,18 @@ namespace CapaModeloERP
             }
         }
         //David Carrillo
-        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT)
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT, string num_recibo)
         {
             using (OdbcConnection connection = con.connection())
             {
                 if (connection != null)
                 {
+                    //connection.Open();
                     using (OdbcTransaction transaction = connection.BeginTransaction())
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_pagofact (noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_pagofact (noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@noFactura", noFactura);
@@ -383,6 +386,7 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@extra_pago", extra_pago);
                                 cmd.Parameters.AddWithValue("@fecha_pago", fecha_pago);
                                 cmd.Parameters.AddWithValue("@NIT", NIT);
+                                cmd.Parameters.AddWithValue("@num_recibo", num_recibo);
 
                                 cmd.ExecuteNonQuery();
                             }
@@ -398,6 +402,93 @@ namespace CapaModeloERP
                 }
             }
         }
+        public double CalcularPorPagar(string noFactura)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string queryTotal = "SELECT total_facxcob FROM tbl_facturaxcobrar WHERE NoFactura = ?";
+                    double totalFacxCob = 0.0;
+
+                    using (OdbcCommand cmdTotal = new OdbcCommand(queryTotal, connection))
+                    {
+                        cmdTotal.Parameters.AddWithValue("@NoFactura", noFactura);
+                        object totalResult = cmdTotal.ExecuteScalar();
+                        totalFacxCob = totalResult != DBNull.Value ? Convert.ToDouble(totalResult) : 0.0;
+                    }
+                    string queryPagos = "SELECT COALESCE(SUM(monto_pago), 0) FROM tbl_pagofact WHERE noFactura = ?";
+                    double totalPagos = 0.0;
+
+                    using (OdbcCommand cmdPagos = new OdbcCommand(queryPagos, connection))
+                    {
+                        cmdPagos.Parameters.AddWithValue("@noFactura", noFactura);
+                        object pagosResult = cmdPagos.ExecuteScalar();
+                        totalPagos = pagosResult != DBNull.Value ? Convert.ToDouble(pagosResult) : 0.0;
+                    }
+
+                    double porPagar = totalFacxCob - totalPagos;
+                    return porPagar >= 0 ? porPagar : 0.0;
+                }
+                return 0.0;
+            }
+        }
+        public void ActualizarFaltantePago(string noFactura, double faltantePago)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string query = "UPDATE tbl_facturaxcobrar SET faltante_pago = ? WHERE NoFactura = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@faltante_pago", faltantePago);
+                        cmd.Parameters.AddWithValue("@NoFactura", noFactura);
+
+                       // connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
+        public bool FacturaExiste(string noFactura)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                string query = "SELECT COUNT(*) FROM tbl_pagofact WHERE noFactura = ?";
+                using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                {
+                    cmd.Parameters.AddWithValue("@noFactura", noFactura);
+                    //connection.Open();
+                    int count = Convert.ToInt32(cmd.ExecuteScalar());
+                    return count > 0;
+                }
+            }
+        }
+        //David Carrillo 0901-20-3201
+        public void ActualizarExistencias(int idProducto, int cantidad)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    string query = "UPDATE tbl_existencias SET cantidad = cantidad - ? WHERE tbl_producto_id_producto = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@idProducto", idProducto);
+
+                        //connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
+
 
         //David Carrillo 0901-20-3201
         public void ActCoti(int No_Cotizacion)
