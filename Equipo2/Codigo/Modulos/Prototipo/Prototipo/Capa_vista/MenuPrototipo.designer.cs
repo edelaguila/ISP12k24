@@ -53,10 +53,18 @@ namespace Vista_PrototipoMenu
             this.button8 = new System.Windows.Forms.Button();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.panelayuda = new System.Windows.Forms.Panel();
+            this.btn_mant_transaccion = new System.Windows.Forms.Button();
+            this.btn_mant_tipo_tarjeta = new System.Windows.Forms.Button();
+            this.btn_mant_tarjeta = new System.Windows.Forms.Button();
+            this.btn_mant_estados = new System.Windows.Forms.Button();
+            this.btn_mant_cliente = new System.Windows.Forms.Button();
+            this.mant_moneda = new System.Windows.Forms.Button();
+            this.btn_mant_tipo_cuenta = new System.Windows.Forms.Button();
+            this.btn_man_cuenta = new System.Windows.Forms.Button();
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_tipo_cuenta = new System.Windows.Forms.Button();
+            this.btn_mant_tipo_trans = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -395,7 +403,7 @@ namespace Vista_PrototipoMenu
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
             this.button8.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(415, 53);
+            this.button8.Size = new System.Drawing.Size(415, 56);
             this.button8.TabIndex = 12;
             this.button8.Text = "TRANSFERENCIAS A OTROS BANCOS";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -414,9 +422,9 @@ namespace Vista_PrototipoMenu
             this.btnSeguridad.Location = new System.Drawing.Point(0, 993);
             this.btnSeguridad.Name = "btnSeguridad";
             this.btnSeguridad.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
-            this.btnSeguridad.Size = new System.Drawing.Size(415, 49);
+            this.btnSeguridad.Size = new System.Drawing.Size(415, 53);
             this.btnSeguridad.TabIndex = 10;
-            this.btnSeguridad.Text = "Mantenimientos";
+            this.btnSeguridad.Text = "MANTENIMIENTOS";
             this.btnSeguridad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguridad.UseVisualStyleBackColor = false;
             this.btnSeguridad.Click += new System.EventHandler(this.btnSeguridad_Click);
@@ -424,13 +432,149 @@ namespace Vista_PrototipoMenu
             // panelayuda
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panelayuda.Controls.Add(this.btn_tipo_cuenta);
+            this.panelayuda.Controls.Add(this.btn_mant_tipo_trans);
+            this.panelayuda.Controls.Add(this.btn_mant_transaccion);
+            this.panelayuda.Controls.Add(this.btn_mant_tipo_tarjeta);
+            this.panelayuda.Controls.Add(this.btn_mant_tarjeta);
+            this.panelayuda.Controls.Add(this.btn_mant_estados);
+            this.panelayuda.Controls.Add(this.btn_mant_cliente);
+            this.panelayuda.Controls.Add(this.mant_moneda);
+            this.panelayuda.Controls.Add(this.btn_mant_tipo_cuenta);
+            this.panelayuda.Controls.Add(this.btn_man_cuenta);
             this.panelayuda.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelayuda.Location = new System.Drawing.Point(0, 1042);
+            this.panelayuda.Location = new System.Drawing.Point(0, 1046);
             this.panelayuda.Name = "panelayuda";
-            this.panelayuda.Size = new System.Drawing.Size(415, 161);
+            this.panelayuda.Size = new System.Drawing.Size(415, 549);
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
+            // 
+            // btn_mant_transaccion
+            // 
+            this.btn_mant_transaccion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_transaccion.FlatAppearance.BorderSize = 0;
+            this.btn_mant_transaccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_transaccion.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_transaccion.Location = new System.Drawing.Point(0, 357);
+            this.btn_mant_transaccion.Name = "btn_mant_transaccion";
+            this.btn_mant_transaccion.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_transaccion.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_transaccion.TabIndex = 16;
+            this.btn_mant_transaccion.Text = "MANTENIMIENTO TRANSACCION";
+            this.btn_mant_transaccion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_transaccion.UseVisualStyleBackColor = true;
+            this.btn_mant_transaccion.Click += new System.EventHandler(this.btn_mant_transaccion_Click_2);
+            // 
+            // btn_mant_tipo_tarjeta
+            // 
+            this.btn_mant_tipo_tarjeta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_tipo_tarjeta.FlatAppearance.BorderSize = 0;
+            this.btn_mant_tipo_tarjeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_tipo_tarjeta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_tipo_tarjeta.Location = new System.Drawing.Point(0, 306);
+            this.btn_mant_tipo_tarjeta.Name = "btn_mant_tipo_tarjeta";
+            this.btn_mant_tipo_tarjeta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_tipo_tarjeta.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_tipo_tarjeta.TabIndex = 15;
+            this.btn_mant_tipo_tarjeta.Text = "MANTENIMIENTO TIPO TARJETA";
+            this.btn_mant_tipo_tarjeta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_tipo_tarjeta.UseVisualStyleBackColor = true;
+            this.btn_mant_tipo_tarjeta.Click += new System.EventHandler(this.btn_mant_tipo_tarjeta_Click);
+            // 
+            // btn_mant_tarjeta
+            // 
+            this.btn_mant_tarjeta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_tarjeta.FlatAppearance.BorderSize = 0;
+            this.btn_mant_tarjeta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_tarjeta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_tarjeta.Location = new System.Drawing.Point(0, 255);
+            this.btn_mant_tarjeta.Name = "btn_mant_tarjeta";
+            this.btn_mant_tarjeta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_tarjeta.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_tarjeta.TabIndex = 14;
+            this.btn_mant_tarjeta.Text = "MANTENIMIENTO TARJETA";
+            this.btn_mant_tarjeta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_tarjeta.UseVisualStyleBackColor = true;
+            this.btn_mant_tarjeta.Click += new System.EventHandler(this.btn_mant_tarjeta_Click);
+            // 
+            // btn_mant_estados
+            // 
+            this.btn_mant_estados.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_estados.FlatAppearance.BorderSize = 0;
+            this.btn_mant_estados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_estados.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_estados.Location = new System.Drawing.Point(0, 204);
+            this.btn_mant_estados.Name = "btn_mant_estados";
+            this.btn_mant_estados.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_estados.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_estados.TabIndex = 13;
+            this.btn_mant_estados.Text = "MANTENIMIENTO ESTADOS";
+            this.btn_mant_estados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_estados.UseVisualStyleBackColor = true;
+            this.btn_mant_estados.Click += new System.EventHandler(this.btn_mant_estados_Click);
+            // 
+            // btn_mant_cliente
+            // 
+            this.btn_mant_cliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_cliente.FlatAppearance.BorderSize = 0;
+            this.btn_mant_cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_cliente.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_cliente.Location = new System.Drawing.Point(0, 153);
+            this.btn_mant_cliente.Name = "btn_mant_cliente";
+            this.btn_mant_cliente.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_cliente.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_cliente.TabIndex = 12;
+            this.btn_mant_cliente.Text = "MANTENIMIENTO CLIENTE";
+            this.btn_mant_cliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_cliente.UseVisualStyleBackColor = true;
+            this.btn_mant_cliente.Click += new System.EventHandler(this.btn_mant_cliente_Click_2);
+            // 
+            // mant_moneda
+            // 
+            this.mant_moneda.Dock = System.Windows.Forms.DockStyle.Top;
+            this.mant_moneda.FlatAppearance.BorderSize = 0;
+            this.mant_moneda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mant_moneda.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.mant_moneda.Location = new System.Drawing.Point(0, 102);
+            this.mant_moneda.Name = "mant_moneda";
+            this.mant_moneda.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.mant_moneda.Size = new System.Drawing.Size(415, 51);
+            this.mant_moneda.TabIndex = 10;
+            this.mant_moneda.Text = "MANTENIMIENTO MONEDA";
+            this.mant_moneda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mant_moneda.UseVisualStyleBackColor = true;
+            this.mant_moneda.Click += new System.EventHandler(this.mant_moneda_Click);
+            // 
+            // btn_mant_tipo_cuenta
+            // 
+            this.btn_mant_tipo_cuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_tipo_cuenta.FlatAppearance.BorderSize = 0;
+            this.btn_mant_tipo_cuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_tipo_cuenta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_tipo_cuenta.Location = new System.Drawing.Point(0, 51);
+            this.btn_mant_tipo_cuenta.Name = "btn_mant_tipo_cuenta";
+            this.btn_mant_tipo_cuenta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_tipo_cuenta.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_tipo_cuenta.TabIndex = 9;
+            this.btn_mant_tipo_cuenta.Text = "MANTENIMIENTO TIPO CUENTA";
+            this.btn_mant_tipo_cuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_tipo_cuenta.UseVisualStyleBackColor = true;
+            this.btn_mant_tipo_cuenta.Click += new System.EventHandler(this.btn_mant_tipo_cuenta_Click);
+            // 
+            // btn_man_cuenta
+            // 
+            this.btn_man_cuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_man_cuenta.FlatAppearance.BorderSize = 0;
+            this.btn_man_cuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_man_cuenta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_man_cuenta.Location = new System.Drawing.Point(0, 0);
+            this.btn_man_cuenta.Name = "btn_man_cuenta";
+            this.btn_man_cuenta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_man_cuenta.Size = new System.Drawing.Size(415, 51);
+            this.btn_man_cuenta.TabIndex = 8;
+            this.btn_man_cuenta.Text = "MANTENIMIENTO CUENTA";
+            this.btn_man_cuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_man_cuenta.UseVisualStyleBackColor = true;
+            this.btn_man_cuenta.Click += new System.EventHandler(this.btn_man_cuenta_Click);
             // 
             // btnayuda
             // 
@@ -441,7 +585,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnayuda.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnayuda.ForeColor = System.Drawing.Color.Black;
-            this.btnayuda.Location = new System.Drawing.Point(0, 1203);
+            this.btnayuda.Location = new System.Drawing.Point(0, 1595);
             this.btnayuda.Name = "btnayuda";
             this.btnayuda.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
             this.btnayuda.Size = new System.Drawing.Size(415, 47);
@@ -483,7 +627,7 @@ namespace Vista_PrototipoMenu
             this.btnsalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsalir.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsalir.ForeColor = System.Drawing.Color.Black;
-            this.btnsalir.Location = new System.Drawing.Point(0, 1250);
+            this.btnsalir.Location = new System.Drawing.Point(0, 1642);
             this.btnsalir.Name = "btnsalir";
             this.btnsalir.Padding = new System.Windows.Forms.Padding(51, 0, 0, 0);
             this.btnsalir.Size = new System.Drawing.Size(415, 52);
@@ -493,21 +637,21 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
-            // btn_tipo_cuenta
+            // btn_mant_tipo_trans
             // 
-            this.btn_tipo_cuenta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_tipo_cuenta.FlatAppearance.BorderSize = 0;
-            this.btn_tipo_cuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_tipo_cuenta.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_tipo_cuenta.Location = new System.Drawing.Point(0, 0);
-            this.btn_tipo_cuenta.Name = "btn_tipo_cuenta";
-            this.btn_tipo_cuenta.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btn_tipo_cuenta.Size = new System.Drawing.Size(415, 51);
-            this.btn_tipo_cuenta.TabIndex = 8;
-            this.btn_tipo_cuenta.Text = "Tipo de Cuenta";
-            this.btn_tipo_cuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_tipo_cuenta.UseVisualStyleBackColor = true;
-            this.btn_tipo_cuenta.Click += new System.EventHandler(this.btn_tipo_cuenta_Click);
+            this.btn_mant_tipo_trans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_mant_tipo_trans.FlatAppearance.BorderSize = 0;
+            this.btn_mant_tipo_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_mant_tipo_trans.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_mant_tipo_trans.Location = new System.Drawing.Point(0, 408);
+            this.btn_mant_tipo_trans.Name = "btn_mant_tipo_trans";
+            this.btn_mant_tipo_trans.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_mant_tipo_trans.Size = new System.Drawing.Size(415, 51);
+            this.btn_mant_tipo_trans.TabIndex = 17;
+            this.btn_mant_tipo_trans.Text = "MANTENIMIENTO TIPO TRANSACCION";
+            this.btn_mant_tipo_trans.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_mant_tipo_trans.UseVisualStyleBackColor = true;
+            this.btn_mant_tipo_trans.Click += new System.EventHandler(this.btn_mant_tipo_trans_Click);
             // 
             // MenuPrototipo
             // 
@@ -561,6 +705,14 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button btn_tipo_cuenta;
+        private System.Windows.Forms.Button btn_man_cuenta;
+        private System.Windows.Forms.Button btn_mant_tipo_cuenta;
+        private System.Windows.Forms.Button mant_moneda;
+        private System.Windows.Forms.Button btn_mant_cliente;
+        private System.Windows.Forms.Button btn_mant_estados;
+        private System.Windows.Forms.Button btn_mant_tarjeta;
+        private System.Windows.Forms.Button btn_mant_tipo_tarjeta;
+        private System.Windows.Forms.Button btn_mant_transaccion;
+        private System.Windows.Forms.Button btn_mant_tipo_trans;
     }
 }

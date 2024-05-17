@@ -278,9 +278,9 @@ namespace CapaVistaERP
 
         private void button27_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.AutorizacionOrdenDeCompra());
+            Abrir(new Procesos.frmBitacoraAutorizacionOrdenesCompra());
             hideSubMenu();
-            cn.setBtitacora("8020", "Pro. Autorizacion Ordenes");
+            cn.setBtitacora("8020", "Pro. Bitacora de autorizacion ordenes de compra");
         }
 
         private void button16_Click(object sender, EventArgs e)
@@ -315,7 +315,7 @@ namespace CapaVistaERP
 
         private void button29_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.frmBitacoraMovimientoDeBancos());
+            Abrir(new Procesos.frmBitacoraMovimientoDeBanco());
             hideSubMenu();
             cn.setBtitacora("8031", "Pro. Bitacora de movimiento de bancos");
         }
@@ -323,6 +323,7 @@ namespace CapaVistaERP
 
         private void btn_buscarCoti_Click(object sender, EventArgs e)
         {
+            // Abrir(new Procesos.GestionCotizaciones());
             Abrir(new Procesos.BuscarCotizacion());
             hideSubMenu();
         }
@@ -342,6 +343,18 @@ namespace CapaVistaERP
         private void button33_Click(object sender, EventArgs e)
         {
             Abrir(new Mantenimientos.frmSucursales());
+            hideSubMenu();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.tipodecombio());
+            hideSubMenu();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.PagoFacturaxCobrar());
             hideSubMenu();
         }
     }

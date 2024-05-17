@@ -120,7 +120,7 @@ namespace CapaVistaERP.Procesos
             string telefono_cl = txt_telefono_cl.Text;
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
-            MessageBox.Show("Datos Guardados prosiga con su cotizacion");
+            //MessageBox.Show("Datos Guardados prosiga con su cotizacion");
 
             cliente();
 
@@ -199,10 +199,10 @@ namespace CapaVistaERP.Procesos
             string Solicitud = "Cotizacion";
             cn.insertarCliente(nombre_cl, apellido_cl, direccion_cl, correo_cl, telefono_cl);
 
-            MessageBox.Show("Datos Guardados prosiga con su cotizacion");
+            //MessageBox.Show("Datos Guardados prosiga con su cotizacion");
 
             cliente();
-            MessageBox.Show("Continuando");
+            MessageBox.Show("Cotizacion Guardad con exito");
 
             int no_coti = Convert.ToInt32(lblNoCoti.Text);
             string fechaini = dateTimePicker1.Text;
@@ -247,7 +247,7 @@ namespace CapaVistaERP.Procesos
                 }
             }
 
-            MessageBox.Show("Detalles de cotización guardados correctamente.");
+           // MessageBox.Show("Detalles de cotización guardados correctamente.");
             this.Close();
             //this.Refresh();
         }

@@ -15,14 +15,18 @@ namespace CapaVistaERP.Mantenimientos
         public frm_mant_tipo_de_cambio()
         {
             InitializeComponent();
-            InitializeComponent();
-            this.navegador1.config("tbl_tipocambio", this, "8009");
+            this.navegador1.config("moneda", this, "8009");
             comboBox1.Items.Add("Quetzales");
             comboBox1.Items.Add("Dólar");
             comboBox1.Items.Add("Euros");
-            comboBox2.Items.Add("Quetzales");
-            comboBox2.Items.Add("Dólar");
-            comboBox2.Items.Add("Euros");
+            comboBox2.Items.Add("Q");
+            comboBox2.Items.Add("$");
+            comboBox2.Items.Add("€");
+            comboBox3.Items.Add("Activo");
+            comboBox3.Items.Add("positivo");
+
+
+
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }

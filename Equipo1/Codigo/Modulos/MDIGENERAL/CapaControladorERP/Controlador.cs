@@ -129,9 +129,24 @@ namespace CapaControladorERP
         }
 
         //David Carrillo
-        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura)
         {
-            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura);
+        }
+
+        //David Carrillo
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT, string num_recibo)
+        {
+            sn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
+        }
+
+        public double CalcularPorPagar(string noFactura)
+        {
+            return sn.CalcularPorPagar(noFactura);
+        }
+        public bool FacturaExiste(string noFactura)
+        {
+            return sn.FacturaExiste(noFactura);
         }
 
         //David Carrillo 0901-20-3201 
@@ -144,7 +159,14 @@ namespace CapaControladorERP
         {
             return sn.BuscarDato(dato, tabla, DatoABuscar, igualA);
         }
-
+        public void ActualizarFaltantePago(string noFactura, double faltantePago)
+        {
+            sn.ActualizarFaltantePago(noFactura,faltantePago);
+        }
+        public void ActualizarExistencias(int idProducto, int cantidad)
+        {
+            sn.ActualizarExistencias(idProducto, cantidad);
+        }
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)
         {
@@ -175,15 +197,20 @@ namespace CapaControladorERP
         {
             return sn.Guardar(tabla, valores);
         }
+        public bool ActualizarDatosC(string tabla, Dictionary<string, object> valores, string condicion)
+        {
+            return sn.ActualizarC(tabla, valores, condicion);
+        }
+
         // carlos enrique modulo bancos
         public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
         // carlos enrique guzman cabrera
-        public DataTable llenartablabitacoraMB(string tabla)
+        public DataTable llenartablabitacoraMB(string consulta)
         {
-            OdbcDataAdapter dt = sn.llenartablabitacoraMB(tabla);
+            OdbcDataAdapter dt = sn.llenartablabitacoraMB(consulta);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -199,7 +226,11 @@ namespace CapaControladorERP
         {
             return sn.EliminarMovimiento(idMovimiento);
         }
-
+        // carlos enrique guzman cabrera
+        public bool EliminarRegistroAO(int idRegistro)
+        {
+            return sn.EliminarRegistroAO(idRegistro);
+        }
         // carlos enrique guzman cabrera
         public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
         {
@@ -232,6 +263,40 @@ namespace CapaControladorERP
             }
 
             return sn.ObtenerRegistrosPorFecha(fechaInicio, fechaFin);
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable FiltrarRegistrosPorFechaAO(int año, string tipoFiltro)
+        {
+
+
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerRegistrosPorFechaAO(fechaInicio, fechaFin);
         }
 
         //Carol Chuy Modulo Compras
@@ -546,6 +611,18 @@ namespace CapaControladorERP
             return table;
         }
 
+        public DataTable llenartablatipodecambio(string tabla)
+        {
+            OdbcDataAdapter dt = sn.llenartablatipodecambio(tabla);
+            DataTable table = new DataTable();
+            dt.Fill(table);
+            return table;
+        }
+
+
+
+
+
 
         public bool EliminarDisponibilidadDiaria(int idMovimiento)
         {
@@ -705,6 +782,19 @@ namespace CapaControladorERP
         public void ActualizarDetalleFactura(int codDetalle, int cantidad, double totalfila, int codigo, int idprod)
         {
             sn.ActualizarDetalleFactura(codDetalle, cantidad, totalfila, codigo, idprod);
+        }
+
+        public DataTable ObtenerCotizaciones()
+        {
+            return sn.selectTable("", "SELECT * FROM tbl_cotizaciones WHERE No_Cotizacion NOT IN (SELECT tbl_cotizaciones_No_Cotizacion FROM tbl_ventaspedido)");
+        }
+
+        public DataTable ObtenerProductosPorCotizacion(int Id)
+        {
+            string sql = "SELECT cod_producto, nombre_prod, descripcion_prod, precioUnitario_prod FROM tbl_detalle_cotizacion ";
+            sql+= "inner join tbl_cotizaciones on No_Cotizacion = tbl_cotizaciones_No_Cotizacion ";
+            sql += "inner join tbl_producto on tbl_producto_cod_producto = cod_producto where tbl_cotizaciones_No_Cotizacion = '"+Id+"';";
+            return this.sn.selectTable("", sql);
         }
     }
 

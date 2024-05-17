@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
+using CapaModelo_SisB.Templates;
 
 
 namespace CapaModelo_SisB
@@ -71,7 +72,7 @@ namespace CapaModelo_SisB
             this.con.myconn.Close();
         }
 
-        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string tipoTransaccion, string estado, string valorTrans, string estadoConciliacion)
+        public void InsertarMovimiento(string valorMovimiento, string descripcionMovimiento, string numCuentaDeb, string numCuentaCred, string estado)
         {
             using (OdbcConnection connection = this.con.connection())
             {
@@ -81,15 +82,13 @@ namespace CapaModelo_SisB
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_movimientosBancarios (pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, movban_movban_num_cuenta_debito, movban_movban_num_cuenta_credito, fk_movban_tipo_transaccion, fk_movban_valorTrans, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_movimientosBancarios ( movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@movban_valor_transaccion", valorMovimiento);
                                 cmd.Parameters.AddWithValue("@movban_descripcion_transaccion", descripcionMovimiento);
                                 cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_debito", numCuentaDeb);
                                 cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_credito", numCuentaCred);
-                                cmd.Parameters.AddWithValue("@fk_movban_tipo_transaccion", tipoTransaccion);
-                                cmd.Parameters.AddWithValue("@fk_movban_valorTrans", valorTrans);
                                 cmd.Parameters.AddWithValue("@movban_status", estado);
                                 cmd.Parameters.AddWithValue("@movban_fecha_de_ingreso", DateTime.Now);
 
@@ -115,7 +114,7 @@ namespace CapaModelo_SisB
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, movban_movban_num_cuenta_debito, movban_movban_num_cuenta_credito, fk_movban_tipo_transaccion, fk_movban_valorTrans, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
+                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -190,6 +189,82 @@ namespace CapaModelo_SisB
 
             return valorTransaccion;
         }
+
+
+        public List<CuentaAmiga> getFriendAccount(int idReference)
+        {
+            List<CuentaAmiga> accounts = new List<CuentaAmiga>();
+            try
+            {
+                string query = "call ObtenerCuentasAmigas('" + idReference + "')";
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                OdbcDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    CuentaAmiga account = new CuentaAmiga(reader.GetInt32(0), reader.GetString(1), reader.GetString(2));
+                    accounts.Add(account);
+                }
+                return accounts;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+            return null;
+        }
+
+        public void addFriendAccount(int idReference, string accountFriend)
+        {
+            try
+            {
+                string query = "call AgregarCuentaAmiga('" + accountFriend + "', '" + idReference + "')";
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+        }
+
+        public Cuenta getCurrentAccount(int Id)
+        {
+            try
+            {
+                string query = "select cue_id, cue_cliente, cue_tipo, cue_saldo, cue_moneda, cue_numero, cue_usuario, cli_nombre from tbl_cuenta  inner join tbl_cliente on cli_id = cue_cliente where cue_usuario='" + Id + "'";
+                Console.WriteLine(query);
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                OdbcDataReader reader = cmd.ExecuteReader();
+                if (reader.Read())
+                    return new Cuenta(reader.GetInt32(0), reader.GetInt32(1), reader.GetDouble(2), reader.GetInt32(3), reader.GetInt32(4), reader.GetString(5), reader.GetInt32(6), reader.GetString(7));
+                else
+                    Console.WriteLine("No hay nada");
+                return null;
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+            return null;
+        }
+
+        public void makeDepositTransaction(int origin, int dest, double monto)
+        {
+            try
+            {
+                string query = "call transaccion_deposito('" + origin + "', '" + dest + "', '" + monto + "');";
+                Console.WriteLine(query);
+                OdbcCommand cmd = new OdbcCommand(query, this.con.connection());
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                Console.Write(e.Message);
+            }
+        }
+
+
 
 
     }

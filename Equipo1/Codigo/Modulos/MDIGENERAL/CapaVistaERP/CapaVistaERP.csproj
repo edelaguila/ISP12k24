@@ -244,11 +244,17 @@
     <Compile Include="Procesos\FacturaporPagarModi.Designer.cs">
       <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.cs">
+    <Compile Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Procesos\frmBitacoraMovimientoDeBancos.Designer.cs">
-      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    <Compile Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.Designer.cs">
+      <DependentUpon>frmBitacoraAutorizacionOrdenesCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmBitacoraMovimientoDeBanco.Designer.cs">
+      <DependentUpon>frmBitacoraMovimientoDeBanco.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\frmMovimientoDeBancos.cs">
       <SubType>Form</SubType>
@@ -267,6 +273,12 @@
     </Compile>
     <Compile Include="Procesos\frm_pedidos.Designer.cs">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\GestionCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\GestionCotizaciones.Designer.cs">
+      <DependentUpon>GestionCotizaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="Procesos\ModificarDetalleCompras.cs">
       <SubType>Form</SubType>
@@ -316,6 +328,18 @@
     <Compile Include="Procesos\OrdenesdeCompraMaestro.Designer.cs">
       <DependentUpon>OrdenesdeCompraMaestro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\PagoFacturaxCobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\PagoFacturaxCobrar.Designer.cs">
+      <DependentUpon>PagoFacturaxCobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\tipodecombio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\tipodecombio.Designer.cs">
+      <DependentUpon>tipodecombio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\TrasladoDeProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,17 +358,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\ReporteMovimientosDeBancos.cs">
+    <Compile Include="Reportes\ReporteOrdenesdeCompra.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteMovimientosDeBancos.rpt</DependentUpon>
+      <DependentUpon>ReporteOrdenesdeCompra.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteOrdenesdeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteOrdenesdeCompra.Designer.cs">
+      <DependentUpon>frmReporteOrdenesdeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteAutorizacionOrdenesCompra.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteAutorizacionOrdenesCompra.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.Designer.cs">
+      <DependentUpon>frmReporteDeAutorizacionOrdenDeCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmReportesDeMovimientosDeBancos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\frmReportesDeMovimientosDeBancos.Designer.cs">
       <DependentUpon>frmReportesDeMovimientosDeBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteMovimientosDeBancos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteMovimientosDeBancos.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -441,8 +489,11 @@
     <EmbeddedResource Include="Procesos\FacturaporPagarModi.resx">
       <DependentUpon>FacturaporPagarModi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBancos.resx">
-      <DependentUpon>frmBitacoraMovimientoDeBancos.cs</DependentUpon>
+    <EmbeddedResource Include="Procesos\frmBitacoraAutorizacionOrdenesCompra.resx">
+      <DependentUpon>frmBitacoraAutorizacionOrdenesCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmBitacoraMovimientoDeBanco.resx">
+      <DependentUpon>frmBitacoraMovimientoDeBanco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frmMovimientoDeBancos.resx">
       <DependentUpon>frmMovimientoDeBancos.cs</DependentUpon>
@@ -452,6 +503,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\frm_pedidos.resx">
       <DependentUpon>frm_pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\GestionCotizaciones.resx">
+      <DependentUpon>GestionCotizaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos\ModificarDetalleCompras.resx">
       <DependentUpon>ModificarDetalleCompras.cs</DependentUpon>
@@ -477,6 +531,12 @@
     <EmbeddedResource Include="Procesos\OrdenesdeCompraMaestro.resx">
       <DependentUpon>OrdenesdeCompraMaestro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\PagoFacturaxCobrar.resx">
+      <DependentUpon>PagoFacturaxCobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\tipodecombio.resx">
+      <DependentUpon>tipodecombio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\TrasladoDeProducto.resx">
       <DependentUpon>TrasladoDeProducto.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,16 +547,34 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\ReporteMovimientosDeBancos.rpt">
+    <EmbeddedResource Include="Reportes\ReporteOrdenesdeCompra.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteMovimientosDeBancos.cs</LastGenOutput>
+      <LastGenOutput>ReporteOrdenesdeCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteOrdenesdeCompra.resx">
+      <DependentUpon>frmReporteOrdenesdeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteAutorizacionOrdenesCompra.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteAutorizacionOrdenesCompra.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteDeAutorizacionOrdenDeCompra.resx">
+      <DependentUpon>frmReporteDeAutorizacionOrdenDeCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmReportesDeMovimientosDeBancos.resx">
       <DependentUpon>frmReportesDeMovimientosDeBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteMovimientosDeBancos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteMovimientosDeBancos.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tipo-de-cambio %282%29.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

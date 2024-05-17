@@ -59,5 +59,15 @@ namespace CapaVistaERP.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tipo_de_cambio__2_ {
+            get {
+                object obj = ResourceManager.GetObject("tipo-de-cambio (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

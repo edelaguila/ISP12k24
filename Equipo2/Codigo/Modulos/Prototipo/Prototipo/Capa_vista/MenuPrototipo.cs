@@ -76,7 +76,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnaplicaciones_Click(object sender, EventArgs e)
         {
-            CapaVista_SisB.frmCuenta form = new CapaVista_SisB.frmCuenta();
+            CapaVista_SisB.frmCliente form = new CapaVista_SisB.frmCliente();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();
@@ -95,7 +95,7 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "umg.chm");
+            Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,10 +134,10 @@ namespace Vista_PrototipoMenu
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            CapaVista_SisB.frmEstado form = new CapaVista_SisB.frmEstado();
-            form.MdiParent = this;
-            form.Show();
-            hideSubMenu();
+            //CapaVista_SisB.frmEstado form = new CapaVista_SisB.frmEstado();
+            //form.MdiParent = this;
+            //form.Show();
+            //();
         }
 
         private void man_boleta_Click(object sender, EventArgs e)
@@ -182,9 +182,73 @@ namespace Vista_PrototipoMenu
             hideSubMenu();
         }
 
-        private void btn_tipo_cuenta_Click(object sender, EventArgs e)
+        private void btn_man_cuenta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimiento_Cuenta form = new CapaVista_SisB.Mantenimiento_Cuenta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_tipo_cuenta_Click(object sender, EventArgs e)
         {
             CapaVista_SisB.frmTipoCuenta form = new CapaVista_SisB.frmTipoCuenta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void mant_moneda_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmMoneda form = new CapaVista_SisB.frmMoneda();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_cliente_Click_2(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmCliente form = new CapaVista_SisB.frmCliente();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_estados_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimiento_Estado form = new CapaVista_SisB.Mantenimiento_Estado();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_tarjeta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimiento_Tarjeta form = new CapaVista_SisB.Mantenimiento_Tarjeta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_tipo_tarjeta_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimiento_Tipo_Tarjeta form = new CapaVista_SisB.Mantenimiento_Tipo_Tarjeta();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_transaccion_Click_2(object sender, EventArgs e)
+        {
+            CapaVista_SisB.MantenimientoTransaccion form = new CapaVista_SisB.MantenimientoTransaccion();
+            form.MdiParent = this;
+            form.Show();
+            hideSubMenu();
+        }
+
+        private void btn_mant_tipo_trans_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimiento_Tipo_Transaccion form = new CapaVista_SisB.Mantenimiento_Tipo_Transaccion();
             form.MdiParent = this;
             form.Show();
             hideSubMenu();

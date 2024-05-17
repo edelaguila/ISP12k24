@@ -4,3 +4,18 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equip
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\bin\Debug\ModelLayer.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.pdb
+<<<<<<< HEAD
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\bin\Debug\ModelLayer.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\bin\Debug\ModelLayer.pdb
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.csproj.AssemblyReference.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.dll
+C:\Users\rayju\OneDrive\Escritorio\Sistema Bancario Actualizado AYUDAS\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\bin\Debug\ModelLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\bin\Debug\ModelLayer.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.csproj.AssemblyReference.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.csproj.CoreCompileInputs.cache
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Componentes\Navegador2.0\ModelLayer\obj\Debug\ModelLayer.pdb
+=======
+>>>>>>> parent of 8f99553 (Integración de Mantenimientos al MDI)

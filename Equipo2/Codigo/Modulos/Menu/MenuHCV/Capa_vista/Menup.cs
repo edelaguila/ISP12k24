@@ -72,7 +72,6 @@ namespace MenuHCV
 
         private void btnInventario_Click(object sender, EventArgs e)
         {
-
             //cn.setBtitacora("4000", "Ingreso Inventarios");
             /*CapaVistaInventario.menu_inventario b = new CapaVistaInventario.menu_inventario();
             //b.Show();

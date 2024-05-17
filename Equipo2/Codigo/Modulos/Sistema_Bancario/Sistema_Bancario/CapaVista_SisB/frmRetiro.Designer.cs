@@ -29,52 +29,54 @@ namespace CapaVista_SisB
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.txt_cuenta = new System.Windows.Forms.TextBox();
+            this.btn_genCodigo = new System.Windows.Forms.Button();
+            this.txt_monto = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmb_moneda = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_codigoSeguridad = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_genCodigo
             // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(77, 359);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 36);
-            this.button1.TabIndex = 58;
-            this.button1.Text = "Generar Codigo";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_genCodigo.BackColor = System.Drawing.Color.SlateGray;
+            this.btn_genCodigo.FlatAppearance.BorderSize = 0;
+            this.btn_genCodigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_genCodigo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_genCodigo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_genCodigo.Location = new System.Drawing.Point(77, 359);
+            this.btn_genCodigo.Name = "btn_genCodigo";
+            this.btn_genCodigo.Size = new System.Drawing.Size(136, 36);
+            this.btn_genCodigo.TabIndex = 58;
+            this.btn_genCodigo.Text = "Realizar retiro";
+            this.btn_genCodigo.UseVisualStyleBackColor = false;
+            this.btn_genCodigo.Click += new System.EventHandler(this.btn_genCodigo_Click);
             // 
-            // txt_cuenta
+            // txt_monto
             // 
-            this.txt_cuenta.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txt_cuenta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cuenta.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.txt_cuenta.Location = new System.Drawing.Point(77, 217);
-            this.txt_cuenta.Multiline = true;
-            this.txt_cuenta.Name = "txt_cuenta";
-            this.txt_cuenta.Size = new System.Drawing.Size(252, 30);
-            this.txt_cuenta.TabIndex = 57;
-            this.txt_cuenta.Tag = "Cantidad_a_retirar";
-            this.txt_cuenta.Text = "Q. 100";
+            this.txt_monto.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_monto.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.txt_monto.Location = new System.Drawing.Point(77, 217);
+            this.txt_monto.Multiline = true;
+            this.txt_monto.Name = "txt_monto";
+            this.txt_monto.Size = new System.Drawing.Size(252, 30);
+            this.txt_monto.TabIndex = 57;
+            this.txt_monto.Tag = "Cantidad_a_retirar";
+            this.txt_monto.Text = "Q. 100";
+            this.txt_monto.TextChanged += new System.EventHandler(this.txt_cuenta_TextChanged);
             // 
             // label4
             // 
@@ -143,6 +145,37 @@ namespace CapaVista_SisB
             this.panel2.Size = new System.Drawing.Size(410, 456);
             this.panel2.TabIndex = 59;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaVista_SisB.Properties.Resources.qr_code;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 243);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(308, 164);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
+            this.panel4.Controls.Add(this.lbl_codigoSeguridad);
+            this.panel4.Location = new System.Drawing.Point(52, 99);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(308, 99);
+            this.panel4.TabIndex = 4;
+            // 
+            // lbl_codigoSeguridad
+            // 
+            this.lbl_codigoSeguridad.AutoSize = true;
+            this.lbl_codigoSeguridad.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_codigoSeguridad.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codigoSeguridad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(57)))));
+            this.lbl_codigoSeguridad.Location = new System.Drawing.Point(79, 31);
+            this.lbl_codigoSeguridad.Name = "lbl_codigoSeguridad";
+            this.lbl_codigoSeguridad.Size = new System.Drawing.Size(145, 32);
+            this.lbl_codigoSeguridad.TabIndex = 5;
+            this.lbl_codigoSeguridad.Text = "7 8 5 9 4 2";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
@@ -176,6 +209,7 @@ namespace CapaVista_SisB
             this.textBox3.TabIndex = 61;
             this.textBox3.Tag = "Cantidad_a_retirar";
             this.textBox3.Text = "Pago de luz...";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -189,37 +223,6 @@ namespace CapaVista_SisB
             this.label3.TabIndex = 60;
             this.label3.Text = "Comentario";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(208)))), ((int)(((byte)(222)))));
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(52, 99);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(308, 99);
-            this.panel4.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(50)))), ((int)(((byte)(57)))));
-            this.label6.Location = new System.Drawing.Point(79, 31);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(145, 32);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "7 8 5 9 4 2";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CapaVista_SisB.Properties.Resources.qr_code;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 243);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(308, 164);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmRetiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,8 +232,8 @@ namespace CapaVista_SisB
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_cuenta);
+            this.Controls.Add(this.btn_genCodigo);
+            this.Controls.Add(this.txt_monto);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmb_moneda);
             this.Controls.Add(this.label2);
@@ -240,9 +243,9 @@ namespace CapaVista_SisB
             this.Text = "frmRetiro";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,8 +253,8 @@ namespace CapaVista_SisB
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_cuenta;
+        private System.Windows.Forms.Button btn_genCodigo;
+        private System.Windows.Forms.TextBox txt_monto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmb_moneda;
         private System.Windows.Forms.Label label2;
@@ -263,7 +266,7 @@ namespace CapaVista_SisB
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl_codigoSeguridad;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
