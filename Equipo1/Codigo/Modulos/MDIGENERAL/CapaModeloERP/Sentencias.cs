@@ -47,7 +47,7 @@ namespace CapaModeloERP
         }
 
         //Andrea Corado    0901-20-2841
-        public void guardarDatos(string idp,string fechamov,string totalmov,string nofact,string banmov,string tipomov,string numov,string conceptomov)
+        public void guardarDatos(string nofact,string banmov,string tipomov,string numov,string conceptomov)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -58,14 +58,14 @@ namespace CapaModeloERP
                         try
                         {
                             // Insertar en la primera tabla 
-                            string insertQuery1 = "INSERT INTO tbl_encabezadomovpro (id_prove,fecha_MovPro,total_MovPro) VALUES (?,?,?)";
+                           /* string insertQuery1 = "INSERT INTO tbl_encabezadomovpro (id_prove,fecha_MovPro,total_MovPro) VALUES (?,?,?)";
                             using (OdbcCommand cmd1 = new OdbcCommand(insertQuery1, connection, transaction))
                             {
                                 cmd1.Parameters.AddWithValue("@id_prove", idp);
                                 cmd1.Parameters.AddWithValue("@fecha_MovPro", fechamov);
                                 cmd1.Parameters.AddWithValue("@itotal_MovPro", totalmov);
                                 cmd1.ExecuteNonQuery();
-                            }
+                            }*/
 
                             // Insertar en la segunda tabla 
                             string insertQuery2 = "INSERT INTO tbl_detallemovpro (noFactura,banco_MovP,tipo_MovP,numero_MovP,concepto_MovP)VALUES (?,?,?,?,?)";
@@ -194,6 +194,78 @@ namespace CapaModeloERP
                 }
             }
         }
+
+        //Andrea Cecilia Corado Paiz 0901-20-2841
+        public void InsertarOperacion(int idp, string fechaabono, double totalope)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    // Se inicia la transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+
+                    try
+                    {
+                        // Se inserta la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_encabezadomovpro(id_prove,fecha_MovPro,total_MovPro) VALUES (?,?,?)";
+                        cmd.Parameters.AddWithValue("@id_prove", idp);
+                        cmd.Parameters.AddWithValue("@fecha_MovPro", fechaabono);
+                        cmd.Parameters.AddWithValue("@total_MovPro", totalope);
+                        
+                        cmd.ExecuteNonQuery();
+
+                        // Se confirma la transacción
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        // En caso de error, se hace rollback de la transacción
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+
+        //Andrea Cecilia Corado Paiz 0901-20-2841
+        public void InsertarDetalleOperacionPro(int numfact, string banco, string tipomov, string numdoc, string concepto)
+        {
+            using (OdbcConnection conn = con.connection())
+            {
+                Console.WriteLine("odbcconection");
+                using (OdbcCommand cmd = conn.CreateCommand())
+                {
+                    Console.WriteLine("odbc comando");
+                    // Se inicia una nueva transacción
+                    OdbcTransaction transaction = conn.BeginTransaction();
+                    cmd.Transaction = transaction;
+                    try
+                    {
+                        Console.WriteLine("try antes de insertar");
+                        // Se inserta el detalle de la orden de compra
+                        cmd.CommandText = "INSERT INTO tbl_detallemovpro(noFactura,banco_MovP,tipo_MovP,numero_MovP,concepto_MovP) VALUES (?,?,?,?,?)";
+                        cmd.Parameters.AddWithValue("@noFactura", numfact);
+                        cmd.Parameters.AddWithValue("@banco_MovP", banco);
+                        cmd.Parameters.AddWithValue("@tipo_MovP", tipomov);
+                        cmd.Parameters.AddWithValue("@numero_MovP", numdoc);
+                        cmd.Parameters.AddWithValue("@concepto_MovP", concepto);
+                        cmd.ExecuteNonQuery();
+                        Console.WriteLine("Luego de insertar");
+                        // Se confirma 
+                        transaction.Commit();
+                    }
+                    catch (Exception ex)
+                    {
+                        transaction.Rollback();
+                        throw new Exception("Error al insertar el detalle de la orden de compra: " + ex.Message);
+                    }
+                }
+            }
+        }
+
 
 
         //David Carrillo 0901-20-3201 

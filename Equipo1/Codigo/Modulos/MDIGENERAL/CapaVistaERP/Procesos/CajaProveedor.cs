@@ -182,25 +182,6 @@ namespace CapaVistaERP.Procesos
             }
 
 
-            /* Verificar si el contenido del TextBox es un número válido
-            if (double.TryParse(txt_factotal.Text, out double valor))
-            {
-                // Sumar el valor al total acumulado
-                sumaTotal += valor;
-
-                // Mostrar la suma total en el otro TextBox
-                txt_totalapagar.Text = sumaTotal.ToString();
-
-                //txtNoFactura.Text = "";
-                txt_FechaV.Text = "";
-                txt_facSub.Text = "";
-                txt_factotal.Text = "";
-                
-            }
-            else
-            {
-                MessageBox.Show("Por favor, ingrese un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
         }
 
         private void dgv_pagoproveedor_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -251,6 +232,81 @@ namespace CapaVistaERP.Procesos
 
         private void btn_pagar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // Obtener datos de la interfaz de usuario
+                string idpTexto = txt_idprov.Text;
+                int idp;
+                if (!int.TryParse(idpTexto, out idp))
+                {
+                    MessageBox.Show("El ID del proveedor no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                string totalmovTexto = txt_Sumadefacturas.Text;
+                double totalmov;
+                if (!double.TryParse(totalmovTexto, out totalmov))
+                {
+                    MessageBox.Show("El total del movimiento no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                DateTime fechaAbono = dt_fechaabono.Value;
+                string fechas = fechaAbono.ToString("yyyy-MM-dd");
+
+                // Confirmar con el usuario antes de enviar el pago
+                DialogResult resultado = MessageBox.Show("¿Está seguro de hacer el pago?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    // Insertar la operación principal en la base de datos
+                    cn.InsertarOperacion(idp, fechas, totalmov);
+
+                    // Recorrer las filas del DataGridView para insertar detalles y actualizar estados
+                    foreach (DataGridViewRow fila in dgv_pagoproveedor.Rows)
+                    {
+                        Console.WriteLine("EN EL FOREACH");
+                        if (!fila.IsNewRow)
+                        {
+                            Console.WriteLine("if de fila");
+                            string nofactura = fila.Cells[0].Value?.ToString();
+                            Console.WriteLine(nofactura);
+
+                            // Obtener valores de los TextBoxes (asumo que estos valores no cambian por fila)
+                            string banco = txt_bancos.Text;
+                            string tipo = txt_tipomovpro.Text;
+                            string numero = txt_numero.Text;
+                            string concepto = txt_concepto.Text;
+
+                            // Validar y convertir el número de factura
+                            if (!string.IsNullOrEmpty(nofactura) && int.TryParse(nofactura, out int numfact))
+                            {
+                                Console.WriteLine("EN EL if de evaluar numero factura");
+                                // Insertar detalle de la operación en la base de datos
+                                cn.InsertarDetalleOperacionPro(numfact, banco, tipo, numero, concepto);
+
+                                // Actualizar estado de la factura en la base de datos
+                                string dato = "1"; // Supongo que este es el valor que deseas asignar al estado de la factura
+                                cn.Actualizap(tabla1, "estado_facxpag", dato, "NoFactura", numfact);
+                            }
+                            else
+                            {
+                                MessageBox.Show("La factura en la fila " + fila.Index + " no es un número válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+                        }
+                    }
+
+                    MessageBox.Show("Pago realizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LimpiarCampos();
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error al realizar el pago: " + ex.Message);
+                MessageBox.Show("Ocurrió un error al realizar el pago.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
             /*try
             {
                 string idp = txt_idprov.Text;
@@ -349,6 +405,21 @@ namespace CapaVistaERP.Procesos
 
                 // Asigna ese valor al TextBox txt_Sumadefacturas
                 txt_totalapagar.Text = subtotal.ToString("F2");
+
+
+                List<int> facturasSeleccionadas = new List<int>();
+
+                // Recorre el DataGridView para obtener las facturas seleccionadas desde el ComboBox
+                foreach (DataGridViewRow row in dgv_pagoproveedor.Rows)
+                {
+                    // Suponiendo que el ComboBox está en la columna "NoFactura"
+                    if (row.Cells["NoFacturas"] is DataGridViewComboBoxCell comboBoxCell && comboBoxCell.Value != null)
+                    {
+                        int noFactura = Convert.ToInt32(comboBoxCell.Value);
+                        facturasSeleccionadas.Add(noFactura);
+                    }
+                }
+
             }
         }
     }
