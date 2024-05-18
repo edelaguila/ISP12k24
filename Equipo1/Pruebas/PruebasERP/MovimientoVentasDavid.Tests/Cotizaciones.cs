@@ -41,7 +41,7 @@ namespace MovimientoVentasDavid.Tests
         public void InsertarCoti()
         {
             // Arrange
-            int No_Cotizacion = 1;
+            int No_Cotizacion = 11;
             string fecha_coti = "2024/05/17";
             string fechaFinal_coti = "2024/05/19";
             string Solicitud = "Cotizacion";

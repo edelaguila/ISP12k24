@@ -729,7 +729,7 @@ namespace CapaModeloERP
         }
 
         //David Carrillo 0901-20-3201
-        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura)
+        public void InsertarFactura( double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura, double faltante_pago)
         {
             using (OdbcConnection connection = con.connection())
             {
@@ -739,7 +739,7 @@ namespace CapaModeloERP
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura) VALUES ( ?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_facturaxcobrar ( total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago) VALUES ( ?, ?, ?, ?, ?, ?,?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@total_facxcob", total_facxcob);
@@ -748,6 +748,8 @@ namespace CapaModeloERP
                                 cmd.Parameters.AddWithValue("@tbl_Ventas_detalle_id_ventas_det", tbl_Ventas_detalle_id_ventas_det);
                                 cmd.Parameters.AddWithValue("@tbl_Clientes_id_cliente", tbl_Clientes_id_cliente);
                                 cmd.Parameters.AddWithValue("@fecha_factura", fecha_factura);
+                                cmd.Parameters.AddWithValue("@faltante_pago", faltante_pago);
+                                
                                 cmd.ExecuteNonQuery();
                             }
 

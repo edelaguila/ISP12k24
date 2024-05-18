@@ -40,7 +40,7 @@ namespace MovimientoComprasAndrea.Tests
         public void InsertarDetalleOperacionProve()
         {
             // Arrange
-            int noFactu = 3;
+            int noFactu = 2;
             string banco = "Banrural";
             string tipo = "Pago";
             string numerodoc = "112543";

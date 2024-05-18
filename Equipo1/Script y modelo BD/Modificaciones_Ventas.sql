@@ -33,3 +33,22 @@ ALTER TABLE `bd_erp`.`tbl_pagofact`
 
 CHANGE COLUMN `concepto` `concepto` VARCHAR(100) NOT NULL ,
 CHANGE COLUMN `fecha_pago` `fecha_pago` VARCHAR(45) NOT NULL ;
+
+ALTER TABLE `bd_erp`.`tbl_pagofact` 
+ADD COLUMN `num_recibo` VARCHAR(45) NOT NULL AFTER `NIT`,
+CHANGE COLUMN `noFactura` `noFactura` INT NOT NULL ;
+
+ALTER TABLE `bd_erp`.`tbl_pagofact` 
+ADD INDEX `noFacturas_idx` (`noFactura` ASC) VISIBLE,
+DROP INDEX `noFactura_idx` ;
+;
+ALTER TABLE `bd_erp`.`tbl_pagofact` 
+ADD CONSTRAINT `FknoFactura`
+  FOREIGN KEY (`noFactura`)
+  REFERENCES `bd_erp`.`tbl_facturaxcobrar` (`NoFactura`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+ALTER TABLE `bd_erp`.`tbl_facturaxcobrar` 
+ADD COLUMN `faltante_pago` DOUBLE NOT NULL AFTER `fecha_factura`;

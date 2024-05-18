@@ -40,8 +40,8 @@ namespace CapaVistaERP.Reportes
             this.crystalReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer2.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer2.Name = "crystalReportViewer2";
-            this.crystalReportViewer2.ReportSource = "C:\\Users\\callo\\Music\\GIT 2024\\ProyectoMigracion_G1\\Equipo1\\Reportes\\Modulos\\Banco" +
-    "s\\ReporteMovimientosDeBancos.rpt";
+            this.crystalReportViewer2.ReportSource = "C:\\Users\\d_car\\OneDrive\\Documentos\\GitHub\\ProyectoMigracion\\ProyectoMigracion_G1\\Equipo1\\Reportes\\Modulos\\Bancos" +
+    "\\ReporteMovimientosDeBancos.rpt";
             this.crystalReportViewer2.Size = new System.Drawing.Size(977, 551);
             this.crystalReportViewer2.TabIndex = 0;
             // 
