@@ -216,6 +216,7 @@ namespace CapaControladorERP
             dt.Fill(table);
             return table;
         }
+
         // carlos enrique guzman cabrera
         public DataTable BuscarMB(string strfiltro)
         {
