@@ -13,12 +13,46 @@ namespace MovimientoBancosCarlos.Tests
         Controlador cn = new Controlador();
 
         [Fact]
+        public void TestGuardarDatos()
+        {
+            // Arrange
+            string tabla = "tbl_movimientodebancos";
+            var valores = new Dictionary<string, object>
+            {
+                { "tipo_movimientoBanco", "1" },
+                { "fecha_movimientoBanco", "2024-05-19" },
+                { "monto_movimientoBanco", "5000" },
+                { "cuenta_movimientoBanco", "1" },
+                { "efecto_movimientoBanco", "P" }
+            };
+
+            // Act
+            bool guardadoExitoso = cn.GuardarDatos(tabla, valores);
+
+            // Assert
+            Assert.True(guardadoExitoso); // Verificar que el guardado fue exitoso
+        }
+
+        [Fact]
         public void TestEliminarMovimiento()
         {
             // Arrange
-            int idMovimientoAEliminar = 2; // ID de movimiento que deseas eliminar
+            string tabla = "tbl_movimientodebancos";
+            var valores = new Dictionary<string, object>
+        {
+            { "id_movimientoBanco", "90" },
+            { "tipo_movimientoBanco", "1" },
+            { "fecha_movimientoBanco", "2024-05-19" },
+            { "monto_movimientoBanco", "2000" },
+            { "cuenta_movimientoBanco", "1" },
+            { "efecto_movimientoBanco", "+" }
+        };
+
+            // Inserta el registro si no existe
+            cn.GuardarDatos(tabla, valores);
 
             // Act
+            int idMovimientoAEliminar = 90; // ID de movimiento que deseas eliminar
             bool eliminacionExitosa = cn.EliminarMovimiento(idMovimientoAEliminar);
 
             // Assert
@@ -38,24 +72,7 @@ namespace MovimientoBancosCarlos.Tests
             Assert.False(eliminacionExitosa); // Verificar que la eliminación no fue exitosa
         }
 
-        [Fact]
-        public void TestGuardarDatos()
-        {
-            // Arrange
-            string tabla = "tbl_conceptomovimientodebancos";
-            var valores = new Dictionary<string, object>
-            {
-                { "concepto_movimientoBanco", "Prueba" },
-                { "efecto_movimientoBanco", "+" },
-                { "estado_movimientoBanco", "Activo" }
-            };
-
-            // Act
-            bool guardadoExitoso = cn.GuardarDatos(tabla, valores);
-
-            // Assert
-            Assert.True(guardadoExitoso); // Verificar que el guardado fue exitoso
-        }
+       
 
     }
 }
