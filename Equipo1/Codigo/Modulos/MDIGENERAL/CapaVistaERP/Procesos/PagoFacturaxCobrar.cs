@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
 
+
 namespace CapaVistaERP.Procesos
 {
 
@@ -97,6 +98,7 @@ namespace CapaVistaERP.Procesos
                  txt_numfactura.Text = row["NoFactura"].ToString();
                  dgvFactura.Text = row["fecha_factura"].ToString();
                 dgvVencimiento.Text = row["tiempoPago_facxcob"].ToString();
+                txt_porpagar.Text = row["faltante_pago"].ToString();
                 MessageBox.Show("numFact", txt_numfactura.Text = row["NoFactura"].ToString());
              }
              else
@@ -190,6 +192,22 @@ namespace CapaVistaERP.Procesos
                 }
             }
 
+            if (dataGridView1.Columns.Count == 0)
+            {
+                foreach (DataColumn column in detalleCotis.Columns)
+                {
+                    dataGridView1.Columns.Add(column.ColumnName, column.ColumnName);
+                }
+            }
+            if (detalleCotis.Rows.Count > 0)
+            {
+                foreach (DataRow row in detalleCotis.Rows)
+                {
+                    dataGridView1.Rows.Add(row.ItemArray);
+                }
+
+            }
+
 
 
             if (detalleCotis.Rows.Count > 0)
@@ -249,17 +267,100 @@ namespace CapaVistaERP.Procesos
 
         private void btn_pagar_Click(object sender, EventArgs e)
         {
-            string noFactura=txt_numfactura.Text;
+            string noFactura = txt_numfactura.Text;
             int cliente = Convert.ToInt32(txt_idcliente.Text);
-            string banco=txt_bancos.Text;
-            string concepto= txt_concepto.Text;
-            double monto_pago=Convert.ToDouble(txt_aPagar.Text);
-            double extra_pago=Convert.ToDouble(txt_pagoExtra.Text);
-            string fecha_pago=dt_fechaPago.Text;
-            string NIT=txt_nit.Text;
+            string banco = cmb_banco.Text;
+            string concepto = txt_concepto.Text;
+            double monto_pago = Convert.ToDouble(txt_aPagar.Text);
+            double extra_pago = Convert.ToDouble(txt_pagoExtra.Text);
+            string fecha_pago = dt_fechaPago.Text;
+            string NIT = txt_nit.Text;
+            string num_recibo = txt_numero.Text;
 
+            if (cn.FacturaExiste(noFactura))
+            {
+                double porPagar = cn.CalcularPorPagar(noFactura);
 
-            cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT);
+                if (porPagar >= 0)
+                {
+
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        if (!row.IsNewRow) 
+                        {
+                            int idProducto = Convert.ToInt32(row.Cells["tbl_producto_cod_producto"].Value);
+                            int cantidad = Convert.ToInt32(row.Cells["cantidad_coti"].Value);
+
+                            cn.ActualizarExistencias(idProducto, cantidad);
+
+                        }
+                    }
+
+                    cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
+                    porPagar = cn.CalcularPorPagar(noFactura);
+                    cn.ActualizarFaltantePago(noFactura, porPagar);
+
+                    MessageBox.Show($"Pago registrado con éxito. Monto pendiente por pagar: {porPagar}");
+
+                    int idcoti;
+                    if (!int.TryParse(txt_numcoti.Text, out idcoti))
+                    {
+                        MessageBox.Show("Ingrese un ID válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    // Créditos a Carlos Guzmán
+                    buscar(idcoti);
+                }
+                else
+                {
+                    MessageBox.Show("La factura ya está completamente pagada.");
+                    int idcoti;
+                    if (!int.TryParse(txt_numcoti.Text, out idcoti))
+                    {
+                        MessageBox.Show("Ingrese un ID válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    // Créditos a Carlos Guzmán
+                    buscar(idcoti);
+                }
+            }
+            else
+            {
+
+                double totalMontoPago = 0.0;
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (!row.IsNewRow) // Saltar la fila nueva si existe
+                    {
+                        int idProducto = Convert.ToInt32(row.Cells["tbl_producto_cod_producto"].Value);
+                        int cantidad = Convert.ToInt32(row.Cells["cantidad_coti"].Value);
+                        cn.ActualizarExistencias(idProducto, cantidad);
+                    }
+                }
+
+                // Restar el total del monto a pagar
+                monto_pago -= totalMontoPago;
+
+                // Insertar el pago y actualizar el saldo pendiente
+                cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
+                double porPagar = cn.CalcularPorPagar(noFactura);
+                cn.ActualizarFaltantePago(noFactura, porPagar);
+
+                MessageBox.Show($"Factura no encontrada. Pago registrado con éxito. Monto pendiente por pagar: {porPagar}");
+
+                int idcoti;
+                if (!int.TryParse(txt_numcoti.Text, out idcoti))
+                {
+                    MessageBox.Show("Ingrese un ID válido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Créditos a Carlos Guzmán
+                buscar(idcoti);
+            }
         }
     }
 }

@@ -56,6 +56,7 @@ namespace CapaVistaERP.Procesos
             this.dt_datos.RowTemplate.Height = 24;
             this.dt_datos.Size = new System.Drawing.Size(1057, 372);
             this.dt_datos.TabIndex = 6;
+            this.dt_datos.SelectionChanged += new System.EventHandler(this.dt_datos_SelectionChanged);
             // 
             // panel1
             // 
@@ -104,6 +105,7 @@ namespace CapaVistaERP.Procesos
             this.btn_ayudas.Text = "Ayuda";
             this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_ayudas.UseVisualStyleBackColor = false;
+            this.btn_ayudas.Click += new System.EventHandler(this.btn_ayudas_Click);
             // 
             // btn_reporte
             // 
@@ -120,6 +122,7 @@ namespace CapaVistaERP.Procesos
             this.btn_reporte.Text = "Reporte";
             this.btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_reporte.UseVisualStyleBackColor = false;
+            this.btn_reporte.Click += new System.EventHandler(this.btn_reporte_Click);
             // 
             // btn_refrescar
             // 

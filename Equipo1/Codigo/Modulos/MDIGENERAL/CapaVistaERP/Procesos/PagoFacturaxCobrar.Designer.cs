@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PagoFacturaxCobrar));
             this.cmb_tipo = new System.Windows.Forms.GroupBox();
+            this.txt_pagoExtra = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.txt_aPagar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_bancos = new System.Windows.Forms.TextBox();
@@ -65,14 +67,16 @@
             this.txt_direccioncl = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_idcliente = new System.Windows.Forms.TextBox();
             this.txt_numPedido = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txt_pagoExtra = new System.Windows.Forms.TextBox();
+            this.txt_idcliente = new System.Windows.Forms.TextBox();
+            this.txt_porpagar = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cmb_tipo.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // cmb_tipo
@@ -102,6 +106,26 @@
             this.cmb_tipo.TabStop = false;
             this.cmb_tipo.Tag = "";
             this.cmb_tipo.Text = "Pago";
+            // 
+            // txt_pagoExtra
+            // 
+            this.txt_pagoExtra.Location = new System.Drawing.Point(148, 149);
+            this.txt_pagoExtra.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_pagoExtra.Name = "txt_pagoExtra";
+            this.txt_pagoExtra.Size = new System.Drawing.Size(222, 32);
+            this.txt_pagoExtra.TabIndex = 59;
+            this.txt_pagoExtra.Tag = "aPagar.txt";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(33, 149);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 23);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "Extra";
             // 
             // txt_aPagar
             // 
@@ -337,6 +361,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.txt_porpagar);
+            this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.txt_total);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.dgv_detalle);
@@ -354,7 +381,7 @@
             // 
             this.txt_total.Enabled = false;
             this.txt_total.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_total.Location = new System.Drawing.Point(419, 246);
+            this.txt_total.Location = new System.Drawing.Point(287, 243);
             this.txt_total.Margin = new System.Windows.Forms.Padding(4);
             this.txt_total.Name = "txt_total";
             this.txt_total.Size = new System.Drawing.Size(132, 32);
@@ -364,7 +391,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(334, 249);
+            this.label16.Location = new System.Drawing.Point(202, 246);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 23);
@@ -374,7 +401,7 @@
             // dgv_detalle
             // 
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_detalle.Location = new System.Drawing.Point(116, 44);
+            this.dgv_detalle.Location = new System.Drawing.Point(108, 44);
             this.dgv_detalle.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_detalle.Name = "dgv_detalle";
             this.dgv_detalle.RowHeadersWidth = 51;
@@ -490,16 +517,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Facturacion";
             // 
-            // txt_idcliente
-            // 
-            this.txt_idcliente.Enabled = false;
-            this.txt_idcliente.Location = new System.Drawing.Point(7, 95);
-            this.txt_idcliente.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_idcliente.Name = "txt_idcliente";
-            this.txt_idcliente.Size = new System.Drawing.Size(58, 32);
-            this.txt_idcliente.TabIndex = 65;
-            this.txt_idcliente.Visible = false;
-            // 
             // txt_numPedido
             // 
             this.txt_numPedido.Enabled = false;
@@ -510,25 +527,47 @@
             this.txt_numPedido.TabIndex = 38;
             this.txt_numPedido.Visible = false;
             // 
-            // label12
+            // txt_idcliente
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(33, 149);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(58, 23);
-            this.label12.TabIndex = 58;
-            this.label12.Text = "Extra";
+            this.txt_idcliente.Enabled = false;
+            this.txt_idcliente.Location = new System.Drawing.Point(7, 95);
+            this.txt_idcliente.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_idcliente.Name = "txt_idcliente";
+            this.txt_idcliente.Size = new System.Drawing.Size(58, 32);
+            this.txt_idcliente.TabIndex = 65;
+            this.txt_idcliente.Visible = false;
             // 
-            // txt_pagoExtra
+            // txt_porpagar
             // 
-            this.txt_pagoExtra.Location = new System.Drawing.Point(148, 149);
-            this.txt_pagoExtra.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_pagoExtra.Name = "txt_pagoExtra";
-            this.txt_pagoExtra.Size = new System.Drawing.Size(222, 32);
-            this.txt_pagoExtra.TabIndex = 59;
-            this.txt_pagoExtra.Tag = "aPagar.txt";
+            this.txt_porpagar.Enabled = false;
+            this.txt_porpagar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_porpagar.Location = new System.Drawing.Point(710, 243);
+            this.txt_porpagar.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_porpagar.Name = "txt_porpagar";
+            this.txt_porpagar.Size = new System.Drawing.Size(198, 32);
+            this.txt_porpagar.TabIndex = 30;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(493, 246);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(185, 23);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "Faltante de pago";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(22, 145);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(69, 84);
+            this.dataGridView1.TabIndex = 31;
+            this.dataGridView1.Visible = false;
             // 
             // PagoFacturaxCobrar
             // 
@@ -547,6 +586,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -593,5 +633,8 @@
         private System.Windows.Forms.TextBox txt_numPedido;
         private System.Windows.Forms.TextBox txt_pagoExtra;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_porpagar;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
