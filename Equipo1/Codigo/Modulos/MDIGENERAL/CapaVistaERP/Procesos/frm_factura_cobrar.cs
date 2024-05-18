@@ -296,8 +296,9 @@ namespace CapaVistaERP.Procesos
             string estado = txt_facturaestado.Text;
             int idVenta = Convert.ToInt32(txt_numPedido.Text);
             int cl = Convert.ToInt32(txt_idcliente.Text);
+            double faltante_pago = Convert.ToDouble(txt_total.Text);
 
-            cn.InsertarFactura(total, limite, estado, idVenta, cl, fechaFact);
+            cn.InsertarFactura(total, limite, estado, idVenta, cl, fechaFact, faltante_pago);
 
             MessageBox.Show("Factura Guardada con exito");
 
