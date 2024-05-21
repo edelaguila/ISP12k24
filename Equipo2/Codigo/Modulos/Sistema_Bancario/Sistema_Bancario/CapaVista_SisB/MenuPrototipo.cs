@@ -56,22 +56,22 @@ namespace Vista_PrototipoMenu
             button8.Enabled = true;
 
             button5.Enabled = false;
-            btnEC.Enabled = false;
+           
             man_boleta.Enabled = false;
             button6.Enabled = false;
             button7.Enabled = false;
-            button9.Enabled = false;
+            
             btnSeguridad.Enabled = false;
         }
         //DANNY PEREZ
         public void enableByAdmin()
         {
             button5.Enabled = true;
-            btnEC.Enabled = true;
+            
             man_boleta.Enabled = true;
             button6.Enabled = true;
             button7.Enabled = true;
-            button9.Enabled = true;
+            
             btnSeguridad.Enabled = true;
 
             button2.Enabled = false;
