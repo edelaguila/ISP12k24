@@ -1,36 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.Data.Odbc;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Seguridad_Controlador;
-
 using CapaModelo_SisB;
+using Seguridad_Controlador;
 
 namespace CapaVista_SisB
 {
     public partial class PagoServicios : Form
     {
         Seguridad_Controlador.Controlador ctrl;
-
         private AccountSentence accountSentence;
+        private InvoiceSentence invoiceSentence;
+
         public PagoServicios()
         {
             this.ctrl = new Seguridad_Controlador.Controlador();
             InitializeComponent();
 
+            txt_comboComplemento.Visible = false;
+
             this.accountSentence = new AccountSentence();
+            this.invoiceSentence = new InvoiceSentence();
 
+            CargarTiposDeCuenta();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void label3_Click(object sender, EventArgs e) { }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -38,21 +35,23 @@ namespace CapaVista_SisB
             // Busqueda en Base a Número de Cliente
             string accountNit = txt_noCliente.Text;
 
-            // Función para llamar las facturas con el Número especifico
-            CapaModelo_SisB.InvoiceSentence invoiceSentence = new CapaModelo_SisB.InvoiceSentence();
-            // Listarlas para colocarlas en el Datagridview
-            List<Invoice> invoices = invoiceSentence.GetInvoicesByAccountNit(accountNit);
+            // Función para llamar las facturas no pagadas con el Número especifico
+            List<Invoice> invoices = invoiceSentence.GetUnpaidInvoicesByAccountNit(accountNit);
 
             if (invoices.Count == 0)
             {
-                MessageBox.Show("No se encontraron facturas para el número de cliente proporcionado.");
+                MessageBox.Show("No se encontraron facturas pendientes para el número de cliente proporcionado.");
             }
             else
             {
                 dataGridView1.DataSource = invoices;
-            }
+                dataGridView1.Columns["status"].Visible = false; // Ocultar la columna de estado
+                dataGridView1.Columns["idService"].Visible = false; // Ocultar la columna de idService
 
-            CalcularTotal();
+                // Permitir la selección múltiple
+                dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                dataGridView1.MultiSelect = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,37 +59,60 @@ namespace CapaVista_SisB
             // FUNCIONES PARA EL BOTON PAGAR
             try
             {
+                // No necesitamos CalcularTotal aquí, ya que se hace en button3_Click
 
                 string accountNit = txt_noCliente.Text;
                 double amountToPay = ObtenerMontoAPagar();
+                int tipoCuentaSeleccionado = Convert.ToInt32(txt_comboComplemento.Text);
 
-                // Verificar si el pago es válido
-                CapaModelo_SisB.InvoiceSentence invoiceSentence = new CapaModelo_SisB.InvoiceSentence();
-                bool paymentViability = accountSentence.checkPaymentViability(accountNit, amountToPay);
-                if (!paymentViability)
+                // Verificar si el tipo de cuenta es de débito o crédito
+                if (tipoCuentaSeleccionado == 1) // Asumiendo que 1 es débito y 2 es crédito
                 {
-                    MessageBox.Show("El pago no es viable. Saldo insuficiente en la cuenta.");
-                    return;
+                    // Verificar si el pago es viable
+                    bool paymentViability = accountSentence.checkPaymentViability(accountNit, amountToPay);
+                    if (!paymentViability)
+                    {
+                        MessageBox.Show("El pago no es viable. Saldo insuficiente en la cuenta.");
+                        return;
+                    }
+
+                    // Realizar el pago del servicio
+                    accountSentence.makeServicePayment(accountNit, amountToPay);
                 }
 
-                // Realizar el pago del Servicio
-                accountSentence.makeServicePayment(accountNit, amountToPay);
+                // Cambiar el estado de las facturas seleccionadas
+                List<int> facturasPagadas = new List<int>();
+                foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+                {
+                    int facturaId = Convert.ToInt32(row.Cells["id"].Value);
+                    invoiceSentence.changeInvoiceStatus(facturaId);
+                    facturasPagadas.Add(facturaId);
+                }
+
                 MessageBox.Show("Pago realizado exitosamente.");
 
-                // Cambiar el estado de las Facturas
-                List<Invoice> invoices = invoiceSentence.GetInvoicesByAccountNit(accountNit);
-                foreach (Invoice invoice in invoices)
-                {
-                    invoiceSentence.changeInvoiceStatus(invoice.id);
-                }
-
                 // Actualizar la interfaz de usuario o realizar otras acciones necesarias
+                ActualizarDataGridView(accountNit, facturasPagadas);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al procesar el pago: " + ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Confirmar las facturas seleccionadas y calcular el total
+            CalcularTotal();
+        }
+
+        private void ActualizarDataGridView(string accountNit, List<int> facturasPagadas)
+        {
+            // Recargar el DataGridView excluyendo las facturas pagadas
+            List<Invoice> invoices = invoiceSentence.GetUnpaidInvoicesByAccountNit(accountNit);
+            dataGridView1.DataSource = invoices.Where(invoice => !facturasPagadas.Contains(invoice.id)).ToList();
+        }
+
         private double ObtenerMontoAPagar()
         {
             // Verificar si el TextBox tiene un valor válido
@@ -109,23 +131,15 @@ namespace CapaVista_SisB
         {
             double total = 0.0;
 
-            // Recorre todas las filas del DataGridView
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            // Recorre todas las filas seleccionadas del DataGridView
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
             {
-                // Verificar si la fila no es nueva y las celdas no están vacías
-                if (!row.IsNewRow && row.Cells["Amount"].Value != null)
+                // Verifica si la celda no está vacía y si el valor puede ser convertido a double
+                if (row.Cells["amount"].Value != null &&
+                    double.TryParse(row.Cells["amount"].Value.ToString(), out double valor))
                 {
-                    // Verificar Estado
-                    bool isChecked = (bool)row.Cells["Status"].FormattedValue;
-
-                    if (!isChecked)
-                    {
-                        if (double.TryParse(row.Cells["Amount"].Value.ToString(), out double valor))
-                        {
-                            // Suma el valor al total
-                            total += valor;
-                        }
-                    }
+                    // Suma el valor a la variable total
+                    total += valor;
                 }
             }
 
@@ -178,6 +192,26 @@ namespace CapaVista_SisB
         private void PagoServicios_Load(object sender, EventArgs e)
         {
             SetupDataGridView();
+            CargarTiposDeCuenta();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxTipoCuenta.SelectedIndex == 0) // Ahorro
+            {
+                txt_comboComplemento.Text = "1";
+            }
+            else if (comboBoxTipoCuenta.SelectedIndex == 1) // Monetario
+            {
+                txt_comboComplemento.Text = "2";
+            }
+        }
+
+        private void CargarTiposDeCuenta()
+        {
+            // Añadir las opciones directamente al ComboBox
+            comboBoxTipoCuenta.Items.Add("1 - Ahorro");
+            comboBoxTipoCuenta.Items.Add("2 - Monetario");
         }
     }
 }

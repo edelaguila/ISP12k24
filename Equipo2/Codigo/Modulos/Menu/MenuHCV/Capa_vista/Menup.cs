@@ -115,7 +115,6 @@ namespace MenuHCV
             form.Show();
             //Vista_PrototipoMenu.MenuPrototipo form = new Vista_PrototipoMenu.MenuPrototipo();
             //form.Show();
-            cn.setBtitacora("8000", "Ingreso a bancos");
         }
         //Método que ingresa un valor a la bitacora de acuerdo el módulo
 

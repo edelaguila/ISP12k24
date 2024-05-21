@@ -50,6 +50,7 @@ namespace CapaModelo_SisB.Libraries
                 TransactionSentences.updateBalanceFromAccount(idAccount, amount * sign);
                 this.updateBalance(amount, -1);
                 this.saldo = this.saldo + (amount * sign);
+                Console.WriteLine("Deposito realizado");
                 return;
             }
             this.updateBalance(amount);
@@ -97,5 +98,20 @@ namespace CapaModelo_SisB.Libraries
             cmd.ExecuteNonQuery();
             this.getFriendAccounts();
         }
+
+        public void deleteFriendAccount(int AccountReference, int FriendAccount)
+        {
+            string sql = "delete from tbl_cuentaamiga where id_cuenta_principal='" + AccountReference + "' and id_cuenta_amiga='" + FriendAccount + "'";
+            OdbcCommand cmd = new OdbcCommand(sql, this.conn.connection());
+            cmd.ExecuteNonQuery();
+            this.getFriendAccounts();
+        }
     }
 }
+
+
+
+
+
+
+

@@ -433,3 +433,15 @@ FodyWeavers.xsd
 
 #archivo txt
 CapaVistaERP.csproj.FileListAbsolute.txt
+ControllerLayer.csproj.FileListAbsolute.txt
+ModelLayer.csproj.FileListAbsolute.txt
+ViewLayer.csproj.FileListAbsolute.txt
+
+#Agregando carpeta obj en los 3 proyectos
+./Equipo2/Codigo/Modulos/Sistema_Bancario/Sistema_Bancario/CapaVista_SisB/[Oo]bj
+./Equipo2/Codigo/Modulos/Sistema_Bancario/Sistema_Bancario/CapaControlador_SisB/[Oo]bj
+./Equipo2/Codigo/Modulos/Sistema_Bancario/Sistema_Bancario/CapaModelo_SisB/[Oo]bj
+./Equipo2/Codigo/Modulos/Menu/MenuHCV/Capa_vista/[Oo]bj
+./Equipo2/Codigo/Modulos/Menu/MenuHCV/Capa_controlador/[Oo]bj
+./Equipo2/Codigo/Modulos/Menu/MenuHCV/Modelo/[Oo]bj
+./Equipo2/Codigo/Modulos/Menu/Ejecucion/Ejecucion/[Oo]bj

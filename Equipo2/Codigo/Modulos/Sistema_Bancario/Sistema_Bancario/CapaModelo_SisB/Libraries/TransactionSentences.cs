@@ -16,5 +16,17 @@ namespace CapaModelo_SisB.Libraries
             OdbcCommand cmd = new OdbcCommand(sql, conn.connection());
             cmd.ExecuteNonQuery();
         }
+
+        public static bool canPay(int accountId, double amount)
+        {
+            string sql = "select cue_saldo from tbl_cuenta where cue_id ='" + accountId + "'";
+            OdbcCommand cmd = new OdbcCommand(sql, conn.connection());
+            OdbcDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                return reader.GetInt32(0) - amount > 0;
+            }
+            return false;
+        }
     }
 }
