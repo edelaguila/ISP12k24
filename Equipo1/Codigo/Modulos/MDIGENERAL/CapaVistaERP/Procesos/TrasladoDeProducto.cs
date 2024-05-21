@@ -64,8 +64,8 @@ namespace CapaVistaERP.Procesos
         private void dgv_traslado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             posicion = dgv_traslado.CurrentRow.Index;
-            cb_NombreProd.Text = dgv_traslado[1, posicion].Value.ToString();
-            txt_CantidadTraslado.Text = dgv_traslado[2, posicion].Value.ToString();
+            cb_NombreProd.Text = dgv_traslado[2, posicion].Value.ToString();
+            txt_CantidadTraslado.Text = dgv_traslado[1, posicion].Value.ToString();
 
             btn_eliminar.Enabled = true;
             btn_agregar.Enabled = false;

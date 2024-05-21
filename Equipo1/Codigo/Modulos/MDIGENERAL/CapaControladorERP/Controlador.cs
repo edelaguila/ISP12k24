@@ -15,6 +15,7 @@ namespace CapaControladorERP
     public class Controlador
     {
         Sentencias sn = new Sentencias();
+
         //Andrea Corado  0901-20-2841
         public DataTable llenarTablas(string tabla)
         {
@@ -34,7 +35,7 @@ namespace CapaControladorERP
         //Andrea Corado 0901-20-2841  
         public DataTable filtrardatosp(string tabla, string columna, string dato, string columna2, string dato2)
         {
-            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2,dato2);
+            OdbcDataAdapter dt = sn.filtrarDatosp(tabla, columna, dato, columna2, dato2);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
@@ -42,13 +43,39 @@ namespace CapaControladorERP
         //Andrea Corado 0901-20-2841
         public void Guardarmovpro(string idp, string fechamov, string totalmov, string nofact, string banmov, string tipomov, string numov, string conceptomov)
         {
-            sn.guardarDatos(idp, fechamov, totalmov, nofact, banmov, tipomov, numov, conceptomov);
+            sn.guardarDatos( nofact, banmov, tipomov, numov, conceptomov);
         }
 
         //Andrea Corado 0901-20-2841
         public DataTable Actualizap(string tabla, string columna, string dato1, string columna2, int igualA)
         {
-            return sn.ActualizarDatos(tabla, columna,dato1,columna2, igualA);
+            return sn.ActualizarDatos(tabla, columna, dato1, columna2, igualA);
+        }
+
+        //Andrea Corado 0901-20-2841
+        public DateTime ObtenerFechaV(string nofactu)
+        {
+            var dt1 = sn.ObtenerFechaV(nofactu);
+            return dt1;
+        }
+        public (DateTime, decimal) ObtenerFechaVYTotal(string dato)
+        {
+            return sn.ObtenerFechaVYTotal(dato);
+        }
+        public List<string> ComboFillfactura(string columna, string tabla, string nit, string dato, string estadofact)
+        {
+            return sn.ComboFillfactura(columna, tabla,nit,dato,estadofact);
+        }
+
+        //Andrea Corado 0901-20-2841
+        public void InsertarOperacion(int id, string fechaabono, double totalapa)
+        {
+            sn.InsertarOperacion(id, fechaabono, totalapa);
+        }
+        //Andrea Corado 0901-20-2841
+        public void InsertarDetalleOperacionPro(int numfact, string banco, string tipomov, string numdoc, string concepto)
+        {
+            sn.InsertarDetalleOperacionPro(numfact, banco, tipomov, numdoc, concepto);
         }
 
 
@@ -103,9 +130,24 @@ namespace CapaControladorERP
         }
 
         //David Carrillo
-        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente)
+        public void InsertarFactura(double total_facxcob, string tiempoPago_facxcob, string estado_facxcob, int tbl_Ventas_detalle_id_ventas_det, int tbl_Clientes_id_cliente, string fecha_factura, double faltante_pago)
         {
-            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente);
+            sn.InsertarFactura(total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago);
+        }
+
+        //David Carrillo
+        public void InsertarPagoFacXCobrar(string noFactura, int cliente, string banco, string concepto, double monto_pago, double extra_pago, string fecha_pago, string NIT, string num_recibo)
+        {
+            sn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
+        }
+
+        public double CalcularPorPagar(string noFactura)
+        {
+            return sn.CalcularPorPagar(noFactura);
+        }
+        public bool FacturaExiste(string noFactura)
+        {
+            return sn.FacturaExiste(noFactura);
         }
 
         //David Carrillo 0901-20-3201 
@@ -118,7 +160,14 @@ namespace CapaControladorERP
         {
             return sn.BuscarDato(dato, tabla, DatoABuscar, igualA);
         }
-
+        public void ActualizarFaltantePago(string noFactura, double faltantePago)
+        {
+            sn.ActualizarFaltantePago(noFactura,faltantePago);
+        }
+        public void ActualizarExistencias(int idProducto, int cantidad)
+        {
+            sn.ActualizarExistencias(idProducto, cantidad);
+        }
         // carlos enrique modulo bancos
         public List<string> llenarCombo(string columna1, string tabla)
         {
@@ -149,19 +198,25 @@ namespace CapaControladorERP
         {
             return sn.Guardar(tabla, valores);
         }
+        public bool ActualizarDatosC(string tabla, Dictionary<string, object> valores, string condicion)
+        {
+            return sn.ActualizarC(tabla, valores, condicion);
+        }
+
         // carlos enrique modulo bancos
         public bool ActualizarSaldoCuentaBancaria(int idCuenta, double monto, bool esDeposito)
         {
             return sn.ActualizarSaldoCuentaBancaria(idCuenta, monto, esDeposito);
         }
         // carlos enrique guzman cabrera
-        public DataTable llenartablabitacoraMB(string tabla)
+        public DataTable llenartablabitacoraMB(string consulta)
         {
-            OdbcDataAdapter dt = sn.llenartablabitacoraMB(tabla);
+            OdbcDataAdapter dt = sn.llenartablabitacoraMB(consulta);
             DataTable table = new DataTable();
             dt.Fill(table);
             return table;
         }
+
         // carlos enrique guzman cabrera
         public DataTable BuscarMB(string strfiltro)
         {
@@ -173,7 +228,11 @@ namespace CapaControladorERP
         {
             return sn.EliminarMovimiento(idMovimiento);
         }
-
+        // carlos enrique guzman cabrera
+        public bool EliminarRegistroAO(int idRegistro)
+        {
+            return sn.EliminarRegistroAO(idRegistro);
+        }
         // carlos enrique guzman cabrera
         public DataTable FiltrarRegistrosPorFecha(int año, string tipoFiltro)
         {
@@ -206,6 +265,40 @@ namespace CapaControladorERP
             }
 
             return sn.ObtenerRegistrosPorFecha(fechaInicio, fechaFin);
+        }
+
+        // carlos enrique guzman cabrera
+        public DataTable FiltrarRegistrosPorFechaAO(int año, string tipoFiltro)
+        {
+
+
+            DateTime fechaInicio, fechaFin;
+
+            if (tipoFiltro == "Diario")
+            {
+                fechaInicio = DateTime.Today;
+                fechaFin = DateTime.Today.AddDays(1).AddSeconds(-1);
+            }
+            else if (tipoFiltro == "Semanal")
+            {
+                int numDiaSemana = (int)DateTime.Today.DayOfWeek;
+                fechaInicio = DateTime.Today.AddDays(-numDiaSemana);
+                fechaFin = fechaInicio.AddDays(7).AddSeconds(-1);
+            }
+            else // Mensual
+            {
+                if (año == 0)
+                {
+                    MessageBox.Show("Por favor, seleccione un año.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return null;
+                }
+
+
+                fechaInicio = new DateTime(año, 1, 1);
+                fechaFin = new DateTime(año, 12, 31).AddDays(1).AddSeconds(-1);
+            }
+
+            return sn.ObtenerRegistrosPorFechaAO(fechaInicio, fechaFin);
         }
 
         //Carol Chuy Modulo Compras
@@ -705,10 +798,22 @@ namespace CapaControladorERP
             sql += "inner join tbl_producto on tbl_producto_cod_producto = cod_producto where tbl_cotizaciones_No_Cotizacion = '"+Id+"';";
             return this.sn.selectTable("", sql);
         }
-    }
 
-    
+        // DIEGO MARROQUIN 
+        public void InsertarTipoCambio(DateTime fecha, string monedaOrigen, string monedaDestino, double cantidad, double valorCalculado, double totalCalculado)
+        {
+            sn.InsertarTipoCambio(fecha, monedaOrigen, monedaDestino, cantidad, valorCalculado, totalCalculado);
+
+        }
+
+
+        public bool EliminarTipodecambio(int idTipodeCambio)
+        {
+            return sn.EliminarTipodecambio(idTipodeCambio);
+        }
+    }
 }
+ 
 
 
 

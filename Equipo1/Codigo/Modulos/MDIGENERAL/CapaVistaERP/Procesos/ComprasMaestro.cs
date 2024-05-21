@@ -14,6 +14,7 @@ namespace CapaVistaERP.Procesos
 {
     public partial class ComprasMaestro : Form
     {
+        Reportes.frmReporteCompras report = new Reportes.frmReporteCompras();
         private ComprasEli ComprasEli;
         private ComprasModi ComprasModi;
         private string idord = "";
@@ -55,31 +56,34 @@ namespace CapaVistaERP.Procesos
         {
             // Obtener el índice de la opción seleccionada
             int seleccion = cb_filtro.SelectedIndex;
+            string tipoFiltro = "";
+            int añoSeleccionado = Convert.ToInt32(cb_año.SelectedItem);
 
             // Ejecutar diferentes acciones según el índice seleccionado
             switch (seleccion)
             {
                 case 0:
-                    int añoSeleccionado = Convert.ToInt32(cb_año.SelectedItem);
+                    tipoFiltro = "Diario";
                     DataTable dtRegistros = cn.ObtenerComprasPorFecha(añoSeleccionado, "Diario");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros;
                     break;
                 case 1:
-                    int añoSeleccionado1 = Convert.ToInt32(cb_año.SelectedItem);
-                    DataTable dtRegistros1 = cn.ObtenerComprasPorFecha(añoSeleccionado1, "Semanal");
+                    tipoFiltro = "Semanal";
+                    DataTable dtRegistros1 = cn.ObtenerComprasPorFecha(añoSeleccionado, "Semanal");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros1;
                     break;
                 case 2:
-                    int añoSeleccionado2 = Convert.ToInt32(cb_año.SelectedItem);
-                    DataTable dtRegistros2 = cn.ObtenerComprasPorFecha(añoSeleccionado2, "Mensual");
+                    tipoFiltro = "Mensual";
+                    DataTable dtRegistros2 = cn.ObtenerComprasPorFecha(añoSeleccionado, "Mensual");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros2;
                     break;
                 default:
                     break;
             }
+            report.MostrarReporte(tipoFiltro, añoSeleccionado);
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
@@ -110,6 +114,28 @@ namespace CapaVistaERP.Procesos
             {
                 MessageBox.Show("Seleccione una fila.", "Selcción Orden", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            // Verificar si se ha seleccionado un año y un método de filtrado
+            if (cb_año.SelectedItem == null || cb_filtro.SelectedItem == null)
+            {
+                int añoActual = DateTime.Today.Year;
+                Reportes.frmReporteCompras repo = new Reportes.frmReporteCompras();
+                repo.MostrarReporte("Mensual", añoActual);
+                repo.ShowDialog();
+            }
+            else
+            {
+                report.ShowDialog();
+            }
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "Compras.html");
         }
     }
 }

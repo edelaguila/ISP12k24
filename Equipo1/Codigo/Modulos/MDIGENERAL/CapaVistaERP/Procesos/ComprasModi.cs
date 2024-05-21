@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
@@ -18,7 +19,8 @@ namespace CapaVistaERP.Procesos
         private string fechaE = "";
         private string solicitante = "";
         private string proveedor = "";
-        Controlador cn = new Controlador();
+        CapaControladorERP.Controlador cn = new CapaControladorERP.Controlador();
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         int estadoCompra;
         string estadoCompranumero;
         public ComprasModi()
@@ -224,6 +226,7 @@ namespace CapaVistaERP.Procesos
                         }
                     }
                     MessageBox.Show("Compra modificada correctamente.");
+                    this.ctrl_seguridad.setBtitacora("8011", "Se modificó una compra");
                     Limpiar();
                     this.Close();
                 }

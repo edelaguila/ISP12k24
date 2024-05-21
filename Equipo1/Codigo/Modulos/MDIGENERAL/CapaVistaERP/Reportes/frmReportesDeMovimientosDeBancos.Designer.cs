@@ -29,11 +29,26 @@ namespace CapaVistaERP.Reportes
         /// </summary>
         private void InitializeComponent()
         {
+            this.crystalReportViewer2 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
+            // 
+            // crystalReportViewer2
+            // 
+            this.crystalReportViewer2.ActiveViewIndex = 0;
+            this.crystalReportViewer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer2.Name = "crystalReportViewer2";
+            this.crystalReportViewer2.ReportSource = "C:\\Users\\d_car\\OneDrive\\Documentos\\GitHub\\ProyectoMigracion\\ProyectoMigracion_G1\\Equipo1\\Reportes\\Modulos\\Bancos" +
+    "\\ReporteMovimientosDeBancos.rpt";
+            this.crystalReportViewer2.Size = new System.Drawing.Size(977, 551);
+            this.crystalReportViewer2.TabIndex = 0;
             // 
             // frmReportesDeMovimientosDeBancos
             // 
-            this.ClientSize = new System.Drawing.Size(182, 208);
+            this.ClientSize = new System.Drawing.Size(977, 551);
+            this.Controls.Add(this.crystalReportViewer2);
             this.Name = "frmReportesDeMovimientosDeBancos";
             this.ResumeLayout(false);
 
@@ -43,5 +58,6 @@ namespace CapaVistaERP.Reportes
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private ReporteMovimientosDeBancos ReporteMovimientosDeBancos1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer2;
     }
 }

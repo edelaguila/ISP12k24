@@ -93,9 +93,9 @@
             // btn_Hacer_pedido
             // 
             this.btn_Hacer_pedido.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Hacer_pedido.Location = new System.Drawing.Point(237, 559);
+            this.btn_Hacer_pedido.Location = new System.Drawing.Point(219, 559);
             this.btn_Hacer_pedido.Name = "btn_Hacer_pedido";
-            this.btn_Hacer_pedido.Size = new System.Drawing.Size(184, 59);
+            this.btn_Hacer_pedido.Size = new System.Drawing.Size(202, 88);
             this.btn_Hacer_pedido.TabIndex = 29;
             this.btn_Hacer_pedido.Text = "HACER PEDIDO";
             this.btn_Hacer_pedido.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(647, 630);
+            this.ClientSize = new System.Drawing.Size(647, 672);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_Hacer_pedido);

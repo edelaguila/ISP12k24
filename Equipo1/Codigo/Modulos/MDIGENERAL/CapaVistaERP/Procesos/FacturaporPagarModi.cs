@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
@@ -16,7 +17,8 @@ namespace CapaVistaERP.Procesos
         private string idcompra = "";
         private string fechaV = "";
         private string proveedorfact = "";
-        Controlador cn = new Controlador();
+        CapaControladorERP.Controlador cn = new CapaControladorERP.Controlador();
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public FacturaporPagarModi()
         {
             InitializeComponent();
@@ -206,6 +208,7 @@ namespace CapaVistaERP.Procesos
                         }
                     }
                     MessageBox.Show("Factura modificada correctamente.");
+                    this.ctrl_seguridad.setBtitacora("8012", "Se modificó una factura");
                     Limpiar();
                     this.Close();
                 }

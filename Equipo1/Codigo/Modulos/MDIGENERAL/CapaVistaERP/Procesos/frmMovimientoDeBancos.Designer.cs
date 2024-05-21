@@ -77,7 +77,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox3.Controls.Add(this.txt_nombreCuenta);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(29, 297);
+            this.groupBox3.Location = new System.Drawing.Point(28, 412);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(752, 100);
             this.groupBox3.TabIndex = 29;
@@ -165,7 +165,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txt_monto);
             this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(408, 115);
+            this.groupBox2.Location = new System.Drawing.Point(407, 230);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(373, 159);
             this.groupBox2.TabIndex = 28;
@@ -233,7 +233,7 @@ namespace CapaVistaERP.Procesos
             this.groupBox1.Controls.Add(this.txt_concepto);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(29, 115);
+            this.groupBox1.Location = new System.Drawing.Point(28, 230);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(336, 159);
             this.groupBox1.TabIndex = 27;
@@ -280,7 +280,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.cb_movimiento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_movimiento.FormattingEnabled = true;
-            this.cb_movimiento.Location = new System.Drawing.Point(41, 63);
+            this.cb_movimiento.Location = new System.Drawing.Point(40, 178);
             this.cb_movimiento.Name = "cb_movimiento";
             this.cb_movimiento.Size = new System.Drawing.Size(144, 28);
             this.cb_movimiento.TabIndex = 26;
@@ -290,7 +290,7 @@ namespace CapaVistaERP.Procesos
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 26);
+            this.label1.Location = new System.Drawing.Point(37, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 19);
             this.label1.TabIndex = 25;
@@ -323,7 +323,7 @@ namespace CapaVistaERP.Procesos
             this.panel1.Controls.Add(this.btn_ayudas);
             this.panel1.Controls.Add(this.btn_cancelarMovimiento);
             this.panel1.Controls.Add(this.btn_realizarMovimiento);
-            this.panel1.Location = new System.Drawing.Point(29, 418);
+            this.panel1.Location = new System.Drawing.Point(28, 22);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(752, 101);
             this.panel1.TabIndex = 35;
@@ -340,7 +340,7 @@ namespace CapaVistaERP.Procesos
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(97, 71);
             this.btn_salir.TabIndex = 6;
-            this.btn_salir.Text = "Regresar";
+            this.btn_salir.Text = "Salir";
             this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_salir.UseVisualStyleBackColor = false;
             this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
@@ -400,7 +400,7 @@ namespace CapaVistaERP.Procesos
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(813, 536);
+            this.ClientSize = new System.Drawing.Size(813, 522);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);

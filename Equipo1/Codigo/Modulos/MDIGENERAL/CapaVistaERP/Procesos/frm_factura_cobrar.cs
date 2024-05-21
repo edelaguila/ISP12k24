@@ -82,6 +82,7 @@ namespace CapaVistaERP.Procesos
             else
             {
                 int Fact= Convert.ToInt32(idFact) ;
+                int NoFact = Fact + 1;
                 Console.WriteLine("NFactura " + Fact);
                 txt_numfactura.Text = Fact.ToString();
                 Console.WriteLine("id ultima Factura " + idFact);
@@ -290,19 +291,46 @@ namespace CapaVistaERP.Procesos
         private void btn_Pagar_Click(object sender, EventArgs e)
         {
             double total = Convert.ToDouble(txt_total.Text);
+            string fechaFact = dgvFactura.Text;
             string limite = dgvVencimiento.Text;
             string estado = txt_facturaestado.Text;
             int idVenta = Convert.ToInt32(txt_numPedido.Text);
             int cl = Convert.ToInt32(txt_idcliente.Text);
+            double faltante_pago = Convert.ToDouble(txt_total.Text);
 
-            cn.InsertarFactura(total, limite, estado, idVenta, cl);
+            cn.InsertarFactura(total, limite, estado, idVenta, cl, fechaFact, faltante_pago);
 
             MessageBox.Show("Factura Guardada con exito");
+
+            DialogResult result = MessageBox.Show("¿Desea pagar su factura?", "Confirmación de Pago", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                
+                PagoFacturaxCobrar form1 = new PagoFacturaxCobrar();
+                form1.Show();
+                
+            }
+            else if (result == DialogResult.No)
+            {
+                
+                this.Close(); 
+            }
         }
 
         private void cmb_diaspagar_SelectedIndexChanged(object sender, EventArgs e)
         {
             fechaVencimiento();
+        }
+
+        private void txt_numcoti_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
