@@ -75,11 +75,13 @@ namespace CapaControlador_SisB
             return sentencias.ObtenerValorTransaccion(tipoTransaccion);
         }
 
-        public void MakeDeposit(string numeroCuenta, double amount)
+        public bool MakeDeposit(string numeroCuenta, double amount)
         {
             Cuenta cuenta = sentencias.getAccountByNumber(numeroCuenta);
+            if (cuenta == null) return false;
             TransactionSentences.updateBalanceFromAccount(cuenta.id, amount);
             HistorySentence.saveTransactionOnHistory(cuenta.id, "Deposito", amount);
+            return true;
         }
 
 

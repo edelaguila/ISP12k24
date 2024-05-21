@@ -46,8 +46,14 @@ namespace CapaVista_SisB
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
-            MessageBox.Show("Desposito realizado");
+            bool result = ctrl.MakeDeposit(txt_cuenta.Text, Convert.ToDouble(textBox1.Text));
+            if (result)
+            {
+                MessageBox.Show("Desposito realizado");
+                return;
+            }
+            MessageBox.Show("Cuenta no encontrada, intente de nuevo");
         }
     }
 }
+   
