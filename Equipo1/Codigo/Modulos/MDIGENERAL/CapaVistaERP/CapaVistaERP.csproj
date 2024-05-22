@@ -334,6 +334,12 @@
     <Compile Include="Procesos\PagoFacturaxCobrar.Designer.cs">
       <DependentUpon>PagoFacturaxCobrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\Registro_pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\Registro_pagos.Designer.cs">
+      <DependentUpon>Registro_pagos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\tipodecombio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -358,11 +364,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportedePagos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportedePagos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\frmReporteTipoCambio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\frmReporteTipoCambio.Designer.cs">
       <DependentUpon>frmReporteTipoCambio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frm_ReportePagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_ReportePagos.Designer.cs">
+      <DependentUpon>frm_ReportePagos.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteFacturas.cs">
       <AutoGen>True</AutoGen>
@@ -570,6 +588,9 @@
     <EmbeddedResource Include="Procesos\PagoFacturaxCobrar.resx">
       <DependentUpon>PagoFacturaxCobrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\Registro_pagos.resx">
+      <DependentUpon>Registro_pagos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\tipodecombio.resx">
       <DependentUpon>tipodecombio.cs</DependentUpon>
     </EmbeddedResource>
@@ -583,8 +604,15 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportedePagos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportedePagos.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmReporteTipoCambio.resx">
       <DependentUpon>frmReporteTipoCambio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frm_ReportePagos.resx">
+      <DependentUpon>frm_ReportePagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteFacturas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
