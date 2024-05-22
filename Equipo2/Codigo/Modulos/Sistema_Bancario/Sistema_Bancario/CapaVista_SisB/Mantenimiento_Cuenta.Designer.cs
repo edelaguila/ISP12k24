@@ -45,6 +45,8 @@ namespace CapaVista_SisB
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.cmb_auto = new System.Windows.Forms.ComboBox();
+            this.cmb_auto1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,11 +59,12 @@ namespace CapaVista_SisB
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 173);
+            this.textBox1.Location = new System.Drawing.Point(206, 172);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 20);
+            this.textBox1.Size = new System.Drawing.Size(16, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.Tag = "cue_cliente";
+            this.textBox1.Visible = false;
             // 
             // textBox2
             // 
@@ -187,11 +190,29 @@ namespace CapaVista_SisB
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(472, 231);
+            this.textBox6.Location = new System.Drawing.Point(661, 230);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(173, 20);
+            this.textBox6.Size = new System.Drawing.Size(33, 20);
             this.textBox6.TabIndex = 15;
             this.textBox6.Tag = "cue_usuario";
+            // 
+            // cmb_auto
+            // 
+            this.cmb_auto.FormattingEnabled = true;
+            this.cmb_auto.Location = new System.Drawing.Point(29, 172);
+            this.cmb_auto.Name = "cmb_auto";
+            this.cmb_auto.Size = new System.Drawing.Size(171, 21);
+            this.cmb_auto.TabIndex = 16;
+            this.cmb_auto.SelectedIndexChanged += new System.EventHandler(this.cmb_auto_SelectedIndexChanged);
+            // 
+            // cmb_auto1
+            // 
+            this.cmb_auto1.FormattingEnabled = true;
+            this.cmb_auto1.Location = new System.Drawing.Point(472, 230);
+            this.cmb_auto1.Name = "cmb_auto1";
+            this.cmb_auto1.Size = new System.Drawing.Size(171, 21);
+            this.cmb_auto1.TabIndex = 17;
+            this.cmb_auto1.SelectedIndexChanged += new System.EventHandler(this.cmb_auto1_SelectedIndexChanged);
             // 
             // Mantenimiento_Cuenta
             // 
@@ -199,6 +220,8 @@ namespace CapaVista_SisB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(858, 450);
+            this.Controls.Add(this.cmb_auto1);
+            this.Controls.Add(this.cmb_auto);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -241,5 +264,7 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.ComboBox cmb_auto;
+        private System.Windows.Forms.ComboBox cmb_auto1;
     }
 }
