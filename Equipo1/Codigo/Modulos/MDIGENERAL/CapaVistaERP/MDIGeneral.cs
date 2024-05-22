@@ -236,7 +236,8 @@ namespace CapaVistaERP
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.CajaProveedor(idmovpro, namemovpro, nitmovpro));
+            OperacionesProvMaestro provMaestro = new OperacionesProvMaestro(idmovpro,namemovpro,nitmovpro);
+            Abrir(new Procesos.CajaProveedor(provMaestro));
             hideSubMenu();
         }
 

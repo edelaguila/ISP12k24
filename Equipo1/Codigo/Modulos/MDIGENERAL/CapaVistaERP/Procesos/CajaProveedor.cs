@@ -18,10 +18,11 @@ namespace CapaVistaERP.Procesos
     {
         private Controlador cn;
         string tabla1 = "tbl_facturaxpagar";
-
-        public CajaProveedor(string idprove, string nombreprov, string nitprove)
+        private OperacionesProvMaestro OperacionesProvMaest;
+        public CajaProveedor(OperacionesProvMaestro operacionesProv)
         {
             InitializeComponent();
+            OperacionesProvMaest = operacionesProv;
             cn = new Controlador();
             Combo();
             Combo2();

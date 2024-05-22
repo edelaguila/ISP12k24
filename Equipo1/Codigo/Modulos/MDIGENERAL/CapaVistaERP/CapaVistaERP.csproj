@@ -304,6 +304,12 @@
     <Compile Include="Procesos\MovimientoProveedores.Designer.cs">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\OperacionesProvMaestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\OperacionesProvMaestro.Designer.cs">
+      <DependentUpon>OperacionesProvMaestro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\OrdendeCompraEli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,6 +369,30 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReportesEstadodeCuenta.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportesEstadodeCuenta.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_EstadodeCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_EstadodeCuenta.Designer.cs">
+      <DependentUpon>frm_EstadodeCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteOperacionesProv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteOperacionesProv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_reportesOperacionesProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_reportesOperacionesProv.Designer.cs">
+      <DependentUpon>frm_reportesOperacionesProv.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportedePagos.cs">
       <AutoGen>True</AutoGen>
@@ -573,6 +603,9 @@
     <EmbeddedResource Include="Procesos\MovimientoProveedores.resx">
       <DependentUpon>MovimientoProveedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\OperacionesProvMaestro.resx">
+      <DependentUpon>OperacionesProvMaestro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\OrdendeCompraEli.resx">
       <DependentUpon>OrdendeCompraEli.cs</DependentUpon>
     </EmbeddedResource>
@@ -603,6 +636,20 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportesEstadodeCuenta.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportesEstadodeCuenta.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frm_EstadodeCuenta.resx">
+      <DependentUpon>frm_EstadodeCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteOperacionesProv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteOperacionesProv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frm_reportesOperacionesProv.resx">
+      <DependentUpon>frm_reportesOperacionesProv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportedePagos.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

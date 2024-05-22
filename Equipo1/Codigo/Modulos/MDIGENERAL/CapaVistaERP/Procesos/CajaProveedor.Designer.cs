@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CajaProveedor));
             this.cmb_tipo = new System.Windows.Forms.GroupBox();
+            this.txt_Sumadefacturas = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txt_tipomovpro = new System.Windows.Forms.TextBox();
             this.txt_bancos = new System.Windows.Forms.TextBox();
             this.btn_cancelar = new System.Windows.Forms.Button();
@@ -45,6 +47,8 @@
             this.cmb_banco = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.brn_confirmar = new System.Windows.Forms.Button();
+            this.cb_nofact = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,6 +62,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_nit = new System.Windows.Forms.TextBox();
             this.dgv_pagoproveedor = new System.Windows.Forms.DataGridView();
+            this.NoFacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechadeVen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Totalfacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_buscar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -66,13 +73,7 @@
             this.txt_nombreprov = new System.Windows.Forms.TextBox();
             this.txt_nitprov = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.cb_nofact = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_Sumadefacturas = new System.Windows.Forms.TextBox();
-            this.NoFacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechadeVen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Totalfacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brn_confirmar = new System.Windows.Forms.Button();
+            this.btn_salir = new System.Windows.Forms.Button();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -107,6 +108,22 @@
             this.cmb_tipo.TabStop = false;
             this.cmb_tipo.Tag = "";
             this.cmb_tipo.Text = "Pago";
+            // 
+            // txt_Sumadefacturas
+            // 
+            this.txt_Sumadefacturas.Location = new System.Drawing.Point(258, 168);
+            this.txt_Sumadefacturas.Name = "txt_Sumadefacturas";
+            this.txt_Sumadefacturas.Size = new System.Drawing.Size(154, 24);
+            this.txt_Sumadefacturas.TabIndex = 58;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(147, 168);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 19);
+            this.label8.TabIndex = 57;
+            this.label8.Text = "Total a pagar";
             // 
             // txt_tipomovpro
             // 
@@ -284,6 +301,28 @@
             this.groupBox1.Text = "Movimientos";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // brn_confirmar
+            // 
+            this.brn_confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.brn_confirmar.ForeColor = System.Drawing.SystemColors.Control;
+            this.brn_confirmar.Location = new System.Drawing.Point(757, 345);
+            this.brn_confirmar.Margin = new System.Windows.Forms.Padding(4);
+            this.brn_confirmar.Name = "brn_confirmar";
+            this.brn_confirmar.Size = new System.Drawing.Size(99, 38);
+            this.brn_confirmar.TabIndex = 54;
+            this.brn_confirmar.Text = "Confirmar";
+            this.brn_confirmar.UseVisualStyleBackColor = false;
+            this.brn_confirmar.Click += new System.EventHandler(this.brn_confirmar_Click);
+            // 
+            // cb_nofact
+            // 
+            this.cb_nofact.FormattingEnabled = true;
+            this.cb_nofact.Location = new System.Drawing.Point(25, 120);
+            this.cb_nofact.Name = "cb_nofact";
+            this.cb_nofact.Size = new System.Drawing.Size(121, 27);
+            this.cb_nofact.TabIndex = 53;
+            this.cb_nofact.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -361,7 +400,7 @@
             // 
             // btn_buscarFactura
             // 
-            this.btn_buscarFactura.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscarFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
             this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
             this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -431,8 +470,30 @@
             this.dgv_pagoproveedor.Tag = "tbl_facturaxpagar";
             this.dgv_pagoproveedor.SelectionChanged += new System.EventHandler(this.dgv_pagoproveedor_SelectionChanged);
             // 
+            // NoFacturas
+            // 
+            this.NoFacturas.HeaderText = "No. de Factura";
+            this.NoFacturas.MinimumWidth = 6;
+            this.NoFacturas.Name = "NoFacturas";
+            this.NoFacturas.Width = 125;
+            // 
+            // FechadeVen
+            // 
+            this.FechadeVen.HeaderText = "Fecha de Vencimiento";
+            this.FechadeVen.MinimumWidth = 6;
+            this.FechadeVen.Name = "FechadeVen";
+            this.FechadeVen.Width = 125;
+            // 
+            // Totalfacturas
+            // 
+            this.Totalfacturas.HeaderText = "Total de Facturas";
+            this.Totalfacturas.MinimumWidth = 6;
+            this.Totalfacturas.Name = "Totalfacturas";
+            this.Totalfacturas.Width = 125;
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btn_salir);
             this.groupBox2.Controls.Add(this.btn_buscar);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.txt_idprov);
@@ -450,7 +511,7 @@
             // 
             // btn_buscar
             // 
-            this.btn_buscar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
             this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
             this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -524,64 +585,21 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "NIT";
             // 
-            // cb_nofact
+            // btn_salir
             // 
-            this.cb_nofact.FormattingEnabled = true;
-            this.cb_nofact.Location = new System.Drawing.Point(25, 120);
-            this.cb_nofact.Name = "cb_nofact";
-            this.cb_nofact.Size = new System.Drawing.Size(121, 27);
-            this.cb_nofact.TabIndex = 53;
-            this.cb_nofact.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(147, 168);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 19);
-            this.label8.TabIndex = 57;
-            this.label8.Text = "Total a pagar";
-            // 
-            // txt_Sumadefacturas
-            // 
-            this.txt_Sumadefacturas.Location = new System.Drawing.Point(258, 168);
-            this.txt_Sumadefacturas.Name = "txt_Sumadefacturas";
-            this.txt_Sumadefacturas.Size = new System.Drawing.Size(154, 24);
-            this.txt_Sumadefacturas.TabIndex = 58;
-            // 
-            // NoFacturas
-            // 
-            this.NoFacturas.HeaderText = "No. de Factura";
-            this.NoFacturas.MinimumWidth = 6;
-            this.NoFacturas.Name = "NoFacturas";
-            this.NoFacturas.Width = 125;
-            // 
-            // FechadeVen
-            // 
-            this.FechadeVen.HeaderText = "Fecha de Vencimiento";
-            this.FechadeVen.MinimumWidth = 6;
-            this.FechadeVen.Name = "FechadeVen";
-            this.FechadeVen.Width = 125;
-            // 
-            // Totalfacturas
-            // 
-            this.Totalfacturas.HeaderText = "Total de Facturas";
-            this.Totalfacturas.MinimumWidth = 6;
-            this.Totalfacturas.Name = "Totalfacturas";
-            this.Totalfacturas.Width = 125;
-            // 
-            // brn_confirmar
-            // 
-            this.brn_confirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.brn_confirmar.ForeColor = System.Drawing.SystemColors.Control;
-            this.brn_confirmar.Location = new System.Drawing.Point(757, 345);
-            this.brn_confirmar.Margin = new System.Windows.Forms.Padding(4);
-            this.brn_confirmar.Name = "brn_confirmar";
-            this.brn_confirmar.Size = new System.Drawing.Size(99, 38);
-            this.brn_confirmar.TabIndex = 54;
-            this.brn_confirmar.Text = "Confirmar";
-            this.brn_confirmar.UseVisualStyleBackColor = false;
-            this.brn_confirmar.Click += new System.EventHandler(this.brn_confirmar_Click);
+            this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.Color.Snow;
+            this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
+            this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_salir.Location = new System.Drawing.Point(789, 53);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(84, 71);
+            this.btn_salir.TabIndex = 23;
+            this.btn_salir.Text = "Estado de Cuenta";
+            this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_salir.UseVisualStyleBackColor = false;
             // 
             // CajaProveedor
             // 
@@ -651,5 +669,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FechadeVen;
         private System.Windows.Forms.DataGridViewTextBoxColumn Totalfacturas;
         private System.Windows.Forms.Button brn_confirmar;
+        private System.Windows.Forms.Button btn_salir;
     }
 }
