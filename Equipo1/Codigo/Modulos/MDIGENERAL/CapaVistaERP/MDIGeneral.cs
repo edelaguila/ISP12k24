@@ -357,5 +357,11 @@ namespace CapaVistaERP
             Abrir(new Procesos.PagoFacturaxCobrar());
             hideSubMenu();
         }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            Abrir(new Procesos.Registro_pagos());
+            hideSubMenu();
+        }
     }
 }

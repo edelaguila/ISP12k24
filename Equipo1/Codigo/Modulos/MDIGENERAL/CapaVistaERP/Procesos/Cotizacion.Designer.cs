@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cotizacion));
             this.label1 = new System.Windows.Forms.Label();
             this.lblNoCoti = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -72,6 +73,7 @@
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_ayudas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -334,7 +336,7 @@
             this.panel3.Controls.Add(this.lbl_subTotal);
             this.panel3.Controls.Add(this.label22);
             this.panel3.Controls.Add(this.label24);
-            this.panel3.Location = new System.Drawing.Point(20, 704);
+            this.panel3.Location = new System.Drawing.Point(18, 681);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(721, 96);
             this.panel3.TabIndex = 13;
@@ -497,6 +499,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_ayudas);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txt_apellido_cl);
@@ -533,6 +536,22 @@
             this.groupBox2.TabIndex = 76;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos Disponibles";
+            // 
+            // btn_ayudas
+            // 
+            this.btn_ayudas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_ayudas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ayudas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ayudas.ForeColor = System.Drawing.Color.Snow;
+            this.btn_ayudas.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayudas.Image")));
+            this.btn_ayudas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ayudas.Location = new System.Drawing.Point(602, 120);
+            this.btn_ayudas.Name = "btn_ayudas";
+            this.btn_ayudas.Size = new System.Drawing.Size(94, 68);
+            this.btn_ayudas.TabIndex = 77;
+            this.btn_ayudas.Text = "Ayuda";
+            this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ayudas.UseVisualStyleBackColor = false;
             // 
             // Cotizacion
             // 
@@ -615,5 +634,6 @@
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btn_ayudas;
     }
 }
