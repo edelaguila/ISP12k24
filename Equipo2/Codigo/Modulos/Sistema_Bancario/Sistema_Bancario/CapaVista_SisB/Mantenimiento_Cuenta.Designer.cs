@@ -192,9 +192,10 @@ namespace CapaVista_SisB
             // 
             this.textBox6.Location = new System.Drawing.Point(661, 230);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(33, 20);
+            this.textBox6.Size = new System.Drawing.Size(22, 20);
             this.textBox6.TabIndex = 15;
             this.textBox6.Tag = "cue_usuario";
+            this.textBox6.Visible = false;
             // 
             // cmb_auto
             // 
@@ -219,7 +220,7 @@ namespace CapaVista_SisB
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(858, 450);
+            this.ClientSize = new System.Drawing.Size(809, 450);
             this.Controls.Add(this.cmb_auto1);
             this.Controls.Add(this.cmb_auto);
             this.Controls.Add(this.textBox6);
