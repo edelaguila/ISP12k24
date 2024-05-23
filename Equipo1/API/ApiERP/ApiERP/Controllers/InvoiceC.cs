@@ -9,6 +9,7 @@ namespace ApiERP.Controllers
     [ApiController]
     public class InvoiceC : ControllerBase
     {
+
         ProveedorSentence prv = new ProveedorSentence();
         // GET: api/<InvController>
         [HttpGet]
@@ -41,5 +42,31 @@ namespace ApiERP.Controllers
         public void Delete(int id)
         {
         }
+
+        private readonly InvoiceSentences inv;
+
+        public InvoiceC()
+        {
+            // Inicializa inv
+            this.inv = new InvoiceSentences();
+        }
+
+        // POST api/<InvoiceC>/updateStatus/5
+        [HttpPost("updateStatus/{id}")]
+        public IActionResult UpdateStatus(int id)
+        {
+            bool result = inv.UpdateInvoiceStatus(id, "FACTURA PAGADA");
+            if (result)
+            {
+                return Ok(new { message = "Estado de la factura actualizado a 'FACTURA PAGADA'" });
+            }
+            else
+            {
+                return BadRequest(new { message = "Error al actualizar el estado de la factura" });
+            }
+        }
     }
-}
+
+    
+    }
+
