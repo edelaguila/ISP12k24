@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
 using CapaModelo_SisB.Templates;
-
+using System.Net;
+using System.Net.Sockets;
 
 namespace CapaModelo_SisB
 {
@@ -385,6 +386,27 @@ namespace CapaModelo_SisB
             return -1;
         }
 
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No se encontró una dirección IPv4 en la red.");
+        }
 
+        public void saveInBitacora(int idUser, int idApp, string accion)
+        {
+            DateTime fechaActual = DateTime.Now;
+            DateTime horaActual = DateTime.Now;
+            string sql = "INSERT INTO tbl_bitacoradeeventos (fk_id_usuario, fk_id_aplicacion, fecha_bitacora, hora_bitacora, host_bitacora, ip_bitacora, accion_bitacora) VALUES" +
+                " ('" + idUser + "', '" + idApp + "', '" + fechaActual.ToString("yyyy-MM-dd") + "', '" + horaActual.ToString("HH:mm:ss") + "', '" + Dns.GetHostName() + "', '" + GetLocalIPAddress() + "', '" + accion + "')";
+            OdbcCommand cmd = new OdbcCommand(sql, this.con.connection());
+            cmd.ExecuteNonQuery();
+        }
     }
 }

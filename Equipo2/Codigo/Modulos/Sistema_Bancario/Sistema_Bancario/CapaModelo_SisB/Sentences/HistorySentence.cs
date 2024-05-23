@@ -34,9 +34,9 @@ namespace CapaModelo_SisB.Sentences
             if (reader.Read())
             {
                 if (reader.IsDBNull(0)) return 0;
-                
-                    return reader.GetInt32(0);
-                
+
+                return reader.GetInt32(0);
+
             }
             return -1;
         }
