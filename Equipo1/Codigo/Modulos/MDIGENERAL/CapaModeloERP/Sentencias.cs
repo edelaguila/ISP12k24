@@ -387,7 +387,37 @@ namespace CapaModeloERP
             }
             return datos;
         }
+        //David Carrillo 0901-20-3201
+        public DataTable ObtenerPagosPorFecha(DateTime fechaPago)
+        {
+            DataTable dtPagos = new DataTable();
 
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT p.id_pagoFact AS IDPago, " +
+                                  "p.noFactura AS NoFactura, " +
+                                  "p.cliente AS Cliente, " +
+                                  "p.banco AS Banco, " +
+                                  "p.concepto AS Concepto, " +
+                                  "p.monto_pago AS MontoPago, " +
+                                  "p.extra_pago AS ExtraPago, " +
+                                  "p.fecha_pago AS FechaPago, " +
+                                  "p.NIT AS NIT, " +
+                                  "p.num_recibo AS NumRecibo " +
+                                  "FROM tbl_pagofact p " +
+                                  "WHERE p.fecha_pago BETWEEN ? AND ? " +
+                                  "ORDER BY p.fecha_pago DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaPago", fechaPago);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtPagos);
+                }
+            }
+
+            return dtPagos;
+        }
         //David Carrillo 0901-20-3201 
         public double GetPrecio(string nombreProducto)
         {
@@ -607,6 +637,16 @@ namespace CapaModeloERP
 
                        // connection.Open();
                         cmd.ExecuteNonQuery();
+                    }
+                    if (faltantePago == 0)
+                    {
+                        string updateEstadoQuery = "UPDATE tbl_facturaxcobrar SET estado_facxcob = 'FACTURA PAGADA' WHERE NoFactura = ?";
+
+                        using (OdbcCommand cmd = new OdbcCommand(updateEstadoQuery, connection))
+                        {
+                            cmd.Parameters.AddWithValue("@NoFactura", noFactura);
+                            cmd.ExecuteNonQuery();
+                        }
                     }
                 }
             }

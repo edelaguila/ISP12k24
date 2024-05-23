@@ -1062,10 +1062,3 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\zu\CapaVistaERP.resources.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
