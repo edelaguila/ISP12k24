@@ -385,6 +385,18 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\frmReporteDispoDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteDispoDiaria.Designer.cs">
+      <DependentUpon>frmReporteDispoDiaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteDispoDiaria.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDispoDiaria.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\ReportePagoProv.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -503,6 +515,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reportetipocambio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTIpoCambioAPi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTIpoCambioAPi.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Web References\Banguat1\Reference.cs">
@@ -672,6 +690,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReporteDispoDiaria.resx">
+      <DependentUpon>frmReporteDispoDiaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteDispoDiaria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteDispoDiaria.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportePagoProv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportePagoProv.cs</LastGenOutput>
@@ -741,6 +766,10 @@
     <EmbeddedResource Include="Reportes\Reportetipocambio.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Reportetipocambio1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTIpoCambioAPi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTIpoCambioAPi.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

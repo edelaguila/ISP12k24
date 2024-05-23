@@ -252,6 +252,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.bitacoradispo_diaria());
             hideSubMenu();
+            cn.setBtitacora("8034", "Pro. Disponibilidad Diaria");
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -354,6 +355,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.TipodeCambioApi2());
             hideSubMenu();
+            cn.setBtitacora("8035", "Pro. Tipo de Cambio");
         }
 
         private void button30_Click(object sender, EventArgs e)
