@@ -16,14 +16,14 @@ namespace CapaVistaERP.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReportePagoProv : ReportClass {
+    public class ReporteTodasFacturas : ReportClass {
         
-        public ReportePagoProv() {
+        public ReporteTodasFacturas() {
         }
         
         public override string ResourceName {
             get {
-                return "ReportePagoProv.rpt";
+                return "ReporteTodasFacturas.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaVistaERP.Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaVistaERP.Reportes.ReportePagoProv.rpt";
+                return "CapaVistaERP.Reportes.ReporteTodasFacturas.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace CapaVistaERP.Reportes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReportePagoProv : Component, ICachedReport {
+    public class CachedReporteTodasFacturas : Component, ICachedReport {
         
-        public CachedReportePagoProv() {
+        public CachedReporteTodasFacturas() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace CapaVistaERP.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReportePagoProv rpt = new ReportePagoProv();
+            ReporteTodasFacturas rpt = new ReporteTodasFacturas();
             rpt.Site = this.Site;
             return rpt;
         }

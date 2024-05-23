@@ -1,7 +1,7 @@
 ﻿
 namespace CapaVistaERP.Reportes
 {
-    partial class frm_reportePagoProv
+    partial class frmReportesFacturasNoPagadas
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace CapaVistaERP.Reportes
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportePagoProv1 = new CapaVistaERP.Reportes.ReportePagoProv();
+            this.ReportedeFacturasNoPagadas1 = new CapaVistaERP.Reportes.ReportedeFacturasNoPagadas();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,18 +41,19 @@ namespace CapaVistaERP.Reportes
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ReportePagoProv1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.ReportSource = this.ReportedeFacturasNoPagadas1;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1076, 623);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
-            // frm_reportePagoProv
+            // frmReportesFacturasNoPagadas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1076, 623);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frm_reportePagoProv";
-            this.Text = "frm_reportePagoProv";
+            this.Name = "frmReportesFacturasNoPagadas";
+            this.Text = "frmReportesFacturasNoPagadas";
             this.ResumeLayout(false);
 
         }
@@ -60,6 +61,6 @@ namespace CapaVistaERP.Reportes
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private ReportePagoProv ReportePagoProv1;
+        private ReportedeFacturasNoPagadas ReportedeFacturasNoPagadas1;
     }
 }
