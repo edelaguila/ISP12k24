@@ -142,7 +142,7 @@ namespace CapaVistaERP.Procesos
             Help.ShowHelp(this, rutaAyuda, "OrdenesdeCompra.html");
         }
 
-<<<<<<< HEAD
+
         private void dt_datos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             // Verifica que esté seleccionada una fila
@@ -156,11 +156,12 @@ namespace CapaVistaERP.Procesos
             {
                 MessageBox.Show("Seleccione una fila y doble clic", "Selección de Orden", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-=======
+        }
+
         private void cb_año_SelectedIndexChanged(object sender, EventArgs e)
         {
 
->>>>>>> 9d7dd3685478213284037b4da0757b1cdec85693
+
         }
     }
 }
