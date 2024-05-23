@@ -668,13 +668,10 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equi
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista_SisB.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Navegador2.0.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista.dll.config
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador_SisB.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorModelo.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.dll.config
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ControllerLayer.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo_SisB.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorReporteria.pdb

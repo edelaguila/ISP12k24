@@ -64,6 +64,7 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
+            this.btn_menu_tarjetas = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -414,6 +415,7 @@ namespace Vista_PrototipoMenu
             // panelayuda
             // 
             this.panelayuda.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panelayuda.Controls.Add(this.btn_menu_tarjetas);
             this.panelayuda.Controls.Add(this.btn_mant_tipo_trans);
             this.panelayuda.Controls.Add(this.btn_mant_transaccion);
             this.panelayuda.Controls.Add(this.btn_mant_tipo_tarjeta);
@@ -613,7 +615,7 @@ namespace Vista_PrototipoMenu
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(432, 851);
+            this.panelSideMenu.Size = new System.Drawing.Size(432, 749);
             this.panelSideMenu.TabIndex = 46;
             // 
             // btnsalir
@@ -635,11 +637,27 @@ namespace Vista_PrototipoMenu
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
             // 
+            // btn_menu_tarjetas
+            // 
+            this.btn_menu_tarjetas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_menu_tarjetas.FlatAppearance.BorderSize = 0;
+            this.btn_menu_tarjetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_menu_tarjetas.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_menu_tarjetas.Location = new System.Drawing.Point(0, 459);
+            this.btn_menu_tarjetas.Name = "btn_menu_tarjetas";
+            this.btn_menu_tarjetas.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_menu_tarjetas.Size = new System.Drawing.Size(415, 51);
+            this.btn_menu_tarjetas.TabIndex = 18;
+            this.btn_menu_tarjetas.Text = "MANTENIMIENTO TARJETAS";
+            this.btn_menu_tarjetas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_menu_tarjetas.UseVisualStyleBackColor = true;
+            this.btn_menu_tarjetas.Click += new System.EventHandler(this.btn_menu_tarjetas_Click);
+            // 
             // MenuPrototipo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1254, 851);
+            this.ClientSize = new System.Drawing.Size(1254, 749);
             this.Controls.Add(this.panelSideMenu);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -695,5 +713,6 @@ namespace Vista_PrototipoMenu
         private System.Windows.Forms.Button btn_mant_tipo_trans;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_menu_tarjetas;
     }
 }

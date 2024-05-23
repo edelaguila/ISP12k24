@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountControler.cs" />
+    <Compile Include="CardController.cs" />
     <Compile Include="CheckbookAndCheckController.cs" />
     <Compile Include="Controlador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

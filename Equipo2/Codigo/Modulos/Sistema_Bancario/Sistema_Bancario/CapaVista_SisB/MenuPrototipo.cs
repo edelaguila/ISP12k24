@@ -56,22 +56,22 @@ namespace Vista_PrototipoMenu
             button8.Enabled = true;
 
             button5.Enabled = false;
-           
+
             man_boleta.Enabled = false;
             button6.Enabled = false;
             button7.Enabled = false;
-            
+
             btnSeguridad.Enabled = false;
         }
         //DANNY PEREZ
         public void enableByAdmin()
         {
             button5.Enabled = true;
-            
+
             man_boleta.Enabled = true;
             button6.Enabled = true;
             button7.Enabled = true;
-            
+
             btnSeguridad.Enabled = true;
 
             button2.Enabled = false;
@@ -288,6 +288,12 @@ namespace Vista_PrototipoMenu
         private void button10_Click(object sender, EventArgs e)
         {
             CapaVista_SisB.frmEstadoCuenta form = new CapaVista_SisB.frmEstadoCuenta();
+            this.openNewForm(form);
+        }
+
+        private void btn_menu_tarjetas_Click(object sender, EventArgs e)
+        {
+            CapaVista_SisB.Mantenimientos.frmTarjetas form = new CapaVista_SisB.Mantenimientos.frmTarjetas();
             this.openNewForm(form);
         }
     }
