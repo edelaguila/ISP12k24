@@ -17,6 +17,7 @@ namespace CapaVistaERP.Procesos
         public Registro_pagos()
         {
             InitializeComponent();
+            actualizardatagridview();
         }
 
         public void actualizardatagridview()
@@ -36,6 +37,36 @@ namespace CapaVistaERP.Procesos
         }
         private void cb_filtro_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btn_reporte_Click_1(object sender, EventArgs e)
+        {
+
+                Reportes.frm_ReportePagos repo = new Reportes.frm_ReportePagos();
+                repo.ShowDialog();
+
+        }
+
+        private void btn_ayudas_Click_1(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "Ventas 2.html");
+        }
+
+
+        /*
+        private void cb_filtro_SelectedIndexChanged_2(object sender, EventArgs e)
+        {
             // Obtener el índice de la opción seleccionada
             int seleccion = cb_filtro.SelectedIndex;
             string tipoFiltro = "";
@@ -46,52 +77,32 @@ namespace CapaVistaERP.Procesos
             {
                 case 0:
                     tipoFiltro = "Diario";
-                    DataTable dtRegistros = cn.ObtenerFacturasPorFecha(añoSeleccionado, "Diario");
+                    DataTable dtRegistros = cn.ObtenerPagosPorFecha(añoSeleccionado, "Diario");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros;
                     break;
                 case 1:
                     tipoFiltro = "Semanal";
-                    DataTable dtRegistros1 = cn.ObtenerFacturasPorFecha(añoSeleccionado, "Semanal");
+                    DataTable dtRegistros1 = cn.ObtenerPagosPorFecha(añoSeleccionado, "Semanal");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros1;
                     break;
                 case 2:
                     tipoFiltro = "Mensual";
-                    DataTable dtRegistros2 = cn.ObtenerFacturasPorFecha(añoSeleccionado, "Mensual");
+                    DataTable dtRegistros2 = cn.ObtenerPagosPorFecha(añoSeleccionado, "Mensual");
                     // Asignar el DataTable al DataGridView para mostrar los registros filtrados
                     dt_datos.DataSource = dtRegistros2;
                     break;
                 default:
                     break;
             }
-           // report.MostrarReporte(tipoFiltro, añoSeleccionado);
-        }
-        private void btn_reporte_Click(object sender, EventArgs e)
-        {
-            
+            report.MostrarReporte(tipoFiltro, añoSeleccionado);
         }
 
-        private void btn_ayudas_Click(object sender, EventArgs e)
+        private void cb_año_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
-            Help.ShowHelp(this, rutaAyuda, "Ventas 2.html");
-        }
 
-        private void btn_reporte_Click_1(object sender, EventArgs e)
-        {
-            // Verificar si se ha seleccionado un año y un método de filtrado
-            if (cb_año.SelectedItem == null || cb_filtro.SelectedItem == null)
-            {
-                int añoActual = DateTime.Today.Year;
-                Reportes.frm_ReportePagos repo = new Reportes.frm_ReportePagos();
-                //repo.MostrarReporte("Mensual", añoActual);
-                repo.ShowDialog();
-            }
-            else
-            {
-                report.ShowDialog();
-            }
         }
+        */
     }
 }

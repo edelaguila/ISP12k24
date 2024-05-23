@@ -349,7 +349,7 @@ namespace CapaVistaERP
 
         private void button28_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.tipodecombio());
+            Abrir(new Procesos.TipodecambioApi());
             hideSubMenu();
         }
 
