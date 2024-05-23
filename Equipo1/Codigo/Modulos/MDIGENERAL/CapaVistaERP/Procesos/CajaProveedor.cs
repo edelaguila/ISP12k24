@@ -320,6 +320,9 @@ namespace CapaVistaERP.Procesos
             txt_concepto.Clear();
             sumaTotal = 0;
             totalFacturasAcumulado = 0;
+            dgv_pagoproveedor.Enabled = true;
+            cb_nofact.Enabled = true;
+
         }
 
         private void txt_tipomovpro_TextChanged(object sender, EventArgs e)
@@ -398,6 +401,16 @@ namespace CapaVistaERP.Procesos
         {
             OperacionesProvMaestro estado = new OperacionesProvMaestro(txt_idprov.Text,txt_nombreprov.Text,txt_nitprov.Text);
             estado.Show();
+        }
+
+        private void CajaProveedor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

@@ -387,7 +387,7 @@ namespace CapaModeloERP
             }
             return datos;
         }
-        //David Carrillo 0901-20-3201
+        //David Carrill o 0901-20-3201
         public DataTable ObtenerPagosPorFecha(DateTime fechaPago)
         {
             DataTable dtPagos = new DataTable();

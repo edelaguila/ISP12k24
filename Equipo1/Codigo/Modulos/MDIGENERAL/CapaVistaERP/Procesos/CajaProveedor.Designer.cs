@@ -56,6 +56,7 @@
             this.txt_FechaV = new System.Windows.Forms.TextBox();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.txt_totalapagar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -65,15 +66,14 @@
             this.FechadeVen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Totalfacturas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_salir = new System.Windows.Forms.Button();
+            this.btn_buscar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_idprov = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_nombreprov = new System.Windows.Forms.TextBox();
             this.txt_nitprov = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.btn_salir = new System.Windows.Forms.Button();
-            this.btn_buscar = new System.Windows.Forms.Button();
-            this.btn_buscarFactura = new System.Windows.Forms.Button();
             this.cmb_tipo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pagoproveedor)).BeginInit();
@@ -157,6 +157,7 @@
             this.btn_cancelar.TabIndex = 54;
             this.btn_cancelar.Text = "Cancelar";
             this.btn_cancelar.UseVisualStyleBackColor = false;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // txt_concepto
             // 
@@ -398,6 +399,20 @@
             this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
+            // btn_buscarFactura
+            // 
+            this.btn_buscarFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
+            this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 50);
+            this.btn_buscarFactura.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscarFactura.Name = "btn_buscarFactura";
+            this.btn_buscarFactura.Size = new System.Drawing.Size(33, 25);
+            this.btn_buscarFactura.TabIndex = 41;
+            this.btn_buscarFactura.UseVisualStyleBackColor = false;
+            this.btn_buscarFactura.Click += new System.EventHandler(this.btn_buscarFactura_Click);
+            // 
             // txt_totalapagar
             // 
             this.txt_totalapagar.Enabled = false;
@@ -495,6 +510,37 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
             // 
+            // btn_salir
+            // 
+            this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.ForeColor = System.Drawing.Color.Snow;
+            this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
+            this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_salir.Location = new System.Drawing.Point(757, 22);
+            this.btn_salir.Name = "btn_salir";
+            this.btn_salir.Size = new System.Drawing.Size(116, 71);
+            this.btn_salir.TabIndex = 23;
+            this.btn_salir.Text = "Estado de Cuenta";
+            this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_salir.UseVisualStyleBackColor = false;
+            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
+            // btn_buscar
+            // 
+            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
+            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buscar.Location = new System.Drawing.Point(576, 31);
+            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_buscar.Name = "btn_buscar";
+            this.btn_buscar.Size = new System.Drawing.Size(33, 25);
+            this.btn_buscar.TabIndex = 22;
+            this.btn_buscar.UseVisualStyleBackColor = false;
+            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -557,51 +603,6 @@
             this.label14.TabIndex = 17;
             this.label14.Text = "NIT";
             // 
-            // btn_salir
-            // 
-            this.btn_salir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.ForeColor = System.Drawing.Color.Snow;
-            this.btn_salir.Image = ((System.Drawing.Image)(resources.GetObject("btn_salir.Image")));
-            this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_salir.Location = new System.Drawing.Point(757, 22);
-            this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(116, 71);
-            this.btn_salir.TabIndex = 23;
-            this.btn_salir.Text = "Estado de Cuenta";
-            this.btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_salir.UseVisualStyleBackColor = false;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
-            // btn_buscar
-            // 
-            this.btn_buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.btn_buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscar.BackgroundImage")));
-            this.btn_buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscar.Location = new System.Drawing.Point(576, 31);
-            this.btn_buscar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_buscar.Name = "btn_buscar";
-            this.btn_buscar.Size = new System.Drawing.Size(33, 25);
-            this.btn_buscar.TabIndex = 22;
-            this.btn_buscar.UseVisualStyleBackColor = false;
-            this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
-            // 
-            // btn_buscarFactura
-            // 
-            this.btn_buscarFactura.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.btn_buscarFactura.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_buscarFactura.BackgroundImage")));
-            this.btn_buscarFactura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_buscarFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_buscarFactura.Location = new System.Drawing.Point(510, 50);
-            this.btn_buscarFactura.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_buscarFactura.Name = "btn_buscarFactura";
-            this.btn_buscarFactura.Size = new System.Drawing.Size(33, 25);
-            this.btn_buscarFactura.TabIndex = 41;
-            this.btn_buscarFactura.UseVisualStyleBackColor = false;
-            this.btn_buscarFactura.Click += new System.EventHandler(this.btn_buscarFactura_Click);
-            // 
             // CajaProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -613,6 +614,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "CajaProveedor";
             this.Text = "8013-Operaciones Proveedor";
+            this.Load += new System.EventHandler(this.CajaProveedor_Load);
             this.cmb_tipo.ResumeLayout(false);
             this.cmb_tipo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
