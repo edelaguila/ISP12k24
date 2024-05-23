@@ -271,8 +271,8 @@ namespace CapaVistaERP.Procesos
                     {
                         if (!row.IsNewRow) 
                         {
-                            int idProducto = Convert.ToInt32(row.Cells["tbl_producto_cod_producto"].Value);
-                            int cantidad = Convert.ToInt32(row.Cells["cantidad_coti"].Value);
+                            int idProducto = Convert.ToInt32(row.Cells["CodProducto"].Value);
+                            int cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
 
                             cn.ActualizarExistencias(idProducto, cantidad);
 
@@ -318,8 +318,8 @@ namespace CapaVistaERP.Procesos
                 {
                     if (!row.IsNewRow) // Saltar la fila nueva si existe
                     {
-                        int idProducto = Convert.ToInt32(row.Cells["tbl_producto_cod_producto"].Value);
-                        int cantidad = Convert.ToInt32(row.Cells["cantidad_coti"].Value);
+                        int idProducto = Convert.ToInt32(row.Cells["CodProducto"].Value);
+                        int cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
                         cn.ActualizarExistencias(idProducto, cantidad);
                     }
                 }
