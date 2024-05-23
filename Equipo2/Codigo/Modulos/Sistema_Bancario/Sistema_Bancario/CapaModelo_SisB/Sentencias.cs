@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Odbc;
 using System.Data;
 using CapaModelo_SisB.Templates;
-
+using System.Net;
+using System.Net.Sockets;
 
 namespace CapaModelo_SisB
 {
@@ -43,12 +44,79 @@ namespace CapaModelo_SisB
             return Campos;
         }
 
-        /// Modelo 2 //
+        public string[] llenarCmb1(string tabla, string campo1, string campo2)
+        {
+            string[] Campos = new string[300];
+            string[] auto = new string[300];
+            int i = 0;
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM tbl_cliente;";
+
+            try
+            {
+                OdbcCommand command = new OdbcCommand(sql, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Campos[i] = reader.GetValue(0).ToString() + "-" + reader.GetValue(1).ToString();
+                    i++;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo, revise los parametros \n -" + tabla + "\n -" + campo1); }
+            return Campos;
+        }
+
+        public string[] llenarCmb2(string tabla, string campo1, string campo2)
+        {
+            string[] Campos = new string[300];
+            string[] auto = new string[300];
+            int i = 0;
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM tbl_usuarios; ";
+
+            try
+            {
+                OdbcCommand command = new OdbcCommand(sql, con.connection());
+                OdbcDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Campos[i] = reader.GetValue(0).ToString() + "-" + reader.GetValue(1).ToString();
+                    i++;
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message.ToString() + " \nError en asignarCombo, revise los parametros \n -" + tabla + "\n -" + campo1); }
+            return Campos;
+        }
 
         public DataTable obtener(string tabla, string campo1, string campo2, int id)
         {
 
             string sql = "SELECT " + campo1 + "," + campo2 + " FROM " + tabla + " where cue_usuario =" + id + ";";
+
+            OdbcCommand command = new OdbcCommand(sql, con.connection());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+
+
+            return dt;
+        }
+        public DataTable obtener1(string tabla, string campo1, string campo2)
+        {
+
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM tbl_cliente;";
+
+            OdbcCommand command = new OdbcCommand(sql, con.connection());
+            OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
+            DataTable dt = new DataTable();
+            adaptador.Fill(dt);
+
+
+            return dt;
+        }
+
+        public DataTable obtener2(string tabla, string campo1, string campo2)
+        {
+
+            string sql = "SELECT " + campo1 + "," + campo2 + " FROM tbl_usuarios; ";
 
             OdbcCommand command = new OdbcCommand(sql, con.connection());
             OdbcDataAdapter adaptador = new OdbcDataAdapter(command);
@@ -318,6 +386,27 @@ namespace CapaModelo_SisB
             return -1;
         }
 
+        public static string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+            throw new Exception("No se encontró una dirección IPv4 en la red.");
+        }
 
+        public void saveInBitacora(int idUser, int idApp, string accion)
+        {
+            DateTime fechaActual = DateTime.Now;
+            DateTime horaActual = DateTime.Now;
+            string sql = "INSERT INTO tbl_bitacoradeeventos (fk_id_usuario, fk_id_aplicacion, fecha_bitacora, hora_bitacora, host_bitacora, ip_bitacora, accion_bitacora) VALUES" +
+                " ('" + idUser + "', '" + idApp + "', '" + fechaActual.ToString("yyyy-MM-dd") + "', '" + horaActual.ToString("HH:mm:ss") + "', '" + Dns.GetHostName() + "', '" + GetLocalIPAddress() + "', '" + accion + "')";
+            OdbcCommand cmd = new OdbcCommand(sql, this.con.connection());
+            cmd.ExecuteNonQuery();
+        }
     }
 }
