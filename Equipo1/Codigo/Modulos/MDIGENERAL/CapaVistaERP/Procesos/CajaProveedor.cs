@@ -322,7 +322,15 @@ namespace CapaVistaERP.Procesos
             totalFacturasAcumulado = 0;
             dgv_pagoproveedor.Enabled = true;
             cb_nofact.Enabled = true;
-
+            dgv_pagoproveedor.Rows.Clear();
+            cb_nofact.Items.Clear();
+            cb_nofact.Text = "";
+            cmb_banco.Text = "";
+            cb_tipotransa.Text = "";
+            txt_FechaV.Clear();
+            txt_factotal.Clear();
+            //cmb_banco.Items.Clear();
+            //cb_tipotransa.Items.Clear();
         }
 
         private void txt_tipomovpro_TextChanged(object sender, EventArgs e)
@@ -347,7 +355,7 @@ namespace CapaVistaERP.Procesos
 
         private void brn_confirmar_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("¿Está seguro que desea confirmar la orden?", "Confirmación de orden", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            DialogResult result = MessageBox.Show("¿Está seguro que desea confirmar las facturas a pagar?", "Confirmación de pago", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {
