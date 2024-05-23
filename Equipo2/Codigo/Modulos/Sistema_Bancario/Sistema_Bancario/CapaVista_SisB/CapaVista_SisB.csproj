@@ -130,6 +130,12 @@
     <Compile Include="Mantenimientos\FrmCuentaAmiga.Designer.cs">
       <DependentUpon>FrmCuentaAmiga.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientos\Tarjetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Tarjetas.Designer.cs">
+      <DependentUpon>Tarjetas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenimientoTransaccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\FrmCuentaAmiga.resx">
       <DependentUpon>FrmCuentaAmiga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Tarjetas.resx">
+      <DependentUpon>Tarjetas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoTransaccion.resx">
       <DependentUpon>MantenimientoTransaccion.cs</DependentUpon>
