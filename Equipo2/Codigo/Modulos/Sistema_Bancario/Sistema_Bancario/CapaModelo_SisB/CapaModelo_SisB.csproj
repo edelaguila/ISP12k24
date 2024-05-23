@@ -52,7 +52,9 @@
     <Compile Include="Libraries\TransactionSentences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Provider.cs" />
+    <Compile Include="Sentences\CardSentence.cs" />
     <Compile Include="Sentences\CheckSentence.cs" />
+    <Compile Include="Sentences\ClienteSentence.cs" />
     <Compile Include="Sentences\HistorySentence.cs" />
     <Compile Include="Templates\Check.cs" />
     <Compile Include="Sentences\CheckbookSentence.cs" />
