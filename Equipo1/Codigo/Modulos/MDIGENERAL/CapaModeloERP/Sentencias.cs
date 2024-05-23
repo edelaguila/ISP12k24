@@ -387,7 +387,37 @@ namespace CapaModeloERP
             }
             return datos;
         }
+        //David Carrill o 0901-20-3201
+        public DataTable ObtenerPagosPorFecha(DateTime fechaPago)
+        {
+            DataTable dtPagos = new DataTable();
 
+            using (OdbcConnection conn = con.connection())
+            {
+                string consulta = "SELECT p.id_pagoFact AS IDPago, " +
+                                  "p.noFactura AS NoFactura, " +
+                                  "p.cliente AS Cliente, " +
+                                  "p.banco AS Banco, " +
+                                  "p.concepto AS Concepto, " +
+                                  "p.monto_pago AS MontoPago, " +
+                                  "p.extra_pago AS ExtraPago, " +
+                                  "p.fecha_pago AS FechaPago, " +
+                                  "p.NIT AS NIT, " +
+                                  "p.num_recibo AS NumRecibo " +
+                                  "FROM tbl_pagofact p " +
+                                  "WHERE p.fecha_pago BETWEEN ? AND ? " +
+                                  "ORDER BY p.fecha_pago DESC";
+
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("fechaPago", fechaPago);
+                    OdbcDataAdapter adapter = new OdbcDataAdapter(cmd);
+                    adapter.Fill(dtPagos);
+                }
+            }
+
+            return dtPagos;
+        }
         //David Carrillo 0901-20-3201 
         public double GetPrecio(string nombreProducto)
         {
@@ -607,6 +637,16 @@ namespace CapaModeloERP
 
                        // connection.Open();
                         cmd.ExecuteNonQuery();
+                    }
+                    if (faltantePago == 0)
+                    {
+                        string updateEstadoQuery = "UPDATE tbl_facturaxcobrar SET estado_facxcob = 'FACTURA PAGADA' WHERE NoFactura = ?";
+
+                        using (OdbcCommand cmd = new OdbcCommand(updateEstadoQuery, connection))
+                        {
+                            cmd.Parameters.AddWithValue("@NoFactura", noFactura);
+                            cmd.ExecuteNonQuery();
+                        }
                     }
                 }
             }
@@ -878,6 +918,24 @@ namespace CapaModeloERP
         {
             string operador = esDeposito ? "+" : "-";
             string consulta = $"UPDATE tbl_cuentaBancaria SET saldoDisponible = saldoDisponible {operador} ? WHERE id_cuentaBancaria = ?";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("@monto", monto);
+                    cmd.Parameters.AddWithValue("@id_cuenta", idCuenta);
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        // carlos enrique modulo bancos
+        public bool ActualizarReservaCuentaBancaria(int idCuenta, double monto)
+        {
+            string consulta = "UPDATE tbl_cuentaBancaria SET reserva = reserva + ? WHERE id_cuentaBancaria = ?";
 
             using (OdbcConnection conn = con.connection())
             {
@@ -2546,6 +2604,69 @@ namespace CapaModeloERP
 
             }
         }
+
+        public void InsertarTipoCambio2(DateTime fecha, string moneda, double venta, double compra)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la tabla tbl_tipocambio2
+                            string insertQuery = "INSERT INTO tbl_tipocambio2 (fecha, moneda, venta, compra) VALUES (?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@fecha", fecha);
+                                cmd.Parameters.AddWithValue("@moneda", moneda);
+                                cmd.Parameters.AddWithValue("@venta", venta);
+                                cmd.Parameters.AddWithValue("@compra", compra);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            // Confirmar la transacción si la inserción fue exitosa
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            // Revertir la transacción si ocurre algún error
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar tipo de cambio: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+        public void ActualizarExistenciasCompras(int idProducto, int cantidad)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    try
+                    {
+                        string query = "UPDATE tbl_existencias SET cantidad = cantidad + ? WHERE tbl_producto_id_producto = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@idProducto", idProducto);
+
+                        //connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    }catch (Exception ex){
+                        Console.WriteLine($"Error al cambiar las existencias: {ex.Message}");
+                    }
+            }
+            }
+        }
+
+
     }
 
 }

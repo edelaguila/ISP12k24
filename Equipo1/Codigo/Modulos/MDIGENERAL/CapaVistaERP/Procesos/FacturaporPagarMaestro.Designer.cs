@@ -56,6 +56,7 @@ namespace CapaVistaERP.Procesos
             this.dt_datos.RowTemplate.Height = 24;
             this.dt_datos.Size = new System.Drawing.Size(1057, 372);
             this.dt_datos.TabIndex = 13;
+            this.dt_datos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_datos_CellDoubleClick);
             // 
             // panel1
             // 
@@ -215,6 +216,7 @@ namespace CapaVistaERP.Procesos
             this.cb_año.Size = new System.Drawing.Size(121, 24);
             this.cb_año.TabIndex = 17;
             this.cb_año.Text = "Selecciona";
+            this.cb_año.SelectedIndexChanged += new System.EventHandler(this.cb_año_SelectedIndexChanged);
             // 
             // label2
             // 

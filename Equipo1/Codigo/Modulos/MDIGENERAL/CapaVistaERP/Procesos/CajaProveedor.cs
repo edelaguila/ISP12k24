@@ -18,10 +18,11 @@ namespace CapaVistaERP.Procesos
     {
         private Controlador cn;
         string tabla1 = "tbl_facturaxpagar";
-
-        public CajaProveedor(string idprove, string nombreprov, string nitprove)
+        private OperacionesProvMaestro OperacionesProvMaest;
+        public CajaProveedor(OperacionesProvMaestro operacionesProv)
         {
             InitializeComponent();
+            OperacionesProvMaest = operacionesProv;
             cn = new Controlador();
             Combo();
             Combo2();
@@ -319,6 +320,9 @@ namespace CapaVistaERP.Procesos
             txt_concepto.Clear();
             sumaTotal = 0;
             totalFacturasAcumulado = 0;
+            dgv_pagoproveedor.Enabled = true;
+            cb_nofact.Enabled = true;
+
         }
 
         private void txt_tipomovpro_TextChanged(object sender, EventArgs e)
@@ -391,6 +395,22 @@ namespace CapaVistaERP.Procesos
                 }
 
             }
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            OperacionesProvMaestro estado = new OperacionesProvMaestro(txt_idprov.Text,txt_nombreprov.Text,txt_nitprov.Text);
+            estado.Show();
+        }
+
+        private void CajaProveedor_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }
