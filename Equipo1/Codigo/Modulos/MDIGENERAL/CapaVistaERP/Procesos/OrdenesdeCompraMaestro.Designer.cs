@@ -217,6 +217,7 @@ namespace CapaVistaERP.Procesos
             this.cb_año.Size = new System.Drawing.Size(121, 24);
             this.cb_año.TabIndex = 13;
             this.cb_año.Text = "Selecciona";
+            this.cb_año.SelectedIndexChanged += new System.EventHandler(this.cb_año_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -224,7 +225,7 @@ namespace CapaVistaERP.Procesos
             this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(25, 149);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 19);
+            this.label2.Size = new System.Drawing.Size(38, 17);
             this.label2.TabIndex = 12;
             this.label2.Text = "Año:";
             // 
@@ -248,7 +249,7 @@ namespace CapaVistaERP.Procesos
             this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(210, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 19);
+            this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "Filtrar por:";
             // 

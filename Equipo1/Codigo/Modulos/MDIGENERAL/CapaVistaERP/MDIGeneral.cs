@@ -236,8 +236,10 @@ namespace CapaVistaERP
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.CajaProveedor(idmovpro, namemovpro, nitmovpro));
+            OperacionesProvMaestro provMaestro = new OperacionesProvMaestro(idmovpro,namemovpro,nitmovpro);
+            Abrir(new Procesos.CajaProveedor(provMaestro));
             hideSubMenu();
+            cn.setBtitacora("8013", "Pro. Operaciones Proveedores");
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -256,7 +258,7 @@ namespace CapaVistaERP
         {
           Abrir(new Procesos.Cotizacion());
             hideSubMenu();
-            cn.setBtitacora("8014", "Pro. Bitacora de autorizacion ordenes de compra");
+            cn.setBtitacora("8014", "'Pro. Cotizacion de Ventas'");
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -288,6 +290,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.frm_factura_cobrar());
             hideSubMenu();
+            cn.setBtitacora("8016", "'Pro. Facturas por Cobrar'");
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -349,7 +352,7 @@ namespace CapaVistaERP
 
         private void button28_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.TipodecambioApi());
+            Abrir(new Procesos.tipodecombio());
             hideSubMenu();
         }
 
