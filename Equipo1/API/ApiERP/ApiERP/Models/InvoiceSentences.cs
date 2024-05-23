@@ -41,5 +41,20 @@ namespace ApiERP.Models
             return invoices;
         }
 
+        public bool UpdateInvoiceStatus(int invoiceNumber, string newStatus)
+        {
+            string sql = "UPDATE tbl_facturaxcobrar SET estado_facxcob = ? WHERE NoFactura = ?";
+            using (OdbcCommand cmd = new OdbcCommand(sql, conn.connection()))
+            {
+                cmd.Parameters.AddWithValue("estado_facxcob", newStatus);
+                cmd.Parameters.AddWithValue("NoFactura", invoiceNumber);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0; // Devuelve true si se actualizó alguna fila, false si no
+            }
+
+        }
     }
 }
+
+        
