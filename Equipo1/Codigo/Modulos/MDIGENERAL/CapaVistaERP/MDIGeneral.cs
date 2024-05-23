@@ -236,8 +236,10 @@ namespace CapaVistaERP
 
         private void button14_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.CajaProveedor(idmovpro, namemovpro, nitmovpro));
+            OperacionesProvMaestro provMaestro = new OperacionesProvMaestro(idmovpro,namemovpro,nitmovpro);
+            Abrir(new Procesos.CajaProveedor(provMaestro));
             hideSubMenu();
+            cn.setBtitacora("8013", "Pro. Operaciones Proveedores");
         }
 
         private void button11_Click(object sender, EventArgs e)
@@ -350,7 +352,7 @@ namespace CapaVistaERP
 
         private void button28_Click(object sender, EventArgs e)
         {
-            Abrir(new Procesos.TipodecambioApi());
+            Abrir(new Procesos.tipodecombio());
             hideSubMenu();
         }
 
