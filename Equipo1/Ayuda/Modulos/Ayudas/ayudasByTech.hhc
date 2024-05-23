@@ -36,12 +36,14 @@
 		</OBJECT>
 	<UL>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Ventas">
+			<param name="Name" value="ReportePagos">
 			<param name="Local" value="Ventas.html">
+			<param name="URL" value="Ventas.html">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Ventas 2">
+			<param name="Name" value="Cotizacion">
 			<param name="Local" value="Ventas 2.html">
+			<param name="URL" value="Ventas 2.html">
 			</OBJECT>
 	</UL>
 	<LI> <OBJECT type="text/sitemap">

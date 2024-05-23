@@ -256,7 +256,7 @@ namespace CapaVistaERP
         {
           Abrir(new Procesos.Cotizacion());
             hideSubMenu();
-            cn.setBtitacora("8014", "Pro. Bitacora de autorizacion ordenes de compra");
+            cn.setBtitacora("8014", "'Pro. Cotizacion de Ventas'");
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -288,6 +288,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.frm_factura_cobrar());
             hideSubMenu();
+            cn.setBtitacora("8016", "'Pro. Facturas por Cobrar'");
         }
 
         private void button8_Click(object sender, EventArgs e)
