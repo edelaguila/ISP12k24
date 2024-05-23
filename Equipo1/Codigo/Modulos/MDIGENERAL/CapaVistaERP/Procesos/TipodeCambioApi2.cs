@@ -155,5 +155,18 @@ namespace CapaVistaERP.Procesos
         {
             GuardarDatos();
         }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+
+            Reportes.frmReporteTipoCambio Reporte = new Reportes.frmReporteTipoCambio();
+            Reporte.ShowDialog();
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "Ayuda Tipo de Cambio.html");
+        }
     }
 }

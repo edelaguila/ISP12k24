@@ -13,15 +13,17 @@ using System.Reflection;
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 using CrystalDecisions.Windows.Forms;
+
 namespace CapaVistaERP.Reportes
 {
-    public partial class frmReporteTipoCambio : Form
+    public partial class frmReporteDispoDiaria : Form
     {
-        public frmReporteTipoCambio()
+        public frmReporteDispoDiaria()
         {
             InitializeComponent();
             CargarReporte();
         }
+
 
         public void CargarReporte()
         {
@@ -67,7 +69,6 @@ namespace CapaVistaERP.Reportes
             {
                 MessageBox.Show("Error al cargar el reporte: " + ex.Message);
             }
-
         }
     }
-} 
+}
