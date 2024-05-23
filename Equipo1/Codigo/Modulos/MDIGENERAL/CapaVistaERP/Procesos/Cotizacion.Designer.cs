@@ -72,8 +72,9 @@
             this.label16 = new System.Windows.Forms.Label();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_ayudas = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_cancelar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -332,6 +333,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel3.Controls.Add(this.btn_cancelar);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.lbl_subTotal);
             this.panel3.Controls.Add(this.label22);
@@ -344,7 +346,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(22, 26);
+            this.button1.Location = new System.Drawing.Point(171, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(145, 59);
             this.button1.TabIndex = 26;
@@ -488,7 +490,7 @@
             // 
             // btn_eliminar
             // 
-            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.Location = new System.Drawing.Point(723, 508);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(69, 60);
@@ -519,6 +521,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Cliente";
             // 
+            // btn_ayudas
+            // 
+            this.btn_ayudas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
+            this.btn_ayudas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ayudas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ayudas.ForeColor = System.Drawing.Color.Snow;
+            this.btn_ayudas.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayudas.Image")));
+            this.btn_ayudas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_ayudas.Location = new System.Drawing.Point(602, 120);
+            this.btn_ayudas.Name = "btn_ayudas";
+            this.btn_ayudas.Size = new System.Drawing.Size(94, 68);
+            this.btn_ayudas.TabIndex = 77;
+            this.btn_ayudas.Text = "Ayuda";
+            this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_ayudas.UseVisualStyleBackColor = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_agregar);
@@ -537,28 +555,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Productos Disponibles";
             // 
-            // btn_ayudas
+            // btn_cancelar
             // 
-            this.btn_ayudas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(45)))), ((int)(((byte)(113)))));
-            this.btn_ayudas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ayudas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ayudas.ForeColor = System.Drawing.Color.Snow;
-            this.btn_ayudas.Image = ((System.Drawing.Image)(resources.GetObject("btn_ayudas.Image")));
-            this.btn_ayudas.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_ayudas.Location = new System.Drawing.Point(602, 120);
-            this.btn_ayudas.Name = "btn_ayudas";
-            this.btn_ayudas.Size = new System.Drawing.Size(94, 68);
-            this.btn_ayudas.TabIndex = 77;
-            this.btn_ayudas.Text = "Ayuda";
-            this.btn_ayudas.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_ayudas.UseVisualStyleBackColor = false;
+            this.btn_cancelar.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.Location = new System.Drawing.Point(10, 24);
+            this.btn_cancelar.Name = "btn_cancelar";
+            this.btn_cancelar.Size = new System.Drawing.Size(145, 59);
+            this.btn_cancelar.TabIndex = 27;
+            this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // Cotizacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(792, 821);
+            this.ClientSize = new System.Drawing.Size(837, 821);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_eliminar);
@@ -635,5 +648,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_ayudas;
+        private System.Windows.Forms.Button btn_cancelar;
     }
 }
