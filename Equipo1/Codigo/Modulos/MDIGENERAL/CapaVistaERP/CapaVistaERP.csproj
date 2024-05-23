@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
@@ -349,6 +350,12 @@
     <Compile Include="Procesos\Registro_pagos.Designer.cs">
       <DependentUpon>Registro_pagos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procesos\TipodeCambioApi2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\TipodeCambioApi2.Designer.cs">
+      <DependentUpon>TipodeCambioApi2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procesos\tipodecombio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -372,6 +379,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReportePagoProv.cs">
       <AutoGen>True</AutoGen>
@@ -492,6 +504,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reportetipocambio.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\Banguat1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -639,6 +656,9 @@
     <EmbeddedResource Include="Procesos\Registro_pagos.resx">
       <DependentUpon>Registro_pagos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\TipodeCambioApi2.resx">
+      <DependentUpon>TipodeCambioApi2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Procesos\tipodecombio.resx">
       <DependentUpon>tipodecombio.cs</DependentUpon>
     </EmbeddedResource>
@@ -727,8 +747,42 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\tipo-de-cambio %282%29.png" />
+    <None Include="Web References\Banguat1\DataVariable.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Banguat1\InfoVariable.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Banguat1\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Banguat1\TipoCambio.wsdl" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Banguat1\</RelPath>
+      <UpdateFromURL>https://www.banguat.gob.gt/variables/ws/TipoCambio.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CapaVistaERP_Banguat1_TipoCambio</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
