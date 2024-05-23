@@ -1,3 +1,7 @@
+
+ALTER TABLE tbl_cuentaBancaria
+ADD reserva DOUBLE DEFAULT 0 AFTER saldoDisponible;
+
 CREATE VIEW vista_producto AS
 SELECT 
     cod_producto AS CodProducto,
