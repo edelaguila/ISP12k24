@@ -843,6 +843,10 @@ namespace CapaControladorERP
         {
             return sn.EliminarTipodecambio(idTipodeCambio);
         }
+        public void ActualizarExistenciasCompras(int idProducto, int cantidad)
+        {
+            sn.ActualizarExistenciasCompras(idProducto, cantidad);
+        }
     }
 }
  
