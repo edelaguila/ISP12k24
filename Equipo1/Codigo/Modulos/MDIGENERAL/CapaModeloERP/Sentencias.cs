@@ -932,6 +932,24 @@ namespace CapaModeloERP
             }
         }
 
+        // carlos enrique modulo bancos
+        public bool ActualizarReservaCuentaBancaria(int idCuenta, double monto)
+        {
+            string consulta = "UPDATE tbl_cuentaBancaria SET reserva = reserva + ? WHERE id_cuentaBancaria = ?";
+
+            using (OdbcConnection conn = con.connection())
+            {
+                using (OdbcCommand cmd = new OdbcCommand(consulta, conn))
+                {
+                    cmd.Parameters.AddWithValue("@monto", monto);
+                    cmd.Parameters.AddWithValue("@id_cuenta", idCuenta);
+
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
         // carlos enrique guzman cabrera
         public OdbcDataAdapter llenartablabitacoraMB(string consulta)// metodo  que obtinene el contenio de una tabla
         {
