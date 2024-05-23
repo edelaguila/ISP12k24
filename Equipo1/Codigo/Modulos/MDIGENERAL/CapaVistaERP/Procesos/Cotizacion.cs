@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace CapaVistaERP.Procesos
 {
     public partial class Cotizacion : Form
@@ -284,6 +285,12 @@ namespace CapaVistaERP.Procesos
             lbl_precioUni.Text= "????";
             lbl_subTotal.Text = "????";
             lbl_total.Text = "????";
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "Ventas 2.html");
         }
     }
 }
