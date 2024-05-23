@@ -63,6 +63,14 @@
 			<param name="Name" value="Bancos">
 			<param name="Local" value="Bancos.html">
 			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="TipoCabio">
+			<param name="Local" value="Ayuda Tipo de Cambio.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DispoDiaria">
+			<param name="Local" value="Ayuda en el uso del proceso Disponibilidad Diaria.html">
+			</OBJECT>
 	</UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="Logistica">
