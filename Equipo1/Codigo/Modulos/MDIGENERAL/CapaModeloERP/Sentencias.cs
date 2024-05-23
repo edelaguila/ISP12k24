@@ -2586,6 +2586,45 @@ namespace CapaModeloERP
 
             }
         }
+
+        public void InsertarTipoCambio2(DateTime fecha, string moneda, double venta, double compra)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            // Insertar en la tabla tbl_tipocambio2
+                            string insertQuery = "INSERT INTO tbl_tipocambio2 (fecha, moneda, venta, compra) VALUES (?, ?, ?, ?)";
+                            using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("@fecha", fecha);
+                                cmd.Parameters.AddWithValue("@moneda", moneda);
+                                cmd.Parameters.AddWithValue("@venta", venta);
+                                cmd.Parameters.AddWithValue("@compra", compra);
+
+                                cmd.ExecuteNonQuery();
+                            }
+
+                            // Confirmar la transacción si la inserción fue exitosa
+                            transaction.Commit();
+                        }
+                        catch (Exception ex)
+                        {
+                            // Revertir la transacción si ocurre algún error
+                            transaction.Rollback();
+                            Console.WriteLine($"Error al insertar tipo de cambio: {ex.Message}");
+                        }
+                    }
+                }
+            }
+        }
+
+
+
     }
 
 }
