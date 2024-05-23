@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
+//David Alejandro Carrillo de la Roca 0901-20-3201
 namespace CapaVistaERP.Procesos
 {
     public partial class Cotizacion : Form

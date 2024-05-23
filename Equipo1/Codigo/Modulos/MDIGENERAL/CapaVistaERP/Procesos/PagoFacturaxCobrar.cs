@@ -12,7 +12,7 @@ using CapaControladorERP;
 
 namespace CapaVistaERP.Procesos
 {
-
+    //David Alejandro Carrillo de la Roca 0901-20-3201
     public partial class PagoFacturaxCobrar : Form
     {
         Controlador cn = new Controlador();
@@ -266,19 +266,6 @@ namespace CapaVistaERP.Procesos
 
                 if (porPagar >= 0)
                 {
-
-                    foreach (DataGridViewRow row in dataGridView1.Rows)
-                    {
-                        if (!row.IsNewRow) 
-                        {
-                            int idProducto = Convert.ToInt32(row.Cells["CodProducto"].Value);
-                            int cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
-
-                            cn.ActualizarExistencias(idProducto, cantidad);
-
-                        }
-                    }
-
                     cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
                     porPagar = cn.CalcularPorPagar(noFactura);
                     cn.ActualizarFaltantePago(noFactura, porPagar);
@@ -311,23 +298,15 @@ namespace CapaVistaERP.Procesos
             }
             else
             {
-
-                double totalMontoPago = 0.0;
-
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    if (!row.IsNewRow) // Saltar la fila nueva si existe
+                    if (!row.IsNewRow) 
                     {
                         int idProducto = Convert.ToInt32(row.Cells["CodProducto"].Value);
                         int cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
                         cn.ActualizarExistencias(idProducto, cantidad);
                     }
                 }
-
-                // Restar el total del monto a pagar
-                monto_pago -= totalMontoPago;
-
-                // Insertar el pago y actualizar el saldo pendiente
                 cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
                 double porPagar = cn.CalcularPorPagar(noFactura);
                 cn.ActualizarFaltantePago(noFactura, porPagar);
