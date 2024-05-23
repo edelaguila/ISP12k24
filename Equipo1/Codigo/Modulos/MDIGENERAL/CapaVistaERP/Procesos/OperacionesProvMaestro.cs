@@ -14,13 +14,19 @@ namespace CapaVistaERP.Procesos
     public partial class OperacionesProvMaestro : Form
     {
         Controlador cn = new Controlador();
+        string tabla1 = "tbl_facturaxpagar";
         public OperacionesProvMaestro(string idprove, string nombreprov, string nitprove)
         {
             InitializeComponent();
+            tabla();
 
-            
+
         }
-
+        public void tabla()
+        {
+            DataTable dt = cn.llenarTablas(tabla1);
+            dg_facturasprove.DataSource = dt;
+        }
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -29,41 +35,26 @@ namespace CapaVistaERP.Procesos
         private void btn_ayudas_Click(object sender, EventArgs e)
         {
             string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
-            Help.ShowHelp(this, rutaAyuda, "OrdenesdeCompra.html");
+            Help.ShowHelp(this, rutaAyuda, "OperacionesProveedores.html");
         }
 
         private void cb_filtrado_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*// Obtener el índice de la opción seleccionada
-            int seleccion = cb_filtrado.SelectedIndex;
-            string tipoFiltro = "";
-            int añoSeleccionado = Convert.ToInt32(cb_año.SelectedItem);
+        }
 
-            // Ejecutar diferentes acciones según el índice seleccionado
-            switch (seleccion)
-            {
-                case 0:
-                    tipoFiltro = "Diario";
-                    DataTable dtRegistros = cn.ObtenerOrdenesCompraPorFecha(añoSeleccionado, tipoFiltro);
-                    // Asignar el DataTable al DataGridView para mostrar los registros filtrados
-                    dg_facturasprove.DataSource = dtRegistros;
-                    break;
-                case 1:
-                    tipoFiltro = "Semanal";
-                    DataTable dtRegistros1 = cn.ObtenerOrdenesCompraPorFecha(añoSeleccionado, tipoFiltro);
-                    // Asignar el DataTable al DataGridView para mostrar los registros filtrados
-                    dg_facturasprove.DataSource = dtRegistros1;
-                    break;
-                case 2:
-                    tipoFiltro = "Mensual";
-                    DataTable dtRegistros2 = cn.ObtenerOrdenesCompraPorFecha(añoSeleccionado, tipoFiltro);
-                    // Asignar el DataTable al DataGridView para mostrar los registros filtrados
-                    dg_facturasprove.DataSource = dtRegistros2;
-                    break;
-                default:
-                    break;
-            }
-            report.MostrarReporte(tipoFiltro, añoSeleccionado);*/
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            Reportes.frm_estadodeCuenta estadocuenta = new Reportes.frm_estadodeCuenta();
+            estadocuenta.Show();
+
+            Reportes.frm_reportePagoProv operacionesProv = new Reportes.frm_reportePagoProv();
+            operacionesProv.Show();
+
+        }
+
+        private void dg_facturasprove_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
    

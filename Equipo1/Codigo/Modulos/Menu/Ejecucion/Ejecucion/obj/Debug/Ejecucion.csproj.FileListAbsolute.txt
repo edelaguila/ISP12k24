@@ -1076,7 +1076,6 @@ C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\C
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.Properties.Resources.resources
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.Up2Date
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Ejecucion.exe.config
@@ -1152,3 +1151,4 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\zu\CapaVistaERP.resources.dll
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete

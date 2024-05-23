@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OperacionesProvMaestro));
             this.dg_facturasprove = new System.Windows.Forms.DataGridView();
-            this.cb_año = new System.Windows.Forms.ComboBox();
-            this.cb_filtrado = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_salir = new System.Windows.Forms.Button();
             this.btn_ayudas = new System.Windows.Forms.Button();
@@ -45,49 +41,13 @@
             // dg_facturasprove
             // 
             this.dg_facturasprove.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dg_facturasprove.Location = new System.Drawing.Point(35, 183);
+            this.dg_facturasprove.Location = new System.Drawing.Point(35, 130);
             this.dg_facturasprove.Name = "dg_facturasprove";
             this.dg_facturasprove.RowHeadersWidth = 51;
             this.dg_facturasprove.RowTemplate.Height = 24;
-            this.dg_facturasprove.Size = new System.Drawing.Size(809, 285);
+            this.dg_facturasprove.Size = new System.Drawing.Size(974, 358);
             this.dg_facturasprove.TabIndex = 0;
-            // 
-            // cb_año
-            // 
-            this.cb_año.FormattingEnabled = true;
-            this.cb_año.Location = new System.Drawing.Point(112, 145);
-            this.cb_año.Name = "cb_año";
-            this.cb_año.Size = new System.Drawing.Size(121, 24);
-            this.cb_año.TabIndex = 1;
-            // 
-            // cb_filtrado
-            // 
-            this.cb_filtrado.FormattingEnabled = true;
-            this.cb_filtrado.Location = new System.Drawing.Point(331, 145);
-            this.cb_filtrado.Name = "cb_filtrado";
-            this.cb_filtrado.Size = new System.Drawing.Size(121, 24);
-            this.cb_filtrado.TabIndex = 2;
-            this.cb_filtrado.SelectedIndexChanged += new System.EventHandler(this.cb_filtrado_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(68, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 17);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Año:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(253, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Filtrar por:";
+            this.dg_facturasprove.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_facturasprove_CellContentClick);
             // 
             // panel1
             // 
@@ -149,34 +109,26 @@
             this.btn_reporte.Text = "Reporte";
             this.btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_reporte.UseVisualStyleBackColor = false;
+            this.btn_reporte.Click += new System.EventHandler(this.btn_reporte_Click);
             // 
             // OperacionesProvMaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 491);
+            this.ClientSize = new System.Drawing.Size(1021, 491);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.cb_filtrado);
-            this.Controls.Add(this.cb_año);
             this.Controls.Add(this.dg_facturasprove);
             this.Name = "OperacionesProvMaestro";
             this.Text = "OperacionesProvMaestro";
             ((System.ComponentModel.ISupportInitialize)(this.dg_facturasprove)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dg_facturasprove;
-        private System.Windows.Forms.ComboBox cb_año;
-        private System.Windows.Forms.ComboBox cb_filtrado;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_ayudas;

@@ -370,17 +370,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ReportePagoProv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportePagoProv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_reportePagoProv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frm_reportePagoProv.Designer.cs">
+      <DependentUpon>frm_reportePagoProv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportesEstadodeCuenta.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReportesEstadodeCuenta.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reportes\frm_EstadodeCuenta.cs">
+    <Compile Include="Reportes\frm_estadodeCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\frm_EstadodeCuenta.Designer.cs">
-      <DependentUpon>frm_EstadodeCuenta.cs</DependentUpon>
+    <Compile Include="Reportes\frm_estadodeCuenta.Designer.cs">
+      <DependentUpon>frm_estadodeCuenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes\ReporteOperacionesProv.cs">
       <AutoGen>True</AutoGen>
@@ -637,12 +649,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReportePagoProv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportePagoProv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frm_reportePagoProv.resx">
+      <DependentUpon>frm_reportePagoProv.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportesEstadodeCuenta.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportesEstadodeCuenta.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\frm_EstadodeCuenta.resx">
-      <DependentUpon>frm_EstadodeCuenta.cs</DependentUpon>
+    <EmbeddedResource Include="Reportes\frm_estadodeCuenta.resx">
+      <DependentUpon>frm_estadodeCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteOperacionesProv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

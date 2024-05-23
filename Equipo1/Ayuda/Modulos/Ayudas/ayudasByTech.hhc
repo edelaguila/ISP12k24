@@ -29,6 +29,10 @@
 			<param name="Name" value="Facturas">
 			<param name="Local" value="Facturas.html">
 			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Operaciones Proveedores">
+			<param name="Local" value="OperacionesProveedores.html">
+			</OBJECT>
 	</UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="Ventas">

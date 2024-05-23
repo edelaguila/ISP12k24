@@ -393,5 +393,11 @@ namespace CapaVistaERP.Procesos
 
             }
         }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            OperacionesProvMaestro estado = new OperacionesProvMaestro(txt_idprov.Text,txt_nombreprov.Text,txt_nitprov.Text);
+            estado.Show();
+        }
     }
 }
