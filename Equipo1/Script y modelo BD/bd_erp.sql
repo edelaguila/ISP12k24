@@ -1642,3 +1642,4 @@ SET character_set_client = @saved_cs_client;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2024-05-22 20:46:10
+UPDATE `bd_erp`.`tbl_aplicaciones` SET `nombre_aplicacion` = 'Pro. Operaciones Proveedores' WHERE (`pk_id_aplicacion` = '8013');
