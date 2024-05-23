@@ -88,6 +88,12 @@
     <Compile Include="frmCliente.Designer.cs">
       <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCodigoSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCodigoSeguridad.Designer.cs">
+      <DependentUpon>frmCodigoSeguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDeposito.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCliente.resx">
       <DependentUpon>frmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCodigoSeguridad.resx">
+      <DependentUpon>frmCodigoSeguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDeposito.resx">
       <DependentUpon>frmDeposito.cs</DependentUpon>
