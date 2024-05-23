@@ -52,6 +52,7 @@ namespace Vista_PrototipoMenu
             this.button8 = new System.Windows.Forms.Button();
             this.btnSeguridad = new System.Windows.Forms.Button();
             this.panelayuda = new System.Windows.Forms.Panel();
+            this.btn_menu_tarjetas = new System.Windows.Forms.Button();
             this.btn_mant_tipo_trans = new System.Windows.Forms.Button();
             this.btn_mant_transaccion = new System.Windows.Forms.Button();
             this.btn_mant_tipo_tarjeta = new System.Windows.Forms.Button();
@@ -64,7 +65,6 @@ namespace Vista_PrototipoMenu
             this.btnayuda = new System.Windows.Forms.Button();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnsalir = new System.Windows.Forms.Button();
-            this.btn_menu_tarjetas = new System.Windows.Forms.Button();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTranportes.SuspendLayout();
@@ -299,6 +299,7 @@ namespace Vista_PrototipoMenu
             this.button7.Text = "TARJETAS DE CREDITO / DEBITO";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -431,6 +432,22 @@ namespace Vista_PrototipoMenu
             this.panelayuda.Size = new System.Drawing.Size(415, 549);
             this.panelayuda.TabIndex = 11;
             this.panelayuda.Visible = false;
+            // 
+            // btn_menu_tarjetas
+            // 
+            this.btn_menu_tarjetas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_menu_tarjetas.FlatAppearance.BorderSize = 0;
+            this.btn_menu_tarjetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_menu_tarjetas.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.btn_menu_tarjetas.Location = new System.Drawing.Point(0, 459);
+            this.btn_menu_tarjetas.Name = "btn_menu_tarjetas";
+            this.btn_menu_tarjetas.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
+            this.btn_menu_tarjetas.Size = new System.Drawing.Size(415, 51);
+            this.btn_menu_tarjetas.TabIndex = 18;
+            this.btn_menu_tarjetas.Text = "MANTENIMIENTO TARJETAS";
+            this.btn_menu_tarjetas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_menu_tarjetas.UseVisualStyleBackColor = true;
+            this.btn_menu_tarjetas.Click += new System.EventHandler(this.btn_menu_tarjetas_Click);
             // 
             // btn_mant_tipo_trans
             // 
@@ -636,22 +653,6 @@ namespace Vista_PrototipoMenu
             this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsalir.UseVisualStyleBackColor = false;
             this.btnsalir.Click += new System.EventHandler(this.btnsalir_Click);
-            // 
-            // btn_menu_tarjetas
-            // 
-            this.btn_menu_tarjetas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_menu_tarjetas.FlatAppearance.BorderSize = 0;
-            this.btn_menu_tarjetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_menu_tarjetas.Font = new System.Drawing.Font("Segoe UI", 8.25F);
-            this.btn_menu_tarjetas.Location = new System.Drawing.Point(0, 459);
-            this.btn_menu_tarjetas.Name = "btn_menu_tarjetas";
-            this.btn_menu_tarjetas.Padding = new System.Windows.Forms.Padding(64, 0, 0, 0);
-            this.btn_menu_tarjetas.Size = new System.Drawing.Size(415, 51);
-            this.btn_menu_tarjetas.TabIndex = 18;
-            this.btn_menu_tarjetas.Text = "MANTENIMIENTO TARJETAS";
-            this.btn_menu_tarjetas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_menu_tarjetas.UseVisualStyleBackColor = true;
-            this.btn_menu_tarjetas.Click += new System.EventHandler(this.btn_menu_tarjetas_Click);
             // 
             // MenuPrototipo
             // 
