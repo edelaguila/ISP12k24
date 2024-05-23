@@ -989,7 +989,6 @@ C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\C
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\MenuHCV.splash.resources
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.GenerateResource.cache
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_Me.750E0CB1.Up2Date
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.dll
@@ -1062,30 +1061,4 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracio
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\90%\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
 C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\zu\CapaVistaERP.resources.dll
-<<<<<<< HEAD
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
-C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaERP.dll.config
-=======
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaERP.dll.config
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
-C:\Users\callo\Music\GIT 2024\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaERP.dll.config
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
-C:\Users\d_car\OneDrive\Documentos\GitHub\ProyectoMigracion\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
->>>>>>> 49bf4b9d24295327d0260b9afd745b725ce7a869
+C:\Users\Usuario\Documents\GitHub\Proyecto actual\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.CopyComplete
