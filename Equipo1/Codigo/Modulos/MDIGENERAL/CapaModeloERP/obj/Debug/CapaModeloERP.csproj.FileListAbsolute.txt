@@ -104,3 +104,4 @@ C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\cambios\Nueva carpet
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\cambios\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.CoreCompileInputs.cache
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\cambios\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.dll
 C:\Users\DELL\Desktop\labo analisis\holaaaaaa\Nueva carpeta\cambios\Nueva carpeta\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.pdb
+C:\Users\Carol\OneDrive\Escritorio\Noveno Semestre\Ingeniería de Software\Proyecto Migración\ProyectoMigracion_G1\Equipo1\Codigo\Modulos\MDIGENERAL\CapaModeloERP\obj\Debug\CapaModeloERP.csproj.AssemblyReference.cache

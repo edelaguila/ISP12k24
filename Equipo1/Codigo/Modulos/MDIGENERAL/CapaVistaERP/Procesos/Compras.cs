@@ -309,6 +309,7 @@ namespace CapaVistaERP.Procesos
                                     if (int.TryParse(cantd, out int cantidad) && int.TryParse(idprod, out int idproducto) && double.TryParse(totfil, out double totalfila))
                                     {
                                         controller.InsertarDetalleCompra(ultimoNumeroCompra, cantidad, totalfila, idproducto, codigo);
+                                        controller.ActualizarExistenciasCompras(idproducto, cantidad);
                                     }
                                 }
                             }

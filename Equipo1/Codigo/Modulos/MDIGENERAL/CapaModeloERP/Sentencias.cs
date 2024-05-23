@@ -2623,6 +2623,30 @@ namespace CapaModeloERP
             }
         }
 
+        public void ActualizarExistenciasCompras(int idProducto, int cantidad)
+        {
+            using (OdbcConnection connection = con.connection())
+            {
+                if (connection != null)
+                {
+                    try
+                    {
+                        string query = "UPDATE tbl_existencias SET cantidad = cantidad + ? WHERE tbl_producto_id_producto = ?";
+
+                    using (OdbcCommand cmd = new OdbcCommand(query, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd.Parameters.AddWithValue("@idProducto", idProducto);
+
+                        //connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                    }catch (Exception ex){
+                        Console.WriteLine($"Error al cambiar las existencias: {ex.Message}");
+                    }
+            }
+            }
+        }
 
 
     }

@@ -56,6 +56,7 @@ namespace CapaVistaERP.Procesos
             this.dt_datos.RowTemplate.Height = 24;
             this.dt_datos.Size = new System.Drawing.Size(1057, 372);
             this.dt_datos.TabIndex = 9;
+            this.dt_datos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_datos_CellDoubleClick);
             // 
             // panel1
             // 
