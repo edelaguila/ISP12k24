@@ -18,7 +18,7 @@ namespace ApiERP.Models
         public List<FacturaPorCobrar> getInvoicesByClient(string dpi)
         {
             List<FacturaPorCobrar> invoices = new List<FacturaPorCobrar>();
-            string sql = "SELECT NoFactura, total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago FROM tbl_facturaxcobrar inner join tbl_clientes on tbl_clientes.id_cliente = tbl_facturaxcobrar.tbl_clientes_id_cliente where tbl_clientes.dpi_cl = '" + dpi + "'";
+            string sql = "SELECT NoFactura, total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago FROM tbl_facturaxcobrar inner join tbl_clientes on tbl_clientes.id_cliente = tbl_facturaxcobrar.tbl_clientes_id_cliente where tbl_clientes.id_cliente = '" + dpi + "'";
             OdbcCommand cmd = new OdbcCommand(sql, conn.connection());
             OdbcDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
