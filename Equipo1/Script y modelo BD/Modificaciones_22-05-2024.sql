@@ -86,3 +86,5 @@ CREATE TABLE `tbl_reportes` (
   CONSTRAINT `tbl_reportes_ibfk_1` FOREIGN KEY (`fk_estado`) REFERENCES `tbl_estados` (`pk_id_estado`)
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+UPDATE `bd_erp`.`tbl_aplicaciones` SET `nombre_aplicacion` = 'Pro. Operaciones Proveedores' WHERE (`pk_id_aplicacion` = '8013');
