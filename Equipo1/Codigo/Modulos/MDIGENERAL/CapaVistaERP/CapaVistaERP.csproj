@@ -397,6 +397,12 @@
     <Compile Include="Reportes\frmReporteTodasLasFacturas.Designer.cs">
       <DependentUpon>frmReporteTodasLasFacturas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\frnsReporteDispoDiaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frnsReporteDispoDiaria.Designer.cs">
+      <DependentUpon>frnsReporteDispoDiaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\ReportedeFacturasNoPagadas.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -413,6 +419,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReportedeFcaturasPagadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteDipoDiaria.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteDipoDiaria.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\ReporteOperacionesProv.cs">
@@ -509,6 +521,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reportetipocambio.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteTIpoCambioAPi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTIpoCambioAPi.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\ReporteTodasFacturas.cs">
@@ -684,6 +702,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frnsReporteDispoDiaria.resx">
+      <DependentUpon>frnsReporteDispoDiaria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportedeFacturasNoPagadas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportedeFacturasNoPagadas.cs</LastGenOutput>
@@ -700,6 +721,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReportedeFacturasPagadas.resx">
       <DependentUpon>ReportedeFacturasPagadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteDipoDiaria.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteDipoDiaria.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteOperacionesProv.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -756,6 +781,10 @@
     <EmbeddedResource Include="Reportes\Reportetipocambio.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Reportetipocambio1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteTIpoCambioAPi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTIpoCambioAPi.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ReporteTodasFacturas.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

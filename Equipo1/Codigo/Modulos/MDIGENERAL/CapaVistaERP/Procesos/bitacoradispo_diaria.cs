@@ -76,7 +76,7 @@ namespace CapaVistaERP.Procesos
 
         private void btn_reporte_Click(object sender, EventArgs e)
         {
-            Reportes.frmReporteDispoDiaria Reporte = new Reportes.frmReporteDispoDiaria();
+            Reportes.frnsReporteDispoDiaria Reporte = new Reportes.frnsReporteDispoDiaria();
             Reporte.ShowDialog();
         }
 
