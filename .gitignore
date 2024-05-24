@@ -439,6 +439,8 @@ ControllerLayer.csproj.FileListAbsolute.txt
 ModelLayer.csproj.FileListAbsolute.txt
 ViewLayer.csproj.FileListAbsolute.txt
 
+.Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.FileListAbsolute.txt
+
 #Agregando carpeta obj en los 3 proyectos
 ./Equipo2/Codigo/Modulos/Sistema_Bancario/Sistema_Bancario/CapaVista_SisB/[Oo]bj
 ./Equipo2/Codigo/Modulos/Sistema_Bancario/Sistema_Bancario/CapaControlador_SisB/[Oo]bj

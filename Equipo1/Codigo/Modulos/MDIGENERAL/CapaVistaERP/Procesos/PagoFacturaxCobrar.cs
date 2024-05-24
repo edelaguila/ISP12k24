@@ -8,16 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControladorERP;
-
+using Seguridad_Controlador;
 
 namespace CapaVistaERP.Procesos
 {
     //David Alejandro Carrillo de la Roca 0901-20-3201
     public partial class PagoFacturaxCobrar : Form
     {
-        Controlador cn = new Controlador();
+        private CapaControladorERP.Controlador cn;
+        public Seguridad_Controlador.Controlador ctrl_seguridad = new Seguridad_Controlador.Controlador();
         public PagoFacturaxCobrar()
         {
+            cn = new CapaControladorERP.Controlador();
             InitializeComponent();
             dt_fechaPago.Format = DateTimePickerFormat.Custom;
             dt_fechaPago.CustomFormat = "dd/MM/yyy";
@@ -269,7 +271,7 @@ namespace CapaVistaERP.Procesos
                     cn.InsertarPagoFacXCobrar(noFactura, cliente, banco, concepto, monto_pago, extra_pago, fecha_pago, NIT, num_recibo);
                     porPagar = cn.CalcularPorPagar(noFactura);
                     cn.ActualizarFaltantePago(noFactura, porPagar);
-
+                    this.ctrl_seguridad.setBtitacora("8036", "Se hizo un pago de factura por cobrar");
                     MessageBox.Show($"Pago registrado con éxito. Monto pendiente por pagar: {porPagar}");
 
                     int idcoti;

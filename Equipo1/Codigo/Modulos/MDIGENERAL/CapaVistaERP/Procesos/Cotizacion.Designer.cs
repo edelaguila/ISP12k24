@@ -587,7 +587,7 @@
             this.Controls.Add(this.lblNoCoti);
             this.Controls.Add(this.label1);
             this.Name = "Cotizacion";
-            this.Text = "frm_cotizacion";
+            this.Text = "8014-frm_cotizacion";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
