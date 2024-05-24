@@ -21,9 +21,9 @@ namespace CapaVista_SisB
 
             string file = parent.Tag.ToString();
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string helpFilePath = Path.Combine(baseDirectory, "Ayudas", file + ".chm");
+            string helpFilePath = Path.Combine(baseDirectory,"Ayudas" ,"AyudaSistemaBancario.chm");
             Console.WriteLine(helpFilePath);
-            Help.ShowHelp(parent, helpFilePath);
+            Help.ShowHelp(parent, helpFilePath,Path.Combine(baseDirectory,"Ayudas",helpFilePath+".html"));
         }
     }
 }

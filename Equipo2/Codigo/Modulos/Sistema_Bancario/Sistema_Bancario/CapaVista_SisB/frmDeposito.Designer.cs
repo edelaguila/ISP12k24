@@ -154,6 +154,7 @@ namespace CapaVista_SisB
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "frmDeposito";
+            this.Tag = "GestCli_OperacionDeposito";
             this.Text = "frmDeposito";
             this.ResumeLayout(false);
             this.PerformLayout();
