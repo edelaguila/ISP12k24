@@ -78,12 +78,9 @@
 		</OBJECT>
 	<UL>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Logistica">
-			<param name="Local" value="Logistica.html">
-			</OBJECT>
-		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Logistica 2">
-			<param name="Local" value="Logistica 2.html">
+			<param name="Name" value="TrasladoDeProducto">
+			<param name="Local" value="TrasladoDeProducto.html">
+			<param name="URL" value="TrasladoDeProducto.html">
 			</OBJECT>
 	</UL>
 </UL>
