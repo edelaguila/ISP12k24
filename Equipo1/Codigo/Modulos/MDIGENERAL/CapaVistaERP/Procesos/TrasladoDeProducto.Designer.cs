@@ -29,15 +29,6 @@ namespace CapaVistaERP.Procesos
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_traslado = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btn_eliminar = new System.Windows.Forms.Button();
-            this.btn_agregar = new System.Windows.Forms.Button();
-            this.dgv_traslado = new System.Windows.Forms.DataGridView();
-            this.cb_NombreProd = new System.Windows.Forms.ComboBox();
-            this.txt_CantidadTraslado = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_entregador = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,112 +40,24 @@ namespace CapaVistaERP.Procesos
             this.label2 = new System.Windows.Forms.Label();
             this.cb_destinoSucursal = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btn_eliminar = new System.Windows.Forms.Button();
+            this.btn_agregar = new System.Windows.Forms.Button();
+            this.btn_traslado = new System.Windows.Forms.Button();
+            this.dgv_traslado = new System.Windows.Forms.DataGridView();
+            this.Id_Producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantTras = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cb_NombreProd = new System.Windows.Forms.ComboBox();
+            this.txt_CantidadTraslado = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_traslado)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_traslado
-            // 
-            this.btn_traslado.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.btn_traslado.Location = new System.Drawing.Point(678, 232);
-            this.btn_traslado.Name = "btn_traslado";
-            this.btn_traslado.Size = new System.Drawing.Size(96, 54);
-            this.btn_traslado.TabIndex = 60;
-            this.btn_traslado.Text = "Realizar Traslado";
-            this.btn_traslado.UseVisualStyleBackColor = true;
-            this.btn_traslado.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btn_eliminar);
-            this.groupBox2.Controls.Add(this.btn_agregar);
-            this.groupBox2.Controls.Add(this.btn_traslado);
-            this.groupBox2.Controls.Add(this.dgv_traslado);
-            this.groupBox2.Controls.Add(this.cb_NombreProd);
-            this.groupBox2.Controls.Add(this.txt_CantidadTraslado);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.groupBox2.Location = new System.Drawing.Point(12, 343);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(797, 305);
-            this.groupBox2.TabIndex = 66;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Producto a Trasladar";
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.Location = new System.Drawing.Point(678, 170);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(96, 31);
-            this.btn_eliminar.TabIndex = 14;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = true;
-            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
-            // 
-            // btn_agregar
-            // 
-            this.btn_agregar.Location = new System.Drawing.Point(678, 106);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(96, 31);
-            this.btn_agregar.TabIndex = 13;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
-            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
-            // 
-            // dgv_traslado
-            // 
-            this.dgv_traslado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_traslado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nombreProd,
-            this.cantTras});
-            this.dgv_traslado.Location = new System.Drawing.Point(29, 106);
-            this.dgv_traslado.Name = "dgv_traslado";
-            this.dgv_traslado.RowHeadersWidth = 51;
-            this.dgv_traslado.RowTemplate.Height = 24;
-            this.dgv_traslado.Size = new System.Drawing.Size(625, 180);
-            this.dgv_traslado.TabIndex = 12;
-            this.dgv_traslado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_traslado_CellContentClick);
-            // 
-            // cb_NombreProd
-            // 
-            this.cb_NombreProd.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.cb_NombreProd.FormattingEnabled = true;
-            this.cb_NombreProd.Location = new System.Drawing.Point(144, 51);
-            this.cb_NombreProd.Name = "cb_NombreProd";
-            this.cb_NombreProd.Size = new System.Drawing.Size(163, 28);
-            this.cb_NombreProd.TabIndex = 11;
-            // 
-            // txt_CantidadTraslado
-            // 
-            this.txt_CantidadTraslado.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.txt_CantidadTraslado.Location = new System.Drawing.Point(528, 54);
-            this.txt_CantidadTraslado.Name = "txt_CantidadTraslado";
-            this.txt_CantidadTraslado.Size = new System.Drawing.Size(126, 26);
-            this.txt_CantidadTraslado.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.label4.Location = new System.Drawing.Point(340, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(160, 20);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Cantidad a Trasladar";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F);
-            this.label7.Location = new System.Drawing.Point(35, 54);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Producto";
             // 
             // groupBox1
             // 
@@ -266,19 +169,156 @@ namespace CapaVistaERP.Procesos
             this.label3.TabIndex = 1;
             this.label3.Text = "Sucursal Destino";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_eliminar);
+            this.groupBox2.Controls.Add(this.btn_agregar);
+            this.groupBox2.Controls.Add(this.btn_traslado);
+            this.groupBox2.Controls.Add(this.dgv_traslado);
+            this.groupBox2.Controls.Add(this.cb_NombreProd);
+            this.groupBox2.Controls.Add(this.txt_CantidadTraslado);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.groupBox2.Location = new System.Drawing.Point(18, 344);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(797, 305);
+            this.groupBox2.TabIndex = 67;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Producto a Trasladar";
+            // 
+            // btn_eliminar
+            // 
+            this.btn_eliminar.Location = new System.Drawing.Point(677, 170);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(96, 31);
+            this.btn_eliminar.TabIndex = 14;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click_1);
+            // 
+            // btn_agregar
+            // 
+            this.btn_agregar.Location = new System.Drawing.Point(677, 106);
+            this.btn_agregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(96, 31);
+            this.btn_agregar.TabIndex = 13;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click_1);
+            // 
+            // btn_traslado
+            // 
+            this.btn_traslado.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.btn_traslado.Location = new System.Drawing.Point(677, 231);
+            this.btn_traslado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_traslado.Name = "btn_traslado";
+            this.btn_traslado.Size = new System.Drawing.Size(96, 54);
+            this.btn_traslado.TabIndex = 60;
+            this.btn_traslado.Text = "Realizar Traslado";
+            this.btn_traslado.UseVisualStyleBackColor = true;
+            this.btn_traslado.Click += new System.EventHandler(this.btn_traslado_Click);
+            // 
+            // dgv_traslado
+            // 
+            this.dgv_traslado.AllowUserToAddRows = false;
+            this.dgv_traslado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_traslado.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgv_traslado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_traslado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id_Producto,
+            this.nombreProd,
+            this.cantTras,
+            this.IdOrigen,
+            this.IdDestino});
+            this.dgv_traslado.Location = new System.Drawing.Point(29, 106);
+            this.dgv_traslado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgv_traslado.Name = "dgv_traslado";
+            this.dgv_traslado.ReadOnly = true;
+            this.dgv_traslado.RowHeadersVisible = false;
+            this.dgv_traslado.RowHeadersWidth = 51;
+            this.dgv_traslado.RowTemplate.Height = 24;
+            this.dgv_traslado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_traslado.Size = new System.Drawing.Size(625, 180);
+            this.dgv_traslado.TabIndex = 12;
+            // 
+            // Id_Producto
+            // 
+            this.Id_Producto.HeaderText = "Id_Producto";
+            this.Id_Producto.MinimumWidth = 6;
+            this.Id_Producto.Name = "Id_Producto";
+            this.Id_Producto.ReadOnly = true;
+            // 
             // nombreProd
             // 
             this.nombreProd.HeaderText = "Nombre_Producto";
             this.nombreProd.MinimumWidth = 6;
             this.nombreProd.Name = "nombreProd";
-            this.nombreProd.Width = 125;
+            this.nombreProd.ReadOnly = true;
             // 
             // cantTras
             // 
             this.cantTras.HeaderText = "Cantidad_Traslado";
             this.cantTras.MinimumWidth = 6;
             this.cantTras.Name = "cantTras";
-            this.cantTras.Width = 125;
+            this.cantTras.ReadOnly = true;
+            // 
+            // IdOrigen
+            // 
+            this.IdOrigen.HeaderText = "Origen";
+            this.IdOrigen.MinimumWidth = 6;
+            this.IdOrigen.Name = "IdOrigen";
+            this.IdOrigen.ReadOnly = true;
+            // 
+            // IdDestino
+            // 
+            this.IdDestino.HeaderText = "Destino";
+            this.IdDestino.MinimumWidth = 6;
+            this.IdDestino.Name = "IdDestino";
+            this.IdDestino.ReadOnly = true;
+            // 
+            // cb_NombreProd
+            // 
+            this.cb_NombreProd.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.cb_NombreProd.FormattingEnabled = true;
+            this.cb_NombreProd.Location = new System.Drawing.Point(144, 50);
+            this.cb_NombreProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb_NombreProd.Name = "cb_NombreProd";
+            this.cb_NombreProd.Size = new System.Drawing.Size(163, 28);
+            this.cb_NombreProd.TabIndex = 11;
+            // 
+            // txt_CantidadTraslado
+            // 
+            this.txt_CantidadTraslado.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.txt_CantidadTraslado.Location = new System.Drawing.Point(528, 54);
+            this.txt_CantidadTraslado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_CantidadTraslado.Name = "txt_CantidadTraslado";
+            this.txt_CantidadTraslado.Size = new System.Drawing.Size(127, 26);
+            this.txt_CantidadTraslado.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label4.Location = new System.Drawing.Point(340, 50);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(160, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Cantidad a Trasladar";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F);
+            this.label7.Location = new System.Drawing.Point(35, 54);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Producto";
             // 
             // TrasladoDeProducto
             // 
@@ -289,23 +329,17 @@ namespace CapaVistaERP.Procesos
             this.Controls.Add(this.groupBox1);
             this.Name = "TrasladoDeProducto";
             this.Text = "TrasladoDeProducto";
+            this.Load += new System.EventHandler(this.TrasladoDeProducto_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_traslado)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btn_traslado;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cb_NombreProd;
-        private System.Windows.Forms.TextBox txt_CantidadTraslado;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txt_entregador;
         private System.Windows.Forms.Label label8;
@@ -317,10 +351,19 @@ namespace CapaVistaERP.Procesos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cb_destinoSucursal;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dgv_traslado;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Button btn_agregar;
+        private System.Windows.Forms.Button btn_traslado;
+        private System.Windows.Forms.DataGridView dgv_traslado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id_Producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreProd;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantTras;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdOrigen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdDestino;
+        private System.Windows.Forms.ComboBox cb_NombreProd;
+        private System.Windows.Forms.TextBox txt_CantidadTraslado;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label7;
     }
 }

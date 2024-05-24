@@ -26,20 +26,46 @@ namespace CapaVistaERP.Procesos
             TrasladoDeProducto.Show();
         }
 
-        public void ActualizarDGV()
+        public void ActualizarDGV(string tbl, int mode = 1)
         {
-            DataTable dt = cn.llenarTablas("tbl_trasladoprod");
-            dgv_trasladoProducto.DataSource = dt;
+            if (mode == 1)
+            {
+
+                DataTable dt = cn.llenarTablas(tbl);
+                dgv_trasladoProducto.DataSource = dt;
+            }
+            else
+            {
+                DataTable dt = TrasladoControlador.llenarExistencias();
+                dgv_trasladoProducto.DataSource = dt;
+            }
         }
 
         private void btn_refrescar_Click(object sender, EventArgs e)
         {
-            ActualizarDGV();
+            this.ActualizarDGV("tbl_trasladoprod", cb_modo.SelectedIndex);
         }
 
         private void btn_salir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cb_modo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.ActualizarDGV("tbl_trasladoprod", cb_modo.SelectedIndex);
+        }
+
+        private void btn_reporte_Click(object sender, EventArgs e)
+        {
+            //Reportes.frmReporteTrasladoDeProducto rpt = new Reportes.frmReporteTrasladoDeProducto();
+            //rpt.ShowDialog();
+        }
+
+        private void btn_ayudas_Click(object sender, EventArgs e)
+        {
+            string rutaAyuda = @"..\..\..\..\..\..\..\Ayuda\Modulos\Ayudas\AyudasByTech.chm";
+            Help.ShowHelp(this, rutaAyuda, "TrasladoDeProducto.html");
         }
     }
 }

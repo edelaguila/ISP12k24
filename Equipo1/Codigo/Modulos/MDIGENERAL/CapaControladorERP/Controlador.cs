@@ -856,6 +856,22 @@ namespace CapaControladorERP
         {
             sn.ActualizarExistenciasCompras(idProducto, cantidad);
         }
+
+        // Jimena Tóbías - Logística
+        public int getProductId(int index)
+        {
+            List<ProductoM> productos = new List<ProductoM>();
+            productos = sn.ObtenerProductos();
+            return productos[index].codigo;
+        }
+
+        // Jimena Tóbías - Logística
+        public int getSucursalId(int index)
+        {
+            List<Sucursal> sucursales = new List<Sucursal>();
+            sucursales = sn.ObtenerSucursales();
+            return Convert.ToInt32(sucursales[index].codigo);
+        }
     }
 }
  
