@@ -302,5 +302,11 @@ namespace Vista_PrototipoMenu
             CapaVista_SisB.Mantenimientos.frmTarjetas form = new CapaVista_SisB.Mantenimientos.frmTarjetas();
             this.openNewForm(form);
         }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmNotas form = new CapaVista_SisB.frmNotas();
+            this.openNewForm(form);
+        }
     }
 }
