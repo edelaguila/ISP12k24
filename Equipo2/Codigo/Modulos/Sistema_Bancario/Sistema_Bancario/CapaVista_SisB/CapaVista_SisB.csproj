@@ -142,6 +142,7 @@
     <Compile Include="frmTransferencia.Designer.cs">
       <DependentUpon>frmTransferencia.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper.cs" />
     <Compile Include="Mantenimientos\FrmCuentaAmiga.cs">
       <SubType>Form</SubType>
     </Compile>

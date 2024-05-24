@@ -146,7 +146,8 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
+            //Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
+            CapaVista_SisB.Helper.Open(this.currentForm);
         }
 
         private void button1_Click(object sender, EventArgs e)
