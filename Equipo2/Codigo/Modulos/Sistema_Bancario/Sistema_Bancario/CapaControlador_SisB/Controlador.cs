@@ -135,5 +135,15 @@ namespace CapaControlador_SisB
 
         }
 
-    }
+
+        public DataTable ObtenerCuentas()
+        {
+            return sentencias.ObtenerCuentas();
+        }
+
+        public static List<Innvoice> GetFactura(string accountNumber)
+        {
+            return InnvoiceSentences.getClientInnvoices(accountNumber);
+        }
+        }
 }
