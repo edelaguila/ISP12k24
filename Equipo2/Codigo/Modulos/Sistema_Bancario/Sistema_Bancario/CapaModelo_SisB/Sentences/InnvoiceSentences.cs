@@ -8,14 +8,14 @@ using System.Data.Odbc;
 
 namespace CapaModelo_SisB.Sentences
 {
-   
+
     public class InnvoiceSentences
     {
         public static Conexion conn = new Conexion();
-     
+
         public InnvoiceSentences()
         {
-            
+
 
         }
 
@@ -34,6 +34,13 @@ namespace CapaModelo_SisB.Sentences
                 invoices.Add(new Innvoice(reader.GetInt32(0), reader.GetDate(1), reader.GetString(2), reader.GetDecimal(3), reader.GetString(4), reader.GetString(5)));
             }
             return invoices;
+        }
+
+        public static void modifyInnvoice(int invoiceId, double monto, int estado)
+        {
+            string sql = "update tbl_factura set fac_monto='" + monto + "', fac_estado='" + estado + "' where fac_id='" + invoiceId + "'";
+            OdbcCommand cmd = new OdbcCommand(sql, conn.connection());
+            cmd.ExecuteNonQuery();
         }
 
 
