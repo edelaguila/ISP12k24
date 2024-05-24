@@ -129,13 +129,6 @@ D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\Me
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.CopyComplete
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.dll
 D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorControlador.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.dll.config
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorReporteria.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\sources\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_MG2.dll
@@ -656,20 +649,13 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equi
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\ModelLayer.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.dll
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_PrototipoMenu.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_SisB.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Navegador2.0.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador_SisB.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\NavegadorModelo.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVistaReporteria.dll.config
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo_SisB.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControladorReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\ModelLayer.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
-C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModeloReporteria.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\Vista_MenuHCV.csproj.AssemblyReference.cache
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\MenuHCV.Login.resources
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\obj\Debug\MenuHCV.Menup.resources
@@ -844,13 +830,6 @@ C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equi
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\itextsharp.xml
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
 C:\Users\olste\Desktop\OLIVER 2019\Tareas\Noveno Semestre\IS\Banco\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
-D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.dll
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\Vista_MenuHCV.pdb
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista_SisB.dll
@@ -914,3 +893,10 @@ C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\E
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\itextsharp.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\itextsharp.xml
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.dll
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaVista.dll.config
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaControlador.pdb
+D:\9NO_SEMESTRE\INGENIERIA DE SOFTWARE I\ISP12k24\Equipo2\Codigo\Modulos\Menu\MenuHCV\Capa_vista\bin\Debug\CapaModelo.pdb

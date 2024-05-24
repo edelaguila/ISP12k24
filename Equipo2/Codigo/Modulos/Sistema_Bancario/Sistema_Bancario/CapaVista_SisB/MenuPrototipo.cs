@@ -146,7 +146,8 @@ namespace Vista_PrototipoMenu
         //Método que muestra el formulario indicado
         private void btnayuda_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
+            //Help.ShowHelp(this, "Ayudas_Base/AyudaSistemaBancario.chm", "MDI_SistemaBancario.html");
+            CapaVista_SisB.Helper.Open(this.currentForm);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -300,6 +301,12 @@ namespace Vista_PrototipoMenu
         private void button7_Click(object sender, EventArgs e)
         {
             CapaVista_SisB.Mantenimientos.frmTarjetas form = new CapaVista_SisB.Mantenimientos.frmTarjetas();
+            this.openNewForm(form);
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            CapaVista_SisB.frmNotas form = new CapaVista_SisB.frmNotas();
             this.openNewForm(form);
         }
     }
