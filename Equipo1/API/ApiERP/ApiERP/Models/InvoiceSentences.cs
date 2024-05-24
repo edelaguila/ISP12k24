@@ -18,7 +18,7 @@ namespace ApiERP.Models
         public List<FacturaPorCobrar> getInvoicesByClient(string dpi)
         {
             List<FacturaPorCobrar> invoices = new List<FacturaPorCobrar>();
-            string sql = "SELECT NoFactura, total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago FROM tbl_facturaxcobrar inner join tbl_clientes on tbl_clientes.id_cliente = tbl_facturaxcobrar.tbl_clientes_id_cliente where tbl_clientes.dpi_cl = '" + dpi + "'";
+            string sql = "SELECT NoFactura, total_facxcob, tiempoPago_facxcob, estado_facxcob, tbl_Ventas_detalle_id_ventas_det, tbl_Clientes_id_cliente, fecha_factura, faltante_pago FROM tbl_facturaxcobrar inner join tbl_clientes on tbl_clientes.id_cliente = tbl_facturaxcobrar.tbl_clientes_id_cliente where tbl_clientes.id_cliente = '" + dpi + "'";
             OdbcCommand cmd = new OdbcCommand(sql, conn.connection());
             OdbcDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -41,5 +41,20 @@ namespace ApiERP.Models
             return invoices;
         }
 
+        public bool UpdateInvoiceStatus(int invoiceNumber, string newStatus)
+        {
+            string sql = "UPDATE tbl_facturaxcobrar SET estado_facxcob = ? WHERE NoFactura = ?";
+            using (OdbcCommand cmd = new OdbcCommand(sql, conn.connection()))
+            {
+                cmd.Parameters.AddWithValue("estado_facxcob", newStatus);
+                cmd.Parameters.AddWithValue("NoFactura", invoiceNumber);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                return rowsAffected > 0; // Devuelve true si se actualizó alguna fila, false si no
+            }
+
+        }
     }
 }
+
+        

@@ -252,13 +252,14 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.bitacoradispo_diaria());
             hideSubMenu();
+            cn.setBtitacora("8034", "Pro. Disponibilidad Diaria");
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
           Abrir(new Procesos.Cotizacion());
             hideSubMenu();
-            cn.setBtitacora("8014", "'Pro. Cotizacion de Ventas'");
+            cn.setBtitacora("8014", "Pro. Cotizacion de Ventas");
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -290,7 +291,7 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.frm_factura_cobrar());
             hideSubMenu();
-            cn.setBtitacora("8016", "'Pro. Facturas por Cobrar'");
+            cn.setBtitacora("8016", "Pro. Facturas por Cobrar");
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -354,12 +355,14 @@ namespace CapaVistaERP
         {
             Abrir(new Procesos.TipodeCambioApi2());
             hideSubMenu();
+            cn.setBtitacora("8035", "Pro. Tipo de Cambio");
         }
 
         private void button30_Click(object sender, EventArgs e)
         {
             Abrir(new Procesos.PagoFacturaxCobrar());
             hideSubMenu();
+            cn.setBtitacora("8036", "Pro.PagoFacturaxCobrar");
         }
 
         private void button34_Click(object sender, EventArgs e)

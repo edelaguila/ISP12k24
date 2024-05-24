@@ -16,14 +16,14 @@ namespace CapaVistaERP.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ReportesEstadodeCuenta : ReportClass {
+    public class ReporteDipoDiaria : ReportClass {
         
-        public ReportesEstadodeCuenta() {
+        public ReporteDipoDiaria() {
         }
         
         public override string ResourceName {
             get {
-                return "ReportesEstadodeCuenta.rpt";
+                return "ReporteDipoDiaria.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace CapaVistaERP.Reportes {
         
         public override string FullResourceName {
             get {
-                return "CapaVistaERP.Reportes.ReportesEstadodeCuenta.rpt";
+                return "CapaVistaERP.Reportes.ReporteDipoDiaria.rpt";
             }
             set {
                 // Do nothing
@@ -106,9 +106,9 @@ namespace CapaVistaERP.Reportes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedReportesEstadodeCuenta : Component, ICachedReport {
+    public class CachedReporteDipoDiaria : Component, ICachedReport {
         
-        public CachedReportesEstadodeCuenta() {
+        public CachedReporteDipoDiaria() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace CapaVistaERP.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ReportesEstadodeCuenta rpt = new ReportesEstadodeCuenta();
+            ReporteDipoDiaria rpt = new ReporteDipoDiaria();
             rpt.Site = this.Site;
             return rpt;
         }

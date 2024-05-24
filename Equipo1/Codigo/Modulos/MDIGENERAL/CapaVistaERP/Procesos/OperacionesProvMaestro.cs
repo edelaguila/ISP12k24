@@ -44,11 +44,14 @@ namespace CapaVistaERP.Procesos
 
         private void btn_reporte_Click(object sender, EventArgs e)
         {
-            Reportes.frm_estadodeCuenta estadocuenta = new Reportes.frm_estadodeCuenta();
-            estadocuenta.Show();
+            Reportes.frmReporteTodasLasFacturas todasLasFacturas = new Reportes.frmReporteTodasLasFacturas();
+            todasLasFacturas.Show();
 
-            Reportes.frm_reportePagoProv operacionesProv = new Reportes.frm_reportePagoProv();
-            operacionesProv.Show();
+            Reportes.ReportedeFacturasPagadas facturasPagadas = new Reportes.ReportedeFacturasPagadas();
+            facturasPagadas.Show();
+
+            Reportes.frmReportesFacturasNoPagadas facturasNoPagadas = new Reportes.frmReportesFacturasNoPagadas();
+            facturasNoPagadas.Show();
 
         }
 

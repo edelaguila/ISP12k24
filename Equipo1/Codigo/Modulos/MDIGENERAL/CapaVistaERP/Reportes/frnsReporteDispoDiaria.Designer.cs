@@ -1,7 +1,7 @@
 ﻿
 namespace CapaVistaERP.Reportes
 {
-    partial class frm_estadodeCuenta
+    partial class frnsReporteDispoDiaria
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,6 @@ namespace CapaVistaERP.Reportes
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReportesEstadodeCuenta1 = new CapaVistaERP.Reportes.ReportesEstadodeCuenta();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,18 +40,17 @@ namespace CapaVistaERP.Reportes
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.ReportesEstadodeCuenta1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(903, 502);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(816, 476);
             this.crystalReportViewer1.TabIndex = 0;
             // 
-            // frm_estadodeCuenta
+            // frnsReporteDispoDiaria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 502);
+            this.ClientSize = new System.Drawing.Size(816, 476);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "frm_estadodeCuenta";
-            this.Text = "frm_estadodeCuenta";
+            this.Name = "frnsReporteDispoDiaria";
+            this.Text = "frnsReporteDispoDiaria";
             this.ResumeLayout(false);
 
         }
@@ -60,6 +58,5 @@ namespace CapaVistaERP.Reportes
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private ReportesEstadodeCuenta ReportesEstadodeCuenta1;
     }
 }
