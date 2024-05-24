@@ -33,7 +33,7 @@ namespace CapaVista_SisB
             actualizardatagridView();
             cmb_cuentaDebito.SelectedIndex = -1;
 
-            txt_cuentaDebito.Clear();
+            
             txt_cuentaCredito.Clear();
             txt_valorTransferencia.Clear();
             txt_descripcionTransferencia.Clear();
@@ -105,7 +105,7 @@ namespace CapaVista_SisB
             {
                 cmb_cuentaDebito.SelectedIndex = -1;
 
-                txt_cuentaDebito.Clear();
+               
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
                 txt_descripcionTransferencia.Clear();
@@ -150,7 +150,7 @@ namespace CapaVista_SisB
                 // Limpiar los TextBox
                 cmb_cuentaDebito.SelectedIndex = -1;
 
-                txt_cuentaDebito.Clear();
+                
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
                 txt_descripcionTransferencia.Clear();
@@ -166,7 +166,7 @@ namespace CapaVista_SisB
                 // Limpiar los TextBox si el usuario elige "No"
                 cmb_cuentaDebito.SelectedIndex = -1;
 
-                txt_cuentaDebito.Clear();
+                
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
                 txt_descripcionTransferencia.Clear();
