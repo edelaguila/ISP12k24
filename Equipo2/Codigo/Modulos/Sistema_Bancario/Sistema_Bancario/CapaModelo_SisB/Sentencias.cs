@@ -205,13 +205,13 @@ namespace CapaModelo_SisB
                     {
                         try
                         {
-                            string insertQuery = "INSERT INTO tbl_movimientosBancarios ( movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?)";
+                            string insertQuery = "INSERT INTO tbl_movimientosBancarios ( movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, movban_num_cuentaCredito, movban_status, movban_fecha_de_ingreso) VALUES (?, ?, ?, ?, ?, ?)";
                             using (OdbcCommand cmd = new OdbcCommand(insertQuery, connection, transaction))
                             {
                                 cmd.Parameters.AddWithValue("@movban_valor_transaccion", valorMovimiento);
                                 cmd.Parameters.AddWithValue("@movban_descripcion_transaccion", descripcionMovimiento);
-                                cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_debito", numCuentaDeb);
-                                cmd.Parameters.AddWithValue("@fk_movban_num_cuenta_credito", numCuentaCred);
+                                cmd.Parameters.AddWithValue("@fk_num_cuentaDebito", numCuentaDeb);
+                                cmd.Parameters.AddWithValue("@movban_num_cuentaCredito", numCuentaCred);
                                 cmd.Parameters.AddWithValue("@movban_status", estado);
                                 cmd.Parameters.AddWithValue("@movban_fecha_de_ingreso", DateTime.Now);
 
@@ -237,7 +237,7 @@ namespace CapaModelo_SisB
             {
                 if (connection != null)
                 {
-                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, fk_num_cuentaCredito, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
+                    string sql = "SELECT pk_movban_id_transaccion, movban_valor_transaccion, movban_descripcion_transaccion, fk_num_cuentaDebito, movban_num_cuentaCredito, movban_status, movban_fecha_de_ingreso FROM  " + tabla + ";";
                     OdbcDataAdapter dataTable = new OdbcDataAdapter(sql, connection);
                     DataTable table = new DataTable();
                     dataTable.Fill(table);
@@ -409,38 +409,6 @@ namespace CapaModelo_SisB
             cmd.ExecuteNonQuery();
         }
 
-        public decimal ObtenerSaldoCuenta(int cuentaId)
-        {
-            using (OdbcConnection connection = this.con.connection())
-            {
-                if (connection != null)
-                {
-                    using (OdbcTransaction transaction = connection.BeginTransaction())
-                    {
-                        try
-                        {
-                            string query = "SELECT cue_saldo FROM tbl_cuenta WHERE cue_id = ?";
-                            using (OdbcCommand cmd = new OdbcCommand(query, connection, transaction))
-                            {
-                                cmd.Parameters.AddWithValue("?", cuentaId);
-                                decimal saldo = Convert.ToDecimal(cmd.ExecuteScalar());
-                                transaction.Commit();
-                                return saldo;
-                            }
-                        }
-                        catch
-                        {
-                            transaction.Rollback();
-                            throw;
-                        }
-                    }
-                }
-                else
-                {
-                    throw new Exception("No se pudo establecer la conexión con la base de datos.");
-                }
-            }
-        }
 
         public DataTable ObtenerCuentas()
         {

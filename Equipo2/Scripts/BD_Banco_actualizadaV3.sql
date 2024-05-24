@@ -15,6 +15,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+create  database bd_banco; 
+USE `bd_banco` ;
 --
 -- Table structure for table `tbl_aplicaciones`
 --
@@ -28,7 +30,7 @@ CREATE TABLE `tbl_aplicaciones` (
   `descripcion_aplicacion` varchar(150) NOT NULL,
   `estado_aplicacion` tinyint DEFAULT '0',
   PRIMARY KEY (`pk_id_aplicacion`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -142,7 +144,7 @@ CREATE TABLE `tbl_chequera` (
   PRIMARY KEY (`chqra_id`),
   KEY `chqra_cuenta` (`chqra_cuenta`),
   CONSTRAINT `tbl_chequera_ibfk_1` FOREIGN KEY (`chqra_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -170,7 +172,7 @@ CREATE TABLE `tbl_cheques` (
   PRIMARY KEY (`ch_id`),
   KEY `fk_cheque1_idx` (`ch_chequera`),
   CONSTRAINT `fk_cheque1` FOREIGN KEY (`ch_chequera`) REFERENCES `tbl_chequera` (`chqra_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -200,7 +202,7 @@ CREATE TABLE `tbl_cliente` (
   `cli_edad` int NOT NULL,
   `cli_nit` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`cli_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -237,7 +239,7 @@ CREATE TABLE `tbl_cuenta` (
   CONSTRAINT `tbl_cuenta_ibfk_2` FOREIGN KEY (`cue_tipo`) REFERENCES `tbl_tipo_cuenta` (`tcu_id`),
   CONSTRAINT `tbl_cuenta_ibfk_3` FOREIGN KEY (`cue_moneda`) REFERENCES `tbl_moneda` (`mon_id`),
   CONSTRAINT `tbl_cuenta_ibfk_4` FOREIGN KEY (`cue_usuario`) REFERENCES `tbl_usuarios` (`pk_id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,7 +268,7 @@ CREATE TABLE `tbl_cuentaamiga` (
   KEY `id_cuenta_amiga` (`id_cuenta_amiga`),
   CONSTRAINT `tbl_cuentaamiga_ibfk_1` FOREIGN KEY (`id_cuenta_principal`) REFERENCES `tbl_cuenta` (`cue_id`),
   CONSTRAINT `tbl_cuentaamiga_ibfk_2` FOREIGN KEY (`id_cuenta_amiga`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -291,7 +293,7 @@ CREATE TABLE `tbl_estados` (
   `est_info_estado` varchar(50) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
   `est_num_estado` int DEFAULT NULL,
   PRIMARY KEY (`pk_id_estado`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -319,7 +321,7 @@ CREATE TABLE `tbl_factura` (
   `fac_estado` int NOT NULL,
   `fac_servicio` varchar(50) NOT NULL,
   PRIMARY KEY (`fac_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -348,7 +350,7 @@ CREATE TABLE `tbl_historial_transacciones` (
   PRIMARY KEY (`htr_id`),
   KEY `htr_cuenta` (`htr_cuenta`),
   CONSTRAINT `tbl_historial_transacciones_ibfk_2` FOREIGN KEY (`htr_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -375,7 +377,7 @@ CREATE TABLE `tbl_mantenimientos_tipo_movimiento` (
   `movtm_valor_transaccion` int NOT NULL,
   PRIMARY KEY (`pk_movtm_id_transaccion`),
   UNIQUE KEY `movtm_transacciones_existentes` (`movtm_transacciones_existentes`)
-) ENGINE=InnoDB AUTO_INCREMENT=444334 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=444334 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -401,7 +403,7 @@ CREATE TABLE `tbl_modulos` (
   `descripcion_modulo` varchar(150) NOT NULL,
   `estado_modulo` tinyint DEFAULT '0',
   PRIMARY KEY (`pk_id_modulos`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -425,7 +427,7 @@ CREATE TABLE `tbl_moneda` (
   `mon_id` int NOT NULL AUTO_INCREMENT,
   `mon_nombre` varchar(40) NOT NULL,
   PRIMARY KEY (`mon_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -450,14 +452,12 @@ CREATE TABLE `tbl_movimientosbancarios` (
   `movban_valor_transaccion` float NOT NULL,
   `movban_descripcion_transaccion` varchar(100) DEFAULT NULL,
   `fk_num_cuentaDebito` int DEFAULT NULL,
-  `fk_num_cuentaCredito` int DEFAULT NULL,
+  `movban_num_cuentaCredito` int DEFAULT NULL,
   `movban_status` int DEFAULT NULL,
   `movban_fecha_de_ingreso` datetime DEFAULT NULL,
   PRIMARY KEY (`pk_movban_id_transaccion`),
   KEY `fk_num_cuentaDebito` (`fk_num_cuentaDebito`),
-  KEY `fk_num_cuentaCredito` (`fk_num_cuentaCredito`),
-  CONSTRAINT `tbl_movimientosbancarios_ibfk_1` FOREIGN KEY (`fk_num_cuentaDebito`) REFERENCES `tbl_cuenta` (`cue_id`),
-  CONSTRAINT `tbl_movimientosbancarios_ibfk_2` FOREIGN KEY (`fk_num_cuentaCredito`) REFERENCES `tbl_cuenta` (`cue_id`)
+  CONSTRAINT `tbl_movimientosbancarios_ibfk_1` FOREIGN KEY (`fk_num_cuentaDebito`) REFERENCES `tbl_cuenta` (`cue_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -486,7 +486,7 @@ CREATE TABLE `tbl_pago_servicio` (
   PRIMARY KEY (`psrv_id`),
   KEY `psrv_servicio` (`psrv_servicio`),
   CONSTRAINT `tbl_pago_servicio_ibfk_1` FOREIGN KEY (`psrv_servicio`) REFERENCES `tbl_servicio` (`srv_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -511,7 +511,7 @@ CREATE TABLE `tbl_perfiles` (
   `descripcion_perfil` varchar(150) NOT NULL,
   `estado_perfil` tinyint DEFAULT '0',
   PRIMARY KEY (`pk_id_perfil`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -633,7 +633,7 @@ CREATE TABLE `tbl_servicio` (
   PRIMARY KEY (`srv_id`),
   KEY `srv_cuenta` (`srv_cuenta`),
   CONSTRAINT `tbl_servicio_ibfk_1` FOREIGN KEY (`srv_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -663,7 +663,7 @@ CREATE TABLE `tbl_tarjeta_credito` (
   PRIMARY KEY (`tarc_id`),
   KEY `tarc_cliente` (`tarc_cliente`),
   CONSTRAINT `tbl_tarjeta_credito_ibfk_1` FOREIGN KEY (`tarc_cliente`) REFERENCES `tbl_cliente` (`cli_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -692,7 +692,7 @@ CREATE TABLE `tbl_tarjeta_debito` (
   PRIMARY KEY (`tard_id`),
   KEY `tard_cuenta` (`tard_cuenta`),
   CONSTRAINT `tbl_tarjeta_debito_ibfk_1` FOREIGN KEY (`tard_cuenta`) REFERENCES `tbl_cuenta` (`cue_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -716,7 +716,7 @@ CREATE TABLE `tbl_tipo_cuenta` (
   `tcu_id` int NOT NULL AUTO_INCREMENT,
   `tcu_nombre` varchar(30) NOT NULL,
   PRIMARY KEY (`tcu_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -741,7 +741,7 @@ CREATE TABLE `tbl_tipo_transaccion` (
   `ttr_nombre` varchar(50) NOT NULL,
   `ttr_operacion` int NOT NULL,
   PRIMARY KEY (`ttr_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -771,7 +771,7 @@ CREATE TABLE `tbl_usuarios` (
   `pregunta` varchar(50) NOT NULL,
   `respuesta` varchar(50) NOT NULL,
   PRIMARY KEY (`pk_id_usuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 CHARACTER SET = utf8 collate = utf8_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -864,7 +864,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `vista_aplicacion_perfil` AS select `b`.`fk_id_perfil` AS `ID`,`a`.`nombre_perfil` AS `Perfil`,`b`.`fk_id_aplicacion` AS `Aplicacion`,`b`.`guardar_permiso` AS `Insertar`,`b`.`modificar_permiso` AS `Modificar`,`b`.`eliminar_permiso` AS `Eliminar`,`b`.`buscar_permiso` AS `Buscar`,`b`.`imprimir_permiso` AS `Reporte` from (`tbl_permisosaplicacionperfil` `b` join `tbl_perfiles` `a` on((`a`.`pk_id_perfil` = `b`.`fk_id_perfil`))) */;
@@ -882,7 +882,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `vista_aplicacionusuario` AS select `b`.`fk_id_aplicacion` AS `Aplicacion`,`b`.`fk_id_usuario` AS `ID`,`a`.`nombre_usuario` AS `Usuario`,`b`.`guardar_permiso` AS `Insertar`,`b`.`modificar_permiso` AS `Editar`,`b`.`eliminar_permiso` AS `Eliminar`,`b`.`buscar_permiso` AS `Buscar`,`b`.`imprimir_permiso` AS `Reporte` from (`tbl_permisosaplicacionesusuario` `b` join `tbl_usuarios` `a` on((`a`.`pk_id_usuario` = `b`.`fk_id_usuario`))) */;
@@ -900,7 +900,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `vista_modulo_aplicacion` AS select `b`.`fk_id_modulos` AS `ID`,`a`.`nombre_modulo` AS `Modulo`,`b`.`fk_id_aplicacion` AS `Aplicacion`,`c`.`nombre_aplicacion` AS `Nombre`,`c`.`descripcion_aplicacion` AS `Descripcion` from ((`tbl_asignacionmoduloaplicacion` `b` join `tbl_modulos` `a` on((`a`.`pk_id_modulos` = `b`.`fk_id_modulos`))) join `tbl_aplicaciones` `c` on((`c`.`pk_id_aplicacion` = `b`.`fk_id_aplicacion`))) */;
@@ -918,7 +918,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `vista_perfil_usuario` AS select `b`.`fk_id_usuario` AS `ID`,`a`.`nombre_usuario` AS `Usuario`,`a`.`username_usuario` AS `nickName`,`b`.`fk_id_perfil` AS `perfil`,`c`.`nombre_perfil` AS `Nombre` from ((`tbl_asignacionesperfilsusuario` `b` join `tbl_usuarios` `a` on((`a`.`pk_id_usuario` = `b`.`fk_id_usuario`))) join `tbl_perfiles` `c` on((`c`.`pk_id_perfil` = `b`.`fk_id_perfil`))) */;

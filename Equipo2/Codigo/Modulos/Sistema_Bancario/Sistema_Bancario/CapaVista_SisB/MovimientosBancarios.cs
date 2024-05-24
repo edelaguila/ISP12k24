@@ -22,13 +22,17 @@ namespace CapaVista_SisB
         public List<Cuenta> cuentas;
 
 
+
         public MovimientosBancarios()
         {
             InitializeComponent();
-            CargarCuentasEnCombobox();
+            this.ctrl = new CapaControlador_SisB.AccountControler();
+            accId = Convert.ToInt32(Seguridad_Controlador.Controlador.GetHash(Seguridad_Controlador.Controlador.idUser));
+            cuentas = this.ctrl.getAccountsFromUser(accId);
+            fillCombo(cuentas, cmb_cuentaDebito);
             actualizardatagridView();
             cmb_cuentaDebito.SelectedIndex = -1;
-            cmb_cuentaCredito.SelectedIndex = -1;
+
             txt_cuentaDebito.Clear();
             txt_cuentaCredito.Clear();
             txt_valorTransferencia.Clear();
@@ -44,10 +48,9 @@ namespace CapaVista_SisB
             dgv_vistaTransacciones.Columns[6].HeaderText = "Fecha de ingreso";
 
             cmb_cuentaDebito.SelectedIndexChanged += cmb_cuentaDebito_SelectedIndexChanged;
-            cmb_cuentaCredito.SelectedIndexChanged += cmb_cuentaCredito_SelectedIndexChanged;
 
-        }
 
+    }
         private void CargarCuentasEnCombobox()
         {
             DataTable dtCuentas = cn.ObtenerCuentas();
@@ -55,9 +58,15 @@ namespace CapaVista_SisB
             cmb_cuentaDebito.DisplayMember = "cue_numero";
             cmb_cuentaDebito.ValueMember = "cue_id";
 
-            cmb_cuentaCredito.DataSource = dtCuentas.Copy(); // Crear una copia para evitar conflictos con el mismo DataSource
-            cmb_cuentaCredito.DisplayMember = "cue_numero";
-            cmb_cuentaCredito.ValueMember = "cue_id";
+        }
+
+        public void fillCombo(List<Cuenta> _cuentas, ComboBox cmb)
+        {
+            foreach (Cuenta cuenta in _cuentas)
+            {
+                cmb.Items.Add(cuenta.nombre + "--" + cuenta.numero);
+            }
+
         }
         public void actualizardatagridView()
         {
@@ -90,14 +99,12 @@ namespace CapaVista_SisB
         {
 
 
-
-
             DialogResult result = MessageBox.Show("¿Desea cancelar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (result == DialogResult.Yes)
             {
                 cmb_cuentaDebito.SelectedIndex = -1;
-                cmb_cuentaCredito.SelectedIndex = -1;
+
                 txt_cuentaDebito.Clear();
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
@@ -116,28 +123,8 @@ namespace CapaVista_SisB
         private void btn_rtrans_Click(object sender, EventArgs e)
         {
 
-            if (!decimal.TryParse(txt_valorTransferencia.Text, out decimal valorTransferencia))
-            {
-                MessageBox.Show("El valor de la transferencia no es válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (!int.TryParse(txt_cuentaDebito.Text, out int cuentaDebitoId) || !int.TryParse(txt_cuentaCredito.Text, out int cuentaCreditoId))
-            {
-                MessageBox.Show("Las cuentas seleccionadas no son válidas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            decimal saldoCuentaDebito = cn.ObtenerSaldoCuenta(cuentaDebitoId);
-
-            if (saldoCuentaDebito < valorTransferencia)
-            {
-                MessageBox.Show("Saldo insuficiente en la cuenta a debitar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
             string estado = "1";
-            DialogResult result = MessageBox.Show("¿Desea guardar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //OTTO ADRIAN LOPEZ VENTURA 0901-20-1069 
+            DialogResult result = MessageBox.Show("¿Desea guardar la transacción?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question); 
 
             if (result == DialogResult.Yes)
             {
@@ -154,7 +141,7 @@ namespace CapaVista_SisB
                 }
                 //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                 // Llamar al Controlador para insertar el movimiento en la base de datos
-                cn.InsertarMovimiento(txt_valorTransferencia.Text, txt_descripcionTransferencia.Text, txt_cuentaDebito.Text, txt_cuentaCredito.Text, estado);
+                cn.InsertarMovimiento(txt_valorTransferencia.Text, txt_descripcionTransferencia.Text, cuentas[cmb_cuentaDebito.SelectedIndex].id.ToString(), txt_cuentaCredito.Text, estado);
 
 
                 // Actualizar el DataGridView con los datos actualizados
@@ -162,7 +149,7 @@ namespace CapaVista_SisB
 
                 // Limpiar los TextBox
                 cmb_cuentaDebito.SelectedIndex = -1;
-                cmb_cuentaCredito.SelectedIndex = -1;
+
                 txt_cuentaDebito.Clear();
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
@@ -178,7 +165,7 @@ namespace CapaVista_SisB
                 //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                 // Limpiar los TextBox si el usuario elige "No"
                 cmb_cuentaDebito.SelectedIndex = -1;
-                cmb_cuentaCredito.SelectedIndex = -1;
+
                 txt_cuentaDebito.Clear();
                 txt_cuentaCredito.Clear();
                 txt_valorTransferencia.Clear();
@@ -192,18 +179,12 @@ namespace CapaVista_SisB
 
         private void cmb_cuentaDebito_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_cuentaDebito.SelectedValue != null)
-            {
-                txt_cuentaDebito.Text = cmb_cuentaDebito.SelectedValue.ToString();
-            }
+            int index = cmb_cuentaDebito.SelectedIndex;
         }
 
         private void cmb_cuentaCredito_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmb_cuentaCredito.SelectedValue != null)
-            {
-                txt_cuentaCredito.Text = cmb_cuentaCredito.SelectedValue.ToString();
-            }
+
         }
     }
 }
