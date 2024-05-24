@@ -29,45 +29,25 @@ namespace CapaVistaERP.Reportes
         /// </summary>
         private void InitializeComponent()
         {
-            this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.Reportetipocambio1 = new CapaVistaERP.Reportes.Reportetipocambio();
-            this.crystalReportViewer2 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.ReporteTIpoCambioAPi1 = new CapaVistaERP.Reportes.ReporteTIpoCambioAPi();
+            this.crystalReportViewer3 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.SuspendLayout();
             // 
-            // crystalReportViewer1
+            // crystalReportViewer3
             // 
-            this.crystalReportViewer1.ActiveViewIndex = 0;
-            this.crystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.Reportetipocambio1;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(929, 675);
-            this.crystalReportViewer1.TabIndex = 0;
-            // 
-            // crystalReportViewer2
-            // 
-            this.crystalReportViewer2.ActiveViewIndex = 0;
-            this.crystalReportViewer2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.crystalReportViewer2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.crystalReportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.crystalReportViewer2.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer2.Name = "crystalReportViewer2";
-            this.crystalReportViewer2.ReportSource = this.ReporteTIpoCambioAPi1;
-            this.crystalReportViewer2.Size = new System.Drawing.Size(929, 675);
-            this.crystalReportViewer2.TabIndex = 1;
+            this.crystalReportViewer3.ActiveViewIndex = -1;
+            this.crystalReportViewer3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.crystalReportViewer3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.crystalReportViewer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.crystalReportViewer3.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer3.Name = "crystalReportViewer3";
+            this.crystalReportViewer3.Size = new System.Drawing.Size(931, 581);
+            this.crystalReportViewer3.TabIndex = 0;
             // 
             // frmReporteTipoCambio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 675);
-            this.Controls.Add(this.crystalReportViewer2);
-            this.Controls.Add(this.crystalReportViewer1);
+            this.ClientSize = new System.Drawing.Size(931, 581);
+            this.Controls.Add(this.crystalReportViewer3);
             this.Name = "frmReporteTipoCambio";
-            this.Text = "frmReporteTipoCambio";
             this.ResumeLayout(false);
 
         }
@@ -78,5 +58,6 @@ namespace CapaVistaERP.Reportes
         private Reportetipocambio Reportetipocambio1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer2;
         private ReporteTIpoCambioAPi ReporteTIpoCambioAPi1;
+        private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer3;
     }
 }

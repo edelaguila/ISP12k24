@@ -16,9 +16,9 @@ using CrystalDecisions.Windows.Forms;
 
 namespace CapaVistaERP.Reportes
 {
-    public partial class frmReporteTipoCambio : Form
+    public partial class frnsReporteDispoDiaria : Form
     {
-        public frmReporteTipoCambio()
+        public frnsReporteDispoDiaria()
         {
             InitializeComponent();
             CargarReporte();
@@ -45,7 +45,7 @@ namespace CapaVistaERP.Reportes
                 }
 
                 // PASO 3: Construir la ruta del archivo y verificar su existencia
-                string reportPath = Path.Combine(directoryInfo.FullName, "Reportes", "Modulos", "Bancos", "ReporteTIpoCambioAPi.rpt");
+                string reportPath = Path.Combine(directoryInfo.FullName, "Reportes", "Modulos", "Bancos", "ReporteDipoDiaria.rpt");
 
                 if (File.Exists(reportPath))
                 {
@@ -56,8 +56,8 @@ namespace CapaVistaERP.Reportes
                     reportDocument.Load(reportPath);
 
                     // Establecer el reporte en el CrystalReportViewer
-                    crystalReportViewer3.ReportSource = reportDocument;
-                    crystalReportViewer3.Refresh();
+                    crystalReportViewer1.ReportSource = reportDocument;
+                    crystalReportViewer1.Refresh();
                 }
                 else
                 {
@@ -71,4 +71,4 @@ namespace CapaVistaERP.Reportes
 
         }
     }
-} 
+}
