@@ -27,7 +27,7 @@ namespace CapaVista_SisB
             invoices = Controlador.GetFactura(accountNumber);
             foreach (Innvoice inv in invoices)
             {
-                this.cmb_facturas.Items.Add(inv.Id);
+                this.cmb_facturas.Items.Add(inv.Id + "--" + inv.FacServicio);
             }
         }
 
@@ -50,18 +50,67 @@ namespace CapaVista_SisB
             ch_credito.Checked = false;
         }
 
+        public void creditMethod(string number)
+        {
+            double monto = Convert.ToDouble(txt_descuento.Text);
+            if (monto > Convert.ToDouble(this.invoices[cmb_facturas.SelectedIndex].FacMonto))
+            {
+                MessageBox.Show("No puede acreditar un monto mayor al de la factura");
+                return;
+            }
+            TransactionController.makeTransaction(number, monto, -1);
+            InvoiceController.creditarFactura(this.invoices[cmb_facturas.SelectedIndex], monto);
+            MessageBox.Show("Accion realizada");
+        }
+
+        public void debitMethod(string number)
+        {
+            double monto = Convert.ToDouble(txt_aumento.Text);
+            TransactionController.makeTransaction(number, monto, -1);
+            InvoiceController.debitarFactura(this.invoices[cmb_facturas.SelectedIndex], monto);
+            MessageBox.Show("Accion realizada");
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string accountNumber = txt_Cuenta.Text;
-            double monto = ch_debito.Checked ? Convert.ToDouble(txt_descuento.Text) : Convert.ToDouble(txt_aumento.Text);
-            TransactionController.makeTransaction(accountNumber, monto, -1);
-            MessageBox.Show("Accion realizada");
+            string number = txt_Cuenta.Text;
+            if (ch_debito.CheckState == CheckState.Checked) this.debitMethod(number);
+            if (ch_credito.CheckState == CheckState.Checked) this.creditMethod(number);
+            int index = cmb_facturas.SelectedIndex;
+            this.fillCombo();
+            cmb_facturas.SelectedIndex = index;
+            lbl_monto.Text = "Q." + this.invoices[cmb_facturas.SelectedIndex].FacMonto.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             string monto = ch_credito.Checked ? txt_aumento.Text : "-" + txt_descuento.Text;
-            DocumentController.makeTransactionDocument(txt_Cuenta.Text, monto);  
+            DocumentController.makeTransactionDocument(txt_Cuenta.Text, monto);
+        }
+
+        private void cmb_facturas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lbl_monto.Text = "Q." + this.invoices[cmb_facturas.SelectedIndex].FacMonto.ToString();
+        }
+
+        private void txt_descuento_Click(object sender, EventArgs e)
+        {
+            txt_descuento.Text = "";
+        }
+
+        private void txt_aumento_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
+
+        private void txt_aumento_Click(object sender, EventArgs e)
+        {
+            txt_aumento.Text = "";
+        }
+
+        private void txt_Cuenta_Click(object sender, EventArgs e)
+        {
+            txt_Cuenta.Text = "";
         }
     }
 }

@@ -41,16 +41,17 @@ namespace CapaVista_SisB
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupB_debito = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txt_aumento = new System.Windows.Forms.TextBox();
             this.groupB_credito = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.txt_descuento = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.lbl_monto = new System.Windows.Forms.Label();
             this.pnl_titulo.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupB_debito.SuspendLayout();
@@ -84,6 +85,7 @@ namespace CapaVista_SisB
             this.txt_Cuenta.TabIndex = 93;
             this.txt_Cuenta.Tag = "Cantidad_a_retirar";
             this.txt_Cuenta.Text = "10000";
+            this.txt_Cuenta.Click += new System.EventHandler(this.txt_Cuenta_Click);
             // 
             // cmb_facturas
             // 
@@ -92,6 +94,7 @@ namespace CapaVista_SisB
             this.cmb_facturas.Name = "cmb_facturas";
             this.cmb_facturas.Size = new System.Drawing.Size(174, 21);
             this.cmb_facturas.TabIndex = 92;
+            this.cmb_facturas.SelectedIndexChanged += new System.EventHandler(this.cmb_facturas_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -204,6 +207,36 @@ namespace CapaVista_SisB
             this.panel2.Size = new System.Drawing.Size(368, 402);
             this.panel2.TabIndex = 88;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SlateGray;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button1.Location = new System.Drawing.Point(117, 285);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 28);
+            this.button1.TabIndex = 77;
+            this.button1.Text = "Realizar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SlateGray;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.button2.Location = new System.Drawing.Point(117, 319);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 28);
+            this.button2.TabIndex = 78;
+            this.button2.Text = "Imprimir";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // groupB_debito
             // 
             this.groupB_debito.Controls.Add(this.label7);
@@ -240,6 +273,8 @@ namespace CapaVista_SisB
             this.txt_aumento.TabIndex = 60;
             this.txt_aumento.Tag = "Cantidad_a_retirar";
             this.txt_aumento.Text = "10000";
+            this.txt_aumento.Click += new System.EventHandler(this.txt_aumento_Click);
+            this.txt_aumento.ChangeUICues += new System.Windows.Forms.UICuesEventHandler(this.txt_aumento_ChangeUICues);
             // 
             // groupB_credito
             // 
@@ -253,36 +288,6 @@ namespace CapaVista_SisB
             this.groupB_credito.TabStop = false;
             this.groupB_credito.Text = "Crédito";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SlateGray;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(117, 319);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 28);
-            this.button2.TabIndex = 78;
-            this.button2.Text = "Imprimir";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.SlateGray;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(117, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 28);
-            this.button1.TabIndex = 77;
-            this.button1.Text = "Realizar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // txt_descuento
             // 
             this.txt_descuento.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -295,6 +300,7 @@ namespace CapaVista_SisB
             this.txt_descuento.TabIndex = 75;
             this.txt_descuento.Tag = "Cantidad_a_retirar";
             this.txt_descuento.Text = "10000";
+            this.txt_descuento.Click += new System.EventHandler(this.txt_descuento_Click);
             // 
             // label8
             // 
@@ -329,12 +335,24 @@ namespace CapaVista_SisB
             this.label5.TabIndex = 2;
             this.label5.Text = "Selección Cliente";
             // 
+            // lbl_monto
+            // 
+            this.lbl_monto.AutoSize = true;
+            this.lbl_monto.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_monto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_monto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(41)))), ((int)(((byte)(57)))));
+            this.lbl_monto.Location = new System.Drawing.Point(152, 411);
+            this.lbl_monto.Name = "lbl_monto";
+            this.lbl_monto.Size = new System.Drawing.Size(0, 13);
+            this.lbl_monto.TabIndex = 95;
+            // 
             // frmNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(228)))), ((int)(((byte)(242)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_monto);
             this.Controls.Add(this.btn_buscar);
             this.Controls.Add(this.txt_Cuenta);
             this.Controls.Add(this.cmb_facturas);
@@ -381,5 +399,6 @@ namespace CapaVista_SisB
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_monto;
     }
 }
