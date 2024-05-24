@@ -462,19 +462,11 @@ C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP1
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\stdole.dll
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Vista_MenuHCV.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Vista_PrototipoMenu.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVista_SisB.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorControlador.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\Navegador2.0.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControlador_SisB.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\NavegadorModelo.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaVistaReporteria.dll.config
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ControllerLayer.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModelo_SisB.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaControladorReporteria.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\ModelLayer.pdb
-C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\CapaModeloReporteria.pdb
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.AssemblyReference.cache
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.Properties.Resources.resources
 C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.GenerateResource.cache
@@ -914,3 +906,6 @@ C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\E
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.csproj.CopyComplete
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.exe
 C:\Users\rayju\OneDrive\Escritorio\Actualización de Sistema Bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\obj\Debug\Ejecucion.pdb
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\itextsharp.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Luis\Desktop\9no Semestre\Ingeniería de software\Sistema_bancario\ISP12k24\Equipo2\Codigo\Modulos\Menu\Ejecucion\Ejecucion\bin\Debug\itextsharp.xml

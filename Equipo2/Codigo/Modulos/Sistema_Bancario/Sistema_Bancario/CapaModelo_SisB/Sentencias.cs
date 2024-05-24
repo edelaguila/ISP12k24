@@ -408,5 +408,74 @@ namespace CapaModelo_SisB
             OdbcCommand cmd = new OdbcCommand(sql, this.con.connection());
             cmd.ExecuteNonQuery();
         }
+
+        public decimal ObtenerSaldoCuenta(int cuentaId)
+        {
+            using (OdbcConnection connection = this.con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string query = "SELECT cue_saldo FROM tbl_cuenta WHERE cue_id = ?";
+                            using (OdbcCommand cmd = new OdbcCommand(query, connection, transaction))
+                            {
+                                cmd.Parameters.AddWithValue("?", cuentaId);
+                                decimal saldo = Convert.ToDecimal(cmd.ExecuteScalar());
+                                transaction.Commit();
+                                return saldo;
+                            }
+                        }
+                        catch
+                        {
+                            transaction.Rollback();
+                            throw;
+                        }
+                    }
+                }
+                else
+                {
+                    throw new Exception("No se pudo establecer la conexión con la base de datos.");
+                }
+            }
+        }
+
+        public DataTable ObtenerCuentas()
+        {
+            using (OdbcConnection connection = this.con.connection())
+            {
+                if (connection != null)
+                {
+                    using (OdbcTransaction transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            string query = "SELECT cue_id, cue_numero FROM tbl_cuenta";
+                            using (OdbcCommand cmd = new OdbcCommand(query, connection, transaction))
+                            {
+                                OdbcDataAdapter da = new OdbcDataAdapter(cmd);
+                                DataTable dt = new DataTable();
+                                da.Fill(dt);
+                                transaction.Commit();
+                                return dt;
+                            }
+                        }
+                        catch
+                        {
+                            transaction.Rollback();
+                            throw;
+                        }
+                    }
+                }
+                else
+                {
+                    throw new Exception("No se pudo establecer la conexión con la base de datos.");
+                }
+            }
+        }
+
+
     }
 }
