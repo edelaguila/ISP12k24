@@ -8,14 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaControlador_SisB;
+using CapaModelo_SisB.Templates;
 
 namespace CapaVista_SisB
 {
     public partial class MovimientosBancarios : Form
     {
-         Controlador cn = new Controlador();
+        CapaControlador_SisB.AccountControler ctrl;
+        public int accId;
+        Controlador cn = new Controlador();
          Controlador con = new Controlador();
         string mov = "tbl_movimientosBancarios";
+        public List<Cuenta> cuentas;
+
+
         public MovimientosBancarios()
         {
             InitializeComponent();
@@ -39,6 +45,7 @@ namespace CapaVista_SisB
 
             cmb_cuentaDebito.SelectedIndexChanged += cmb_cuentaDebito_SelectedIndexChanged;
             cmb_cuentaCredito.SelectedIndexChanged += cmb_cuentaCredito_SelectedIndexChanged;
+
         }
 
         private void CargarCuentasEnCombobox()
@@ -134,9 +141,21 @@ namespace CapaVista_SisB
 
             if (result == DialogResult.Yes)
             {
+                double monto = Convert.ToDouble(txt_valorTransferencia.Text);
+                bool canPay = TransactionController.accountCanPay(cuentas[cmb_cuentaDebito.SelectedIndex].id, monto);
+                if (canPay)
+                {
+                    TransactionController.makeTransaction(cuentas[cmb_cuentaDebito.SelectedIndex].numero, monto, -1);
+                    MessageBox.Show("Transaccion Realizada con Exito");
+                }
+                else
+                {
+                    MessageBox.Show("Saldo insuficiente para la transaccion");
+                }
                 //LUIS ALBERTO FRANCO MORAN 0901-20-23979
                 // Llamar al Controlador para insertar el movimiento en la base de datos
                 cn.InsertarMovimiento(txt_valorTransferencia.Text, txt_descripcionTransferencia.Text, txt_cuentaDebito.Text, txt_cuentaCredito.Text, estado);
+
 
                 // Actualizar el DataGridView con los datos actualizados
                 actualizardatagridView();
