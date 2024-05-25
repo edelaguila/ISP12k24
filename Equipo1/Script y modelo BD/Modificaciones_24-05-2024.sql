@@ -92,3 +92,31 @@ CREATE TABLE `tbl_reportes` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 UPDATE `bd_erp`.`tbl_aplicaciones` SET `nombre_aplicacion` = 'Pro. Operaciones Proveedores' WHERE (`pk_id_aplicacion` = '8013');
+
+
+--
+-- Cambios tbl_trasladoprod
+--
+ALTER TABLE bd_erp.tbl_trasladoprod 
+DROP FOREIGN KEY fk_tbl_trasladoprod_tbl_Producto1;
+
+ALTER TABLE bd_erp.tbl_trasladoprod 
+ADD COLUMN tbl_sucursales_id_sucursal_destino INT NULL AFTER tbl_sucursales_id_sucursal_origen,
+CHANGE COLUMN tbl_sucursales_id_sucursal tbl_sucursales_id_sucursal_origen INT NOT NULL ,
+ADD INDEX fk_tbl_sucursal2_idx (tbl_sucursales_id_sucursal_destino ASC);
+;
+
+ALTER TABLE bd_erp.tbl_trasladoprod 
+ADD CONSTRAINT fk_tbl_trasladoprod_tbl_Producto1
+  FOREIGN KEY (tbl_sucursales_id_sucursal_origen)
+  REFERENCES bd_erp.tbl_sucursales (id_sucursal),
+ADD CONSTRAINT fk_tbl_sucursal_1
+  FOREIGN KEY (tbl_sucursales_id_sucursal_origen)
+  REFERENCES bd_erp.tbl_sucursales (id_sucursal)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT fk_tbl_sucursal2
+  FOREIGN KEY (tbl_sucursales_id_sucursal_destino)
+  REFERENCES bd_erp.tbl_sucursales (id_sucursal)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
