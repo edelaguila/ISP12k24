@@ -1,0 +1,5734 @@
+commit 8e046e506895c138a3be1df348c56345943e02a2
+Merge: c96afa29 073e40cf
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 18:45:26 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit c96afa29243bbdfbc3eac7dcd359e9de7e776ce4
+Merge: 8d2156cc d7c410e3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 18:05:26 2024 -0600
+
+    Merge pull request #222 from DACR-DC/main
+    
+    Base actualizada
+
+commit d7c410e38014fe0942a0dc50d826311dcf3325c9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 24 18:05:01 2024 -0600
+
+    Base actualizada
+
+commit 8d2156cc2098dfae408bfc2734daee0d7124e6a0
+Merge: 60b87620 0149b5ea
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 18:02:25 2024 -0600
+
+    Merge pull request #221 from JimenaTobias/main
+    
+    Cambios base de datos
+
+commit 0149b5eaef015e41c9de8ee661487a2ae054c1b2
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Fri May 24 18:00:34 2024 -0600
+
+    Cambios base de datos
+
+commit 60b876200a7d6a7095df57fdb40e96e8464eac0b
+Merge: 25377377 39b028ac
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 17:50:08 2024 -0600
+
+    Merge pull request #220 from JimenaTobias/main
+    
+    Proceso de Logística Completado
+
+commit 39b028acf2df0c74d9ef01a6f8155b0bac614f89
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Fri May 24 17:46:32 2024 -0600
+
+    Proceso de Logística Completado
+
+commit 25377377c812cb65c976e684f5d9b663a68a66d5
+Merge: 6a203151 c1020b8a
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 17:03:11 2024 -0600
+
+    Merge pull request #219 from carlosEnriqueGC/revert-218-instalador
+    
+    Revert "se ha generado el instalador"
+
+commit c1020b8a08d08fb2220f1f4d5b47fb2ed42bf058
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 17:02:23 2024 -0600
+
+    Revert "se ha generado el instalador"
+
+commit 6a203151bd93b0ba0e90fda6b0c18eb05168fe17
+Merge: ef32a002 b7edc94e
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 24 11:40:00 2024 -0600
+
+    Merge pull request #218 from carlosEnriqueGC/instalador
+    
+    se ha generado el instalador
+
+commit b7edc94e33510cf38917b88327eccde9a9afb2dc
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri May 24 11:39:21 2024 -0600
+
+    se ha generado el instalador
+
+commit 073e40cff7b0b53d4845c7a24e7889c0290af6ba
+Merge: ef32a002 7b27da78
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 24 10:13:38 2024 -0600
+
+    Merge pull request #25 from D4nnny/main
+    
+    Agregando API
+
+commit 7b27da78d2ca8a410641d42262bc94bcdc82af6f
+Merge: 0e4c3ad7 b5e43a2b
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri May 24 09:39:18 2024 -0600
+
+    Merge pull request #76 from Olstertecn11/main
+    
+    Agregando API
+
+commit b5e43a2b18513be1b96b2b5c8e1ffa496304c4c0
+Author: Oliver Tzunun <49626428+Olstertecn11@users.noreply.github.com>
+Date:   Fri May 24 09:17:22 2024 -0600
+
+    Add files via upload
+
+commit d2cc1fec1ec428ee50f49b0b638fbc0f92c2f419
+Author: Oliver Tzunun <49626428+Olstertecn11@users.noreply.github.com>
+Date:   Fri May 24 09:16:30 2024 -0600
+
+    Delete Equipo2/API directory
+
+commit 0e4c3ad7c93e3aa091ea866ae7ad5b946f0961ea
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri May 24 08:58:33 2024 -0600
+
+    Agregando API
+
+commit ef32a002439d0e7dd70df5c6ffe053a6ec757a56
+Merge: ea5004a3 2dbe2592
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 24 08:52:21 2024 -0600
+
+    Merge pull request #24 from carlosEnriqueGC/entregaGrupo1
+    
+    Entrega grupo1
+
+commit ea5004a3e5d770a04c460554c944f2229d8ae4c6
+Merge: 4308e083 a42045ca
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri May 24 08:52:05 2024 -0600
+
+    Merge pull request #23 from D4nnny/main
+    
+    Cambios al proyecto y actualizaciones
+
+commit a42045cae23b3234920e9d3b0b4f8ea6dcba77a3
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri May 24 01:35:01 2024 -0600
+
+    Agregando Base de Datos Final
+
+commit dab00d10ccc13f0e1084d09a2cf5f1a8f43be2fa
+Merge: 5e725625 98cf27e3
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri May 24 01:13:58 2024 -0600
+
+    Merge pull request #75 from Frls03/main
+    
+    ultimos cambios a mov bancarios y a bd
+
+commit 98cf27e389c9640e1b7a1e9b2eb4ae72c36c2063
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri May 24 01:12:54 2024 -0600
+
+    Añadiendo funcionalidad al 100% de bancos externos, arreglando orden de labels y modificando base de datos
+
+commit a16312108cb38f3918b4c3541559dcef18d64793
+Merge: 6f6e04dd 5e725625
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri May 24 00:28:13 2024 -0600
+
+    mas cambios a bancos externos
+
+commit 6f6e04ddcd8a739e74cf2bceef7e216f1a527722
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri May 24 00:27:33 2024 -0600
+
+    mas cambios a bancos externos
+
+commit 5e725625f1cf69d195b2bc1fcca3da981f3bae58
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri May 24 00:22:52 2024 -0600
+
+    Agregando Ayudas y Script Final
+
+commit ec7ff8a5d34778aa3b82d00d578057f4be9c01ca
+Merge: d61b2703 e5a155ae
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 23 23:20:11 2024 -0600
+
+    Merge pull request #74 from Olstertecn11/main
+    
+    Subiendo ayudas
+
+commit e5a155aeed12c6d4ee3f16d455b48d49e1bc9f96
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 23 23:19:34 2024 -0600
+
+    ayudas
+
+commit 8373b3fff947ec5197bc471f0a85667de36b263a
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 23 22:58:04 2024 -0600
+
+    notas de credito y debito realizadas
+
+commit d61b2703edc539542b9274bf4eb8585e29d4f9eb
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 23 22:02:47 2024 -0600
+
+    Agregando Formulario Notas de Credito y Debito
+
+commit 2dbe2592d278013900e3f88808bb61723f8e8857
+Merge: f15402cc 77123b0d
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 21:46:25 2024 -0600
+
+    Merge pull request #217 from DACR-DC/main
+    
+    subiendo registros en bitacora
+
+commit 77123b0dd070c8831977e998c943494438af184f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 21:45:25 2024 -0600
+
+    subiendo registros en bitacora
+
+commit f15402ccc58c0a5177a75f50dc0c6489e79c96aa
+Merge: ae370ea1 8f892264
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 21:16:08 2024 -0600
+
+    Merge pull request #216 from DACR-DC/main
+    
+    Base actualizada
+
+commit d42a9b4a9fc0b8140b74be81078dee4f74fb8927
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 23 21:13:06 2024 -0600
+
+    Agregando Pruebas
+
+commit 8f8922645c0283acb9f46a838a1f0b38208d9540
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 21:10:24 2024 -0600
+
+    Base actualizada
+
+commit ae370ea16eb5c7adc9185bda4d850c8e3cce8746
+Merge: 597904dc 1bd48d1d
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 21:08:13 2024 -0600
+
+    Merge pull request #215 from DiegoMaroquin/diegobanco16
+    
+    se agregra 100% tipodecambioApireporteayuda
+
+commit 1bd48d1df937781f6af4b04de35f04680b303daf
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Thu May 23 20:56:37 2024 -0600
+
+    se agregra 100% tipodecambioApireporteayuda
+
+commit 597904dc92d3aa46bf135d37cdf0f91e2736dc41
+Merge: 60c6e9f0 da485b48
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 20:09:04 2024 -0600
+
+    Merge pull request #214 from OTEKE10/main
+    
+    Agregando Pruebas Pedido y corrigiendo diseño de forms Pedido
+
+commit 60c6e9f0c21c8bac7f7f8dec39e8474beab0b69b
+Merge: 7d22f74d e5bbdb2d
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 20:08:55 2024 -0600
+
+    Merge pull request #213 from coradoa/main
+    
+    Agregando cambios finales Operadores Proveedor
+
+commit 4038fb83373e07a2dddeead93573cccb07acaa15
+Merge: da355146 7890e609
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 23 20:04:26 2024 -0600
+
+    Merge pull request #73 from Frls03/main
+    
+    cambios a bancos externos
+
+commit 7890e609c5e3c432711d52795254fe3240656850
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Thu May 23 20:03:17 2024 -0600
+
+    cambios a bancos externos
+
+commit da485b4840117a6d5b576c9572112c16725dfd62
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu May 23 19:54:24 2024 -0600
+
+    Agregando Pruebas Pedido y corrigiendo diseño de forms Pedido
+    
+    Se agregan las pruebas de Movimiento Ventas de Pedido
+
+commit e5bbdb2dd0b9257b1d76dce0df716488f16ea21f
+Merge: 05cf3727 7d22f74d
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 17:17:25 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 05cf3727231f713b3d1f8c94ed14312b4caddd74
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 17:15:55 2024 -0600
+
+    Agregando los reportes correctos
+
+commit 7d22f74d1d0f4d2b355b88763fad30a4db80994f
+Merge: 8ef095af 167b4976
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 16:33:45 2024 -0600
+
+    Merge pull request #212 from DiegoMaroquin/diegobanco15
+    
+    se agregra 100% tipodecambioApireporteayuda
+
+commit da355146914ea5167be96ac15457f87d6754b72c
+Merge: aac51020 d52313e2
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 23 15:58:11 2024 -0600
+
+    Merge pull request #71 from JustinPennant/main
+    
+    Se añadio Código de Seguridad a Pago de Servicios
+
+commit d52313e2405920bc83827308745346455000dc0a
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Thu May 23 15:56:31 2024 -0600
+
+    Se añadio Código de Seguridad a Pago de Servicios
+
+commit 167b4976db73b15daf2e47e267e4e59a03f0befd
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Thu May 23 15:53:21 2024 -0600
+
+    se agregra 100% tipodecambioApireporteayuda
+
+commit 9ebad18e75aade7a7bcb11b6ff8fbc07d64e8246
+Merge: 11353e05 8ef095af
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 14:52:52 2024 -0600
+
+    Cambios para bajar
+
+commit 8ef095afd77783c7dd0af6dbeab766bfdef79af2
+Merge: 3c2deedd 3b8d8d1f
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 14:19:12 2024 -0600
+
+    Merge pull request #211 from DACR-DC/main
+    
+    ReportePagos con arreglos
+
+commit 3b8d8d1f58a05f11b7506b6b7609cc1c10c79bd5
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 14:18:35 2024 -0600
+
+    ReportePagos con arreglos
+
+commit 3c2deeddfa4299281d59380655d9091771f09f5d
+Merge: c424be81 783296ef
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 14:11:02 2024 -0600
+
+    Merge pull request #210 from OTEKE10/main
+    
+    Cambios de estado de factura en la API
+
+commit 783296ef3375821ce167ef7021141b564433448d
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu May 23 14:07:01 2024 -0600
+
+    Cambios de estado de factura en la API
+    
+    Estado de factura: Por Pagar y Factura Pagada
+
+commit c424be81f6d32f1ee89064275f4f57ef5be0e2ff
+Merge: d0d9dd5c 6b7f6070
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 13:50:35 2024 -0600
+
+    Merge pull request #209 from DACR-DC/main
+    
+    Arreglando existencias
+
+commit 6b7f60701def456849aa381364c69fde0fac3047
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 13:49:26 2024 -0600
+
+    Arreglando existencias
+
+commit 11353e059d501a5763c4ff23dfe21e421282954d
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 12:58:42 2024 -0600
+
+    Cambios para mejorar el funcionamiento de operaciones
+
+commit d0d9dd5c972a071e107a3fc6068625ece8d7afcd
+Merge: 86db5cbf 0e10d2ab
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 12:58:38 2024 -0600
+
+    Merge pull request #208 from OTEKE10/main
+    
+    Corrección de API
+
+commit 0e10d2ab5b22b5b7d440b78283685752d3fadd26
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu May 23 12:55:31 2024 -0600
+
+    Corrección de API
+    
+    Se cambia el requisito para obtener las facturar x cobrar de los clientes
+
+commit 86db5cbfc2cbd0de582b227d736ccbe16240db49
+Merge: 377d5357 8a9cb4a3
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 12:51:00 2024 -0600
+
+    Merge pull request #207 from DACR-DC/main
+    
+    actualizacion base
+
+commit 8a9cb4a31a4683e9b8d1d724e57df21fe4e83012
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 12:50:18 2024 -0600
+
+    actualizacion base
+
+commit 377d53573402d2fcc65de685c9030cd4f0ecc853
+Merge: 92d14375 dae5b7ec
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 11:29:52 2024 -0600
+
+    Merge pull request #206 from DACR-DC/main
+    
+    actualizacion gitingore
+
+commit dae5b7ecaadcb2925c0c850f4a4a5e5a10e5b2f2
+Merge: 81b19d40 92d14375
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 11:27:11 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 81b19d406f4aa6279a3bc7b501908318cec4b626
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 11:26:49 2024 -0600
+
+    actualizacion gitingore
+
+commit 9d7cc2ff3cd52e5a1949a8df56729aab8a7ea593
+Merge: aebfb2d4 92d14375
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 11:25:17 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit aebfb2d417fb16d47dee5f4bc7f446cd04cf0ceb
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 23 11:24:37 2024 -0600
+
+    cambios para bajar cambios
+
+commit 92d143750098a6c1f358cf51b64ca2948c6f0a3c
+Merge: 44827e14 4308e083
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 11:11:06 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit 44827e149010887f17fef783a94d24516c47236b
+Merge: 1dd78061 876d5a50
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 11:10:55 2024 -0600
+
+    Merge pull request #205 from DACR-DC/main
+    
+    arreglo de una ayuda
+
+commit 876d5a5095ac7d4bcbfd5f87f4bb4167fa478fb4
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 11:04:42 2024 -0600
+
+    arreglo de una ayuda
+
+commit 1dd78061395b9275a26fd37259f90a030cf32e11
+Merge: 8123a1bc cd2847d7
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 11:00:56 2024 -0600
+
+    Merge pull request #204 from DACR-DC/main
+    
+    cambios menores a facturas
+
+commit cd2847d720c5b51e84d2eb61621fca6e40d017e1
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 10:41:44 2024 -0600
+
+    cambios menores a facturas
+
+commit 4308e0830d27954841fd96dc77e52030606e8ae3
+Merge: c6e89ad2 aac51020
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 23 10:15:38 2024 -0600
+
+    Merge pull request #22 from D4nnny/main
+    
+    Agregando API
+
+commit aac5102034ea6c8553e114d01745e40a4d983f1c
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 23 10:11:56 2024 -0600
+
+    Agregando ultima actualización de BD
+
+commit f8f2f2b091ff900ae271c021f644c5d53152025f
+Merge: 590ff037 a322d210
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 23 09:16:17 2024 -0600
+
+    Merge pull request #70 from Olstertecn11/main
+    
+    Agregando API
+
+commit a322d210cd0dd6f15c1e45b33f82a7dab1bde8f9
+Merge: ec54d6c2 590ff037
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 23 09:15:07 2024 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/ISP12k24
+
+commit ec54d6c288344a56ed8a50c3160fcf63a302cd04
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 23 09:13:52 2024 -0600
+
+    agregando API
+
+commit c6e89ad22238e88056db1e524434e02a2bcb7c7d
+Merge: 124eff23 590ff037
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 23 08:49:24 2024 -0600
+
+    Merge pull request #20 from D4nnny/main
+    
+    Entrega final
+
+commit 124eff23da8e37ee9678c037f0c1a73cbfd1999a
+Merge: ec062ac5 8123a1bc
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 23 08:48:44 2024 -0600
+
+    Merge pull request #21 from carlosEnriqueGC/Grupo1ERP
+    
+    Grupo1 erp comercial
+
+commit 8123a1bc6d8cf33f38853bca7710c3e710ad80fb
+Merge: c17d24dd 9aca856e
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 08:39:42 2024 -0600
+
+    Merge pull request #203 from DACR-DC/main
+    
+    subiendo los reportes en reporteador
+
+commit 9aca856ebc0a26b1ad1108356a3380215cf88ebc
+Merge: f6a90133 c17d24dd
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 08:38:19 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit f6a901330f8018fdd1895d321f606f74dbaaaad4
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 23 08:35:46 2024 -0600
+
+    reportes en reporteador
+
+commit c17d24dda94723c48460f8fdce432b6f9f6c79ad
+Merge: 3d11d307 f3b33189
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 23 08:34:59 2024 -0600
+
+    Merge pull request #202 from DiegoMaroquin/diegobanco14
+    
+    se agregra 100% tipodecambioApi
+
+commit 3d11d3073bfb75e78a87cfaee3f2ff5ba2218f3a
+Merge: e9a6ba27 3ed8541c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 23 08:34:42 2024 -0600
+
+    Merge pull request #201 from OTEKE10/main
+    
+    Agregando API ERP
+
+commit f3b3318989f2aea82fb36da45defb645c9c0b050
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Thu May 23 08:31:44 2024 -0600
+
+    se agregra 100% tipodecambioApi
+
+commit 3ed8541cc37eefcb2e43bfd5eb811ed68932ec44
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu May 23 08:30:23 2024 -0600
+
+    Agregando API ERP
+    
+    Se agrega la API
+
+commit 590ff037cb8f3a8843a3cb3da0bcef10da9def11
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed May 22 23:51:58 2024 -0600
+
+    Agregando Base de Datos Actualizada
+
+commit e9a6ba27d132242d1f0ebfb57f06f2d5c59f7070
+Merge: 58396ab9 43426dba
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 23:29:01 2024 -0600
+
+    Merge pull request #200 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    reserva funcional
+
+commit 43426dba82b10ed5c2c29c0cb72d9386b5a525a8
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 22 23:28:16 2024 -0600
+
+    reserva funcional
+
+commit 214167324b03ca503e67a8cb3f87fb1d57e6ecca
+Merge: fe000867 210439bc
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed May 22 23:19:03 2024 -0600
+
+    Merge pull request #69 from Olstertecn11/main
+    
+    Código de seguridad agregado a transferencias
+
+commit 210439bc8f36dbd8ef6ae9e12226c7ac75bb4e15
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 22 23:18:12 2024 -0600
+
+    codigo de seguridad en transferencias
+
+commit ab744f207091620c326989c538455c6a68d7aa30
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 22 22:56:08 2024 -0600
+
+    bitacora register
+
+commit 58396ab902380592337862f9cd0db5aa0c939bea
+Merge: 85330071 5101d9c0
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed May 22 22:45:54 2024 -0600
+
+    Merge pull request #199 from DACR-DC/main
+    
+    Subiendo actualizacion a la base de datos
+
+commit 5101d9c09d9271d80a91d5829d40d7e23ba3a666
+Merge: e295a86d 85330071
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 22:36:37 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit e295a86dc16520bb0b6d974263cd814aeaf0f899
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 22:36:06 2024 -0600
+
+    Subiendo actualizacion a la base de datos
+
+commit 60cb33b97519b53e7540a25336b8e0bd0b49b7f8
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 22 22:28:43 2024 -0600
+
+    transaction document fixed
+
+commit 853300714dc29448decd97b9e4b1550c2f4b7795
+Merge: 9d7dd368 e8b236e3
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed May 22 22:26:00 2024 -0600
+
+    Merge pull request #198 from cchuye/Correcciones_Compras2
+    
+    Correcciones compras segunda version
+
+commit e8b236e3fd1e1721bd0860891738be14dc1c8388
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 22:16:27 2024 -0600
+
+    Correcciones compras
+
+commit 844f9b01dae4369309ecc6e0847f115a1814b06a
+Merge: f8b3cda8 9d7dd368
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 22:10:20 2024 -0600
+
+    Rama actualizada
+
+commit fe0008676d94fe798df54ea46ba39db8057f08b1
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed May 22 22:09:16 2024 -0600
+
+    Agregando Comprobante de pago
+
+commit f8b3cda84f905c8a111d62cf8db1517543017071
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 22:08:37 2024 -0600
+
+    Corrgiendo compras con existencias
+
+commit 9d7dd3685478213284037b4da0757b1cdec85693
+Merge: 3f19893d 90a40005
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 21:35:14 2024 -0600
+
+    Merge pull request #197 from DACR-DC/main
+    
+    Subiendo ayudas y reportes
+
+commit 90a40005d2279713f0264f9f17f61d70df3fe5fa
+Merge: 50f87b02 3f19893d
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 21:33:37 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 50f87b02b070b364e06a63f88d3732676b1fe104
+Merge: fd2af23b 49bf4b9d
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 21:30:45 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit fd2af23b57d2794554cb95778b1549d9e0759e3a
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 21:30:42 2024 -0600
+
+    Subiendo ayudas y reportes
+
+commit 3f19893dc0ecc13a5c1b37c56c6b597c55eb6a54
+Merge: 6fa8d371 96b5ae02
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 21:21:52 2024 -0600
+
+    Merge pull request #196 from coradoa/main
+    
+    Entrega final de parte operacion de proveedores
+
+commit 96b5ae021d8a748f1565f2dc2c393d059ad0a489
+Merge: 259af961 6fa8d371
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 21:17:56 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 259af961152b9cc73f624427ebff260a305db965
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 21:14:58 2024 -0600
+
+    Entrega final de parte operacion de proveedores
+
+commit 6fa8d37101166c9b52ce3c3d4c84f364b6dd3675
+Merge: 49bf4b9d b95e368f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 20:54:17 2024 -0600
+
+    Merge pull request #195 from cchuye/Correcciones_Compras
+    
+    Correcciones compras y nav
+
+commit b95e368f58f2518bcdb62d6772dad61267f869d7
+Merge: 3a4d6ac2 49bf4b9d
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 20:52:17 2024 -0600
+
+    Rama actualizada
+
+commit 3a4d6ac24569f72d42fb5f191da46f734e4ef499
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 20:50:43 2024 -0600
+
+    Corrigiendo errores compras y nav
+
+commit 294dcaedd831ebbe087e01f0bd821bb024d874e3
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 20:49:23 2024 -0600
+
+    agregando reporte del mantenimiento
+
+commit 49bf4b9d24295327d0260b9afd745b725ce7a869
+Merge: a0e4f1c5 0c953dc2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 20:48:12 2024 -0600
+
+    Merge pull request #194 from DACR-DC/main
+    
+    base acctualizada
+
+commit eafb9ce91b3af509744e9ba7d2fca0e22e6b9af6
+Merge: 1d19cf8f ba3d2a71
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed May 22 20:47:45 2024 -0600
+
+    Merge pull request #68 from Olstertecn11/main
+    
+    gestionando tarjetas
+
+commit 0c953dc246977788a02c51b80c7f954e7e6ef290
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 20:47:12 2024 -0600
+
+    base acctualizada
+
+commit f209103e55d337e30a164173629e52128930d3b5
+Merge: 28a26450 5b30e3fb
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 20:41:21 2024 -0600
+
+    Para bajar cambios
+
+commit ba3d2a7151fa97120f4f1dc7270e6a35a6ff1dd9
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 22 20:40:43 2024 -0600
+
+    gestionando tarjetas
+
+commit a0e4f1c54e99d6dadf0a05e8db682ba424023dc4
+Merge: 5b30e3fb 2e1ba92e
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 20:35:16 2024 -0600
+
+    Merge pull request #193 from DACR-DC/main
+    
+    Reportes de todos en reporteador
+
+commit 28a26450eb29654d31d754f1228d4f23301b8daf
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 20:34:46 2024 -0600
+
+    subiendo para comit
+
+commit 31a14fe876c885789c253331cd3142e2e00d3026
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 20:34:02 2024 -0600
+
+    terminando la parte de operacion de proveedores
+
+commit 2e1ba92eecc0a2ce85a017e71f63c75e69ffb9f9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 20:33:45 2024 -0600
+
+    Reportes de todos en reporteador
+
+commit 5b30e3fb34811226f59436ff9c4bde4e276432f4
+Merge: 6f5e34cf 172664b1
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 19:31:05 2024 -0600
+
+    Merge pull request #192 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    ayudas funcional
+
+commit 172664b106f1318c070b8b8f3ec7b39943f28b54
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 22 19:29:04 2024 -0600
+
+    ayudas funcional
+
+commit 6f5e34cf73b28c5bb82a495a724e446350d380b1
+Merge: 17e62295 ce5ccb91
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 18:51:45 2024 -0600
+
+    Merge pull request #191 from DACR-DC/main
+    
+    subiendo avance de ayudas y agregando vista de productos
+
+commit ce5ccb9187953a2588f6df2cfb05cb999f29c4d1
+Merge: dc31c82e 17e62295
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 18:41:23 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 17e62295b5e6c85c6d198c4aedc97daeb90daad4
+Merge: 7441e865 0f6946d2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 18:37:47 2024 -0600
+
+    Merge pull request #190 from DiegoMaroquin/diegobanco13
+    
+    se agregra 92% tipodecambioApi
+
+commit dc31c82e0fa39a895f111f3873431210b6c3a51d
+Merge: cdf26236 7441e865
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 18:37:44 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 0f6946d2a280b2d7226479f4e4eb55334d650f1c
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Wed May 22 18:36:55 2024 -0600
+
+    se agregra 92% tipodecambioApi
+
+commit cdf26236d27eb3ed7bbc16aa5ae7ebc749e396ca
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 18:28:44 2024 -0600
+
+    subiendo avance de ayudas y agregando vista de productos
+
+commit 7441e865b7967599db0cd7a8450280db43d73d77
+Merge: 24928d82 37db0ecb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 18:14:51 2024 -0600
+
+    Merge pull request #189 from cchuye/Agregando_UltimosCambios
+    
+    Agregando Ultimas Modificaciones Compras
+
+commit 37db0ecb634de0764e1ddce055c57fecc95192b3
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed May 22 18:13:27 2024 -0600
+
+    Agregando Ultimas Modificaciones Compras
+
+commit 425f26d10b8658cfd09a244789c55aa9af652059
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed May 22 17:41:40 2024 -0600
+
+    creando un forms
+
+commit 24928d82f286934468e9bdf122cbcb8ab293766b
+Merge: 3e7dd336 3e07ae20
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed May 22 16:20:34 2024 -0600
+
+    Merge pull request #187 from DACR-DC/main
+    
+    subiendo reporte de pagos
+
+commit 3e07ae204bdef278a4a8223a0cfc47e034bc277e
+Merge: 96b57d17 3e7dd336
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 16:19:48 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 96b57d17b2f5dbffe02f26e39c5c42a2bec353aa
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 22 16:17:46 2024 -0600
+
+    subiendo reporte de pagos
+
+commit 3e7dd3369fe6cf1ab814c6e55d4b4ed4b413ede4
+Merge: ec062ac5 6f0bc060
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 22 16:10:48 2024 -0600
+
+    Merge pull request #186 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    reportes de movimiento de banco y autorizacion de orden funcional
+
+commit 6f0bc0601729ae2784d8599b1f93bf8adb2307a4
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 22 16:10:10 2024 -0600
+
+    reportes de movimiento de banco y autorizacion de orden funcional
+
+commit 1d19cf8f6ef58abe5e7c858a23db64868db62198
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 21 22:24:33 2024 -0600
+
+    Arreglando formulario de Estado de Cuenta
+
+commit 7ad9a2362d841d61d6eb734271562ebcc539b425
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 21 18:50:38 2024 -0600
+
+    Agregando ComboBox a form mantenimientos
+
+commit 445b2a7cc177c371b7b068c6da837d4f8c2ba0df
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 21 11:04:07 2024 -0600
+
+    Agregando mantenimiento Cuenta
+
+commit ec062ac58aa1df96a460c2e1d7cbc70f068d9b0f
+Merge: 2612a1cb aa401a1b
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue May 21 08:46:54 2024 -0600
+
+    Merge pull request #18 from carlosEnriqueGC/Grupo1-ERP
+    
+    Grupo1 ERP: 90 %
+
+commit 2612a1cb3571133d4762303c4c1c52a647a0ccbe
+Merge: 27cad13d 5244c438
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue May 21 08:46:36 2024 -0600
+
+    Merge pull request #17 from D4nnny/main
+    
+    Entrega Fase VII
+
+commit 5244c438a99e4db549dfe902c4e29fdd203c9b69
+Merge: 1b89f382 da341f1f
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Mon May 20 23:11:26 2024 -0600
+
+    Merge pull request #67 from Olstertecn11/main
+    
+    customizing form
+
+commit da341f1f14b05789b3768ea117bb10a46a63c47a
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Mon May 20 23:06:46 2024 -0600
+
+    customizing form
+
+commit 1b89f382072a93f2f6bb9c10b1c30207f017e7bf
+Merge: 81ea8525 e809a37f
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Mon May 20 22:38:37 2024 -0600
+
+    Merge pull request #66 from JorgeGxd/main
+    
+    Cambios depositos
+
+commit e809a37fe72120c368ed743a66dfdc2cd2c4f735
+Author: JorgeGxd <noroxd15@gmail.com>
+Date:   Mon May 20 22:38:28 2024 -0600
+
+    Cambios depositos
+
+commit aa401a1b0412beb10793aa85fd95a84206caa14b
+Merge: 07c486f8 fdf9d7ba
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 18 16:20:19 2024 -0600
+
+    Merge pull request #185 from DACR-DC/main
+    
+    Subiendo Actualizacion y cambios a la base
+
+commit fdf9d7bab34ac2f5cd4666b95a3e33b13600883e
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sat May 18 15:36:54 2024 -0600
+
+    Subiendo Actualizacion y cambios a la base
+
+commit 07c486f82caf30657a6ffe3c60751fe357c4653b
+Merge: d7fabe15 d6e81504
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 18 13:51:31 2024 -0600
+
+    Merge pull request #184 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    Carlos enrique bancos
+
+commit d6e8150482f749a14bcbd803f52b6e877ddc8632
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat May 18 13:50:50 2024 -0600
+
+    se corrigio la prueba de eliminacion ya que no estaba bien estructurada
+
+commit d26824de33f12787296dfe1b7e926fc2761c2f2e
+Merge: a13d44ad d7fabe15
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat May 18 12:43:19 2024 -0600
+
+    rama actualizada
+
+commit d7fabe156e6e2c190403b24b2c94f3dc9f4ee331
+Merge: 27bc1441 ceaa76db
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 17 16:26:45 2024 -0600
+
+    Merge pull request #183 from coradoa/main
+    
+    Subiendo de nuevo el Test y el 90%
+
+commit ceaa76dbddd7c3776491a8e8dda8dc35fa5472a5
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri May 17 16:26:00 2024 -0600
+
+    Subiendo de nuevo el Test y el 90%
+    
+    por culpa de da....
+
+commit 2e1ac1ef1b3a7211f4dfbde40b1734630884443b
+Merge: ba35eabf 27bc1441
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri May 17 16:20:19 2024 -0600
+
+    Actualización de repo
+
+commit ba35eabf818992e6b9fd6c0deaf925a253da2f55
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri May 17 16:19:57 2024 -0600
+
+    Cambios de actualizacion de git
+
+commit 27bc144115af1e5754493db42913a2ac7f5ba16f
+Merge: 88512df9 c7606445
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 17 16:17:01 2024 -0600
+
+    Merge pull request #182 from DACR-DC/main
+    
+    subiendo Tests Cotizaciones
+
+commit c760644580d9ec7d9fe4fad90691c0652c90a3c4
+Merge: b0f923f9 88512df9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 17 16:13:24 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit b0f923f96da79c49b41b841a5163d97720633c60
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 17 16:12:00 2024 -0600
+
+    subiendo Tests Cotizaciones
+
+commit 88512df9cae5548efc1eea636feaa988bf1a31d9
+Merge: e87934de a7ff2e71
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 17 16:11:39 2024 -0600
+
+    Merge pull request #181 from coradoa/main
+    
+    Subiendo el test y el 90% de operaciones proveedor
+
+commit 81ea85252bb568cfdb896e87bbfde1d958894864
+Merge: ce16abd4 742758ab
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri May 17 15:42:11 2024 -0600
+
+    Merge pull request #65 from Olstertecn11/main
+    
+    Agregando formulario de estado de cuenta y funcion para verificar si …
+
+commit 742758ab6963fe79e5eba06ca5a33bf1c4b1b3b2
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri May 17 15:39:37 2024 -0600
+
+    Agregando formulario de estado de cuenta y funcion para verificar si un pago puede realizarse
+
+commit a7ff2e71e2e87af361364cc480952df27c7e8c53
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri May 17 15:37:09 2024 -0600
+
+    Subiendo el test y el 90% de operaciones proveedor
+
+commit e87934dee43686bb47e7fbbd7c9b2fd12fb8b0d4
+Merge: 4c01cbbb b8e49e19
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 17 13:48:49 2024 -0600
+
+    Merge pull request #180 from DiegoMaroquin/diegobanco10
+    
+    se agregra 90% tipodecambio
+
+commit b8e49e1958363668049c384c46935471fab674d4
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri May 17 13:09:01 2024 -0600
+
+    se agregra 91% tipodecambio y test
+
+commit 8c6061c56630a2c165b4865ff57f7e6bf05d265b
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri May 17 12:02:09 2024 -0600
+
+    se agregra 90% tipodecambio
+
+commit 4c01cbbb16a68dd4528a24e141e00a49f3c75542
+Merge: 060d731f 580ad62b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 17 10:27:44 2024 -0600
+
+    Merge pull request #179 from cchuye/Agregando90_Compras
+    
+    Agregando 90 compras
+
+commit 580ad62b836130f34eb556418d6503903ba2b05b
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri May 17 10:25:46 2024 -0600
+
+    Arreglando las pruebas creando carpeta nueva
+
+commit 9031fc7c824c853530bad07acac19e3b2a6c1452
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri May 17 03:01:21 2024 -0600
+
+    Pruebas de Ordenes, Compras y Facturas
+
+commit 7bbff43c2632b76f8497bec942f4b0a98e429ab0
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri May 17 01:05:22 2024 -0600
+
+    Agregando las ayudas a Ordenes,Compras y Facturas
+
+commit 060d731fc6cf97f496bdf104160f6208a97c39d8
+Merge: 1ad76a1e 3af7a3de
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 22:54:31 2024 -0600
+
+    Merge pull request #178 from cchuye/AgregandoReportes_ComprasyFact
+    
+    Agregando reportes compras y fact
+
+commit 3af7a3de9e229aa67a435d8f861a8e5fc1203277
+Merge: 7f7f5371 1ad76a1e
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 22:51:30 2024 -0600
+
+    Actualizando Rama
+
+commit 7f7f5371a81e71075cdabc7ef301ad6a538ee4fb
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 22:49:40 2024 -0600
+
+    Agregando los reportes
+
+commit cdf3c1d0376243765b04a4a178c2b4ecf81db7f0
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 22:46:45 2024 -0600
+
+    Agregando Reportes de Compras y facturas
+
+commit ce16abd4fdb6ce36da42630bb743851fca31f1d7
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 16 22:26:08 2024 -0600
+
+    Agregando funcionalidad a Transferencias
+
+commit 1ad76a1e6659da883e97174185ecb9b302b8f12f
+Merge: eba8915f 3df472de
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 21:47:15 2024 -0600
+
+    Merge pull request #177 from coradoa/main
+    
+    Volviendo a hacer Operaciones de Proveedores de una mejor forma (tentativo 90%)
+
+commit 3df472dec3a439f6ccd7759d65c050f82933fe2d
+Merge: 1b27551b eba8915f
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 21:44:23 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 1b27551b3b1bb06e3f28ff2ac83b377cfac28d31
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 21:36:14 2024 -0600
+
+    cosas
+
+commit a5061532bb1655fa64b87bd8103de83b1236ba23
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 21:27:49 2024 -0600
+
+    cambios no importantes
+
+commit eba8915f544c6416b8055232f92da5a7300b5f26
+Merge: 9bb74e26 ba14c0c0
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 16 21:23:24 2024 -0600
+
+    Merge pull request #176 from DACR-DC/main
+    
+    90% subido falta las pruebas
+
+commit 9b30413bfad61d48ff5b388a155b07ed068e3593
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 21:21:37 2024 -0600
+
+    Realizar el pago y dejar registro de pagos de mas de una factura
+
+commit c5d7fb7152ec5ef8602918f29127cb30b8f5726f
+Merge: 796cf177 9c0c3c02
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 16 20:43:48 2024 -0600
+
+    Merge pull request #64 from Olstertecn11/main
+    
+    mostrando mdi segun rol de usuario
+
+commit 9c0c3c02f48c028d1412f1c1f3d97e27716f1bdc
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 20:43:02 2024 -0600
+
+    mostrando mdi segun rol de usuario
+
+commit 796cf17730bf213742225d5f7b89235e52dcc93f
+Merge: 47b240f9 ceea0807
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 16 20:32:52 2024 -0600
+
+    Merge pull request #63 from Olstertecn11/main
+    
+    Merge y guardando retiro y deposito en historial de transaccion
+
+commit ceea0807a548556443b55ce7def57cd396a891a5
+Merge: 3a41c46a 47b240f9
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 20:31:13 2024 -0600
+
+    Merging
+
+commit 3a41c46aeac7c59a5b0a283ba298cc8d14295f54
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 20:29:45 2024 -0600
+
+    guardando retiro y deposito en historial de transaccion
+
+commit ba14c0c04d474f7ea26d03d36d99a6da30536450
+Merge: 4dc6eec6 9bb74e26
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 16 20:04:32 2024 -0600
+
+    90
+
+commit 4dc6eec63d29d523721123850697fa203d30aed5
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 16 20:02:55 2024 -0600
+
+    90% subido falta las pruebas
+
+commit 47b240f92e958c56fa8f86423ac6ccf2bbdc21da
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 16 19:53:28 2024 -0600
+
+    Agregando Todos los reportes
+
+commit a6e236e3d722f20eefd6ad8332321f06506fbd5a
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 19:39:27 2024 -0600
+
+    update .gitignore
+
+commit b422235d4d1d77733154d3e006bd07b2d8fbd437
+Merge: 1eecddff 40c06019
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 19:27:16 2024 -0600
+
+    Merging
+
+commit 1eecddff406f86f1d69b8ea5e7e9833436d0cf47
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 19:26:25 2024 -0600
+
+    removing merge conflicts
+
+commit 40c06019c9027e10225724d1be4f214946fbf0f9
+Merge: 092c5080 215a0062
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 16 18:55:53 2024 -0600
+
+    Merge pull request #62 from JustinPennant/main
+    
+    Reportes de Tipo de Transaccion, Tipo Tarjeta y Cuenta Amiga
+
+commit 215a0062cbb9a3246f883aa0a123d510c04d2e73
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Thu May 16 18:55:11 2024 -0600
+
+    Reportes de Tipo de Transaccion, Tipo Tarjeta y Cuenta Amiga
+
+commit 092c5080f03b0bc519beb11160fd5af25e994fec
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 16 18:52:50 2024 -0600
+
+    Agregando Reportes y arreglando gitignored
+
+commit bde53c3ea3a4e24a670315d07e6ce22205ff6dc8
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 17:33:49 2024 -0600
+
+    agregando confirmación de facturas a pagar
+
+commit 9bb74e261c3561a6c11c49c7ed7c6fdd77095ea4
+Merge: 50b1d6da ab4f49e3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 17:33:28 2024 -0600
+
+    Merge pull request #175 from cchuye/Probando_ReportesOrdenesCompra
+    
+    Creando los reportes ordenes compra definitivos
+
+commit ab4f49e3c6dbe64ceda57a137c6a38a19c959523
+Merge: daaec4c8 50b1d6da
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 17:13:49 2024 -0600
+
+    Actualizando otros cambios
+
+commit a13d44ad07ff0cdd37c9a82d1cd608d5eee92495
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 17:12:24 2024 -0600
+
+    ignorar
+
+commit daaec4c8169a09e6004caf904af287e13437634d
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 17:12:04 2024 -0600
+
+    Terminando reportes ordenes de compra
+
+commit 50b1d6dacf55edc07ab83b0c86e2fce89f2d9a7e
+Merge: 5013cc35 2b91c183
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 17:09:19 2024 -0600
+
+    Merge pull request #173 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    Carlos enrique bancos
+
+commit fcaf25c94d16eb41fe5eed950699cea994b21220
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 17:08:26 2024 -0600
+
+    agregando agregar de facturas + eliminar estas
+
+commit 2b91c18340ebf158a2e0a7cfb31e63a6f220a4bc
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 17:08:05 2024 -0600
+
+    pruebas de movimiento de bancos realizado
+
+commit 79e584a0025544765a93db68a3ca00e7740182dc
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 17:07:23 2024 -0600
+
+    verificacion de errores: rama sin errores
+
+commit 4dc65eb1cba3bac26f3ec699e5b9bd5ef834310f
+Merge: 629b9368 5013cc35
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 17:03:37 2024 -0600
+
+    rama actualizada
+
+commit 629b9368284f95bd4c76ff81939529d891a08019
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 17:02:09 2024 -0600
+
+    prueba de eliminacion y guardado de datos del proceso movimiento de bancos realizado
+
+commit b59157825bb151671ed46ed5656889d210f05890
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 16 16:51:25 2024 -0600
+
+    Haciendo cambios de combo y salgan los txt
+
+commit 5013cc358f034a32fb7a552228f0ede829eeea4a
+Merge: da730a5e d5b201d6
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 16 16:22:39 2024 -0600
+
+    Merge pull request #172 from DACR-DC/main
+    
+    Base Actualizada y Cambios de ventas
+
+commit d5b201d643e26e1daa975ee007bfd45d1923d2d1
+Merge: da877134 da730a5e
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 16 16:19:57 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit da877134a44399ee887924f842f940585745f2f0
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 16 16:18:58 2024 -0600
+
+    Base Actualizada y Cambios de ventas
+
+commit 315c10f7044f3182e7bf214e13cf8945a2f6567f
+Merge: 98076983 da730a5e
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 13:53:25 2024 -0600
+
+    Rama actualizada
+
+commit 9807698367ada61e9c8b729eaf85790e876117ec
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 16 13:48:23 2024 -0600
+
+    Agregando el reporte de ordenes de compra con filtros
+
+commit da730a5e3d49a08b395414091794ac276e3366e6
+Merge: 6fc12099 ec2196fa
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 13:36:35 2024 -0600
+
+    Merge pull request #171 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    carpeta de pruebas lista
+
+commit ec2196fa9c5c3429e4d6d031ab3ecab507f9bf4b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 13:35:45 2024 -0600
+
+    carpeta de pruebas lista
+
+commit 6fc120999e9d8c1831144d47181530ee41009103
+Merge: 1afb829e 38115710
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 16 13:24:44 2024 -0600
+
+    Merge pull request #170 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    Carlos enrique bancos
+
+commit 381157104c8d84561567a058f8c4c2c85ae5b9aa
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 13:24:07 2024 -0600
+
+    se agrego la carpeta prueba donde se alojaran los test de cada integrante: esta dentro de la solucion
+
+commit 0bd53dc28a9036aa19bd45fb868f0623f00966cd
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 16 10:31:36 2024 -0600
+
+    prueba de proyecto
+
+commit b0df933f1f466044535ae513bb9e1822ffeedbbe
+Merge: 472a753e 4f04aae8
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 16 09:35:05 2024 -0600
+
+    Merge pull request #61 from Olstertecn11/main
+    
+    arreglando formulario deposito con conflictos
+
+commit 4f04aae8a78a2026fef70d77f2f529dc4899cbdf
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 09:34:16 2024 -0600
+
+    arreglando formulario deposito con conflictos
+
+commit 472a753edbd474169d319a1dee1416f0c7ffa5d2
+Merge: f247e84d ea7b35ab
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 16 00:44:28 2024 -0600
+
+    Merge pull request #60 from Olstertecn11/main
+    
+    Merging
+
+commit ea7b35ab88de699fba49f41b143f3907b4136239
+Merge: 60744862 f247e84d
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 00:43:14 2024 -0600
+
+    merge
+
+commit 6074486228133e630879dd8f34d2d55b1b1257c1
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu May 16 00:40:41 2024 -0600
+
+    deposito y retiro en formulario de cheques, funcionando
+
+commit f247e84db4fed5409b5c43bdabf2d38082bfadf9
+Merge: eb00104b 7e9f0951
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed May 15 23:41:12 2024 -0600
+
+    Merge pull request #59 from JorgeGxd/main
+    
+    Depositos
+
+commit 7e9f0951215e2b90580985c25cf6457d1998071a
+Author: JorgeGxd <noroxd15@gmail.com>
+Date:   Wed May 15 23:40:17 2024 -0600
+
+    Depositos
+
+commit eb00104b6cdb47c4f76a3ba498d9182df9ab70b6
+Merge: 270aa34a 9288aa2e
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed May 15 22:18:27 2024 -0600
+
+    Merge pull request #58 from Olstertecn11/main
+    
+    Haciendo merge de mis cambios y justin
+
+commit 9288aa2ecbcafc3a0ff63ed460e3acda98b05578
+Merge: 29358530 270aa34a
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 15 20:37:13 2024 -0600
+
+    merge
+
+commit 270aa34a74cf2ad1862e12a29023953ee03dbf4d
+Merge: 3383aa8c 3a36cc13
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed May 15 20:35:17 2024 -0600
+
+    Merge pull request #57 from JustinPennant/main
+    
+    Correcciones de Pago de Servicios
+
+commit 3a36cc132bc57dee8aea396d5e319f07dcf8ec68
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Wed May 15 20:34:09 2024 -0600
+
+    Correcciones de Pago de Servicios
+
+commit 293585309f12184ae3ed444c27cf38a0e56c4d5f
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 15 20:31:29 2024 -0600
+
+    transferencia, deposito y cheques, formularios agregados :D
+
+commit 618c24aa5fc70bbd895afc5e24f6e1edd79e0e6b
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed May 15 20:18:11 2024 -0600
+
+    formulario de cheques agregado sin logica
+
+commit 1afb829e33527ac782b1f94b64c67ef73b94f5fc
+Merge: 01654844 cda36a9d
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 15 19:09:20 2024 -0600
+
+    Merge pull request #169 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    reportes funcionando en los procesos movimiento de bancos y autorizac…
+
+commit cda36a9d96f6cbd8a97f226aeba59b18a20151e5
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 15 19:08:03 2024 -0600
+
+    reportes funcionando en los procesos movimiento de bancos y autorizacion de ordenes de compra terminado el 90% de esos dos procesos
+
+commit 3383aa8c8d51c776780a473c09307d25ab53d874
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed May 15 19:04:12 2024 -0600
+
+    Arreglando AccountControles
+
+commit 01654844d89f599e2c4967ee51e73e93150121fd
+Merge: 0fb7e7c2 27cad13d
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 15 17:58:14 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit 0fb7e7c2e089613247269a22ff272c06b1d0b1a5
+Merge: 33820411 fd4cb9bb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 15 17:52:54 2024 -0600
+
+    Merge pull request #168 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    Carlos enrique bancos
+
+commit fd4cb9bb26e792dc903f2760110a4c3db384af42
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 15 17:51:50 2024 -0600
+
+    prueba de reportes
+
+commit 228c37bb6020c77c06d051962c2651580619ef8f
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 15 17:51:01 2024 -0600
+
+    cambios de los procesos movimientos de bancos y autorizacion de orden de compra subidos
+
+commit f7b15779aa89e3151f20fe2ee776c8eba83e15e5
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 15 17:11:09 2024 -0600
+
+    cambios de la semana pasada incorporados y parte del 90% de mis procesos tambien
+
+commit 33820411924db798f8f8adae2e1f3112d443cf60
+Merge: 89624edb e0e48ecb
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed May 15 10:01:10 2024 -0600
+
+    Merge pull request #167 from DACR-DC/main
+    
+    Avance del 90%
+
+commit e0e48ecb65c429d1d6888fef17f858d2ee3d9d70
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 15 09:43:55 2024 -0600
+
+    Avance del 90%
+
+commit 880c3663c228d376006bfb05c86768dbfa598a73
+Merge: 14a0bfcc 89624edb
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed May 15 08:24:44 2024 -0600
+
+    aadd
+
+commit c3893f3b22273996b0f02553f52e4e84d8b8aeae
+Merge: 97e3e422 2a05c230
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 14 23:59:11 2024 -0600
+
+    Merge
+
+commit 97e3e42286fe2c5fe6a1e7c50bad63f3de9f3f22
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 14 23:54:19 2024 -0600
+
+    Agregando historial de Cliente
+
+commit 2a05c230fbbe4843bc7d6d3a6b66b6c1c6fe8113
+Merge: dc092a38 120ee217
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue May 14 23:53:36 2024 -0600
+
+    Merge pull request #56 from JorgeGxd/main
+    
+    Mantenimineto Cuenta amiga
+
+commit 120ee2179c21ed24bc9f1769f948596af858e1d3
+Author: JorgeGxd <noroxd15@gmail.com>
+Date:   Tue May 14 23:53:28 2024 -0600
+
+    Mantenimineto Cuenta amiga
+
+commit dc092a384780b25f37e045b4121eeac22b22b907
+Merge: 7e7a0488 c4fd24fb
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue May 14 21:34:57 2024 -0600
+
+    Merge pull request #55 from Olstertecn11/main
+    
+    fixing HEAD conflict
+
+commit c4fd24fb69a9c188093b136ca940b88e83945fdc
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 21:32:24 2024 -0600
+
+    removing prototipo directory again
+
+commit 9b3c1d60649ae2025115755b7b8d84ca00b49f81
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 21:31:15 2024 -0600
+
+    fixing HEAD conflict
+
+commit 7e7a04886aa29f09aa070a5b982a1c07e78e99d8
+Merge: ecfa87fd a71dc00f
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue May 14 21:28:40 2024 -0600
+
+    Merge pull request #54 from Olstertecn11/main
+    
+    Removing unused folders
+
+commit a71dc00f6c66d04e60d55f08bd5c81e03902960b
+Merge: b4eca76d ecfa87fd
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 21:27:07 2024 -0600
+
+    merging
+
+commit b4eca76d7db0cdde50fd19f2964a87b69e7ab8f3
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 21:20:02 2024 -0600
+
+    removing unused dirs
+
+commit ecfa87fd06fa2a66c785ef7413aaaeb05befa92d
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 14 18:15:05 2024 -0600
+
+    Volviendo agregar carpeta xd
+
+commit 524014cc4893a6ccd77d835b8225604835652c8c
+Merge: 48897803 27cad13d
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 14 18:13:17 2024 -0600
+
+    Merge branch 'main' of https://github.com/D4nnny/ISP12k24
+
+commit 48897803285e0f73569e003d48e61c42eda0a901
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 14 18:11:52 2024 -0600
+
+    Agregando carpeta de reportes
+
+commit 89624edb07dfabc87df60b2853954b74fc60dd63
+Merge: 685f60ed 28995eb7
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue May 14 16:31:11 2024 -0600
+
+    Merge pull request #165 from DiegoMaroquin/diegobanco9
+    
+    se agregra 80% tipodecambio
+
+commit 28995eb75aab1f44f3434779510bdb2ef3f54b59
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Tue May 14 15:42:08 2024 -0600
+
+    se agregra 80% tipodecambio
+
+commit 685f60ed2ca85ca49e9b37debc5e45be5e52b3db
+Merge: f04ac0c2 0522eff5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue May 14 12:08:29 2024 -0600
+
+    Merge pull request #164 from cchuye/main
+    
+    Implementando bitacora en ordenes, compras y facturas
+
+commit 0522eff5d42700ffdf318ad071a80da9c904b91d
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Tue May 14 10:58:36 2024 -0600
+
+    Implementando bitacora en ordenes, compras y facturas
+
+commit 14a0bfcc91edaef50fce2c9f2dd2519da13be5ed
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue May 14 10:09:53 2024 -0600
+
+    pequeños cambios
+
+commit 27cad13d378183186cbf0302053b6ba30d088836
+Merge: 690d5f93 f04ac0c2
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue May 14 09:39:40 2024 -0600
+
+    Merge pull request #15 from carlosEnriqueGC/main
+    
+    subiendo 70% equipo1
+
+commit 690d5f93fc5a9f9911cc1f0829949f1ff6097906
+Merge: 46ba62e0 79271e86
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue May 14 09:39:25 2024 -0600
+
+    Merge pull request #14 from D4nnny/main
+    
+    Integración de Mantenimientos al MDI
+
+commit 79271e866211419baf235686ba9d1c8a9498efeb
+Merge: f1033851 a6dd9b6d
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue May 14 09:01:44 2024 -0600
+
+    Merge pull request #52 from JustinPennant/main
+    
+    Funcionamiento de Pago de Servicios
+
+commit a6dd9b6d5ec1c5e288bc247e67ebaa734a6a816a
+Author: JustinPennant <114191915+JustinPennant@users.noreply.github.com>
+Date:   Tue May 14 08:59:56 2024 -0600
+
+    Funcionamiento de Pago de Servicios
+
+commit f1033851aa9854abc9379a75399254ac1ed2c710
+Merge: cbffe4bf 8d980be9
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue May 14 00:17:24 2024 -0600
+
+    Merge pull request #51 from Olstertecn11/main
+    
+    Agregando clase de transaccióne implementacion en los métodos de deposito/retiro
+
+commit 8d980be948011d7ab9145fb5e4e6e085a0515263
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:15:20 2024 -0600
+
+    adding transaction class
+
+commit c015129b5b22ae0aa032188503eaafc8d5b05b69
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:14:56 2024 -0600
+
+    logic for with... and deposit
+
+commit bf7771ecf4f1a9161c8f4d13e4a02ba6f4f5c144
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:14:00 2024 -0600
+
+    account class
+
+commit 6230b9b8d50fb8243ba0fdea68f6724b2051c915
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:13:54 2024 -0600
+
+    transactions sentence
+
+commit 9e4060886847190b19985cddf1963836d1168983
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:13:48 2024 -0600
+
+    manage logic for accounts
+
+commit 3a37e90a4d3f0c884cf323866a7092eab286e7d9
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Tue May 14 00:13:27 2024 -0600
+
+    api classes for account and invoice
+
+commit f04ac0c240eb67f8c7b35be0ee3ce0be14c4baf1
+Merge: 58d4445a dc8c8561
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Mon May 13 17:25:16 2024 -0600
+
+    Merge pull request #163 from OTEKE10/main
+    
+    Agregando cambios para el transaccional de pedido
+
+commit dc8c8561f343e081896f9e06f0dc3466108fb8f9
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Mon May 13 11:08:42 2024 -0600
+
+    Agregando cambios para el transaccional de pedido
+    
+    Se agrega el dtgw para visualizar la cotización y el pedido de esta misma.
+
+commit cbffe4bfde42723789fb22bda25352b5df21678a
+Merge: 105b4aa9 1a074246
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Sun May 12 16:40:54 2024 -0600
+
+    Merge pull request #50 from Olstertecn11/main
+    
+    Agregando Reporteador al navegador :D
+
+commit 1a07424694bcfac1265c757141fe95c2ae05f8de
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Sun May 12 00:50:22 2024 -0600
+
+    eliminando reporteador2.0 utilizado para realizar pruebas
+
+commit 568cbca53983e75d894b1df404f058ae2ef6e57b
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Sun May 12 00:48:54 2024 -0600
+
+    Agregando Reporteador al navegador :D
+
+commit 58d4445a7fb02ddac67981a8038af7c55e0b0ab8
+Merge: 27f7b185 33866c4a
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Sat May 11 13:54:16 2024 -0600
+
+    Merge pull request #162 from DACR-DC/main
+    
+    80% arreglos a factura por cobrar
+
+commit 33866c4a329dfb7639c6e2612a16a9e4bd23ccb1
+Merge: ad05d3bb 27f7b185
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sat May 11 13:45:38 2024 -0600
+
+    cambios
+
+commit ad05d3bb864cb65ec5008d18e5edb802d06c45d5
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sat May 11 13:43:57 2024 -0600
+
+    80% arreglos a factura por cobrar
+
+commit 27f7b185fffbb372aad66a325bf7c0fe77e64733
+Merge: eced307e 30b10190
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 11 13:33:04 2024 -0600
+
+    Merge pull request #161 from DiegoMaroquin/diegobanco8
+    
+    se agregra 80% tipodecambio y matenimiento
+
+commit 30b10190de82107df41bc67dfc571d5a985cf16b
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Sat May 11 13:32:11 2024 -0600
+
+    se agregra 80% tipodecambio y matenimiento
+
+commit eced307e9dea90882aa99b8c1f6f5f8814569c72
+Merge: 8015095d 0bf71de7
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 11 12:53:31 2024 -0600
+
+    Merge pull request #160 from DACR-DC/main
+    
+    creo que con esto no se enviara el .txt que causa los heads
+
+commit 0bf71de78dbeaede240d1b1748436ed3536ddd68
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sat May 11 12:52:04 2024 -0600
+
+    creo que con esto no se enviara el .txt que causa los heads
+
+commit 8015095d98dd18f7833d5137ae05e198fda1e0f2
+Merge: 38b83cbf 6a986ccd
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Sat May 11 12:47:26 2024 -0600
+
+    Merge pull request #159 from coradoa/main
+    
+    ENVIANDO EL 80%
+
+commit 6a986ccd03f65cfbeffd124b9f574cddf7298f42
+Merge: 3f9a29f8 38b83cbf
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Sat May 11 12:45:20 2024 -0600
+
+    Merge branch 'carlosEnriqueGC:main' into main
+
+commit 3f9a29f8cb51ae4de47d9b679c6b0c5a6e1f0667
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Sat May 11 12:44:32 2024 -0600
+
+    cambios PARA QUE FUNQUE
+
+commit 38b83cbf63da4f9854d8caf5fc745858cd761665
+Merge: b88512d8 7dfedb60
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 11 12:28:42 2024 -0600
+
+    Merge pull request #158 from coradoa/main
+    
+    Subiendo de operaciones en proveedores
+
+commit 7dfedb600c91a2c70221832a491797200a795f61
+Merge: 6ce6a67a b88512d8
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Sat May 11 12:12:37 2024 -0600
+
+    cambios
+
+commit b88512d85da82c265dfba32750b2a6893e3fbdb1
+Merge: f1ee6bc5 3c9e391f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat May 11 11:59:13 2024 -0600
+
+    Merge pull request #157 from JimenaTobias/main
+    
+    Mantenimientos arreglados + Botones de Agregar y Eliminar funcionales…
+
+commit 3c9e391f4d8a1437d8e3c48dea75e025232e34b6
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Sat May 11 02:17:09 2024 -0600
+
+    Mantenimientos arreglados + Botones de Agregar y Eliminar funcionales en Traslado de Producto.
+
+commit 105b4aa9d2685d9b2cce0bb48483476af624b565
+Merge: e168bd90 97cf4b3e
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri May 10 13:36:40 2024 -0600
+
+    Merge pull request #49 from Olstertecn11/main
+    
+    cambios en navegador y reporteador
+
+commit 97cf4b3eae08fc5dcfc69d0c3f142b7e9be42550
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri May 10 13:35:02 2024 -0600
+
+    cambios en navegador y reporteador
+
+commit e168bd902ba58810bd6a5fb19f2401d362af111e
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri May 10 12:27:12 2024 -0600
+
+    Agregando Reporteador
+
+commit 410055b8bac0222b6f44800717ce7df0279f631c
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 9 20:49:08 2024 -0600
+
+    Agregando Script Actualizado
+
+commit f1ee6bc566fe11c42fa52a1784e6acffef5f5b70
+Merge: 9db8db94 35a2b48b
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 9 20:48:55 2024 -0600
+
+    Merge pull request #156 from DACR-DC/main
+    
+    <<<<HEAD eliminados
+
+commit 35a2b48b1dd5c564f7e14dc7510f11c173bb014c
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 9 20:46:55 2024 -0600
+
+    <<<<HEAD eliminados
+
+commit 64a420c191d8951f5736cd7578ccf65902ce0320
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 9 20:46:51 2024 -0600
+
+    Agregando Clases para API
+
+commit 6ce6a67a621a29b0646fd52f80dfeb78892404fc
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 9 20:46:44 2024 -0600
+
+    Subiendo de operaciones en proveedores
+    
+    estado de la factura, filtrado para que no salgan si ya fueron pagadas, vistas de tablas, agregar numero a forms de aplicacion
+
+commit 39e35941d382c3dbdbad617c12750dec72626e4c
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 9 20:39:02 2024 -0600
+
+    cambios menores
+
+commit 9db8db945e2f96fe6455e3d7261e90ef128e1fde
+Merge: a0fbc6a9 beb4d0cf
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 9 20:15:14 2024 -0600
+
+    Merge pull request #155 from DACR-DC/main
+    
+    80% Arreglando la factura por cobrar y guardandola
+
+commit beb4d0cfdc9db571e3ec1390f7099cccec4c8443
+Merge: cf51ab62 a0fbc6a9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 9 19:55:56 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 7af9a48e0ef02b46103d4e81d7c85fd619751f4f
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu May 9 19:55:22 2024 -0600
+
+    Agregando clase para transacciones
+
+commit cf51ab62fc5f1587609b40350b5e340f5692494b
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 9 19:52:01 2024 -0600
+
+    80
+
+commit 726c50f8c2d39397081c984711b7f86e74ac5288
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 9 19:50:57 2024 -0600
+
+    80% Arreglando la factura por cobrar y guardandola
+
+commit a0fbc6a9508539e28cc1b8f443470ad8d1d4f769
+Merge: ec9155c1 045d4af1
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 9 18:20:27 2024 -0600
+
+    Merge pull request #154 from cchuye/AgregandoModificaryEliminar_Compras
+    
+    Agregando la funcionalidad al boton de modificar y eliminar en los fo…
+
+commit 5c7f7e83cb1952822976d0496c2ca56a1da1e9ba
+Merge: 87556fd7 acd54e8b
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu May 9 17:53:02 2024 -0600
+
+    Merge pull request #47 from Frls03/main
+    
+    agregando codigo de seguridad
+
+commit 045d4af1587bef345b48bcf0fa87242eb9c3b2fe
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu May 9 17:32:26 2024 -0600
+
+    Agregando la funcionalidad al boton de modificar y eliminar en los forms de ordenes,compras y facturas
+
+commit acd54e8b802f13fb6968462b59e938fd8b5f3463
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Thu May 9 17:24:46 2024 -0600
+
+    Agregando 100% de funcionalidad a movimientos bancarios
+    
+    Ya se pueden realizar transacciones, a falta de integrar la verificación de cuentas, está al 100%
+
+commit 7f890e95728786a804c31cdfda749d48f9dcb9b1
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Thu May 9 15:26:47 2024 -0600
+
+    agregando codigod de seguridad
+
+commit ec9155c165d42edd5c4fdac50524ff06d626fcad
+Merge: d9102257 a04b3589
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 9 15:07:12 2024 -0600
+
+    Merge pull request #153 from DiegoMaroquin/diegobanco7
+    
+    se agregar 80% de disponibilidad diaria
+
+commit a04b3589f9b2d86868035a89269db4779b59755d
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Thu May 9 15:04:02 2024 -0600
+
+    se agregra 80% de disponibilidad diaria
+
+commit d9102257b554238451368d34afc4a444595e19ff
+Merge: 4c5838b2 618946e2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 8 21:48:53 2024 -0600
+
+    Merge pull request #152 from JimenaTobias/main
+    
+    Agregando mantenimiento arreglado
+
+commit 618946e29ff16295a2b1e71bb987b8081ce30b6c
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Wed May 8 21:36:20 2024 -0600
+
+    Agregando mantenimiento arreglado
+
+commit 4c5838b2dedf77e5e03f84c2dbda582e8ab808a7
+Merge: 538f0535 65570565
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed May 8 20:53:11 2024 -0600
+
+    Merge pull request #151 from carlosEnriqueGC/moduloBancoCarlosEnrique
+    
+    Modulo banco carlos enrique
+
+commit 6557056558ee2cce0e7eff0477c61ff73871f7ae
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 8 20:51:24 2024 -0600
+
+    se agrega modificaciones de la base de datos y se verifica el funcionamiento del proceso movimiento de bancos
+
+commit 87556fd7cb5944e6eac2bb4a84629e9ada0b3a6c
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed May 8 20:45:52 2024 -0600
+
+    Agregando ComboBox para formularios
+
+commit 46d379f83d310a3721431cf7e8b60c4e0ba24529
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 8 20:03:58 2024 -0600
+
+    movimientos de bancos: se realizacion algunas correcciones y se agregaron unas funciones para mejorar el proceso
+
+commit d28c8e59bf24a848a2914180cf0319482dd95f04
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed May 8 19:33:32 2024 -0600
+
+    Haciendo revert
+
+commit 6e753badf961b6f8d724fb16916c9253eb132c72
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed May 8 17:40:56 2024 -0600
+
+    cuando se ingresa a la bitacora de movimientos de bancos este se registra en la bitacora de seguridad con su respectivo numero de aplicacion
+
+commit 538f05354515ed08734743cdfab0da1c368b893d
+Merge: d2373d3f 46ba62e0
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue May 7 22:13:53 2024 -0600
+
+    70% equipo
+
+commit e2670421c430b7ac4f93c1a6907492aa90c3778b
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 7 18:39:02 2024 -0600
+
+    Agregando ayudas al navegador
+
+commit 8f99553d31e7542de659c271e2f3e8c30be1f884
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue May 7 17:25:18 2024 -0600
+
+    Integración de Mantenimientos al MDI
+
+commit d2373d3fd496201581ca591cd8216b36de1b0b5c
+Merge: 111d0133 3ad64db7
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri May 3 18:38:48 2024 -0600
+
+    Merge pull request #150 from DACR-DC/main
+    
+    Subiendo script actualizado
+
+commit 3ad64db7be2eddd41165822bc94aa09b4f19ef8c
+Merge: e4f63060 111d0133
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 3 18:36:02 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit e4f6306086d78be6cbdc81e3db9514e06e1e02b4
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 3 18:35:57 2024 -0600
+
+    Subiendo script actualizado
+
+commit 111d0133a5a8b8855b6448b0c84377462665845d
+Merge: b17c9ec8 935c75d7
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 3 17:16:21 2024 -0600
+
+    Merge pull request #149 from DACR-DC/main
+    
+    Correccion errores obtenerultimos dato y reducción de codigo
+
+commit 935c75d720411bbd176f7cf05a37591d526e8267
+Merge: 3b92e027 b17c9ec8
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 3 17:14:31 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit b17c9ec890203a9f77f3949b6d631e5257953714
+Merge: 3739d567 b4fec68f
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 3 17:11:59 2024 -0600
+
+    Merge pull request #148 from cchuye/Agregando_GuardarCompyFact
+    
+    Agregando el 70% de compras, guardando compras y facturas
+
+commit b4fec68ff52af50763293b4e86ac4b0220b2e219
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri May 3 16:01:11 2024 -0600
+
+    Agregando el 70% de compras, guardando compras y facturas
+
+commit 3b92e027112e12f5cfdbc18000fc1c74e502a19c
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri May 3 13:42:28 2024 -0600
+
+    Correccion errores obtenerultimos dato y reducción de codigo
+
+commit 3739d567e971bc6761887259cf5832b27a7b1706
+Merge: 3d30ea89 99182728
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri May 3 13:06:00 2024 -0600
+
+    Merge pull request #146 from coradoa/main
+    
+    AGREGANDO SUMA Y RESTA FACTS
+
+commit 991827283eeffbee9f088871d1157e8a15a9155d
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri May 3 10:04:46 2024 -0600
+
+    Guardando datos en la base de dato de MovPro
+
+commit 53aabb0c01dbf5a01b45d92de6aed93773105b2d
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 2 23:33:00 2024 -0600
+
+    agregando la suma y resta
+
+commit cce3262ae8f3b9bb975fb29917a1aba1805e9690
+Merge: d5dbbc18 3d30ea89
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 2 23:14:59 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit d5dbbc1804498ace6ecd6f3b14ac61dc97336a7a
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 2 23:14:44 2024 -0600
+
+    cosas
+
+commit 3d30ea89832ec292f88340e36ed9e4367f007d47
+Merge: 70e5ed2f 62bd7423
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 2 23:13:54 2024 -0600
+
+    Merge pull request #145 from DACR-DC/main
+    
+    70% Parcial
+
+commit 62bd7423df2c229dd2559dc127663c4287d3d633
+Merge: d462fa9d 70e5ed2f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 2 23:12:33 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 70e5ed2f89f43b47774af9196af1b58d09cea86f
+Merge: 3d43bf00 d54a70b4
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu May 2 23:10:55 2024 -0600
+
+    Merge pull request #144 from coradoa/main
+    
+    Agregando cosas de Operaciones Mov Prove
+
+commit d462fa9d239b59846bcbab2273786baa70e09d74
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 2 23:09:48 2024 -0600
+
+    Subiendo 70% Parcial David Carrillo 0901-20-3201
+
+commit d54a70b44e55d774ae7e842bba1476f441dadc77
+Merge: 54a9b077 3d43bf00
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 2 22:59:25 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 54a9b0777194e02e8a536e6915ce97b3c9d2c556
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu May 2 22:56:34 2024 -0600
+
+    Agregando funcionalidad
+
+commit 3d43bf0097480c61fd90a4ec4e5ec1e5a989654b
+Merge: f3e35bbd f8a9fdad
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 21:44:21 2024 -0600
+
+    Merge pull request #143 from DiegoMaroquin/diegobanco6
+    
+    se agregra 70% de disponibilidad diaria
+
+commit f8a9fdad1d1630f93a94c2f8e85bb324478048a8
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Thu May 2 20:54:37 2024 -0600
+
+    se agregra 70% de disponibilidad diaria
+
+commit f3e35bbd03b89287612495c7e0e15c78ff585b05
+Merge: 167549e2 461dafa1
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 20:30:40 2024 -0600
+
+    Merge pull request #142 from carlosEnriqueGC/moduloBancoCarlosEnrique
+    
+    autorizacion de orden: se modifico la apariencia ademas de incluir el…
+
+commit 461dafa169ce0daba5c6361b3cb89ffc38fd573d
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 2 20:29:41 2024 -0600
+
+    autorizacion de orden: se modifico la apariencia ademas de incluir el nav de opciones y un boton de verificacion
+
+commit 167549e20c22d8dba1de394a9b52fca5562521ee
+Merge: d6406610 000a52ee
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 18:51:25 2024 -0600
+
+    Merge pull request #141 from carlosEnriqueGC/moduloBancoCarlosEnrique
+    
+    Modulo banco carlos enrique
+
+commit 000a52ee0d42f484f0c56a7f936cec986030e214
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 2 18:50:30 2024 -0600
+
+    movimiento de bancos terminado en un 70%
+
+commit 7e79667f0ad8cdf9a1e52f5bcd212b8d7c4e23d9
+Merge: 32454e33 d6406610
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 2 17:00:09 2024 -0600
+
+    rama actualizada
+
+commit d640661060dac59ea63cb56d08fbd76ee7f2ef97
+Merge: 02d4deea e7b4f84f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 16:59:33 2024 -0600
+
+    Merge pull request #140 from DACR-DC/main
+    
+    Solicitud de pedido
+
+commit 32454e33172f2b6353b78ee72d245f3af2300aa1
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 2 16:58:57 2024 -0600
+
+    cambios realizados en el movimiento de bancos
+
+commit e7b4f84fcbac967fd30dae596355a6f515568783
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu May 2 16:49:11 2024 -0600
+
+    Solicitud de pedido
+
+commit b7cbbbc35fe60f34493501add874b6bdbfc6bc19
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu May 2 16:06:31 2024 -0600
+
+    movimiento de banco: se ha corregido la interfaz de la bitacora y añadido unos cambios necesarios
+
+commit 46ba62e03233dc564f78be57c19554ad644cc586
+Merge: 54579810 0ad6d5a9
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Thu May 2 09:30:40 2024 -0600
+
+    Correcciòn y revisiòn .gitignore
+
+commit 54579810a7c3e81cd143a59237d5d20792b0cc37
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Thu May 2 09:29:02 2024 -0600
+
+    correccion git ignore
+
+commit 0ad6d5a99b8e312b692d125021160f630deded48
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu May 2 09:28:15 2024 -0600
+
+    Update .gitignore
+    
+    Correcciòn del .gitignore del proyecto.
+
+commit 02d4deeae58959017b2fc325df2ad48838a2c187
+Merge: 18413067 e5dff6d2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 09:21:45 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit 1841306763bea1a1061c51d673c246a6a0f13f13
+Merge: c2e242dc 227eebeb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu May 2 09:12:18 2024 -0600
+
+    Merge pull request #139 from coradoa/main
+    
+    Agregando bd con tablas detalle y encabezado para Mov prov
+
+commit 227eebebf12a04765ad52803e78958975dde2555
+Merge: ef61382c c2e242dc
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 22:27:56 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit ef61382c96904acc17479f198b2107a1a46ff2ea
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 22:27:26 2024 -0600
+
+    Agregando bd con tablas para Mov Proveedores
+
+commit c2e242dc2978998796df18bc02b7253c76d0072c
+Merge: f97f067c 0deda352
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 30 21:40:05 2024 -0600
+
+    Merge pull request #138 from coradoa/main
+    
+    Agregando y cambiando boton
+
+commit 0deda352147fdcccc854521137b49902215f4110
+Merge: bce7025b f97f067c
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 21:39:09 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit f97f067cd5c515260888e73225440190a4c24aef
+Merge: 21f575bf 416cc614
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 30 21:37:54 2024 -0600
+
+    Merge pull request #137 from DACR-DC/main
+    
+    Agrandando unos forms
+
+commit bce7025be82374d20e23e085dc2e057d466fcdc0
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 21:37:33 2024 -0600
+
+    cambio nombre de boton
+
+commit 416cc6148e148b97188529566575b5b778c0bde3
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Apr 30 21:36:57 2024 -0600
+
+    Agrandando unos forms
+
+commit 21f575bfff169cf54542ba2d933145e6812c21eb
+Merge: b801f2e4 1a0fc72a
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 30 21:28:04 2024 -0600
+
+    Merge pull request #136 from DACR-DC/main
+    
+    la parte que estaba gris ya está azul
+
+commit 1a0fc72a08aea1ce4afb448131f753d5fa28a8fd
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Apr 30 21:27:08 2024 -0600
+
+    la parte que estaba gris ya está azul
+
+commit b801f2e452a529b168fac0857e0d43c72520d172
+Merge: 7a8c88a3 0346365f
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 30 21:14:52 2024 -0600
+
+    Merge pull request #135 from coradoa/main
+    
+    Agregndo colores al MDI, arreglando mi transaccional
+
+commit 0346365feb25037ad24cc4e33746c61053c582db
+Merge: 44a40cd8 7a8c88a3
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 21:13:27 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 44a40cd8b45990dd71a10ce7e2445ee3bb482503
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 21:12:09 2024 -0600
+
+    Cambiando el MDI a los colores que son
+
+commit 7a8c88a317cf4ed6676d02342686490be7c8fd87
+Merge: 49799f3e c7883460
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 30 21:06:21 2024 -0600
+
+    Merge pull request #134 from cchuye/agregando_nuevodiseñonav
+    
+    Agregando nuevo diseño navegador y navegador transaccional
+
+commit b49daa42872521f942e4399b584486b56c98d06a
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Apr 30 18:12:04 2024 -0600
+
+    Agregando Modificaciones a Operaciones Proveedor (CAJA)
+
+commit c7883460e86d609ce72ecfc833be0d0955f13f1d
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Tue Apr 30 18:07:00 2024 -0600
+
+    Agregando nuevo diseño navegador y navegador transaccional
+
+commit e5dff6d23349f7fcd2b9f72331445b5974b36d5a
+Merge: 38d9f8b5 e3c984a0
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue Apr 30 08:19:11 2024 -0600
+
+    Merge pull request #10 from D4nnny/main
+    
+    Actualización de Script Sistema Bancario
+
+commit 38d9f8b56df6b5afe6d6b06add87a630f0996119
+Merge: 9d8cf848 49799f3e
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue Apr 30 08:18:08 2024 -0600
+
+    Merge pull request #11 from carlosEnriqueGC/Grupo1
+    
+    Grupo1: prototipos 60%
+
+commit 49799f3e857f539be701c3b943ce55a3093f2eb1
+Merge: 2f762575 052eee84
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Mon Apr 29 11:53:46 2024 -0600
+
+    Merge pull request #133 from JimenaTobias/main
+    
+    Mantenimientos y Procesos terminados
+
+commit 052eee849afa66f7c4406d40ab28e629c3f988fc
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Mon Apr 29 11:17:35 2024 -0600
+
+    Mantenimientos y Procesos terminados
+
+commit 2f7625752d8e23d5fc9786bb8bd12c5edd4b5fcf
+Merge: 02d3ddc4 c4adb2f9
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Mon Apr 29 06:53:12 2024 -0600
+
+    Merge pull request #132 from DACR-DC/main
+    
+    Subiendo Base de datos actualizado
+
+commit c4adb2f984405b2f8ac38dd897618a19ff80de42
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 18:37:38 2024 -0600
+
+    Subiendo Base de datos actualizado
+
+commit 02d3ddc49aa4a450d9f74c5a2796964fc5514f7e
+Merge: 7be66049 0e30461a
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 26 18:04:00 2024 -0600
+
+    Merge pull request #131 from DiegoMaroquin/diegobanco5
+    
+    se agregra 60% de mantenimiento y proceso
+
+commit 0e30461aa11a306aa6b229e816f765e6718d1c3a
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Apr 26 18:02:46 2024 -0600
+
+    se agregra 60% de mantenimiento y proceso
+
+commit 7be66049b5b81310f04c37977b9f113267b5b147
+Merge: 80df8cd5 8e9b4aac
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 17:41:53 2024 -0600
+
+    Merge pull request #130 from DACR-DC/main
+    
+    Cambios a Mantenimiento de Productos
+
+commit 8e9b4aac1e3a6fb28054742993e6e662cfb9b0df
+Merge: 225c908a 80df8cd5
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 17:40:48 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 80df8cd5130155f1abafb46ab3bf4a64fa1aab87
+Merge: 11340dd2 ac18672f
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 17:39:31 2024 -0600
+
+    Merge pull request #129 from coradoa/main
+    
+    Agregando funcionamiento de mov proveedor y caja
+
+commit 225c908ab0d759cd1ecd09ba73b0c15d1ed52f48
+Merge: e0e4aa24 11340dd2
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 17:38:22 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit e0e4aa2457541450d30b20388b64090c9d557fc1
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 17:37:45 2024 -0600
+
+    Cambios a Mantenimiento de Productos
+
+commit ac18672f8b3e38e482f0120cac47d8239a80b5d1
+Merge: 1532f96e 11340dd2
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 26 17:09:21 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 1532f96e83cc29877c5ab188197670fab8ce1f40
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 26 17:07:04 2024 -0600
+
+    agregando filtrado de data de mov prov/ caja
+    
+    ademas de agregar funcionamiento a cosas de caja o pago al proveedor
+
+commit 11340dd248d840d630435dcc5c6f1b44b0d407da
+Merge: a641308a 30e06cfc
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 26 16:35:35 2024 -0600
+
+    Merge pull request #128 from OTEKE10/main
+    
+    60% Proceso Pedido
+
+commit 725d5f72a138e13cb079fb5f9e211eca5adc1584
+Merge: 53a81409 a641308a
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 26 15:16:41 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 53a814093b43cb0f4b137953a2cb60b3e5e40d62
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 26 15:16:29 2024 -0600
+
+    cosas
+
+commit 30e06cfcfe2bb10705f52cafd0ce9a1621e5a27a
+Merge: 9fce69cb a641308a
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 26 14:51:51 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 9fce69cbc2e8f561958db8e9bf436b5cfa7b2623
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 26 14:49:13 2024 -0600
+
+    60% Proceso Pedido
+    
+    Proceso Pedido
+
+commit a641308a56948032abce4c54ee18d778d77d3ea1
+Merge: fc3ea7d1 af6edd9c
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 14:18:52 2024 -0600
+
+    Merge pull request #127 from DACR-DC/main
+    
+    cambios menores para que sea mas claro por si los demas lo desean usar
+
+commit af6edd9cb91e36571a977bcde1a14f4d861fdda5
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 14:18:03 2024 -0600
+
+    por si los demeas lo desean usar
+
+commit edf633791d6f3d7ac8296ebeb80a6261c7d9fb68
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 14:16:36 2024 -0600
+
+    cambios menores para que sea mas claro por si los demas lo desean usar
+
+commit f312ccc46b5d5e9682319060bbd102dc8b4e9f58
+Merge: 3ad649b9 fc3ea7d1
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 26 14:10:30 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 3ad649b9e5f7ba64e6c6a17d103cfba91e44f357
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 26 14:07:04 2024 -0600
+
+    Cambios PEDIDO
+    
+    cambios
+
+commit fc3ea7d10ed8726cbe5b66c52eaead866a49be6f
+Merge: 962283ef 9d0bc5e1
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 13:06:20 2024 -0600
+
+    Merge pull request #126 from DACR-DC/main
+    
+    Subiendo 60% cambios en cotización y se agrego el poder ver la cotización
+
+commit 9d0bc5e1086c3ee711ec8c7eb0c0f41a6847f77d
+Merge: af9f4708 962283ef
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 13:04:45 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 962283ef21167fb954e45b9e05ca6e93cce016fb
+Merge: 6acda7fe c5c8680a
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 13:02:33 2024 -0600
+
+    Merge pull request #125 from cchuye/Agregando60%_compras
+    
+    Agregando 60% compras
+
+commit af9f4708afa7656af6e66139152b6b8cf0d28868
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 26 13:01:33 2024 -0600
+
+    Subiendo 60% cambios en cotizacion y se agrego el poder ver la cotizacion
+
+commit c5c8680a522a9459e2b19d4e78b4dae2ca42820d
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 26 11:50:19 2024 -0600
+
+    Agregando 60% compras
+
+commit 6acda7fefd88b27386c04607d956d0033dbd313f
+Merge: fbfbc018 e3499dfe
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Fri Apr 26 11:19:53 2024 -0600
+
+    Merge pull request #124 from coradoa/main
+    
+    Agregando transaccional de mov proveedores
+
+commit e3499dfe7037cb9a97aab3a8e6a9f9bc224dba7d
+Merge: 775a31c6 fbfbc018
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 21:49:26 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 775a31c6030952dbab2b18df0e924f54240d8102
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 21:48:55 2024 -0600
+
+    Agregando parte de transaccional de movproveedores
+
+commit e3c984a0356b09c23598bd651ef9d2780986b494
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Apr 25 17:53:52 2024 -0600
+
+    Agregando nuevos Tags para el Modulo de Cheques
+
+commit c8b1647c87acd1f639ba0b4982b513d835da3305
+Merge: ec8f5816 ac7883d9
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu Apr 25 17:22:54 2024 -0600
+
+    Merge pull request #37 from JustinPennant/main
+    
+    Actualización de Form de Pago de Servicios
+
+commit fbfbc0184c74befe246a0d979bc847d22f57e4a2
+Merge: 2c06778c bc7a93d4
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 25 17:21:53 2024 -0600
+
+    Merge pull request #123 from coradoa/main
+    
+    Agregando script de modificaciones
+
+commit bc7a93d49c4842c9f7db9846409e1bd02d3e7884
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 17:21:02 2024 -0600
+
+    Update ModificacionesBASE.sql
+
+commit 4c7d12f98f54793a484f408f83671c9a392c8a1b
+Merge: 172b55ef 2c06778c
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 17:20:28 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit ac7883d93b13784bf6e694024ad5402a5d8d8d4e
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Thu Apr 25 17:20:24 2024 -0600
+
+    Actualización de Form de Pago de Servicios
+
+commit 2c06778c5818b4ad18d52580e304e63d79867fef
+Merge: 22aa48dc de8859ca
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 25 17:17:48 2024 -0600
+
+    Merge pull request #122 from carlosEnriqueGC/moduloBancoCarlosEnrique
+    
+    Modulo banco carlos enrique
+
+commit de8859ca547b61034788cb01420a4e97494c8f1b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu Apr 25 17:17:04 2024 -0600
+
+    rama actualizada
+
+commit 172b55ef50a4975458287adcda2ad0d28bec696e
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 17:11:14 2024 -0600
+
+    agregando la base con modificaciones en su carpeta
+
+commit 1f60b2718776eccc6e6e44897bdd7a9712998e1d
+Merge: 3df4fcfa 22aa48dc
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu Apr 25 16:56:26 2024 -0600
+
+    Merge branch 'main' of https://github.com/carlosEnriqueGC/ProyectoMigracion_G1 into moduloBancoCarlosEnrique
+
+commit 3df4fcfa960f4e7a310e6412a79a1758843653b5
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu Apr 25 16:54:13 2024 -0600
+
+    60% realizado del proceso autorizacion de orden de compra
+
+commit 5a0da49181ab2601cab4d85e4013f1cfb61d1d1e
+Merge: 824b91cd 22aa48dc
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 16:12:46 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 22aa48dcb893f105ec207e60d289a36b06232d42
+Merge: 90fd92f6 3c3fdb57
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Apr 25 15:11:54 2024 -0600
+
+    Merge pull request #121 from cchuye/main
+    
+    Agregando componente consultas y modificando codigo consultas navegad…
+
+commit 3c3fdb5781b8ae8df7fc4c01aa831b53c065b82e
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Apr 25 13:32:29 2024 -0600
+
+    Agregando componente consultas y modificando codigo consultas navegador, eliminando la carpeta bancos
+
+commit ec8f5816c41092acf5d442ed5f8c9885aaa48b10
+Merge: 135d39ea 5c7ed604
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu Apr 25 09:02:43 2024 -0600
+
+    Merge pull request #36 from Frls03/main
+    
+    Agregando nueva base de datos
+
+commit 5c7ed60499a53394f30409fbd16fc9f387444314
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Thu Apr 25 09:00:37 2024 -0600
+
+    Agregando nueva base de datos
+
+commit 824b91cd5ce3fbea5ebd962203d83981e03df316
+Merge: 254666cf 90fd92f6
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 09:00:24 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 254666cfa29e6da33e9a9dd84d703de4dc300896
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 25 09:00:02 2024 -0600
+
+    cambios
+
+commit 90fd92f699a22606c4afb7a67731f53539fda94e
+Merge: 87a4b79a 9d8cf848
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Apr 24 21:57:31 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit 87a4b79a863777bae0999d72c9a6f2d4deda62d9
+Merge: e297e918 2f567c87
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Apr 24 21:54:11 2024 -0600
+
+    Merge pull request #120 from carlosEnriqueGC/moduloBancoCarlosEnrique
+    
+    60% del proceso movimiento de bancos realizado se ha implementado una…
+
+commit 2f567c878d544d76d8bff64736f86e62de24c7f1
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Apr 24 21:52:03 2024 -0600
+
+    60% del proceso movimiento de bancos realizado se ha implementado una bitacora para dichos movimientos
+
+commit e297e9185f3ab3ca7a474fb4bdde7fd5428bf8ec
+Merge: 2835716f 5835d308
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Apr 24 15:26:30 2024 -0600
+
+    Merge pull request #119 from DiegoMaroquin/diegobanco4
+    
+    se agregra mantenimiento y procesos de banco codigocorregido
+
+commit 5835d308a6dc6ac520f8e91f8e9a18d7aa08c1d8
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Tue Apr 23 19:12:50 2024 -0600
+
+    se agregra mantenimiento y procesos de banco codigocorregido
+
+commit 9d8cf848f0fa51a4cff99c3578fd2135ede0b726
+Merge: 0dd9b7fe 135d39ea
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue Apr 23 09:50:59 2024 -0600
+
+    Merge pull request #8 from D4nnny/main
+    
+    Correcion de Errores navegador y Funcionalidades
+
+commit 0dd9b7fe460687a046f296d06f975d596c34f5c9
+Merge: 1f3b05cb cbaa6e16
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Tue Apr 23 09:50:37 2024 -0600
+
+    Merge pull request #7 from carlosEnriqueGC/Grupo1
+    
+    Grupo1: prototipos 50%
+
+commit 135d39ea13c8102f573edb565076c0ef98766711
+Merge: 9c93ad89 19afbbaa
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Sun Apr 14 19:31:48 2024 -0600
+
+    Merge pull request #35 from Frls03/main
+    
+    Añadiendo form de tarjetas de credito y debito, además de arreglar cosas para bitacora y añadir script de bd
+
+commit 19afbbaa6c1f9be2f6ac0310a6e5b5036e892686
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Sun Apr 14 17:10:39 2024 -0600
+
+    agregando más cambios
+
+commit 55e4ce4b1477058f5af2dafe7792bf0b65a4f524
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Sun Apr 14 17:08:57 2024 -0600
+
+    Agregando cambios a bitacora, form de tarjetas de credito y debito y agregando script de base de datos
+
+commit 9c93ad894c3cf99be861b7ec0c4e43b0a1fca3b6
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Sat Apr 13 19:40:56 2024 -0600
+
+    Arreglando Navegador
+
+commit 2835716f39687b6c3af2a177e7cb6847219ddb43
+Merge: da8d3a9e b9831d4f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 23:13:24 2024 -0600
+
+    Merge pull request #118 from DACR-DC/main
+    
+    subiendo sql final
+
+commit b9831d4fd2a95d93b42edbce5a8da7fe5f8177db
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 22:56:31 2024 -0600
+
+    subiendo sql final
+
+commit da8d3a9e69c4e291e9b5fd5fea5b46f55766af52
+Merge: 8ca28ef2 fefd602c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 18:00:03 2024 -0600
+
+    Merge pull request #117 from DiegoMaroquin/diegobanco3
+    
+    se agregra mantenimiento y procesos de banco codigopec
+
+commit fefd602cd5eeb46d858fb154f1b65cc7eb2068da
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Apr 12 17:58:25 2024 -0600
+
+    se agregra mantenimiento y procesos de banco codigopec
+
+commit 8ca28ef277085917679ed70eef911f17c8ccc9f9
+Merge: 7226d85e 124efb8b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 17:44:34 2024 -0600
+
+    Merge pull request #116 from OTEKE10/main
+    
+    Funcionamiento parcial de pedidos
+
+commit 124efb8bf5839858df300033b585d226589ae950
+Merge: 10a61093 7226d85e
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 12 17:40:27 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 10a610939a6083a299528b82e909adf9213c1f9e
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 12 17:31:40 2024 -0600
+
+    Funcionamiento parcial de forms de pedidos
+    
+    Botón de búsqueda de vendedor para pedidos
+
+commit 7226d85e38689d525ed2a9763facc60da970cfbb
+Merge: 192b7bd6 5f72f5be
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 17:30:35 2024 -0600
+
+    Merge pull request #115 from coradoa/main
+    
+    Agregando Mov Prov y mantenimientos acabados
+
+commit 5f72f5be6e9c911bd6ddecf8e51de7481926124b
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 12 17:27:55 2024 -0600
+
+    Agregando Mov Prov y mantenimientos acabados
+
+commit 192b7bd6906c65552dae1980d60e93e76e940056
+Merge: 8c10bd32 fe2e98ca
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 17:07:10 2024 -0600
+
+    Merge pull request #111 from DACR-DC/main
+    
+    subiendo 50%
+
+commit fe2e98ca55c0b81d615dc60cc1141fd318ca64f7
+Merge: 4914c900 8c10bd32
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 16:44:32 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 4914c90095508da45c269d15c63fe3a50e9d82f3
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 16:41:02 2024 -0600
+
+    subiendo 50%
+
+commit 8c10bd32530aa1ad3602263c25d4de521c5f78d2
+Merge: 1412fc92 3635bbf4
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 16:36:24 2024 -0600
+
+    Merge pull request #109 from cchuye/Agregando_Procesos_Compra50
+    
+    Agregando el 50% de procesos de compras
+
+commit 3635bbf421bbabc8c29e44ac68cea61aeb2148ed
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 12 16:32:45 2024 -0600
+
+    Agregando el 50% de procesos de compras
+
+commit 1412fc92ef3dfb4aa93d6ca6d14e9bb2670dd4dd
+Merge: 39fda27a 95e2a775
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 12:11:18 2024 -0600
+
+    Merge pull request #108 from DACR-DC/main
+    
+    subiendo script e imagen
+
+commit 95e2a775e3c3d054da03d5148f408f80c37c8fb7
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 12:08:47 2024 -0600
+
+    subiendo script e imagen
+
+commit 39fda27abc0d63b77abfbd5da612bea8185c9ef6
+Merge: 58a5712d 38f29d1b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 12:01:24 2024 -0600
+
+    Merge pull request #107 from DACR-DC/main
+    
+    Ahora si dice registro guardado
+
+commit 38f29d1b795f0a0a368c687b812db108278629fc
+Merge: d3ed574a 58a5712d
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 12:00:45 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 58a5712dc37e8462c165c5cf81002b3e552b24d4
+Merge: cbaa6e16 d7affb2c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 11:59:13 2024 -0600
+
+    Merge pull request #106 from carlosEnriqueGC/prueba
+    
+    ultimos cambios en el proceso autorizacion ordenes de compra
+
+commit d7affb2cc6306828b639def2983a9cf303bf0cc1
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 12 11:58:29 2024 -0600
+
+    ultimos cambios en el proceso autorizacion ordenes de compra
+
+commit d3ed574a68d3b576620fa6231e5c979318f8d989
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 11:57:43 2024 -0600
+
+    Ahora si dice registro guardado
+
+commit cbaa6e16e319c787511611011e90c350c79a6f66
+Merge: 3fca8b81 c062e0a5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 11:37:41 2024 -0600
+
+    Merge pull request #105 from DACR-DC/main
+    
+    Navegador
+
+commit c062e0a59e556619c3139951e919c6f2edd4a029
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 11:37:19 2024 -0600
+
+    cambios
+
+commit 37ba1519a7d9ae913245592ae4e52da29f000651
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 11:36:22 2024 -0600
+
+    Navegador
+
+commit 3fca8b8168932fc974c3bda7f7cd71c080993b92
+Merge: 56e148de 2ecb5e77
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 10:56:05 2024 -0600
+
+    Merge pull request #104 from DACR-DC/main
+    
+    Cambios en nav y en cotizacion
+
+commit 2ecb5e772797232b3271a5285ced0710d8853feb
+Merge: c64f7ec4 56e148de
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 10:53:31 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit c64f7ec4cb783ae546fc02586e3009e7c7b1d303
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 10:50:56 2024 -0600
+
+    Cambios en nav y en cotizacion
+    
+    -Ahora dice Registro guardado.
+    -Se arreglo error en caso de que en la base no existieran cotizaciones previas.
+
+commit 56e148de1ea3ef26299bf88d82ca7569a456fb9d
+Merge: 810ee6e4 bf1d31a3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 10:05:12 2024 -0600
+
+    Merge pull request #103 from carlosEnriqueGC/moduloBancosCARLOSENRIQUE
+    
+    Modulo bancos carlosenrique
+
+commit bf1d31a3be535aa2b358b457d467d771f1a4ca36
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 12 10:01:47 2024 -0600
+
+    rama actualizada
+
+commit 4282b89d042c9c46ded7412f5c2d67145a601977
+Merge: fe1599e4 810ee6e4
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 12 09:54:48 2024 -0600
+
+    rama actualizada
+
+commit 810ee6e42b4f47273ca3426c04a90db7cc7182f9
+Merge: 39bd698b 1f3b05cb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 09:40:34 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit 39bd698bcadf5c7495c13fdd920b6b8425d856c7
+Merge: fc0da462 9dd13188
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 09:38:55 2024 -0600
+
+    Merge pull request #102 from coradoa/main
+    
+    Cosas de mantenimientos de trans prov
+
+commit fe1599e4fb849f112daa1b2b05fb7c2973b07970
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 12 09:23:39 2024 -0600
+
+    rama revisada por errores raros que surgieron
+
+commit 9dd1318894b59f8f37660a7ca134351bd1169a86
+Merge: 8d484fc2 fc0da462
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 12 09:08:30 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 8d484fc27f08ea79329d6c6241fdc1ef7fb865ea
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 12 09:04:18 2024 -0600
+
+    Cosas del mantenimiento
+
+commit fc0da462f1cfbc21d9848d2dff183b5d3591bbeb
+Merge: 51befc49 940b8eba
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 12 08:58:18 2024 -0600
+
+    Merge pull request #101 from DACR-DC/main
+    
+    Subiendo SQL
+
+commit 940b8eba55586255870e3f2e27c44f2fef03dd35
+Merge: dde9258d 51befc49
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 08:56:41 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit dde9258d419a676c95a81ee2ec438278aafaac53
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 12 08:56:19 2024 -0600
+
+    Subiendo SQL
+
+commit fe8dd46414fbe1c3e9dccd8109ab6e02e5cf8494
+Merge: f9c1e2e6 1f3b05cb
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Fri Apr 12 08:06:32 2024 -0600
+
+    actualizando cambios 2
+
+commit f9c1e2e60f925c259ad18d2d4368bbe0bfc64211
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Fri Apr 12 08:05:15 2024 -0600
+
+    actualizando cambios
+
+commit 1f3b05cb86369002894aad235caaec22bcfc6da0
+Merge: f0d4601b cfe8479c
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri Apr 12 08:00:46 2024 -0600
+
+    Merge pull request #4 from D4nnny/main
+    
+    Prototipo 30% y Componentes
+
+commit f0d4601bfc65925cb328c7b672316b3377e735f4
+Merge: cf1b9344 5f250fd0
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri Apr 12 08:00:29 2024 -0600
+
+    Merge pull request #5 from carlosEnriqueGC/Grupo1
+    
+    Prototipo 30% - grupo 1
+
+commit 51befc492aa47feba6659a432d3eabb1a88d5ae4
+Merge: bab79e81 7ac1c7c3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 22:05:03 2024 -0600
+
+    Merge pull request #100 from carlosEnriqueGC/moduloBancosCARLOSENRIQUE
+    
+    mantenimientos corregidos y proceso movimiento de bancos realizado en…
+
+commit 7ac1c7c3607181f69b70af73e2821a7214e3ce4b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu Apr 11 22:04:18 2024 -0600
+
+    mantenimientos corregidos y proceso movimiento de bancos realizado en un 50%
+
+commit 26d699dfa637c90012cee4ac7cf97c8392dbb29d
+Merge: 75b9337a bab79e81
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 21:39:02 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 75b9337abf75c594c2934cd3a89c13d71a649806
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 21:38:34 2024 -0600
+
+    cosas
+
+commit bab79e81e23d9ecf76c2398cf91eea2a474a789b
+Merge: 86eb8721 e0e71beb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 21:04:10 2024 -0600
+
+    Merge pull request #99 from OTEKE10/main
+    
+    Corrigiendo forms
+
+commit e0e71bebc166a84577b3fcb63e7352eb9b3bde61
+Merge: 1b9d47ba 86eb8721
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 21:00:36 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 86eb872108aebd4cac077c6bac39711f5a945fc8
+Merge: 62a937fd 767bbee2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 20:54:26 2024 -0600
+
+    Merge pull request #98 from DACR-DC/main
+    
+    subiendo 50% Cotizacion
+
+commit 1b9d47ba48495442c55a6f5d0c7c480b211aab09
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 20:53:31 2024 -0600
+
+    Corrigiendo Forms
+    
+    Se corrigió el forms
+
+commit fb4becb33343820e0a2fc6676685c8272bbeb36f
+Merge: 97b76d8e 62a937fd
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 20:52:20 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 767bbee209a7b99e5f891263b802c2f6edbba027
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 20:51:17 2024 -0600
+
+    subiendo 50% Cotizacion
+
+commit 97b76d8e58cc39d1f9f930a8cd1fe21621973bf6
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 20:49:16 2024 -0600
+
+    Correccion de Forms
+    
+    Se corrigió el forms
+
+commit 55dcae99f7f23634f0f459ad79aa1c6db70ae0cf
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 20:46:51 2024 -0600
+
+    Corrección de forms
+    
+    Se corrigió el forms
+
+commit 62a937fdd1a09f68684948507f83f951228f80db
+Merge: 5b34435d 919f4ab6
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 20:44:22 2024 -0600
+
+    Merge pull request #97 from carlosEnriqueGC/revert-96-main
+    
+    Revert "Modificando forms y empezando funcionalidad"
+
+commit 919f4ab6d7190af97f1c9b9280690dc3cf00e0bb
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 20:44:07 2024 -0600
+
+    Revert "Modificando forms y empezando funcionalidad"
+
+commit 5b34435d8791a71824605c5f7f4b99dd449b72dc
+Merge: 9dfa44cb 9695b36f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 20:27:20 2024 -0600
+
+    Merge pull request #96 from OTEKE10/main
+    
+    Modificando forms y empezando funcionalidad
+
+commit 9695b36f97013a7db4050368efd7d3998006e215
+Merge: dc7e385d 9dfa44cb
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 20:12:00 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit dc7e385d39221c58fb0f44862c7e24ad74a9533f
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Thu Apr 11 19:58:44 2024 -0600
+
+    Actualizacion de form y principio de funcionamiento
+    
+    Se actualizo el forms y se empieza con el funcionamiento
+
+commit 9dfa44cb35ea26fb099d0e61d8d1e44e6d55d828
+Merge: dc1629cb 5815e264
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Apr 11 18:54:32 2024 -0600
+
+    Merge pull request #95 from DACR-DC/main
+    
+    cambios coti para otto
+
+commit 5815e264c711ce20c0098bb98c977c9c52150c37
+Merge: 047a7fa4 dc1629cb
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 18:49:41 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit dc1629cb016cbb261447e4b108f06af2e12c25c3
+Merge: 2aac3065 b25fb8af
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Apr 11 18:47:14 2024 -0600
+
+    Merge pull request #93 from coradoa/main
+    
+    Arreglando mi mantenimiento de trans prov
+
+commit 047a7fa4cfadbb40f24c1389815bd78d38315a22
+Merge: 51c57729 2aac3065
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 18:44:19 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 51c5772972c8055415f14927446a844687ca7edc
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 18:43:31 2024 -0600
+
+    cambios a cotizacion
+
+commit 4021e90f08abf16031eabdf8ddddcd1a8a6e605e
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 18:41:16 2024 -0600
+
+    subiendo cambios, guardando en base
+
+commit b25fb8af12e522ed70027f5823a8d8a77000bf5a
+Merge: d27b3b72 2aac3065
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 18:32:36 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit d27b3b720984a8ee20acf4f8f2fcf1405685f780
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 18:31:14 2024 -0600
+
+    Arreglando mantenimiento transcompras
+
+commit 2aac30657698ed8f0ed5a6f1c8c3c2c9858fa23d
+Merge: a3a296d8 6bdb6c62
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 18:28:47 2024 -0600
+
+    Merge pull request #92 from cchuye/main
+    
+    Arreglando Manteniemiento Proveedor
+
+commit 6bdb6c626a5ac2a3722d1d7e97f60155a654a53e
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Apr 11 18:24:07 2024 -0600
+
+    Arreglando Manteniemiento Proveedor
+
+commit c86e609eb0b52f0c2dafc44cd99902f275d6968c
+Merge: cd38711d a3a296d8
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 16:56:33 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit cd38711ded93d57e8975e33529f70a409481c9c0
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 16:56:23 2024 -0600
+
+    cosas de mi mantenimiento
+
+commit a3a296d82590c1c237e7388347a441f1dc62560a
+Merge: 525b923e 5a7146b5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 16:54:58 2024 -0600
+
+    Merge pull request #91 from DACR-DC/main
+    
+    agregando sentencias desaparecidas
+
+commit 5a7146b5ebd367a21b47d92228e75fe91be8a2f2
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 16:49:40 2024 -0600
+
+    agregando sentencias desaparecidas
+
+commit 525b923eefa25869bac897d2ef3dd3242849b9e4
+Merge: 5ed1c90c 7594a5d1
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Apr 11 16:28:34 2024 -0600
+
+    Merge pull request #90 from coradoa/main
+    
+    Arreglando el Menu HCV con logos de la empresa
+
+commit 7594a5d115ac3d6128d564f51ccf407f56c385e5
+Merge: 3efc97be 5ed1c90c
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 16:27:10 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 3efc97beb6db62035453498216d11c43c2ceca45
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 16:26:39 2024 -0600
+
+    Arreglando el Menu HVC
+
+commit cfe8479c5db24168ee9d1b9566ccee7397f7e74a
+Merge: c460ffce 2ecd9313
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu Apr 11 16:22:43 2024 -0600
+
+    Merge pull request #34 from Olstertecn11/main
+
+commit 5ed1c90c38d5276335cf45f24f4fa5ad6d3c66bf
+Merge: 61301e29 e0d8aed8
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 16:12:56 2024 -0600
+
+    Merge pull request #89 from cchuye/main
+    
+    Arreglando Navegador
+
+commit e0d8aed8d4a8d1381d0e513493792676c3c22081
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Apr 11 16:07:52 2024 -0600
+
+    Arreglando Navegador
+
+commit 989bdd4f29c83e0da99444bc94002e18328b12d3
+Merge: 9f390a3c 61301e29
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Thu Apr 11 15:09:53 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 61301e29a96e58e5fb3b6a43ccbc256f04ddc798
+Merge: 5e38af28 27a3db94
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 11:09:28 2024 -0600
+
+    Merge pull request #88 from cchuye/main
+    
+    Agregando el nuevo navegador
+
+commit 27a3db947d7a6c685b06d68a71d47c1f4d1fa10d
+Merge: d030fd0c 5e38af28
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Apr 11 11:07:20 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit 5e38af281e172aceaa32d8cfbd208301b2a6b72b
+Merge: ba1af0bf c153b7d2
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 10:37:57 2024 -0600
+
+    Merge pull request #87 from JimenaTobias/main
+    
+    Cambios en forms de Logística
+
+commit d030fd0c3146ea55b1dcfda2cc2964bd49fbf52a
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Apr 11 10:15:00 2024 -0600
+
+    Agregando el nuevo navegador
+
+commit c153b7d26fd37d361044ff9616f0e8ddec835fa9
+Merge: 780a5abf ba1af0bf
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Thu Apr 11 10:13:35 2024 -0600
+
+    Cambios en forms de Logística
+
+commit 2ecd9313dc5d4166f9e4fe240cbb5c74b87bfb07
+Merge: cc861274 c460ffce
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Apr 11 10:02:26 2024 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/ISP12k24
+
+commit 780a5abfb4b697dcec1fe0494a7f8c6b760c00e4
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Thu Apr 11 10:01:05 2024 -0600
+
+    Cambios en forms de logística
+
+commit cc8612743cb608f1e3ca6dfd6c79bf36cb78049d
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Apr 11 09:56:38 2024 -0600
+
+    combobox obteniendo info funcionandO
+
+commit ba1af0bf1ec27b9a5ff8240dc41f583b0e254de3
+Merge: 900e156c 43288ab4
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 11 09:46:45 2024 -0600
+
+    Merge pull request #85 from DACR-DC/main
+    
+    Subiendo Avance 50% no terminado aun
+
+commit 43288ab4ff1ec43ebb294a52aff34073adbc14c4
+Merge: 46e1ad31 900e156c
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 00:01:24 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 46e1ad312f1d6a66b4ab4384a73ba62bbdb772b9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Apr 11 00:00:21 2024 -0600
+
+    avance 50% no temrinado aun
+
+commit 446723349f3288f9fadd8e212e5cc6580b84ed54
+Merge: 1bffa072 0c0af8e7
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Apr 10 23:58:36 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 1bffa072ab083561969ab71ec2c4fb74dc8320b9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Apr 10 23:58:32 2024 -0600
+
+    Subiendo Avance 50% no terminado aun
+
+commit 69a599c793cc8c81558cf484084bbbcf962a0ca9
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Apr 10 23:24:46 2024 -0600
+
+    tipo cuenta y cuenta con combobox
+
+commit 9f390a3cf4ea05e224a085d82c1c6368966fdca9
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Apr 10 21:55:13 2024 -0600
+
+    Subiendo parte del 50%
+
+commit c460ffcef81ef866c389318f0699e60e51b80ab2
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed Apr 10 21:47:28 2024 -0600
+
+    Arreglando Menu HCV con Logo y colores
+
+commit 64bb63b20b91e7a0f16d9d9b9341bf9618d507db
+Merge: f43d0070 9d04ccaa
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Apr 10 21:08:05 2024 -0600
+
+    Merge pull request #33 from Frls03/main
+    
+    10% de la progra de mov bancarios
+
+commit 9d04ccaa7b5227c9753fe0ea0ed89829a927082a
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Wed Apr 10 21:07:11 2024 -0600
+
+    agregando progra que todavia no funciona en mov bancarios :c
+
+commit 3971898b1ebc13ffb7a0cbdb2b327bc6b56a95b3
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Apr 10 20:46:55 2024 -0600
+
+    adding frmTipoCuenta
+
+commit 218a6bf94924c3fb2a0ab2e29cd9269a2826dcb3
+Merge: 779e8feb f43d0070
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Wed Apr 10 20:01:14 2024 -0600
+
+    add
+
+commit 779e8febc60066167a2af8ba03cbbcc1c5679ca0
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Wed Apr 10 20:00:32 2024 -0600
+
+    add
+
+commit f43d00705ee35d4d010961de13697223c2674438
+Merge: 11c0cbff cfa92502
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Apr 10 19:57:09 2024 -0600
+
+    Merge pull request #32 from JorgeGxd/main
+    
+    Creacion de cuenta
+
+commit cfa925027ac8adb930d803df11e6379226aec4e6
+Author: JorgeGxd <noroxd15@gmail.com>
+Date:   Wed Apr 10 19:56:38 2024 -0600
+
+    Creacion de cuenta
+
+commit 900e156c9fd7f87c144b40b175027d3ff884bf44
+Merge: 43802d0a 987bf420
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Apr 10 19:32:55 2024 -0600
+
+    Merge pull request #83 from JimenaTobias/main
+    
+    Agregando mantenimientos y un proceso de Logística
+
+commit 11c0cbff024e43bd3c963303a3b469e045e825d0
+Merge: 4b0d0b9a 3cde60a0
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Apr 10 19:15:25 2024 -0600
+
+    Merge pull request #31 from DanielOnOsu/main
+    
+    Ultimos forms que faltan agregados
+
+commit 3cde60a01e47e41679365c45e05619416f524958
+Author: Daniel Moscoso <dmoscosor1@miumg.edu.gt>
+Date:   Wed Apr 10 19:14:05 2024 -0600
+
+    Ultimos forms que faltan agregados
+
+commit 987bf420c1a41500fe51b101d789d2ae788db948
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Tue Apr 9 19:40:21 2024 -0600
+
+    Agregando mantenimientos y un proceso de Logística
+
+commit 43802d0a09d7f4d51e47bc6c2d1e7417734c6b6a
+Merge: bef4378e 0c0af8e7
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Apr 9 18:03:30 2024 -0600
+
+    Merge pull request #82 from DACR-DC/main
+    
+    Navegador ahora dice REGISTRO GUARDADO en lugar de  lo anterior
+
+commit 0c0af8e723533e67b5c0c5ac356c5250ed7e0148
+Merge: 0ac82b3c bef4378e
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Apr 9 17:39:54 2024 -0600
+
+    Merge branch 'carlosEnriqueGC:main' into main
+
+commit 0ac82b3cfde64b7202c5641ee45f209177006c06
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Apr 9 17:37:46 2024 -0600
+
+    Navegador ahora dice REGISTRO GUARDADO en lugar de  lo anterior
+
+commit bef4378ed936595866b85afe6ebc65c797391263
+Merge: 5f250fd0 4e274dfc
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Apr 9 17:26:38 2024 -0600
+
+    Merge pull request #81 from DACR-DC/main
+    
+    Agregando Guardar en bitacora lo realizado en Mantenimientos
+
+commit 4e274dfcbf49308ea4134afb7de2077c24440357
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Apr 9 17:24:49 2024 -0600
+
+    Agregando Guardar en bitacora lo realizado en Mantenimientos
+
+commit 5f250fd0223d417460dd6c9b44dc99affb6ca852
+Merge: 932cf589 b6e279ea
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Apr 9 09:28:40 2024 -0600
+
+    Merge pull request #80 from DACR-DC/main
+    
+    subiendo pequeño cambio en mantenimientos
+
+commit b6e279eae28ea870018c91fe26fe748398946581
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 23:32:09 2024 -0600
+
+    subiendo pequeño cambio en mantenimientos
+
+commit 932cf58941a0638bb507306566217432c9b0b198
+Merge: 087d7fdc 41256d32
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 23:16:36 2024 -0600
+
+    Merge pull request #79 from DiegoMaroquin/diegobanco
+    
+    se agregra mantenimiento y procesos de banco codigo
+
+commit 41256d32edcf5bb3895fe200f1ac5da3cfc11e3f
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Apr 5 23:15:40 2024 -0600
+
+    se agregra mantenimiento y procesos de banco codigo
+
+commit 087d7fdc44e530d9eeb7f090ef8e7254017811cd
+Merge: 02f3b618 c69877c3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 23:11:57 2024 -0600
+
+    Merge pull request #78 from DACR-DC/main
+    
+    cambios
+
+commit c69877c37861775f63918a9678377ed648e0a60d
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 23:11:05 2024 -0600
+
+    cambios
+
+commit 02f3b6181abd65136a9b84e2700b016fd146ac12
+Merge: fc754275 40e0e060
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 22:40:34 2024 -0600
+
+    Merge pull request #77 from coradoa/main
+    
+    Agregando unos combo a mante compras
+
+commit 40e0e060c73e7607880dcabfe5303149ad700558
+Merge: fcac3415 fc754275
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 22:39:33 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit fc7542752064faf861fbea2553236a8e35fe2480
+Merge: 8e857c27 11b42b7c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 22:35:27 2024 -0600
+
+    Merge pull request #76 from DACR-DC/main
+    
+    arreglando mdi general algunas partes
+
+commit 11b42b7cd9b27b30d6133763fdb8a2cc40b15bd8
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 22:27:30 2024 -0600
+
+    arreglando mdi general algunas partes
+
+commit fcac341537fe2811b74e56e0ea9fb28ab317efef
+Merge: 69315421 8e857c27
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 22:25:24 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 69315421e910f917da1e17b3bf1b6e7354ff2a16
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 22:22:49 2024 -0600
+
+    Agregando cosas para el combo de mantenimientos
+
+commit 8e857c2705bc56685ae80b7998f0fea642c7b2ff
+Merge: d381d4e6 905726e4
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 20:37:46 2024 -0600
+
+    Merge pull request #73 from DiegoMaroquin/diegobanco
+    
+    se agregra mantenimiento y procesos de banco codigo
+
+commit 905726e49bd9c113717d9a761c701304a231eb6a
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Apr 5 20:36:44 2024 -0600
+
+    se agregra mantenimiento y procesos de banco codigo
+
+commit d381d4e6278801dcd989d6859057093b9ae34940
+Merge: 54ab48d8 1500d11c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 20:31:11 2024 -0600
+
+    Merge pull request #72 from DiegoMaroquin/diegobanco
+    
+    se agregra mantenimiento y procesos de banco
+
+commit 1500d11c3054c9caf2ffa95be79ebb21408b3c51
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Apr 5 20:29:20 2024 -0600
+
+    se agregra mantenimiento y procesos de banco
+
+commit 54ab48d8cbd630d33f1bdb8b0cbee6e03c7b33d2
+Merge: 0b9aeb2a 7f25c90b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:59:33 2024 -0600
+
+    Merge pull request #71 from carlosEnriqueGC/revert-70-main
+    
+    Revert "Agregando mantenimientos de Logística"
+
+commit 7f25c90ba97cf18049b4541d0ac13c7f0a60c66c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:59:17 2024 -0600
+
+    Revert "Agregando mantenimientos de Logística"
+
+commit 0b9aeb2a4aa9256bb82343745212e979096abd56
+Merge: dc508d4e 2fb2ba9a
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:40:53 2024 -0600
+
+    Merge pull request #70 from JimenaTobias/main
+    
+    Agregando mantenimientos de Logística
+
+commit 2fb2ba9a07d91039dd82a5518bd4a940476d8a31
+Merge: 8ed25484 dc508d4e
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Fri Apr 5 19:38:09 2024 -0600
+
+    Agregando mantenimientos de Logística
+
+commit 8ed25484dfedf8721e1e8d27a347482fba712eba
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Fri Apr 5 19:32:10 2024 -0600
+
+    Agregando mantenimientos de Logística
+
+commit dc508d4edb4835407afac338ac4da9ca009c785a
+Merge: 89c95ea2 63c5a9f5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:30:27 2024 -0600
+
+    Merge pull request #68 from coradoa/main
+    
+    Agregando los forms a MDI
+
+commit 63c5a9f5e8a62f46908bc43526184001ad0b9d32
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 19:29:39 2024 -0600
+
+    Agregando los forms a MDI
+
+commit 89c95ea2c1e6674e9ae768407a56958063ad74b5
+Merge: 6947a434 34787f56
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:20:26 2024 -0600
+
+    Merge pull request #67 from OTEKE10/main
+    
+    Agregando procesos ventas
+
+commit 34787f5600913b0c4182508213761e558a7d07ff
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 5 19:18:09 2024 -0600
+
+    Agregando procesos ventas
+    
+    Forms ventas
+
+commit 6947a434bfeeefbddb5276dcd3200ff04241f5cf
+Merge: c0c2f351 e78aa7b8
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:16:44 2024 -0600
+
+    Merge pull request #66 from cchuye/main
+    
+    Agregando el codigo para llamar a los forms de compras
+
+commit e78aa7b8eaa6de4b332b2804acff93aab6533cee
+Merge: 181f504f c0c2f351
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 19:15:36 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit 181f504f6d2764e095924c81f9e54517acb83c5b
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 19:13:41 2024 -0600
+
+    Agregando los forms al menu principal
+
+commit c0c2f351e014a17ec0455914d197012cf9141bf6
+Merge: f318c44e aadd1ce0
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:12:41 2024 -0600
+
+    Merge pull request #64 from OTEKE10/main
+    
+    Agregando Procesos de pedidos y factura por cobrar
+
+commit aadd1ce0f745086ecb966272f0b789fbe2eb27fe
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Fri Apr 5 19:10:54 2024 -0600
+
+    Agregando Procesos de pedidos y factura por cobrar
+    
+    Agregando Procesos
+
+commit f318c44e24de0857922bccae2913a2ffeb64bbfc
+Merge: c726039e 8fa80b73
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:05:08 2024 -0600
+
+    Merge pull request #63 from coradoa/main
+    
+    Agregando Mantenimientos de Compras y procesos de Proveedores NF
+
+commit 8fa80b73a8415a2ea5f5c4afa532e060025fc444
+Merge: 6635fdb3 c726039e
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 19:04:06 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 6635fdb3b9e07771b87bcae4a9a2eda08b7cc846
+Merge: 6fed4b28 d907296c
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 19:02:31 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit c726039e58baf510d83ad82f447e7bb018af81a3
+Merge: d907296c 13a7fef5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 19:02:06 2024 -0600
+
+    Merge pull request #62 from cchuye/main
+    
+    Agregando formularios del modulo de compras
+
+commit 13a7fef559091576716ebc360d92986783c51fe1
+Merge: 279ee140 d907296c
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 19:00:59 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit 6fed4b28cb7bbdf838a0aa696fd36c66b4983a61
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Fri Apr 5 19:00:54 2024 -0600
+
+    Agregando mantenimientos compras y procesos de proveedores
+    
+    Andrea Corado
+
+commit 279ee1407292b8ce27e3662b3b08371bf31fb664
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 18:58:42 2024 -0600
+
+    Agregando procesos del módulo de compras
+
+commit d907296cf8cefde3cd4ee327e6ea11e6a625f3bf
+Merge: 2330ef00 66c52c20
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 18:51:47 2024 -0600
+
+    Merge pull request #60 from DACR-DC/main
+    
+    Mantenimiento vendedores y clientes
+
+commit 66c52c201f32b24ed0d2b46135113038a2442647
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 18:50:58 2024 -0600
+
+    subiendo mantenimientos
+
+commit b27829e58a145f278c330b541dcb22aa18de83cf
+Merge: be2522f6 2330ef00
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 18:49:12 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 4b0d0b9a65162472f7966c45181d89e9d06cba4d
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri Apr 5 18:48:14 2024 -0600
+
+    Agregando Prototipo 30%
+
+commit 2330ef00f45b4627110c559dc8d6dec08e8218a3
+Merge: 53581db0 7f512e2b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 18:47:03 2024 -0600
+
+    Merge pull request #59 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    agregando mantenimientos bancos, movimiento bancos agregados y protot…
+
+commit 7f512e2ba57f3aabe382139e0be9d79a761274c0
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 18:46:12 2024 -0600
+
+    agregando mantenimientos bancos, movimiento bancos agregados y prototipo no funcional de autorizacion de ordenes
+
+commit be2522f6f594d68faaa3cdd7d9e31b475d02bed8
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 18:43:34 2024 -0600
+
+    Mantenimiento vendedores y clientes
+
+commit 53581db0610ba0d5db1f37b9937c75faaf359d18
+Merge: cd5f9f4f edb48710
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 17:57:23 2024 -0600
+
+    Merge pull request #58 from cchuye/main
+    
+    Arreglando MDI General
+
+commit edb487106fb603af8f558d9e02f9ad4864308d59
+Merge: a5b2b0c6 cd5f9f4f
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 17:55:44 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit a5b2b0c6732728cbad14309f79800ccd46a2b079
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Apr 5 17:53:17 2024 -0600
+
+    Arreglando el MDI general
+
+commit 7b407a78434a3ec093cac3d7d5ec51dd835c51ae
+Merge: 34670ebe 4b4ee024
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 17:34:45 2024 -0600
+
+    Merge pull request #30 from Frls03/main
+    
+    agregando mantenimiento de transacciones
+
+commit 4b4ee0244da0c857b7647e59e43de5ea578dc650
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:33:50 2024 -0600
+
+    Agregando mantenimiento de transacciones
+
+commit e17efdc3ecbd716a676057bd93a0ad93238c3007
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:33:28 2024 -0600
+
+    Agregando mantenimiento de transacciones
+
+commit c58d607adcd36b2534c52e3780be7bf628b2d9c5
+Merge: d44983dd 34670ebe
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:25:43 2024 -0600
+
+    Merge branch 'main' of https://github.com/Frls03/ISP12k24
+
+commit d44983dde65dd743833f186b44bddcba41f850e0
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:25:38 2024 -0600
+
+    ,m
+
+commit 34670ebe936fb029d0eeb97727ea975d82b5dc47
+Merge: 37b5d8bc 2491b1e7
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 17:24:08 2024 -0600
+
+    Merge pull request #29 from Frls03/revert-28-main
+    
+    Revert "codigo, tarjetas y transferencias"
+
+commit 2491b1e7ad11b621ad6a10a99e7b732473b38c1e
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:23:56 2024 -0600
+
+    Revert "codigo, tarjetas y transferencias"
+
+commit 37b5d8bcae5bb93376b6e421004c8b67c295072b
+Merge: 39a43f16 e1e0add4
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 17:12:31 2024 -0600
+
+    Merge pull request #28 from Frls03/main
+    
+    codigo, tarjetas y transferencias
+
+commit e1e0add4d3e38b206d6b148c24c76766f05b6c73
+Merge: 4f27a7a0 39a43f16
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:10:48 2024 -0600
+
+    Merge branch 'main' of https://github.com/Frls03/ISP12k24
+
+commit 4f27a7a0e7d5990bac0ef527a947dd537f29de0f
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 17:08:30 2024 -0600
+
+    agregando codigo, transferencias y tarjetas
+
+commit 39a43f163f11bda99e32850f193e217be6b2657b
+Merge: 80e4db67 2807979b
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 16:59:18 2024 -0600
+
+    Merge pull request #26 from Olstertecn11/main
+    
+    formularios de deposito y retiro finalizados sin agregar al menu
+
+commit cd5f9f4fd46daedc79b71e464b0067329e965f45
+Merge: 649c98cd bd93f74e
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 16:58:43 2024 -0600
+
+    Merge pull request #56 from DACR-DC/main
+    
+    navegador listo y correcciones menores
+
+commit bd93f74edc93d2d8118c1fbc963f81b4100b9cd9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 16:57:48 2024 -0600
+
+    navegador listo y correcciones menores
+
+commit 2807979b6dad34dd997ec75aa772021a7af809f7
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri Apr 5 16:52:13 2024 -0600
+
+    formulario de creacion de cuenta
+
+commit 41e2ebf7aab526faae947e71bc2b38f393e91f56
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 16:44:19 2024 -0600
+
+    agregando frm de codigo de seguridad
+
+commit 649c98cdec28d4dba9c6479b571dc0463101b85f
+Merge: 254cf82d 46acec5c
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 16:39:44 2024 -0600
+
+    Merge pull request #55 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    Carlos enrique bancos
+
+commit 46acec5cc2b3e8377de5fc06230bfbaf2cf8975c
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 16:38:36 2024 -0600
+
+    navegador funcional agregado
+
+commit 9b561f467746f9f952b485c37fb09af17a66c8eb
+Merge: bdae706d 254cf82d
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 16:37:26 2024 -0600
+
+    Merge branch 'main' of https://github.com/carlosEnriqueGC/ProyectoMigracion_G1 into carlosEnriqueBANCOS
+
+commit bdae706dc5d652f03717657e5d158233ac82592b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 16:36:59 2024 -0600
+
+    rama actualizada
+
+commit 254cf82d38847553c3098559e0a06c4a32740ca1
+Merge: 4afc56ae 32aa004f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 16:36:31 2024 -0600
+
+    Merge pull request #54 from DACR-DC/main
+    
+    ahora si
+
+commit 32aa004fe674b5ae3cbe8b13004490ecdb1b482f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 16:35:45 2024 -0600
+
+    ahora si
+
+commit a7c7c9eae669b24cd730f304939721020a1f13aa
+Merge: 88180b13 4afc56ae
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 16:33:34 2024 -0600
+
+    Merge branch 'main' of https://github.com/carlosEnriqueGC/ProyectoMigracion_G1 into carlosEnriqueBANCOS
+
+commit 88180b131ca12ad57b6b3f7e7447ab568b5f4037
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Apr 5 16:32:53 2024 -0600
+
+    navegador funcional
+
+commit 4afc56aef252a7970c77f91c26ab80a5e4d3991d
+Merge: a930918f adfc01fc
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Apr 5 16:32:26 2024 -0600
+
+    Merge pull request #53 from DACR-DC/main
+    
+    Carpeta Mantenimientos Con Mantenimeintos
+
+commit adfc01fc000a119339e5db8f52afd7a0df72e9b9
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Apr 5 16:30:39 2024 -0600
+
+    Carpeta Mantenimientos Con Mantenimeintos
+
+commit 4965baee1e81a46006327a53154bdbd55e5e26e4
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri Apr 5 16:28:59 2024 -0600
+
+    formularios de deposito y retiro finalizados sin agregar al menu
+
+commit 138bb577357339bef7789367625fa74017e278cd
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 16:07:18 2024 -0600
+
+    Agregando el frm de tarjetas de credito y debito y conectandolas al manu
+
+commit 76af616704a77725c11511cf1c5bcdfd0e22fe5b
+Merge: b66e57dc 80e4db67
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 15:19:04 2024 -0600
+
+    m
+
+commit b66e57dcb12b829e976d834c5a019220ec2de97a
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Apr 5 15:17:41 2024 -0600
+
+    m
+
+commit 80e4db67cd3eeba90c24c9c97ff58174ea1df382
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Fri Apr 5 15:07:56 2024 -0600
+
+    Arreglando menu HCV para Sistema Bancario
+
+commit 2fbcf6dec5d64c985df16fd6f088493b7e8080b8
+Merge: bdff91af cf1b9344
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 14:23:38 2024 -0600
+
+    Merge branch 'edelaguila:main' into main
+
+commit bdff91aff7629fbd7d67c306a8dc742382131143
+Merge: 939db4fd 1bd59618
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Apr 5 14:23:25 2024 -0600
+
+    Merge pull request #24 from JustinPennant/main
+    
+    Se añadio clases Conexión, Sentencias y Componentes
+
+commit a930918fda9ebd7346dbaeaddd81a3528ca0e8a9
+Merge: cf1b9344 c4f54d69
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Thu Apr 4 21:50:53 2024 -0600
+
+    Merge pull request #51 from carlosEnriqueGC/carlosEnriqueBANCOS
+    
+    se ha creado el mdi general del proyecto ERP COMERCIAL y se elimino el navegador temporal
+
+commit c4f54d69a6ce5ded2257664c33a6af24ed6edd3c
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Thu Apr 4 21:49:03 2024 -0600
+
+    se ha creado el mdi general del proyecto ERP COMERCIAL y se elimino el navegador temporal
+
+commit 1bd5961813e7cf33d5becf618ea307763aa47218
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Thu Apr 4 17:27:16 2024 -0600
+
+    Se añadio clases Conexión, Sentencias y Componentes
+
+commit cf1b934436414e19e4034f632cb7b56393c1657b
+Merge: 6dd34816 861843f7
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu Apr 4 07:48:51 2024 -0600
+
+    Merge pull request #2 from carlosEnriqueGC/main
+    
+    Subiendo 40% Equipo1
+
+commit 6dd34816c65d700e8e3f498e18f839ad567801f2
+Merge: 3dedeea0 939db4fd
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Thu Apr 4 07:48:34 2024 -0600
+
+    Merge pull request #1 from D4nnny/main
+    
+    Prototipos y Navegador
+
+commit 939db4fd17e7ffb485afaebbfc6fe3c32578f720
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Wed Apr 3 23:30:07 2024 -0600
+
+    Agregando Prototipo no funcional Cheques
+
+commit 45781c4b296febb4fd0f0021c55c96ff74cc57f7
+Merge: 27837b9c cde88436
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Apr 3 23:10:10 2024 -0600
+
+    Merge pull request #23 from Frls03/main
+    
+    agregando prototipo no funcional de movimientos bancarios
+
+commit cde8843684b4d8103c0c1f01b36b17e7e44f31e6
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Wed Apr 3 22:34:10 2024 -0600
+
+    agregando prototipo no funcional de movimientos bancarios
+
+commit 27837b9ccf0ae410c89543be015cd71e13bebb1f
+Merge: ae7e8bce bb322976
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Tue Apr 2 18:29:25 2024 -0600
+
+    Merge pull request #22 from JustinPennant/main
+
+commit bb322976efb77177a39ffe6b3f805211b651d408
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Tue Apr 2 18:25:02 2024 -0600
+
+    Prototipo no Funcional; Pago de Servicios
+
+commit ae7e8bce3389b853976012cbc4868ececade34c4
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue Apr 2 17:57:52 2024 -0600
+
+    Arreglando Menu HCV para sistema Bancario
+
+commit 7af132db2c249fa9af8fd1087d3a3ab6eaaefae7
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue Apr 2 17:24:54 2024 -0600
+
+    Agregando MVC Sistema Bancario
+
+commit e8055fe600491a2809a716a30c7a43ea51f007b8
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Sun Feb 25 18:55:23 2024 -0600
+
+    Correcion de errores prototitpo 100%
+
+commit 48b8d2fe091fe0b5d56f5daff197f9547365e8a5
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 22 21:25:45 2024 -0600
+
+    PROTOTIPO 100% FUNCIONAL GRUPO 2
+
+commit 87a9879daf1364a990c2c03a7090e8d15e603410
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 22 21:12:46 2024 -0600
+
+    Sistema 100% para Presentar
+
+commit 56f7e82688bae935508c3c5924d24d8df60a1591
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 22 20:57:08 2024 -0600
+
+    Sistema 100% Funcional
+
+commit 5ef0783e44ef4de84ef66f15d6f46bfac125e8e6
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 22 19:40:39 2024 -0600
+
+    Arreglando Menu Prototipo
+
+commit 144a4c3ffc4895330e5606e5d220bf6928e790ab
+Merge: dc7af806 13be29f0
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu Feb 22 01:30:12 2024 -0600
+
+    Merge pull request #21 from Olstertecn11/main
+    
+    Formulario de Calendario
+
+commit 13be29f0b8673b91b424d9b548ce533f130ea760
+Merge: 73704c14 dc7af806
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 22 01:29:12 2024 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/ISP12k24
+
+commit 73704c148fd876bf3aaeb4e97b9ec4c8d5c02b6c
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 22 01:27:08 2024 -0600
+
+    arreglando calendario :)
+
+commit 861843f74852d9cddaba7e49595b343611340241
+Merge: 14c84256 101d5092
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Feb 22 01:08:06 2024 -0600
+
+    Merge pull request #50 from DACR-DC/main
+    
+    cambios, reagendar, citas,
+
+commit 101d5092a6253bb23d07f95536b257caa84f66ac
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Feb 22 01:07:35 2024 -0600
+
+    cambios, reagendar, citas,
+
+commit dc7af806c0be2c03e452c2e901f5040730816567
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 22 00:49:15 2024 -0600
+
+    Agregando diseño y funcionabilidad a Prototipo
+
+commit 14c84256e3826b816e0087fd87db69ebcdac09bb
+Merge: ca21551c 18cb8f8e
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Thu Feb 22 00:03:13 2024 -0600
+
+    Merge pull request #49 from cchuye/main
+    
+    Agregando la confirmación de la boleta
+
+commit 18cb8f8e684aef5c48d5749abdb90f63468752c1
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Thu Feb 22 00:02:21 2024 -0600
+
+    Agregando la confirmación de la boleta
+
+commit e779557a1ddc30d7f024205b286dcc67b48a3107
+Merge: 839b52d4 5728ee54
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Feb 21 23:25:46 2024 -0600
+
+    Merge pull request #20 from DanielOnOsu/main
+    
+    Generacion Preguntas yes?
+
+commit 5728ee545bc339cbccda26d4045021d32447b7b9
+Merge: d7660669 839b52d4
+Author: Daniel Moscoso <dmoscosor1@miumg.edu.gt>
+Date:   Wed Feb 21 23:24:09 2024 -0600
+
+    Merge branch 'main' of https://github.com/DanielOnOsu/ISP12k24
+
+commit d7660669e3c2bf3f341d4999b6450b58ad1ed731
+Author: Daniel Moscoso <dmoscosor1@miumg.edu.gt>
+Date:   Wed Feb 21 23:12:25 2024 -0600
+
+    Merge
+
+commit e02bb6c9bfb72861601de3e1751dc67aef0eba45
+Author: Daniel Moscoso <dmoscosor1@miumg.edu.gt>
+Date:   Wed Feb 21 23:07:48 2024 -0600
+
+    Generacion Preguntas
+
+commit 839b52d47007dc2c8db4f54acfc70d5d80a3a0da
+Merge: 21955aea 8d39725d
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Feb 21 23:02:54 2024 -0600
+
+    Merge pull request #18 from Olstertecn11/main
+    
+    creando cita con columnas preliminares
+
+commit 8d39725d6500ed5a2e7ff254a77cabc7886d481c
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Feb 21 23:01:24 2024 -0600
+
+    creando cita con columnas preliminares
+
+commit ca21551ccb83df86ca7861ba2fc6981b090d03f4
+Merge: 0119d980 b52d9779
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 22:13:09 2024 -0600
+
+    Merge pull request #48 from DACR-DC/main
+    
+    cambios que nada se arruine porfa
+
+commit b52d97798119cf0ba0f552bd02a040fd491781d3
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 22:12:36 2024 -0600
+
+    cambios que nada se arruine porfa
+
+commit 0119d980a28c2f2f2646dd24192be7393b0d49d1
+Merge: f829e4eb aee43762
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 21:41:21 2024 -0600
+
+    Merge pull request #47 from carlosEnriqueGC/pruebas
+    
+    Pruebas
+
+commit aee4376233b3836dfabf15401e74d25143b32ddc
+Merge: 09f309e9 f829e4eb
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 21:38:54 2024 -0600
+
+    rama actualizada
+
+commit f829e4eb4c68fb7d45923043d4726cb7f3fd28fd
+Merge: 7d5fa570 64a6b934
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 21:37:35 2024 -0600
+
+    Merge pull request #46 from cchuye/main
+    
+    Arreglando la inserción a las tablas
+
+commit 09f309e965643f35d85c099518e574dbfc1a399b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 21:37:11 2024 -0600
+
+    rama probada
+
+commit 64a6b934c0fef1492e2ccb0dcb88e9a5ed1b55ff
+Merge: 50d48cae 7d5fa570
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed Feb 21 21:36:56 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit 50d48caeb14abadf75aecd7f1651f57f375e87cf
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed Feb 21 21:36:35 2024 -0600
+
+    Arreglo de inserción
+
+commit 301cb46a6d8d931ae51c76d439c3eb9c0783ab30
+Merge: 15c1a6e1 7d5fa570
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 21:33:33 2024 -0600
+
+    rama actualizada
+
+commit ac5e0aaec5a4cc4a4f136ae1f7f38984fc3eb1fe
+Author: Daniel Moscoso <dmoscosor1@miumg.edu.gt>
+Date:   Wed Feb 21 21:33:12 2024 -0600
+
+    Preguntas Seguridad Terminado
+
+commit 7d5fa5709b73d844d0ff316c6a2c98f6f522f32c
+Merge: cac4018d 241f95d7
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 21:31:46 2024 -0600
+
+    Merge pull request #45 from OTEKE10/main
+    
+    Botón de validación de Boleta
+
+commit 241f95d7aa13e9b30bfb7981973c5330cda1e4a6
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Wed Feb 21 21:30:01 2024 -0600
+
+    Botón de validación de Boleta
+    
+    Se crea el funcionameinto para validar los datos
+
+commit 15c1a6e1ead5aeaed387e9c2c8917f8e273c9df1
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 21:28:59 2024 -0600
+
+    correcion de errores
+
+commit cac4018d12b5bf619c9bf692fc46fb850191019a
+Merge: d649f110 350565e4
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 20:49:35 2024 -0600
+
+    Merge pull request #44 from DACR-DC/main
+    
+    Listo lo de Otto saber quien lo robó xd
+
+commit 350565e4ba66c5851be25abb0256bfba07a805d4
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 20:48:58 2024 -0600
+
+    Listo lo de Otto saber quien lo robó xd
+
+commit d649f11066136f72a9452f0de253f0d9b3bb01a6
+Merge: 72f24f4c 61bf5a51
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 20:22:58 2024 -0600
+
+    Merge pull request #43 from DACR-DC/main
+    
+    cambios
+
+commit 61bf5a51076dff14d0325b8f3cf99ab03bfcd9e8
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 20:22:28 2024 -0600
+
+    cambios
+
+commit 72f24f4c314b5dfdb055edc5ddb09584eab542ed
+Merge: de3dcea9 16c9c5bf
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 20:18:03 2024 -0600
+
+    Merge pull request #42 from DACR-DC/main
+    
+    subiendo nueva base script
+
+commit 16c9c5bf31be663c47fd87f3f3e326a13e6d5f0b
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 20:17:33 2024 -0600
+
+    subiendo nueva base script
+
+commit de3dcea90b63104aef8754d752bf8f6bf84ab850
+Merge: 37628413 7d45f4f5
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 19:45:44 2024 -0600
+
+    Merge pull request #41 from cchuye/main
+    
+    Arreglando MDI
+
+commit 7d45f4f545f607dc50b957a8254f3d84d18ee280
+Merge: 69c60ad2 37628413
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed Feb 21 19:44:28 2024 -0600
+
+    Merge branch 'main' of https://github.com/cchuye/ProyectoMigracion_G1
+
+commit 69c60ad26fe358762334e61bacad69fd2283d28b
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Wed Feb 21 19:40:33 2024 -0600
+
+    Arreglando el MDI
+
+commit 21955aeaf9c908b7a529080e3e373c20fc965502
+Merge: 02376484 8bc61669
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Feb 21 19:37:00 2024 -0600
+
+    Merge pull request #16 from Olstertecn11/main
+    
+    PR sin conflictos con forms de validacion de pago, pago y datos personales previos a generacion de pasaporte
+
+commit 8bc61669a63a2002c2fdcce0799a58cfff8e5ed1
+Merge: f2ae21bc 02376484
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Feb 21 19:33:56 2024 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/ISP12k24
+
+commit f2ae21bc64eabfc381c44e145c6f8ad40900b49e
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Feb 21 19:31:16 2024 -0600
+
+    formularios de crear cita y datos personales, tambien vvalidacion de pago y realizacion de pago creados
+
+commit 37628413a79e2e78c3033ace492341d3dc134b0c
+Merge: ade4e17d a78f2aff
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 19:13:14 2024 -0600
+
+    Merge pull request #39 from coradoa/main
+    
+    Agregando varias COSAS DE CITAS
+
+commit a78f2aff701d2c2d87f0a02daa98fad717f4b32f
+Merge: 1cfdfba3 ade4e17d
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 19:12:20 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 1cfdfba3b5b11f95602c6b76cd854f20e512824c
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 19:10:57 2024 -0600
+
+    agregando cositas
+
+commit ade4e17dd3a91099caa55da10b68bc37b277f9e2
+Merge: 5cf6dfaa 2a2502dc
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Feb 21 19:05:58 2024 -0600
+
+    Merge pull request #38 from carlosEnriqueGC/pruebas
+    
+    se corrige el error de la generacion de boleta
+
+commit 2a2502dc64e811dfff79ba840e85bcce9238bade
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 19:04:05 2024 -0600
+
+    se corrige el error de la generacion de boleta
+
+commit 5cf6dfaabf86261f74c5635b42559ac36da0c68c
+Merge: e60804a5 158fc106
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Feb 21 18:36:44 2024 -0600
+
+    Merge pull request #37 from DiegoMaroquin/diegomejoras2
+    
+    se agrega mejoras de generarboleta
+
+commit 158fc10624f828c7d2280894852b5f01fb81deae
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Wed Feb 21 18:34:39 2024 -0600
+
+    se agrega mejoras de generarboleta
+
+commit 8eed51fe506719a13514306c74cb6f06f1cea315
+Merge: e2a149bd e60804a5
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 18:19:49 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit e2a149bddc562781246cf4c931936b38339bb2ae
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 18:18:03 2024 -0600
+
+    nadaaaaaaaaaaaa
+
+commit 023764841e384c883bb811527fd4fa1162bf26dc
+Merge: cb5fca46 b78199a1
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Feb 21 18:14:35 2024 -0600
+
+    Merge pull request #15 from JustinPennant/main
+    
+    Impresión de Pasaporte
+
+commit b78199a170fc6192b6da3db2af59e69cdde280f0
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Wed Feb 21 18:13:29 2024 -0600
+
+    Impresión de Pasaporte
+
+commit e60804a5ec118114afa5e80502a3018fe13ef945
+Merge: 281fc933 00327d31
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Feb 21 18:04:02 2024 -0600
+
+    Merge pull request #35 from carlosEnriqueGC/bancosRenapCarlosEnrique
+    
+    Bancos renap carlos enrique
+
+commit 00327d3109934105b5df5a5ba8412ad9648c8f34
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 18:01:52 2024 -0600
+
+    ultimas modificaciones del mantenimiento renap
+
+commit 9b45a9c99e51bb58901c03a39938a16d488d6583
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 18:01:10 2024 -0600
+
+    mantenimiento Renap concluido
+
+commit 3f8e5fa19fda4fce366138270b0aeea120a4c4a3
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 17:58:53 2024 -0600
+
+    no
+
+commit d6525cbc02533b34a91d11418b22c68875e99a73
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Wed Feb 21 17:37:14 2024 -0600
+
+    se agrego nuevos campos en el mantenimiento renap
+
+commit 7e9bdf271c7d53555d5021a6fff192e05f30ea55
+Merge: 0ac03541 281fc933
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 15:52:38 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 0ac035419b429c08aef6090aede39eb4beb61e35
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Wed Feb 21 15:50:59 2024 -0600
+
+    No se modifico nada
+
+commit 281fc9337d949d235f235f6be0c410ab1e12afce
+Merge: 0a9454cd fb196a3f
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 14:29:28 2024 -0600
+
+    Merge pull request #34 from OTEKE10/main
+    
+    Validacion de datos y modificacion de los mismos
+
+commit fb196a3f882a327971bf72aea21e278f7309a5dd
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Wed Feb 21 14:25:27 2024 -0600
+
+    Validacion de datos y modificacion de los mismos
+    
+    Forms en funcionamiento para validar, modificar y guardar datos.
+
+commit 0a9454cd438e1efb46fba98c4e63f67073ad463d
+Merge: c6d34a70 eafd8e95
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 10:27:13 2024 -0600
+
+    Merge pull request #33 from DACR-DC/main
+    
+    nuevo script
+
+commit eafd8e955c55244d347ba5fc6cb6178f2a921942
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 10:25:04 2024 -0600
+
+    con el navegador de AS2
+
+commit d9d75781a6ed8074fd8c5b4fa5a0e5415b3f9fa2
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 10:18:32 2024 -0600
+
+    nuevo script
+
+commit c6d34a70c631cf4ea65beb081e961dac37ea2a62
+Merge: d32a4a9e 9601f7a7
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Wed Feb 21 09:23:31 2024 -0600
+
+    Merge pull request #32 from DACR-DC/main
+    
+    mdi bancos
+
+commit 9601f7a7a11e271529527cc08ca24b2a5fb572fc
+Merge: 9af1f542 d32a4a9e
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 09:22:32 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit 9af1f542680e367854716dd85d3b5e0827c7bf6a
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 21 09:22:29 2024 -0600
+
+    MDI Banco
+
+commit b7c498d137219103f19e7f0f1f2bf6b2d171f287
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Feb 21 06:17:28 2024 -0600
+
+    actualizando correctamente frm repro_cita
+
+commit 45a2c2c442cb592db0b9a6dda1b610f676a4524c
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Wed Feb 21 04:55:20 2024 -0600
+
+    ReproC_AD is done
+
+commit cb5fca46a263cd335dc2a80dfac01b5fa54d50ec
+Merge: 15ac7899 b7c498d1
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Wed Feb 21 00:18:36 2024 -0600
+
+    Merge pull request #13 from Olstertecn11/main
+    
+    Nav and Date update working
+
+commit 3d41ba7e43a5c4913e0aa8ec6efcb9f3c6de41ad
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Feb 20 20:31:33 2024 -0600
+
+    algunos cambios de citas
+
+commit 0e20a12c12e8f598923e075ab2ebfea73185b18b
+Merge: 33a35ea2 d32a4a9e
+Author: coradoa <acoradop@miumg.edu.gt>
+Date:   Tue Feb 20 20:00:40 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit d32a4a9e987f32aa94c173bd7205b994f874226a
+Merge: a3f0eb43 f8c7890e
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Feb 20 18:36:58 2024 -0600
+
+    Merge pull request #30 from DACR-DC/main
+    
+    cambios pequeños
+
+commit f8c7890e79a42a409a31077b7f8218f481818e34
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Feb 20 18:35:22 2024 -0600
+
+    cambios pequeños
+
+commit a3f0eb43eaa5c9c68942acdccc0115e0d4172071
+Merge: ee79a5cf 50fe27f3
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Feb 20 18:25:50 2024 -0600
+
+    Merge pull request #29 from DACR-DC/main
+    
+    Calendario y scripts
+
+commit 50fe27f37e85e50c09aa99b6c91881fb1d937f49
+Merge: 83d9c302 ee79a5cf
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Feb 20 18:24:51 2024 -0600
+
+    Merge branch 'carlosEnriqueGC:main' into main
+
+commit 83d9c302110db803b773bae2f4ca46c35699294f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Feb 20 18:23:19 2024 -0600
+
+    Reagendar y calendario
+
+commit 15ac789975590e77fdf24f01028d32bd6f7cd5de
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue Feb 20 17:23:10 2024 -0600
+
+    Agregando Prototipo Menu
+
+commit ee79a5cf811804d5b332f4e9ab936486589b6e29
+Merge: a787a330 06573997
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Tue Feb 20 13:45:57 2024 -0600
+
+    Merge pull request #28 from DACR-DC/main
+    
+    cambios en la base y arreglando algunas cosas de los forms
+
+commit 0657399738fe4bd175051aeadf9332007055c2da
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Tue Feb 20 13:43:50 2024 -0600
+
+    cambios en la base y arreglando algunas cosas de los forms
+
+commit a787a33067f6b6ef0da1cbcb7a03df6c15c50d2b
+Merge: d2700c6a 43b13628
+Author: David Carrillo <94415372+DACR-DC@users.noreply.github.com>
+Date:   Sun Feb 18 19:14:33 2024 -0600
+
+    Merge pull request #27 from DACR-DC/main
+    
+    subiendo carpeta con script y modelo base de datos
+
+commit 43b1362857ef70f94fe063df8c087361814d2a8f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sun Feb 18 19:13:31 2024 -0600
+
+    subiendo carpeta con script y modelo base de datos
+
+commit d2700c6a554b9c45030ab7543551627f5eec24cb
+Merge: 068b8361 1cc92896
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sun Feb 18 18:31:40 2024 -0600
+
+    Merge pull request #26 from JimenaTobias/main
+    
+    Agregando forms faltantes del RENAP
+
+commit 1cc9289682210342197bfa3e00f9a9bc71d924cf
+Merge: 28b64e37 068b8361
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Sun Feb 18 18:25:53 2024 -0600
+
+    Agregando form faltantes del RENAP
+
+commit 068b836139edef3b7ce55ff235d0fdcaccb54500
+Merge: cf54fd6a a23ae81e
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sun Feb 18 16:21:26 2024 -0600
+
+    Merge pull request #24 from DACR-DC/main
+    
+    uniendo forms y  scripts
+
+commit 28b64e37037028f012a07c498a0bc75334645826
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Sun Feb 18 16:14:02 2024 -0600
+
+    Agregando forms faltantes del RENAP
+
+commit a23ae81e95b0868010248076749a011790b4ca74
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Sat Feb 17 23:38:27 2024 -0600
+
+    uniendo forms y  scripts
+
+commit cf54fd6a58287c76de7511bf55ea571245a40e9f
+Merge: a3ff54ac ad272500
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Sat Feb 17 17:14:09 2024 -0600
+
+    Merge pull request #23 from carlosEnriqueGC/bancosRenapCarlosEnrique
+    
+    Bancos renap carlos enrique
+
+commit ad272500e9e755605ae248e78dea247aa10cf002
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat Feb 17 17:12:21 2024 -0600
+
+    prototipo 40% generacion de boleta listo
+
+commit 6f82d1a432cf6094efab67027896d47d60a5563b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat Feb 17 16:29:46 2024 -0600
+
+    prototipo generacion de boleta funcional
+
+commit bfef842a3048eaed8e697a044989a452952dce5b
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat Feb 17 16:11:06 2024 -0600
+
+    prototipo generacion de boleta casi terminado
+
+commit 348d008300cb6c781aa9e153ff3808d6c0a006e7
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Sat Feb 17 13:17:37 2024 -0600
+
+    proceso de generacion de boleta 45%
+
+commit a3ff54ac24f444cd2c6f9bfb983f56b0ebeb5a94
+Merge: de3785f5 e5d31690
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 16 21:57:03 2024 -0600
+
+    Merge pull request #22 from DiegoMaroquin/diegomantenimiento3
+    
+    se agrego mantenimiento de pago5 diego
+
+commit e5d316909bfc6dd6b352cc946824ec37d9a64bd5
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Feb 16 21:55:33 2024 -0600
+
+    se agrego mantenimiento de pago5 diego
+
+commit de3785f5804d2bc0954f0f6d7f5872ae051b0f1f
+Merge: b9276f63 9d999c35
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 16 21:26:45 2024 -0600
+
+    Merge pull request #20 from DACR-DC/main
+    
+    Subiendo Form funcional para buscar existencia de cita a reagendar
+
+commit 9d999c358719886a5abcb56ac4f7ecfe246c5d94
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Fri Feb 16 21:24:36 2024 -0600
+
+    Subiendo Form funcional para buscar existencia de cita a reagendar
+
+commit b9276f631a7607984c8dc7000ea75ed365cd3ce7
+Merge: 88f67a84 fbab9d2a
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 16 20:24:18 2024 -0600
+
+    Merge pull request #17 from carlosEnriqueGC/bancosRenapCarlosEnrique
+    
+    Bancos renap carlos enrique
+
+commit fbab9d2a2089a5c5326241bf9853645fa6b66ab2
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Feb 16 20:23:02 2024 -0600
+
+    mantenimiento renap terminado
+
+commit a00cb9bd9259c5e4ea1c9b6323f558ddde12bb23
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Feb 16 20:21:53 2024 -0600
+
+    mantenimiento renap funcional 95%
+
+commit 33a35ea2b7ef5dec99f46f2253ab6e53a3cde4bf
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Fri Feb 16 19:45:07 2024 -0600
+
+    cosas
+
+commit 0e60d4fa83231546335c8246297515302d47d8b7
+Merge: e720e93c 88f67a84
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Fri Feb 16 19:44:59 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 88f67a84c3e86f791d66e10fa1f32a4ea27dc3cf
+Merge: 652ac2ef 0abef31f
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 16 15:11:14 2024 -0600
+
+    Merge pull request #16 from cchuye/agregandoinsertar_datospersonales
+    
+    Agregando la rama agregandoinsertar_datospersonales
+
+commit 0abef31fcee92bf2c940c35d117f2ccd9925af90
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Fri Feb 16 08:33:42 2024 -0600
+
+    Agregando la rama agregandoinsertar_datospersonales
+
+commit e720e93cb1b3e0b92eb78f0c8d8d8355e1947636
+Merge: 68accf0c 652ac2ef
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Wed Feb 14 20:38:42 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 68accf0ce76d57525112d192bbf7781ecd4935dc
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Wed Feb 14 20:38:25 2024 -0600
+
+    Cambios que no son significativos
+
+commit 652ac2eff0a5ccaed8f8cd84e480ca261dab158e
+Merge: fc65f50d 03ecb8c3
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Feb 14 18:31:25 2024 -0600
+
+    Merge pull request #14 from DACR-DC/main
+    
+    cambios en forms
+
+commit 03ecb8c315b812b91b138965234c8c91537ac88f
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 14 18:24:46 2024 -0600
+
+    cambios
+
+commit b164614df018158496ddb697fc29ce7f128af7fe
+Merge: 8dbf10f6 fc65f50d
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 14 18:24:38 2024 -0600
+
+    Merge branch 'main' of https://github.com/DACR-DC/ProyectoMigracion_G1
+
+commit fc65f50d76ca9856d2f40f9214a4866f4ddad773
+Merge: d8c7ca6e 2aa1f184
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Wed Feb 14 18:12:54 2024 -0600
+
+    Merge pull request #12 from JimenaTobias/main
+    
+    Agregando login, menú admin e imágenes
+
+commit 8dbf10f6787a617e9fe8de8402eb03c6c8ca12a6
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Wed Feb 14 17:01:08 2024 -0600
+
+    subiendo formularios esperando que aparezcan todos
+
+commit 2aa1f1845fda8f25e906ab7ce22373575c3c1969
+Author: JimenaTobias <mtobiasv1@miumg.edu.gt>
+Date:   Tue Feb 13 23:22:49 2024 -0600
+
+    Agregando login, menú admin e imágenes
+
+commit d8c7ca6e5fce4502d43fe5939c5b01f9d75f3a9f
+Merge: b29343eb 4c1a845b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Feb 13 17:32:45 2024 -0600
+
+    Merge pull request #11 from cchuye/main
+    
+    Formulario de datos personales
+
+commit 4c1a845b10bdc305e9d90e1938391342c2dd91cc
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Tue Feb 13 17:24:07 2024 -0600
+
+    Formulario de datos personales
+
+commit b29343ebc0d9bf30562ed6d7a294ad8221efd6c4
+Merge: f88dc93f b598532a
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Feb 13 17:03:22 2024 -0600
+
+    Merge pull request #10 from carlosEnriqueGC/carlosEnriqueBancos
+    
+    procesos y mantenimientos de bancos y renap agregados al prototipo
+
+commit b598532a37570e3b6316792538d0f28708bb5668
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Tue Feb 13 17:02:33 2024 -0600
+
+    procesos y mantenimientos de bancos y renap agregados al prototipo
+
+commit f88dc93f4fc4c8449b95f170d4851953883f1823
+Merge: a70d749e 5e2df25d
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Feb 13 16:49:14 2024 -0600
+
+    Merge pull request #9 from OTEKE10/main
+    
+    Agregando forms de peticion y confirmacion de datos
+
+commit 5e2df25dc6e72373c40a454bd909e5ff42e6556f
+Merge: 14deb09f a70d749e
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Tue Feb 13 16:46:38 2024 -0600
+
+    Merge branch 'main' of https://github.com/OTEKE10/ProyectoMigracion_G1
+
+commit 14deb09f2b9a05c40f4af751bed2b10f20e8dfc7
+Author: Otto Ventura <139597154+OTEKE10@users.noreply.github.com>
+Date:   Tue Feb 13 16:34:06 2024 -0600
+
+    Agregando forms de petición de datos y confirmación de datos
+    
+    Se agregan forms :D
+
+commit a70d749e4c384fb92674ecf49d64c8d211ac1e77
+Merge: fe05d79f 7e765f4b
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Feb 13 16:31:34 2024 -0600
+
+    Merge pull request #7 from cchuye/main
+    
+    Agregando formulario de informacion personal e iconos
+
+commit 7e765f4b333e212af217b9e0dad70ed1e16d65c1
+Author: cchuye <carol.escobar.1116@gmail.com>
+Date:   Tue Feb 13 16:30:00 2024 -0600
+
+    Agregando formulario de informacion personal e iconos
+
+commit fe05d79fdec7c660c715ad7d24993ab19e1de62f
+Merge: b33ae4b8 264b2ae5
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Tue Feb 13 16:11:09 2024 -0600
+
+    Merge pull request #6 from coradoa/main
+    
+    Agregando parte de Confirmación y calendario de Citas
+
+commit 264b2ae502b371c2eebb2a0b1914a142cf484514
+Merge: 92778bbc b33ae4b8
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Tue Feb 13 16:09:59 2024 -0600
+
+    Merge branch 'main' of https://github.com/coradoa/ProyectoMigracion_G1
+
+commit 92778bbcb65ba1857530cb1589733bb4e51c7712
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Tue Feb 13 16:06:46 2024 -0600
+
+    ultimo commit
+
+commit c77046b18661a3f55bb205a5d0554d5e6b339d1f
+Merge: 080f5e6a 4375ccff
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Sat Feb 10 21:52:44 2024 -0600
+
+    Merge pull request #12 from DanielOnOsu/main
+    
+    Prototipo No Funcional Preguntas de Validacion
+
+commit 4375ccff2ad5b98f1135cba4e9d2bfc219ab9d72
+Author: Daniel Moscoso <158231760+DanielOnOsu@users.noreply.github.com>
+Date:   Sat Feb 10 16:58:43 2024 -0600
+
+    Prototipo No Funcional Preguntas de Validacion
+    
+    Daniel
+
+commit 080f5e6aa3c8532a7ca861e6b849a1b191396966
+Merge: 33a4b96d 215572d7
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Sat Feb 10 13:41:37 2024 -0600
+
+    Merge pull request #11 from JorgeGxd/main
+    
+    Prototipo Val. Pago
+
+commit 215572d75f39b113f5a32110510f4d7cb4333f00
+Author: JorgeGxd <noroxd15@gmail.com>
+Date:   Fri Feb 9 23:01:23 2024 -0600
+
+    Prototipo Val. Pago
+
+commit 33a4b96d17f24b09fd157b8e9b324581f00e9ee7
+Merge: a8f5a1ca f2e3966e
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Feb 9 19:27:01 2024 -0600
+
+    Merge pull request #10 from Jjuarezp7/main
+    
+    prototipo mantenimiento boleta nuevo
+
+commit f2e3966e262bf7110daee0504f81d1f66ffd225f
+Author: Jjuarezp7 <109290437+Jjuarezp7@users.noreply.github.com>
+Date:   Fri Feb 9 19:11:27 2024 -0600
+
+    prototipo mantenimiento boleta nuevo
+
+commit a8f5a1cabc8c092f4212b3fb3c0d48bb3c0ca712
+Merge: 1bf3e1b0 d91f19b6
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Feb 9 18:39:05 2024 -0600
+
+    Merge pull request #9 from Jjuarezp7/main
+    
+    prototipo mantenimiento boleta
+
+commit b33ae4b8bc929c3312108e535057de7313b1a36c
+Merge: 98c094b4 928fdd0d
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 9 18:27:50 2024 -0600
+
+    Merge pull request #4 from DiegoMaroquin/diegomarroquinbanco
+    
+    se agrego el prototipo de generador de boleta del pasaporte y un mant…
+
+commit 928fdd0d50c120d561db56e6c6f6560d5c4ddab3
+Author: DiegoMaroquin <antomarro2000@gmail.com>
+Date:   Fri Feb 9 18:24:41 2024 -0600
+
+    se agrego el prototipo de generador de boleta del pasaporte y un mantenimiento
+
+commit 1bf3e1b01430eb06be606bdf05ff5c7a36bb798e
+Merge: 4732ef0e a7defd34
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Feb 9 18:13:43 2024 -0600
+
+    Merge pull request #8 from Frls03/main
+    
+    agregando formularios de informacion personal y solicitud de pasaporte
+
+commit d91f19b6dee519da970f2d05780496681cdfd654
+Author: Jjuarezp7 <109290437+Jjuarezp7@users.noreply.github.com>
+Date:   Fri Feb 9 18:01:27 2024 -0600
+
+    prototipo mantenimiento boleta
+
+commit a7defd34657d36a5324bf4d3c98df5c424bca2e3
+Author: Luis Franco <91704866+Frls03@users.noreply.github.com>
+Date:   Fri Feb 9 17:36:46 2024 -0600
+
+    agregando formularios de informacion personal y solicitud de pasaporte
+
+commit 98c094b42b1b520d9db780bc0c2faadaaccd787a
+Merge: b54d74b6 820adcc7
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 9 17:04:20 2024 -0600
+
+    Merge pull request #3 from carlosEnriqueGC/carlosEnriqueBancos
+    
+    crea mdi para la generacion de boletas con sus capas respectivas, con…
+
+commit 820adcc796d6a569a450ac7be26edf9dcf743644
+Author: carlos enrique <cguzmanc10@miumg.edu.gt>
+Date:   Fri Feb 9 17:02:29 2024 -0600
+
+    crea mdi para la generacion de boletas con sus capas respectivas, conexion, sentencias y controlador listos
+
+commit b54d74b6fb07ea80364329fbd809e659db75e32a
+Merge: 3dedeea0 2043fbfd
+Author: carlosEnriqueGC <98114171+carlosEnriqueGC@users.noreply.github.com>
+Date:   Fri Feb 9 16:14:50 2024 -0600
+
+    Merge pull request #2 from DACR-DC/main
+    
+    Subiendo Prototipo reagendar cita
+
+commit 4732ef0e904b63dfe905a5f91c9bfd9933a83ea3
+Merge: 90a31cac 35ae364f
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Feb 9 16:11:47 2024 -0600
+
+    Merge pull request #5 from JustinPennant/main
+    
+    Se agrega prototipo no funcional impresion de pasaporte
+
+commit 35ae364f9f9959a872993c6b02299bacf5b6111a
+Author: JustinPennant <jramosp14@miumg.edu.gt>
+Date:   Fri Feb 9 16:09:45 2024 -0600
+
+    Se agrega prototipo no funcional impresion de pasaporte
+
+commit 90a31cac052d79e1e52efb4db5735ddb24031f28
+Merge: 243c58cc 6bef5c9f
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Fri Feb 9 15:31:52 2024 -0600
+
+    Merge pull request #4 from Olstertecn11/main
+    
+    Formularios Terminados
+
+commit 6bef5c9f59e4a2507eacb7c21b8c4246e247c8c6
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri Feb 9 14:56:25 2024 -0600
+
+    agregando navegador
+
+commit d5a4547cca13e6283276636cf99ec6ec2c4d4d90
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Fri Feb 9 11:06:16 2024 -0600
+
+    arreglando conflicto con imagenes :p
+
+commit f7e8dbae4c4aad7d017214190d22ba70ac8cf672
+Merge: 3f733e43 243c58cc
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 8 23:05:06 2024 -0600
+
+    Merge branch 'main' of https://github.com/Olstertecn11/ISP12k24
+
+commit 3f733e4316302c7f4281f864db831abceedb2ab5
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 8 22:58:22 2024 -0600
+
+    segundo fformulario terminado
+
+commit 7f53716ed40d60b5c6784895acf704641612b9a8
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 8 22:41:36 2024 -0600
+
+    formulario de chequeo de boleta terminado
+
+commit 243c58cc1d475aaeccc3f3584bc96483b1e44f6b
+Merge: b8164b9d 2c783979
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 8 18:49:02 2024 -0600
+
+    Agrgando Prototipo No Funcional D
+
+commit b8164b9d01c0345c072f639fc21ac66975088fe4
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 8 18:47:30 2024 -0600
+
+    Agregando Prototipo no Funcional
+
+commit 2c78397916528d9e3c6e3b3823e8874e96ed3438
+Merge: ab70c09b 54261f80
+Author: D4nnny <88693238+D4nnny@users.noreply.github.com>
+Date:   Thu Feb 8 17:40:36 2024 -0600
+
+    Merge pull request #1 from Olstertecn11/main
+    
+    adding references
+
+commit 54261f80085368c8ff19c91cb0ff2c8d2e9a963d
+Author: Oliver Tzunun <otzunund@miumg.edu.gt>
+Date:   Thu Feb 8 17:39:45 2024 -0600
+
+    adding references
+
+commit ab70c09bce9a2ee24363c3a97d61cdb5e89bd0cf
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 8 17:23:45 2024 -0600
+
+    Agregando Formularios de Sub Procesos
+
+commit 0964ca25ff764e2bd07b1596460b99f755da98d1
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Thu Feb 8 17:15:26 2024 -0600
+
+    Agregando Forms al MVC
+
+commit 299e76c5a8dd8f57a6ba281b60bc428785812a8d
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Thu Feb 8 17:03:06 2024 -0600
+
+    Agregando algo provisional del calendario
+
+commit 2043fbfd276422c2f203dda281b6021d63e3de40
+Author: David Carrillo <carrillod421@gmail.com>
+Date:   Thu Feb 8 17:00:50 2024 -0600
+
+    Subiendo Prototipo reagendar cita
+
+commit a19a164c3373e6c497f603213bcd202809e02b61
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Thu Feb 8 16:45:00 2024 -0600
+
+    Creación de Horarios Disponibles
+
+commit ce416e19198c778f4ec547aa2e2dd582defd23af
+Author: coradoa <90011754+coradoa@users.noreply.github.com>
+Date:   Thu Feb 8 16:22:38 2024 -0600
+
+    Agregando Confirmación y Parte de calendario
+
+commit 378f121cfbd5cdcc74c136536a70012f6a42e799
+Author: D4nnny <dperezf5@miumg.edu.gt>
+Date:   Tue Feb 6 18:05:06 2024 -0600
+
+    Agregando MVC
+
+commit 3dedeea08da6670192b987b42ef0c98a07390b6d
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Fri Feb 2 18:48:21 2024 -0600
+
+    Primer commit primer proyecto IS
+
+commit 923091e677d0e4f47b2969e0bc5e7df784734af9
+Author: Esduardo Del Aguila <daguilae@yahoo.com>
+Date:   Fri Jan 26 08:48:34 2024 -0600
+
+    Inicio del proyecto de Migraciòn
+
+commit 290d4952687bbe4e65630dde211436aca105b252
+Author: edelaguila <54811781+edelaguila@users.noreply.github.com>
+Date:   Fri Jan 26 08:35:24 2024 -0600
+
+    Initial commit
